@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T21:24:03Z",
+  "generated_at": "2026-04-18T21:24:55Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T21:23:30Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T21:24:04Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 230,
     "current_case_total": 1986,
@@ -2303,36 +2303,36 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 229,
-        "rows_successful": 229,
+        "rows_recorded": 230,
+        "rows_successful": 230,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7161572052401747,
-        "doc_recall_all": 0.6157205240174672,
-        "ndcg_at_10": 0.5043411276865277,
+        "doc_recall_any": 0.7130434782608696,
+        "doc_recall_all": 0.6130434782608696,
+        "ndcg_at_10": 0.5021483401748472,
         "exact_match": 0.0,
-        "token_f1": 0.03957033303014565,
-        "avg_total_sec": 58.37023865678612,
-        "p50_total_sec": 58.88171452097595,
+        "token_f1": 0.03939828810392763,
+        "avg_total_sec": 58.33710738197374,
+        "p50_total_sec": 58.880213738419116,
         "p95_total_sec": 61.989571917802095,
-        "avg_storage_bytes": 6490722.851528385,
+        "avg_storage_bytes": 6487599.295652173,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
-            "expected_total": 55,
-            "rows_recorded": 55,
-            "rows_successful": 55,
+            "expected_total": 56,
+            "rows_recorded": 56,
+            "rows_successful": 56,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9090909090909091,
-            "doc_recall_all": 0.9090909090909091,
-            "ndcg_at_10": 0.718382797653527,
+            "doc_recall_any": 0.8928571428571429,
+            "doc_recall_all": 0.8928571428571429,
+            "ndcg_at_10": 0.705554533409714,
             "exact_match": 0.0,
-            "token_f1": 0.015318015318015316,
-            "avg_total_sec": 56.971937094645746,
+            "token_f1": 0.015044479330193613,
+            "avg_total_sec": 56.860831886704545,
             "p50_total_sec": 58.80766094382852,
             "p95_total_sec": 61.68907159427181,
-            "avg_storage_bytes": 6327890.890909091,
+            "avg_storage_bytes": 6317969.714285715,
             "p95_storage_bytes": 6613785.0,
             "categories": {},
             "sample_errors": [],
@@ -2420,6 +2420,23 @@
                   "conv-30:D17:4",
                   "conv-30:D10:5",
                   "conv-30:D18:5"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-30::0030",
+                "category": "category_2",
+                "query": "When Jon is planning to open his dance studio?",
+                "gold": "20 June, 2023",
+                "prediction": "m determined to find the right spot - when I do, I",
+                "expected_doc_ids": [
+                  "conv-30:D15:5"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-30:D11:9",
+                  "conv-30:D13:5",
+                  "conv-30:D11:12",
+                  "conv-30:D4:9",
+                  "conv-30:D9:1"
                 ]
               }
             ],
@@ -6707,36 +6724,36 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 229,
-      "rows_successful": 229,
+      "rows_recorded": 230,
+      "rows_successful": 230,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7161572052401747,
-      "doc_recall_all": 0.6157205240174672,
-      "ndcg_at_10": 0.5043411276865277,
+      "doc_recall_any": 0.7130434782608696,
+      "doc_recall_all": 0.6130434782608696,
+      "ndcg_at_10": 0.5021483401748472,
       "exact_match": 0.0,
-      "token_f1": 0.03957033303014565,
-      "avg_total_sec": 58.37023865678612,
-      "p50_total_sec": 58.88171452097595,
+      "token_f1": 0.03939828810392763,
+      "avg_total_sec": 58.33710738197374,
+      "p50_total_sec": 58.880213738419116,
       "p95_total_sec": 61.989571917802095,
-      "avg_storage_bytes": 6490722.851528385,
+      "avg_storage_bytes": 6487599.295652173,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
-          "expected_total": 55,
-          "rows_recorded": 55,
-          "rows_successful": 55,
+          "expected_total": 56,
+          "rows_recorded": 56,
+          "rows_successful": 56,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9090909090909091,
-          "doc_recall_all": 0.9090909090909091,
-          "ndcg_at_10": 0.718382797653527,
+          "doc_recall_any": 0.8928571428571429,
+          "doc_recall_all": 0.8928571428571429,
+          "ndcg_at_10": 0.705554533409714,
           "exact_match": 0.0,
-          "token_f1": 0.015318015318015316,
-          "avg_total_sec": 56.971937094645746,
+          "token_f1": 0.015044479330193613,
+          "avg_total_sec": 56.860831886704545,
           "p50_total_sec": 58.80766094382852,
           "p95_total_sec": 61.68907159427181,
-          "avg_storage_bytes": 6327890.890909091,
+          "avg_storage_bytes": 6317969.714285715,
           "p95_storage_bytes": 6613785.0,
           "categories": {},
           "sample_errors": [],
@@ -6824,6 +6841,23 @@
                 "conv-30:D17:4",
                 "conv-30:D10:5",
                 "conv-30:D18:5"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-30::0030",
+              "category": "category_2",
+              "query": "When Jon is planning to open his dance studio?",
+              "gold": "20 June, 2023",
+              "prediction": "m determined to find the right spot - when I do, I",
+              "expected_doc_ids": [
+                "conv-30:D15:5"
+              ],
+              "retrieved_doc_ids": [
+                "conv-30:D11:9",
+                "conv-30:D13:5",
+                "conv-30:D11:12",
+                "conv-30:D4:9",
+                "conv-30:D9:1"
               ]
             }
           ],
@@ -8800,11 +8834,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.020505031327131218,
-    "doc_recall_all_delta": 0.03311182836529336,
-    "ndcg_at_10_delta": 0.04874887860189819,
-    "token_f1_delta": 0.005032836005689184,
-    "avg_storage_ratio_nova_over_stock": 0.4079093636404374,
-    "avg_latency_ratio_nova_over_stock": 1.6189566210584623
+    "doc_recall_any_delta": 0.017391304347826098,
+    "doc_recall_all_delta": 0.0304347826086957,
+    "ndcg_at_10_delta": 0.04655609109021769,
+    "token_f1_delta": 0.004860791079471162,
+    "avg_storage_ratio_nova_over_stock": 0.4077130638262402,
+    "avg_latency_ratio_nova_over_stock": 1.6180376922009498
   }
 }
