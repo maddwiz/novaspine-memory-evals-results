@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T16:16:50Z",
+  "generated_at": "2026-04-18T16:17:49Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T16:16:13Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T16:16:50Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 35,
     "current_case_total": 1986,
@@ -1086,19 +1086,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 34,
-        "rows_successful": 34,
+        "rows_recorded": 35,
+        "rows_successful": 35,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7647058823529411,
-        "doc_recall_all": 0.5882352941176471,
-        "ndcg_at_10": 0.4815226291923154,
+        "doc_recall_any": 0.7428571428571429,
+        "doc_recall_all": 0.5714285714285714,
+        "ndcg_at_10": 0.46776483978682065,
         "exact_match": 0.0,
-        "token_f1": 0.028169972442418263,
-        "avg_total_sec": 59.227148283136025,
+        "token_f1": 0.027365116086920598,
+        "avg_total_sec": 59.21622679967965,
         "p50_total_sec": 58.90923095308244,
         "p95_total_sec": 61.46745491074398,
-        "avg_storage_bytes": 6601135.588235294,
+        "avg_storage_bytes": 6600911.857142857,
         "p95_storage_bytes": 6617881.0,
         "categories": {
           "category_2": {
@@ -1404,21 +1404,21 @@
             ]
           },
           "category_1": {
-            "expected_total": 11,
-            "rows_recorded": 11,
-            "rows_successful": 11,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.45454545454545453,
-            "doc_recall_all": 0.18181818181818182,
-            "ndcg_at_10": 0.20983907366268922,
+            "doc_recall_any": 0.4166666666666667,
+            "doc_recall_all": 0.16666666666666666,
+            "ndcg_at_10": 0.19235248419079845,
             "exact_match": 0.0,
-            "token_f1": 0.019138755980861247,
-            "avg_total_sec": 59.531828265510164,
+            "token_f1": 0.01754385964912281,
+            "avg_total_sec": 59.47458394023124,
             "p50_total_sec": 58.98912156699225,
-            "p95_total_sec": 62.79109865799546,
-            "avg_storage_bytes": 6599262.818181818,
-            "p95_storage_bytes": 6613785.0,
+            "p95_total_sec": 61.46745491074398,
+            "avg_storage_bytes": 6598766.333333333,
+            "p95_storage_bytes": 6605593.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -1526,6 +1526,24 @@
                   "conv-26:D13:13",
                   "conv-26:D7:7",
                   "conv-26:D4:15"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0034",
+                "category": "category_1",
+                "query": "What events has Caroline participated in to help children?",
+                "gold": "Mentoring program, school speech",
+                "prediction": "helped",
+                "expected_doc_ids": [
+                  "conv-26:D9:2",
+                  "conv-26:D3:3"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D11:2",
+                  "conv-26:D19:6",
+                  "conv-26:D8:9",
+                  "conv-26:D18:8",
+                  "conv-26:D19:4"
                 ]
               }
             ],
@@ -1741,6 +1759,24 @@
               "conv-26:D10:5",
               "conv-26:D14:34",
               "conv-26:D16:5"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0034",
+            "category": "category_1",
+            "query": "What events has Caroline participated in to help children?",
+            "gold": "Mentoring program, school speech",
+            "prediction": "helped",
+            "expected_doc_ids": [
+              "conv-26:D9:2",
+              "conv-26:D3:3"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D11:2",
+              "conv-26:D19:6",
+              "conv-26:D8:9",
+              "conv-26:D18:8",
+              "conv-26:D19:4"
             ]
           }
         ],
@@ -3011,19 +3047,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 34,
-      "rows_successful": 34,
+      "rows_recorded": 35,
+      "rows_successful": 35,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7647058823529411,
-      "doc_recall_all": 0.5882352941176471,
-      "ndcg_at_10": 0.4815226291923154,
+      "doc_recall_any": 0.7428571428571429,
+      "doc_recall_all": 0.5714285714285714,
+      "ndcg_at_10": 0.46776483978682065,
       "exact_match": 0.0,
-      "token_f1": 0.028169972442418263,
-      "avg_total_sec": 59.227148283136025,
+      "token_f1": 0.027365116086920598,
+      "avg_total_sec": 59.21622679967965,
       "p50_total_sec": 58.90923095308244,
       "p95_total_sec": 61.46745491074398,
-      "avg_storage_bytes": 6601135.588235294,
+      "avg_storage_bytes": 6600911.857142857,
       "p95_storage_bytes": 6617881.0,
       "categories": {
         "category_2": {
@@ -3329,21 +3365,21 @@
           ]
         },
         "category_1": {
-          "expected_total": 11,
-          "rows_recorded": 11,
-          "rows_successful": 11,
+          "expected_total": 12,
+          "rows_recorded": 12,
+          "rows_successful": 12,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.45454545454545453,
-          "doc_recall_all": 0.18181818181818182,
-          "ndcg_at_10": 0.20983907366268922,
+          "doc_recall_any": 0.4166666666666667,
+          "doc_recall_all": 0.16666666666666666,
+          "ndcg_at_10": 0.19235248419079845,
           "exact_match": 0.0,
-          "token_f1": 0.019138755980861247,
-          "avg_total_sec": 59.531828265510164,
+          "token_f1": 0.01754385964912281,
+          "avg_total_sec": 59.47458394023124,
           "p50_total_sec": 58.98912156699225,
-          "p95_total_sec": 62.79109865799546,
-          "avg_storage_bytes": 6599262.818181818,
-          "p95_storage_bytes": 6613785.0,
+          "p95_total_sec": 61.46745491074398,
+          "avg_storage_bytes": 6598766.333333333,
+          "p95_storage_bytes": 6605593.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -3451,6 +3487,24 @@
                 "conv-26:D13:13",
                 "conv-26:D7:7",
                 "conv-26:D4:15"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0034",
+              "category": "category_1",
+              "query": "What events has Caroline participated in to help children?",
+              "gold": "Mentoring program, school speech",
+              "prediction": "helped",
+              "expected_doc_ids": [
+                "conv-26:D9:2",
+                "conv-26:D3:3"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D11:2",
+                "conv-26:D19:6",
+                "conv-26:D8:9",
+                "conv-26:D18:8",
+                "conv-26:D19:4"
               ]
             }
           ],
@@ -3667,6 +3721,24 @@
             "conv-26:D14:34",
             "conv-26:D16:5"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0034",
+          "category": "category_1",
+          "query": "What events has Caroline participated in to help children?",
+          "gold": "Mentoring program, school speech",
+          "prediction": "helped",
+          "expected_doc_ids": [
+            "conv-26:D9:2",
+            "conv-26:D3:3"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D11:2",
+            "conv-26:D19:6",
+            "conv-26:D8:9",
+            "conv-26:D18:8",
+            "conv-26:D19:4"
+          ]
         }
       ],
       "sample_successes": [
@@ -3842,11 +3914,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0789915966386554,
-    "doc_recall_all_delta": 0.15966386554621853,
-    "ndcg_at_10_delta": 0.07644208534800923,
-    "token_f1_delta": 0.020114118521902688,
-    "avg_storage_ratio_nova_over_stock": 0.40988028875969573,
-    "avg_latency_ratio_nova_over_stock": 1.6236123817553043
+    "doc_recall_any_delta": 0.05714285714285716,
+    "doc_recall_all_delta": 0.14285714285714285,
+    "ndcg_at_10_delta": 0.06268429594251446,
+    "token_f1_delta": 0.019309262166405022,
+    "avg_storage_ratio_nova_over_stock": 0.40986639676133474,
+    "avg_latency_ratio_nova_over_stock": 1.6233129877057693
   }
 }
