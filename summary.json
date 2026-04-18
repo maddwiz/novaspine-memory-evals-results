@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T17:38:00Z",
+  "generated_at": "2026-04-18T17:45:05Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,30 +116,30 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T17:37:02Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T17:44:29Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 85,
+    "current_case_index": 90,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0084"
+    "current_case_id": "locomo::conv-26::0089"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 85,
-        "rows_successful": 85,
+        "rows_recorded": 90,
+        "rows_successful": 90,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7176470588235294,
-        "doc_recall_all": 0.49411764705882355,
-        "ndcg_at_10": 0.41234525914000464,
+        "doc_recall_any": 0.6888888888888889,
+        "doc_recall_all": 0.4777777777777778,
+        "ndcg_at_10": 0.39278196691738193,
         "exact_match": 0.0,
-        "token_f1": 0.01893986885371998,
-        "avg_total_sec": 36.48975569081,
-        "p50_total_sec": 36.29382250504568,
+        "token_f1": 0.0201354189237879,
+        "avg_total_sec": 36.49172198256064,
+        "p50_total_sec": 36.29543185001239,
         "p95_total_sec": 37.65678389882669,
-        "avg_storage_bytes": 16105164.188235294,
+        "avg_storage_bytes": 16105547.044444444,
         "p95_storage_bytes": 16117788.0,
         "categories": {
           "category_2": {
@@ -1075,20 +1075,20 @@
             ]
           },
           "category_4": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6666666666666666,
-            "doc_recall_all": 0.6666666666666666,
-            "ndcg_at_10": 0.46228426907818054,
+            "doc_recall_any": 0.375,
+            "doc_recall_all": 0.375,
+            "ndcg_at_10": 0.21098535036231536,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 36.13926398521289,
-            "p50_total_sec": 36.15060315374285,
-            "p95_total_sec": 36.22260765591636,
-            "avg_storage_bytes": 16110963.333333334,
+            "token_f1": 0.02528735632183908,
+            "avg_total_sec": 36.380442083405796,
+            "p50_total_sec": 36.29543185001239,
+            "p95_total_sec": 37.54192951787263,
+            "avg_storage_bytes": 16111646.0,
             "p95_storage_bytes": 16113694.0,
             "categories": {},
             "sample_errors": [],
@@ -1108,6 +1108,74 @@
                   "conv-26:D4:15",
                   "conv-26:D2:6",
                   "conv-26:D7:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0085",
+                "category": "category_4",
+                "query": "What are Caroline's plans for the summer?",
+                "gold": "researching adoption agencies",
+                "prediction": "Any fun plans for the summer?",
+                "expected_doc_ids": [
+                  "conv-26:D2:8"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D12:17",
+                  "conv-26:D2:7",
+                  "conv-26:D10:11",
+                  "conv-26:D10:8",
+                  "conv-26:D10:10"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0087",
+                "category": "category_4",
+                "query": "Why did Caroline choose the adoption agency?",
+                "gold": "because of their inclusivity and support for LGBTQ+ individuals",
+                "prediction": "Caroline: Researching adoption agencies — it's been a dream to have a family and give a loving home to kids who need it.",
+                "expected_doc_ids": [
+                  "conv-26:D2:12"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D19:3",
+                  "conv-26:D13:1",
+                  "conv-26:D17:7",
+                  "conv-26:D8:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0088",
+                "category": "category_4",
+                "query": "What is Caroline excited about in the adoption process?",
+                "gold": "creating a family for kids who need one",
+                "prediction": "Anything you're excited for in the adoption process?",
+                "expected_doc_ids": [
+                  "conv-26:D2:14"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D19:3",
+                  "conv-26:D13:1",
+                  "conv-26:D17:7",
+                  "conv-26:D17:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0089",
+                "category": "category_4",
+                "query": "What does Melanie think about Caroline's decision to adopt?",
+                "gold": "she thinks Caroline is doing something amazing and will be an awesome mom",
+                "prediction": "s a big decision, but I think I",
+                "expected_doc_ids": [
+                  "conv-26:D2:15"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D19:3",
+                  "conv-26:D2:10",
+                  "conv-26:D13:1",
+                  "conv-26:D8:9",
+                  "conv-26:D17:3"
                 ]
               }
             ],
@@ -1135,6 +1203,20 @@
                   "conv-26:D2:1",
                   "conv-26:D14:11",
                   "conv-26:D2:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0086",
+                "category": "category_4",
+                "query": "What type of individuals does the adoption agency Caroline is considering support?",
+                "gold": "LGBTQ+ individuals",
+                "prediction": "a family and give a loving home to kids who need it",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D19:3",
+                  "conv-26:D13:1",
+                  "conv-26:D2:8",
+                  "conv-26:D8:9"
                 ]
               }
             ]
@@ -1521,19 +1603,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 85,
-        "rows_successful": 85,
+        "rows_recorded": 89,
+        "rows_successful": 89,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7411764705882353,
-        "doc_recall_all": 0.5529411764705883,
-        "ndcg_at_10": 0.48496683443622257,
+        "doc_recall_any": 0.7191011235955056,
+        "doc_recall_all": 0.5393258426966292,
+        "ndcg_at_10": 0.4665529317162123,
         "exact_match": 0.0,
-        "token_f1": 0.024299096156681296,
-        "avg_total_sec": 59.32160846210249,
+        "token_f1": 0.02548002274036655,
+        "avg_total_sec": 59.36823037252604,
         "p50_total_sec": 58.94985125865787,
-        "p95_total_sec": 61.90859910007566,
-        "avg_storage_bytes": 6599424.905882353,
+        "p95_total_sec": 62.0223612813279,
+        "avg_storage_bytes": 6599379.9662921345,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -2404,21 +2486,21 @@
             ]
           },
           "category_4": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6666666666666666,
-            "doc_recall_all": 0.6666666666666666,
-            "ndcg_at_10": 0.5,
+            "doc_recall_any": 0.42857142857142855,
+            "doc_recall_all": 0.42857142857142855,
+            "ndcg_at_10": 0.25728999938056873,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 59.07485935961207,
+            "token_f1": 0.02889983579638752,
+            "avg_total_sec": 59.80862313642034,
             "p50_total_sec": 58.931759282015264,
-            "p95_total_sec": 59.75370348384604,
-            "avg_storage_bytes": 6590574.333333333,
-            "p95_storage_bytes": 6601497.0,
+            "p95_total_sec": 62.44071220420301,
+            "avg_storage_bytes": 6595060.428571428,
+            "p95_storage_bytes": 6609689.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -2437,6 +2519,57 @@
                   "conv-26:D7:25",
                   "conv-26:D4:15",
                   "conv-26:D7:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0085",
+                "category": "category_4",
+                "query": "What are Caroline's plans for the summer?",
+                "gold": "researching adoption agencies",
+                "prediction": "Any fun plans for the summer?",
+                "expected_doc_ids": [
+                  "conv-26:D2:8"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:7",
+                  "conv-26:D12:17",
+                  "conv-26:D11:1",
+                  "conv-26:D12:16",
+                  "conv-26:D15:16"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0087",
+                "category": "category_4",
+                "query": "Why did Caroline choose the adoption agency?",
+                "gold": "because of their inclusivity and support for LGBTQ+ individuals",
+                "prediction": "Caroline: Researching adoption agencies — it's been a dream to have a family and give a loving home to kids who need it.",
+                "expected_doc_ids": [
+                  "conv-26:D2:12"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D19:3",
+                  "conv-26:D13:1",
+                  "conv-26:D17:7",
+                  "conv-26:D8:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0088",
+                "category": "category_4",
+                "query": "What is Caroline excited about in the adoption process?",
+                "gold": "creating a family for kids who need one",
+                "prediction": "Anything you're excited for in the adoption process?",
+                "expected_doc_ids": [
+                  "conv-26:D2:14"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D19:3",
+                  "conv-26:D17:7",
+                  "conv-26:D13:1",
+                  "conv-26:D17:3"
                 ]
               }
             ],
@@ -2467,6 +2600,20 @@
                   "conv-26:D2:3",
                   "conv-26:D15:4",
                   "conv-26:D7:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0086",
+                "category": "category_4",
+                "query": "What type of individuals does the adoption agency Caroline is considering support?",
+                "gold": "LGBTQ+ individuals",
+                "prediction": "a family and give a loving home to kids who need it",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D13:1",
+                  "conv-26:D19:3",
+                  "conv-26:D2:8",
+                  "conv-26:D8:9"
                 ]
               }
             ]
@@ -2993,19 +3140,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 85,
-      "rows_successful": 85,
+      "rows_recorded": 90,
+      "rows_successful": 90,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7176470588235294,
-      "doc_recall_all": 0.49411764705882355,
-      "ndcg_at_10": 0.41234525914000464,
+      "doc_recall_any": 0.6888888888888889,
+      "doc_recall_all": 0.4777777777777778,
+      "ndcg_at_10": 0.39278196691738193,
       "exact_match": 0.0,
-      "token_f1": 0.01893986885371998,
-      "avg_total_sec": 36.48975569081,
-      "p50_total_sec": 36.29382250504568,
+      "token_f1": 0.0201354189237879,
+      "avg_total_sec": 36.49172198256064,
+      "p50_total_sec": 36.29543185001239,
       "p95_total_sec": 37.65678389882669,
-      "avg_storage_bytes": 16105164.188235294,
+      "avg_storage_bytes": 16105547.044444444,
       "p95_storage_bytes": 16117788.0,
       "categories": {
         "category_2": {
@@ -3941,20 +4088,20 @@
           ]
         },
         "category_4": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6666666666666666,
-          "doc_recall_all": 0.6666666666666666,
-          "ndcg_at_10": 0.46228426907818054,
+          "doc_recall_any": 0.375,
+          "doc_recall_all": 0.375,
+          "ndcg_at_10": 0.21098535036231536,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 36.13926398521289,
-          "p50_total_sec": 36.15060315374285,
-          "p95_total_sec": 36.22260765591636,
-          "avg_storage_bytes": 16110963.333333334,
+          "token_f1": 0.02528735632183908,
+          "avg_total_sec": 36.380442083405796,
+          "p50_total_sec": 36.29543185001239,
+          "p95_total_sec": 37.54192951787263,
+          "avg_storage_bytes": 16111646.0,
           "p95_storage_bytes": 16113694.0,
           "categories": {},
           "sample_errors": [],
@@ -3974,6 +4121,74 @@
                 "conv-26:D4:15",
                 "conv-26:D2:6",
                 "conv-26:D7:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0085",
+              "category": "category_4",
+              "query": "What are Caroline's plans for the summer?",
+              "gold": "researching adoption agencies",
+              "prediction": "Any fun plans for the summer?",
+              "expected_doc_ids": [
+                "conv-26:D2:8"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D12:17",
+                "conv-26:D2:7",
+                "conv-26:D10:11",
+                "conv-26:D10:8",
+                "conv-26:D10:10"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0087",
+              "category": "category_4",
+              "query": "Why did Caroline choose the adoption agency?",
+              "gold": "because of their inclusivity and support for LGBTQ+ individuals",
+              "prediction": "Caroline: Researching adoption agencies — it's been a dream to have a family and give a loving home to kids who need it.",
+              "expected_doc_ids": [
+                "conv-26:D2:12"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D19:3",
+                "conv-26:D13:1",
+                "conv-26:D17:7",
+                "conv-26:D8:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0088",
+              "category": "category_4",
+              "query": "What is Caroline excited about in the adoption process?",
+              "gold": "creating a family for kids who need one",
+              "prediction": "Anything you're excited for in the adoption process?",
+              "expected_doc_ids": [
+                "conv-26:D2:14"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D19:3",
+                "conv-26:D13:1",
+                "conv-26:D17:7",
+                "conv-26:D17:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0089",
+              "category": "category_4",
+              "query": "What does Melanie think about Caroline's decision to adopt?",
+              "gold": "she thinks Caroline is doing something amazing and will be an awesome mom",
+              "prediction": "s a big decision, but I think I",
+              "expected_doc_ids": [
+                "conv-26:D2:15"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D19:3",
+                "conv-26:D2:10",
+                "conv-26:D13:1",
+                "conv-26:D8:9",
+                "conv-26:D17:3"
               ]
             }
           ],
@@ -4001,6 +4216,20 @@
                 "conv-26:D2:1",
                 "conv-26:D14:11",
                 "conv-26:D2:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0086",
+              "category": "category_4",
+              "query": "What type of individuals does the adoption agency Caroline is considering support?",
+              "gold": "LGBTQ+ individuals",
+              "prediction": "a family and give a loving home to kids who need it",
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D19:3",
+                "conv-26:D13:1",
+                "conv-26:D2:8",
+                "conv-26:D8:9"
               ]
             }
           ]
@@ -4387,19 +4616,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 85,
-      "rows_successful": 85,
+      "rows_recorded": 89,
+      "rows_successful": 89,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7411764705882353,
-      "doc_recall_all": 0.5529411764705883,
-      "ndcg_at_10": 0.48496683443622257,
+      "doc_recall_any": 0.7191011235955056,
+      "doc_recall_all": 0.5393258426966292,
+      "ndcg_at_10": 0.4665529317162123,
       "exact_match": 0.0,
-      "token_f1": 0.024299096156681296,
-      "avg_total_sec": 59.32160846210249,
+      "token_f1": 0.02548002274036655,
+      "avg_total_sec": 59.36823037252604,
       "p50_total_sec": 58.94985125865787,
-      "p95_total_sec": 61.90859910007566,
-      "avg_storage_bytes": 6599424.905882353,
+      "p95_total_sec": 62.0223612813279,
+      "avg_storage_bytes": 6599379.9662921345,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -5270,21 +5499,21 @@
           ]
         },
         "category_4": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 7,
+          "rows_recorded": 7,
+          "rows_successful": 7,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6666666666666666,
-          "doc_recall_all": 0.6666666666666666,
-          "ndcg_at_10": 0.5,
+          "doc_recall_any": 0.42857142857142855,
+          "doc_recall_all": 0.42857142857142855,
+          "ndcg_at_10": 0.25728999938056873,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 59.07485935961207,
+          "token_f1": 0.02889983579638752,
+          "avg_total_sec": 59.80862313642034,
           "p50_total_sec": 58.931759282015264,
-          "p95_total_sec": 59.75370348384604,
-          "avg_storage_bytes": 6590574.333333333,
-          "p95_storage_bytes": 6601497.0,
+          "p95_total_sec": 62.44071220420301,
+          "avg_storage_bytes": 6595060.428571428,
+          "p95_storage_bytes": 6609689.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -5303,6 +5532,57 @@
                 "conv-26:D7:25",
                 "conv-26:D4:15",
                 "conv-26:D7:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0085",
+              "category": "category_4",
+              "query": "What are Caroline's plans for the summer?",
+              "gold": "researching adoption agencies",
+              "prediction": "Any fun plans for the summer?",
+              "expected_doc_ids": [
+                "conv-26:D2:8"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:7",
+                "conv-26:D12:17",
+                "conv-26:D11:1",
+                "conv-26:D12:16",
+                "conv-26:D15:16"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0087",
+              "category": "category_4",
+              "query": "Why did Caroline choose the adoption agency?",
+              "gold": "because of their inclusivity and support for LGBTQ+ individuals",
+              "prediction": "Caroline: Researching adoption agencies — it's been a dream to have a family and give a loving home to kids who need it.",
+              "expected_doc_ids": [
+                "conv-26:D2:12"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D19:3",
+                "conv-26:D13:1",
+                "conv-26:D17:7",
+                "conv-26:D8:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0088",
+              "category": "category_4",
+              "query": "What is Caroline excited about in the adoption process?",
+              "gold": "creating a family for kids who need one",
+              "prediction": "Anything you're excited for in the adoption process?",
+              "expected_doc_ids": [
+                "conv-26:D2:14"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D19:3",
+                "conv-26:D17:7",
+                "conv-26:D13:1",
+                "conv-26:D17:3"
               ]
             }
           ],
@@ -5333,6 +5613,20 @@
                 "conv-26:D2:3",
                 "conv-26:D15:4",
                 "conv-26:D7:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0086",
+              "category": "category_4",
+              "query": "What type of individuals does the adoption agency Caroline is considering support?",
+              "gold": "LGBTQ+ individuals",
+              "prediction": "a family and give a loving home to kids who need it",
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D13:1",
+                "conv-26:D19:3",
+                "conv-26:D2:8",
+                "conv-26:D8:9"
               ]
             }
           ]
@@ -5724,11 +6018,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.02352941176470591,
-    "doc_recall_all_delta": 0.05882352941176472,
-    "ndcg_at_10_delta": 0.07262157529621793,
-    "token_f1_delta": 0.005359227302961317,
-    "avg_storage_ratio_nova_over_stock": 0.40977073122316787,
-    "avg_latency_ratio_nova_over_stock": 1.625705827267096
+    "doc_recall_any_delta": 0.030212234706616714,
+    "doc_recall_all_delta": 0.0615480649188514,
+    "ndcg_at_10_delta": 0.07377096479883039,
+    "token_f1_delta": 0.005344603816578652,
+    "avg_storage_ratio_nova_over_stock": 0.40975819995934687,
+    "avg_latency_ratio_nova_over_stock": 1.6268958313586315
   }
 }
