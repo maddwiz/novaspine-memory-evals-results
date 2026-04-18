@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T15:44:51Z",
+  "generated_at": "2026-04-18T15:45:51Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T15:44:15Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T15:44:52Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 15,
     "current_case_total": 1986,
@@ -683,19 +683,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 14,
-        "rows_successful": 14,
+        "rows_recorded": 15,
+        "rows_successful": 15,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6428571428571429,
-        "doc_recall_all": 0.5,
-        "ndcg_at_10": 0.3772708894437661,
+        "doc_recall_any": 0.6666666666666666,
+        "doc_recall_all": 0.4666666666666667,
+        "ndcg_at_10": 0.3779096839631511,
         "exact_match": 0.0,
-        "token_f1": 0.03296703296703297,
-        "avg_total_sec": 59.35089014357488,
+        "token_f1": 0.030769230769230767,
+        "avg_total_sec": 59.32803851859644,
         "p50_total_sec": 59.08677669381723,
         "p95_total_sec": 61.46745491074398,
-        "avg_storage_bytes": 6599741.571428572,
+        "avg_storage_bytes": 6599585.533333333,
         "p95_storage_bytes": 6609689.0,
         "categories": {
           "category_2": {
@@ -837,9 +837,9 @@
             ]
           },
           "category_3": {
-            "expected_total": 1,
-            "rows_recorded": 1,
-            "rows_successful": 1,
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
@@ -847,11 +847,11 @@
             "ndcg_at_10": 0.38685280723454163,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 59.176900054793805,
-            "p50_total_sec": 59.176900054793805,
+            "avg_total_sec": 59.09250791184604,
+            "p50_total_sec": 59.00811576889828,
             "p95_total_sec": 59.176900054793805,
-            "avg_storage_bytes": 6593305.0,
-            "p95_storage_bytes": 6593305.0,
+            "avg_storage_bytes": 6595353.0,
+            "p95_storage_bytes": 6597401.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -868,6 +868,20 @@
                   "conv-26:D6:7",
                   "conv-26:D16:8",
                   "conv-26:D11:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0014",
+                "category": "category_3",
+                "query": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+                "gold": "Likely no",
+                "prediction": "Talking to the community made me want to use my story to help others too - I'm still thinking that counseling and mental health is the way to go.",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:11",
+                  "conv-26:D4:15",
+                  "conv-26:D7:7",
+                  "conv-26:D7:5",
+                  "conv-26:D4:14"
                 ]
               }
             ]
@@ -1195,6 +1209,20 @@
               "conv-26:D4:5",
               "conv-26:D3:1",
               "conv-26:D8:17"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0014",
+            "category": "category_3",
+            "query": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+            "gold": "Likely no",
+            "prediction": "Talking to the community made me want to use my story to help others too - I'm still thinking that counseling and mental health is the way to go.",
+            "retrieved_doc_ids": [
+              "conv-26:D4:11",
+              "conv-26:D4:15",
+              "conv-26:D7:7",
+              "conv-26:D7:5",
+              "conv-26:D4:14"
             ]
           }
         ]
@@ -1892,19 +1920,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 14,
-      "rows_successful": 14,
+      "rows_recorded": 15,
+      "rows_successful": 15,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6428571428571429,
-      "doc_recall_all": 0.5,
-      "ndcg_at_10": 0.3772708894437661,
+      "doc_recall_any": 0.6666666666666666,
+      "doc_recall_all": 0.4666666666666667,
+      "ndcg_at_10": 0.3779096839631511,
       "exact_match": 0.0,
-      "token_f1": 0.03296703296703297,
-      "avg_total_sec": 59.35089014357488,
+      "token_f1": 0.030769230769230767,
+      "avg_total_sec": 59.32803851859644,
       "p50_total_sec": 59.08677669381723,
       "p95_total_sec": 61.46745491074398,
-      "avg_storage_bytes": 6599741.571428572,
+      "avg_storage_bytes": 6599585.533333333,
       "p95_storage_bytes": 6609689.0,
       "categories": {
         "category_2": {
@@ -2046,9 +2074,9 @@
           ]
         },
         "category_3": {
-          "expected_total": 1,
-          "rows_recorded": 1,
-          "rows_successful": 1,
+          "expected_total": 2,
+          "rows_recorded": 2,
+          "rows_successful": 2,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
@@ -2056,11 +2084,11 @@
           "ndcg_at_10": 0.38685280723454163,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 59.176900054793805,
-          "p50_total_sec": 59.176900054793805,
+          "avg_total_sec": 59.09250791184604,
+          "p50_total_sec": 59.00811576889828,
           "p95_total_sec": 59.176900054793805,
-          "avg_storage_bytes": 6593305.0,
-          "p95_storage_bytes": 6593305.0,
+          "avg_storage_bytes": 6595353.0,
+          "p95_storage_bytes": 6597401.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -2077,6 +2105,20 @@
                 "conv-26:D6:7",
                 "conv-26:D16:8",
                 "conv-26:D11:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0014",
+              "category": "category_3",
+              "query": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+              "gold": "Likely no",
+              "prediction": "Talking to the community made me want to use my story to help others too - I'm still thinking that counseling and mental health is the way to go.",
+              "retrieved_doc_ids": [
+                "conv-26:D4:11",
+                "conv-26:D4:15",
+                "conv-26:D7:7",
+                "conv-26:D7:5",
+                "conv-26:D4:14"
               ]
             }
           ]
@@ -2405,16 +2447,30 @@
             "conv-26:D3:1",
             "conv-26:D8:17"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0014",
+          "category": "category_3",
+          "query": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+          "gold": "Likely no",
+          "prediction": "Talking to the community made me want to use my story to help others too - I'm still thinking that counseling and mental health is the way to go.",
+          "retrieved_doc_ids": [
+            "conv-26:D4:11",
+            "conv-26:D4:15",
+            "conv-26:D7:7",
+            "conv-26:D7:5",
+            "conv-26:D4:14"
+          ]
         }
       ]
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.10952380952380958,
-    "doc_recall_all_delta": 0.23333333333333334,
-    "ndcg_at_10_delta": 0.02569051514582721,
-    "token_f1_delta": 0.03296703296703297,
-    "avg_storage_ratio_nova_over_stock": 0.4098860586886601,
-    "avg_latency_ratio_nova_over_stock": 1.6272543191527424
+    "doc_recall_any_delta": 0.1333333333333333,
+    "doc_recall_all_delta": 0.2,
+    "ndcg_at_10_delta": 0.02632930966521224,
+    "token_f1_delta": 0.030769230769230767,
+    "avg_storage_ratio_nova_over_stock": 0.409876367727405,
+    "avg_latency_ratio_nova_over_stock": 1.626627784228736
   }
 }
