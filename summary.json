@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T18:26:11Z",
+  "generated_at": "2026-04-18T18:33:10Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,30 +116,30 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T18:25:13Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T18:32:34Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 115,
+    "current_case_index": 120,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0114"
+    "current_case_id": "locomo::conv-26::0119"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 115,
-        "rows_successful": 115,
+        "rows_recorded": 120,
+        "rows_successful": 120,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7130434782608696,
-        "doc_recall_all": 0.5478260869565217,
-        "ndcg_at_10": 0.4471523260196264,
+        "doc_recall_any": 0.7166666666666667,
+        "doc_recall_all": 0.5583333333333333,
+        "ndcg_at_10": 0.45352097910214195,
         "exact_match": 0.0,
-        "token_f1": 0.030997157245720608,
-        "avg_total_sec": 36.51933898810783,
-        "p50_total_sec": 36.32551848422736,
+        "token_f1": 0.03455941019673956,
+        "avg_total_sec": 36.50394243848665,
+        "p50_total_sec": 36.32540388032794,
         "p95_total_sec": 37.65678389882669,
-        "avg_storage_bytes": 16106641.286956523,
+        "avg_storage_bytes": 16106969.266666668,
         "p95_storage_bytes": 16117790.0,
         "categories": {
           "category_2": {
@@ -1075,21 +1075,21 @@
             ]
           },
           "category_4": {
-            "expected_total": 33,
-            "rows_recorded": 33,
-            "rows_successful": 33,
+            "expected_total": 38,
+            "rows_recorded": 38,
+            "rows_successful": 38,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.696969696969697,
-            "doc_recall_all": 0.696969696969697,
-            "ndcg_at_10": 0.5381825234118539,
+            "doc_recall_any": 0.7105263157894737,
+            "doc_recall_all": 0.7105263157894737,
+            "ndcg_at_10": 0.5463164019102942,
             "exact_match": 0.0,
-            "token_f1": 0.0592358857785355,
-            "avg_total_sec": 36.56098611724817,
-            "p50_total_sec": 36.40793076111004,
+            "token_f1": 0.06676948344848813,
+            "avg_total_sec": 36.50688554882072,
+            "p50_total_sec": 36.36300560506061,
             "p95_total_sec": 37.54192951787263,
-            "avg_storage_bytes": 16110838.848484848,
-            "p95_storage_bytes": 16117790.0,
+            "avg_storage_bytes": 16111322.263157895,
+            "p95_storage_bytes": 16121882.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -1261,6 +1261,23 @@
                   "conv-26:D7:21",
                   "conv-26:D4:15",
                   "conv-26:D7:8"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0116",
+                "category": "category_4",
+                "query": "What inspired Caroline's painting for the art show?",
+                "gold": "visiting an LGBTQ center and wanting to capture unity and strength",
+                "prediction": "hard to put into words",
+                "expected_doc_ids": [
+                  "conv-26:D9:16"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D12:6",
+                  "conv-26:D17:13",
+                  "conv-26:D13:13",
+                  "conv-26:D13:11",
+                  "conv-26:D9:17"
                 ]
               }
             ],
@@ -1814,19 +1831,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 115,
-        "rows_successful": 115,
+        "rows_recorded": 119,
+        "rows_successful": 119,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7130434782608696,
-        "doc_recall_all": 0.5739130434782609,
-        "ndcg_at_10": 0.48721596567230946,
+        "doc_recall_any": 0.7142857142857143,
+        "doc_recall_all": 0.5798319327731093,
+        "ndcg_at_10": 0.49294761181417684,
         "exact_match": 0.0,
-        "token_f1": 0.03787141720126601,
-        "avg_total_sec": 59.35293480900886,
+        "token_f1": 0.039252121443947914,
+        "avg_total_sec": 59.34624698308508,
         "p50_total_sec": 58.95353631814942,
         "p95_total_sec": 61.90859910007566,
-        "avg_storage_bytes": 6599644.895652174,
+        "avg_storage_bytes": 6599259.68907563,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -2697,20 +2714,20 @@
             ]
           },
           "category_4": {
-            "expected_total": 33,
-            "rows_recorded": 33,
-            "rows_successful": 33,
+            "expected_total": 37,
+            "rows_recorded": 37,
+            "rows_successful": 37,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6363636363636364,
-            "doc_recall_all": 0.6363636363636364,
-            "ndcg_at_10": 0.4941713674314145,
+            "doc_recall_any": 0.6486486486486487,
+            "doc_recall_all": 0.6486486486486487,
+            "ndcg_at_10": 0.5118536453731929,
             "exact_match": 0.0,
-            "token_f1": 0.06938756984326304,
-            "avg_total_sec": 59.40834429806493,
+            "token_f1": 0.07042106158140246,
+            "avg_total_sec": 59.38084458884456,
             "p50_total_sec": 58.95987671613693,
             "p95_total_sec": 61.76511899102479,
-            "avg_storage_bytes": 6599386.939393939,
+            "avg_storage_bytes": 6598175.918918919,
             "p95_storage_bytes": 6613785.0,
             "categories": {},
             "sample_errors": [],
@@ -3613,19 +3630,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 115,
-      "rows_successful": 115,
+      "rows_recorded": 120,
+      "rows_successful": 120,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7130434782608696,
-      "doc_recall_all": 0.5478260869565217,
-      "ndcg_at_10": 0.4471523260196264,
+      "doc_recall_any": 0.7166666666666667,
+      "doc_recall_all": 0.5583333333333333,
+      "ndcg_at_10": 0.45352097910214195,
       "exact_match": 0.0,
-      "token_f1": 0.030997157245720608,
-      "avg_total_sec": 36.51933898810783,
-      "p50_total_sec": 36.32551848422736,
+      "token_f1": 0.03455941019673956,
+      "avg_total_sec": 36.50394243848665,
+      "p50_total_sec": 36.32540388032794,
       "p95_total_sec": 37.65678389882669,
-      "avg_storage_bytes": 16106641.286956523,
+      "avg_storage_bytes": 16106969.266666668,
       "p95_storage_bytes": 16117790.0,
       "categories": {
         "category_2": {
@@ -4561,21 +4578,21 @@
           ]
         },
         "category_4": {
-          "expected_total": 33,
-          "rows_recorded": 33,
-          "rows_successful": 33,
+          "expected_total": 38,
+          "rows_recorded": 38,
+          "rows_successful": 38,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.696969696969697,
-          "doc_recall_all": 0.696969696969697,
-          "ndcg_at_10": 0.5381825234118539,
+          "doc_recall_any": 0.7105263157894737,
+          "doc_recall_all": 0.7105263157894737,
+          "ndcg_at_10": 0.5463164019102942,
           "exact_match": 0.0,
-          "token_f1": 0.0592358857785355,
-          "avg_total_sec": 36.56098611724817,
-          "p50_total_sec": 36.40793076111004,
+          "token_f1": 0.06676948344848813,
+          "avg_total_sec": 36.50688554882072,
+          "p50_total_sec": 36.36300560506061,
           "p95_total_sec": 37.54192951787263,
-          "avg_storage_bytes": 16110838.848484848,
-          "p95_storage_bytes": 16117790.0,
+          "avg_storage_bytes": 16111322.263157895,
+          "p95_storage_bytes": 16121882.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -4747,6 +4764,23 @@
                 "conv-26:D7:21",
                 "conv-26:D4:15",
                 "conv-26:D7:8"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0116",
+              "category": "category_4",
+              "query": "What inspired Caroline's painting for the art show?",
+              "gold": "visiting an LGBTQ center and wanting to capture unity and strength",
+              "prediction": "hard to put into words",
+              "expected_doc_ids": [
+                "conv-26:D9:16"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D12:6",
+                "conv-26:D17:13",
+                "conv-26:D13:13",
+                "conv-26:D13:11",
+                "conv-26:D9:17"
               ]
             }
           ],
@@ -5300,19 +5334,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 115,
-      "rows_successful": 115,
+      "rows_recorded": 119,
+      "rows_successful": 119,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7130434782608696,
-      "doc_recall_all": 0.5739130434782609,
-      "ndcg_at_10": 0.48721596567230946,
+      "doc_recall_any": 0.7142857142857143,
+      "doc_recall_all": 0.5798319327731093,
+      "ndcg_at_10": 0.49294761181417684,
       "exact_match": 0.0,
-      "token_f1": 0.03787141720126601,
-      "avg_total_sec": 59.35293480900886,
+      "token_f1": 0.039252121443947914,
+      "avg_total_sec": 59.34624698308508,
       "p50_total_sec": 58.95353631814942,
       "p95_total_sec": 61.90859910007566,
-      "avg_storage_bytes": 6599644.895652174,
+      "avg_storage_bytes": 6599259.68907563,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -6183,20 +6217,20 @@
           ]
         },
         "category_4": {
-          "expected_total": 33,
-          "rows_recorded": 33,
-          "rows_successful": 33,
+          "expected_total": 37,
+          "rows_recorded": 37,
+          "rows_successful": 37,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6363636363636364,
-          "doc_recall_all": 0.6363636363636364,
-          "ndcg_at_10": 0.4941713674314145,
+          "doc_recall_any": 0.6486486486486487,
+          "doc_recall_all": 0.6486486486486487,
+          "ndcg_at_10": 0.5118536453731929,
           "exact_match": 0.0,
-          "token_f1": 0.06938756984326304,
-          "avg_total_sec": 59.40834429806493,
+          "token_f1": 0.07042106158140246,
+          "avg_total_sec": 59.38084458884456,
           "p50_total_sec": 58.95987671613693,
           "p95_total_sec": 61.76511899102479,
-          "avg_storage_bytes": 6599386.939393939,
+          "avg_storage_bytes": 6598175.918918919,
           "p95_storage_bytes": 6613785.0,
           "categories": {},
           "sample_errors": [],
@@ -6964,11 +6998,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0,
-    "doc_recall_all_delta": 0.026086956521739202,
-    "ndcg_at_10_delta": 0.04006363965268306,
-    "token_f1_delta": 0.0068742599555454,
-    "avg_storage_ratio_nova_over_stock": 0.4097468105281948,
-    "avg_latency_ratio_nova_over_stock": 1.6252466899342446
+    "doc_recall_any_delta": -0.0023809523809523725,
+    "doc_recall_all_delta": 0.021498599439775945,
+    "ndcg_at_10_delta": 0.03942663271203489,
+    "token_f1_delta": 0.004692711247208353,
+    "avg_storage_ratio_nova_over_stock": 0.4097145514974553,
+    "avg_latency_ratio_nova_over_stock": 1.625748974459138
   }
 }
