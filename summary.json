@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T15:52:48Z",
+  "generated_at": "2026-04-18T15:53:48Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T15:52:12Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T15:52:49Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 20,
     "current_case_total": 1986,
@@ -809,19 +809,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 19,
-        "rows_successful": 19,
+        "rows_recorded": 20,
+        "rows_successful": 20,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7368421052631579,
-        "doc_recall_all": 0.5263157894736842,
-        "ndcg_at_10": 0.4473233937032807,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.5,
+        "ndcg_at_10": 0.4249572240181167,
         "exact_match": 0.0,
-        "token_f1": 0.0353718303856808,
-        "avg_total_sec": 59.259228920686596,
+        "token_f1": 0.03360323886639676,
+        "avg_total_sec": 59.24094976990018,
         "p50_total_sec": 59.08677669381723,
         "p95_total_sec": 61.46745491074398,
-        "avg_storage_bytes": 6599341.2105263155,
+        "avg_storage_bytes": 6599039.4,
         "p95_storage_bytes": 6609689.0,
         "categories": {
           "category_2": {
@@ -1041,20 +1041,20 @@
             ]
           },
           "category_1": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.42857142857142855,
-            "doc_recall_all": 0.14285714285714285,
-            "ndcg_at_10": 0.20623520195436087,
+            "doc_recall_any": 0.375,
+            "doc_recall_all": 0.125,
+            "ndcg_at_10": 0.18045580171006576,
             "exact_match": 0.0,
-            "token_f1": 0.030075187969924814,
-            "avg_total_sec": 59.318056218858274,
+            "token_f1": 0.026315789473684213,
+            "avg_total_sec": 59.26500492962077,
             "p50_total_sec": 59.133632817771286,
             "p95_total_sec": 61.46745491074398,
-            "avg_storage_bytes": 6596815.857142857,
+            "avg_storage_bytes": 6596377.0,
             "p95_storage_bytes": 6605593.0,
             "categories": {},
             "sample_errors": [],
@@ -1127,6 +1127,24 @@
                   "conv-26:D1:9",
                   "conv-26:D11:14",
                   "conv-26:D6:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0019",
+                "category": "category_1",
+                "query": "What do Melanie's kids like?",
+                "gold": "dinosaurs, nature",
+                "prediction": "a blast",
+                "expected_doc_ids": [
+                  "conv-26:D6:6",
+                  "conv-26:D4:8"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D8:5",
+                  "conv-26:D11:7",
+                  "conv-26:D8:3",
+                  "conv-26:D10:9",
+                  "conv-26:D8:33"
                 ]
               }
             ],
@@ -1263,6 +1281,24 @@
               "conv-26:D1:9",
               "conv-26:D11:14",
               "conv-26:D6:3"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0019",
+            "category": "category_1",
+            "query": "What do Melanie's kids like?",
+            "gold": "dinosaurs, nature",
+            "prediction": "a blast",
+            "expected_doc_ids": [
+              "conv-26:D6:6",
+              "conv-26:D4:8"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D8:5",
+              "conv-26:D11:7",
+              "conv-26:D8:3",
+              "conv-26:D10:9",
+              "conv-26:D8:33"
             ]
           }
         ],
@@ -2256,19 +2292,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 19,
-      "rows_successful": 19,
+      "rows_recorded": 20,
+      "rows_successful": 20,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7368421052631579,
-      "doc_recall_all": 0.5263157894736842,
-      "ndcg_at_10": 0.4473233937032807,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.5,
+      "ndcg_at_10": 0.4249572240181167,
       "exact_match": 0.0,
-      "token_f1": 0.0353718303856808,
-      "avg_total_sec": 59.259228920686596,
+      "token_f1": 0.03360323886639676,
+      "avg_total_sec": 59.24094976990018,
       "p50_total_sec": 59.08677669381723,
       "p95_total_sec": 61.46745491074398,
-      "avg_storage_bytes": 6599341.2105263155,
+      "avg_storage_bytes": 6599039.4,
       "p95_storage_bytes": 6609689.0,
       "categories": {
         "category_2": {
@@ -2488,20 +2524,20 @@
           ]
         },
         "category_1": {
-          "expected_total": 7,
-          "rows_recorded": 7,
-          "rows_successful": 7,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.42857142857142855,
-          "doc_recall_all": 0.14285714285714285,
-          "ndcg_at_10": 0.20623520195436087,
+          "doc_recall_any": 0.375,
+          "doc_recall_all": 0.125,
+          "ndcg_at_10": 0.18045580171006576,
           "exact_match": 0.0,
-          "token_f1": 0.030075187969924814,
-          "avg_total_sec": 59.318056218858274,
+          "token_f1": 0.026315789473684213,
+          "avg_total_sec": 59.26500492962077,
           "p50_total_sec": 59.133632817771286,
           "p95_total_sec": 61.46745491074398,
-          "avg_storage_bytes": 6596815.857142857,
+          "avg_storage_bytes": 6596377.0,
           "p95_storage_bytes": 6605593.0,
           "categories": {},
           "sample_errors": [],
@@ -2574,6 +2610,24 @@
                 "conv-26:D1:9",
                 "conv-26:D11:14",
                 "conv-26:D6:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0019",
+              "category": "category_1",
+              "query": "What do Melanie's kids like?",
+              "gold": "dinosaurs, nature",
+              "prediction": "a blast",
+              "expected_doc_ids": [
+                "conv-26:D6:6",
+                "conv-26:D4:8"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D8:5",
+                "conv-26:D11:7",
+                "conv-26:D8:3",
+                "conv-26:D10:9",
+                "conv-26:D8:33"
               ]
             }
           ],
@@ -2710,6 +2764,24 @@
             "conv-26:D1:9",
             "conv-26:D11:14",
             "conv-26:D6:3"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0019",
+          "category": "category_1",
+          "query": "What do Melanie's kids like?",
+          "gold": "dinosaurs, nature",
+          "prediction": "a blast",
+          "expected_doc_ids": [
+            "conv-26:D6:6",
+            "conv-26:D4:8"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D8:5",
+            "conv-26:D11:7",
+            "conv-26:D8:3",
+            "conv-26:D10:9",
+            "conv-26:D8:33"
           ]
         }
       ],
@@ -2886,11 +2958,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.08684210526315783,
-    "doc_recall_all_delta": 0.2263157894736842,
-    "ndcg_at_10_delta": 0.05028209948415735,
-    "token_f1_delta": 0.024845514596207114,
-    "avg_storage_ratio_nova_over_stock": 0.40982470299344825,
-    "avg_latency_ratio_nova_over_stock": 1.6279796990319855
+    "doc_recall_any_delta": 0.04999999999999993,
+    "doc_recall_all_delta": 0.2,
+    "ndcg_at_10_delta": 0.027915929798993322,
+    "token_f1_delta": 0.023076923076923075,
+    "avg_storage_ratio_nova_over_stock": 0.40980596030302485,
+    "avg_latency_ratio_nova_over_stock": 1.6274775310669642
   }
 }
