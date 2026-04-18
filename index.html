@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="refresh" content="60" />
+  <title>NovaSpine Official Memory Evals</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      color: #18130e;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(199,145,51,.35), transparent 30rem),
+        radial-gradient(circle at 85% 15%, rgba(21,108,97,.24), transparent 28rem),
+        linear-gradient(135deg, #f7efdf, #d9b47b);
+      font-family: Georgia, "Palatino Linotype", serif;
+    }
+    main {
+      width: min(920px, calc(100vw - 32px));
+      padding: 30px;
+      border: 1px solid rgba(50, 36, 18, .16);
+      border-radius: 28px;
+      background: rgba(255,251,243,.82);
+      box-shadow: 0 24px 80px rgba(63,42,16,.14);
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.6rem, 10vw, 6rem);
+      line-height: .9;
+      letter-spacing: -.07em;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.45;
+      color: #3f352d;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: .95em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Official memory evals are starting.</h1>
+    <p>The full no-row-limit run is being launched for LoCoMo and LongMemEval. This page refreshes automatically and will be replaced with the live scoreboard as soon as the runner writes its first report.</p>
+    <p>Protocol: stock Claw3D + OpenClaw memory-core vs Claw3D + NovaSpine memory, isolated per official history.</p>
+  </main>
+</body>
+</html>
