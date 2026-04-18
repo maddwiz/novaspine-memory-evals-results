@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T16:09:50Z",
+  "generated_at": "2026-04-18T16:16:50Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,47 +116,47 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T16:08:51Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T16:16:13Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 30,
+    "current_case_index": 35,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0029"
+    "current_case_id": "locomo::conv-26::0034"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 30,
-        "rows_successful": 30,
+        "rows_recorded": 35,
+        "rows_successful": 35,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7,
-        "doc_recall_all": 0.43333333333333335,
-        "ndcg_at_10": 0.42838997519944033,
+        "doc_recall_any": 0.6857142857142857,
+        "doc_recall_all": 0.42857142857142855,
+        "ndcg_at_10": 0.4050805438443062,
         "exact_match": 0.0,
-        "token_f1": 0.007017543859649123,
-        "avg_total_sec": 36.46925141974352,
-        "p50_total_sec": 36.22829643916339,
+        "token_f1": 0.008055853920515575,
+        "avg_total_sec": 36.478625655160954,
+        "p50_total_sec": 36.2586517627351,
         "p95_total_sec": 37.65678389882669,
-        "avg_storage_bytes": 16105364.733333332,
+        "avg_storage_bytes": 16105033.028571429,
         "p95_storage_bytes": 16117788.0,
         "categories": {
           "category_2": {
-            "expected_total": 16,
-            "rows_recorded": 16,
-            "rows_successful": 16,
+            "expected_total": 18,
+            "rows_recorded": 18,
+            "rows_successful": 18,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6875,
-            "doc_recall_all": 0.6875,
-            "ndcg_at_10": 0.5468122779888996,
+            "doc_recall_any": 0.7222222222222222,
+            "doc_recall_all": 0.7222222222222222,
+            "ndcg_at_10": 0.5488847889663251,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 36.53601712844102,
-            "p50_total_sec": 36.35900322301313,
+            "avg_total_sec": 36.48648722914772,
+            "p50_total_sec": 36.29039521701634,
             "p95_total_sec": 37.1913905791007,
-            "avg_storage_bytes": 16106013.5,
+            "avg_storage_bytes": 16105501.222222222,
             "p95_storage_bytes": 16113694.0,
             "categories": {},
             "sample_errors": [],
@@ -401,28 +401,58 @@
                   "conv-26:D5:10",
                   "conv-26:D16:8"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0031",
+                "category": "category_2",
+                "query": "When did Melanie go camping in June?",
+                "gold": "The week before 27 June 2023",
+                "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+                "retrieved_doc_ids": [
+                  "conv-26:D10:12",
+                  "conv-26:D4:8",
+                  "conv-26:D18:19",
+                  "conv-26:D18:20",
+                  "conv-26:D18:21"
+                ]
               }
             ]
           },
           "category_3": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.25,
-            "ndcg_at_10": 0.5483566009043177,
+            "doc_recall_any": 0.8,
+            "doc_recall_all": 0.2,
+            "ndcg_at_10": 0.43868528072345414,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 36.317442043102346,
+            "token_f1": 0.014285714285714287,
+            "avg_total_sec": 36.6010008377023,
             "p50_total_sec": 36.36961173499003,
-            "p95_total_sec": 36.525347468908876,
-            "avg_storage_bytes": 16103453.5,
+            "p95_total_sec": 37.735236016102135,
+            "avg_storage_bytes": 16099767.2,
             "p95_storage_bytes": 16113692.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0030",
+                "category": "category_3",
+                "query": "Would Melanie be considered a member of the LGBTQ community?",
+                "gold": "Likely no, she does not refer to herself as part of it",
+                "prediction": "I'm so proud of you for spreading awareness and getting others involved in the LGBTQ community.",
+                "expected_doc_ids": [],
+                "retrieved_doc_ids": [
+                  "conv-26:D13:15",
+                  "conv-26:D10:5",
+                  "conv-26:D16:5",
+                  "conv-26:D3:2",
+                  "conv-26:D10:3"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "locomo::conv-26::0002",
@@ -483,20 +513,20 @@
             ]
           },
           "category_1": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6,
-            "doc_recall_all": 0.1,
-            "ndcg_at_10": 0.19092764045435442,
+            "doc_recall_any": 0.5833333333333334,
+            "doc_recall_all": 0.08333333333333333,
+            "ndcg_at_10": 0.1753722024616329,
             "exact_match": 0.0,
-            "token_f1": 0.02105263157894737,
-            "avg_total_sec": 36.423150036484,
-            "p50_total_sec": 36.165284655988216,
-            "p95_total_sec": 38.42723613977432,
-            "avg_storage_bytes": 16105091.2,
+            "token_f1": 0.01754385964912281,
+            "avg_total_sec": 36.415843634788565,
+            "p50_total_sec": 36.19489020202309,
+            "p95_total_sec": 36.73755575204268,
+            "avg_storage_bytes": 16106524.833333334,
             "p95_storage_bytes": 16117788.0,
             "categories": {},
             "sample_errors": [],
@@ -569,6 +599,24 @@
                   "conv-26:D2:3",
                   "conv-26:D7:6",
                   "conv-26:D4:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0034",
+                "category": "category_1",
+                "query": "What events has Caroline participated in to help children?",
+                "gold": "Mentoring program, school speech",
+                "prediction": "inspiring and emotional - so many people wanted to create loving homes for children in need",
+                "expected_doc_ids": [
+                  "conv-26:D9:2",
+                  "conv-26:D3:3"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D15:9",
+                  "conv-26:D15:4",
+                  "conv-26:D11:2",
+                  "conv-26:D19:6",
+                  "conv-26:D15:3"
                 ]
               }
             ],
@@ -655,6 +703,20 @@
                   "conv-26:D7:10",
                   "conv-26:D6:10",
                   "conv-26:D7:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0032",
+                "category": "category_1",
+                "query": "What LGBTQ+ events has Caroline participated in?",
+                "gold": "Pride parade, school speech, support group",
+                "prediction": "Caroline: I'm inspired seeing my work make a difference for the LGBTQ+ community.",
+                "retrieved_doc_ids": [
+                  "conv-26:D16:5",
+                  "conv-26:D14:35",
+                  "conv-26:D5:1",
+                  "conv-26:D11:4",
+                  "conv-26:D13:15"
                 ]
               }
             ]
@@ -815,6 +877,39 @@
               "conv-26:D2:3",
               "conv-26:D7:6",
               "conv-26:D4:11"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0030",
+            "category": "category_3",
+            "query": "Would Melanie be considered a member of the LGBTQ community?",
+            "gold": "Likely no, she does not refer to herself as part of it",
+            "prediction": "I'm so proud of you for spreading awareness and getting others involved in the LGBTQ community.",
+            "expected_doc_ids": [],
+            "retrieved_doc_ids": [
+              "conv-26:D13:15",
+              "conv-26:D10:5",
+              "conv-26:D16:5",
+              "conv-26:D3:2",
+              "conv-26:D10:3"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0034",
+            "category": "category_1",
+            "query": "What events has Caroline participated in to help children?",
+            "gold": "Mentoring program, school speech",
+            "prediction": "inspiring and emotional - so many people wanted to create loving homes for children in need",
+            "expected_doc_ids": [
+              "conv-26:D9:2",
+              "conv-26:D3:3"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D15:9",
+              "conv-26:D15:4",
+              "conv-26:D11:2",
+              "conv-26:D19:6",
+              "conv-26:D15:3"
             ]
           }
         ],
@@ -991,36 +1086,36 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 30,
-        "rows_successful": 30,
+        "rows_recorded": 34,
+        "rows_successful": 34,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7666666666666667,
-        "doc_recall_all": 0.6,
-        "ndcg_at_10": 0.4959174025900033,
+        "doc_recall_any": 0.7647058823529411,
+        "doc_recall_all": 0.5882352941176471,
+        "ndcg_at_10": 0.4815226291923154,
         "exact_match": 0.0,
-        "token_f1": 0.027164064006169268,
-        "avg_total_sec": 59.25176069090764,
+        "token_f1": 0.028169972442418263,
+        "avg_total_sec": 59.227148283136025,
         "p50_total_sec": 58.90923095308244,
-        "p95_total_sec": 61.90859910007566,
-        "avg_storage_bytes": 6599995.133333334,
+        "p95_total_sec": 61.46745491074398,
+        "avg_storage_bytes": 6601135.588235294,
         "p95_storage_bytes": 6617881.0,
         "categories": {
           "category_2": {
-            "expected_total": 16,
-            "rows_recorded": 16,
-            "rows_successful": 16,
+            "expected_total": 18,
+            "rows_recorded": 18,
+            "rows_successful": 18,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9375,
-            "doc_recall_all": 0.9375,
-            "ndcg_at_10": 0.6858955323393146,
+            "doc_recall_any": 0.9444444444444444,
+            "doc_recall_all": 0.9444444444444444,
+            "ndcg_at_10": 0.6725143483889161,
             "exact_match": 0.0,
-            "token_f1": 0.03777472527472527,
-            "avg_total_sec": 59.13161651787232,
-            "p50_total_sec": 58.90923095308244,
-            "p95_total_sec": 59.40958522912115,
-            "avg_storage_bytes": 6601497.0,
+            "token_f1": 0.033577533577533576,
+            "avg_total_sec": 59.14913197148902,
+            "p50_total_sec": 58.90384785598144,
+            "p95_total_sec": 59.77085025701672,
+            "avg_storage_bytes": 6602407.222222222,
             "p95_storage_bytes": 6617881.0,
             "categories": {},
             "sample_errors": [],
@@ -1215,24 +1310,40 @@
             ]
           },
           "category_3": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.25,
-            "ndcg_at_10": 0.48957032781216286,
+            "doc_recall_any": 0.8,
+            "doc_recall_all": 0.2,
+            "ndcg_at_10": 0.39165626224973027,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 58.88667419482954,
-            "p50_total_sec": 59.00811576889828,
+            "token_f1": 0.028571428571428574,
+            "avg_total_sec": 58.837711043842134,
+            "p50_total_sec": 58.72913746070117,
             "p95_total_sec": 59.176900054793805,
-            "avg_storage_bytes": 6597401.0,
-            "p95_storage_bytes": 6601497.0,
+            "avg_storage_bytes": 6600677.8,
+            "p95_storage_bytes": 6613785.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0030",
+                "category": "category_3",
+                "query": "Would Melanie be considered a member of the LGBTQ community?",
+                "gold": "Likely no, she does not refer to herself as part of it",
+                "prediction": "Last weekend I joined a mentorship program for LGBTQ youth - it's really rewarding to help the community.",
+                "expected_doc_ids": [],
+                "retrieved_doc_ids": [
+                  "conv-26:D3:2",
+                  "conv-26:D13:15",
+                  "conv-26:D10:5",
+                  "conv-26:D14:34",
+                  "conv-26:D16:5"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "locomo::conv-26::0002",
@@ -1293,20 +1404,20 @@
             ]
           },
           "category_1": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.4,
-            "doc_recall_all": 0.2,
-            "ndcg_at_10": 0.1944912249022413,
+            "doc_recall_any": 0.45454545454545453,
+            "doc_recall_all": 0.18181818181818182,
+            "ndcg_at_10": 0.20983907366268922,
             "exact_match": 0.0,
-            "token_f1": 0.02105263157894737,
-            "avg_total_sec": 59.59002596619539,
+            "token_f1": 0.019138755980861247,
+            "avg_total_sec": 59.531828265510164,
             "p50_total_sec": 58.98912156699225,
             "p95_total_sec": 62.79109865799546,
-            "avg_storage_bytes": 6598629.8,
+            "avg_storage_bytes": 6599262.818181818,
             "p95_storage_bytes": 6613785.0,
             "categories": {},
             "sample_errors": [],
@@ -1474,6 +1585,20 @@
                   "conv-26:D6:10",
                   "conv-26:D7:8"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0032",
+                "category": "category_1",
+                "query": "What LGBTQ+ events has Caroline participated in?",
+                "gold": "Pride parade, school speech, support group",
+                "prediction": "happened since we last spoke - I went to an LGBTQ conference two days ago and it was really special",
+                "retrieved_doc_ids": [
+                  "conv-26:D10:5",
+                  "conv-26:D3:2",
+                  "conv-26:D5:1",
+                  "conv-26:D3:1",
+                  "conv-26:D5:2"
+                ]
               }
             ]
           }
@@ -1601,6 +1726,21 @@
               "conv-26:D13:13",
               "conv-26:D7:7",
               "conv-26:D4:15"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0030",
+            "category": "category_3",
+            "query": "Would Melanie be considered a member of the LGBTQ community?",
+            "gold": "Likely no, she does not refer to herself as part of it",
+            "prediction": "Last weekend I joined a mentorship program for LGBTQ youth - it's really rewarding to help the community.",
+            "expected_doc_ids": [],
+            "retrieved_doc_ids": [
+              "conv-26:D3:2",
+              "conv-26:D13:15",
+              "conv-26:D10:5",
+              "conv-26:D14:34",
+              "conv-26:D16:5"
             ]
           }
         ],
@@ -1912,36 +2052,36 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 30,
-      "rows_successful": 30,
+      "rows_recorded": 35,
+      "rows_successful": 35,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7,
-      "doc_recall_all": 0.43333333333333335,
-      "ndcg_at_10": 0.42838997519944033,
+      "doc_recall_any": 0.6857142857142857,
+      "doc_recall_all": 0.42857142857142855,
+      "ndcg_at_10": 0.4050805438443062,
       "exact_match": 0.0,
-      "token_f1": 0.007017543859649123,
-      "avg_total_sec": 36.46925141974352,
-      "p50_total_sec": 36.22829643916339,
+      "token_f1": 0.008055853920515575,
+      "avg_total_sec": 36.478625655160954,
+      "p50_total_sec": 36.2586517627351,
       "p95_total_sec": 37.65678389882669,
-      "avg_storage_bytes": 16105364.733333332,
+      "avg_storage_bytes": 16105033.028571429,
       "p95_storage_bytes": 16117788.0,
       "categories": {
         "category_2": {
-          "expected_total": 16,
-          "rows_recorded": 16,
-          "rows_successful": 16,
+          "expected_total": 18,
+          "rows_recorded": 18,
+          "rows_successful": 18,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6875,
-          "doc_recall_all": 0.6875,
-          "ndcg_at_10": 0.5468122779888996,
+          "doc_recall_any": 0.7222222222222222,
+          "doc_recall_all": 0.7222222222222222,
+          "ndcg_at_10": 0.5488847889663251,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 36.53601712844102,
-          "p50_total_sec": 36.35900322301313,
+          "avg_total_sec": 36.48648722914772,
+          "p50_total_sec": 36.29039521701634,
           "p95_total_sec": 37.1913905791007,
-          "avg_storage_bytes": 16106013.5,
+          "avg_storage_bytes": 16105501.222222222,
           "p95_storage_bytes": 16113694.0,
           "categories": {},
           "sample_errors": [],
@@ -2186,28 +2326,58 @@
                 "conv-26:D5:10",
                 "conv-26:D16:8"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0031",
+              "category": "category_2",
+              "query": "When did Melanie go camping in June?",
+              "gold": "The week before 27 June 2023",
+              "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+              "retrieved_doc_ids": [
+                "conv-26:D10:12",
+                "conv-26:D4:8",
+                "conv-26:D18:19",
+                "conv-26:D18:20",
+                "conv-26:D18:21"
+              ]
             }
           ]
         },
         "category_3": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 0.25,
-          "ndcg_at_10": 0.5483566009043177,
+          "doc_recall_any": 0.8,
+          "doc_recall_all": 0.2,
+          "ndcg_at_10": 0.43868528072345414,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 36.317442043102346,
+          "token_f1": 0.014285714285714287,
+          "avg_total_sec": 36.6010008377023,
           "p50_total_sec": 36.36961173499003,
-          "p95_total_sec": 36.525347468908876,
-          "avg_storage_bytes": 16103453.5,
+          "p95_total_sec": 37.735236016102135,
+          "avg_storage_bytes": 16099767.2,
           "p95_storage_bytes": 16113692.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0030",
+              "category": "category_3",
+              "query": "Would Melanie be considered a member of the LGBTQ community?",
+              "gold": "Likely no, she does not refer to herself as part of it",
+              "prediction": "I'm so proud of you for spreading awareness and getting others involved in the LGBTQ community.",
+              "expected_doc_ids": [],
+              "retrieved_doc_ids": [
+                "conv-26:D13:15",
+                "conv-26:D10:5",
+                "conv-26:D16:5",
+                "conv-26:D3:2",
+                "conv-26:D10:3"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "locomo::conv-26::0002",
@@ -2268,20 +2438,20 @@
           ]
         },
         "category_1": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 12,
+          "rows_recorded": 12,
+          "rows_successful": 12,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6,
-          "doc_recall_all": 0.1,
-          "ndcg_at_10": 0.19092764045435442,
+          "doc_recall_any": 0.5833333333333334,
+          "doc_recall_all": 0.08333333333333333,
+          "ndcg_at_10": 0.1753722024616329,
           "exact_match": 0.0,
-          "token_f1": 0.02105263157894737,
-          "avg_total_sec": 36.423150036484,
-          "p50_total_sec": 36.165284655988216,
-          "p95_total_sec": 38.42723613977432,
-          "avg_storage_bytes": 16105091.2,
+          "token_f1": 0.01754385964912281,
+          "avg_total_sec": 36.415843634788565,
+          "p50_total_sec": 36.19489020202309,
+          "p95_total_sec": 36.73755575204268,
+          "avg_storage_bytes": 16106524.833333334,
           "p95_storage_bytes": 16117788.0,
           "categories": {},
           "sample_errors": [],
@@ -2354,6 +2524,24 @@
                 "conv-26:D2:3",
                 "conv-26:D7:6",
                 "conv-26:D4:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0034",
+              "category": "category_1",
+              "query": "What events has Caroline participated in to help children?",
+              "gold": "Mentoring program, school speech",
+              "prediction": "inspiring and emotional - so many people wanted to create loving homes for children in need",
+              "expected_doc_ids": [
+                "conv-26:D9:2",
+                "conv-26:D3:3"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D15:9",
+                "conv-26:D15:4",
+                "conv-26:D11:2",
+                "conv-26:D19:6",
+                "conv-26:D15:3"
               ]
             }
           ],
@@ -2440,6 +2628,20 @@
                 "conv-26:D7:10",
                 "conv-26:D6:10",
                 "conv-26:D7:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0032",
+              "category": "category_1",
+              "query": "What LGBTQ+ events has Caroline participated in?",
+              "gold": "Pride parade, school speech, support group",
+              "prediction": "Caroline: I'm inspired seeing my work make a difference for the LGBTQ+ community.",
+              "retrieved_doc_ids": [
+                "conv-26:D16:5",
+                "conv-26:D14:35",
+                "conv-26:D5:1",
+                "conv-26:D11:4",
+                "conv-26:D13:15"
               ]
             }
           ]
@@ -2600,6 +2802,39 @@
             "conv-26:D2:3",
             "conv-26:D7:6",
             "conv-26:D4:11"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0030",
+          "category": "category_3",
+          "query": "Would Melanie be considered a member of the LGBTQ community?",
+          "gold": "Likely no, she does not refer to herself as part of it",
+          "prediction": "I'm so proud of you for spreading awareness and getting others involved in the LGBTQ community.",
+          "expected_doc_ids": [],
+          "retrieved_doc_ids": [
+            "conv-26:D13:15",
+            "conv-26:D10:5",
+            "conv-26:D16:5",
+            "conv-26:D3:2",
+            "conv-26:D10:3"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0034",
+          "category": "category_1",
+          "query": "What events has Caroline participated in to help children?",
+          "gold": "Mentoring program, school speech",
+          "prediction": "inspiring and emotional - so many people wanted to create loving homes for children in need",
+          "expected_doc_ids": [
+            "conv-26:D9:2",
+            "conv-26:D3:3"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D15:9",
+            "conv-26:D15:4",
+            "conv-26:D11:2",
+            "conv-26:D19:6",
+            "conv-26:D15:3"
           ]
         }
       ],
@@ -2776,36 +3011,36 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 30,
-      "rows_successful": 30,
+      "rows_recorded": 34,
+      "rows_successful": 34,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7666666666666667,
-      "doc_recall_all": 0.6,
-      "ndcg_at_10": 0.4959174025900033,
+      "doc_recall_any": 0.7647058823529411,
+      "doc_recall_all": 0.5882352941176471,
+      "ndcg_at_10": 0.4815226291923154,
       "exact_match": 0.0,
-      "token_f1": 0.027164064006169268,
-      "avg_total_sec": 59.25176069090764,
+      "token_f1": 0.028169972442418263,
+      "avg_total_sec": 59.227148283136025,
       "p50_total_sec": 58.90923095308244,
-      "p95_total_sec": 61.90859910007566,
-      "avg_storage_bytes": 6599995.133333334,
+      "p95_total_sec": 61.46745491074398,
+      "avg_storage_bytes": 6601135.588235294,
       "p95_storage_bytes": 6617881.0,
       "categories": {
         "category_2": {
-          "expected_total": 16,
-          "rows_recorded": 16,
-          "rows_successful": 16,
+          "expected_total": 18,
+          "rows_recorded": 18,
+          "rows_successful": 18,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9375,
-          "doc_recall_all": 0.9375,
-          "ndcg_at_10": 0.6858955323393146,
+          "doc_recall_any": 0.9444444444444444,
+          "doc_recall_all": 0.9444444444444444,
+          "ndcg_at_10": 0.6725143483889161,
           "exact_match": 0.0,
-          "token_f1": 0.03777472527472527,
-          "avg_total_sec": 59.13161651787232,
-          "p50_total_sec": 58.90923095308244,
-          "p95_total_sec": 59.40958522912115,
-          "avg_storage_bytes": 6601497.0,
+          "token_f1": 0.033577533577533576,
+          "avg_total_sec": 59.14913197148902,
+          "p50_total_sec": 58.90384785598144,
+          "p95_total_sec": 59.77085025701672,
+          "avg_storage_bytes": 6602407.222222222,
           "p95_storage_bytes": 6617881.0,
           "categories": {},
           "sample_errors": [],
@@ -3000,24 +3235,40 @@
           ]
         },
         "category_3": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 0.25,
-          "ndcg_at_10": 0.48957032781216286,
+          "doc_recall_any": 0.8,
+          "doc_recall_all": 0.2,
+          "ndcg_at_10": 0.39165626224973027,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 58.88667419482954,
-          "p50_total_sec": 59.00811576889828,
+          "token_f1": 0.028571428571428574,
+          "avg_total_sec": 58.837711043842134,
+          "p50_total_sec": 58.72913746070117,
           "p95_total_sec": 59.176900054793805,
-          "avg_storage_bytes": 6597401.0,
-          "p95_storage_bytes": 6601497.0,
+          "avg_storage_bytes": 6600677.8,
+          "p95_storage_bytes": 6613785.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0030",
+              "category": "category_3",
+              "query": "Would Melanie be considered a member of the LGBTQ community?",
+              "gold": "Likely no, she does not refer to herself as part of it",
+              "prediction": "Last weekend I joined a mentorship program for LGBTQ youth - it's really rewarding to help the community.",
+              "expected_doc_ids": [],
+              "retrieved_doc_ids": [
+                "conv-26:D3:2",
+                "conv-26:D13:15",
+                "conv-26:D10:5",
+                "conv-26:D14:34",
+                "conv-26:D16:5"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "locomo::conv-26::0002",
@@ -3078,20 +3329,20 @@
           ]
         },
         "category_1": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 11,
+          "rows_recorded": 11,
+          "rows_successful": 11,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.4,
-          "doc_recall_all": 0.2,
-          "ndcg_at_10": 0.1944912249022413,
+          "doc_recall_any": 0.45454545454545453,
+          "doc_recall_all": 0.18181818181818182,
+          "ndcg_at_10": 0.20983907366268922,
           "exact_match": 0.0,
-          "token_f1": 0.02105263157894737,
-          "avg_total_sec": 59.59002596619539,
+          "token_f1": 0.019138755980861247,
+          "avg_total_sec": 59.531828265510164,
           "p50_total_sec": 58.98912156699225,
           "p95_total_sec": 62.79109865799546,
-          "avg_storage_bytes": 6598629.8,
+          "avg_storage_bytes": 6599262.818181818,
           "p95_storage_bytes": 6613785.0,
           "categories": {},
           "sample_errors": [],
@@ -3259,6 +3510,20 @@
                 "conv-26:D6:10",
                 "conv-26:D7:8"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0032",
+              "category": "category_1",
+              "query": "What LGBTQ+ events has Caroline participated in?",
+              "gold": "Pride parade, school speech, support group",
+              "prediction": "happened since we last spoke - I went to an LGBTQ conference two days ago and it was really special",
+              "retrieved_doc_ids": [
+                "conv-26:D10:5",
+                "conv-26:D3:2",
+                "conv-26:D5:1",
+                "conv-26:D3:1",
+                "conv-26:D5:2"
+              ]
             }
           ]
         }
@@ -3386,6 +3651,21 @@
             "conv-26:D13:13",
             "conv-26:D7:7",
             "conv-26:D4:15"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0030",
+          "category": "category_3",
+          "query": "Would Melanie be considered a member of the LGBTQ community?",
+          "gold": "Likely no, she does not refer to herself as part of it",
+          "prediction": "Last weekend I joined a mentorship program for LGBTQ youth - it's really rewarding to help the community.",
+          "expected_doc_ids": [],
+          "retrieved_doc_ids": [
+            "conv-26:D3:2",
+            "conv-26:D13:15",
+            "conv-26:D10:5",
+            "conv-26:D14:34",
+            "conv-26:D16:5"
           ]
         }
       ],
@@ -3562,11 +3842,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.06666666666666676,
-    "doc_recall_all_delta": 0.16666666666666663,
-    "ndcg_at_10_delta": 0.06752742739056294,
-    "token_f1_delta": 0.020146520146520144,
-    "avg_storage_ratio_nova_over_stock": 0.4098010347864584,
-    "avg_latency_ratio_nova_over_stock": 1.6247046041320785
+    "doc_recall_any_delta": 0.0789915966386554,
+    "doc_recall_all_delta": 0.15966386554621853,
+    "ndcg_at_10_delta": 0.07644208534800923,
+    "token_f1_delta": 0.020114118521902688,
+    "avg_storage_ratio_nova_over_stock": 0.40988028875969573,
+    "avg_latency_ratio_nova_over_stock": 1.6236123817553043
   }
 }
