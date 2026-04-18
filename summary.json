@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T17:53:04Z",
+  "generated_at": "2026-04-18T17:54:05Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T17:52:28Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T17:53:05Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 95,
     "current_case_total": 1986,
@@ -1676,19 +1676,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 94,
-        "rows_successful": 94,
+        "rows_recorded": 95,
+        "rows_successful": 95,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7127659574468085,
-        "doc_recall_all": 0.5425531914893617,
-        "ndcg_at_10": 0.4675945476682584,
+        "doc_recall_any": 0.7157894736842105,
+        "doc_recall_all": 0.5473684210526316,
+        "ndcg_at_10": 0.4731988155875399,
         "exact_match": 0.0,
-        "token_f1": 0.032410299763178475,
-        "avg_total_sec": 59.35514957260618,
-        "p50_total_sec": 58.94985125865787,
+        "token_f1": 0.032069138713039756,
+        "avg_total_sec": 59.356503515896435,
+        "p50_total_sec": 58.95353631814942,
         "p95_total_sec": 61.90859910007566,
-        "avg_storage_bytes": 6599710.44680851,
+        "avg_storage_bytes": 6599686.136842106,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -2559,20 +2559,20 @@
             ]
           },
           "category_4": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5,
-            "doc_recall_all": 0.5,
-            "ndcg_at_10": 0.35264221281144786,
+            "doc_recall_any": 0.5384615384615384,
+            "doc_recall_all": 0.5384615384615384,
+            "ndcg_at_10": 0.4024389656721057,
             "exact_match": 0.0,
-            "token_f1": 0.08176208370173886,
-            "avg_total_sec": 59.52265988542543,
+            "token_f1": 0.07547269264775895,
+            "avg_total_sec": 59.51966867771429,
             "p50_total_sec": 59.23458360787481,
             "p95_total_sec": 61.38598211994395,
-            "avg_storage_bytes": 6599449.0,
+            "avg_storage_bytes": 6599291.461538462,
             "p95_storage_bytes": 6613785.0,
             "categories": {},
             "sample_errors": [],
@@ -2763,6 +2763,20 @@
                   "conv-26:D11:2",
                   "conv-26:D11:1",
                   "conv-26:D8:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0094",
+                "category": "category_4",
+                "query": "What is Melanie's hand-painted bowl a reminder of?",
+                "gold": "art and self-expression",
+                "prediction": "I've got some other stuff with sentimental value, like my hand-painted bowl.",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:5",
+                  "conv-26:D12:5",
+                  "conv-26:D5:7",
+                  "conv-26:D5:8",
+                  "conv-26:D16:9"
                 ]
               }
             ]
@@ -4838,19 +4852,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 94,
-      "rows_successful": 94,
+      "rows_recorded": 95,
+      "rows_successful": 95,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7127659574468085,
-      "doc_recall_all": 0.5425531914893617,
-      "ndcg_at_10": 0.4675945476682584,
+      "doc_recall_any": 0.7157894736842105,
+      "doc_recall_all": 0.5473684210526316,
+      "ndcg_at_10": 0.4731988155875399,
       "exact_match": 0.0,
-      "token_f1": 0.032410299763178475,
-      "avg_total_sec": 59.35514957260618,
-      "p50_total_sec": 58.94985125865787,
+      "token_f1": 0.032069138713039756,
+      "avg_total_sec": 59.356503515896435,
+      "p50_total_sec": 58.95353631814942,
       "p95_total_sec": 61.90859910007566,
-      "avg_storage_bytes": 6599710.44680851,
+      "avg_storage_bytes": 6599686.136842106,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -5721,20 +5735,20 @@
           ]
         },
         "category_4": {
-          "expected_total": 12,
-          "rows_recorded": 12,
-          "rows_successful": 12,
+          "expected_total": 13,
+          "rows_recorded": 13,
+          "rows_successful": 13,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5,
-          "doc_recall_all": 0.5,
-          "ndcg_at_10": 0.35264221281144786,
+          "doc_recall_any": 0.5384615384615384,
+          "doc_recall_all": 0.5384615384615384,
+          "ndcg_at_10": 0.4024389656721057,
           "exact_match": 0.0,
-          "token_f1": 0.08176208370173886,
-          "avg_total_sec": 59.52265988542543,
+          "token_f1": 0.07547269264775895,
+          "avg_total_sec": 59.51966867771429,
           "p50_total_sec": 59.23458360787481,
           "p95_total_sec": 61.38598211994395,
-          "avg_storage_bytes": 6599449.0,
+          "avg_storage_bytes": 6599291.461538462,
           "p95_storage_bytes": 6613785.0,
           "categories": {},
           "sample_errors": [],
@@ -5925,6 +5939,20 @@
                 "conv-26:D11:2",
                 "conv-26:D11:1",
                 "conv-26:D8:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0094",
+              "category": "category_4",
+              "query": "What is Melanie's hand-painted bowl a reminder of?",
+              "gold": "art and self-expression",
+              "prediction": "I've got some other stuff with sentimental value, like my hand-painted bowl.",
+              "retrieved_doc_ids": [
+                "conv-26:D4:5",
+                "conv-26:D12:5",
+                "conv-26:D5:7",
+                "conv-26:D5:8",
+                "conv-26:D16:9"
               ]
             }
           ]
@@ -6316,11 +6344,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.018029115341545277,
-    "doc_recall_all_delta": 0.04781634938409851,
-    "ndcg_at_10_delta": 0.05338005269389662,
-    "token_f1_delta": 0.006755692361695206,
-    "avg_storage_ratio_nova_over_stock": 0.40977219799843606,
-    "avg_latency_ratio_nova_over_stock": 1.6266627068542092
+    "doc_recall_any_delta": 0.021052631578947323,
+    "doc_recall_all_delta": 0.052631578947368474,
+    "ndcg_at_10_delta": 0.0589843206131781,
+    "token_f1_delta": 0.0064145313115564866,
+    "avg_storage_ratio_nova_over_stock": 0.40977068860670635,
+    "avg_latency_ratio_nova_over_stock": 1.626699812464646
   }
 }
