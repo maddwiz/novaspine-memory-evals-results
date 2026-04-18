@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T16:01:51Z",
+  "generated_at": "2026-04-18T16:08:50Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,48 +116,48 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T16:00:48Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T16:08:14Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 25,
+    "current_case_index": 30,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0024"
+    "current_case_id": "locomo::conv-26::0029"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 25,
-        "rows_successful": 25,
+        "rows_recorded": 30,
+        "rows_successful": 30,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.64,
-        "doc_recall_all": 0.36,
-        "ndcg_at_10": 0.40160824632460007,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.43333333333333335,
+        "ndcg_at_10": 0.42838997519944033,
         "exact_match": 0.0,
-        "token_f1": 0.008421052631578947,
-        "avg_total_sec": 36.45282083749771,
-        "p50_total_sec": 36.198382324539125,
+        "token_f1": 0.007017543859649123,
+        "avg_total_sec": 36.46925141974352,
+        "p50_total_sec": 36.22829643916339,
         "p95_total_sec": 37.65678389882669,
-        "avg_storage_bytes": 16103862.8,
+        "avg_storage_bytes": 16105364.733333332,
         "p95_storage_bytes": 16117788.0,
         "categories": {
           "category_2": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 16,
+            "rows_recorded": 16,
+            "rows_successful": 16,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5833333333333334,
-            "doc_recall_all": 0.5833333333333334,
-            "ndcg_at_10": 0.5109108127976215,
+            "doc_recall_any": 0.6875,
+            "doc_recall_all": 0.6875,
+            "ndcg_at_10": 0.5468122779888996,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 36.51573867793195,
+            "avg_total_sec": 36.53601712844102,
             "p50_total_sec": 36.35900322301313,
             "p95_total_sec": 37.1913905791007,
-            "avg_storage_bytes": 16103794.666666666,
-            "p95_storage_bytes": 16113692.0,
+            "avg_storage_bytes": 16106013.5,
+            "p95_storage_bytes": 16113694.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -345,25 +345,81 @@
                   "conv-26:D14:24",
                   "conv-26:D16:8"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0025",
+                "category": "category_2",
+                "query": "When did Caroline go to the LGBTQ conference?",
+                "gold": "10 July 2023",
+                "prediction": "So much has happened since we last spoke - I went to an LGBTQ conference two days ago and it was really special.",
+                "retrieved_doc_ids": [
+                  "conv-26:D11:6",
+                  "conv-26:D7:1",
+                  "conv-26:D16:5",
+                  "conv-26:D5:13",
+                  "conv-26:D14:35"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0026",
+                "category": "category_2",
+                "query": "When did Melanie read the book \"nothing is impossible\"?",
+                "gold": "2022",
+                "prediction": "This book I read last year reminds me to always pursue my dreams, just like you are doing!🌟",
+                "retrieved_doc_ids": [
+                  "conv-26:D7:9",
+                  "conv-26:D7:8",
+                  "conv-26:D6:10",
+                  "conv-26:D10:20",
+                  "conv-26:D7:10"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0028",
+                "category": "category_2",
+                "query": "When did Caroline go to the adoption meeting?",
+                "gold": "The friday before 15 July 2023",
+                "prediction": "Caroline: Researching adoption agencies — it's been a dream to have a family and give a loving home to kids who need it.",
+                "retrieved_doc_ids": [
+                  "conv-26:D8:9",
+                  "conv-26:D13:1",
+                  "conv-26:D19:3",
+                  "conv-26:D2:10",
+                  "conv-26:D17:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0029",
+                "category": "category_2",
+                "query": "When did Melanie go to the pottery workshop?",
+                "gold": "The Friday before 15 July 2023",
+                "prediction": "Melanie: Seven years now, and I've finally found my real muses: painting and pottery.",
+                "retrieved_doc_ids": [
+                  "conv-26:D5:4",
+                  "conv-26:D14:4",
+                  "conv-26:D5:6",
+                  "conv-26:D5:10",
+                  "conv-26:D16:8"
+                ]
               }
             ]
           },
           "category_3": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.3333333333333333,
-            "ndcg_at_10": 0.6666666666666666,
+            "doc_recall_all": 0.25,
+            "ndcg_at_10": 0.5483566009043177,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 36.300052145806454,
-            "p50_total_sec": 36.198382324539125,
+            "avg_total_sec": 36.317442043102346,
+            "p50_total_sec": 36.36961173499003,
             "p95_total_sec": 36.525347468908876,
-            "avg_storage_bytes": 16100040.666666666,
-            "p95_storage_bytes": 16109598.0,
+            "avg_storage_bytes": 16103453.5,
+            "p95_storage_bytes": 16113692.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -408,6 +464,20 @@
                   "conv-26:D7:9",
                   "conv-26:D6:10",
                   "conv-26:D7:10"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0027",
+                "category": "category_3",
+                "query": "Would Caroline pursue writing as a career option?",
+                "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+                "prediction": "Caroline: Lately, I've been looking into counseling and mental health as a career.",
+                "retrieved_doc_ids": [
+                  "conv-26:D7:7",
+                  "conv-26:D4:11",
+                  "conv-26:D13:11",
+                  "conv-26:D12:6",
+                  "conv-26:D16:7"
                 ]
               }
             ]
@@ -921,36 +991,36 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 25,
-        "rows_successful": 25,
+        "rows_recorded": 29,
+        "rows_successful": 29,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.72,
-        "doc_recall_all": 0.56,
-        "ndcg_at_10": 0.45724347495110457,
+        "doc_recall_any": 0.7586206896551724,
+        "doc_recall_all": 0.5862068965517241,
+        "ndcg_at_10": 0.4912618042802979,
         "exact_match": 0.0,
-        "token_f1": 0.02688259109311741,
-        "avg_total_sec": 59.32502110825852,
-        "p50_total_sec": 59.00811576889828,
+        "token_f1": 0.028100755868450965,
+        "avg_total_sec": 59.26678524418445,
+        "p50_total_sec": 58.98912156699225,
         "p95_total_sec": 61.90859910007566,
-        "avg_storage_bytes": 6600186.28,
+        "avg_storage_bytes": 6600225.827586207,
         "p95_storage_bytes": 6617881.0,
         "categories": {
           "category_2": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9166666666666666,
-            "doc_recall_all": 0.9166666666666666,
-            "ndcg_at_10": 0.6427057508571765,
+            "doc_recall_any": 0.9333333333333333,
+            "doc_recall_all": 0.9333333333333333,
+            "ndcg_at_10": 0.6895599175905052,
             "exact_match": 0.0,
-            "token_f1": 0.03846153846153846,
-            "avg_total_sec": 59.20064239382433,
-            "p50_total_sec": 59.08677669381723,
+            "token_f1": 0.04029304029304029,
+            "avg_total_sec": 59.15265437600513,
+            "p50_total_sec": 58.90923095308244,
             "p95_total_sec": 59.40958522912115,
-            "avg_storage_bytes": 6602521.0,
+            "avg_storage_bytes": 6602043.133333334,
             "p95_storage_bytes": 6617881.0,
             "categories": {},
             "sample_errors": [],
@@ -1127,25 +1197,39 @@
                   "conv-26:D6:11",
                   "conv-26:D4:5"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0025",
+                "category": "category_2",
+                "query": "When did Caroline go to the LGBTQ conference?",
+                "gold": "10 July 2023",
+                "prediction": "So much has happened since we last spoke - I went to an LGBTQ conference two days ago and it was really special.",
+                "retrieved_doc_ids": [
+                  "conv-26:D5:13",
+                  "conv-26:D7:1",
+                  "conv-26:D3:1",
+                  "conv-26:D11:6",
+                  "conv-26:D16:5"
+                ]
               }
             ]
           },
           "category_3": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.3333333333333333,
-            "ndcg_at_10": 0.5912352048230277,
+            "doc_recall_all": 0.25,
+            "ndcg_at_10": 0.48957032781216286,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 58.93918643953899,
+            "avg_total_sec": 58.88667419482954,
             "p50_total_sec": 59.00811576889828,
             "p95_total_sec": 59.176900054793805,
-            "avg_storage_bytes": 6596035.666666667,
-            "p95_storage_bytes": 6597401.0,
+            "avg_storage_bytes": 6597401.0,
+            "p95_storage_bytes": 6601497.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -1190,6 +1274,20 @@
                   "conv-26:D7:10",
                   "conv-26:D6:8",
                   "conv-26:D7:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0027",
+                "category": "category_3",
+                "query": "Would Caroline pursue writing as a career option?",
+                "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+                "prediction": "Caroline: Lately, I've been looking into counseling and mental health as a career.",
+                "retrieved_doc_ids": [
+                  "conv-26:D7:7",
+                  "conv-26:D4:11",
+                  "conv-26:D6:10",
+                  "conv-26:D13:11",
+                  "conv-26:D12:6"
                 ]
               }
             ]
@@ -1814,37 +1912,37 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 25,
-      "rows_successful": 25,
+      "rows_recorded": 30,
+      "rows_successful": 30,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.64,
-      "doc_recall_all": 0.36,
-      "ndcg_at_10": 0.40160824632460007,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.43333333333333335,
+      "ndcg_at_10": 0.42838997519944033,
       "exact_match": 0.0,
-      "token_f1": 0.008421052631578947,
-      "avg_total_sec": 36.45282083749771,
-      "p50_total_sec": 36.198382324539125,
+      "token_f1": 0.007017543859649123,
+      "avg_total_sec": 36.46925141974352,
+      "p50_total_sec": 36.22829643916339,
       "p95_total_sec": 37.65678389882669,
-      "avg_storage_bytes": 16103862.8,
+      "avg_storage_bytes": 16105364.733333332,
       "p95_storage_bytes": 16117788.0,
       "categories": {
         "category_2": {
-          "expected_total": 12,
-          "rows_recorded": 12,
-          "rows_successful": 12,
+          "expected_total": 16,
+          "rows_recorded": 16,
+          "rows_successful": 16,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5833333333333334,
-          "doc_recall_all": 0.5833333333333334,
-          "ndcg_at_10": 0.5109108127976215,
+          "doc_recall_any": 0.6875,
+          "doc_recall_all": 0.6875,
+          "ndcg_at_10": 0.5468122779888996,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 36.51573867793195,
+          "avg_total_sec": 36.53601712844102,
           "p50_total_sec": 36.35900322301313,
           "p95_total_sec": 37.1913905791007,
-          "avg_storage_bytes": 16103794.666666666,
-          "p95_storage_bytes": 16113692.0,
+          "avg_storage_bytes": 16106013.5,
+          "p95_storage_bytes": 16113694.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -2032,25 +2130,81 @@
                 "conv-26:D14:24",
                 "conv-26:D16:8"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0025",
+              "category": "category_2",
+              "query": "When did Caroline go to the LGBTQ conference?",
+              "gold": "10 July 2023",
+              "prediction": "So much has happened since we last spoke - I went to an LGBTQ conference two days ago and it was really special.",
+              "retrieved_doc_ids": [
+                "conv-26:D11:6",
+                "conv-26:D7:1",
+                "conv-26:D16:5",
+                "conv-26:D5:13",
+                "conv-26:D14:35"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0026",
+              "category": "category_2",
+              "query": "When did Melanie read the book \"nothing is impossible\"?",
+              "gold": "2022",
+              "prediction": "This book I read last year reminds me to always pursue my dreams, just like you are doing!🌟",
+              "retrieved_doc_ids": [
+                "conv-26:D7:9",
+                "conv-26:D7:8",
+                "conv-26:D6:10",
+                "conv-26:D10:20",
+                "conv-26:D7:10"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0028",
+              "category": "category_2",
+              "query": "When did Caroline go to the adoption meeting?",
+              "gold": "The friday before 15 July 2023",
+              "prediction": "Caroline: Researching adoption agencies — it's been a dream to have a family and give a loving home to kids who need it.",
+              "retrieved_doc_ids": [
+                "conv-26:D8:9",
+                "conv-26:D13:1",
+                "conv-26:D19:3",
+                "conv-26:D2:10",
+                "conv-26:D17:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0029",
+              "category": "category_2",
+              "query": "When did Melanie go to the pottery workshop?",
+              "gold": "The Friday before 15 July 2023",
+              "prediction": "Melanie: Seven years now, and I've finally found my real muses: painting and pottery.",
+              "retrieved_doc_ids": [
+                "conv-26:D5:4",
+                "conv-26:D14:4",
+                "conv-26:D5:6",
+                "conv-26:D5:10",
+                "conv-26:D16:8"
+              ]
             }
           ]
         },
         "category_3": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.3333333333333333,
-          "ndcg_at_10": 0.6666666666666666,
+          "doc_recall_all": 0.25,
+          "ndcg_at_10": 0.5483566009043177,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 36.300052145806454,
-          "p50_total_sec": 36.198382324539125,
+          "avg_total_sec": 36.317442043102346,
+          "p50_total_sec": 36.36961173499003,
           "p95_total_sec": 36.525347468908876,
-          "avg_storage_bytes": 16100040.666666666,
-          "p95_storage_bytes": 16109598.0,
+          "avg_storage_bytes": 16103453.5,
+          "p95_storage_bytes": 16113692.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -2095,6 +2249,20 @@
                 "conv-26:D7:9",
                 "conv-26:D6:10",
                 "conv-26:D7:10"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0027",
+              "category": "category_3",
+              "query": "Would Caroline pursue writing as a career option?",
+              "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+              "prediction": "Caroline: Lately, I've been looking into counseling and mental health as a career.",
+              "retrieved_doc_ids": [
+                "conv-26:D7:7",
+                "conv-26:D4:11",
+                "conv-26:D13:11",
+                "conv-26:D12:6",
+                "conv-26:D16:7"
               ]
             }
           ]
@@ -2608,36 +2776,36 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 25,
-      "rows_successful": 25,
+      "rows_recorded": 29,
+      "rows_successful": 29,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.72,
-      "doc_recall_all": 0.56,
-      "ndcg_at_10": 0.45724347495110457,
+      "doc_recall_any": 0.7586206896551724,
+      "doc_recall_all": 0.5862068965517241,
+      "ndcg_at_10": 0.4912618042802979,
       "exact_match": 0.0,
-      "token_f1": 0.02688259109311741,
-      "avg_total_sec": 59.32502110825852,
-      "p50_total_sec": 59.00811576889828,
+      "token_f1": 0.028100755868450965,
+      "avg_total_sec": 59.26678524418445,
+      "p50_total_sec": 58.98912156699225,
       "p95_total_sec": 61.90859910007566,
-      "avg_storage_bytes": 6600186.28,
+      "avg_storage_bytes": 6600225.827586207,
       "p95_storage_bytes": 6617881.0,
       "categories": {
         "category_2": {
-          "expected_total": 12,
-          "rows_recorded": 12,
-          "rows_successful": 12,
+          "expected_total": 15,
+          "rows_recorded": 15,
+          "rows_successful": 15,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9166666666666666,
-          "doc_recall_all": 0.9166666666666666,
-          "ndcg_at_10": 0.6427057508571765,
+          "doc_recall_any": 0.9333333333333333,
+          "doc_recall_all": 0.9333333333333333,
+          "ndcg_at_10": 0.6895599175905052,
           "exact_match": 0.0,
-          "token_f1": 0.03846153846153846,
-          "avg_total_sec": 59.20064239382433,
-          "p50_total_sec": 59.08677669381723,
+          "token_f1": 0.04029304029304029,
+          "avg_total_sec": 59.15265437600513,
+          "p50_total_sec": 58.90923095308244,
           "p95_total_sec": 59.40958522912115,
-          "avg_storage_bytes": 6602521.0,
+          "avg_storage_bytes": 6602043.133333334,
           "p95_storage_bytes": 6617881.0,
           "categories": {},
           "sample_errors": [],
@@ -2814,25 +2982,39 @@
                 "conv-26:D6:11",
                 "conv-26:D4:5"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0025",
+              "category": "category_2",
+              "query": "When did Caroline go to the LGBTQ conference?",
+              "gold": "10 July 2023",
+              "prediction": "So much has happened since we last spoke - I went to an LGBTQ conference two days ago and it was really special.",
+              "retrieved_doc_ids": [
+                "conv-26:D5:13",
+                "conv-26:D7:1",
+                "conv-26:D3:1",
+                "conv-26:D11:6",
+                "conv-26:D16:5"
+              ]
             }
           ]
         },
         "category_3": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.3333333333333333,
-          "ndcg_at_10": 0.5912352048230277,
+          "doc_recall_all": 0.25,
+          "ndcg_at_10": 0.48957032781216286,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 58.93918643953899,
+          "avg_total_sec": 58.88667419482954,
           "p50_total_sec": 59.00811576889828,
           "p95_total_sec": 59.176900054793805,
-          "avg_storage_bytes": 6596035.666666667,
-          "p95_storage_bytes": 6597401.0,
+          "avg_storage_bytes": 6597401.0,
+          "p95_storage_bytes": 6601497.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -2877,6 +3059,20 @@
                 "conv-26:D7:10",
                 "conv-26:D6:8",
                 "conv-26:D7:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0027",
+              "category": "category_3",
+              "query": "Would Caroline pursue writing as a career option?",
+              "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+              "prediction": "Caroline: Lately, I've been looking into counseling and mental health as a career.",
+              "retrieved_doc_ids": [
+                "conv-26:D7:7",
+                "conv-26:D4:11",
+                "conv-26:D6:10",
+                "conv-26:D13:11",
+                "conv-26:D12:6"
               ]
             }
           ]
@@ -3366,11 +3562,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.07999999999999996,
-    "doc_recall_all_delta": 0.20000000000000007,
-    "ndcg_at_10_delta": 0.055635228626504496,
-    "token_f1_delta": 0.018461538461538463,
-    "avg_storage_ratio_nova_over_stock": 0.40985112466308393,
-    "avg_latency_ratio_nova_over_stock": 1.6274466487167707
+    "doc_recall_any_delta": 0.05862068965517242,
+    "doc_recall_all_delta": 0.15287356321839074,
+    "ndcg_at_10_delta": 0.06287182908085759,
+    "token_f1_delta": 0.02108321200880184,
+    "avg_storage_ratio_nova_over_stock": 0.4098153588490731,
+    "avg_latency_ratio_nova_over_stock": 1.6251165827905896
   }
 }
