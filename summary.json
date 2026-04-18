@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T17:45:05Z",
+  "generated_at": "2026-04-18T17:46:05Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T17:44:29Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T17:45:06Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 90,
     "current_case_total": 1986,
@@ -1603,19 +1603,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 89,
-        "rows_successful": 89,
+        "rows_recorded": 90,
+        "rows_successful": 90,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7191011235955056,
-        "doc_recall_all": 0.5393258426966292,
-        "ndcg_at_10": 0.4665529317162123,
+        "doc_recall_any": 0.7111111111111111,
+        "doc_recall_all": 0.5333333333333333,
+        "ndcg_at_10": 0.4613690102526989,
         "exact_match": 0.0,
-        "token_f1": 0.02548002274036655,
-        "avg_total_sec": 59.36823037252604,
-        "p50_total_sec": 58.94985125865787,
+        "token_f1": 0.026906313085986407,
+        "avg_total_sec": 59.36210147784505,
+        "p50_total_sec": 58.931759282015264,
         "p95_total_sec": 62.0223612813279,
-        "avg_storage_bytes": 6599379.9662921345,
+        "avg_storage_bytes": 6599266.955555555,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -2486,20 +2486,20 @@
             ]
           },
           "category_4": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.42857142857142855,
-            "doc_recall_all": 0.42857142857142855,
-            "ndcg_at_10": 0.25728999938056873,
+            "doc_recall_any": 0.375,
+            "doc_recall_all": 0.375,
+            "ndcg_at_10": 0.22512874945799766,
             "exact_match": 0.0,
-            "token_f1": 0.02889983579638752,
-            "avg_total_sec": 59.80862313642034,
+            "token_f1": 0.04451812555260831,
+            "avg_total_sec": 59.68462397577241,
             "p50_total_sec": 58.931759282015264,
             "p95_total_sec": 62.44071220420301,
-            "avg_storage_bytes": 6595060.428571428,
+            "avg_storage_bytes": 6594329.0,
             "p95_storage_bytes": 6609689.0,
             "categories": {},
             "sample_errors": [],
@@ -2570,6 +2570,23 @@
                   "conv-26:D17:7",
                   "conv-26:D13:1",
                   "conv-26:D17:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0089",
+                "category": "category_4",
+                "query": "What does Melanie think about Caroline's decision to adopt?",
+                "gold": "she thinks Caroline is doing something amazing and will be an awesome mom",
+                "prediction": "Melanie: Yeah, it's normal to be both excited and nervous with a big decision.",
+                "expected_doc_ids": [
+                  "conv-26:D2:15"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D13:1",
+                  "conv-26:D13:16",
+                  "conv-26:D19:2",
+                  "conv-26:D17:3",
+                  "conv-26:D8:9"
                 ]
               }
             ],
@@ -4616,19 +4633,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 89,
-      "rows_successful": 89,
+      "rows_recorded": 90,
+      "rows_successful": 90,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7191011235955056,
-      "doc_recall_all": 0.5393258426966292,
-      "ndcg_at_10": 0.4665529317162123,
+      "doc_recall_any": 0.7111111111111111,
+      "doc_recall_all": 0.5333333333333333,
+      "ndcg_at_10": 0.4613690102526989,
       "exact_match": 0.0,
-      "token_f1": 0.02548002274036655,
-      "avg_total_sec": 59.36823037252604,
-      "p50_total_sec": 58.94985125865787,
+      "token_f1": 0.026906313085986407,
+      "avg_total_sec": 59.36210147784505,
+      "p50_total_sec": 58.931759282015264,
       "p95_total_sec": 62.0223612813279,
-      "avg_storage_bytes": 6599379.9662921345,
+      "avg_storage_bytes": 6599266.955555555,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -5499,20 +5516,20 @@
           ]
         },
         "category_4": {
-          "expected_total": 7,
-          "rows_recorded": 7,
-          "rows_successful": 7,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.42857142857142855,
-          "doc_recall_all": 0.42857142857142855,
-          "ndcg_at_10": 0.25728999938056873,
+          "doc_recall_any": 0.375,
+          "doc_recall_all": 0.375,
+          "ndcg_at_10": 0.22512874945799766,
           "exact_match": 0.0,
-          "token_f1": 0.02889983579638752,
-          "avg_total_sec": 59.80862313642034,
+          "token_f1": 0.04451812555260831,
+          "avg_total_sec": 59.68462397577241,
           "p50_total_sec": 58.931759282015264,
           "p95_total_sec": 62.44071220420301,
-          "avg_storage_bytes": 6595060.428571428,
+          "avg_storage_bytes": 6594329.0,
           "p95_storage_bytes": 6609689.0,
           "categories": {},
           "sample_errors": [],
@@ -5583,6 +5600,23 @@
                 "conv-26:D17:7",
                 "conv-26:D13:1",
                 "conv-26:D17:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0089",
+              "category": "category_4",
+              "query": "What does Melanie think about Caroline's decision to adopt?",
+              "gold": "she thinks Caroline is doing something amazing and will be an awesome mom",
+              "prediction": "Melanie: Yeah, it's normal to be both excited and nervous with a big decision.",
+              "expected_doc_ids": [
+                "conv-26:D2:15"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D13:1",
+                "conv-26:D13:16",
+                "conv-26:D19:2",
+                "conv-26:D17:3",
+                "conv-26:D8:9"
               ]
             }
           ],
@@ -6018,11 +6052,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.030212234706616714,
-    "doc_recall_all_delta": 0.0615480649188514,
-    "ndcg_at_10_delta": 0.07377096479883039,
-    "token_f1_delta": 0.005344603816578652,
-    "avg_storage_ratio_nova_over_stock": 0.40975819995934687,
-    "avg_latency_ratio_nova_over_stock": 1.6268958313586315
+    "doc_recall_any_delta": 0.022222222222222254,
+    "doc_recall_all_delta": 0.055555555555555525,
+    "ndcg_at_10_delta": 0.06858704333531696,
+    "token_f1_delta": 0.006770894162198508,
+    "avg_storage_ratio_nova_over_stock": 0.4097511830765135,
+    "avg_latency_ratio_nova_over_stock": 1.6267278783449612
   }
 }
