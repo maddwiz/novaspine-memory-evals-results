@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T19:45:31Z",
+  "generated_at": "2026-04-18T19:46:32Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T19:44:55Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T19:45:32Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 165,
     "current_case_total": 1986,
@@ -2068,19 +2068,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 164,
-        "rows_successful": 164,
+        "rows_recorded": 165,
+        "rows_successful": 165,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7012195121951219,
-        "doc_recall_all": 0.5975609756097561,
-        "ndcg_at_10": 0.49397933593884774,
+        "doc_recall_any": 0.703030303030303,
+        "doc_recall_all": 0.6,
+        "ndcg_at_10": 0.49280994599778793,
         "exact_match": 0.0,
-        "token_f1": 0.04890052788691724,
-        "avg_total_sec": 59.416106839306515,
+        "token_f1": 0.04860416105123895,
+        "avg_total_sec": 59.416427144238895,
         "p50_total_sec": 58.959072255995125,
         "p95_total_sec": 62.02798708016053,
-        "avg_storage_bytes": 6599424.024390244,
+        "avg_storage_bytes": 6599436.587878788,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -3346,20 +3346,20 @@
             ]
           },
           "category_5": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6666666666666666,
-            "doc_recall_all": 0.6666666666666666,
-            "ndcg_at_10": 0.48242206885982397,
+            "doc_recall_any": 0.6923076923076923,
+            "doc_recall_all": 0.6923076923076923,
+            "ndcg_at_10": 0.46846883246014376,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 59.23972868449831,
+            "avg_total_sec": 59.25736164362528,
             "p50_total_sec": 59.10605558520183,
             "p95_total_sec": 59.54703552322462,
-            "avg_storage_bytes": 6599790.333333333,
+            "avg_storage_bytes": 6599921.615384615,
             "p95_storage_bytes": 6609689.0,
             "categories": {},
             "sample_errors": [],
@@ -3544,6 +3544,20 @@
                   "conv-26:D4:8",
                   "conv-26:D8:32",
                   "conv-26:D18:19"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0164",
+                "category": "category_5",
+                "query": "What kind of counseling workshop did Melanie attend recently?",
+                "gold": "",
+                "prediction": "really enlightening",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:14",
+                  "conv-26:D4:11",
+                  "conv-26:D1:12",
+                  "conv-26:D4:12",
+                  "conv-26:D4:15"
                 ]
               }
             ]
@@ -6011,19 +6025,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 164,
-      "rows_successful": 164,
+      "rows_recorded": 165,
+      "rows_successful": 165,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7012195121951219,
-      "doc_recall_all": 0.5975609756097561,
-      "ndcg_at_10": 0.49397933593884774,
+      "doc_recall_any": 0.703030303030303,
+      "doc_recall_all": 0.6,
+      "ndcg_at_10": 0.49280994599778793,
       "exact_match": 0.0,
-      "token_f1": 0.04890052788691724,
-      "avg_total_sec": 59.416106839306515,
+      "token_f1": 0.04860416105123895,
+      "avg_total_sec": 59.416427144238895,
       "p50_total_sec": 58.959072255995125,
       "p95_total_sec": 62.02798708016053,
-      "avg_storage_bytes": 6599424.024390244,
+      "avg_storage_bytes": 6599436.587878788,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -7289,20 +7303,20 @@
           ]
         },
         "category_5": {
-          "expected_total": 12,
-          "rows_recorded": 12,
-          "rows_successful": 12,
+          "expected_total": 13,
+          "rows_recorded": 13,
+          "rows_successful": 13,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6666666666666666,
-          "doc_recall_all": 0.6666666666666666,
-          "ndcg_at_10": 0.48242206885982397,
+          "doc_recall_any": 0.6923076923076923,
+          "doc_recall_all": 0.6923076923076923,
+          "ndcg_at_10": 0.46846883246014376,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 59.23972868449831,
+          "avg_total_sec": 59.25736164362528,
           "p50_total_sec": 59.10605558520183,
           "p95_total_sec": 59.54703552322462,
-          "avg_storage_bytes": 6599790.333333333,
+          "avg_storage_bytes": 6599921.615384615,
           "p95_storage_bytes": 6609689.0,
           "categories": {},
           "sample_errors": [],
@@ -7487,6 +7501,20 @@
                 "conv-26:D4:8",
                 "conv-26:D8:32",
                 "conv-26:D18:19"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0164",
+              "category": "category_5",
+              "query": "What kind of counseling workshop did Melanie attend recently?",
+              "gold": "",
+              "prediction": "really enlightening",
+              "retrieved_doc_ids": [
+                "conv-26:D4:14",
+                "conv-26:D4:11",
+                "conv-26:D1:12",
+                "conv-26:D4:12",
+                "conv-26:D4:15"
               ]
             }
           ]
@@ -7878,11 +7906,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.0018107908351810975,
-    "doc_recall_all_delta": 0.009682187730968184,
-    "ndcg_at_10_delta": 0.027960502157913125,
-    "token_f1_delta": 0.003991845709022779,
-    "avg_storage_ratio_nova_over_stock": 0.409718517777437,
-    "avg_latency_ratio_nova_over_stock": 1.6271338396824557
+    "doc_recall_any_delta": 0.0,
+    "doc_recall_all_delta": 0.012121212121212088,
+    "ndcg_at_10_delta": 0.02679111221685332,
+    "token_f1_delta": 0.003695478873344489,
+    "avg_storage_ratio_nova_over_stock": 0.40971929776882493,
+    "avg_latency_ratio_nova_over_stock": 1.6271426113610832
   }
 }
