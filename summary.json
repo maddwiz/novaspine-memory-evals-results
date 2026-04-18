@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T18:02:07Z",
+  "generated_at": "2026-04-18T18:09:06Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,30 +116,30 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T18:01:06Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T18:08:30Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 100,
+    "current_case_index": 105,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0099"
+    "current_case_id": "locomo::conv-26::0104"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 100,
-        "rows_successful": 100,
+        "rows_recorded": 105,
+        "rows_successful": 105,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7,
-        "doc_recall_all": 0.51,
-        "ndcg_at_10": 0.4178233677179981,
+        "doc_recall_any": 0.7047619047619048,
+        "doc_recall_all": 0.5238095238095238,
+        "ndcg_at_10": 0.4266678031676744,
         "exact_match": 0.0,
-        "token_f1": 0.02675784194368981,
-        "avg_total_sec": 36.49991497755982,
+        "token_f1": 0.029716463226794526,
+        "avg_total_sec": 36.496891758103104,
         "p50_total_sec": 36.31223727297038,
         "p95_total_sec": 37.65678389882669,
-        "avg_storage_bytes": 16106156.94,
+        "avg_storage_bytes": 16106593.771428572,
         "p95_storage_bytes": 16117790.0,
         "categories": {
           "category_2": {
@@ -1075,20 +1075,20 @@
             ]
           },
           "category_4": {
-            "expected_total": 18,
-            "rows_recorded": 18,
-            "rows_successful": 18,
+            "expected_total": 23,
+            "rows_recorded": 23,
+            "rows_successful": 23,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6111111111111112,
-            "doc_recall_all": 0.6111111111111112,
-            "ndcg_at_10": 0.4511023640074423,
+            "doc_recall_any": 0.6521739130434783,
+            "doc_recall_all": 0.6521739130434783,
+            "ndcg_at_10": 0.4842445701278244,
             "exact_match": 0.0,
-            "token_f1": 0.05921640787793238,
-            "avg_total_sec": 36.48778088848727,
+            "token_f1": 0.06566694722814032,
+            "avg_total_sec": 36.476617079896286,
             "p50_total_sec": 36.36300560506061,
             "p95_total_sec": 37.54192951787263,
-            "avg_storage_bytes": 16111646.0,
+            "avg_storage_bytes": 16112446.956521738,
             "p95_storage_bytes": 16117790.0,
             "categories": {},
             "sample_errors": [],
@@ -1210,6 +1210,23 @@
                   "conv-26:D12:7",
                   "conv-26:D16:5",
                   "conv-26:D17:21"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0100",
+                "category": "category_4",
+                "query": "What kind of place does Caroline want to create for people?",
+                "gold": "a safe and inviting place for people to grow",
+                "prediction": "having supportive people around",
+                "expected_doc_ids": [
+                  "conv-26:D4:15"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D14:24",
+                  "conv-26:D12:6",
+                  "conv-26:D14:13",
+                  "conv-26:D19:4",
+                  "conv-26:D13:15"
                 ]
               }
             ],
@@ -1363,6 +1380,20 @@
                   "conv-26:D4:15",
                   "conv-26:D4:11",
                   "conv-26:D6:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0101",
+                "category": "category_4",
+                "query": "Did Melanie make the black and white bowl in the photo?",
+                "gold": "Yes",
+                "prediction": "The black and white design looks so fancy.",
+                "retrieved_doc_ids": [
+                  "conv-26:D5:8",
+                  "conv-26:D5:7",
+                  "conv-26:D4:5",
+                  "conv-26:D12:5",
+                  "conv-26:D16:9"
                 ]
               }
             ]
@@ -1749,19 +1780,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 100,
-        "rows_successful": 100,
+        "rows_recorded": 104,
+        "rows_successful": 104,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.72,
-        "doc_recall_all": 0.56,
-        "ndcg_at_10": 0.47242952307134173,
+        "doc_recall_any": 0.7115384615384616,
+        "doc_recall_all": 0.5576923076923077,
+        "ndcg_at_10": 0.4734899260301363,
         "exact_match": 0.0,
-        "token_f1": 0.032851646689668466,
-        "avg_total_sec": 59.36393626742531,
+        "token_f1": 0.037603543593280254,
+        "avg_total_sec": 59.34775957232789,
         "p50_total_sec": 58.957768791820854,
         "p95_total_sec": 61.90859910007566,
-        "avg_storage_bytes": 6599776.68,
+        "avg_storage_bytes": 6599527.769230769,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -2632,20 +2663,20 @@
             ]
           },
           "category_4": {
-            "expected_total": 18,
-            "rows_recorded": 18,
-            "rows_successful": 18,
+            "expected_total": 22,
+            "rows_recorded": 22,
+            "rows_successful": 22,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6111111111111112,
-            "doc_recall_all": 0.6111111111111112,
-            "ndcg_at_10": 0.4178206322252923,
+            "doc_recall_any": 0.5909090909090909,
+            "doc_recall_all": 0.5909090909090909,
+            "ndcg_at_10": 0.43276233545705733,
             "exact_match": 0.0,
-            "token_f1": 0.06776341642494092,
-            "avg_total_sec": 59.51563808570305,
-            "p50_total_sec": 59.074169320985675,
+            "token_f1": 0.08387933456287437,
+            "avg_total_sec": 59.411584287373856,
+            "p50_total_sec": 59.02191383205354,
             "p95_total_sec": 61.76511899102479,
-            "avg_storage_bytes": 6599904.111111111,
+            "avg_storage_bytes": 6598704.2727272725,
             "p95_storage_bytes": 6613785.0,
             "categories": {},
             "sample_errors": [],
@@ -2767,6 +2798,40 @@
                   "conv-26:D11:8",
                   "conv-26:D5:4",
                   "conv-26:D11:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0100",
+                "category": "category_4",
+                "query": "What kind of place does Caroline want to create for people?",
+                "gold": "a safe and inviting place for people to grow",
+                "prediction": "inspiring and emotional - so many people wanted to create loving homes for children in need",
+                "expected_doc_ids": [
+                  "conv-26:D4:15"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D14:24",
+                  "conv-26:D12:6",
+                  "conv-26:D13:15",
+                  "conv-26:D14:13",
+                  "conv-26:D19:5"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0103",
+                "category": "category_4",
+                "query": "What was Melanie's favorite book from her childhood?",
+                "gold": "\"Charlotte's Web\"",
+                "prediction": "What's a favorite book you remember from your childhood?",
+                "expected_doc_ids": [
+                  "conv-26:D6:10"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D6:9",
+                  "conv-26:D7:10",
+                  "conv-26:D10:20",
+                  "conv-26:D4:3",
+                  "conv-26:D7:11"
                 ]
               }
             ],
@@ -2923,6 +2988,20 @@
                   "conv-26:D4:15",
                   "conv-26:D4:11",
                   "conv-26:D5:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0101",
+                "category": "category_4",
+                "query": "Did Melanie make the black and white bowl in the photo?",
+                "gold": "Yes",
+                "prediction": "The black and white design looks so fancy.",
+                "retrieved_doc_ids": [
+                  "conv-26:D5:8",
+                  "conv-26:D5:7",
+                  "conv-26:D4:5",
+                  "conv-26:D12:5",
+                  "conv-26:D16:9"
                 ]
               }
             ]
@@ -3449,19 +3528,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 100,
-      "rows_successful": 100,
+      "rows_recorded": 105,
+      "rows_successful": 105,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7,
-      "doc_recall_all": 0.51,
-      "ndcg_at_10": 0.4178233677179981,
+      "doc_recall_any": 0.7047619047619048,
+      "doc_recall_all": 0.5238095238095238,
+      "ndcg_at_10": 0.4266678031676744,
       "exact_match": 0.0,
-      "token_f1": 0.02675784194368981,
-      "avg_total_sec": 36.49991497755982,
+      "token_f1": 0.029716463226794526,
+      "avg_total_sec": 36.496891758103104,
       "p50_total_sec": 36.31223727297038,
       "p95_total_sec": 37.65678389882669,
-      "avg_storage_bytes": 16106156.94,
+      "avg_storage_bytes": 16106593.771428572,
       "p95_storage_bytes": 16117790.0,
       "categories": {
         "category_2": {
@@ -4397,20 +4476,20 @@
           ]
         },
         "category_4": {
-          "expected_total": 18,
-          "rows_recorded": 18,
-          "rows_successful": 18,
+          "expected_total": 23,
+          "rows_recorded": 23,
+          "rows_successful": 23,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6111111111111112,
-          "doc_recall_all": 0.6111111111111112,
-          "ndcg_at_10": 0.4511023640074423,
+          "doc_recall_any": 0.6521739130434783,
+          "doc_recall_all": 0.6521739130434783,
+          "ndcg_at_10": 0.4842445701278244,
           "exact_match": 0.0,
-          "token_f1": 0.05921640787793238,
-          "avg_total_sec": 36.48778088848727,
+          "token_f1": 0.06566694722814032,
+          "avg_total_sec": 36.476617079896286,
           "p50_total_sec": 36.36300560506061,
           "p95_total_sec": 37.54192951787263,
-          "avg_storage_bytes": 16111646.0,
+          "avg_storage_bytes": 16112446.956521738,
           "p95_storage_bytes": 16117790.0,
           "categories": {},
           "sample_errors": [],
@@ -4532,6 +4611,23 @@
                 "conv-26:D12:7",
                 "conv-26:D16:5",
                 "conv-26:D17:21"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0100",
+              "category": "category_4",
+              "query": "What kind of place does Caroline want to create for people?",
+              "gold": "a safe and inviting place for people to grow",
+              "prediction": "having supportive people around",
+              "expected_doc_ids": [
+                "conv-26:D4:15"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D14:24",
+                "conv-26:D12:6",
+                "conv-26:D14:13",
+                "conv-26:D19:4",
+                "conv-26:D13:15"
               ]
             }
           ],
@@ -4685,6 +4781,20 @@
                 "conv-26:D4:15",
                 "conv-26:D4:11",
                 "conv-26:D6:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0101",
+              "category": "category_4",
+              "query": "Did Melanie make the black and white bowl in the photo?",
+              "gold": "Yes",
+              "prediction": "The black and white design looks so fancy.",
+              "retrieved_doc_ids": [
+                "conv-26:D5:8",
+                "conv-26:D5:7",
+                "conv-26:D4:5",
+                "conv-26:D12:5",
+                "conv-26:D16:9"
               ]
             }
           ]
@@ -5071,19 +5181,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 100,
-      "rows_successful": 100,
+      "rows_recorded": 104,
+      "rows_successful": 104,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.72,
-      "doc_recall_all": 0.56,
-      "ndcg_at_10": 0.47242952307134173,
+      "doc_recall_any": 0.7115384615384616,
+      "doc_recall_all": 0.5576923076923077,
+      "ndcg_at_10": 0.4734899260301363,
       "exact_match": 0.0,
-      "token_f1": 0.032851646689668466,
-      "avg_total_sec": 59.36393626742531,
+      "token_f1": 0.037603543593280254,
+      "avg_total_sec": 59.34775957232789,
       "p50_total_sec": 58.957768791820854,
       "p95_total_sec": 61.90859910007566,
-      "avg_storage_bytes": 6599776.68,
+      "avg_storage_bytes": 6599527.769230769,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -5954,20 +6064,20 @@
           ]
         },
         "category_4": {
-          "expected_total": 18,
-          "rows_recorded": 18,
-          "rows_successful": 18,
+          "expected_total": 22,
+          "rows_recorded": 22,
+          "rows_successful": 22,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6111111111111112,
-          "doc_recall_all": 0.6111111111111112,
-          "ndcg_at_10": 0.4178206322252923,
+          "doc_recall_any": 0.5909090909090909,
+          "doc_recall_all": 0.5909090909090909,
+          "ndcg_at_10": 0.43276233545705733,
           "exact_match": 0.0,
-          "token_f1": 0.06776341642494092,
-          "avg_total_sec": 59.51563808570305,
-          "p50_total_sec": 59.074169320985675,
+          "token_f1": 0.08387933456287437,
+          "avg_total_sec": 59.411584287373856,
+          "p50_total_sec": 59.02191383205354,
           "p95_total_sec": 61.76511899102479,
-          "avg_storage_bytes": 6599904.111111111,
+          "avg_storage_bytes": 6598704.2727272725,
           "p95_storage_bytes": 6613785.0,
           "categories": {},
           "sample_errors": [],
@@ -6089,6 +6199,40 @@
                 "conv-26:D11:8",
                 "conv-26:D5:4",
                 "conv-26:D11:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0100",
+              "category": "category_4",
+              "query": "What kind of place does Caroline want to create for people?",
+              "gold": "a safe and inviting place for people to grow",
+              "prediction": "inspiring and emotional - so many people wanted to create loving homes for children in need",
+              "expected_doc_ids": [
+                "conv-26:D4:15"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D14:24",
+                "conv-26:D12:6",
+                "conv-26:D13:15",
+                "conv-26:D14:13",
+                "conv-26:D19:5"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0103",
+              "category": "category_4",
+              "query": "What was Melanie's favorite book from her childhood?",
+              "gold": "\"Charlotte's Web\"",
+              "prediction": "What's a favorite book you remember from your childhood?",
+              "expected_doc_ids": [
+                "conv-26:D6:10"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D6:9",
+                "conv-26:D7:10",
+                "conv-26:D10:20",
+                "conv-26:D4:3",
+                "conv-26:D7:11"
               ]
             }
           ],
@@ -6245,6 +6389,20 @@
                 "conv-26:D4:15",
                 "conv-26:D4:11",
                 "conv-26:D5:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0101",
+              "category": "category_4",
+              "query": "Did Melanie make the black and white bowl in the photo?",
+              "gold": "Yes",
+              "prediction": "The black and white design looks so fancy.",
+              "retrieved_doc_ids": [
+                "conv-26:D5:8",
+                "conv-26:D5:7",
+                "conv-26:D4:5",
+                "conv-26:D12:5",
+                "conv-26:D16:9"
               ]
             }
           ]
@@ -6636,11 +6794,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.020000000000000018,
-    "doc_recall_all_delta": 0.050000000000000044,
-    "ndcg_at_10_delta": 0.05460615535334362,
-    "token_f1_delta": 0.006093804745978655,
-    "avg_storage_ratio_nova_over_stock": 0.409767314734734,
-    "avg_latency_ratio_nova_over_stock": 1.6264130013432172
+    "doc_recall_any_delta": 0.0067765567765567525,
+    "doc_recall_all_delta": 0.03388278388278387,
+    "ndcg_at_10_delta": 0.0468221228624619,
+    "token_f1_delta": 0.007887080366485728,
+    "avg_storage_ratio_nova_over_stock": 0.4097407473538972,
+    "avg_latency_ratio_nova_over_stock": 1.6261044903680433
   }
 }
