@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T19:29:29Z",
+  "generated_at": "2026-04-18T19:30:30Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T19:28:54Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T19:29:30Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 155,
     "current_case_total": 1986,
@@ -1916,19 +1916,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 154,
-        "rows_successful": 154,
+        "rows_recorded": 155,
+        "rows_successful": 155,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7012987012987013,
-        "doc_recall_all": 0.5909090909090909,
-        "ndcg_at_10": 0.4917113394003451,
+        "doc_recall_any": 0.7032258064516129,
+        "doc_recall_all": 0.5935483870967742,
+        "ndcg_at_10": 0.49040394254174857,
         "exact_match": 0.0,
-        "token_f1": 0.052075886840613164,
-        "avg_total_sec": 59.425623392643914,
-        "p50_total_sec": 58.95353631814942,
+        "token_f1": 0.051739913377125336,
+        "avg_total_sec": 59.42640669671218,
+        "p50_total_sec": 58.957768791820854,
         "p95_total_sec": 62.0223612813279,
-        "avg_storage_bytes": 6599475.597402598,
+        "avg_storage_bytes": 6599488.638709677,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -3194,20 +3194,20 @@
             ]
           },
           "category_5": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5,
-            "doc_recall_all": 0.5,
-            "ndcg_at_10": 0.25,
+            "doc_recall_any": 0.6666666666666666,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.2630216087726293,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 59.090612517436966,
-            "p50_total_sec": 58.850950489751995,
-            "p95_total_sec": 59.33027454512194,
-            "avg_storage_bytes": 6605593.0,
+            "avg_total_sec": 59.24275351936618,
+            "p50_total_sec": 59.33027454512194,
+            "p95_total_sec": 59.54703552322462,
+            "avg_storage_bytes": 6604227.666666667,
             "p95_storage_bytes": 6621977.0,
             "categories": {},
             "sample_errors": [],
@@ -3243,6 +3243,20 @@
                   "conv-26:D2:3",
                   "conv-26:D7:7",
                   "conv-26:D10:20"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0154",
+                "category": "category_5",
+                "query": "What type of individuals does the adoption agency Melanie is considering support?",
+                "gold": "",
+                "prediction": "your research and find an adoption agency or lawyer",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D13:1",
+                  "conv-26:D19:1",
+                  "conv-26:D19:3",
+                  "conv-26:D17:3"
                 ]
               }
             ]
@@ -5558,19 +5572,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 154,
-      "rows_successful": 154,
+      "rows_recorded": 155,
+      "rows_successful": 155,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7012987012987013,
-      "doc_recall_all": 0.5909090909090909,
-      "ndcg_at_10": 0.4917113394003451,
+      "doc_recall_any": 0.7032258064516129,
+      "doc_recall_all": 0.5935483870967742,
+      "ndcg_at_10": 0.49040394254174857,
       "exact_match": 0.0,
-      "token_f1": 0.052075886840613164,
-      "avg_total_sec": 59.425623392643914,
-      "p50_total_sec": 58.95353631814942,
+      "token_f1": 0.051739913377125336,
+      "avg_total_sec": 59.42640669671218,
+      "p50_total_sec": 58.957768791820854,
       "p95_total_sec": 62.0223612813279,
-      "avg_storage_bytes": 6599475.597402598,
+      "avg_storage_bytes": 6599488.638709677,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -6836,20 +6850,20 @@
           ]
         },
         "category_5": {
-          "expected_total": 2,
-          "rows_recorded": 2,
-          "rows_successful": 2,
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5,
-          "doc_recall_all": 0.5,
-          "ndcg_at_10": 0.25,
+          "doc_recall_any": 0.6666666666666666,
+          "doc_recall_all": 0.6666666666666666,
+          "ndcg_at_10": 0.2630216087726293,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 59.090612517436966,
-          "p50_total_sec": 58.850950489751995,
-          "p95_total_sec": 59.33027454512194,
-          "avg_storage_bytes": 6605593.0,
+          "avg_total_sec": 59.24275351936618,
+          "p50_total_sec": 59.33027454512194,
+          "p95_total_sec": 59.54703552322462,
+          "avg_storage_bytes": 6604227.666666667,
           "p95_storage_bytes": 6621977.0,
           "categories": {},
           "sample_errors": [],
@@ -6885,6 +6899,20 @@
                 "conv-26:D2:3",
                 "conv-26:D7:7",
                 "conv-26:D10:20"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0154",
+              "category": "category_5",
+              "query": "What type of individuals does the adoption agency Melanie is considering support?",
+              "gold": "",
+              "prediction": "your research and find an adoption agency or lawyer",
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D13:1",
+                "conv-26:D19:1",
+                "conv-26:D19:3",
+                "conv-26:D17:3"
               ]
             }
           ]
@@ -7276,11 +7304,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.008378718056137435,
-    "doc_recall_all_delta": 0.0038123167155426074,
-    "ndcg_at_10_delta": 0.03433645182709216,
-    "token_f1_delta": 0.004269870328660996,
-    "avg_storage_ratio_nova_over_stock": 0.4097215981338273,
-    "avg_latency_ratio_nova_over_stock": 1.62760824964956
+    "doc_recall_any_delta": -0.006451612903225823,
+    "doc_recall_all_delta": 0.006451612903225823,
+    "ndcg_at_10_delta": 0.03302905496849562,
+    "token_f1_delta": 0.0039338968651731684,
+    "avg_storage_ratio_nova_over_stock": 0.4097224077898522,
+    "avg_latency_ratio_nova_over_stock": 1.6276297035627159
   }
 }
