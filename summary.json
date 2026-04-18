@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T20:02:31Z",
+  "generated_at": "2026-04-18T20:09:30Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,30 +116,30 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T20:01:29Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T20:08:53Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 175,
+    "current_case_index": 180,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0174"
+    "current_case_id": "locomo::conv-26::0179"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 175,
-        "rows_successful": 175,
+        "rows_recorded": 180,
+        "rows_successful": 180,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6971428571428572,
-        "doc_recall_all": 0.5885714285714285,
-        "ndcg_at_10": 0.4687087847281467,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.5944444444444444,
+        "ndcg_at_10": 0.4653970108524825,
         "exact_match": 0.0,
-        "token_f1": 0.04234247176772906,
-        "avg_total_sec": 36.50271885755605,
+        "token_f1": 0.04116629199640325,
+        "avg_total_sec": 36.49653551494961,
         "p50_total_sec": 36.30421630805358,
         "p95_total_sec": 37.65678389882669,
-        "avg_storage_bytes": 16107233.6,
+        "avg_storage_bytes": 16107071.7,
         "p95_storage_bytes": 16117790.0,
         "categories": {
           "category_2": {
@@ -1467,20 +1467,20 @@
             ]
           },
           "category_5": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6086956521739131,
-            "doc_recall_all": 0.6086956521739131,
-            "ndcg_at_10": 0.5139334901744701,
+            "doc_recall_any": 0.6428571428571429,
+            "doc_recall_all": 0.6428571428571429,
+            "ndcg_at_10": 0.4845676750012136,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 36.395638602967985,
+            "avg_total_sec": 36.37501001738877,
             "p50_total_sec": 36.28470082208514,
             "p95_total_sec": 37.09845839207992,
-            "avg_storage_bytes": 16106214.173913043,
+            "avg_storage_bytes": 16105355.42857143,
             "p95_storage_bytes": 16117790.0,
             "categories": {},
             "sample_errors": [],
@@ -1637,6 +1637,17 @@
                   "conv-26:D12:8",
                   "conv-26:D11:15"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0179",
+                "category": "category_5",
+                "query": "Where did Oscar hide his bone once?",
+                "gold": "",
+                "prediction": "",
+                "expected_doc_ids": [
+                  "conv-26:D13:6"
+                ],
+                "retrieved_doc_ids": []
               }
             ],
             "sample_successes": [
@@ -2192,19 +2203,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 175,
-        "rows_successful": 175,
+        "rows_recorded": 179,
+        "rows_successful": 179,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7028571428571428,
-        "doc_recall_all": 0.6057142857142858,
-        "ndcg_at_10": 0.494634661232321,
+        "doc_recall_any": 0.7039106145251397,
+        "doc_recall_all": 0.6089385474860335,
+        "ndcg_at_10": 0.49436727527223223,
         "exact_match": 0.0,
-        "token_f1": 0.04582678041973958,
-        "avg_total_sec": 59.412326199835434,
+        "token_f1": 0.0448027182874549,
+        "avg_total_sec": 59.404363947413216,
         "p50_total_sec": 58.95987671613693,
         "p95_total_sec": 62.0223612813279,
-        "avg_storage_bytes": 6599460.702857143,
+        "avg_storage_bytes": 6599460.441340782,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -3470,20 +3481,20 @@
             ]
           },
           "category_5": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 27,
+            "rows_recorded": 27,
+            "rows_successful": 27,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6956521739130435,
-            "doc_recall_all": 0.6956521739130435,
-            "ndcg_at_10": 0.492935628174045,
+            "doc_recall_any": 0.7037037037037037,
+            "doc_recall_all": 0.7037037037037037,
+            "ndcg_at_10": 0.49141466689171964,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 59.295317719083116,
+            "avg_total_sec": 59.25986552424729,
             "p50_total_sec": 59.07306171301752,
             "p95_total_sec": 61.9739446840249,
-            "avg_storage_bytes": 6599894.217391305,
+            "avg_storage_bytes": 6599828.259259259,
             "p95_storage_bytes": 6617881.0,
             "categories": {},
             "sample_errors": [],
@@ -3605,6 +3616,23 @@
                   "conv-26:D16:7",
                   "conv-26:D14:33",
                   "conv-26:D13:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0177",
+                "category": "category_5",
+                "query": "Why did Caroline choose to use colors and patterns in her pottery project?",
+                "gold": "",
+                "prediction": "t done pottery yet, but I",
+                "expected_doc_ids": [
+                  "conv-26:D12:6"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D5:10",
+                  "conv-26:D16:9",
+                  "conv-26:D5:6",
+                  "conv-26:D16:8",
+                  "conv-26:D14:4"
                 ]
               }
             ],
@@ -4301,19 +4329,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 175,
-      "rows_successful": 175,
+      "rows_recorded": 180,
+      "rows_successful": 180,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6971428571428572,
-      "doc_recall_all": 0.5885714285714285,
-      "ndcg_at_10": 0.4687087847281467,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.5944444444444444,
+      "ndcg_at_10": 0.4653970108524825,
       "exact_match": 0.0,
-      "token_f1": 0.04234247176772906,
-      "avg_total_sec": 36.50271885755605,
+      "token_f1": 0.04116629199640325,
+      "avg_total_sec": 36.49653551494961,
       "p50_total_sec": 36.30421630805358,
       "p95_total_sec": 37.65678389882669,
-      "avg_storage_bytes": 16107233.6,
+      "avg_storage_bytes": 16107071.7,
       "p95_storage_bytes": 16117790.0,
       "categories": {
         "category_2": {
@@ -5641,20 +5669,20 @@
           ]
         },
         "category_5": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 28,
+          "rows_recorded": 28,
+          "rows_successful": 28,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6086956521739131,
-          "doc_recall_all": 0.6086956521739131,
-          "ndcg_at_10": 0.5139334901744701,
+          "doc_recall_any": 0.6428571428571429,
+          "doc_recall_all": 0.6428571428571429,
+          "ndcg_at_10": 0.4845676750012136,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 36.395638602967985,
+          "avg_total_sec": 36.37501001738877,
           "p50_total_sec": 36.28470082208514,
           "p95_total_sec": 37.09845839207992,
-          "avg_storage_bytes": 16106214.173913043,
+          "avg_storage_bytes": 16105355.42857143,
           "p95_storage_bytes": 16117790.0,
           "categories": {},
           "sample_errors": [],
@@ -5811,6 +5839,17 @@
                 "conv-26:D12:8",
                 "conv-26:D11:15"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0179",
+              "category": "category_5",
+              "query": "Where did Oscar hide his bone once?",
+              "gold": "",
+              "prediction": "",
+              "expected_doc_ids": [
+                "conv-26:D13:6"
+              ],
+              "retrieved_doc_ids": []
             }
           ],
           "sample_successes": [
@@ -6366,19 +6405,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 175,
-      "rows_successful": 175,
+      "rows_recorded": 179,
+      "rows_successful": 179,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7028571428571428,
-      "doc_recall_all": 0.6057142857142858,
-      "ndcg_at_10": 0.494634661232321,
+      "doc_recall_any": 0.7039106145251397,
+      "doc_recall_all": 0.6089385474860335,
+      "ndcg_at_10": 0.49436727527223223,
       "exact_match": 0.0,
-      "token_f1": 0.04582678041973958,
-      "avg_total_sec": 59.412326199835434,
+      "token_f1": 0.0448027182874549,
+      "avg_total_sec": 59.404363947413216,
       "p50_total_sec": 58.95987671613693,
       "p95_total_sec": 62.0223612813279,
-      "avg_storage_bytes": 6599460.702857143,
+      "avg_storage_bytes": 6599460.441340782,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -7644,20 +7683,20 @@
           ]
         },
         "category_5": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 27,
+          "rows_recorded": 27,
+          "rows_successful": 27,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6956521739130435,
-          "doc_recall_all": 0.6956521739130435,
-          "ndcg_at_10": 0.492935628174045,
+          "doc_recall_any": 0.7037037037037037,
+          "doc_recall_all": 0.7037037037037037,
+          "ndcg_at_10": 0.49141466689171964,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 59.295317719083116,
+          "avg_total_sec": 59.25986552424729,
           "p50_total_sec": 59.07306171301752,
           "p95_total_sec": 61.9739446840249,
-          "avg_storage_bytes": 6599894.217391305,
+          "avg_storage_bytes": 6599828.259259259,
           "p95_storage_bytes": 6617881.0,
           "categories": {},
           "sample_errors": [],
@@ -7779,6 +7818,23 @@
                 "conv-26:D16:7",
                 "conv-26:D14:33",
                 "conv-26:D13:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0177",
+              "category": "category_5",
+              "query": "Why did Caroline choose to use colors and patterns in her pottery project?",
+              "gold": "",
+              "prediction": "t done pottery yet, but I",
+              "expected_doc_ids": [
+                "conv-26:D12:6"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D5:10",
+                "conv-26:D16:9",
+                "conv-26:D5:6",
+                "conv-26:D16:8",
+                "conv-26:D14:4"
               ]
             }
           ],
@@ -8340,11 +8396,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.005714285714285672,
-    "doc_recall_all_delta": 0.017142857142857237,
-    "ndcg_at_10_delta": 0.025925876504174328,
-    "token_f1_delta": 0.0034843086520105204,
-    "avg_storage_ratio_nova_over_stock": 0.4097203074559708,
-    "avg_latency_ratio_nova_over_stock": 1.6276137246564883
+    "doc_recall_any_delta": 0.003910614525139744,
+    "doc_recall_all_delta": 0.014494103041589046,
+    "ndcg_at_10_delta": 0.02897026441974976,
+    "token_f1_delta": 0.0036364262910516462,
+    "avg_storage_ratio_nova_over_stock": 0.4097244095176395,
+    "avg_latency_ratio_nova_over_stock": 1.6276713148041178
   }
 }
