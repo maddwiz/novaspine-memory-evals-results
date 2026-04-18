@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T17:12:59Z",
+  "generated_at": "2026-04-18T17:13:59Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T17:12:23Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T17:13:00Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 70,
     "current_case_total": 1986,
@@ -1371,19 +1371,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 69,
-        "rows_successful": 69,
+        "rows_recorded": 70,
+        "rows_successful": 70,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7246376811594203,
-        "doc_recall_all": 0.5507246376811594,
-        "ndcg_at_10": 0.47655933034392994,
+        "doc_recall_any": 0.7142857142857143,
+        "doc_recall_all": 0.5428571428571428,
+        "ndcg_at_10": 0.46975133991044526,
         "exact_match": 0.0,
-        "token_f1": 0.02386051527927958,
-        "avg_total_sec": 59.34427986105742,
-        "p50_total_sec": 58.959072255995125,
+        "token_f1": 0.023519650775289874,
+        "avg_total_sec": 59.335025715116146,
+        "p50_total_sec": 58.95353631814942,
         "p95_total_sec": 62.0223612813279,
-        "avg_storage_bytes": 6600487.84057971,
+        "avg_storage_bytes": 6600619.285714285,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -1629,20 +1629,20 @@
             ]
           },
           "category_3": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6,
-            "doc_recall_all": 0.2,
-            "ndcg_at_10": 0.2775810676556586,
+            "doc_recall_any": 0.5454545454545454,
+            "doc_recall_all": 0.18181818181818182,
+            "ndcg_at_10": 0.25234642514150785,
             "exact_match": 0.0,
-            "token_f1": 0.02481203007518797,
-            "avg_total_sec": 59.08512565535493,
+            "token_f1": 0.022556390977443608,
+            "avg_total_sec": 59.049795108974315,
             "p50_total_sec": 58.959072255995125,
             "p95_total_sec": 59.99358485499397,
-            "avg_storage_bytes": 6600268.2,
+            "avg_storage_bytes": 6601124.636363637,
             "p95_storage_bytes": 6613785.0,
             "categories": {},
             "sample_errors": [],
@@ -1710,6 +1710,25 @@
                   "conv-26:D10:4",
                   "conv-26:D14:24",
                   "conv-26:D14:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0069",
+                "category": "category_3",
+                "query": "What personality traits might Melanie say Caroline has?",
+                "gold": "Thoughtful, authentic, driven",
+                "prediction": "Melanie: Caroline, it's got to be tough dealing with those changes.",
+                "expected_doc_ids": [
+                  "conv-26:D16:18",
+                  "conv-26:D13:16",
+                  "conv-26:D7:4"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D12:11",
+                  "conv-26:D19:8",
+                  "conv-26:D12:6",
+                  "conv-26:D18:12",
+                  "conv-26:D6:15"
                 ]
               }
             ],
@@ -3972,19 +3991,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 69,
-      "rows_successful": 69,
+      "rows_recorded": 70,
+      "rows_successful": 70,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7246376811594203,
-      "doc_recall_all": 0.5507246376811594,
-      "ndcg_at_10": 0.47655933034392994,
+      "doc_recall_any": 0.7142857142857143,
+      "doc_recall_all": 0.5428571428571428,
+      "ndcg_at_10": 0.46975133991044526,
       "exact_match": 0.0,
-      "token_f1": 0.02386051527927958,
-      "avg_total_sec": 59.34427986105742,
-      "p50_total_sec": 58.959072255995125,
+      "token_f1": 0.023519650775289874,
+      "avg_total_sec": 59.335025715116146,
+      "p50_total_sec": 58.95353631814942,
       "p95_total_sec": 62.0223612813279,
-      "avg_storage_bytes": 6600487.84057971,
+      "avg_storage_bytes": 6600619.285714285,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -4230,20 +4249,20 @@
           ]
         },
         "category_3": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 11,
+          "rows_recorded": 11,
+          "rows_successful": 11,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6,
-          "doc_recall_all": 0.2,
-          "ndcg_at_10": 0.2775810676556586,
+          "doc_recall_any": 0.5454545454545454,
+          "doc_recall_all": 0.18181818181818182,
+          "ndcg_at_10": 0.25234642514150785,
           "exact_match": 0.0,
-          "token_f1": 0.02481203007518797,
-          "avg_total_sec": 59.08512565535493,
+          "token_f1": 0.022556390977443608,
+          "avg_total_sec": 59.049795108974315,
           "p50_total_sec": 58.959072255995125,
           "p95_total_sec": 59.99358485499397,
-          "avg_storage_bytes": 6600268.2,
+          "avg_storage_bytes": 6601124.636363637,
           "p95_storage_bytes": 6613785.0,
           "categories": {},
           "sample_errors": [],
@@ -4311,6 +4330,25 @@
                 "conv-26:D10:4",
                 "conv-26:D14:24",
                 "conv-26:D14:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0069",
+              "category": "category_3",
+              "query": "What personality traits might Melanie say Caroline has?",
+              "gold": "Thoughtful, authentic, driven",
+              "prediction": "Melanie: Caroline, it's got to be tough dealing with those changes.",
+              "expected_doc_ids": [
+                "conv-26:D16:18",
+                "conv-26:D13:16",
+                "conv-26:D7:4"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D12:11",
+                "conv-26:D19:8",
+                "conv-26:D12:6",
+                "conv-26:D18:12",
+                "conv-26:D6:15"
               ]
             }
           ],
@@ -5194,11 +5232,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.003933747412008248,
-    "doc_recall_all_delta": 0.079296066252588,
-    "ndcg_at_10_delta": 0.05489385479089559,
-    "token_f1_delta": 0.006848497657585592,
-    "avg_storage_ratio_nova_over_stock": 0.4098549517877744,
-    "avg_latency_ratio_nova_over_stock": 1.6263672046663713
+    "doc_recall_any_delta": -0.014285714285714235,
+    "doc_recall_all_delta": 0.0714285714285714,
+    "ndcg_at_10_delta": 0.04808586435741091,
+    "token_f1_delta": 0.006507633153595885,
+    "avg_storage_ratio_nova_over_stock": 0.40986311382679264,
+    "avg_latency_ratio_nova_over_stock": 1.6261135889935328
   }
 }
