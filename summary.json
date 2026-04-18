@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T15:29:47Z",
+  "generated_at": "2026-04-18T15:36:47Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,48 +116,48 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T15:28:48Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T15:36:10Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 5,
+    "current_case_index": 10,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0004"
+    "current_case_id": "locomo::conv-26::0009"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 10,
+        "rows_successful": 10,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.4,
-        "doc_recall_all": 0.2,
-        "ndcg_at_10": 0.3226294385530917,
+        "doc_recall_any": 0.5,
+        "doc_recall_all": 0.3,
+        "ndcg_at_10": 0.35,
         "exact_match": 0.0,
         "token_f1": 0.0,
-        "avg_total_sec": 36.43264845293015,
+        "avg_total_sec": 36.474550411012025,
         "p50_total_sec": 36.182323910761625,
-        "p95_total_sec": 37.1913905791007,
-        "avg_storage_bytes": 16106320.0,
+        "p95_total_sec": 37.65678389882669,
+        "avg_storage_bytes": 16103453.0,
         "p95_storage_bytes": 16117788.0,
         "categories": {
           "category_2": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 6,
+            "rows_recorded": 6,
+            "rows_successful": 6,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 0.5,
             "doc_recall_all": 0.5,
-            "ndcg_at_10": 0.5,
+            "ndcg_at_10": 0.4166666666666667,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 36.64514311449602,
-            "p50_total_sec": 36.09889564989135,
-            "p95_total_sec": 37.1913905791007,
-            "avg_storage_bytes": 16097310.0,
-            "p95_storage_bytes": 16105502.0,
+            "avg_total_sec": 36.62699676708629,
+            "p50_total_sec": 36.21702850330621,
+            "p95_total_sec": 37.65678389882669,
+            "avg_storage_bytes": 16102088.0,
+            "p95_storage_bytes": 16113694.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -177,6 +177,40 @@
                   "conv-26:D17:16",
                   "conv-26:D12:6"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0006",
+                "category": "category_2",
+                "query": "When is Melanie planning on going camping?",
+                "gold": "June 2023",
+                "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+                "expected_doc_ids": [
+                  "conv-26:D2:7"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D10:12",
+                  "conv-26:D18:19",
+                  "conv-26:D18:21",
+                  "conv-26:D18:20",
+                  "conv-26:D4:8"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0009",
+                "category": "category_2",
+                "query": "When did Caroline meet up with her friends, family, and mentors?",
+                "gold": "The week before 9 June 2023",
+                "prediction": "t easy and acceptance wasn",
+                "expected_doc_ids": [
+                  "conv-26:D3:11"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D8:19",
+                  "conv-26:D16:15",
+                  "conv-26:D8:23",
+                  "conv-26:D4:15",
+                  "conv-26:D6:11"
+                ]
               }
             ],
             "sample_successes": [
@@ -192,6 +226,34 @@
                   "conv-26:D4:13",
                   "conv-26:D9:6",
                   "conv-26:D11:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0005",
+                "category": "category_2",
+                "query": "When did Melanie run a charity race?",
+                "gold": "The sunday before 25 May 2023",
+                "prediction": "I ran a charity race for mental health last Saturday – it was really rewarding.",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:2",
+                  "conv-26:D14:11",
+                  "conv-26:D2:1",
+                  "conv-26:D19:4",
+                  "conv-26:D10:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0008",
+                "category": "category_2",
+                "query": "When did Caroline give a speech at a school?",
+                "gold": "The week before 9 June 2023",
+                "prediction": "I'm grateful for the chance to share my story and give others hope.",
+                "retrieved_doc_ids": [
+                  "conv-26:D3:1",
+                  "conv-26:D15:23",
+                  "conv-26:D15:5",
+                  "conv-26:D3:7",
+                  "conv-26:D11:2"
                 ]
               }
             ]
@@ -233,20 +295,20 @@
             ]
           },
           "category_1": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.0,
+            "doc_recall_any": 0.3333333333333333,
             "doc_recall_all": 0.0,
-            "ndcg_at_10": 0.0,
+            "ndcg_at_10": 0.1289509357448472,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 36.17380428337492,
+            "avg_total_sec": 36.152725346231215,
             "p50_total_sec": 36.165284655988216,
             "p95_total_sec": 36.182323910761625,
-            "avg_storage_bytes": 16113691.0,
+            "avg_storage_bytes": 16104134.666666666,
             "p95_storage_bytes": 16117788.0,
             "categories": {},
             "sample_errors": [],
@@ -286,7 +348,22 @@
                 ]
               }
             ],
-            "sample_successes": []
+            "sample_successes": [
+              {
+                "case_id": "locomo::conv-26::0007",
+                "category": "category_1",
+                "query": "What is Caroline's relationship status?",
+                "gold": "Single",
+                "prediction": "really helpful",
+                "retrieved_doc_ids": [
+                  "conv-26:D16:15",
+                  "conv-26:D3:13",
+                  "conv-26:D17:5",
+                  "conv-26:D8:16",
+                  "conv-26:D4:3"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [],
@@ -341,6 +418,40 @@
               "conv-26:D11:8",
               "conv-26:D16:13"
             ]
+          },
+          {
+            "case_id": "locomo::conv-26::0006",
+            "category": "category_2",
+            "query": "When is Melanie planning on going camping?",
+            "gold": "June 2023",
+            "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+            "expected_doc_ids": [
+              "conv-26:D2:7"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D10:12",
+              "conv-26:D18:19",
+              "conv-26:D18:21",
+              "conv-26:D18:20",
+              "conv-26:D4:8"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0009",
+            "category": "category_2",
+            "query": "When did Caroline meet up with her friends, family, and mentors?",
+            "gold": "The week before 9 June 2023",
+            "prediction": "t easy and acceptance wasn",
+            "expected_doc_ids": [
+              "conv-26:D3:11"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D8:19",
+              "conv-26:D16:15",
+              "conv-26:D8:23",
+              "conv-26:D4:15",
+              "conv-26:D6:11"
+            ]
           }
         ],
         "sample_successes": [
@@ -371,42 +482,84 @@
               "conv-26:D13:11",
               "conv-26:D7:7"
             ]
+          },
+          {
+            "case_id": "locomo::conv-26::0005",
+            "category": "category_2",
+            "query": "When did Melanie run a charity race?",
+            "gold": "The sunday before 25 May 2023",
+            "prediction": "I ran a charity race for mental health last Saturday – it was really rewarding.",
+            "retrieved_doc_ids": [
+              "conv-26:D2:2",
+              "conv-26:D14:11",
+              "conv-26:D2:1",
+              "conv-26:D19:4",
+              "conv-26:D10:6"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0007",
+            "category": "category_1",
+            "query": "What is Caroline's relationship status?",
+            "gold": "Single",
+            "prediction": "really helpful",
+            "retrieved_doc_ids": [
+              "conv-26:D16:15",
+              "conv-26:D3:13",
+              "conv-26:D17:5",
+              "conv-26:D8:16",
+              "conv-26:D4:3"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0008",
+            "category": "category_2",
+            "query": "When did Caroline give a speech at a school?",
+            "gold": "The week before 9 June 2023",
+            "prediction": "I'm grateful for the chance to share my story and give others hope.",
+            "retrieved_doc_ids": [
+              "conv-26:D3:1",
+              "conv-26:D15:23",
+              "conv-26:D15:5",
+              "conv-26:D3:7",
+              "conv-26:D11:2"
+            ]
           }
         ]
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 9,
+        "rows_successful": 9,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.4,
-        "doc_recall_all": 0.2,
-        "ndcg_at_10": 0.2773705614469083,
+        "doc_recall_any": 0.5555555555555556,
+        "doc_recall_all": 0.4444444444444444,
+        "ndcg_at_10": 0.38316212431993246,
         "exact_match": 0.0,
         "token_f1": 0.0,
-        "avg_total_sec": 58.92633160557598,
-        "p50_total_sec": 58.761439382098615,
+        "avg_total_sec": 58.97178621031344,
+        "p50_total_sec": 58.90923095308244,
         "p95_total_sec": 59.33104956988245,
-        "avg_storage_bytes": 6597401.0,
-        "p95_storage_bytes": 6601497.0,
+        "avg_storage_bytes": 6600586.777777778,
+        "p95_storage_bytes": 6617881.0,
         "categories": {
           "category_2": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5,
-            "doc_recall_all": 0.5,
-            "ndcg_at_10": 0.5,
+            "doc_recall_any": 0.8,
+            "doc_recall_all": 0.8,
+            "ndcg_at_10": 0.6123212623289701,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 59.046244475990534,
-            "p50_total_sec": 58.761439382098615,
+            "avg_total_sec": 58.99846889097243,
+            "p50_total_sec": 58.90923095308244,
             "p95_total_sec": 59.33104956988245,
-            "avg_storage_bytes": 6597401.0,
-            "p95_storage_bytes": 6601497.0,
+            "avg_storage_bytes": 6601497.0,
+            "p95_storage_bytes": 6617881.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -441,6 +594,48 @@
                   "conv-26:D4:15",
                   "conv-26:D16:5",
                   "conv-26:D1:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0005",
+                "category": "category_2",
+                "query": "When did Melanie run a charity race?",
+                "gold": "The sunday before 25 May 2023",
+                "prediction": "I ran a charity race for mental health last Saturday – it was really rewarding.",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:2",
+                  "conv-26:D2:1",
+                  "conv-26:D15:4",
+                  "conv-26:D7:23",
+                  "conv-26:D7:22"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0006",
+                "category": "category_2",
+                "query": "When is Melanie planning on going camping?",
+                "gold": "June 2023",
+                "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+                "retrieved_doc_ids": [
+                  "conv-26:D10:14",
+                  "conv-26:D4:6",
+                  "conv-26:D10:12",
+                  "conv-26:D2:7",
+                  "conv-26:D4:8"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0008",
+                "category": "category_2",
+                "query": "When did Caroline give a speech at a school?",
+                "gold": "The week before 9 June 2023",
+                "prediction": "I'm grateful for the chance to share my story and give others hope.",
+                "retrieved_doc_ids": [
+                  "conv-26:D3:1",
+                  "conv-26:D15:23",
+                  "conv-26:D15:3",
+                  "conv-26:D9:6",
+                  "conv-26:D3:7"
                 ]
               }
             ]
@@ -482,9 +677,9 @@
             ]
           },
           "category_1": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 0.0,
@@ -492,11 +687,11 @@
             "ndcg_at_10": 0.0,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 58.68113451055251,
-            "p50_total_sec": 58.60579649312422,
-            "p95_total_sec": 58.756472527980804,
-            "avg_storage_bytes": 6599449.0,
-            "p95_storage_bytes": 6601497.0,
+            "avg_total_sec": 58.858943794388324,
+            "p50_total_sec": 58.756472527980804,
+            "p95_total_sec": 59.21456236205995,
+            "avg_storage_bytes": 6601497.0,
+            "p95_storage_bytes": 6605593.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -532,6 +727,24 @@
                   "conv-26:D13:13",
                   "conv-26:D11:8",
                   "conv-26:D16:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0007",
+                "category": "category_1",
+                "query": "What is Caroline's relationship status?",
+                "gold": "Single",
+                "prediction": "getting along!",
+                "expected_doc_ids": [
+                  "conv-26:D3:13",
+                  "conv-26:D2:14"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D16:15",
+                  "conv-26:D16:14",
+                  "conv-26:D11:8",
+                  "conv-26:D12:11",
+                  "conv-26:D3:23"
                 ]
               }
             ],
@@ -590,6 +803,24 @@
               "conv-26:D11:8",
               "conv-26:D16:14"
             ]
+          },
+          {
+            "case_id": "locomo::conv-26::0007",
+            "category": "category_1",
+            "query": "What is Caroline's relationship status?",
+            "gold": "Single",
+            "prediction": "getting along!",
+            "expected_doc_ids": [
+              "conv-26:D3:13",
+              "conv-26:D2:14"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D16:15",
+              "conv-26:D16:14",
+              "conv-26:D11:8",
+              "conv-26:D12:11",
+              "conv-26:D3:23"
+            ]
           }
         ],
         "sample_successes": [
@@ -619,6 +850,48 @@
               "conv-26:D6:7",
               "conv-26:D16:8",
               "conv-26:D11:14"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0005",
+            "category": "category_2",
+            "query": "When did Melanie run a charity race?",
+            "gold": "The sunday before 25 May 2023",
+            "prediction": "I ran a charity race for mental health last Saturday – it was really rewarding.",
+            "retrieved_doc_ids": [
+              "conv-26:D2:2",
+              "conv-26:D2:1",
+              "conv-26:D15:4",
+              "conv-26:D7:23",
+              "conv-26:D7:22"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0006",
+            "category": "category_2",
+            "query": "When is Melanie planning on going camping?",
+            "gold": "June 2023",
+            "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+            "retrieved_doc_ids": [
+              "conv-26:D10:14",
+              "conv-26:D4:6",
+              "conv-26:D10:12",
+              "conv-26:D2:7",
+              "conv-26:D4:8"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0008",
+            "category": "category_2",
+            "query": "When did Caroline give a speech at a school?",
+            "gold": "The week before 9 June 2023",
+            "prediction": "I'm grateful for the chance to share my story and give others hope.",
+            "retrieved_doc_ids": [
+              "conv-26:D3:1",
+              "conv-26:D15:23",
+              "conv-26:D15:3",
+              "conv-26:D9:6",
+              "conv-26:D3:7"
             ]
           }
         ]
@@ -760,37 +1033,37 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 5,
-      "rows_successful": 5,
+      "rows_recorded": 10,
+      "rows_successful": 10,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.4,
-      "doc_recall_all": 0.2,
-      "ndcg_at_10": 0.3226294385530917,
+      "doc_recall_any": 0.5,
+      "doc_recall_all": 0.3,
+      "ndcg_at_10": 0.35,
       "exact_match": 0.0,
       "token_f1": 0.0,
-      "avg_total_sec": 36.43264845293015,
+      "avg_total_sec": 36.474550411012025,
       "p50_total_sec": 36.182323910761625,
-      "p95_total_sec": 37.1913905791007,
-      "avg_storage_bytes": 16106320.0,
+      "p95_total_sec": 37.65678389882669,
+      "avg_storage_bytes": 16103453.0,
       "p95_storage_bytes": 16117788.0,
       "categories": {
         "category_2": {
-          "expected_total": 2,
-          "rows_recorded": 2,
-          "rows_successful": 2,
+          "expected_total": 6,
+          "rows_recorded": 6,
+          "rows_successful": 6,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 0.5,
           "doc_recall_all": 0.5,
-          "ndcg_at_10": 0.5,
+          "ndcg_at_10": 0.4166666666666667,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 36.64514311449602,
-          "p50_total_sec": 36.09889564989135,
-          "p95_total_sec": 37.1913905791007,
-          "avg_storage_bytes": 16097310.0,
-          "p95_storage_bytes": 16105502.0,
+          "avg_total_sec": 36.62699676708629,
+          "p50_total_sec": 36.21702850330621,
+          "p95_total_sec": 37.65678389882669,
+          "avg_storage_bytes": 16102088.0,
+          "p95_storage_bytes": 16113694.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -810,6 +1083,40 @@
                 "conv-26:D17:16",
                 "conv-26:D12:6"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0006",
+              "category": "category_2",
+              "query": "When is Melanie planning on going camping?",
+              "gold": "June 2023",
+              "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+              "expected_doc_ids": [
+                "conv-26:D2:7"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D10:12",
+                "conv-26:D18:19",
+                "conv-26:D18:21",
+                "conv-26:D18:20",
+                "conv-26:D4:8"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0009",
+              "category": "category_2",
+              "query": "When did Caroline meet up with her friends, family, and mentors?",
+              "gold": "The week before 9 June 2023",
+              "prediction": "t easy and acceptance wasn",
+              "expected_doc_ids": [
+                "conv-26:D3:11"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D8:19",
+                "conv-26:D16:15",
+                "conv-26:D8:23",
+                "conv-26:D4:15",
+                "conv-26:D6:11"
+              ]
             }
           ],
           "sample_successes": [
@@ -825,6 +1132,34 @@
                 "conv-26:D4:13",
                 "conv-26:D9:6",
                 "conv-26:D11:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0005",
+              "category": "category_2",
+              "query": "When did Melanie run a charity race?",
+              "gold": "The sunday before 25 May 2023",
+              "prediction": "I ran a charity race for mental health last Saturday – it was really rewarding.",
+              "retrieved_doc_ids": [
+                "conv-26:D2:2",
+                "conv-26:D14:11",
+                "conv-26:D2:1",
+                "conv-26:D19:4",
+                "conv-26:D10:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0008",
+              "category": "category_2",
+              "query": "When did Caroline give a speech at a school?",
+              "gold": "The week before 9 June 2023",
+              "prediction": "I'm grateful for the chance to share my story and give others hope.",
+              "retrieved_doc_ids": [
+                "conv-26:D3:1",
+                "conv-26:D15:23",
+                "conv-26:D15:5",
+                "conv-26:D3:7",
+                "conv-26:D11:2"
               ]
             }
           ]
@@ -866,20 +1201,20 @@
           ]
         },
         "category_1": {
-          "expected_total": 2,
-          "rows_recorded": 2,
-          "rows_successful": 2,
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.0,
+          "doc_recall_any": 0.3333333333333333,
           "doc_recall_all": 0.0,
-          "ndcg_at_10": 0.0,
+          "ndcg_at_10": 0.1289509357448472,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 36.17380428337492,
+          "avg_total_sec": 36.152725346231215,
           "p50_total_sec": 36.165284655988216,
           "p95_total_sec": 36.182323910761625,
-          "avg_storage_bytes": 16113691.0,
+          "avg_storage_bytes": 16104134.666666666,
           "p95_storage_bytes": 16117788.0,
           "categories": {},
           "sample_errors": [],
@@ -919,7 +1254,22 @@
               ]
             }
           ],
-          "sample_successes": []
+          "sample_successes": [
+            {
+              "case_id": "locomo::conv-26::0007",
+              "category": "category_1",
+              "query": "What is Caroline's relationship status?",
+              "gold": "Single",
+              "prediction": "really helpful",
+              "retrieved_doc_ids": [
+                "conv-26:D16:15",
+                "conv-26:D3:13",
+                "conv-26:D17:5",
+                "conv-26:D8:16",
+                "conv-26:D4:3"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -974,6 +1324,40 @@
             "conv-26:D11:8",
             "conv-26:D16:13"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0006",
+          "category": "category_2",
+          "query": "When is Melanie planning on going camping?",
+          "gold": "June 2023",
+          "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+          "expected_doc_ids": [
+            "conv-26:D2:7"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D10:12",
+            "conv-26:D18:19",
+            "conv-26:D18:21",
+            "conv-26:D18:20",
+            "conv-26:D4:8"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0009",
+          "category": "category_2",
+          "query": "When did Caroline meet up with her friends, family, and mentors?",
+          "gold": "The week before 9 June 2023",
+          "prediction": "t easy and acceptance wasn",
+          "expected_doc_ids": [
+            "conv-26:D3:11"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D8:19",
+            "conv-26:D16:15",
+            "conv-26:D8:23",
+            "conv-26:D4:15",
+            "conv-26:D6:11"
+          ]
         }
       ],
       "sample_successes": [
@@ -1004,42 +1388,84 @@
             "conv-26:D13:11",
             "conv-26:D7:7"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0005",
+          "category": "category_2",
+          "query": "When did Melanie run a charity race?",
+          "gold": "The sunday before 25 May 2023",
+          "prediction": "I ran a charity race for mental health last Saturday – it was really rewarding.",
+          "retrieved_doc_ids": [
+            "conv-26:D2:2",
+            "conv-26:D14:11",
+            "conv-26:D2:1",
+            "conv-26:D19:4",
+            "conv-26:D10:6"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0007",
+          "category": "category_1",
+          "query": "What is Caroline's relationship status?",
+          "gold": "Single",
+          "prediction": "really helpful",
+          "retrieved_doc_ids": [
+            "conv-26:D16:15",
+            "conv-26:D3:13",
+            "conv-26:D17:5",
+            "conv-26:D8:16",
+            "conv-26:D4:3"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0008",
+          "category": "category_2",
+          "query": "When did Caroline give a speech at a school?",
+          "gold": "The week before 9 June 2023",
+          "prediction": "I'm grateful for the chance to share my story and give others hope.",
+          "retrieved_doc_ids": [
+            "conv-26:D3:1",
+            "conv-26:D15:23",
+            "conv-26:D15:5",
+            "conv-26:D3:7",
+            "conv-26:D11:2"
+          ]
         }
       ]
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 5,
-      "rows_successful": 5,
+      "rows_recorded": 9,
+      "rows_successful": 9,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.4,
-      "doc_recall_all": 0.2,
-      "ndcg_at_10": 0.2773705614469083,
+      "doc_recall_any": 0.5555555555555556,
+      "doc_recall_all": 0.4444444444444444,
+      "ndcg_at_10": 0.38316212431993246,
       "exact_match": 0.0,
       "token_f1": 0.0,
-      "avg_total_sec": 58.92633160557598,
-      "p50_total_sec": 58.761439382098615,
+      "avg_total_sec": 58.97178621031344,
+      "p50_total_sec": 58.90923095308244,
       "p95_total_sec": 59.33104956988245,
-      "avg_storage_bytes": 6597401.0,
-      "p95_storage_bytes": 6601497.0,
+      "avg_storage_bytes": 6600586.777777778,
+      "p95_storage_bytes": 6617881.0,
       "categories": {
         "category_2": {
-          "expected_total": 2,
-          "rows_recorded": 2,
-          "rows_successful": 2,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5,
-          "doc_recall_all": 0.5,
-          "ndcg_at_10": 0.5,
+          "doc_recall_any": 0.8,
+          "doc_recall_all": 0.8,
+          "ndcg_at_10": 0.6123212623289701,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 59.046244475990534,
-          "p50_total_sec": 58.761439382098615,
+          "avg_total_sec": 58.99846889097243,
+          "p50_total_sec": 58.90923095308244,
           "p95_total_sec": 59.33104956988245,
-          "avg_storage_bytes": 6597401.0,
-          "p95_storage_bytes": 6601497.0,
+          "avg_storage_bytes": 6601497.0,
+          "p95_storage_bytes": 6617881.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -1074,6 +1500,48 @@
                 "conv-26:D4:15",
                 "conv-26:D16:5",
                 "conv-26:D1:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0005",
+              "category": "category_2",
+              "query": "When did Melanie run a charity race?",
+              "gold": "The sunday before 25 May 2023",
+              "prediction": "I ran a charity race for mental health last Saturday – it was really rewarding.",
+              "retrieved_doc_ids": [
+                "conv-26:D2:2",
+                "conv-26:D2:1",
+                "conv-26:D15:4",
+                "conv-26:D7:23",
+                "conv-26:D7:22"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0006",
+              "category": "category_2",
+              "query": "When is Melanie planning on going camping?",
+              "gold": "June 2023",
+              "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+              "retrieved_doc_ids": [
+                "conv-26:D10:14",
+                "conv-26:D4:6",
+                "conv-26:D10:12",
+                "conv-26:D2:7",
+                "conv-26:D4:8"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0008",
+              "category": "category_2",
+              "query": "When did Caroline give a speech at a school?",
+              "gold": "The week before 9 June 2023",
+              "prediction": "I'm grateful for the chance to share my story and give others hope.",
+              "retrieved_doc_ids": [
+                "conv-26:D3:1",
+                "conv-26:D15:23",
+                "conv-26:D15:3",
+                "conv-26:D9:6",
+                "conv-26:D3:7"
               ]
             }
           ]
@@ -1115,9 +1583,9 @@
           ]
         },
         "category_1": {
-          "expected_total": 2,
-          "rows_recorded": 2,
-          "rows_successful": 2,
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 0.0,
@@ -1125,11 +1593,11 @@
           "ndcg_at_10": 0.0,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 58.68113451055251,
-          "p50_total_sec": 58.60579649312422,
-          "p95_total_sec": 58.756472527980804,
-          "avg_storage_bytes": 6599449.0,
-          "p95_storage_bytes": 6601497.0,
+          "avg_total_sec": 58.858943794388324,
+          "p50_total_sec": 58.756472527980804,
+          "p95_total_sec": 59.21456236205995,
+          "avg_storage_bytes": 6601497.0,
+          "p95_storage_bytes": 6605593.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -1165,6 +1633,24 @@
                 "conv-26:D13:13",
                 "conv-26:D11:8",
                 "conv-26:D16:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0007",
+              "category": "category_1",
+              "query": "What is Caroline's relationship status?",
+              "gold": "Single",
+              "prediction": "getting along!",
+              "expected_doc_ids": [
+                "conv-26:D3:13",
+                "conv-26:D2:14"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D16:15",
+                "conv-26:D16:14",
+                "conv-26:D11:8",
+                "conv-26:D12:11",
+                "conv-26:D3:23"
               ]
             }
           ],
@@ -1223,6 +1709,24 @@
             "conv-26:D11:8",
             "conv-26:D16:14"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0007",
+          "category": "category_1",
+          "query": "What is Caroline's relationship status?",
+          "gold": "Single",
+          "prediction": "getting along!",
+          "expected_doc_ids": [
+            "conv-26:D3:13",
+            "conv-26:D2:14"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D16:15",
+            "conv-26:D16:14",
+            "conv-26:D11:8",
+            "conv-26:D12:11",
+            "conv-26:D3:23"
+          ]
         }
       ],
       "sample_successes": [
@@ -1253,16 +1757,58 @@
             "conv-26:D16:8",
             "conv-26:D11:14"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0005",
+          "category": "category_2",
+          "query": "When did Melanie run a charity race?",
+          "gold": "The sunday before 25 May 2023",
+          "prediction": "I ran a charity race for mental health last Saturday – it was really rewarding.",
+          "retrieved_doc_ids": [
+            "conv-26:D2:2",
+            "conv-26:D2:1",
+            "conv-26:D15:4",
+            "conv-26:D7:23",
+            "conv-26:D7:22"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0006",
+          "category": "category_2",
+          "query": "When is Melanie planning on going camping?",
+          "gold": "June 2023",
+          "prediction": "Melanie: I'll always remember our camping trip last year when we saw the Perseid meteor shower.",
+          "retrieved_doc_ids": [
+            "conv-26:D10:14",
+            "conv-26:D4:6",
+            "conv-26:D10:12",
+            "conv-26:D2:7",
+            "conv-26:D4:8"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0008",
+          "category": "category_2",
+          "query": "When did Caroline give a speech at a school?",
+          "gold": "The week before 9 June 2023",
+          "prediction": "I'm grateful for the chance to share my story and give others hope.",
+          "retrieved_doc_ids": [
+            "conv-26:D3:1",
+            "conv-26:D15:23",
+            "conv-26:D15:3",
+            "conv-26:D9:6",
+            "conv-26:D3:7"
+          ]
         }
       ]
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0,
-    "doc_recall_all_delta": 0.0,
-    "ndcg_at_10_delta": -0.04525887710618337,
+    "doc_recall_any_delta": 0.05555555555555558,
+    "doc_recall_all_delta": 0.14444444444444443,
+    "ndcg_at_10_delta": 0.033162124319932484,
     "token_f1_delta": 0.0,
-    "avg_storage_ratio_nova_over_stock": 0.4096156663967933,
-    "avg_latency_ratio_nova_over_stock": 1.6174045562926058
+    "avg_storage_ratio_nova_over_stock": 0.4098864248417888,
+    "avg_latency_ratio_nova_over_stock": 1.6167926827278802
   }
 }
