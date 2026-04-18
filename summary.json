@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T17:37:01Z",
+  "generated_at": "2026-04-18T17:38:00Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T17:36:25Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T17:37:02Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 85,
     "current_case_total": 1986,
@@ -1521,19 +1521,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 84,
-        "rows_successful": 84,
+        "rows_recorded": 85,
+        "rows_successful": 85,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.75,
-        "doc_recall_all": 0.5595238095238095,
-        "ndcg_at_10": 0.49074024913189185,
+        "doc_recall_any": 0.7411764705882353,
+        "doc_recall_all": 0.5529411764705883,
+        "ndcg_at_10": 0.48496683443622257,
         "exact_match": 0.0,
-        "token_f1": 0.024588371110927505,
-        "avg_total_sec": 59.33092385673496,
-        "p50_total_sec": 58.95353631814942,
+        "token_f1": 0.024299096156681296,
+        "avg_total_sec": 59.32160846210249,
+        "p50_total_sec": 58.94985125865787,
         "p95_total_sec": 61.90859910007566,
-        "avg_storage_bytes": 6599497.761904762,
+        "avg_storage_bytes": 6599424.905882353,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -2404,24 +2404,42 @@
             ]
           },
           "category_4": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.75,
+            "doc_recall_any": 0.6666666666666666,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.5,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 59.34273138293065,
+            "avg_total_sec": 59.07485935961207,
             "p50_total_sec": 58.931759282015264,
             "p95_total_sec": 59.75370348384604,
-            "avg_storage_bytes": 6589209.0,
+            "avg_storage_bytes": 6590574.333333333,
             "p95_storage_bytes": 6601497.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0084",
+                "category": "category_4",
+                "query": "How does Melanie prioritize self-care?",
+                "gold": "by carving out some me-time each day for activities like running, reading, or playing the violin",
+                "prediction": "How does art help you with your self-discovery and acceptance journey?",
+                "expected_doc_ids": [
+                  "conv-26:D2:5"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:4",
+                  "conv-26:D2:3",
+                  "conv-26:D7:25",
+                  "conv-26:D4:15",
+                  "conv-26:D7:7"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "locomo::conv-26::0082",
@@ -4369,19 +4387,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 84,
-      "rows_successful": 84,
+      "rows_recorded": 85,
+      "rows_successful": 85,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.75,
-      "doc_recall_all": 0.5595238095238095,
-      "ndcg_at_10": 0.49074024913189185,
+      "doc_recall_any": 0.7411764705882353,
+      "doc_recall_all": 0.5529411764705883,
+      "ndcg_at_10": 0.48496683443622257,
       "exact_match": 0.0,
-      "token_f1": 0.024588371110927505,
-      "avg_total_sec": 59.33092385673496,
-      "p50_total_sec": 58.95353631814942,
+      "token_f1": 0.024299096156681296,
+      "avg_total_sec": 59.32160846210249,
+      "p50_total_sec": 58.94985125865787,
       "p95_total_sec": 61.90859910007566,
-      "avg_storage_bytes": 6599497.761904762,
+      "avg_storage_bytes": 6599424.905882353,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -5252,24 +5270,42 @@
           ]
         },
         "category_4": {
-          "expected_total": 2,
-          "rows_recorded": 2,
-          "rows_successful": 2,
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 1.0,
-          "ndcg_at_10": 0.75,
+          "doc_recall_any": 0.6666666666666666,
+          "doc_recall_all": 0.6666666666666666,
+          "ndcg_at_10": 0.5,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 59.34273138293065,
+          "avg_total_sec": 59.07485935961207,
           "p50_total_sec": 58.931759282015264,
           "p95_total_sec": 59.75370348384604,
-          "avg_storage_bytes": 6589209.0,
+          "avg_storage_bytes": 6590574.333333333,
           "p95_storage_bytes": 6601497.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0084",
+              "category": "category_4",
+              "query": "How does Melanie prioritize self-care?",
+              "gold": "by carving out some me-time each day for activities like running, reading, or playing the violin",
+              "prediction": "How does art help you with your self-discovery and acceptance journey?",
+              "expected_doc_ids": [
+                "conv-26:D2:5"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:4",
+                "conv-26:D2:3",
+                "conv-26:D7:25",
+                "conv-26:D4:15",
+                "conv-26:D7:7"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "locomo::conv-26::0082",
@@ -5688,11 +5724,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.032352941176470584,
-    "doc_recall_all_delta": 0.06540616246498598,
-    "ndcg_at_10_delta": 0.07839498999188721,
-    "token_f1_delta": 0.005648502257207526,
-    "avg_storage_ratio_nova_over_stock": 0.4097752549909207,
-    "avg_latency_ratio_nova_over_stock": 1.6259611152090434
+    "doc_recall_any_delta": 0.02352941176470591,
+    "doc_recall_all_delta": 0.05882352941176472,
+    "ndcg_at_10_delta": 0.07262157529621793,
+    "token_f1_delta": 0.005359227302961317,
+    "avg_storage_ratio_nova_over_stock": 0.40977073122316787,
+    "avg_latency_ratio_nova_over_stock": 1.625705827267096
   }
 }
