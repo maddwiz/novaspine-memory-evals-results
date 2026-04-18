@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T18:10:06Z",
+  "generated_at": "2026-04-18T18:17:06Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,30 +116,30 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T18:09:07Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T18:16:29Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 105,
+    "current_case_index": 110,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0104"
+    "current_case_id": "locomo::conv-26::0109"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 105,
-        "rows_successful": 105,
+        "rows_recorded": 110,
+        "rows_successful": 110,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7047619047619048,
-        "doc_recall_all": 0.5238095238095238,
-        "ndcg_at_10": 0.4266678031676744,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.5272727272727272,
+        "ndcg_at_10": 0.4220228862932458,
         "exact_match": 0.0,
-        "token_f1": 0.029716463226794526,
-        "avg_total_sec": 36.496891758103104,
-        "p50_total_sec": 36.31223727297038,
+        "token_f1": 0.028365714898303866,
+        "avg_total_sec": 36.49899748129008,
+        "p50_total_sec": 36.32365436293185,
         "p95_total_sec": 37.65678389882669,
-        "avg_storage_bytes": 16106593.771428572,
+        "avg_storage_bytes": 16106544.145454545,
         "p95_storage_bytes": 16117790.0,
         "categories": {
           "category_2": {
@@ -1075,21 +1075,21 @@
             ]
           },
           "category_4": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6521739130434783,
-            "doc_recall_all": 0.6521739130434783,
-            "ndcg_at_10": 0.4842445701278244,
+            "doc_recall_any": 0.6428571428571429,
+            "doc_recall_all": 0.6428571428571429,
+            "ndcg_at_10": 0.4557151168782565,
             "exact_match": 0.0,
-            "token_f1": 0.06566694722814032,
-            "avg_total_sec": 36.476617079896286,
-            "p50_total_sec": 36.36300560506061,
+            "token_f1": 0.05394070665168669,
+            "avg_total_sec": 36.48851004209636,
+            "p50_total_sec": 36.39498220058158,
             "p95_total_sec": 37.54192951787263,
-            "avg_storage_bytes": 16112446.956521738,
-            "p95_storage_bytes": 16117790.0,
+            "avg_storage_bytes": 16111206.785714285,
+            "p95_storage_bytes": 16121882.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -1227,6 +1227,40 @@
                   "conv-26:D14:13",
                   "conv-26:D19:4",
                   "conv-26:D13:15"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0106",
+                "category": "category_4",
+                "query": "What are the new shoes that Melanie got used for?",
+                "gold": "Running",
+                "prediction": "Just got some new shoes, too!",
+                "expected_doc_ids": [
+                  "conv-26:D7:19"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D7:18",
+                  "conv-26:D10:20",
+                  "conv-26:D4:5",
+                  "conv-26:D12:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0108",
+                "category": "category_4",
+                "query": "What does Melanie say running has been great for?",
+                "gold": "Her mental health",
+                "prediction": "been great for my headspace",
+                "expected_doc_ids": [
+                  "conv-26:D7:24"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:23",
+                  "conv-26:D7:22",
+                  "conv-26:D7:21",
+                  "conv-26:D4:15",
+                  "conv-26:D7:8"
                 ]
               }
             ],
@@ -1780,19 +1814,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 105,
-        "rows_successful": 105,
+        "rows_recorded": 109,
+        "rows_successful": 109,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7142857142857143,
-        "doc_recall_all": 0.5619047619047619,
-        "ndcg_at_10": 0.4730821796686435,
+        "doc_recall_any": 0.6972477064220184,
+        "doc_recall_all": 0.5504587155963303,
+        "ndcg_at_10": 0.46489567766245476,
         "exact_match": 0.0,
-        "token_f1": 0.03724541460667759,
-        "avg_total_sec": 59.33854539887536,
+        "token_f1": 0.03587861040092795,
+        "avg_total_sec": 59.333497977144845,
         "p50_total_sec": 58.95353631814942,
         "p95_total_sec": 61.90859910007566,
-        "avg_storage_bytes": 6599468.5047619045,
+        "avg_storage_bytes": 6599430.211009175,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -2663,20 +2697,20 @@
             ]
           },
           "category_4": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 27,
+            "rows_recorded": 27,
+            "rows_successful": 27,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6086956521739131,
-            "doc_recall_all": 0.6086956521739131,
-            "ndcg_at_10": 0.4326716494838546,
+            "doc_recall_any": 0.5555555555555556,
+            "doc_recall_all": 0.5555555555555556,
+            "ndcg_at_10": 0.4056091828936539,
             "exact_match": 0.0,
-            "token_f1": 0.08023240697318418,
-            "avg_total_sec": 59.366744594871186,
+            "token_f1": 0.06834612445863837,
+            "avg_total_sec": 59.3421903077375,
             "p50_total_sec": 59.02191383205354,
             "p95_total_sec": 61.76511899102479,
-            "avg_storage_bytes": 6598469.521739131,
+            "avg_storage_bytes": 6598462.925925926,
             "p95_storage_bytes": 6613785.0,
             "categories": {},
             "sample_errors": [],
@@ -2832,6 +2866,57 @@
                   "conv-26:D10:20",
                   "conv-26:D4:3",
                   "conv-26:D7:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0105",
+                "category": "category_4",
+                "query": "What did Caroline take away from the book \"Becoming Nicole\"?",
+                "gold": "Lessons on self-acceptance and finding support",
+                "prediction": "Becoming Nicole",
+                "expected_doc_ids": [
+                  "conv-26:D7:13"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:11",
+                  "conv-26:D6:9",
+                  "conv-26:D13:1",
+                  "conv-26:D15:23",
+                  "conv-26:D7:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0106",
+                "category": "category_4",
+                "query": "What are the new shoes that Melanie got used for?",
+                "gold": "Running",
+                "prediction": "Just got some new shoes, too!",
+                "expected_doc_ids": [
+                  "conv-26:D7:19"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:18",
+                  "conv-26:D4:5",
+                  "conv-26:D4:3",
+                  "conv-26:D15:14",
+                  "conv-26:D4:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0108",
+                "category": "category_4",
+                "query": "What does Melanie say running has been great for?",
+                "gold": "Her mental health",
+                "prediction": "been great for my headspace",
+                "expected_doc_ids": [
+                  "conv-26:D7:24"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:22",
+                  "conv-26:D7:23",
+                  "conv-26:D7:21",
+                  "conv-26:D2:2",
+                  "conv-26:D7:20"
                 ]
               }
             ],
@@ -3528,19 +3613,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 105,
-      "rows_successful": 105,
+      "rows_recorded": 110,
+      "rows_successful": 110,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7047619047619048,
-      "doc_recall_all": 0.5238095238095238,
-      "ndcg_at_10": 0.4266678031676744,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.5272727272727272,
+      "ndcg_at_10": 0.4220228862932458,
       "exact_match": 0.0,
-      "token_f1": 0.029716463226794526,
-      "avg_total_sec": 36.496891758103104,
-      "p50_total_sec": 36.31223727297038,
+      "token_f1": 0.028365714898303866,
+      "avg_total_sec": 36.49899748129008,
+      "p50_total_sec": 36.32365436293185,
       "p95_total_sec": 37.65678389882669,
-      "avg_storage_bytes": 16106593.771428572,
+      "avg_storage_bytes": 16106544.145454545,
       "p95_storage_bytes": 16117790.0,
       "categories": {
         "category_2": {
@@ -4476,21 +4561,21 @@
           ]
         },
         "category_4": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 28,
+          "rows_recorded": 28,
+          "rows_successful": 28,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6521739130434783,
-          "doc_recall_all": 0.6521739130434783,
-          "ndcg_at_10": 0.4842445701278244,
+          "doc_recall_any": 0.6428571428571429,
+          "doc_recall_all": 0.6428571428571429,
+          "ndcg_at_10": 0.4557151168782565,
           "exact_match": 0.0,
-          "token_f1": 0.06566694722814032,
-          "avg_total_sec": 36.476617079896286,
-          "p50_total_sec": 36.36300560506061,
+          "token_f1": 0.05394070665168669,
+          "avg_total_sec": 36.48851004209636,
+          "p50_total_sec": 36.39498220058158,
           "p95_total_sec": 37.54192951787263,
-          "avg_storage_bytes": 16112446.956521738,
-          "p95_storage_bytes": 16117790.0,
+          "avg_storage_bytes": 16111206.785714285,
+          "p95_storage_bytes": 16121882.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -4628,6 +4713,40 @@
                 "conv-26:D14:13",
                 "conv-26:D19:4",
                 "conv-26:D13:15"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0106",
+              "category": "category_4",
+              "query": "What are the new shoes that Melanie got used for?",
+              "gold": "Running",
+              "prediction": "Just got some new shoes, too!",
+              "expected_doc_ids": [
+                "conv-26:D7:19"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D7:18",
+                "conv-26:D10:20",
+                "conv-26:D4:5",
+                "conv-26:D12:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0108",
+              "category": "category_4",
+              "query": "What does Melanie say running has been great for?",
+              "gold": "Her mental health",
+              "prediction": "been great for my headspace",
+              "expected_doc_ids": [
+                "conv-26:D7:24"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:23",
+                "conv-26:D7:22",
+                "conv-26:D7:21",
+                "conv-26:D4:15",
+                "conv-26:D7:8"
               ]
             }
           ],
@@ -5181,19 +5300,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 105,
-      "rows_successful": 105,
+      "rows_recorded": 109,
+      "rows_successful": 109,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7142857142857143,
-      "doc_recall_all": 0.5619047619047619,
-      "ndcg_at_10": 0.4730821796686435,
+      "doc_recall_any": 0.6972477064220184,
+      "doc_recall_all": 0.5504587155963303,
+      "ndcg_at_10": 0.46489567766245476,
       "exact_match": 0.0,
-      "token_f1": 0.03724541460667759,
-      "avg_total_sec": 59.33854539887536,
+      "token_f1": 0.03587861040092795,
+      "avg_total_sec": 59.333497977144845,
       "p50_total_sec": 58.95353631814942,
       "p95_total_sec": 61.90859910007566,
-      "avg_storage_bytes": 6599468.5047619045,
+      "avg_storage_bytes": 6599430.211009175,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -6064,20 +6183,20 @@
           ]
         },
         "category_4": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 27,
+          "rows_recorded": 27,
+          "rows_successful": 27,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6086956521739131,
-          "doc_recall_all": 0.6086956521739131,
-          "ndcg_at_10": 0.4326716494838546,
+          "doc_recall_any": 0.5555555555555556,
+          "doc_recall_all": 0.5555555555555556,
+          "ndcg_at_10": 0.4056091828936539,
           "exact_match": 0.0,
-          "token_f1": 0.08023240697318418,
-          "avg_total_sec": 59.366744594871186,
+          "token_f1": 0.06834612445863837,
+          "avg_total_sec": 59.3421903077375,
           "p50_total_sec": 59.02191383205354,
           "p95_total_sec": 61.76511899102479,
-          "avg_storage_bytes": 6598469.521739131,
+          "avg_storage_bytes": 6598462.925925926,
           "p95_storage_bytes": 6613785.0,
           "categories": {},
           "sample_errors": [],
@@ -6233,6 +6352,57 @@
                 "conv-26:D10:20",
                 "conv-26:D4:3",
                 "conv-26:D7:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0105",
+              "category": "category_4",
+              "query": "What did Caroline take away from the book \"Becoming Nicole\"?",
+              "gold": "Lessons on self-acceptance and finding support",
+              "prediction": "Becoming Nicole",
+              "expected_doc_ids": [
+                "conv-26:D7:13"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:11",
+                "conv-26:D6:9",
+                "conv-26:D13:1",
+                "conv-26:D15:23",
+                "conv-26:D7:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0106",
+              "category": "category_4",
+              "query": "What are the new shoes that Melanie got used for?",
+              "gold": "Running",
+              "prediction": "Just got some new shoes, too!",
+              "expected_doc_ids": [
+                "conv-26:D7:19"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:18",
+                "conv-26:D4:5",
+                "conv-26:D4:3",
+                "conv-26:D15:14",
+                "conv-26:D4:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0108",
+              "category": "category_4",
+              "query": "What does Melanie say running has been great for?",
+              "gold": "Her mental health",
+              "prediction": "been great for my headspace",
+              "expected_doc_ids": [
+                "conv-26:D7:24"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:22",
+                "conv-26:D7:23",
+                "conv-26:D7:21",
+                "conv-26:D2:2",
+                "conv-26:D7:20"
               ]
             }
           ],
@@ -6794,11 +6964,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.00952380952380949,
-    "doc_recall_all_delta": 0.03809523809523807,
-    "ndcg_at_10_delta": 0.046414376500969134,
-    "token_f1_delta": 0.0075289513798830615,
-    "avg_storage_ratio_nova_over_stock": 0.4097370678379359,
-    "avg_latency_ratio_nova_over_stock": 1.6258520257605475
+    "doc_recall_any_delta": -0.0027522935779815683,
+    "doc_recall_all_delta": 0.02318598832360308,
+    "ndcg_at_10_delta": 0.04287279136920896,
+    "token_f1_delta": 0.007512895502624083,
+    "avg_storage_ratio_nova_over_stock": 0.40973595275381347,
+    "avg_latency_ratio_nova_over_stock": 1.6256199367547028
   }
 }
