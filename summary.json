@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T16:56:56Z",
+  "generated_at": "2026-04-18T16:57:56Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T16:56:20Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T16:56:57Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 60,
     "current_case_total": 1986,
@@ -1320,19 +1320,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 59,
-        "rows_successful": 59,
+        "rows_recorded": 60,
+        "rows_successful": 60,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.711864406779661,
-        "doc_recall_all": 0.5254237288135594,
-        "ndcg_at_10": 0.46135971774155304,
+        "doc_recall_any": 0.7166666666666667,
+        "doc_recall_all": 0.5166666666666667,
+        "ndcg_at_10": 0.4601179358997695,
         "exact_match": 0.0,
-        "token_f1": 0.020269055951482356,
-        "avg_total_sec": 59.30626509830324,
+        "token_f1": 0.021685624317203264,
+        "avg_total_sec": 59.29861872560966,
         "p50_total_sec": 58.97599657718092,
         "p95_total_sec": 61.90859910007566,
-        "avg_storage_bytes": 6600663.915254237,
+        "avg_storage_bytes": 6600677.8,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -1561,20 +1561,20 @@
             ]
           },
           "category_3": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5,
-            "doc_recall_all": 0.125,
-            "ndcg_at_10": 0.24478516390608143,
+            "doc_recall_any": 0.5555555555555556,
+            "doc_recall_all": 0.1111111111111111,
+            "ndcg_at_10": 0.26057045760924363,
             "exact_match": 0.0,
-            "token_f1": 0.01785714285714286,
-            "avg_total_sec": 59.13058769510826,
-            "p50_total_sec": 59.176900054793805,
+            "token_f1": 0.02756892230576441,
+            "avg_total_sec": 59.099131588617134,
+            "p50_total_sec": 59.00811576889828,
             "p95_total_sec": 59.99358485499397,
-            "avg_storage_bytes": 6602009.0,
+            "avg_storage_bytes": 6601952.111111111,
             "p95_storage_bytes": 6613785.0,
             "categories": {},
             "sample_errors": [],
@@ -1700,6 +1700,20 @@
                   "conv-26:D6:10",
                   "conv-26:D13:11",
                   "conv-26:D12:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0059",
+                "category": "category_3",
+                "query": "Would Caroline be considered religious?",
+                "gold": "Somewhat, but not extremely religious",
+                "prediction": "I ran into a group of religious conservatives who said something that really upset me.",
+                "retrieved_doc_ids": [
+                  "conv-26:D14:24",
+                  "conv-26:D12:1",
+                  "conv-26:D13:15",
+                  "conv-26:D17:5",
+                  "conv-26:D11:12"
                 ]
               }
             ]
@@ -3807,19 +3821,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 59,
-      "rows_successful": 59,
+      "rows_recorded": 60,
+      "rows_successful": 60,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.711864406779661,
-      "doc_recall_all": 0.5254237288135594,
-      "ndcg_at_10": 0.46135971774155304,
+      "doc_recall_any": 0.7166666666666667,
+      "doc_recall_all": 0.5166666666666667,
+      "ndcg_at_10": 0.4601179358997695,
       "exact_match": 0.0,
-      "token_f1": 0.020269055951482356,
-      "avg_total_sec": 59.30626509830324,
+      "token_f1": 0.021685624317203264,
+      "avg_total_sec": 59.29861872560966,
       "p50_total_sec": 58.97599657718092,
       "p95_total_sec": 61.90859910007566,
-      "avg_storage_bytes": 6600663.915254237,
+      "avg_storage_bytes": 6600677.8,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -4048,20 +4062,20 @@
           ]
         },
         "category_3": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5,
-          "doc_recall_all": 0.125,
-          "ndcg_at_10": 0.24478516390608143,
+          "doc_recall_any": 0.5555555555555556,
+          "doc_recall_all": 0.1111111111111111,
+          "ndcg_at_10": 0.26057045760924363,
           "exact_match": 0.0,
-          "token_f1": 0.01785714285714286,
-          "avg_total_sec": 59.13058769510826,
-          "p50_total_sec": 59.176900054793805,
+          "token_f1": 0.02756892230576441,
+          "avg_total_sec": 59.099131588617134,
+          "p50_total_sec": 59.00811576889828,
           "p95_total_sec": 59.99358485499397,
-          "avg_storage_bytes": 6602009.0,
+          "avg_storage_bytes": 6601952.111111111,
           "p95_storage_bytes": 6613785.0,
           "categories": {},
           "sample_errors": [],
@@ -4187,6 +4201,20 @@
                 "conv-26:D6:10",
                 "conv-26:D13:11",
                 "conv-26:D12:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0059",
+              "category": "category_3",
+              "query": "Would Caroline be considered religious?",
+              "gold": "Somewhat, but not extremely religious",
+              "prediction": "I ran into a group of religious conservatives who said something that really upset me.",
+              "retrieved_doc_ids": [
+                "conv-26:D14:24",
+                "conv-26:D12:1",
+                "conv-26:D13:15",
+                "conv-26:D17:5",
+                "conv-26:D11:12"
               ]
             }
           ]
@@ -4966,11 +4994,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.0048022598870056665,
-    "doc_recall_all_delta": 0.07542372881355935,
-    "ndcg_at_10_delta": 0.058785494500186386,
-    "token_f1_delta": 0.007624945675793131,
-    "avg_storage_ratio_nova_over_stock": 0.4098599297572129,
-    "avg_latency_ratio_nova_over_stock": 1.6246452317457518
+    "doc_recall_any_delta": 0.0,
+    "doc_recall_all_delta": 0.06666666666666671,
+    "ndcg_at_10_delta": 0.05754371265840286,
+    "token_f1_delta": 0.00904151404151404,
+    "avg_storage_ratio_nova_over_stock": 0.40986079191304997,
+    "avg_latency_ratio_nova_over_stock": 1.6244357657995117
   }
 }
