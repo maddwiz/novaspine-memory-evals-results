@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T19:37:28Z",
+  "generated_at": "2026-04-18T19:38:27Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T19:36:52Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T19:37:29Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 160,
     "current_case_total": 1986,
@@ -1992,19 +1992,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 159,
-        "rows_successful": 159,
+        "rows_recorded": 160,
+        "rows_successful": 160,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6981132075471698,
-        "doc_recall_all": 0.5911949685534591,
-        "ndcg_at_10": 0.4875006987042203,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.59375,
+        "ndcg_at_10": 0.49070381933731894,
         "exact_match": 0.0,
-        "token_f1": 0.05043828033619137,
-        "avg_total_sec": 59.4107579692507,
+        "token_f1": 0.05012304108409017,
+        "avg_total_sec": 59.40312355188653,
         "p50_total_sec": 58.957768791820854,
         "p95_total_sec": 62.0223612813279,
-        "avg_storage_bytes": 6599461.880503145,
+        "avg_storage_bytes": 6599449.0,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -3270,20 +3270,20 @@
             ]
           },
           "category_5": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5714285714285714,
-            "doc_recall_all": 0.5714285714285714,
-            "ndcg_at_10": 0.3270092609025554,
+            "doc_recall_any": 0.625,
+            "doc_recall_all": 0.625,
+            "ndcg_at_10": 0.41113310328973596,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 58.99224852551041,
+            "avg_total_sec": 58.89187385869445,
             "p50_total_sec": 58.96402466902509,
             "p95_total_sec": 59.54703552322462,
-            "avg_storage_bytes": 6600911.857142857,
+            "avg_storage_bytes": 6600473.0,
             "p95_storage_bytes": 6621977.0,
             "categories": {},
             "sample_errors": [],
@@ -3395,6 +3395,20 @@
                   "conv-26:D6:9",
                   "conv-26:D2:10",
                   "conv-26:D13:1"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0159",
+                "category": "category_5",
+                "query": "What was grandma's gift to Melanie?",
+                "gold": "",
+                "prediction": "super special to me - a gift from my grandma in my home country",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D19:11",
+                  "conv-26:D11:1",
+                  "conv-26:D18:1",
+                  "conv-26:D8:14"
                 ]
               }
             ]
@@ -5786,19 +5800,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 159,
-      "rows_successful": 159,
+      "rows_recorded": 160,
+      "rows_successful": 160,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6981132075471698,
-      "doc_recall_all": 0.5911949685534591,
-      "ndcg_at_10": 0.4875006987042203,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.59375,
+      "ndcg_at_10": 0.49070381933731894,
       "exact_match": 0.0,
-      "token_f1": 0.05043828033619137,
-      "avg_total_sec": 59.4107579692507,
+      "token_f1": 0.05012304108409017,
+      "avg_total_sec": 59.40312355188653,
       "p50_total_sec": 58.957768791820854,
       "p95_total_sec": 62.0223612813279,
-      "avg_storage_bytes": 6599461.880503145,
+      "avg_storage_bytes": 6599449.0,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -7064,20 +7078,20 @@
           ]
         },
         "category_5": {
-          "expected_total": 7,
-          "rows_recorded": 7,
-          "rows_successful": 7,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5714285714285714,
-          "doc_recall_all": 0.5714285714285714,
-          "ndcg_at_10": 0.3270092609025554,
+          "doc_recall_any": 0.625,
+          "doc_recall_all": 0.625,
+          "ndcg_at_10": 0.41113310328973596,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 58.99224852551041,
+          "avg_total_sec": 58.89187385869445,
           "p50_total_sec": 58.96402466902509,
           "p95_total_sec": 59.54703552322462,
-          "avg_storage_bytes": 6600911.857142857,
+          "avg_storage_bytes": 6600473.0,
           "p95_storage_bytes": 6621977.0,
           "categories": {},
           "sample_errors": [],
@@ -7189,6 +7203,20 @@
                 "conv-26:D6:9",
                 "conv-26:D2:10",
                 "conv-26:D13:1"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0159",
+              "category": "category_5",
+              "query": "What was grandma's gift to Melanie?",
+              "gold": "",
+              "prediction": "super special to me - a gift from my grandma in my home country",
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D19:11",
+                "conv-26:D11:1",
+                "conv-26:D18:1",
+                "conv-26:D8:14"
               ]
             }
           ]
@@ -7580,11 +7608,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.008136792452830277,
-    "doc_recall_all_delta": 0.003694968553459077,
-    "ndcg_at_10_delta": 0.025668776367631485,
-    "token_f1_delta": 0.004126201840237709,
-    "avg_storage_ratio_nova_over_stock": 0.4097208091834454,
-    "avg_latency_ratio_nova_over_stock": 1.6273441477279942
+    "doc_recall_any_delta": -0.006250000000000089,
+    "doc_recall_all_delta": 0.006249999999999978,
+    "ndcg_at_10_delta": 0.028871897000730118,
+    "token_f1_delta": 0.003810962588136513,
+    "avg_storage_ratio_nova_over_stock": 0.40972000951064375,
+    "avg_latency_ratio_nova_over_stock": 1.6271350303081267
   }
 }
