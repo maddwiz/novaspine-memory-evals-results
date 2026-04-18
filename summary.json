@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T20:33:30Z",
+  "generated_at": "2026-04-18T20:34:30Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T20:32:54Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T20:33:31Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 195,
     "current_case_total": 1986,
@@ -2237,19 +2237,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 194,
-        "rows_successful": 194,
+        "rows_recorded": 195,
+        "rows_successful": 195,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.711340206185567,
-        "doc_recall_all": 0.6185567010309279,
-        "ndcg_at_10": 0.49801660379477813,
+        "doc_recall_any": 0.7076923076923077,
+        "doc_recall_all": 0.6153846153846154,
+        "ndcg_at_10": 0.4954626724932665,
         "exact_match": 0.0,
-        "token_f1": 0.041338590584816634,
-        "avg_total_sec": 59.38933634426512,
-        "p50_total_sec": 58.957768791820854,
+        "token_f1": 0.041126597812586804,
+        "avg_total_sec": 59.38763054322977,
+        "p50_total_sec": 58.959072255995125,
         "p95_total_sec": 62.0223612813279,
-        "avg_storage_bytes": 6599829.041237113,
+        "avg_storage_bytes": 6599774.579487179,
         "p95_storage_bytes": 6617881.0,
         "categories": {
           "category_2": {
@@ -3515,20 +3515,20 @@
             ]
           },
           "category_5": {
-            "expected_total": 42,
-            "rows_recorded": 42,
-            "rows_successful": 42,
+            "expected_total": 43,
+            "rows_recorded": 43,
+            "rows_successful": 43,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7380952380952381,
-            "doc_recall_all": 0.7142857142857143,
-            "ndcg_at_10": 0.5093255921079481,
+            "doc_recall_any": 0.7209302325581395,
+            "doc_recall_all": 0.6976744186046512,
+            "ndcg_at_10": 0.49748081089613544,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 59.2420588894082,
-            "p50_total_sec": 58.96402466902509,
+            "avg_total_sec": 59.23774833715152,
+            "p50_total_sec": 58.99153480073437,
             "p95_total_sec": 61.9739446840249,
-            "avg_storage_bytes": 6601399.476190476,
+            "avg_storage_bytes": 6601115.976744186,
             "p95_storage_bytes": 6617881.0,
             "categories": {},
             "sample_errors": [],
@@ -3718,6 +3718,23 @@
                   "conv-26:D7:9",
                   "conv-26:D14:10",
                   "conv-26:D6:10"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0194",
+                "category": "category_5",
+                "query": "How did Caroline's children handle the accident?",
+                "gold": "",
+                "prediction": "How did they handle the accident?",
+                "expected_doc_ids": [
+                  "conv-26:D18:7"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D18:6",
+                  "conv-26:D18:5",
+                  "conv-26:D18:2",
+                  "conv-26:D18:3",
+                  "conv-26:D18:1"
                 ]
               }
             ],
@@ -6524,19 +6541,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 194,
-      "rows_successful": 194,
+      "rows_recorded": 195,
+      "rows_successful": 195,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.711340206185567,
-      "doc_recall_all": 0.6185567010309279,
-      "ndcg_at_10": 0.49801660379477813,
+      "doc_recall_any": 0.7076923076923077,
+      "doc_recall_all": 0.6153846153846154,
+      "ndcg_at_10": 0.4954626724932665,
       "exact_match": 0.0,
-      "token_f1": 0.041338590584816634,
-      "avg_total_sec": 59.38933634426512,
-      "p50_total_sec": 58.957768791820854,
+      "token_f1": 0.041126597812586804,
+      "avg_total_sec": 59.38763054322977,
+      "p50_total_sec": 58.959072255995125,
       "p95_total_sec": 62.0223612813279,
-      "avg_storage_bytes": 6599829.041237113,
+      "avg_storage_bytes": 6599774.579487179,
       "p95_storage_bytes": 6617881.0,
       "categories": {
         "category_2": {
@@ -7802,20 +7819,20 @@
           ]
         },
         "category_5": {
-          "expected_total": 42,
-          "rows_recorded": 42,
-          "rows_successful": 42,
+          "expected_total": 43,
+          "rows_recorded": 43,
+          "rows_successful": 43,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.7380952380952381,
-          "doc_recall_all": 0.7142857142857143,
-          "ndcg_at_10": 0.5093255921079481,
+          "doc_recall_any": 0.7209302325581395,
+          "doc_recall_all": 0.6976744186046512,
+          "ndcg_at_10": 0.49748081089613544,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 59.2420588894082,
-          "p50_total_sec": 58.96402466902509,
+          "avg_total_sec": 59.23774833715152,
+          "p50_total_sec": 58.99153480073437,
           "p95_total_sec": 61.9739446840249,
-          "avg_storage_bytes": 6601399.476190476,
+          "avg_storage_bytes": 6601115.976744186,
           "p95_storage_bytes": 6617881.0,
           "categories": {},
           "sample_errors": [],
@@ -8005,6 +8022,23 @@
                 "conv-26:D7:9",
                 "conv-26:D14:10",
                 "conv-26:D6:10"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0194",
+              "category": "category_5",
+              "query": "How did Caroline's children handle the accident?",
+              "gold": "",
+              "prediction": "How did they handle the accident?",
+              "expected_doc_ids": [
+                "conv-26:D18:7"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D18:6",
+                "conv-26:D18:5",
+                "conv-26:D18:2",
+                "conv-26:D18:3",
+                "conv-26:D18:1"
               ]
             }
           ],
@@ -8566,11 +8600,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.024160719006079856,
-    "doc_recall_all_delta": 0.0288131112873381,
-    "ndcg_at_10_delta": 0.03682056172107301,
-    "token_f1_delta": 0.0033389364342905486,
-    "avg_storage_ratio_nova_over_stock": 0.4097450230953741,
-    "avg_latency_ratio_nova_over_stock": 1.6273244424619535
+    "doc_recall_any_delta": 0.02051282051282055,
+    "doc_recall_all_delta": 0.02564102564102566,
+    "ndcg_at_10_delta": 0.03426663041956135,
+    "token_f1_delta": 0.003126943662060719,
+    "avg_storage_ratio_nova_over_stock": 0.40974164188188433,
+    "avg_latency_ratio_nova_over_stock": 1.6272777018871354
   }
 }
