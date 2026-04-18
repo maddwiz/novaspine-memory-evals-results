@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T15:28:48Z",
+  "generated_at": "2026-04-18T15:29:47Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T15:28:11Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-18T15:28:48Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 5,
     "current_case_total": 1986,
@@ -376,17 +376,17 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 4,
-        "rows_successful": 4,
+        "rows_recorded": 5,
+        "rows_successful": 5,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.5,
-        "doc_recall_all": 0.25,
-        "ndcg_at_10": 0.3467132018086354,
+        "doc_recall_any": 0.4,
+        "doc_recall_all": 0.2,
+        "ndcg_at_10": 0.2773705614469083,
         "exact_match": 0.0,
         "token_f1": 0.0,
-        "avg_total_sec": 58.96879637497477,
-        "p50_total_sec": 59.176900054793805,
+        "avg_total_sec": 58.92633160557598,
+        "p50_total_sec": 58.761439382098615,
         "p95_total_sec": 59.33104956988245,
         "avg_storage_bytes": 6597401.0,
         "p95_storage_bytes": 6601497.0,
@@ -482,9 +482,9 @@
             ]
           },
           "category_1": {
-            "expected_total": 1,
-            "rows_recorded": 1,
-            "rows_successful": 1,
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 0.0,
@@ -492,10 +492,10 @@
             "ndcg_at_10": 0.0,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 58.60579649312422,
+            "avg_total_sec": 58.68113451055251,
             "p50_total_sec": 58.60579649312422,
-            "p95_total_sec": 58.60579649312422,
-            "avg_storage_bytes": 6601497.0,
+            "p95_total_sec": 58.756472527980804,
+            "avg_storage_bytes": 6599449.0,
             "p95_storage_bytes": 6601497.0,
             "categories": {},
             "sample_errors": [],
@@ -515,6 +515,23 @@
                   "conv-26:D6:7",
                   "conv-26:D7:7",
                   "conv-26:D16:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0004",
+                "category": "category_1",
+                "query": "What is Caroline's identity?",
+                "gold": "Transgender woman",
+                "prediction": "so necessary and I'm thankful for being able to give a voice to the trans community",
+                "expected_doc_ids": [
+                  "conv-26:D1:5"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D11:12",
+                  "conv-26:D16:9",
+                  "conv-26:D13:13",
+                  "conv-26:D11:8",
+                  "conv-26:D16:14"
                 ]
               }
             ],
@@ -555,6 +572,23 @@
               "conv-26:D6:7",
               "conv-26:D7:7",
               "conv-26:D16:7"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0004",
+            "category": "category_1",
+            "query": "What is Caroline's identity?",
+            "gold": "Transgender woman",
+            "prediction": "so necessary and I'm thankful for being able to give a voice to the trans community",
+            "expected_doc_ids": [
+              "conv-26:D1:5"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D11:12",
+              "conv-26:D16:9",
+              "conv-26:D13:13",
+              "conv-26:D11:8",
+              "conv-26:D16:14"
             ]
           }
         ],
@@ -975,17 +1009,17 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 4,
-      "rows_successful": 4,
+      "rows_recorded": 5,
+      "rows_successful": 5,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.5,
-      "doc_recall_all": 0.25,
-      "ndcg_at_10": 0.3467132018086354,
+      "doc_recall_any": 0.4,
+      "doc_recall_all": 0.2,
+      "ndcg_at_10": 0.2773705614469083,
       "exact_match": 0.0,
       "token_f1": 0.0,
-      "avg_total_sec": 58.96879637497477,
-      "p50_total_sec": 59.176900054793805,
+      "avg_total_sec": 58.92633160557598,
+      "p50_total_sec": 58.761439382098615,
       "p95_total_sec": 59.33104956988245,
       "avg_storage_bytes": 6597401.0,
       "p95_storage_bytes": 6601497.0,
@@ -1081,9 +1115,9 @@
           ]
         },
         "category_1": {
-          "expected_total": 1,
-          "rows_recorded": 1,
-          "rows_successful": 1,
+          "expected_total": 2,
+          "rows_recorded": 2,
+          "rows_successful": 2,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 0.0,
@@ -1091,10 +1125,10 @@
           "ndcg_at_10": 0.0,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 58.60579649312422,
+          "avg_total_sec": 58.68113451055251,
           "p50_total_sec": 58.60579649312422,
-          "p95_total_sec": 58.60579649312422,
-          "avg_storage_bytes": 6601497.0,
+          "p95_total_sec": 58.756472527980804,
+          "avg_storage_bytes": 6599449.0,
           "p95_storage_bytes": 6601497.0,
           "categories": {},
           "sample_errors": [],
@@ -1114,6 +1148,23 @@
                 "conv-26:D6:7",
                 "conv-26:D7:7",
                 "conv-26:D16:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0004",
+              "category": "category_1",
+              "query": "What is Caroline's identity?",
+              "gold": "Transgender woman",
+              "prediction": "so necessary and I'm thankful for being able to give a voice to the trans community",
+              "expected_doc_ids": [
+                "conv-26:D1:5"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D11:12",
+                "conv-26:D16:9",
+                "conv-26:D13:13",
+                "conv-26:D11:8",
+                "conv-26:D16:14"
               ]
             }
           ],
@@ -1155,6 +1206,23 @@
             "conv-26:D7:7",
             "conv-26:D16:7"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0004",
+          "category": "category_1",
+          "query": "What is Caroline's identity?",
+          "gold": "Transgender woman",
+          "prediction": "so necessary and I'm thankful for being able to give a voice to the trans community",
+          "expected_doc_ids": [
+            "conv-26:D1:5"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D11:12",
+            "conv-26:D16:9",
+            "conv-26:D13:13",
+            "conv-26:D11:8",
+            "conv-26:D16:14"
+          ]
         }
       ],
       "sample_successes": [
@@ -1190,11 +1258,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.09999999999999998,
-    "doc_recall_all_delta": 0.04999999999999999,
-    "ndcg_at_10_delta": 0.024083763255543733,
+    "doc_recall_any_delta": 0.0,
+    "doc_recall_all_delta": 0.0,
+    "ndcg_at_10_delta": -0.04525887710618337,
     "token_f1_delta": 0.0,
     "avg_storage_ratio_nova_over_stock": 0.4096156663967933,
-    "avg_latency_ratio_nova_over_stock": 1.6185701253961984
+    "avg_latency_ratio_nova_over_stock": 1.6174045562926058
   }
 }

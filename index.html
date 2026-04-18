@@ -235,9 +235,9 @@
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>40.0%</strong></div>
-          <div><span>NovaSpine</span><strong>50.0%</strong></div>
+          <div><span>NovaSpine</span><strong>40.0%</strong></div>
         </div>
-        <div class="delta good">+0.100</div>
+        <div class="delta good">+0.000</div>
       </div>
     
       
@@ -245,9 +245,9 @@
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>20.0%</strong></div>
-          <div><span>NovaSpine</span><strong>25.0%</strong></div>
+          <div><span>NovaSpine</span><strong>20.0%</strong></div>
         </div>
-        <div class="delta good">+0.050</div>
+        <div class="delta good">+0.000</div>
       </div>
     
       
@@ -255,9 +255,9 @@
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>32.3%</strong></div>
-          <div><span>NovaSpine</span><strong>34.7%</strong></div>
+          <div><span>NovaSpine</span><strong>27.7%</strong></div>
         </div>
-        <div class="delta good">+0.024</div>
+        <div class="delta bad">-0.045</div>
       </div>
     
       
@@ -275,16 +275,16 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.100, evidence-all +0.050, NDCG@10 +0.024, answer F1 +0.000.</p>
+        <p><b>Current delta:</b> evidence-any +0.000, evidence-all +0.000, NDCG@10 -0.045, answer F1 +0.000.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-18T15:28:48Z</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-18T15:29:47Z</strong></div>
           <div class="pill"><span>Current</span><strong>locomo::conv-26::0004</strong></div>
           <div class="pill"><span>Stock Rows</span><strong>5 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>4 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>5 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -321,12 +321,12 @@
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>4 / 1986 failed 0</td>
-      <td>50.0%</td>
-      <td>25.0%</td>
-      <td>34.7%</td>
+      <td>5 / 1986 failed 0</td>
+      <td>40.0%</td>
+      <td>20.0%</td>
+      <td>27.7%</td>
       <td>0.0%</td>
-      <td>59.0s</td>
+      <td>58.9s</td>
       <td>6.3 MB</td>
     </tr>
     
@@ -334,7 +334,7 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>category_1</td><td>2</td><td>0.0%</td><td>0.0%</td><td>1</td><td>0.0%</td><td>0.0%</td></tr>
+<tr><td>category_1</td><td>2</td><td>0.0%</td><td>0.0%</td><td>2</td><td>0.0%</td><td>0.0%</td></tr>
 <tr><td>category_2</td><td>2</td><td>50.0%</td><td>0.0%</td><td>2</td><td>50.0%</td><td>0.0%</td></tr>
 <tr><td>category_3</td><td>1</td><td>100.0%</td><td>0.0%</td><td>1</td><td>100.0%</td><td>0.0%</td></tr></table>
       </details>
@@ -343,7 +343,8 @@
         <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> When did Melanie paint a sunrise?</p><p><b>Gold:</b> 2022</p><p><b>Pred:</b> Melanie: Yeah, I painted that lake sunrise last year!</p><p><b>Expected docs:</b> conv-26:D1:12</p><p><b>Retrieved:</b> conv-26:D1:14, conv-26:D14:7, conv-26:D17:13, conv-26:D17:16, conv-26:D12:6</p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What did Caroline research?</p><p><b>Gold:</b> Adoption agencies</p><p><b>Pred:</b> ve got lots of kids</p><p><b>Expected docs:</b> conv-26:D2:8</p><p><b>Retrieved:</b> conv-26:D6:7, conv-26:D7:7, conv-26:D16:7, conv-26:D6:9, conv-26:D12:6</p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What is Caroline&#x27;s identity?</p><p><b>Gold:</b> Transgender woman</p><p><b>Pred:</b> s one-</p><p><b>Expected docs:</b> conv-26:D1:5</p><p><b>Retrieved:</b> conv-26:D11:12, conv-26:D4:3, conv-26:D13:11, conv-26:D11:8, conv-26:D16:13</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> When did Melanie paint a sunrise?</p><p><b>Gold:</b> 2022</p><p><b>Pred:</b> Melanie: Yeah, I painted that lake sunrise last year!</p><p><b>Expected docs:</b> conv-26:D1:12</p><p><b>Retrieved:</b> conv-26:D1:14, conv-26:D14:30, conv-26:D16:8, conv-26:D14:7, conv-26:D10:14</p></div>
-<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What did Caroline research?</p><p><b>Gold:</b> Adoption agencies</p><p><b>Pred:</b> ve got lots of kids</p><p><b>Expected docs:</b> conv-26:D2:8</p><p><b>Retrieved:</b> conv-26:D6:9, conv-26:D8:5, conv-26:D6:7, conv-26:D7:7, conv-26:D16:7</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> Caroline: I went to a LGBTQ support group yesterday and it was so powerful.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D16:5, conv-26:D4:13, conv-26:D9:6, conv-26:D11:6</p></div>
+<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What did Caroline research?</p><p><b>Gold:</b> Adoption agencies</p><p><b>Pred:</b> ve got lots of kids</p><p><b>Expected docs:</b> conv-26:D2:8</p><p><b>Retrieved:</b> conv-26:D6:9, conv-26:D8:5, conv-26:D6:7, conv-26:D7:7, conv-26:D16:7</p></div>
+<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What is Caroline&#x27;s identity?</p><p><b>Gold:</b> Transgender woman</p><p><b>Pred:</b> so necessary and I&#x27;m thankful for being able to give a voice to the trans community</p><p><b>Expected docs:</b> conv-26:D1:5</p><p><b>Retrieved:</b> conv-26:D11:12, conv-26:D16:9, conv-26:D13:13, conv-26:D11:8, conv-26:D16:14</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> Caroline: I went to a LGBTQ support group yesterday and it was so powerful.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D16:5, conv-26:D4:13, conv-26:D9:6, conv-26:D11:6</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What fields would Caroline be likely to pursue in her educaton?</p><p><b>Gold:</b> Psychology, counseling certification</p><p><b>Pred:</b> ve got lots of kids</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:9, conv-26:D6:7, conv-26:D11:14, conv-26:D13:11, conv-26:D7:7</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> Caroline: I went to a LGBTQ support group yesterday and it was so powerful.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D10:5, conv-26:D4:15, conv-26:D16:5, conv-26:D1:7</p></div>
 <div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What fields would Caroline be likely to pursue in her educaton?</p><p><b>Gold:</b> Psychology, counseling certification</p><p><b>Pred:</b> pretty exciting!</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D14:24, conv-26:D1:9, conv-26:D6:7, conv-26:D16:8, conv-26:D11:14</p></div></div></div>
       </details>
