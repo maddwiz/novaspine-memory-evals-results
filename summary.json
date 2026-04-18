@@ -1,4 +1,564 @@
 {
-  "status": "starting",
-  "generated_at": null
+  "generated_at": "2026-04-18T15:23:32Z",
+  "manifest": {
+    "generated_at": "2026-04-18T15:21:44Z",
+    "top_k": 10,
+    "benchmarks": {
+      "locomo": {
+        "label": "LoCoMo",
+        "cases": 1986,
+        "docs_indexed_per_protocol_total": 1194140,
+        "avg_docs_per_case": 601.2789526686807,
+        "categories": {
+          "category_1": 282,
+          "category_2": 321,
+          "category_3": 96,
+          "category_4": 841,
+          "category_5": 446
+        },
+        "protocol": "10 official conversations, isolated per conversation, turn-level evidence IDs",
+        "source": "https://github.com/snap-research/locomo"
+      },
+      "longmemeval_oracle": {
+        "label": "LongMemEval Oracle",
+        "cases": 500,
+        "docs_indexed_per_protocol_total": 14984,
+        "avg_docs_per_case": 29.968,
+        "categories": {
+          "knowledge-update": 78,
+          "multi-session": 133,
+          "single-session-assistant": 56,
+          "single-session-preference": 30,
+          "single-session-user": 70,
+          "temporal-reasoning": 133
+        },
+        "protocol": "500 official rows, isolated per question, oracle evidence haystacks",
+        "source": "https://github.com/xiaowu0162/LongMemEval"
+      },
+      "longmemeval_s": {
+        "label": "LongMemEval-S",
+        "cases": 500,
+        "docs_indexed_per_protocol_total": 308543,
+        "avg_docs_per_case": 617.086,
+        "categories": {
+          "knowledge-update": 78,
+          "multi-session": 133,
+          "single-session-assistant": 56,
+          "single-session-preference": 30,
+          "single-session-user": 70,
+          "temporal-reasoning": 133
+        },
+        "protocol": "500 official rows, isolated per question, full S haystacks",
+        "source": "https://github.com/xiaowu0162/LongMemEval"
+      },
+      "longmemeval_m": {
+        "label": "LongMemEval-M",
+        "cases": 500,
+        "docs_indexed_per_protocol_total": 3053182,
+        "avg_docs_per_case": 6106.364,
+        "categories": {
+          "knowledge-update": 78,
+          "multi-session": 133,
+          "single-session-assistant": 56,
+          "single-session-preference": 30,
+          "single-session-user": 70,
+          "temporal-reasoning": 133
+        },
+        "protocol": "500 official rows, isolated per question, full M haystacks",
+        "source": "https://github.com/xiaowu0162/LongMemEval"
+      }
+    },
+    "sources": {
+      "locomo": {
+        "label": "LoCoMo",
+        "source": "https://github.com/snap-research/locomo",
+        "protocol": "10 official conversations, isolated per conversation, turn-level evidence IDs"
+      },
+      "longmemeval_oracle": {
+        "label": "LongMemEval Oracle",
+        "source": "https://github.com/xiaowu0162/LongMemEval",
+        "file": "longmemeval_oracle.json",
+        "protocol": "500 official rows, isolated per question, oracle evidence haystacks"
+      },
+      "longmemeval_s": {
+        "label": "LongMemEval-S",
+        "source": "https://github.com/xiaowu0162/LongMemEval",
+        "file": "longmemeval_s_cleaned.json",
+        "protocol": "500 official rows, isolated per question, full S haystacks"
+      },
+      "longmemeval_m": {
+        "label": "LongMemEval-M",
+        "source": "https://github.com/xiaowu0162/LongMemEval",
+        "file": "longmemeval_m_cleaned.json",
+        "protocol": "500 official rows, isolated per question, full M haystacks"
+      }
+    },
+    "protocol_notes": [
+      "No row sampling is used in the full run.",
+      "LoCoMo is isolated per conversation to avoid cross-conversation leakage.",
+      "LongMemEval is isolated per question to match its timestamped-history protocol.",
+      "LongMemEval abstention rows are retained in counts; evidence metrics are only meaningful for rows with evidence IDs.",
+      "QA values are deterministic extractive-answer EM/F1 over retrieved context, not OpenAI GPT-4o official judge scores unless explicitly noted."
+    ]
+  },
+  "status": {
+    "started_at": "2026-04-18T15:21:49Z",
+    "phase": "running",
+    "benchmarks": [
+      "locomo",
+      "longmemeval_oracle",
+      "longmemeval_s",
+      "longmemeval_m"
+    ],
+    "systems": [
+      "stock",
+      "novaspine"
+    ],
+    "top_k": 10,
+    "complete": false,
+    "updated_at": "2026-04-18T15:23:26Z",
+    "current_system": "stock",
+    "current_benchmark": "locomo",
+    "current_case_index": 2,
+    "current_case_total": 1986,
+    "current_case_id": "locomo::conv-26::0001"
+  },
+  "benchmarks": {
+    "locomo": {
+      "stock": {
+        "expected_total": 1986,
+        "rows_recorded": 1,
+        "rows_successful": 1,
+        "rows_failed": 0,
+        "complete": false,
+        "doc_recall_any": 1.0,
+        "doc_recall_all": 1.0,
+        "ndcg_at_10": 1.0,
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "avg_total_sec": 37.1913905791007,
+        "p50_total_sec": 37.1913905791007,
+        "p95_total_sec": 37.1913905791007,
+        "avg_storage_bytes": 16105502.0,
+        "p95_storage_bytes": 16105502.0,
+        "categories": {
+          "category_2": {
+            "expected_total": 1,
+            "rows_recorded": 1,
+            "rows_successful": 1,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 37.1913905791007,
+            "p50_total_sec": 37.1913905791007,
+            "p95_total_sec": 37.1913905791007,
+            "avg_storage_bytes": 16105502.0,
+            "p95_storage_bytes": 16105502.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "locomo::conv-26::0000",
+                "category": "category_2",
+                "query": "When did Caroline go to the LGBTQ support group?",
+                "gold": "7 May 2023",
+                "prediction": "Caroline: I went to a LGBTQ support group yesterday and it was so powerful.",
+                "retrieved_doc_ids": [
+                  "conv-26:D1:3",
+                  "conv-26:D16:5",
+                  "conv-26:D4:13",
+                  "conv-26:D9:6",
+                  "conv-26:D11:6"
+                ]
+              }
+            ]
+          }
+        },
+        "sample_errors": [],
+        "sample_misses": [],
+        "sample_successes": [
+          {
+            "case_id": "locomo::conv-26::0000",
+            "category": "category_2",
+            "query": "When did Caroline go to the LGBTQ support group?",
+            "gold": "7 May 2023",
+            "prediction": "Caroline: I went to a LGBTQ support group yesterday and it was so powerful.",
+            "retrieved_doc_ids": [
+              "conv-26:D1:3",
+              "conv-26:D16:5",
+              "conv-26:D4:13",
+              "conv-26:D9:6",
+              "conv-26:D11:6"
+            ]
+          }
+        ]
+      },
+      "novaspine": {
+        "expected_total": 1986,
+        "rows_recorded": 1,
+        "rows_successful": 1,
+        "rows_failed": 0,
+        "complete": false,
+        "doc_recall_any": 1.0,
+        "doc_recall_all": 1.0,
+        "ndcg_at_10": 1.0,
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "avg_total_sec": 59.33104956988245,
+        "p50_total_sec": 59.33104956988245,
+        "p95_total_sec": 59.33104956988245,
+        "avg_storage_bytes": 6593305.0,
+        "p95_storage_bytes": 6593305.0,
+        "categories": {
+          "category_2": {
+            "expected_total": 1,
+            "rows_recorded": 1,
+            "rows_successful": 1,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 59.33104956988245,
+            "p50_total_sec": 59.33104956988245,
+            "p95_total_sec": 59.33104956988245,
+            "avg_storage_bytes": 6593305.0,
+            "p95_storage_bytes": 6593305.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "locomo::conv-26::0000",
+                "category": "category_2",
+                "query": "When did Caroline go to the LGBTQ support group?",
+                "gold": "7 May 2023",
+                "prediction": "Caroline: I went to a LGBTQ support group yesterday and it was so powerful.",
+                "retrieved_doc_ids": [
+                  "conv-26:D1:3",
+                  "conv-26:D10:5",
+                  "conv-26:D4:15",
+                  "conv-26:D16:5",
+                  "conv-26:D1:7"
+                ]
+              }
+            ]
+          }
+        },
+        "sample_errors": [],
+        "sample_misses": [],
+        "sample_successes": [
+          {
+            "case_id": "locomo::conv-26::0000",
+            "category": "category_2",
+            "query": "When did Caroline go to the LGBTQ support group?",
+            "gold": "7 May 2023",
+            "prediction": "Caroline: I went to a LGBTQ support group yesterday and it was so powerful.",
+            "retrieved_doc_ids": [
+              "conv-26:D1:3",
+              "conv-26:D10:5",
+              "conv-26:D4:15",
+              "conv-26:D16:5",
+              "conv-26:D1:7"
+            ]
+          }
+        ]
+      }
+    },
+    "longmemeval_oracle": {
+      "stock": {
+        "expected_total": 500,
+        "rows_recorded": 0,
+        "rows_successful": 0,
+        "rows_failed": 0,
+        "complete": false,
+        "doc_recall_any": 0.0,
+        "doc_recall_all": 0.0,
+        "ndcg_at_10": 0.0,
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "avg_total_sec": 0.0,
+        "p50_total_sec": 0.0,
+        "p95_total_sec": 0.0,
+        "avg_storage_bytes": 0.0,
+        "p95_storage_bytes": 0.0,
+        "categories": {},
+        "sample_errors": [],
+        "sample_misses": [],
+        "sample_successes": []
+      },
+      "novaspine": {
+        "expected_total": 500,
+        "rows_recorded": 0,
+        "rows_successful": 0,
+        "rows_failed": 0,
+        "complete": false,
+        "doc_recall_any": 0.0,
+        "doc_recall_all": 0.0,
+        "ndcg_at_10": 0.0,
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "avg_total_sec": 0.0,
+        "p50_total_sec": 0.0,
+        "p95_total_sec": 0.0,
+        "avg_storage_bytes": 0.0,
+        "p95_storage_bytes": 0.0,
+        "categories": {},
+        "sample_errors": [],
+        "sample_misses": [],
+        "sample_successes": []
+      }
+    },
+    "longmemeval_s": {
+      "stock": {
+        "expected_total": 500,
+        "rows_recorded": 0,
+        "rows_successful": 0,
+        "rows_failed": 0,
+        "complete": false,
+        "doc_recall_any": 0.0,
+        "doc_recall_all": 0.0,
+        "ndcg_at_10": 0.0,
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "avg_total_sec": 0.0,
+        "p50_total_sec": 0.0,
+        "p95_total_sec": 0.0,
+        "avg_storage_bytes": 0.0,
+        "p95_storage_bytes": 0.0,
+        "categories": {},
+        "sample_errors": [],
+        "sample_misses": [],
+        "sample_successes": []
+      },
+      "novaspine": {
+        "expected_total": 500,
+        "rows_recorded": 0,
+        "rows_successful": 0,
+        "rows_failed": 0,
+        "complete": false,
+        "doc_recall_any": 0.0,
+        "doc_recall_all": 0.0,
+        "ndcg_at_10": 0.0,
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "avg_total_sec": 0.0,
+        "p50_total_sec": 0.0,
+        "p95_total_sec": 0.0,
+        "avg_storage_bytes": 0.0,
+        "p95_storage_bytes": 0.0,
+        "categories": {},
+        "sample_errors": [],
+        "sample_misses": [],
+        "sample_successes": []
+      }
+    },
+    "longmemeval_m": {
+      "stock": {
+        "expected_total": 500,
+        "rows_recorded": 0,
+        "rows_successful": 0,
+        "rows_failed": 0,
+        "complete": false,
+        "doc_recall_any": 0.0,
+        "doc_recall_all": 0.0,
+        "ndcg_at_10": 0.0,
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "avg_total_sec": 0.0,
+        "p50_total_sec": 0.0,
+        "p95_total_sec": 0.0,
+        "avg_storage_bytes": 0.0,
+        "p95_storage_bytes": 0.0,
+        "categories": {},
+        "sample_errors": [],
+        "sample_misses": [],
+        "sample_successes": []
+      },
+      "novaspine": {
+        "expected_total": 500,
+        "rows_recorded": 0,
+        "rows_successful": 0,
+        "rows_failed": 0,
+        "complete": false,
+        "doc_recall_any": 0.0,
+        "doc_recall_all": 0.0,
+        "ndcg_at_10": 0.0,
+        "exact_match": 0.0,
+        "token_f1": 0.0,
+        "avg_total_sec": 0.0,
+        "p50_total_sec": 0.0,
+        "p95_total_sec": 0.0,
+        "avg_storage_bytes": 0.0,
+        "p95_storage_bytes": 0.0,
+        "categories": {},
+        "sample_errors": [],
+        "sample_misses": [],
+        "sample_successes": []
+      }
+    }
+  },
+  "overall": {
+    "stock": {
+      "expected_total": 3486,
+      "rows_recorded": 1,
+      "rows_successful": 1,
+      "rows_failed": 0,
+      "complete": false,
+      "doc_recall_any": 1.0,
+      "doc_recall_all": 1.0,
+      "ndcg_at_10": 1.0,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "avg_total_sec": 37.1913905791007,
+      "p50_total_sec": 37.1913905791007,
+      "p95_total_sec": 37.1913905791007,
+      "avg_storage_bytes": 16105502.0,
+      "p95_storage_bytes": 16105502.0,
+      "categories": {
+        "category_2": {
+          "expected_total": 1,
+          "rows_recorded": 1,
+          "rows_successful": 1,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 37.1913905791007,
+          "p50_total_sec": 37.1913905791007,
+          "p95_total_sec": 37.1913905791007,
+          "avg_storage_bytes": 16105502.0,
+          "p95_storage_bytes": 16105502.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "locomo::conv-26::0000",
+              "category": "category_2",
+              "query": "When did Caroline go to the LGBTQ support group?",
+              "gold": "7 May 2023",
+              "prediction": "Caroline: I went to a LGBTQ support group yesterday and it was so powerful.",
+              "retrieved_doc_ids": [
+                "conv-26:D1:3",
+                "conv-26:D16:5",
+                "conv-26:D4:13",
+                "conv-26:D9:6",
+                "conv-26:D11:6"
+              ]
+            }
+          ]
+        }
+      },
+      "sample_errors": [],
+      "sample_misses": [],
+      "sample_successes": [
+        {
+          "case_id": "locomo::conv-26::0000",
+          "category": "category_2",
+          "query": "When did Caroline go to the LGBTQ support group?",
+          "gold": "7 May 2023",
+          "prediction": "Caroline: I went to a LGBTQ support group yesterday and it was so powerful.",
+          "retrieved_doc_ids": [
+            "conv-26:D1:3",
+            "conv-26:D16:5",
+            "conv-26:D4:13",
+            "conv-26:D9:6",
+            "conv-26:D11:6"
+          ]
+        }
+      ]
+    },
+    "novaspine": {
+      "expected_total": 3486,
+      "rows_recorded": 1,
+      "rows_successful": 1,
+      "rows_failed": 0,
+      "complete": false,
+      "doc_recall_any": 1.0,
+      "doc_recall_all": 1.0,
+      "ndcg_at_10": 1.0,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "avg_total_sec": 59.33104956988245,
+      "p50_total_sec": 59.33104956988245,
+      "p95_total_sec": 59.33104956988245,
+      "avg_storage_bytes": 6593305.0,
+      "p95_storage_bytes": 6593305.0,
+      "categories": {
+        "category_2": {
+          "expected_total": 1,
+          "rows_recorded": 1,
+          "rows_successful": 1,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 59.33104956988245,
+          "p50_total_sec": 59.33104956988245,
+          "p95_total_sec": 59.33104956988245,
+          "avg_storage_bytes": 6593305.0,
+          "p95_storage_bytes": 6593305.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "locomo::conv-26::0000",
+              "category": "category_2",
+              "query": "When did Caroline go to the LGBTQ support group?",
+              "gold": "7 May 2023",
+              "prediction": "Caroline: I went to a LGBTQ support group yesterday and it was so powerful.",
+              "retrieved_doc_ids": [
+                "conv-26:D1:3",
+                "conv-26:D10:5",
+                "conv-26:D4:15",
+                "conv-26:D16:5",
+                "conv-26:D1:7"
+              ]
+            }
+          ]
+        }
+      },
+      "sample_errors": [],
+      "sample_misses": [],
+      "sample_successes": [
+        {
+          "case_id": "locomo::conv-26::0000",
+          "category": "category_2",
+          "query": "When did Caroline go to the LGBTQ support group?",
+          "gold": "7 May 2023",
+          "prediction": "Caroline: I went to a LGBTQ support group yesterday and it was so powerful.",
+          "retrieved_doc_ids": [
+            "conv-26:D1:3",
+            "conv-26:D10:5",
+            "conv-26:D4:15",
+            "conv-26:D16:5",
+            "conv-26:D1:7"
+          ]
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "doc_recall_any_delta": 0.0,
+    "doc_recall_all_delta": 0.0,
+    "ndcg_at_10_delta": 0.0,
+    "token_f1_delta": 0.0,
+    "avg_storage_ratio_nova_over_stock": 0.4093821477902396,
+    "avg_latency_ratio_nova_over_stock": 1.5952898949474317
+  }
 }

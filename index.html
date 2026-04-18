@@ -3,51 +3,468 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="refresh" content="60" />
+  <meta http-equiv="refresh" content="90" />
   <title>NovaSpine Official Memory Evals</title>
   <style>
+    :root {
+      --ink: #15130f;
+      --muted: #6c6258;
+      --paper: #f6efe3;
+      --panel: rgba(255, 251, 243, 0.86);
+      --line: rgba(50, 36, 18, 0.16);
+      --stock: #a6472f;
+      --nova: #156c61;
+      --gold: #c79133;
+      --sky: #2f6f8f;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      color: #18130e;
+      color: var(--ink);
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
       background:
-        radial-gradient(circle at 20% 10%, rgba(199,145,51,.35), transparent 30rem),
-        radial-gradient(circle at 85% 15%, rgba(21,108,97,.24), transparent 28rem),
-        linear-gradient(135deg, #f7efdf, #d9b47b);
-      font-family: Georgia, "Palatino Linotype", serif;
+        radial-gradient(circle at 15% 0%, rgba(199, 145, 51, 0.28), transparent 34rem),
+        radial-gradient(circle at 90% 10%, rgba(21, 108, 97, 0.20), transparent 30rem),
+        linear-gradient(145deg, #f7efdf 0%, #e7d2b1 52%, #d9b47b 100%);
+      min-height: 100vh;
     }
-    main {
-      width: min(920px, calc(100vw - 32px));
-      padding: 30px;
-      border: 1px solid rgba(50, 36, 18, .16);
-      border-radius: 28px;
-      background: rgba(255,251,243,.82);
-      box-shadow: 0 24px 80px rgba(63,42,16,.14);
+    header {
+      padding: 36px 18px 18px;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.42);
+      font: 700 12px/1.1 ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
     }
     h1 {
+      margin: 18px 0 10px;
+      font-size: clamp(2.3rem, 8vw, 6.6rem);
+      line-height: 0.9;
+      letter-spacing: -0.07em;
+      max-width: 980px;
+    }
+    .dek {
+      max-width: 920px;
+      color: #3d352d;
+      font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+      line-height: 1.35;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 18px 48px;
+    }
+    .scoreboard {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 22px 0;
+    }
+    .metric-card, .panel {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(63, 42, 16, 0.12);
+      border-radius: 22px;
+      padding: 18px;
+      backdrop-filter: blur(10px);
+    }
+    .metric-label {
+      color: var(--muted);
+      font: 800 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .metric-grid span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    .metric-grid strong {
+      display: block;
+      font-size: clamp(1.4rem, 3vw, 2.4rem);
+      letter-spacing: -0.05em;
+    }
+    .metric-grid div:first-child strong { color: var(--stock); }
+    .metric-grid div:last-child strong { color: var(--nova); }
+    .delta {
+      margin-top: 12px;
+      font: 800 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    .delta.good { color: var(--nova); }
+    .delta.bad { color: var(--stock); }
+    .panels {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    h2 {
       margin: 0 0 12px;
-      font-size: clamp(2.6rem, 10vw, 6rem);
-      line-height: .9;
-      letter-spacing: -.07em;
+      font-size: clamp(1.6rem, 3.6vw, 3rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
     }
-    p {
-      font-size: 1.2rem;
-      line-height: 1.45;
+    h3 {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+    }
+    p, li {
       color: #3f352d;
+      line-height: 1.48;
     }
-    code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: .95em;
+    .status-grid, .bench-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .pill {
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.42);
+      border: 1px solid var(--line);
+      min-width: 0;
+    }
+    .pill span {
+      display: block;
+      color: var(--muted);
+      font: 800 11px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+    .pill strong {
+      display: block;
+      margin-top: 6px;
+      overflow-wrap: anywhere;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.35);
+    }
+    th, td {
+      padding: 11px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 800 11px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+    .stock { color: var(--stock); font-weight: 800; }
+    .nova { color: var(--nova); font-weight: 800; }
+    .bench {
+      margin-top: 14px;
+    }
+    details {
+      margin-top: 14px;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+    }
+    .qa-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .sample {
+      padding: 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.38);
+      border: 1px solid var(--line);
+    }
+    .sample b {
+      color: var(--ink);
+    }
+    a { color: #215f7a; }
+    @media (max-width: 900px) {
+      .scoreboard, .panels, .bench-grid, .qa-row {
+        grid-template-columns: 1fr;
+      }
+      .status-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      h1 {
+        font-size: clamp(2.6rem, 18vw, 5rem);
+      }
+    }
+    @media (max-width: 560px) {
+      .status-grid {
+        grid-template-columns: 1fr;
+      }
+      th, td {
+        padding: 9px 7px;
+        font-size: 0.92rem;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="eyebrow">Running official memory evals</div>
+    <h1>Stock Claw3D + OpenClaw vs Claw3D + NovaSpine</h1>
+    <p class="dek">Full-row official memory datasets, run as isolated histories so each system only gets the memory that benchmark row is supposed to provide. This page auto-refreshes while the long run continues.</p>
+  </header>
   <main>
-    <h1>Official memory evals are starting.</h1>
-    <p>The full no-row-limit run is being launched for LoCoMo and LongMemEval. This page refreshes automatically and will be replaced with the live scoreboard as soon as the runner writes its first report.</p>
-    <p>Protocol: stock Claw3D + OpenClaw memory-core vs Claw3D + NovaSpine memory, isolated per official history.</p>
+    <section class="scoreboard">
+      
+      <div class="metric-card">
+        <div class="metric-label">Evidence Recall Any</div>
+        <div class="metric-grid">
+          <div><span>Stock</span><strong>100.0%</strong></div>
+          <div><span>NovaSpine</span><strong>100.0%</strong></div>
+        </div>
+        <div class="delta good">+0.000</div>
+      </div>
+    
+      
+      <div class="metric-card">
+        <div class="metric-label">Evidence Recall All</div>
+        <div class="metric-grid">
+          <div><span>Stock</span><strong>100.0%</strong></div>
+          <div><span>NovaSpine</span><strong>100.0%</strong></div>
+        </div>
+        <div class="delta good">+0.000</div>
+      </div>
+    
+      
+      <div class="metric-card">
+        <div class="metric-label">NDCG@10</div>
+        <div class="metric-grid">
+          <div><span>Stock</span><strong>100.0%</strong></div>
+          <div><span>NovaSpine</span><strong>100.0%</strong></div>
+        </div>
+        <div class="delta good">+0.000</div>
+      </div>
+    
+      
+      <div class="metric-card">
+        <div class="metric-label">Answer F1</div>
+        <div class="metric-grid">
+          <div><span>Stock</span><strong>0.0%</strong></div>
+          <div><span>NovaSpine</span><strong>0.0%</strong></div>
+        </div>
+        <div class="delta good">+0.000</div>
+      </div>
+    
+    </section>
+    <section class="panels">
+      <div class="panel">
+        <h2>Conclusion</h2>
+        <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
+        <p><b>Current delta:</b> evidence-any +0.000, evidence-all +0.000, NDCG@10 +0.000, answer F1 +0.000.</p>
+      </div>
+      <div class="panel">
+        <h2>Status</h2>
+        <div class="status-grid">
+          <div class="pill"><span>Phase</span><strong>running</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-18T15:23:32Z</strong></div>
+          <div class="pill"><span>Current</span><strong>locomo::conv-26::0001</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>1 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>1 / 3486</strong></div>
+          <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
+<a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
+<a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
+<a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-M</a></strong></div>
+        </div>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Protocol</h2>
+      <ul><li>No row sampling is used in the full run.</li>
+<li>LoCoMo is isolated per conversation to avoid cross-conversation leakage.</li>
+<li>LongMemEval is isolated per question to match its timestamped-history protocol.</li>
+<li>LongMemEval abstention rows are retained in counts; evidence metrics are only meaningful for rows with evidence IDs.</li>
+<li>QA values are deterministic extractive-answer EM/F1 over retrieved context, not OpenAI GPT-4o official judge scores unless explicitly noted.</li></ul>
+    </section>
+    
+    <section class="panel bench">
+      <h2>LoCoMo</h2>
+      <p>10 official conversations, isolated per conversation, turn-level evidence IDs</p>
+      <table>
+      <tr><th>System</th><th>Rows</th><th>Evidence Any</th><th>Evidence All</th><th>NDCG@10</th><th>Answer F1</th><th>Avg Time</th><th>Avg Storage</th></tr>
+      
+    <tr>
+      <td class="stock">Stock Claw3D + OpenClaw</td>
+      <td>1 / 1986 failed 0</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>0.0%</td>
+      <td>37.2s</td>
+      <td>15.4 MB</td>
+    </tr>
+    
+      
+    <tr>
+      <td class="nova">Claw3D + NovaSpine</td>
+      <td>1 / 1986 failed 0</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>0.0%</td>
+      <td>59.3s</td>
+      <td>6.3 MB</td>
+    </tr>
+    
+    </table>
+      <details open>
+        <summary>Category Breakdown</summary>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
+<tr><td>category_2</td><td>1</td><td>100.0%</td><td>0.0%</td><td>1</td><td>100.0%</td><td>0.0%</td></tr></table>
+      </details>
+      <details>
+        <summary>Examples And Misses</summary>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> Caroline: I went to a LGBTQ support group yesterday and it was so powerful.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D16:5, conv-26:D4:13, conv-26:D9:6, conv-26:D11:6</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> Caroline: I went to a LGBTQ support group yesterday and it was so powerful.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D10:5, conv-26:D4:15, conv-26:D16:5, conv-26:D1:7</p></div></div></div>
+      </details>
+    </section>
+    
+
+    <section class="panel bench">
+      <h2>LongMemEval Oracle</h2>
+      <p>500 official rows, isolated per question, oracle evidence haystacks</p>
+      <table>
+      <tr><th>System</th><th>Rows</th><th>Evidence Any</th><th>Evidence All</th><th>NDCG@10</th><th>Answer F1</th><th>Avg Time</th><th>Avg Storage</th></tr>
+      
+    <tr>
+      <td class="stock">Stock Claw3D + OpenClaw</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
+    </tr>
+    
+      
+    <tr>
+      <td class="nova">Claw3D + NovaSpine</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
+    </tr>
+    
+    </table>
+      <details open>
+        <summary>Category Breakdown</summary>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr></table>
+      </details>
+      <details>
+        <summary>Examples And Misses</summary>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
+      </details>
+    </section>
+    
+
+    <section class="panel bench">
+      <h2>LongMemEval-S</h2>
+      <p>500 official rows, isolated per question, full S haystacks</p>
+      <table>
+      <tr><th>System</th><th>Rows</th><th>Evidence Any</th><th>Evidence All</th><th>NDCG@10</th><th>Answer F1</th><th>Avg Time</th><th>Avg Storage</th></tr>
+      
+    <tr>
+      <td class="stock">Stock Claw3D + OpenClaw</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
+    </tr>
+    
+      
+    <tr>
+      <td class="nova">Claw3D + NovaSpine</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
+    </tr>
+    
+    </table>
+      <details open>
+        <summary>Category Breakdown</summary>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr></table>
+      </details>
+      <details>
+        <summary>Examples And Misses</summary>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
+      </details>
+    </section>
+    
+
+    <section class="panel bench">
+      <h2>LongMemEval-M</h2>
+      <p>500 official rows, isolated per question, full M haystacks</p>
+      <table>
+      <tr><th>System</th><th>Rows</th><th>Evidence Any</th><th>Evidence All</th><th>NDCG@10</th><th>Answer F1</th><th>Avg Time</th><th>Avg Storage</th></tr>
+      
+    <tr>
+      <td class="stock">Stock Claw3D + OpenClaw</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
+    </tr>
+    
+      
+    <tr>
+      <td class="nova">Claw3D + NovaSpine</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
+    </tr>
+    
+    </table>
+      <details open>
+        <summary>Category Breakdown</summary>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr></table>
+      </details>
+      <details>
+        <summary>Examples And Misses</summary>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
+      </details>
+    </section>
+    
   </main>
 </body>
 </html>
