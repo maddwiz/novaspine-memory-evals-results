@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T19:22:32Z",
+  "generated_at": "2026-04-18T19:29:29Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,30 +116,30 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T19:21:29Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T19:28:54Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 150,
+    "current_case_index": 155,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0149"
+    "current_case_id": "locomo::conv-26::0154"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 150,
-        "rows_successful": 150,
+        "rows_recorded": 155,
+        "rows_successful": 155,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7133333333333334,
-        "doc_recall_all": 0.5866666666666667,
-        "ndcg_at_10": 0.461357113689419,
+        "doc_recall_any": 0.7096774193548387,
+        "doc_recall_all": 0.5870967741935483,
+        "ndcg_at_10": 0.45737488757325295,
         "exact_match": 0.0,
-        "token_f1": 0.04939955039568391,
-        "avg_total_sec": 36.52315532660112,
-        "p50_total_sec": 36.31223727297038,
-        "p95_total_sec": 37.68721445975825,
-        "avg_storage_bytes": 16107385.706666667,
+        "token_f1": 0.04780601651195217,
+        "avg_total_sec": 36.51101142147616,
+        "p50_total_sec": 36.30435092514381,
+        "p95_total_sec": 37.65678389882669,
+        "avg_storage_bytes": 16107219.212903226,
         "p95_storage_bytes": 16117790.0,
         "categories": {
           "category_2": {
@@ -1075,20 +1075,20 @@
             ]
           },
           "category_4": {
-            "expected_total": 68,
-            "rows_recorded": 68,
-            "rows_successful": 68,
+            "expected_total": 70,
+            "rows_recorded": 70,
+            "rows_successful": 70,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7058823529411765,
-            "doc_recall_all": 0.7058823529411765,
-            "ndcg_at_10": 0.5226628357903972,
+            "doc_recall_any": 0.7,
+            "doc_recall_all": 0.7,
+            "ndcg_at_10": 0.5220153261963858,
             "exact_match": 0.0,
-            "token_f1": 0.08529476039391748,
-            "avg_total_sec": 36.54796848863172,
-            "p50_total_sec": 36.333372209686786,
+            "token_f1": 0.08285776723980555,
+            "avg_total_sec": 36.538066720583345,
+            "p50_total_sec": 36.32540388032794,
             "p95_total_sec": 37.712410908192396,
-            "avg_storage_bytes": 16110320.44117647,
+            "avg_storage_bytes": 16110241.257142857,
             "p95_storage_bytes": 16121884.0,
             "categories": {},
             "sample_errors": [],
@@ -1462,6 +1462,74 @@
                   "conv-26:D4:5",
                   "conv-26:D12:5",
                   "conv-26:D16:9"
+                ]
+              }
+            ]
+          },
+          "category_5": {
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.6666666666666666,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.2298468401471185,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 36.11021937491993,
+            "p50_total_sec": 35.98490010295063,
+            "p95_total_sec": 36.46693267207593,
+            "avg_storage_bytes": 16098674.666666666,
+            "p95_storage_bytes": 16109598.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0154",
+                "category": "category_5",
+                "query": "What type of individuals does the adoption agency Melanie is considering support?",
+                "gold": "",
+                "prediction": "your research and find an adoption agency or lawyer",
+                "expected_doc_ids": [
+                  "conv-26:D2:12"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D13:1",
+                  "conv-26:D19:3",
+                  "conv-26:D17:3",
+                  "conv-26:D19:1"
+                ]
+              }
+            ],
+            "sample_successes": [
+              {
+                "case_id": "locomo::conv-26::0152",
+                "category": "category_5",
+                "query": "What did Caroline realize after her charity race?",
+                "gold": "",
+                "prediction": "Caroline: That charity race sounds great, Mel!",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:2",
+                  "conv-26:D4:15",
+                  "conv-26:D2:1",
+                  "conv-26:D7:7",
+                  "conv-26:D7:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0153",
+                "category": "category_5",
+                "query": "What are Melanie's plans for the summer with respect to adoption?",
+                "gold": "",
+                "prediction": "a family and give a loving home to kids who need it",
+                "retrieved_doc_ids": [
+                  "conv-26:D19:3",
+                  "conv-26:D2:10",
+                  "conv-26:D13:1",
+                  "conv-26:D17:3",
+                  "conv-26:D8:9"
                 ]
               }
             ]
@@ -1848,19 +1916,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 150,
-        "rows_successful": 150,
+        "rows_recorded": 154,
+        "rows_successful": 154,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7066666666666667,
-        "doc_recall_all": 0.5933333333333334,
-        "ndcg_at_10": 0.49482364178435434,
+        "doc_recall_any": 0.7012987012987013,
+        "doc_recall_all": 0.5909090909090909,
+        "ndcg_at_10": 0.4917113394003451,
         "exact_match": 0.0,
-        "token_f1": 0.05306053675232244,
-        "avg_total_sec": 59.438158004932724,
+        "token_f1": 0.052075886840613164,
+        "avg_total_sec": 59.425623392643914,
         "p50_total_sec": 58.95353631814942,
-        "p95_total_sec": 62.065071946941316,
-        "avg_storage_bytes": 6599394.386666667,
+        "p95_total_sec": 62.0223612813279,
+        "avg_storage_bytes": 6599475.597402598,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -2731,20 +2799,20 @@
             ]
           },
           "category_4": {
-            "expected_total": 68,
-            "rows_recorded": 68,
-            "rows_successful": 68,
+            "expected_total": 70,
+            "rows_recorded": 70,
+            "rows_successful": 70,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6617647058823529,
-            "doc_recall_all": 0.6470588235294118,
-            "ndcg_at_10": 0.5073730197143269,
+            "doc_recall_any": 0.6571428571428571,
+            "doc_recall_all": 0.6428571428571429,
+            "ndcg_at_10": 0.5071623620082033,
             "exact_match": 0.0,
-            "token_f1": 0.08667143146368317,
-            "avg_total_sec": 59.56781705205931,
-            "p50_total_sec": 58.997903460171074,
+            "token_f1": 0.08506090571623594,
+            "avg_total_sec": 59.54646623189162,
+            "p50_total_sec": 58.95987671613693,
             "p95_total_sec": 62.09872798388824,
-            "avg_storage_bytes": 6598967.117647059,
+            "avg_storage_bytes": 6598980.885714286,
             "p95_storage_bytes": 6617881.0,
             "categories": {},
             "sample_errors": [],
@@ -3121,6 +3189,60 @@
                   "conv-26:D4:5",
                   "conv-26:D12:5",
                   "conv-26:D16:9"
+                ]
+              }
+            ]
+          },
+          "category_5": {
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.5,
+            "doc_recall_all": 0.5,
+            "ndcg_at_10": 0.25,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 59.090612517436966,
+            "p50_total_sec": 58.850950489751995,
+            "p95_total_sec": 59.33027454512194,
+            "avg_storage_bytes": 6605593.0,
+            "p95_storage_bytes": 6621977.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0153",
+                "category": "category_5",
+                "query": "What are Melanie's plans for the summer with respect to adoption?",
+                "gold": "",
+                "prediction": "Any fun plans for the summer?",
+                "expected_doc_ids": [
+                  "conv-26:D2:8"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D17:3",
+                  "conv-26:D2:7",
+                  "conv-26:D17:1",
+                  "conv-26:D19:2",
+                  "conv-26:D8:9"
+                ]
+              }
+            ],
+            "sample_successes": [
+              {
+                "case_id": "locomo::conv-26::0152",
+                "category": "category_5",
+                "query": "What did Caroline realize after her charity race?",
+                "gold": "",
+                "prediction": "Caroline: That charity race sounds great, Mel!",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:2",
+                  "conv-26:D2:1",
+                  "conv-26:D2:3",
+                  "conv-26:D7:7",
+                  "conv-26:D10:20"
                 ]
               }
             ]
@@ -3647,19 +3769,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 150,
-      "rows_successful": 150,
+      "rows_recorded": 155,
+      "rows_successful": 155,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7133333333333334,
-      "doc_recall_all": 0.5866666666666667,
-      "ndcg_at_10": 0.461357113689419,
+      "doc_recall_any": 0.7096774193548387,
+      "doc_recall_all": 0.5870967741935483,
+      "ndcg_at_10": 0.45737488757325295,
       "exact_match": 0.0,
-      "token_f1": 0.04939955039568391,
-      "avg_total_sec": 36.52315532660112,
-      "p50_total_sec": 36.31223727297038,
-      "p95_total_sec": 37.68721445975825,
-      "avg_storage_bytes": 16107385.706666667,
+      "token_f1": 0.04780601651195217,
+      "avg_total_sec": 36.51101142147616,
+      "p50_total_sec": 36.30435092514381,
+      "p95_total_sec": 37.65678389882669,
+      "avg_storage_bytes": 16107219.212903226,
       "p95_storage_bytes": 16117790.0,
       "categories": {
         "category_2": {
@@ -4595,20 +4717,20 @@
           ]
         },
         "category_4": {
-          "expected_total": 68,
-          "rows_recorded": 68,
-          "rows_successful": 68,
+          "expected_total": 70,
+          "rows_recorded": 70,
+          "rows_successful": 70,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.7058823529411765,
-          "doc_recall_all": 0.7058823529411765,
-          "ndcg_at_10": 0.5226628357903972,
+          "doc_recall_any": 0.7,
+          "doc_recall_all": 0.7,
+          "ndcg_at_10": 0.5220153261963858,
           "exact_match": 0.0,
-          "token_f1": 0.08529476039391748,
-          "avg_total_sec": 36.54796848863172,
-          "p50_total_sec": 36.333372209686786,
+          "token_f1": 0.08285776723980555,
+          "avg_total_sec": 36.538066720583345,
+          "p50_total_sec": 36.32540388032794,
           "p95_total_sec": 37.712410908192396,
-          "avg_storage_bytes": 16110320.44117647,
+          "avg_storage_bytes": 16110241.257142857,
           "p95_storage_bytes": 16121884.0,
           "categories": {},
           "sample_errors": [],
@@ -4982,6 +5104,74 @@
                 "conv-26:D4:5",
                 "conv-26:D12:5",
                 "conv-26:D16:9"
+              ]
+            }
+          ]
+        },
+        "category_5": {
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 0.6666666666666666,
+          "doc_recall_all": 0.6666666666666666,
+          "ndcg_at_10": 0.2298468401471185,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 36.11021937491993,
+          "p50_total_sec": 35.98490010295063,
+          "p95_total_sec": 36.46693267207593,
+          "avg_storage_bytes": 16098674.666666666,
+          "p95_storage_bytes": 16109598.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0154",
+              "category": "category_5",
+              "query": "What type of individuals does the adoption agency Melanie is considering support?",
+              "gold": "",
+              "prediction": "your research and find an adoption agency or lawyer",
+              "expected_doc_ids": [
+                "conv-26:D2:12"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D13:1",
+                "conv-26:D19:3",
+                "conv-26:D17:3",
+                "conv-26:D19:1"
+              ]
+            }
+          ],
+          "sample_successes": [
+            {
+              "case_id": "locomo::conv-26::0152",
+              "category": "category_5",
+              "query": "What did Caroline realize after her charity race?",
+              "gold": "",
+              "prediction": "Caroline: That charity race sounds great, Mel!",
+              "retrieved_doc_ids": [
+                "conv-26:D2:2",
+                "conv-26:D4:15",
+                "conv-26:D2:1",
+                "conv-26:D7:7",
+                "conv-26:D7:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0153",
+              "category": "category_5",
+              "query": "What are Melanie's plans for the summer with respect to adoption?",
+              "gold": "",
+              "prediction": "a family and give a loving home to kids who need it",
+              "retrieved_doc_ids": [
+                "conv-26:D19:3",
+                "conv-26:D2:10",
+                "conv-26:D13:1",
+                "conv-26:D17:3",
+                "conv-26:D8:9"
               ]
             }
           ]
@@ -5368,19 +5558,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 150,
-      "rows_successful": 150,
+      "rows_recorded": 154,
+      "rows_successful": 154,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7066666666666667,
-      "doc_recall_all": 0.5933333333333334,
-      "ndcg_at_10": 0.49482364178435434,
+      "doc_recall_any": 0.7012987012987013,
+      "doc_recall_all": 0.5909090909090909,
+      "ndcg_at_10": 0.4917113394003451,
       "exact_match": 0.0,
-      "token_f1": 0.05306053675232244,
-      "avg_total_sec": 59.438158004932724,
+      "token_f1": 0.052075886840613164,
+      "avg_total_sec": 59.425623392643914,
       "p50_total_sec": 58.95353631814942,
-      "p95_total_sec": 62.065071946941316,
-      "avg_storage_bytes": 6599394.386666667,
+      "p95_total_sec": 62.0223612813279,
+      "avg_storage_bytes": 6599475.597402598,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -6251,20 +6441,20 @@
           ]
         },
         "category_4": {
-          "expected_total": 68,
-          "rows_recorded": 68,
-          "rows_successful": 68,
+          "expected_total": 70,
+          "rows_recorded": 70,
+          "rows_successful": 70,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6617647058823529,
-          "doc_recall_all": 0.6470588235294118,
-          "ndcg_at_10": 0.5073730197143269,
+          "doc_recall_any": 0.6571428571428571,
+          "doc_recall_all": 0.6428571428571429,
+          "ndcg_at_10": 0.5071623620082033,
           "exact_match": 0.0,
-          "token_f1": 0.08667143146368317,
-          "avg_total_sec": 59.56781705205931,
-          "p50_total_sec": 58.997903460171074,
+          "token_f1": 0.08506090571623594,
+          "avg_total_sec": 59.54646623189162,
+          "p50_total_sec": 58.95987671613693,
           "p95_total_sec": 62.09872798388824,
-          "avg_storage_bytes": 6598967.117647059,
+          "avg_storage_bytes": 6598980.885714286,
           "p95_storage_bytes": 6617881.0,
           "categories": {},
           "sample_errors": [],
@@ -6641,6 +6831,60 @@
                 "conv-26:D4:5",
                 "conv-26:D12:5",
                 "conv-26:D16:9"
+              ]
+            }
+          ]
+        },
+        "category_5": {
+          "expected_total": 2,
+          "rows_recorded": 2,
+          "rows_successful": 2,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 0.5,
+          "doc_recall_all": 0.5,
+          "ndcg_at_10": 0.25,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 59.090612517436966,
+          "p50_total_sec": 58.850950489751995,
+          "p95_total_sec": 59.33027454512194,
+          "avg_storage_bytes": 6605593.0,
+          "p95_storage_bytes": 6621977.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0153",
+              "category": "category_5",
+              "query": "What are Melanie's plans for the summer with respect to adoption?",
+              "gold": "",
+              "prediction": "Any fun plans for the summer?",
+              "expected_doc_ids": [
+                "conv-26:D2:8"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D17:3",
+                "conv-26:D2:7",
+                "conv-26:D17:1",
+                "conv-26:D19:2",
+                "conv-26:D8:9"
+              ]
+            }
+          ],
+          "sample_successes": [
+            {
+              "case_id": "locomo::conv-26::0152",
+              "category": "category_5",
+              "query": "What did Caroline realize after her charity race?",
+              "gold": "",
+              "prediction": "Caroline: That charity race sounds great, Mel!",
+              "retrieved_doc_ids": [
+                "conv-26:D2:2",
+                "conv-26:D2:1",
+                "conv-26:D2:3",
+                "conv-26:D7:7",
+                "conv-26:D10:20"
               ]
             }
           ]
@@ -7032,11 +7276,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.00666666666666671,
-    "doc_recall_all_delta": 0.00666666666666671,
-    "ndcg_at_10_delta": 0.03346652809493533,
-    "token_f1_delta": 0.0036609863566385292,
-    "avg_storage_ratio_nova_over_stock": 0.40971232122015,
-    "avg_latency_ratio_nova_over_stock": 1.6274102681824367
+    "doc_recall_any_delta": -0.008378718056137435,
+    "doc_recall_all_delta": 0.0038123167155426074,
+    "ndcg_at_10_delta": 0.03433645182709216,
+    "token_f1_delta": 0.004269870328660996,
+    "avg_storage_ratio_nova_over_stock": 0.4097215981338273,
+    "avg_latency_ratio_nova_over_stock": 1.62760824964956
   }
 }
