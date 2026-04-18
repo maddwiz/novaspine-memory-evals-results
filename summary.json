@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T20:10:30Z",
+  "generated_at": "2026-04-18T20:17:27Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,30 +116,30 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-18T20:09:31Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-18T20:16:51Z",
+    "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 180,
+    "current_case_index": 185,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0179"
+    "current_case_id": "locomo::conv-26::0184"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 180,
-        "rows_successful": 180,
+        "rows_recorded": 185,
+        "rows_successful": 185,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7,
-        "doc_recall_all": 0.5944444444444444,
-        "ndcg_at_10": 0.4653970108524825,
+        "doc_recall_any": 0.6918918918918919,
+        "doc_recall_all": 0.5891891891891892,
+        "ndcg_at_10": 0.460315214922602,
         "exact_match": 0.0,
-        "token_f1": 0.04116629199640325,
-        "avg_total_sec": 36.49653551494961,
-        "p50_total_sec": 36.30421630805358,
+        "token_f1": 0.04005368951001398,
+        "avg_total_sec": 36.48990555954594,
+        "p50_total_sec": 36.29695310769603,
         "p95_total_sec": 37.65678389882669,
-        "avg_storage_bytes": 16107071.7,
+        "avg_storage_bytes": 16107095.686486486,
         "p95_storage_bytes": 16117790.0,
         "categories": {
           "category_2": {
@@ -1467,20 +1467,20 @@
             ]
           },
           "category_5": {
-            "expected_total": 28,
-            "rows_recorded": 28,
-            "rows_successful": 28,
+            "expected_total": 33,
+            "rows_recorded": 33,
+            "rows_successful": 33,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6428571428571429,
-            "doc_recall_all": 0.6428571428571429,
-            "ndcg_at_10": 0.4845676750012136,
+            "doc_recall_any": 0.6060606060606061,
+            "doc_recall_all": 0.6060606060606061,
+            "ndcg_at_10": 0.453174172947531,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 36.37501001738877,
-            "p50_total_sec": 36.28470082208514,
-            "p95_total_sec": 37.09845839207992,
-            "avg_storage_bytes": 16105355.42857143,
+            "avg_total_sec": 36.35625503975616,
+            "p50_total_sec": 36.27845775196329,
+            "p95_total_sec": 36.829774843063205,
+            "avg_storage_bytes": 16105749.93939394,
             "p95_storage_bytes": 16117790.0,
             "categories": {},
             "sample_errors": [],
@@ -1648,6 +1648,40 @@
                   "conv-26:D13:6"
                 ],
                 "retrieved_doc_ids": []
+              },
+              {
+                "case_id": "locomo::conv-26::0180",
+                "category": "category_5",
+                "query": "What activity did Melanie used to do with her dad?",
+                "gold": "",
+                "prediction": "Melanie: I'll never forget the day my youngest took her first steps.",
+                "expected_doc_ids": [
+                  "conv-26:D13:7"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D11:1",
+                  "conv-26:D10:12",
+                  "conv-26:D3:20",
+                  "conv-26:D10:10",
+                  "conv-26:D16:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0181",
+                "category": "category_5",
+                "query": "What did Melanie make for a local church?",
+                "gold": "",
+                "prediction": "made for a local church and shows time changing our lives",
+                "expected_doc_ids": [
+                  "conv-26:D14:17"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D12:6",
+                  "conv-26:D4:5",
+                  "conv-26:D16:8",
+                  "conv-26:D14:19"
+                ]
               }
             ],
             "sample_successes": [
@@ -2203,19 +2237,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 180,
-        "rows_successful": 180,
+        "rows_recorded": 184,
+        "rows_successful": 184,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7055555555555556,
-        "doc_recall_all": 0.6111111111111112,
-        "ndcg_at_10": 0.4971763459651643,
+        "doc_recall_any": 0.7065217391304348,
+        "doc_recall_all": 0.6141304347826086,
+        "ndcg_at_10": 0.49532855754405997,
         "exact_match": 0.0,
-        "token_f1": 0.04455381429696904,
-        "avg_total_sec": 59.40432434952818,
-        "p50_total_sec": 58.96402466902509,
+        "token_f1": 0.04358525311660015,
+        "avg_total_sec": 59.391853793185085,
+        "p50_total_sec": 58.95987671613693,
         "p95_total_sec": 62.0223612813279,
-        "avg_storage_bytes": 6599494.511111111,
+        "avg_storage_bytes": 6599426.739130435,
         "p95_storage_bytes": 6613785.0,
         "categories": {
           "category_2": {
@@ -3481,21 +3515,21 @@
             ]
           },
           "category_5": {
-            "expected_total": 28,
-            "rows_recorded": 28,
-            "rows_successful": 28,
+            "expected_total": 32,
+            "rows_recorded": 32,
+            "rows_successful": 32,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7142857142857143,
-            "doc_recall_all": 0.7142857142857143,
-            "ndcg_at_10": 0.509578428788444,
+            "doc_recall_any": 0.71875,
+            "doc_recall_all": 0.71875,
+            "ndcg_at_10": 0.49740338501418396,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 59.26477162438511,
-            "p50_total_sec": 59.10605558520183,
-            "p95_total_sec": 61.9739446840249,
-            "avg_storage_bytes": 6600034.142857143,
-            "p95_storage_bytes": 6617881.0,
+            "avg_total_sec": 59.210510016055196,
+            "p50_total_sec": 59.07306171301752,
+            "p95_total_sec": 60.25707206269726,
+            "avg_storage_bytes": 6599577.0,
+            "p95_storage_bytes": 6609689.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -3633,6 +3667,23 @@
                   "conv-26:D5:6",
                   "conv-26:D16:8",
                   "conv-26:D14:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0181",
+                "category": "category_5",
+                "query": "What did Melanie make for a local church?",
+                "gold": "",
+                "prediction": "made for a local church and shows time changing our lives",
+                "expected_doc_ids": [
+                  "conv-26:D14:17"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D14:19",
+                  "conv-26:D12:6",
+                  "conv-26:D16:5",
+                  "conv-26:D8:4",
+                  "conv-26:D4:3"
                 ]
               }
             ],
@@ -4329,19 +4380,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 180,
-      "rows_successful": 180,
+      "rows_recorded": 185,
+      "rows_successful": 185,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7,
-      "doc_recall_all": 0.5944444444444444,
-      "ndcg_at_10": 0.4653970108524825,
+      "doc_recall_any": 0.6918918918918919,
+      "doc_recall_all": 0.5891891891891892,
+      "ndcg_at_10": 0.460315214922602,
       "exact_match": 0.0,
-      "token_f1": 0.04116629199640325,
-      "avg_total_sec": 36.49653551494961,
-      "p50_total_sec": 36.30421630805358,
+      "token_f1": 0.04005368951001398,
+      "avg_total_sec": 36.48990555954594,
+      "p50_total_sec": 36.29695310769603,
       "p95_total_sec": 37.65678389882669,
-      "avg_storage_bytes": 16107071.7,
+      "avg_storage_bytes": 16107095.686486486,
       "p95_storage_bytes": 16117790.0,
       "categories": {
         "category_2": {
@@ -5669,20 +5720,20 @@
           ]
         },
         "category_5": {
-          "expected_total": 28,
-          "rows_recorded": 28,
-          "rows_successful": 28,
+          "expected_total": 33,
+          "rows_recorded": 33,
+          "rows_successful": 33,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6428571428571429,
-          "doc_recall_all": 0.6428571428571429,
-          "ndcg_at_10": 0.4845676750012136,
+          "doc_recall_any": 0.6060606060606061,
+          "doc_recall_all": 0.6060606060606061,
+          "ndcg_at_10": 0.453174172947531,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 36.37501001738877,
-          "p50_total_sec": 36.28470082208514,
-          "p95_total_sec": 37.09845839207992,
-          "avg_storage_bytes": 16105355.42857143,
+          "avg_total_sec": 36.35625503975616,
+          "p50_total_sec": 36.27845775196329,
+          "p95_total_sec": 36.829774843063205,
+          "avg_storage_bytes": 16105749.93939394,
           "p95_storage_bytes": 16117790.0,
           "categories": {},
           "sample_errors": [],
@@ -5850,6 +5901,40 @@
                 "conv-26:D13:6"
               ],
               "retrieved_doc_ids": []
+            },
+            {
+              "case_id": "locomo::conv-26::0180",
+              "category": "category_5",
+              "query": "What activity did Melanie used to do with her dad?",
+              "gold": "",
+              "prediction": "Melanie: I'll never forget the day my youngest took her first steps.",
+              "expected_doc_ids": [
+                "conv-26:D13:7"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D11:1",
+                "conv-26:D10:12",
+                "conv-26:D3:20",
+                "conv-26:D10:10",
+                "conv-26:D16:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0181",
+              "category": "category_5",
+              "query": "What did Melanie make for a local church?",
+              "gold": "",
+              "prediction": "made for a local church and shows time changing our lives",
+              "expected_doc_ids": [
+                "conv-26:D14:17"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D12:6",
+                "conv-26:D4:5",
+                "conv-26:D16:8",
+                "conv-26:D14:19"
+              ]
             }
           ],
           "sample_successes": [
@@ -6405,19 +6490,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 180,
-      "rows_successful": 180,
+      "rows_recorded": 184,
+      "rows_successful": 184,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7055555555555556,
-      "doc_recall_all": 0.6111111111111112,
-      "ndcg_at_10": 0.4971763459651643,
+      "doc_recall_any": 0.7065217391304348,
+      "doc_recall_all": 0.6141304347826086,
+      "ndcg_at_10": 0.49532855754405997,
       "exact_match": 0.0,
-      "token_f1": 0.04455381429696904,
-      "avg_total_sec": 59.40432434952818,
-      "p50_total_sec": 58.96402466902509,
+      "token_f1": 0.04358525311660015,
+      "avg_total_sec": 59.391853793185085,
+      "p50_total_sec": 58.95987671613693,
       "p95_total_sec": 62.0223612813279,
-      "avg_storage_bytes": 6599494.511111111,
+      "avg_storage_bytes": 6599426.739130435,
       "p95_storage_bytes": 6613785.0,
       "categories": {
         "category_2": {
@@ -7683,21 +7768,21 @@
           ]
         },
         "category_5": {
-          "expected_total": 28,
-          "rows_recorded": 28,
-          "rows_successful": 28,
+          "expected_total": 32,
+          "rows_recorded": 32,
+          "rows_successful": 32,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.7142857142857143,
-          "doc_recall_all": 0.7142857142857143,
-          "ndcg_at_10": 0.509578428788444,
+          "doc_recall_any": 0.71875,
+          "doc_recall_all": 0.71875,
+          "ndcg_at_10": 0.49740338501418396,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 59.26477162438511,
-          "p50_total_sec": 59.10605558520183,
-          "p95_total_sec": 61.9739446840249,
-          "avg_storage_bytes": 6600034.142857143,
-          "p95_storage_bytes": 6617881.0,
+          "avg_total_sec": 59.210510016055196,
+          "p50_total_sec": 59.07306171301752,
+          "p95_total_sec": 60.25707206269726,
+          "avg_storage_bytes": 6599577.0,
+          "p95_storage_bytes": 6609689.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -7835,6 +7920,23 @@
                 "conv-26:D5:6",
                 "conv-26:D16:8",
                 "conv-26:D14:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0181",
+              "category": "category_5",
+              "query": "What did Melanie make for a local church?",
+              "gold": "",
+              "prediction": "made for a local church and shows time changing our lives",
+              "expected_doc_ids": [
+                "conv-26:D14:17"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D14:19",
+                "conv-26:D12:6",
+                "conv-26:D16:5",
+                "conv-26:D8:4",
+                "conv-26:D4:3"
               ]
             }
           ],
@@ -8396,11 +8498,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.005555555555555647,
-    "doc_recall_all_delta": 0.01666666666666672,
-    "ndcg_at_10_delta": 0.03177933511268183,
-    "token_f1_delta": 0.0033875223005657845,
-    "avg_storage_ratio_nova_over_stock": 0.409726524723368,
-    "avg_latency_ratio_nova_over_stock": 1.627670229827572
+    "doc_recall_any_delta": 0.014629847238542881,
+    "doc_recall_all_delta": 0.02494124559341948,
+    "ndcg_at_10_delta": 0.035013342621457944,
+    "token_f1_delta": 0.0035315636065861716,
+    "avg_storage_ratio_nova_over_stock": 0.4097217069783235,
+    "avg_latency_ratio_nova_over_stock": 1.6276242122980196
   }
 }
