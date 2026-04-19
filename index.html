@@ -234,10 +234,10 @@
       <div class="metric-card">
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>68.8%</strong></div>
-          <div><span>NovaSpine</span><strong>71.5%</strong></div>
+          <div><span>Stock</span><strong>69.2%</strong></div>
+          <div><span>NovaSpine</span><strong>71.8%</strong></div>
         </div>
-        <div class="delta good">+0.027</div>
+        <div class="delta good">+0.026</div>
       </div>
     
       
@@ -245,27 +245,27 @@
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>58.6%</strong></div>
-          <div><span>NovaSpine</span><strong>61.9%</strong></div>
+          <div><span>NovaSpine</span><strong>61.8%</strong></div>
         </div>
-        <div class="delta good">+0.033</div>
+        <div class="delta good">+0.031</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>45.7%</strong></div>
-          <div><span>NovaSpine</span><strong>51.4%</strong></div>
+          <div><span>Stock</span><strong>45.6%</strong></div>
+          <div><span>NovaSpine</span><strong>51.3%</strong></div>
         </div>
-        <div class="delta good">+0.058</div>
+        <div class="delta good">+0.057</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">Answer F1</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>4.5%</strong></div>
-          <div><span>NovaSpine</span><strong>4.7%</strong></div>
+          <div><span>Stock</span><strong>4.4%</strong></div>
+          <div><span>NovaSpine</span><strong>4.6%</strong></div>
         </div>
         <div class="delta good">+0.002</div>
       </div>
@@ -275,16 +275,16 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.027, evidence-all +0.033, NDCG@10 +0.058, answer F1 +0.002.</p>
+        <p><b>Current delta:</b> evidence-any +0.026, evidence-all +0.031, NDCG@10 +0.057, answer F1 +0.002.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-19T01:37:54Z</strong></div>
-          <div class="pill"><span>Current</span><strong>locomo::conv-41::0060</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>365 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>365 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-19T01:48:28Z</strong></div>
+          <div class="pill"><span>Current</span><strong>locomo::conv-41::0065</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>370 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>369 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -309,35 +309,35 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>365 / 1986 failed 0</td>
-      <td>68.8%</td>
+      <td>370 / 1986 failed 0</td>
+      <td>69.2%</td>
       <td>58.6%</td>
-      <td>45.7%</td>
-      <td>4.5%</td>
-      <td>38.1s</td>
-      <td>16.0 MB</td>
+      <td>45.6%</td>
+      <td>4.4%</td>
+      <td>38.3s</td>
+      <td>16.1 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>365 / 1986 failed 0</td>
-      <td>71.5%</td>
-      <td>61.9%</td>
-      <td>51.4%</td>
-      <td>4.7%</td>
-      <td>62.8s</td>
-      <td>6.6 MB</td>
+      <td>369 / 1986 failed 0</td>
+      <td>71.8%</td>
+      <td>61.8%</td>
+      <td>51.3%</td>
+      <td>4.6%</td>
+      <td>63.1s</td>
+      <td>6.7 MB</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>category_1</td><td>73</td><td>64.4%</td><td>3.2%</td><td>73</td><td>67.1%</td><td>3.5%</td></tr>
-<tr><td>category_2</td><td>87</td><td>81.6%</td><td>1.0%</td><td>87</td><td>88.5%</td><td>1.6%</td></tr>
-<tr><td>category_3</td><td>20</td><td>65.0%</td><td>7.1%</td><td>20</td><td>50.0%</td><td>7.5%</td></tr>
-<tr><td>category_4</td><td>114</td><td>65.8%</td><td>10.3%</td><td>114</td><td>65.8%</td><td>10.2%</td></tr>
+<tr><td>category_1</td><td>74</td><td>64.9%</td><td>3.1%</td><td>74</td><td>67.6%</td><td>3.5%</td></tr>
+<tr><td>category_2</td><td>89</td><td>82.0%</td><td>1.0%</td><td>89</td><td>88.8%</td><td>1.6%</td></tr>
+<tr><td>category_3</td><td>21</td><td>66.7%</td><td>6.8%</td><td>21</td><td>52.4%</td><td>7.1%</td></tr>
+<tr><td>category_4</td><td>115</td><td>66.1%</td><td>10.2%</td><td>114</td><td>65.8%</td><td>10.2%</td></tr>
 <tr><td>category_5</td><td>71</td><td>63.4%</td><td>0.0%</td><td>71</td><td>70.4%</td><td>0.0%</td></tr></table>
       </details>
       <details>
