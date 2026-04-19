@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T01:00:03Z",
+  "generated_at": "2026-04-19T01:01:41Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-19T00:59:11Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-19T01:00:04Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 350,
     "current_case_total": 1986,
@@ -2414,19 +2414,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 349,
-        "rows_successful": 349,
+        "rows_recorded": 350,
+        "rows_successful": 350,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7106017191977078,
-        "doc_recall_all": 0.6160458452722063,
-        "ndcg_at_10": 0.5067944455208152,
-        "exact_match": 0.0057306590257879654,
-        "token_f1": 0.046775827860957186,
-        "avg_total_sec": 61.400523204863454,
+        "doc_recall_any": 0.7085714285714285,
+        "doc_recall_all": 0.6142857142857143,
+        "ndcg_at_10": 0.5053464613907557,
+        "exact_match": 0.005714285714285714,
+        "token_f1": 0.04695964295595763,
+        "avg_total_sec": 61.504219250470136,
         "p50_total_sec": 58.824652888812125,
-        "p95_total_sec": 92.94065927295014,
-        "avg_storage_bytes": 6816112.862464183,
+        "p95_total_sec": 92.9774297918193,
+        "avg_storage_bytes": 6825811.582857143,
         "p95_storage_bytes": 10222953.0,
         "categories": {
           "category_2": {
@@ -2791,20 +2791,20 @@
             ]
           },
           "category_3": {
-            "expected_total": 18,
-            "rows_recorded": 18,
-            "rows_successful": 18,
+            "expected_total": 19,
+            "rows_recorded": 19,
+            "rows_successful": 19,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5555555555555556,
-            "doc_recall_all": 0.2222222222222222,
-            "ndcg_at_10": 0.25519007855784026,
-            "exact_match": 0.05555555555555555,
-            "token_f1": 0.07674742411584518,
-            "avg_total_sec": 68.39884672564868,
-            "p50_total_sec": 59.00811576889828,
-            "p95_total_sec": 92.94065927295014,
-            "avg_storage_bytes": 7606774.333333333,
+            "doc_recall_any": 0.5263157894736842,
+            "doc_recall_all": 0.21052631578947367,
+            "ndcg_at_10": 0.2417590217916381,
+            "exact_match": 0.05263157894736842,
+            "token_f1": 0.07855603922085917,
+            "avg_total_sec": 69.94070422257248,
+            "p50_total_sec": 59.176900054793805,
+            "p95_total_sec": 93.0031461911276,
+            "avg_storage_bytes": 7743821.2105263155,
             "p95_storage_bytes": 10227049.0,
             "categories": {},
             "sample_errors": [],
@@ -2942,6 +2942,24 @@
                   "conv-41:D22:16",
                   "conv-41:D3:14",
                   "conv-41:D11:5"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-41::0045",
+                "category": "category_3",
+                "query": "Would John be open to moving to another country?",
+                "gold": "No, he has goals specifically in the U.S. like joining the military and running for office.",
+                "prediction": "John: I feel a strong urge to serve my country and community.",
+                "expected_doc_ids": [
+                  "conv-41:D24:3",
+                  "conv-41:D7:2"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-41:D13:25",
+                  "conv-41:D30:19",
+                  "conv-41:D6:4",
+                  "conv-41:D8:18",
+                  "conv-41:D30:18"
                 ]
               }
             ],
@@ -7093,19 +7111,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 349,
-      "rows_successful": 349,
+      "rows_recorded": 350,
+      "rows_successful": 350,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7106017191977078,
-      "doc_recall_all": 0.6160458452722063,
-      "ndcg_at_10": 0.5067944455208152,
-      "exact_match": 0.0057306590257879654,
-      "token_f1": 0.046775827860957186,
-      "avg_total_sec": 61.400523204863454,
+      "doc_recall_any": 0.7085714285714285,
+      "doc_recall_all": 0.6142857142857143,
+      "ndcg_at_10": 0.5053464613907557,
+      "exact_match": 0.005714285714285714,
+      "token_f1": 0.04695964295595763,
+      "avg_total_sec": 61.504219250470136,
       "p50_total_sec": 58.824652888812125,
-      "p95_total_sec": 92.94065927295014,
-      "avg_storage_bytes": 6816112.862464183,
+      "p95_total_sec": 92.9774297918193,
+      "avg_storage_bytes": 6825811.582857143,
       "p95_storage_bytes": 10222953.0,
       "categories": {
         "category_2": {
@@ -7470,20 +7488,20 @@
           ]
         },
         "category_3": {
-          "expected_total": 18,
-          "rows_recorded": 18,
-          "rows_successful": 18,
+          "expected_total": 19,
+          "rows_recorded": 19,
+          "rows_successful": 19,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5555555555555556,
-          "doc_recall_all": 0.2222222222222222,
-          "ndcg_at_10": 0.25519007855784026,
-          "exact_match": 0.05555555555555555,
-          "token_f1": 0.07674742411584518,
-          "avg_total_sec": 68.39884672564868,
-          "p50_total_sec": 59.00811576889828,
-          "p95_total_sec": 92.94065927295014,
-          "avg_storage_bytes": 7606774.333333333,
+          "doc_recall_any": 0.5263157894736842,
+          "doc_recall_all": 0.21052631578947367,
+          "ndcg_at_10": 0.2417590217916381,
+          "exact_match": 0.05263157894736842,
+          "token_f1": 0.07855603922085917,
+          "avg_total_sec": 69.94070422257248,
+          "p50_total_sec": 59.176900054793805,
+          "p95_total_sec": 93.0031461911276,
+          "avg_storage_bytes": 7743821.2105263155,
           "p95_storage_bytes": 10227049.0,
           "categories": {},
           "sample_errors": [],
@@ -7621,6 +7639,24 @@
                 "conv-41:D22:16",
                 "conv-41:D3:14",
                 "conv-41:D11:5"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-41::0045",
+              "category": "category_3",
+              "query": "Would John be open to moving to another country?",
+              "gold": "No, he has goals specifically in the U.S. like joining the military and running for office.",
+              "prediction": "John: I feel a strong urge to serve my country and community.",
+              "expected_doc_ids": [
+                "conv-41:D24:3",
+                "conv-41:D7:2"
+              ],
+              "retrieved_doc_ids": [
+                "conv-41:D13:25",
+                "conv-41:D30:19",
+                "conv-41:D6:4",
+                "conv-41:D8:18",
+                "conv-41:D30:18"
               ]
             }
           ],
@@ -9350,11 +9386,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0334588620548506,
-    "doc_recall_all_delta": 0.036045845272206334,
-    "ndcg_at_10_delta": 0.05577203326927932,
-    "token_f1_delta": 0.002070887674834959,
-    "avg_storage_ratio_nova_over_stock": 0.4114077952984761,
-    "avg_latency_ratio_nova_over_stock": 1.634242010991857
+    "doc_recall_any_delta": 0.03142857142857136,
+    "doc_recall_all_delta": 0.034285714285714364,
+    "ndcg_at_10_delta": 0.05432404913921979,
+    "token_f1_delta": 0.002254702769835401,
+    "avg_storage_ratio_nova_over_stock": 0.4119931918807506,
+    "avg_latency_ratio_nova_over_stock": 1.6370019945434424
   }
 }
