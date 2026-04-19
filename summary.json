@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T01:12:11Z",
+  "generated_at": "2026-04-19T01:13:45Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-19T01:11:20Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-19T01:12:12Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 355,
     "current_case_total": 1986,
@@ -2414,19 +2414,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 354,
-        "rows_successful": 354,
+        "rows_recorded": 355,
+        "rows_successful": 355,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7090395480225988,
-        "doc_recall_all": 0.6129943502824858,
-        "ndcg_at_10": 0.5063888179004423,
-        "exact_match": 0.005649717514124294,
-        "token_f1": 0.04770947535965182,
-        "avg_total_sec": 61.855970743258275,
-        "p50_total_sec": 58.83844169881195,
+        "doc_recall_any": 0.7070422535211267,
+        "doc_recall_all": 0.6112676056338028,
+        "ndcg_at_10": 0.504962370526075,
+        "exact_match": 0.005633802816901409,
+        "token_f1": 0.04757508247131478,
+        "avg_total_sec": 61.94275396683214,
+        "p50_total_sec": 58.84489636216313,
         "p95_total_sec": 92.9774297918193,
-        "avg_storage_bytes": 6864255.214689266,
+        "avg_storage_bytes": 6873762.4873239435,
         "p95_storage_bytes": 10222953.0,
         "categories": {
           "category_2": {
@@ -2791,21 +2791,21 @@
             ]
           },
           "category_3": {
-            "expected_total": 19,
-            "rows_recorded": 19,
-            "rows_successful": 19,
+            "expected_total": 20,
+            "rows_recorded": 20,
+            "rows_successful": 20,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5263157894736842,
-            "doc_recall_all": 0.21052631578947367,
-            "ndcg_at_10": 0.2417590217916381,
-            "exact_match": 0.05263157894736842,
-            "token_f1": 0.07855603922085917,
-            "avg_total_sec": 69.94070422257248,
-            "p50_total_sec": 59.176900054793805,
+            "doc_recall_any": 0.5,
+            "doc_recall_all": 0.2,
+            "ndcg_at_10": 0.22967107070205622,
+            "exact_match": 0.05,
+            "token_f1": 0.07462823725981621,
+            "avg_total_sec": 71.07686976704281,
+            "p50_total_sec": 59.304041219409555,
             "p95_total_sec": 93.0031461911276,
-            "avg_storage_bytes": 7743821.2105263155,
-            "p95_storage_bytes": 10227049.0,
+            "avg_storage_bytes": 7868597.0,
+            "p95_storage_bytes": 10231145.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -2960,6 +2960,26 @@
                   "conv-41:D6:4",
                   "conv-41:D8:18",
                   "conv-41:D30:18"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-41::0050",
+                "category": "category_3",
+                "query": "What attributes describe John?",
+                "gold": "Selfless, family-oriented, passionate, rational",
+                "prediction": "John: He really taught us the importance of unconditional love and loyalty.",
+                "expected_doc_ids": [
+                  "conv-41:D26:6",
+                  "conv-41:D2:14",
+                  "conv-41:D3:5",
+                  "conv-41:D4:6"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-41:D22:9",
+                  "conv-41:D30:5",
+                  "conv-41:D22:13",
+                  "conv-41:D17:9",
+                  "conv-41:D17:7"
                 ]
               }
             ],
@@ -7111,19 +7131,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 354,
-      "rows_successful": 354,
+      "rows_recorded": 355,
+      "rows_successful": 355,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7090395480225988,
-      "doc_recall_all": 0.6129943502824858,
-      "ndcg_at_10": 0.5063888179004423,
-      "exact_match": 0.005649717514124294,
-      "token_f1": 0.04770947535965182,
-      "avg_total_sec": 61.855970743258275,
-      "p50_total_sec": 58.83844169881195,
+      "doc_recall_any": 0.7070422535211267,
+      "doc_recall_all": 0.6112676056338028,
+      "ndcg_at_10": 0.504962370526075,
+      "exact_match": 0.005633802816901409,
+      "token_f1": 0.04757508247131478,
+      "avg_total_sec": 61.94275396683214,
+      "p50_total_sec": 58.84489636216313,
       "p95_total_sec": 92.9774297918193,
-      "avg_storage_bytes": 6864255.214689266,
+      "avg_storage_bytes": 6873762.4873239435,
       "p95_storage_bytes": 10222953.0,
       "categories": {
         "category_2": {
@@ -7488,21 +7508,21 @@
           ]
         },
         "category_3": {
-          "expected_total": 19,
-          "rows_recorded": 19,
-          "rows_successful": 19,
+          "expected_total": 20,
+          "rows_recorded": 20,
+          "rows_successful": 20,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5263157894736842,
-          "doc_recall_all": 0.21052631578947367,
-          "ndcg_at_10": 0.2417590217916381,
-          "exact_match": 0.05263157894736842,
-          "token_f1": 0.07855603922085917,
-          "avg_total_sec": 69.94070422257248,
-          "p50_total_sec": 59.176900054793805,
+          "doc_recall_any": 0.5,
+          "doc_recall_all": 0.2,
+          "ndcg_at_10": 0.22967107070205622,
+          "exact_match": 0.05,
+          "token_f1": 0.07462823725981621,
+          "avg_total_sec": 71.07686976704281,
+          "p50_total_sec": 59.304041219409555,
           "p95_total_sec": 93.0031461911276,
-          "avg_storage_bytes": 7743821.2105263155,
-          "p95_storage_bytes": 10227049.0,
+          "avg_storage_bytes": 7868597.0,
+          "p95_storage_bytes": 10231145.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -7657,6 +7677,26 @@
                 "conv-41:D6:4",
                 "conv-41:D8:18",
                 "conv-41:D30:18"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-41::0050",
+              "category": "category_3",
+              "query": "What attributes describe John?",
+              "gold": "Selfless, family-oriented, passionate, rational",
+              "prediction": "John: He really taught us the importance of unconditional love and loyalty.",
+              "expected_doc_ids": [
+                "conv-41:D26:6",
+                "conv-41:D2:14",
+                "conv-41:D3:5",
+                "conv-41:D4:6"
+              ],
+              "retrieved_doc_ids": [
+                "conv-41:D22:9",
+                "conv-41:D30:5",
+                "conv-41:D22:13",
+                "conv-41:D17:9",
+                "conv-41:D17:7"
               ]
             }
           ],
@@ -9386,11 +9426,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03016630858597913,
-    "doc_recall_all_delta": 0.03552956155009146,
-    "ndcg_at_10_delta": 0.056931344027133624,
-    "token_f1_delta": 0.002357339281132513,
-    "avg_storage_ratio_nova_over_stock": 0.41209129002849215,
-    "avg_latency_ratio_nova_over_stock": 1.6377351522372114
+    "doc_recall_any_delta": 0.028169014084507005,
+    "doc_recall_all_delta": 0.033802816901408406,
+    "ndcg_at_10_delta": 0.055504896652766256,
+    "token_f1_delta": 0.0022229463927954662,
+    "avg_storage_ratio_nova_over_stock": 0.41266205322451854,
+    "avg_latency_ratio_nova_over_stock": 1.6400328760327252
   }
 }
