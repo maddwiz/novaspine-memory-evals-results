@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T07:26:27Z",
+  "generated_at": "2026-04-19T07:27:54Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-19T07:25:38Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-19T07:26:28Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
     "current_case_index": 510,
     "current_case_total": 1986,
@@ -2431,19 +2431,19 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 509,
-        "rows_successful": 509,
+        "rows_recorded": 510,
+        "rows_successful": 510,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7229862475442044,
-        "doc_recall_all": 0.6463654223968566,
-        "ndcg_at_10": 0.5271824561770363,
-        "exact_match": 0.009823182711198428,
-        "token_f1": 0.05074318344587208,
-        "avg_total_sec": 71.35122590320009,
+        "doc_recall_any": 0.7235294117647059,
+        "doc_recall_all": 0.6470588235294118,
+        "ndcg_at_10": 0.5269777647618001,
+        "exact_match": 0.00980392156862745,
+        "token_f1": 0.05064368700774292,
+        "avg_total_sec": 71.38075599000588,
         "p50_total_sec": 59.55852026725188,
         "p95_total_sec": 95.79567552637309,
-        "avg_storage_bytes": 7872648.355599214,
+        "avg_storage_bytes": 7876041.658823529,
         "p95_storage_bytes": 10235241.0,
         "categories": {
           "category_2": {
@@ -2842,20 +2842,20 @@
             ]
           },
           "category_3": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 24,
+            "rows_recorded": 24,
+            "rows_successful": 24,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.4782608695652174,
-            "doc_recall_all": 0.17391304347826086,
-            "ndcg_at_10": 0.2050683742787604,
-            "exact_match": 0.043478260869565216,
-            "token_f1": 0.06799970941847372,
-            "avg_total_sec": 73.42509007138078,
-            "p50_total_sec": 59.55852026725188,
+            "doc_recall_any": 0.5,
+            "doc_recall_all": 0.20833333333333334,
+            "ndcg_at_10": 0.21414010178408915,
+            "exact_match": 0.041666666666666664,
+            "token_f1": 0.06516638819270398,
+            "avg_total_sec": 73.96619340899633,
+            "p50_total_sec": 59.99358485499397,
             "p95_total_sec": 93.0031461911276,
-            "avg_storage_bytes": 8125181.869565218,
+            "avg_storage_bytes": 8186767.333333333,
             "p95_storage_bytes": 10239337.0,
             "categories": {},
             "sample_errors": [],
@@ -3221,6 +3221,20 @@
                   "conv-41:D7:5",
                   "conv-41:D9:5",
                   "conv-41:D7:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-42::0012",
+                "category": "category_3",
+                "query": "What underlying condition might Joanna have based on her allergies?",
+                "gold": "asthma",
+                "prediction": "a dog back in Michigan with that name",
+                "retrieved_doc_ids": [
+                  "conv-42:D12:8",
+                  "conv-42:D24:6",
+                  "conv-42:D2:22",
+                  "conv-42:D24:4",
+                  "conv-42:D25:20"
                 ]
               }
             ]
@@ -7247,19 +7261,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 509,
-      "rows_successful": 509,
+      "rows_recorded": 510,
+      "rows_successful": 510,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7229862475442044,
-      "doc_recall_all": 0.6463654223968566,
-      "ndcg_at_10": 0.5271824561770363,
-      "exact_match": 0.009823182711198428,
-      "token_f1": 0.05074318344587208,
-      "avg_total_sec": 71.35122590320009,
+      "doc_recall_any": 0.7235294117647059,
+      "doc_recall_all": 0.6470588235294118,
+      "ndcg_at_10": 0.5269777647618001,
+      "exact_match": 0.00980392156862745,
+      "token_f1": 0.05064368700774292,
+      "avg_total_sec": 71.38075599000588,
       "p50_total_sec": 59.55852026725188,
       "p95_total_sec": 95.79567552637309,
-      "avg_storage_bytes": 7872648.355599214,
+      "avg_storage_bytes": 7876041.658823529,
       "p95_storage_bytes": 10235241.0,
       "categories": {
         "category_2": {
@@ -7658,20 +7672,20 @@
           ]
         },
         "category_3": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 24,
+          "rows_recorded": 24,
+          "rows_successful": 24,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.4782608695652174,
-          "doc_recall_all": 0.17391304347826086,
-          "ndcg_at_10": 0.2050683742787604,
-          "exact_match": 0.043478260869565216,
-          "token_f1": 0.06799970941847372,
-          "avg_total_sec": 73.42509007138078,
-          "p50_total_sec": 59.55852026725188,
+          "doc_recall_any": 0.5,
+          "doc_recall_all": 0.20833333333333334,
+          "ndcg_at_10": 0.21414010178408915,
+          "exact_match": 0.041666666666666664,
+          "token_f1": 0.06516638819270398,
+          "avg_total_sec": 73.96619340899633,
+          "p50_total_sec": 59.99358485499397,
           "p95_total_sec": 93.0031461911276,
-          "avg_storage_bytes": 8125181.869565218,
+          "avg_storage_bytes": 8186767.333333333,
           "p95_storage_bytes": 10239337.0,
           "categories": {},
           "sample_errors": [],
@@ -8037,6 +8051,20 @@
                 "conv-41:D7:5",
                 "conv-41:D9:5",
                 "conv-41:D7:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-42::0012",
+              "category": "category_3",
+              "query": "What underlying condition might Joanna have based on her allergies?",
+              "gold": "asthma",
+              "prediction": "a dog back in Michigan with that name",
+              "retrieved_doc_ids": [
+                "conv-42:D12:8",
+                "conv-42:D24:6",
+                "conv-42:D2:22",
+                "conv-42:D24:4",
+                "conv-42:D25:20"
               ]
             }
           ]
@@ -9624,11 +9652,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.026907816171655385,
-    "doc_recall_all_delta": 0.030679147887052616,
-    "ndcg_at_10_delta": 0.05472616598266933,
-    "token_f1_delta": 0.004285941864584163,
-    "avg_storage_ratio_nova_over_stock": 0.42479872697580995,
-    "avg_latency_ratio_nova_over_stock": 1.701224287452128
+    "doc_recall_any_delta": 0.027450980392156876,
+    "doc_recall_all_delta": 0.03137254901960784,
+    "ndcg_at_10_delta": 0.05452147456743317,
+    "token_f1_delta": 0.004186445426455,
+    "avg_storage_ratio_nova_over_stock": 0.42498182557552155,
+    "avg_latency_ratio_nova_over_stock": 1.7019283720736416
   }
 }
