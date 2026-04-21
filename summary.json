@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:47:13Z",
+  "generated_at": "2026-04-21T17:48:34Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:47:08Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T17:48:21Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 200,
+    "current_case_index": 205,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::07741c45"
+    "current_case_id": "longmemeval_oracle::35a27287"
   },
   "benchmarks": {
     "locomo": {
@@ -4896,19 +4896,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 200,
-        "rows_successful": 197,
+        "rows_recorded": 205,
+        "rows_successful": 202,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9949238578680203,
-        "doc_recall_all": 0.8223350253807107,
-        "ndcg_at_10": 0.9366597147998487,
-        "exact_match": 0.08121827411167512,
-        "token_f1": 0.13101285427605708,
-        "avg_total_sec": 13.801753461966054,
-        "p50_total_sec": 13.354990849271417,
+        "doc_recall_any": 0.995049504950495,
+        "doc_recall_all": 0.8267326732673267,
+        "ndcg_at_10": 0.9382275436414366,
+        "exact_match": 0.07920792079207921,
+        "token_f1": 0.13527850813008624,
+        "avg_total_sec": 13.770491995620494,
+        "p50_total_sec": 13.343299848027527,
         "p95_total_sec": 16.203083727974445,
-        "avg_storage_bytes": 5931987.431472081,
+        "avg_storage_bytes": 5915448.237623762,
         "p95_storage_bytes": 7234081.0,
         "categories": {
           "temporal-reasoning": {
@@ -5392,6 +5392,78 @@
                 ]
               }
             ]
+          },
+          "single-session-preference": {
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.30334526997883504,
+            "avg_total_sec": 12.53879022160545,
+            "p50_total_sec": 12.559036415070295,
+            "p95_total_sec": 12.657457866240293,
+            "avg_storage_bytes": 5263804.0,
+            "p95_storage_bytes": 5462364.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::8a2466db",
+                "category": "single-session-preference",
+                "query": "Can you recommend some resources where I can learn more about video editing?",
+                "gold": "The user would prefer responses that suggest resources specifically tailored to Adobe Premiere Pro, especially those that delve into its advanced settings. They might not prefer general video editing resources or resources related to other video editing software.",
+                "prediction": "assistant: Adobe Premiere Pro is a powerful video editing software with a vast array of advanced settings that can help you take your editing skills to the next level.",
+                "retrieved_doc_ids": [
+                  "answer_edb03329"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::06878be2",
+                "category": "single-session-preference",
+                "query": "Can you suggest some accessories that would complement my current photography setup?",
+                "gold": "The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.",
+                "prediction": "Can you recommend some good options that are compatible with my Sony A7R IV?",
+                "retrieved_doc_ids": [
+                  "answer_555dfb94"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::75832dbd",
+                "category": "single-session-preference",
+                "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+                "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+                "prediction": "user: Can you recommend some relevant research papers or articles on explainable AI in medical image analysis that I can read to learn more about this topic?",
+                "retrieved_doc_ids": [
+                  "answer_d87a6ef8"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::0edc2aef",
+                "category": "single-session-preference",
+                "query": "Can you suggest a hotel for my upcoming trip to Miami?",
+                "gold": "The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.",
+                "prediction": "Can I get a room service breakfast delivered to my room, and are there any options available that cater to my dietary restrictions?",
+                "retrieved_doc_ids": [
+                  "answer_d586e9cd"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::35a27287",
+                "category": "single-session-preference",
+                "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+                "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+                "prediction": "Can you suggest some ways to find language exchange partners or events that focus on French and Spanish languages?",
+                "retrieved_doc_ids": [
+                  "answer_9b182436"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [
@@ -5561,19 +5633,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 200,
-        "rows_successful": 200,
+        "rows_recorded": 204,
+        "rows_successful": 204,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.95,
-        "ndcg_at_10": 0.9913252550116711,
-        "exact_match": 0.07,
-        "token_f1": 0.10215982747071088,
-        "avg_total_sec": 6.929671602596063,
-        "p50_total_sec": 6.020038862712681,
+        "doc_recall_all": 0.9509803921568627,
+        "ndcg_at_10": 0.991495348050658,
+        "exact_match": 0.06862745098039216,
+        "token_f1": 0.10322853144566052,
+        "avg_total_sec": 6.875924210068678,
+        "p50_total_sec": 6.014921092893928,
         "p95_total_sec": 11.891430397052318,
-        "avg_storage_bytes": 1039499.2,
+        "avg_storage_bytes": 1033951.6862745098,
         "p95_storage_bytes": 1550709.0,
         "categories": {
           "temporal-reasoning": {
@@ -6052,6 +6124,68 @@
                 ]
               }
             ]
+          },
+          "single-session-preference": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.15666373019314195,
+            "avg_total_sec": 4.1885545836994424,
+            "p50_total_sec": 4.3664675378240645,
+            "p95_total_sec": 4.902222590986639,
+            "avg_storage_bytes": 756576.0,
+            "p95_storage_bytes": 840625.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::8a2466db",
+                "category": "single-session-preference",
+                "query": "Can you recommend some resources where I can learn more about video editing?",
+                "gold": "The user would prefer responses that suggest resources specifically tailored to Adobe Premiere Pro, especially those that delve into its advanced settings. They might not prefer general video editing resources or resources related to other video editing software.",
+                "prediction": "assistant: Adobe Premiere Pro is a powerful video editing software with a vast array of advanced settings that can help you take your editing skills to the next level.",
+                "retrieved_doc_ids": [
+                  "answer_edb03329"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::06878be2",
+                "category": "single-session-preference",
+                "query": "Can you suggest some accessories that would complement my current photography setup?",
+                "gold": "The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.",
+                "prediction": "**Think Tank Photo Flash Pouch**: Think Tank Photo is a well-respected brand in the photography industry, and their flash pouch is a great option for the Godox V1.",
+                "retrieved_doc_ids": [
+                  "answer_555dfb94"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::75832dbd",
+                "category": "single-session-preference",
+                "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+                "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+                "prediction": "Can you recommend some papers on this topic?",
+                "retrieved_doc_ids": [
+                  "answer_d87a6ef8"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::0edc2aef",
+                "category": "single-session-preference",
+                "query": "Can you suggest a hotel for my upcoming trip to Miami?",
+                "gold": "The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.",
+                "prediction": "Be sure to check the hotel's website or contact their reservations team directly to inquire about current packages and promotions.",
+                "retrieved_doc_ids": [
+                  "answer_d586e9cd"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [],
@@ -6287,19 +6421,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2186,
-      "rows_successful": 2183,
+      "rows_recorded": 2191,
+      "rows_successful": 2188,
       "rows_failed": 3,
       "complete": false,
-      "doc_recall_any": 0.7214841960604672,
-      "doc_recall_all": 0.6060467246907925,
-      "ndcg_at_10": 0.49795257781767227,
-      "exact_match": 0.018781493357764543,
-      "token_f1": 0.0615194679436953,
-      "avg_total_sec": 44.784100580312895,
-      "p50_total_sec": 49.704030628781766,
+      "doc_recall_any": 0.7221206581352834,
+      "doc_recall_all": 0.6069469835466179,
+      "ndcg_at_10": 0.49909985254843625,
+      "exact_match": 0.018738574040219377,
+      "token_f1": 0.06207208632128931,
+      "avg_total_sec": 44.710413856458445,
+      "p50_total_sec": 49.64801491191611,
       "p95_total_sec": 53.90955957118422,
-      "avg_storage_bytes": 19791150.70774164,
+      "avg_storage_bytes": 19757952.93190128,
       "p95_storage_bytes": 23584388.0,
       "categories": {
         "category_2": {
@@ -8762,6 +8896,78 @@
               ]
             }
           ]
+        },
+        "single-session-preference": {
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.30334526997883504,
+          "avg_total_sec": 12.53879022160545,
+          "p50_total_sec": 12.559036415070295,
+          "p95_total_sec": 12.657457866240293,
+          "avg_storage_bytes": 5263804.0,
+          "p95_storage_bytes": 5462364.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::8a2466db",
+              "category": "single-session-preference",
+              "query": "Can you recommend some resources where I can learn more about video editing?",
+              "gold": "The user would prefer responses that suggest resources specifically tailored to Adobe Premiere Pro, especially those that delve into its advanced settings. They might not prefer general video editing resources or resources related to other video editing software.",
+              "prediction": "assistant: Adobe Premiere Pro is a powerful video editing software with a vast array of advanced settings that can help you take your editing skills to the next level.",
+              "retrieved_doc_ids": [
+                "answer_edb03329"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::06878be2",
+              "category": "single-session-preference",
+              "query": "Can you suggest some accessories that would complement my current photography setup?",
+              "gold": "The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.",
+              "prediction": "Can you recommend some good options that are compatible with my Sony A7R IV?",
+              "retrieved_doc_ids": [
+                "answer_555dfb94"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::75832dbd",
+              "category": "single-session-preference",
+              "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+              "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+              "prediction": "user: Can you recommend some relevant research papers or articles on explainable AI in medical image analysis that I can read to learn more about this topic?",
+              "retrieved_doc_ids": [
+                "answer_d87a6ef8"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::0edc2aef",
+              "category": "single-session-preference",
+              "query": "Can you suggest a hotel for my upcoming trip to Miami?",
+              "gold": "The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.",
+              "prediction": "Can I get a room service breakfast delivered to my room, and are there any options available that cater to my dietary restrictions?",
+              "retrieved_doc_ids": [
+                "answer_d586e9cd"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::35a27287",
+              "category": "single-session-preference",
+              "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+              "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+              "prediction": "Can you suggest some ways to find language exchange partners or events that focus on French and Spanish languages?",
+              "retrieved_doc_ids": [
+                "answer_9b182436"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [
@@ -9161,19 +9367,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2186,
-      "rows_successful": 2186,
+      "rows_recorded": 2190,
+      "rows_successful": 2190,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7657822506861848,
-      "doc_recall_all": 0.6660567246111619,
-      "ndcg_at_10": 0.5562195724203124,
-      "exact_match": 0.019670631290027447,
-      "token_f1": 0.06407822470871671,
-      "avg_total_sec": 77.450375481524,
-      "p50_total_sec": 87.67217931896448,
+      "doc_recall_any": 0.7662100456621005,
+      "doc_recall_all": 0.6666666666666666,
+      "ndcg_at_10": 0.5570301302789055,
+      "exact_match": 0.019634703196347032,
+      "token_f1": 0.06424733065480698,
+      "avg_total_sec": 77.31656393650515,
+      "p50_total_sec": 87.59662624169141,
       "p95_total_sec": 97.95282381214201,
-      "avg_storage_bytes": 8524935.82159195,
+      "avg_storage_bytes": 8510747.03652968,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -11641,6 +11847,68 @@
               ]
             }
           ]
+        },
+        "single-session-preference": {
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.15666373019314195,
+          "avg_total_sec": 4.1885545836994424,
+          "p50_total_sec": 4.3664675378240645,
+          "p95_total_sec": 4.902222590986639,
+          "avg_storage_bytes": 756576.0,
+          "p95_storage_bytes": 840625.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::8a2466db",
+              "category": "single-session-preference",
+              "query": "Can you recommend some resources where I can learn more about video editing?",
+              "gold": "The user would prefer responses that suggest resources specifically tailored to Adobe Premiere Pro, especially those that delve into its advanced settings. They might not prefer general video editing resources or resources related to other video editing software.",
+              "prediction": "assistant: Adobe Premiere Pro is a powerful video editing software with a vast array of advanced settings that can help you take your editing skills to the next level.",
+              "retrieved_doc_ids": [
+                "answer_edb03329"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::06878be2",
+              "category": "single-session-preference",
+              "query": "Can you suggest some accessories that would complement my current photography setup?",
+              "gold": "The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.",
+              "prediction": "**Think Tank Photo Flash Pouch**: Think Tank Photo is a well-respected brand in the photography industry, and their flash pouch is a great option for the Godox V1.",
+              "retrieved_doc_ids": [
+                "answer_555dfb94"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::75832dbd",
+              "category": "single-session-preference",
+              "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+              "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+              "prediction": "Can you recommend some papers on this topic?",
+              "retrieved_doc_ids": [
+                "answer_d87a6ef8"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::0edc2aef",
+              "category": "single-session-preference",
+              "query": "Can you suggest a hotel for my upcoming trip to Miami?",
+              "gold": "The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.",
+              "prediction": "Be sure to check the hotel's website or contact their reservations team directly to inquire about current packages and promotions.",
+              "retrieved_doc_ids": [
+                "answer_d586e9cd"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -12029,11 +12297,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.044298054625717564,
-    "doc_recall_all_delta": 0.06000999992036948,
-    "ndcg_at_10_delta": 0.05826699460264012,
-    "token_f1_delta": 0.0025587567650214166,
-    "avg_storage_ratio_nova_over_stock": 0.4307448287106054,
-    "avg_latency_ratio_nova_over_stock": 1.7294167902876498
+    "doc_recall_any_delta": 0.044089387526817125,
+    "doc_recall_all_delta": 0.05971968312004872,
+    "ndcg_at_10_delta": 0.057930277730469215,
+    "token_f1_delta": 0.0021752443335176647,
+    "avg_storage_ratio_nova_over_stock": 0.43075044595273787,
+    "avg_latency_ratio_nova_over_stock": 1.7292741727850665
   }
 }
