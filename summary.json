@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T18:10:21Z",
+  "generated_at": "2026-04-21T18:10:25Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T18:10:08Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T18:10:22Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 290,
     "current_case_total": 500,
@@ -5930,19 +5930,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 289,
-        "rows_successful": 289,
+        "rows_recorded": 290,
+        "rows_successful": 290,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9653979238754326,
-        "ndcg_at_10": 0.9939967162710528,
-        "exact_match": 0.05536332179930796,
-        "token_f1": 0.11764650764144947,
-        "avg_total_sec": 5.576538381139365,
-        "p50_total_sec": 5.499968269839883,
+        "doc_recall_all": 0.9655172413793104,
+        "ndcg_at_10": 0.9940174172494284,
+        "exact_match": 0.05517241379310345,
+        "token_f1": 0.11724083002889275,
+        "avg_total_sec": 5.565847126707627,
+        "p50_total_sec": 5.479839066043496,
         "p95_total_sec": 11.401264565996826,
-        "avg_storage_bytes": 893272.4671280277,
+        "avg_storage_bytes": 892199.7379310345,
         "p95_storage_bytes": 1509533.0,
         "categories": {
           "temporal-reasoning": {
@@ -6707,9 +6707,9 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
@@ -6717,10 +6717,10 @@
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 3.1174528426490724,
+            "avg_total_sec": 2.957108280970715,
             "p50_total_sec": 3.07673055306077,
             "p95_total_sec": 3.5465487390756607,
-            "avg_storage_bytes": 632782.3333333334,
+            "avg_storage_bytes": 620132.0,
             "p95_storage_bytes": 680629.0,
             "categories": {},
             "sample_errors": [],
@@ -6754,6 +6754,16 @@
                 "prediction": "Redeeming a surprise coupon is always a great feeling, especially when it's on something you need or regularly buy like coffee creamer!",
                 "retrieved_doc_ids": [
                   "answer_d61669c7"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::58bf7951",
+                "category": "single-session-user",
+                "query": "What play did I attend at the local community theater?",
+                "gold": "The Glass Menagerie",
+                "prediction": "Perhaps you could encourage Emily to audition for a role at the community theater or explore other local theater groups.",
+                "retrieved_doc_ids": [
+                  "answer_355c48bb"
                 ]
               }
             ]
@@ -10224,19 +10234,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2275,
-      "rows_successful": 2275,
+      "rows_recorded": 2276,
+      "rows_successful": 2276,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.774945054945055,
-      "doc_recall_all": 0.6791208791208792,
-      "ndcg_at_10": 0.5735806528838694,
-      "exact_match": 0.01978021978021978,
-      "token_f1": 0.06753532941867756,
-      "avg_total_sec": 74.51965102164463,
+      "doc_recall_any": 0.7750439367311072,
+      "doc_recall_all": 0.679261862917399,
+      "ndcg_at_10": 0.5737680076058009,
+      "exact_match": 0.01977152899824253,
+      "token_f1": 0.0675056566025885,
+      "avg_total_sec": 74.48799742919046,
       "p50_total_sec": 87.0978887300007,
       "p95_total_sec": 97.85496077872813,
-      "avg_storage_bytes": 8213523.344615385,
+      "avg_storage_bytes": 8210170.38224956,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -12990,9 +13000,9 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
@@ -13000,10 +13010,10 @@
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 3.1174528426490724,
+          "avg_total_sec": 2.957108280970715,
           "p50_total_sec": 3.07673055306077,
           "p95_total_sec": 3.5465487390756607,
-          "avg_storage_bytes": 632782.3333333334,
+          "avg_storage_bytes": 620132.0,
           "p95_storage_bytes": 680629.0,
           "categories": {},
           "sample_errors": [],
@@ -13037,6 +13047,16 @@
               "prediction": "Redeeming a surprise coupon is always a great feeling, especially when it's on something you need or regularly buy like coffee creamer!",
               "retrieved_doc_ids": [
                 "answer_d61669c7"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::58bf7951",
+              "category": "single-session-user",
+              "query": "What play did I attend at the local community theater?",
+              "gold": "The Glass Menagerie",
+              "prediction": "Perhaps you could encourage Emily to audition for a role at the community theater or explore other local theater groups.",
+              "retrieved_doc_ids": [
+                "answer_355c48bb"
               ]
             }
           ]
@@ -13428,11 +13448,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04287290360321594,
-    "doc_recall_all_delta": 0.057915423775520614,
-    "ndcg_at_10_delta": 0.05618932979720925,
-    "token_f1_delta": 0.0030402504577147077,
-    "avg_storage_ratio_nova_over_stock": 0.42781646909308074,
-    "avg_latency_ratio_nova_over_stock": 1.7128561949894257
+    "doc_recall_any_delta": 0.04297178538926816,
+    "doc_recall_all_delta": 0.05805640757204045,
+    "ndcg_at_10_delta": 0.056376684519140796,
+    "token_f1_delta": 0.0030105776416256558,
+    "avg_storage_ratio_nova_over_stock": 0.4276418238817428,
+    "avg_latency_ratio_nova_over_stock": 1.7121286278150563
   }
 }
