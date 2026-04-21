@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T19:40:31Z",
+  "generated_at": "2026-04-21T19:42:18Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T19:39:34Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T19:40:32Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_s",
     "current_case_index": 10,
     "current_case_total": 500,
@@ -7502,40 +7502,54 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 9,
-        "rows_successful": 9,
+        "rows_recorded": 10,
+        "rows_successful": 10,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 1.0,
-        "doc_recall_all": 1.0,
-        "ndcg_at_10": 1.0,
+        "doc_recall_any": 0.9,
+        "doc_recall_all": 0.9,
+        "ndcg_at_10": 0.9,
         "exact_match": 0.0,
-        "token_f1": 0.03728070175438596,
-        "avg_total_sec": 105.1713903600143,
+        "token_f1": 0.03355263157894737,
+        "avg_total_sec": 105.28136809063145,
         "p50_total_sec": 103.97577371867374,
         "p95_total_sec": 114.31030672369525,
-        "avg_storage_bytes": 11553925.444444444,
+        "avg_storage_bytes": 11474840.6,
         "p95_storage_bytes": 12726617.0,
         "categories": {
           "single-session-user": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
+            "doc_recall_any": 0.9,
+            "doc_recall_all": 0.9,
+            "ndcg_at_10": 0.9,
             "exact_match": 0.0,
-            "token_f1": 0.03728070175438596,
-            "avg_total_sec": 105.1713903600143,
+            "token_f1": 0.03355263157894737,
+            "avg_total_sec": 105.28136809063145,
             "p50_total_sec": 103.97577371867374,
             "p95_total_sec": 114.31030672369525,
-            "avg_storage_bytes": 11553925.444444444,
+            "avg_storage_bytes": 11474840.6,
             "p95_storage_bytes": 12726617.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::f8c5f88b",
+                "category": "single-session-user",
+                "query": "Where did I buy my new tennis racket from?",
+                "gold": "the sports store downtown",
+                "prediction": "User location current: marketing field",
+                "expected_doc_ids": [
+                  "answer_c3567066"
+                ],
+                "retrieved_doc_ids": [
+                  "ad17b46e_1"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_s::e47becba",
@@ -7664,7 +7678,21 @@
           }
         },
         "sample_errors": [],
-        "sample_misses": [],
+        "sample_misses": [
+          {
+            "case_id": "longmemeval_s::f8c5f88b",
+            "category": "single-session-user",
+            "query": "Where did I buy my new tennis racket from?",
+            "gold": "the sports store downtown",
+            "prediction": "User location current: marketing field",
+            "expected_doc_ids": [
+              "answer_c3567066"
+            ],
+            "retrieved_doc_ids": [
+              "ad17b46e_1"
+            ]
+          }
+        ],
         "sample_successes": [
           {
             "case_id": "longmemeval_s::e47becba",
@@ -11250,19 +11278,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2495,
-      "rows_successful": 2495,
+      "rows_recorded": 2496,
+      "rows_successful": 2496,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7947895791583166,
-      "doc_recall_all": 0.7062124248496994,
-      "ndcg_at_10": 0.6108244518350906,
-      "exact_match": 0.021643286573146292,
-      "token_f1": 0.06893692027934128,
-      "avg_total_sec": 68.75256646594018,
-      "p50_total_sec": 86.51591595681384,
-      "p95_total_sec": 97.82344547612593,
-      "avg_storage_bytes": 7600807.705410821,
+      "doc_recall_any": 0.7944711538461539,
+      "doc_recall_all": 0.7059294871794872,
+      "ndcg_at_10": 0.6105797305002207,
+      "exact_match": 0.021634615384615384,
+      "token_f1": 0.06890930132089604,
+      "avg_total_sec": 68.76759795680566,
+      "p50_total_sec": 86.5176746500656,
+      "p95_total_sec": 97.8315643351525,
+      "avg_storage_bytes": 7602074.640224359,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -14016,24 +14044,38 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 79,
-          "rows_recorded": 79,
-          "rows_successful": 79,
+          "expected_total": 80,
+          "rows_recorded": 80,
+          "rows_successful": 80,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 1.0,
-          "ndcg_at_10": 1.0,
-          "exact_match": 0.06329113924050633,
-          "token_f1": 0.12619286781083905,
-          "avg_total_sec": 14.662715693039797,
-          "p50_total_sec": 3.183075718116015,
-          "p95_total_sec": 103.97577371867374,
-          "avg_storage_bytes": 1860786.8987341772,
+          "doc_recall_any": 0.9875,
+          "doc_recall_all": 0.9875,
+          "ndcg_at_10": 0.9875,
+          "exact_match": 0.0625,
+          "token_f1": 0.12461545696320356,
+          "avg_total_sec": 15.80782134270412,
+          "p50_total_sec": 3.1874289978295565,
+          "p95_total_sec": 105.35806980030611,
+          "avg_storage_bytes": 1972065.525,
           "p95_storage_bytes": 11416825.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "longmemeval_s::f8c5f88b",
+              "category": "single-session-user",
+              "query": "Where did I buy my new tennis racket from?",
+              "gold": "the sports store downtown",
+              "prediction": "User location current: marketing field",
+              "expected_doc_ids": [
+                "answer_c3567066"
+              ],
+              "retrieved_doc_ids": [
+                "ad17b46e_1"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::e47becba",
@@ -14544,11 +14586,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0423818745034209,
-    "doc_recall_all_delta": 0.06415785021085507,
-    "ndcg_at_10_delta": 0.057271752513322616,
-    "token_f1_delta": 0.001823244665778101,
-    "avg_storage_ratio_nova_over_stock": 0.4205466313788348,
-    "avg_latency_ratio_nova_over_stock": 1.677000670864059
+    "doc_recall_any_delta": 0.04206344919125815,
+    "doc_recall_all_delta": 0.06387491254064293,
+    "ndcg_at_10_delta": 0.05702703117845276,
+    "token_f1_delta": 0.001795625707332854,
+    "avg_storage_ratio_nova_over_stock": 0.42061672987213444,
+    "avg_latency_ratio_nova_over_stock": 1.677367316380892
   }
 }
