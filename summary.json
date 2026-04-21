@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:01:14Z",
+  "generated_at": "2026-04-21T17:03:05Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:01:08Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T17:02:51Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 70,
+    "current_case_index": 75,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::dd2973ad"
+    "current_case_id": "longmemeval_oracle::36b9f61e"
   },
   "benchmarks": {
     "locomo": {
@@ -4896,20 +4896,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 70,
-        "rows_successful": 69,
+        "rows_recorded": 75,
+        "rows_successful": 74,
         "rows_failed": 1,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.7536231884057971,
-        "ndcg_at_10": 0.9151639636702111,
-        "exact_match": 0.11594202898550725,
-        "token_f1": 0.1653944773466948,
-        "avg_total_sec": 13.692199402664235,
-        "p50_total_sec": 13.346216404344887,
-        "p95_total_sec": 16.203083727974445,
-        "avg_storage_bytes": 5869357.072463769,
-        "p95_storage_bytes": 7329401.0,
+        "doc_recall_all": 0.7567567567567568,
+        "ndcg_at_10": 0.9156683876487842,
+        "exact_match": 0.10810810810810811,
+        "token_f1": 0.15421917482326947,
+        "avg_total_sec": 13.760295285283261,
+        "p50_total_sec": 13.373692441731691,
+        "p95_total_sec": 15.60541885625571,
+        "avg_storage_bytes": 5903739.581081081,
+        "p95_storage_bytes": 6835158.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 59,
@@ -5065,21 +5065,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.5,
-            "ndcg_at_10": 0.8807613394200466,
+            "doc_recall_all": 0.6,
+            "ndcg_at_10": 0.8947173724643951,
             "exact_match": 0.0,
-            "token_f1": 0.06782608695652174,
-            "avg_total_sec": 14.80004445631057,
+            "token_f1": 0.045217391304347834,
+            "avg_total_sec": 14.766702459348986,
             "p50_total_sec": 14.838910883758217,
-            "p95_total_sec": 16.236221861094236,
-            "avg_storage_bytes": 6414174.9,
-            "p95_storage_bytes": 7329853.0,
+            "p95_total_sec": 16.203083727974445,
+            "avg_storage_bytes": 6402189.333333333,
+            "p95_storage_bytes": 7329401.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5198,6 +5198,31 @@
                 "retrieved_doc_ids": [
                   "answer_f9de4602_2",
                   "answer_f9de4602_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::c4a1ceb8",
+                "category": "multi-session",
+                "query": "How many different types of citrus fruits have I used in my cocktail recipes?",
+                "gold": "3",
+                "prediction": "These cocktails incorporate Spanish flavors and ingredients, such as Rioja wine, Cava, and citrus fruits, to create refreshing and festiv",
+                "retrieved_doc_ids": [
+                  "answer_56d02cab_1",
+                  "answer_56d02cab_3",
+                  "answer_56d02cab_4",
+                  "answer_56d02cab_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_a56e767c",
+                "category": "multi-session",
+                "query": "How many movie festivals that I attended?",
+                "gold": "I attended four movie festivals.",
+                "prediction": "Joker",
+                "retrieved_doc_ids": [
+                  "answer_cf9e3940_3",
+                  "answer_cf9e3940_1",
+                  "answer_cf9e3940_2"
                 ]
               }
             ]
@@ -5347,20 +5372,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 70,
-        "rows_successful": 70,
+        "rows_recorded": 74,
+        "rows_successful": 74,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9571428571428572,
-        "ndcg_at_10": 0.9941839747384575,
-        "exact_match": 0.05714285714285714,
-        "token_f1": 0.100785253136399,
-        "avg_total_sec": 6.680732324420076,
-        "p50_total_sec": 6.007549939677119,
-        "p95_total_sec": 12.196317330002785,
-        "avg_storage_bytes": 1016083.9142857143,
-        "p95_storage_bytes": 1669565.0,
+        "doc_recall_all": 0.9459459459459459,
+        "ndcg_at_10": 0.9922263607489312,
+        "exact_match": 0.05405405405405406,
+        "token_f1": 0.09610960238771334,
+        "avg_total_sec": 6.817589060938288,
+        "p50_total_sec": 6.034229488112032,
+        "p95_total_sec": 11.401264565996826,
+        "avg_storage_bytes": 1025223.4864864865,
+        "p95_storage_bytes": 1493221.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5520,21 +5545,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.9,
-            "ndcg_at_10": 0.9831872463728881,
+            "doc_recall_all": 0.8571428571428571,
+            "ndcg_at_10": 0.9759817805326975,
             "exact_match": 0.0,
-            "token_f1": 0.06782608695652174,
-            "avg_total_sec": 8.881445335876197,
-            "p50_total_sec": 8.777982980012894,
-            "p95_total_sec": 12.708947564009577,
-            "avg_storage_bytes": 1271551.0,
-            "p95_storage_bytes": 1763773.0,
+            "token_f1": 0.052528837622005324,
+            "avg_total_sec": 8.976055797056429,
+            "p50_total_sec": 9.159522757865489,
+            "p95_total_sec": 12.196317330002785,
+            "avg_storage_bytes": 1246869.5714285714,
+            "p95_storage_bytes": 1669565.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5657,6 +5682,30 @@
                 "retrieved_doc_ids": [
                   "answer_f9de4602_2",
                   "answer_f9de4602_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::c4a1ceb8",
+                "category": "multi-session",
+                "query": "How many different types of citrus fruits have I used in my cocktail recipes?",
+                "gold": "3",
+                "prediction": "By the way, I learned how to make flavored simple syrups in my mixology class, where I also learned how to make a classic Daiquiri the right way, using fresh lime juice and simple syrup.",
+                "retrieved_doc_ids": [
+                  "answer_56d02cab_3",
+                  "answer_56d02cab_4",
+                  "answer_56d02cab_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_a56e767c",
+                "category": "multi-session",
+                "query": "How many movie festivals that I attended?",
+                "gold": "I attended four movie festivals.",
+                "prediction": "**Creating a sense of empathy:** Film festivals can create a sense of empathy and understanding by presenting stories that challenge our assumptions and biases, helping us to see the world from different perspectives.",
+                "retrieved_doc_ids": [
+                  "answer_cf9e3940_3",
+                  "answer_cf9e3940_1",
+                  "answer_cf9e3940_2"
                 ]
               }
             ]
@@ -5895,19 +5944,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2056,
-      "rows_successful": 2055,
+      "rows_recorded": 2061,
+      "rows_successful": 2060,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7046228710462287,
-      "doc_recall_all": 0.5902676399026764,
-      "ndcg_at_10": 0.4699050253302447,
-      "exact_match": 0.016058394160583942,
-      "token_f1": 0.05834534557937983,
-      "avg_total_sec": 46.710222819269866,
-      "p50_total_sec": 51.0492498842068,
+      "doc_recall_any": 0.7053398058252427,
+      "doc_recall_all": 0.5907766990291262,
+      "ndcg_at_10": 0.4710038709934069,
+      "exact_match": 0.016019417475728156,
+      "token_f1": 0.05820373066292502,
+      "avg_total_sec": 46.63252814850811,
+      "p50_total_sec": 51.03014417877421,
       "p95_total_sec": 53.93834944674745,
-      "avg_storage_bytes": 20652294.94355231,
+      "avg_storage_bytes": 20617649.12621359,
       "p95_storage_bytes": 23584388.0,
       "categories": {
         "category_2": {
@@ -8043,21 +8092,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 15,
+          "rows_recorded": 15,
+          "rows_successful": 15,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.5,
-          "ndcg_at_10": 0.8807613394200466,
+          "doc_recall_all": 0.6,
+          "ndcg_at_10": 0.8947173724643951,
           "exact_match": 0.0,
-          "token_f1": 0.06782608695652174,
-          "avg_total_sec": 14.80004445631057,
+          "token_f1": 0.045217391304347834,
+          "avg_total_sec": 14.766702459348986,
           "p50_total_sec": 14.838910883758217,
-          "p95_total_sec": 16.236221861094236,
-          "avg_storage_bytes": 6414174.9,
-          "p95_storage_bytes": 7329853.0,
+          "p95_total_sec": 16.203083727974445,
+          "avg_storage_bytes": 6402189.333333333,
+          "p95_storage_bytes": 7329401.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -8176,6 +8225,31 @@
               "retrieved_doc_ids": [
                 "answer_f9de4602_2",
                 "answer_f9de4602_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::c4a1ceb8",
+              "category": "multi-session",
+              "query": "How many different types of citrus fruits have I used in my cocktail recipes?",
+              "gold": "3",
+              "prediction": "These cocktails incorporate Spanish flavors and ingredients, such as Rioja wine, Cava, and citrus fruits, to create refreshing and festiv",
+              "retrieved_doc_ids": [
+                "answer_56d02cab_1",
+                "answer_56d02cab_3",
+                "answer_56d02cab_4",
+                "answer_56d02cab_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_a56e767c",
+              "category": "multi-session",
+              "query": "How many movie festivals that I attended?",
+              "gold": "I attended four movie festivals.",
+              "prediction": "Joker",
+              "retrieved_doc_ids": [
+                "answer_cf9e3940_3",
+                "answer_cf9e3940_1",
+                "answer_cf9e3940_2"
               ]
             }
           ]
@@ -8568,19 +8642,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2056,
-      "rows_successful": 2056,
+      "rows_recorded": 2060,
+      "rows_successful": 2060,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7509727626459144,
-      "doc_recall_all": 0.6483463035019456,
-      "ndcg_at_10": 0.5288053562938525,
-      "exact_match": 0.016050583657587547,
-      "token_f1": 0.06162354155576871,
-      "avg_total_sec": 81.9008938447479,
-      "p50_total_sec": 91.87975646927953,
+      "doc_recall_any": 0.7514563106796116,
+      "doc_recall_all": 0.6485436893203883,
+      "ndcg_at_10": 0.5296386820407232,
+      "exact_match": 0.016019417475728156,
+      "token_f1": 0.061531623444564726,
+      "avg_total_sec": 81.75975149155423,
+      "p50_total_sec": 91.86701731896028,
       "p95_total_sec": 98.10017711203545,
-      "avg_storage_bytes": 8997439.56225681,
+      "avg_storage_bytes": 8982270.099029126,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -10730,21 +10804,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 14,
+          "rows_recorded": 14,
+          "rows_successful": 14,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9,
-          "ndcg_at_10": 0.9831872463728881,
+          "doc_recall_all": 0.8571428571428571,
+          "ndcg_at_10": 0.9759817805326975,
           "exact_match": 0.0,
-          "token_f1": 0.06782608695652174,
-          "avg_total_sec": 8.881445335876197,
-          "p50_total_sec": 8.777982980012894,
-          "p95_total_sec": 12.708947564009577,
-          "avg_storage_bytes": 1271551.0,
-          "p95_storage_bytes": 1763773.0,
+          "token_f1": 0.052528837622005324,
+          "avg_total_sec": 8.976055797056429,
+          "p50_total_sec": 9.159522757865489,
+          "p95_total_sec": 12.196317330002785,
+          "avg_storage_bytes": 1246869.5714285714,
+          "p95_storage_bytes": 1669565.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -10867,6 +10941,30 @@
               "retrieved_doc_ids": [
                 "answer_f9de4602_2",
                 "answer_f9de4602_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::c4a1ceb8",
+              "category": "multi-session",
+              "query": "How many different types of citrus fruits have I used in my cocktail recipes?",
+              "gold": "3",
+              "prediction": "By the way, I learned how to make flavored simple syrups in my mixology class, where I also learned how to make a classic Daiquiri the right way, using fresh lime juice and simple syrup.",
+              "retrieved_doc_ids": [
+                "answer_56d02cab_3",
+                "answer_56d02cab_4",
+                "answer_56d02cab_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_a56e767c",
+              "category": "multi-session",
+              "query": "How many movie festivals that I attended?",
+              "gold": "I attended four movie festivals.",
+              "prediction": "**Creating a sense of empathy:** Film festivals can create a sense of empathy and understanding by presenting stories that challenge our assumptions and biases, helping us to see the world from different perspectives.",
+              "retrieved_doc_ids": [
+                "answer_cf9e3940_3",
+                "answer_cf9e3940_1",
+                "answer_cf9e3940_2"
               ]
             }
           ]
@@ -11258,11 +11356,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04634989159968572,
-    "doc_recall_all_delta": 0.058078663599269165,
-    "ndcg_at_10_delta": 0.058900330963607805,
-    "token_f1_delta": 0.003278195976388884,
-    "avg_storage_ratio_nova_over_stock": 0.4356629414236517,
-    "avg_latency_ratio_nova_over_stock": 1.7533826409186053
+    "doc_recall_any_delta": 0.04611650485436891,
+    "doc_recall_all_delta": 0.05776699029126209,
+    "ndcg_at_10_delta": 0.05863481104731627,
+    "token_f1_delta": 0.0033278927816397033,
+    "avg_storage_ratio_nova_over_stock": 0.4356592763822395,
+    "avg_latency_ratio_nova_over_stock": 1.7532772667005816
   }
 }
