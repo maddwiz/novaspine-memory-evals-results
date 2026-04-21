@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:57:56Z",
+  "generated_at": "2026-04-21T17:58:01Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:57:44Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T17:57:58Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 240,
     "current_case_total": 500,
@@ -5848,19 +5848,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 239,
-        "rows_successful": 239,
+        "rows_recorded": 240,
+        "rows_successful": 240,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9581589958158996,
-        "ndcg_at_10": 0.9927407991729466,
-        "exact_match": 0.058577405857740586,
-        "token_f1": 0.11420916341397683,
-        "avg_total_sec": 6.330062159859268,
+        "doc_recall_all": 0.9583333333333334,
+        "ndcg_at_10": 0.9927710458430592,
+        "exact_match": 0.0625,
+        "token_f1": 0.11789995856641859,
+        "avg_total_sec": 6.318857208705352,
         "p50_total_sec": 5.760950247757137,
         "p95_total_sec": 11.562424056231976,
-        "avg_storage_bytes": 975073.0585774059,
+        "avg_storage_bytes": 973829.7416666667,
         "p95_storage_bytes": 1525989.0,
         "categories": {
           "temporal-reasoning": {
@@ -6483,21 +6483,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.13739470547250868,
-            "avg_total_sec": 1.6469140896677144,
+            "exact_match": 0.1,
+            "token_f1": 0.2236552349252578,
+            "avg_total_sec": 1.846310068992898,
             "p50_total_sec": 1.584072737954557,
-            "p95_total_sec": 2.622917593922466,
-            "avg_storage_bytes": 466386.77777777775,
-            "p95_storage_bytes": 582181.0,
+            "p95_total_sec": 3.64087388291955,
+            "avg_storage_bytes": 487415.8,
+            "p95_storage_bytes": 676677.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -6590,6 +6590,16 @@
                 "prediction": "Sexual impulsivity - This term emphasizes the impulsive or compulsive nature of certain sexual behaviors and the difficulties individuals may face in controlling them.",
                 "retrieved_doc_ids": [
                   "answer_sharegpt_cGdjmYo_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "doc martin",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0"
                 ]
               }
             ]
@@ -9978,19 +9988,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2225,
-      "rows_successful": 2225,
+      "rows_recorded": 2226,
+      "rows_successful": 2226,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7698876404494382,
-      "doc_recall_all": 0.6719101123595506,
-      "ndcg_at_10": 0.5639981956453046,
-      "exact_match": 0.019325842696629212,
-      "token_f1": 0.06604001068541708,
-      "avg_total_sec": 76.1498747587859,
-      "p50_total_sec": 87.32239294517785,
+      "doc_recall_any": 0.7699910152740341,
+      "doc_recall_all": 0.6720575022461814,
+      "ndcg_at_10": 0.564194063481942,
+      "exact_match": 0.019766397124887692,
+      "token_f1": 0.06645957941377045,
+      "avg_total_sec": 76.11730108363952,
+      "p50_total_sec": 87.31680002296343,
       "p95_total_sec": 97.92576676094905,
-      "avg_storage_bytes": 8386810.034606742,
+      "avg_storage_bytes": 8383346.362982929,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -12602,21 +12612,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 9,
-          "rows_recorded": 9,
-          "rows_successful": 9,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.0,
-          "token_f1": 0.13739470547250868,
-          "avg_total_sec": 1.6469140896677144,
+          "exact_match": 0.1,
+          "token_f1": 0.2236552349252578,
+          "avg_total_sec": 1.846310068992898,
           "p50_total_sec": 1.584072737954557,
-          "p95_total_sec": 2.622917593922466,
-          "avg_storage_bytes": 466386.77777777775,
-          "p95_storage_bytes": 582181.0,
+          "p95_total_sec": 3.64087388291955,
+          "avg_storage_bytes": 487415.8,
+          "p95_storage_bytes": 676677.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -12709,6 +12719,16 @@
               "prediction": "Sexual impulsivity - This term emphasizes the impulsive or compulsive nature of certain sexual behaviors and the difficulties individuals may face in controlling them.",
               "retrieved_doc_ids": [
                 "answer_sharegpt_cGdjmYo_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::f523d9fe",
+              "category": "single-session-assistant",
+              "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+              "gold": "Doc Martin",
+              "prediction": "doc martin",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_m2xJfjo_0"
               ]
             }
           ]
@@ -13100,11 +13120,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0438417565088175,
-    "doc_recall_all_delta": 0.059224552305569444,
-    "ndcg_at_10_delta": 0.05746176857558871,
-    "token_f1_delta": 0.0020531064607663962,
-    "avg_storage_ratio_nova_over_stock": 0.42953132125916116,
-    "avg_latency_ratio_nova_over_stock": 1.7227075816662538
+    "doc_recall_any_delta": 0.04394513133341338,
+    "doc_recall_all_delta": 0.05937194219220032,
+    "ndcg_at_10_delta": 0.0576576364122261,
+    "token_f1_delta": 0.002472675189119769,
+    "avg_storage_ratio_nova_over_stock": 0.42935392896783164,
+    "avg_latency_ratio_nova_over_stock": 1.72197068068887
   }
 }
