@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T16:59:09Z",
+  "generated_at": "2026-04-21T16:59:15Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T16:58:57Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T16:59:11Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 65,
     "current_case_total": 500,
@@ -5289,19 +5289,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 64,
-        "rows_successful": 64,
+        "rows_recorded": 65,
+        "rows_successful": 65,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.953125,
-        "ndcg_at_10": 0.9936387223701879,
-        "exact_match": 0.0625,
-        "token_f1": 0.10507082713967553,
-        "avg_total_sec": 6.570515155712201,
-        "p50_total_sec": 6.007549939677119,
+        "doc_recall_all": 0.9538461538461539,
+        "ndcg_at_10": 0.9937365881798773,
+        "exact_match": 0.06153846153846154,
+        "token_f1": 0.10345435287598821,
+        "avg_total_sec": 6.53543366036163,
+        "p50_total_sec": 5.969160474836826,
         "p95_total_sec": 12.196317330002785,
-        "avg_storage_bytes": 1002514.8125,
+        "avg_storage_bytes": 999142.5384615385,
         "p95_storage_bytes": 1669565.0,
         "categories": {
           "temporal-reasoning": {
@@ -5462,20 +5462,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.75,
-            "ndcg_at_10": 0.9579681159322206,
+            "doc_recall_all": 0.8,
+            "ndcg_at_10": 0.9663744927457765,
             "exact_match": 0.0,
-            "token_f1": 0.08695652173913043,
-            "avg_total_sec": 10.419040153734386,
-            "p50_total_sec": 12.196317330002785,
+            "token_f1": 0.06956521739130435,
+            "avg_total_sec": 9.193275714572518,
+            "p50_total_sec": 9.159522757865489,
             "p95_total_sec": 12.708947564009577,
-            "avg_storage_bytes": 1437646.0,
+            "avg_storage_bytes": 1306780.2,
             "p95_storage_bytes": 1763773.0,
             "categories": {},
             "sample_errors": [],
@@ -5528,6 +5528,17 @@
                   "answer_a8b4290f_1",
                   "answer_a8b4290f_2",
                   "answer_a8b4290f_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::e831120c",
+                "category": "multi-session",
+                "query": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+                "gold": "3.5 weeks",
+                "prediction": "22",
+                "retrieved_doc_ids": [
+                  "answer_86c505e7_2",
+                  "answer_86c505e7_1"
                 ]
               }
             ]
@@ -8381,19 +8392,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2050,
-      "rows_successful": 2050,
+      "rows_recorded": 2051,
+      "rows_successful": 2051,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7502439024390244,
-      "doc_recall_all": 0.6473170731707317,
-      "ndcg_at_10": 0.5274262500195905,
-      "exact_match": 0.016097560975609757,
-      "token_f1": 0.06164271544197648,
-      "avg_total_sec": 82.11760948880871,
+      "doc_recall_any": 0.750365675280351,
+      "doc_recall_all": 0.6474890297415895,
+      "ndcg_at_10": 0.5276566614042714,
+      "exact_match": 0.016089712335446125,
+      "token_f1": 0.06161266048564202,
+      "avg_total_sec": 82.07966341785264,
       "p50_total_sec": 91.91428434010595,
       "p95_total_sec": 98.10731396498159,
-      "avg_storage_bytes": 9020376.006829267,
+      "avg_storage_bytes": 9016359.888347147,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -10543,20 +10554,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.75,
-          "ndcg_at_10": 0.9579681159322206,
+          "doc_recall_all": 0.8,
+          "ndcg_at_10": 0.9663744927457765,
           "exact_match": 0.0,
-          "token_f1": 0.08695652173913043,
-          "avg_total_sec": 10.419040153734386,
-          "p50_total_sec": 12.196317330002785,
+          "token_f1": 0.06956521739130435,
+          "avg_total_sec": 9.193275714572518,
+          "p50_total_sec": 9.159522757865489,
           "p95_total_sec": 12.708947564009577,
-          "avg_storage_bytes": 1437646.0,
+          "avg_storage_bytes": 1306780.2,
           "p95_storage_bytes": 1763773.0,
           "categories": {},
           "sample_errors": [],
@@ -10609,6 +10620,17 @@
                 "answer_a8b4290f_1",
                 "answer_a8b4290f_2",
                 "answer_a8b4290f_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::e831120c",
+              "category": "multi-session",
+              "query": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+              "gold": "3.5 weeks",
+              "prediction": "22",
+              "retrieved_doc_ids": [
+                "answer_86c505e7_2",
+                "answer_86c505e7_1"
               ]
             }
           ]
@@ -11000,11 +11022,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04634146341463419,
-    "doc_recall_all_delta": 0.05707317073170737,
-    "ndcg_at_10_delta": 0.05861766760352449,
-    "token_f1_delta": 0.0033162518405048524,
-    "avg_storage_ratio_nova_over_stock": 0.4360342249520519,
-    "avg_latency_ratio_nova_over_stock": 1.755091444797184
+    "doc_recall_any_delta": 0.04646323625596083,
+    "doc_recall_all_delta": 0.057245127302565146,
+    "ndcg_at_10_delta": 0.05884807898820532,
+    "token_f1_delta": 0.003286196884170395,
+    "avg_storage_ratio_nova_over_stock": 0.435840090571363,
+    "avg_latency_ratio_nova_over_stock": 1.7542804272223513
   }
 }
