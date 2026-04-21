@@ -244,8 +244,8 @@
       <div class="metric-card">
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>64.4%</strong></div>
-          <div><span>NovaSpine</span><strong>70.8%</strong></div>
+          <div><span>Stock</span><strong>64.5%</strong></div>
+          <div><span>NovaSpine</span><strong>70.9%</strong></div>
         </div>
         <div class="delta good">+0.064</div>
       </div>
@@ -254,8 +254,8 @@
       <div class="metric-card">
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>55.6%</strong></div>
-          <div><span>NovaSpine</span><strong>61.3%</strong></div>
+          <div><span>Stock</span><strong>55.7%</strong></div>
+          <div><span>NovaSpine</span><strong>61.4%</strong></div>
         </div>
         <div class="delta good">+0.057</div>
       </div>
@@ -281,10 +281,10 @@
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-21T20:34:35Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::37d43f65</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2516 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2516 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-21T20:46:11Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_s::8550ddae</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2521 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2520 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -437,24 +437,24 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>30 / 500 failed 4</td>
-      <td>100.0%</td>
-      <td>100.0%</td>
-      <td>97.8%</td>
-      <td>13.8%</td>
-      <td>57.2s</td>
-      <td>26.8 MB</td>
+      <td>35 / 500 failed 4</td>
+      <td>96.8%</td>
+      <td>96.8%</td>
+      <td>93.7%</td>
+      <td>12.8%</td>
+      <td>57.3s</td>
+      <td>26.7 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>30 / 500 failed 0</td>
-      <td>96.7%</td>
-      <td>96.7%</td>
-      <td>94.2%</td>
-      <td>4.3%</td>
-      <td>104.1s</td>
+      <td>34 / 500 failed 0</td>
+      <td>97.1%</td>
+      <td>97.1%</td>
+      <td>94.9%</td>
+      <td>4.1%</td>
+      <td>103.8s</td>
       <td>10.7 MB</td>
     </tr>
     
@@ -462,11 +462,11 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>single-session-user</td><td>26</td><td>100.0%</td><td>13.8%</td><td>30</td><td>96.7%</td><td>4.3%</td></tr></table>
+<tr><td>single-session-user</td><td>31</td><td>96.8%</td><td>12.8%</td><td>34</td><td>97.1%</td><td>4.1%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> definitely helped me in my new role</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
+        <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Where did I attend my cousin&#x27;s wedding?</p><p><b>Gold:</b> The Grand Ballroom</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_0df6aa4b</p><p><b>Retrieved:</b> </p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> definitely helped me in my new role</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> user: I&#x27;ve been listening to audiobooks during my daily commute, which takes 45 minutes each way.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 004edb32, 7d8b5834_1, d600c646, 0afa904a</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> s performance - she reminded me of my friend Emily, who</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb</p></div>
