@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T19:27:37Z",
+  "generated_at": "2026-04-21T19:29:22Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T19:26:40Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T19:27:38Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_s",
     "current_case_index": 5,
     "current_case_total": 500,
@@ -7412,36 +7412,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 4,
-        "rows_successful": 4,
+        "rows_recorded": 5,
+        "rows_successful": 5,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.0,
-        "avg_total_sec": 108.65101622615475,
-        "p50_total_sec": 107.69763609999791,
+        "token_f1": 0.042105263157894736,
+        "avg_total_sec": 107.71596772465855,
+        "p50_total_sec": 107.23805228061974,
         "p95_total_sec": 114.31030672369525,
-        "avg_storage_bytes": 11937100.0,
+        "avg_storage_bytes": 11815697.8,
         "p95_storage_bytes": 12726617.0,
         "categories": {
           "single-session-user": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 108.65101622615475,
-            "p50_total_sec": 107.69763609999791,
+            "token_f1": 0.042105263157894736,
+            "avg_total_sec": 107.71596772465855,
+            "p50_total_sec": 107.23805228061974,
             "p95_total_sec": 114.31030672369525,
-            "avg_storage_bytes": 11937100.0,
+            "avg_storage_bytes": 11815697.8,
             "p95_storage_bytes": 12726617.0,
             "categories": {},
             "sample_errors": [],
@@ -7500,6 +7500,20 @@
                   "793382f9_2",
                   "ultrachat_155546",
                   "987b36db_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::1e043500",
+                "category": "single-session-user",
+                "query": "What is the name of the playlist I created on Spotify?",
+                "gold": "Summer Vibes",
+                "prediction": "ve been listening to this one playlist on Spotify that I created, called Summer Vibes, and it",
+                "retrieved_doc_ids": [
+                  "answer_3e012175",
+                  "01bd9def",
+                  "8020d945_2",
+                  "sharegpt_bph7DTk_7",
+                  "3548cae3"
                 ]
               }
             ]
@@ -7561,6 +7575,20 @@
               "793382f9_2",
               "ultrachat_155546",
               "987b36db_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::1e043500",
+            "category": "single-session-user",
+            "query": "What is the name of the playlist I created on Spotify?",
+            "gold": "Summer Vibes",
+            "prediction": "ve been listening to this one playlist on Spotify that I created, called Summer Vibes, and it",
+            "retrieved_doc_ids": [
+              "answer_3e012175",
+              "01bd9def",
+              "8020d945_2",
+              "sharegpt_bph7DTk_7",
+              "3548cae3"
             ]
           }
         ]
@@ -11019,19 +11047,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2490,
-      "rows_successful": 2490,
+      "rows_recorded": 2491,
+      "rows_successful": 2491,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7943775100401607,
-      "doc_recall_all": 0.7056224899598393,
-      "ndcg_at_10": 0.6100429748307434,
-      "exact_match": 0.021686746987951807,
-      "token_f1": 0.06894059830568956,
-      "avg_total_sec": 68.68502605790572,
-      "p50_total_sec": 86.51189449988306,
-      "p95_total_sec": 97.76362450607121,
-      "avg_storage_bytes": 7593485.259437751,
+      "doc_recall_any": 0.7944600562023284,
+      "doc_recall_all": 0.7057406663990365,
+      "ndcg_at_10": 0.6101995212077683,
+      "exact_match": 0.021678040947410677,
+      "token_f1": 0.0689974372127485,
+      "avg_total_sec": 68.69919335925488,
+      "p50_total_sec": 86.5131065370515,
+      "p95_total_sec": 97.76849554013461,
+      "avg_storage_bytes": 7594985.301083902,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -13785,21 +13813,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 74,
-          "rows_recorded": 74,
-          "rows_successful": 74,
+          "expected_total": 75,
+          "rows_recorded": 75,
+          "rows_successful": 75,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.06756756756756757,
-          "token_f1": 0.13018527353063258,
-          "avg_total_sec": 8.735352586684245,
-          "p50_total_sec": 3.0970183610916138,
-          "p95_total_sec": 3.667559389024973,
-          "avg_storage_bytes": 1226557.2432432433,
-          "p95_storage_bytes": 684761.0,
+          "exact_match": 0.06666666666666667,
+          "token_f1": 0.13125648742741713,
+          "avg_total_sec": 10.005224868444104,
+          "p50_total_sec": 3.1126560047268867,
+          "p95_total_sec": 103.97577371867374,
+          "avg_storage_bytes": 1361271.0,
+          "p95_storage_bytes": 11330089.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -14313,11 +14341,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.042367863737909905,
-    "doc_recall_all_delta": 0.06414339028138272,
-    "ndcg_at_10_delta": 0.05720803644254169,
-    "token_f1_delta": 0.0017539732625785065,
-    "avg_storage_ratio_nova_over_stock": 0.42050315379230935,
-    "avg_latency_ratio_nova_over_stock": 1.6763727205602241
+    "doc_recall_any_delta": 0.042450409900077646,
+    "doc_recall_all_delta": 0.06426156672057992,
+    "ndcg_at_10_delta": 0.05736458281956658,
+    "token_f1_delta": 0.001810812169637438,
+    "avg_storage_ratio_nova_over_stock": 0.42058622134580753,
+    "avg_latency_ratio_nova_over_stock": 1.6767184971998905
   }
 }
