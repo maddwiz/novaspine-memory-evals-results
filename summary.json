@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:56:48Z",
+  "generated_at": "2026-04-21T17:57:56Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:56:47Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T17:57:44Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 235,
+    "current_case_index": 240,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::4c36ccef"
+    "current_case_id": "longmemeval_oracle::f523d9fe"
   },
   "benchmarks": {
     "locomo": {
@@ -4896,19 +4896,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 235,
-        "rows_successful": 232,
+        "rows_recorded": 240,
+        "rows_successful": 237,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9913793103448276,
-        "doc_recall_all": 0.8448275862068966,
-        "ndcg_at_10": 0.9419050164464232,
-        "exact_match": 0.06896551724137931,
-        "token_f1": 0.13882673627187858,
-        "avg_total_sec": 13.610260212418607,
-        "p50_total_sec": 13.288205903023481,
+        "doc_recall_any": 0.9915611814345991,
+        "doc_recall_all": 0.8481012658227848,
+        "ndcg_at_10": 0.9431306490108446,
+        "exact_match": 0.07172995780590717,
+        "token_f1": 0.14242794034892356,
+        "avg_total_sec": 13.585881678063329,
+        "p50_total_sec": 13.271545405033976,
         "p95_total_sec": 16.025914120022207,
-        "avg_storage_bytes": 5804202.849137931,
+        "avg_storage_bytes": 5779267.818565401,
         "p95_storage_bytes": 6965263.0,
         "categories": {
           "temporal-reasoning": {
@@ -5548,21 +5548,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.014814814814814814,
-            "avg_total_sec": 12.506785085331648,
-            "p50_total_sec": 12.492091187275946,
+            "exact_match": 0.1,
+            "token_f1": 0.16216931216931216,
+            "avg_total_sec": 12.480751384655013,
+            "p50_total_sec": 12.465771204791963,
             "p95_total_sec": 12.573730546049774,
-            "avg_storage_bytes": 4663117.4,
-            "p95_storage_bytes": 4830251.0,
+            "avg_storage_bytes": 4642699.9,
+            "p95_storage_bytes": 4945945.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5615,6 +5615,56 @@
                 "prediction": "user: Can you recommend some authentic Italian restaurants in Rome?",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_448704"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "user: Can you suggest a budget-friendly hostel in Amsterdam?",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "user: Brainstorm ideas for work from home jobs for seniors",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "sexual compulsions.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "doc martin",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0"
                 ]
               }
             ]
@@ -5798,19 +5848,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 235,
-        "rows_successful": 235,
+        "rows_recorded": 239,
+        "rows_successful": 239,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9574468085106383,
-        "ndcg_at_10": 0.9926172383078051,
-        "exact_match": 0.059574468085106386,
-        "token_f1": 0.11323797923776821,
-        "avg_total_sec": 6.416706574997527,
-        "p50_total_sec": 5.789571520872414,
+        "doc_recall_all": 0.9581589958158996,
+        "ndcg_at_10": 0.9927407991729466,
+        "exact_match": 0.058577405857740586,
+        "token_f1": 0.11420916341397683,
+        "avg_total_sec": 6.330062159859268,
+        "p50_total_sec": 5.760950247757137,
         "p95_total_sec": 11.562424056231976,
-        "avg_storage_bytes": 984623.970212766,
+        "avg_storage_bytes": 975073.0585774059,
         "p95_storage_bytes": 1525989.0,
         "categories": {
           "temporal-reasoning": {
@@ -6433,20 +6483,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.11029748283752858,
-            "avg_total_sec": 1.9726831450127065,
-            "p50_total_sec": 2.3032208420336246,
+            "token_f1": 0.13739470547250868,
+            "avg_total_sec": 1.6469140896677144,
+            "p50_total_sec": 1.584072737954557,
             "p95_total_sec": 2.622917593922466,
-            "avg_storage_bytes": 508330.6,
+            "avg_storage_bytes": 466386.77777777775,
             "p95_storage_bytes": 582181.0,
             "categories": {},
             "sample_errors": [],
@@ -6500,6 +6550,46 @@
                 "prediction": "La Pergola - This is a fine-dining restaurant located atop the Rome Cavalieri Hotel that offers a range of Italian and International dishes made with the finest ingredients.",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_448704"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "Home-based customer service representative",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "Sexual impulsivity - This term emphasizes the impulsive or compulsive nature of certain sexual behaviors and the difficulties individuals may face in controlling them.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0"
                 ]
               }
             ]
@@ -6738,19 +6828,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2221,
-      "rows_successful": 2218,
+      "rows_recorded": 2226,
+      "rows_successful": 2223,
       "rows_failed": 3,
       "complete": false,
-      "doc_recall_any": 0.7254283137962128,
-      "doc_recall_all": 0.6118124436429215,
-      "ndcg_at_10": 0.5054240204580607,
-      "exact_match": 0.01848512173128945,
-      "token_f1": 0.0634333945192874,
-      "avg_total_sec": 44.275169749367386,
-      "p50_total_sec": 49.48408270301297,
+      "doc_recall_any": 0.7260458839406208,
+      "doc_recall_all": 0.6126855600539811,
+      "ndcg_at_10": 0.5065364270697159,
+      "exact_match": 0.018893387314439947,
+      "token_f1": 0.06398690422465068,
+      "avg_total_sec": 44.20359878205881,
+      "p50_total_sec": 49.4645611778833,
       "p95_total_sec": 53.89941898267716,
-      "avg_storage_bytes": 19559087.25518485,
+      "avg_storage_bytes": 19525491.202878993,
       "p95_storage_bytes": 23584388.0,
       "categories": {
         "category_2": {
@@ -9369,21 +9459,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.0,
-          "token_f1": 0.014814814814814814,
-          "avg_total_sec": 12.506785085331648,
-          "p50_total_sec": 12.492091187275946,
+          "exact_match": 0.1,
+          "token_f1": 0.16216931216931216,
+          "avg_total_sec": 12.480751384655013,
+          "p50_total_sec": 12.465771204791963,
           "p95_total_sec": 12.573730546049774,
-          "avg_storage_bytes": 4663117.4,
-          "p95_storage_bytes": 4830251.0,
+          "avg_storage_bytes": 4642699.9,
+          "p95_storage_bytes": 4945945.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -9436,6 +9526,56 @@
               "prediction": "user: Can you recommend some authentic Italian restaurants in Rome?",
               "retrieved_doc_ids": [
                 "answer_ultrachat_448704"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6ae235be",
+              "category": "single-session-assistant",
+              "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+              "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+              "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_IUWQYGQ_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::7e00a6cb",
+              "category": "single-session-assistant",
+              "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+              "gold": "International Budget Hostel",
+              "prediction": "user: Can you suggest a budget-friendly hostel in Amsterdam?",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_370515"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::1903aded",
+              "category": "single-session-assistant",
+              "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+              "gold": "Transcriptionist.",
+              "prediction": "user: Brainstorm ideas for work from home jobs for seniors",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_hA7AkP3_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::ceb54acb",
+              "category": "single-session-assistant",
+              "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+              "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+              "prediction": "sexual compulsions.",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_cGdjmYo_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::f523d9fe",
+              "category": "single-session-assistant",
+              "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+              "gold": "Doc Martin",
+              "prediction": "doc martin",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_m2xJfjo_0"
               ]
             }
           ]
@@ -9838,19 +9978,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2221,
-      "rows_successful": 2221,
+      "rows_recorded": 2225,
+      "rows_successful": 2225,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7694732102656461,
-      "doc_recall_all": 0.6713192255740658,
-      "ndcg_at_10": 0.5632129605181463,
-      "exact_match": 0.01936064835659613,
-      "token_f1": 0.06585049925258356,
-      "avg_total_sec": 76.28478727024614,
-      "p50_total_sec": 87.33495477866381,
+      "doc_recall_any": 0.7698876404494382,
+      "doc_recall_all": 0.6719101123595506,
+      "ndcg_at_10": 0.5639981956453046,
+      "exact_match": 0.019325842696629212,
+      "token_f1": 0.06604001068541708,
+      "avg_total_sec": 76.1498747587859,
+      "p50_total_sec": 87.32239294517785,
       "p95_total_sec": 97.92576676094905,
-      "avg_storage_bytes": 8401169.067537146,
+      "avg_storage_bytes": 8386810.034606742,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -12462,20 +12602,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.11029748283752858,
-          "avg_total_sec": 1.9726831450127065,
-          "p50_total_sec": 2.3032208420336246,
+          "token_f1": 0.13739470547250868,
+          "avg_total_sec": 1.6469140896677144,
+          "p50_total_sec": 1.584072737954557,
           "p95_total_sec": 2.622917593922466,
-          "avg_storage_bytes": 508330.6,
+          "avg_storage_bytes": 466386.77777777775,
           "p95_storage_bytes": 582181.0,
           "categories": {},
           "sample_errors": [],
@@ -12529,6 +12669,46 @@
               "prediction": "La Pergola - This is a fine-dining restaurant located atop the Rome Cavalieri Hotel that offers a range of Italian and International dishes made with the finest ingredients.",
               "retrieved_doc_ids": [
                 "answer_ultrachat_448704"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6ae235be",
+              "category": "single-session-assistant",
+              "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+              "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+              "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_IUWQYGQ_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::7e00a6cb",
+              "category": "single-session-assistant",
+              "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+              "gold": "International Budget Hostel",
+              "prediction": "International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_370515"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::1903aded",
+              "category": "single-session-assistant",
+              "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+              "gold": "Transcriptionist.",
+              "prediction": "Home-based customer service representative",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_hA7AkP3_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::ceb54acb",
+              "category": "single-session-assistant",
+              "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+              "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+              "prediction": "Sexual impulsivity - This term emphasizes the impulsive or compulsive nature of certain sexual behaviors and the difficulties individuals may face in controlling them.",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_cGdjmYo_0"
               ]
             }
           ]
@@ -12920,11 +13100,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.044044896469433326,
-    "doc_recall_all_delta": 0.059506781931144226,
-    "ndcg_at_10_delta": 0.057788940060085614,
-    "token_f1_delta": 0.002417104733296163,
-    "avg_storage_ratio_nova_over_stock": 0.42952766445224116,
-    "avg_latency_ratio_nova_over_stock": 1.7229699558935314
+    "doc_recall_any_delta": 0.0438417565088175,
+    "doc_recall_all_delta": 0.059224552305569444,
+    "ndcg_at_10_delta": 0.05746176857558871,
+    "token_f1_delta": 0.0020531064607663962,
+    "avg_storage_ratio_nova_over_stock": 0.42953132125916116,
+    "avg_latency_ratio_nova_over_stock": 1.7227075816662538
   }
 }
