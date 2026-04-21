@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:50:02Z",
+  "generated_at": "2026-04-21T17:51:24Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:49:59Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T17:51:11Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 210,
+    "current_case_index": 215,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::54026fce"
+    "current_case_id": "longmemeval_oracle::38146c39"
   },
   "benchmarks": {
     "locomo": {
@@ -4896,20 +4896,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 210,
-        "rows_successful": 207,
+        "rows_recorded": 215,
+        "rows_successful": 212,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9951690821256038,
-        "doc_recall_all": 0.8309178743961353,
-        "ndcg_at_10": 0.9397196319592763,
-        "exact_match": 0.07729468599033816,
-        "token_f1": 0.1364626505751237,
-        "avg_total_sec": 13.74024017740059,
-        "p50_total_sec": 13.340316369663924,
-        "p95_total_sec": 16.203083727974445,
-        "avg_storage_bytes": 5897062.937198068,
-        "p95_storage_bytes": 7234081.0,
+        "doc_recall_any": 0.9952830188679245,
+        "doc_recall_all": 0.8349056603773585,
+        "ndcg_at_10": 0.9411413387526896,
+        "exact_match": 0.07547169811320754,
+        "token_f1": 0.13825719042952847,
+        "avg_total_sec": 13.714479722412092,
+        "p50_total_sec": 13.33778559602797,
+        "p95_total_sec": 16.18711350299418,
+        "avg_storage_bytes": 5882344.764150944,
+        "p95_storage_bytes": 7145616.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 59,
@@ -5394,20 +5394,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.24382363766673598,
-            "avg_total_sec": 12.528428471460938,
-            "p50_total_sec": 12.470516895875335,
-            "p95_total_sec": 12.697923688217998,
-            "avg_storage_bytes": 5209050.4,
+            "token_f1": 0.2333994719117862,
+            "avg_total_sec": 12.568284609603385,
+            "p50_total_sec": 12.483514463994652,
+            "p95_total_sec": 12.818020092323422,
+            "avg_storage_bytes": 5230371.066666666,
             "p95_storage_bytes": 5462364.0,
             "categories": {},
             "sample_errors": [],
@@ -5511,6 +5511,26 @@
                 "prediction": "user: I'm looking for some suggestions on how to socialize with my colleagues.",
                 "retrieved_doc_ids": [
                   "answer_f7b22c66"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::06f04340",
+                "category": "single-session-preference",
+                "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+                "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+                "prediction": "**Minty Yogurt Sauce**: Mix mint leaves with yogurt, cucumber, garlic, and dill for a refreshing sauce to serve with grilled meats or as a dip.",
+                "retrieved_doc_ids": [
+                  "answer_92d5f7cd"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6b7dfb22",
+                "category": "single-session-preference",
+                "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+                "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+                "prediction": "user: Do you have any suggestions for how to stay motivated and focused while working on a project?",
+                "retrieved_doc_ids": [
+                  "answer_f6502d0f"
                 ]
               }
             ]
@@ -5683,20 +5703,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 210,
-        "rows_successful": 210,
+        "rows_recorded": 214,
+        "rows_successful": 214,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9523809523809523,
-        "ndcg_at_10": 0.9917383381063534,
-        "exact_match": 0.06666666666666667,
-        "token_f1": 0.10497446160494753,
-        "avg_total_sec": 6.786040622925031,
-        "p50_total_sec": 5.974851645063609,
-        "p95_total_sec": 11.891430397052318,
-        "avg_storage_bytes": 1024483.4761904762,
-        "p95_storage_bytes": 1550709.0,
+        "doc_recall_all": 0.9532710280373832,
+        "ndcg_at_10": 0.9918927616931505,
+        "exact_match": 0.06542056074766354,
+        "token_f1": 0.10641509923149366,
+        "avg_total_sec": 6.7418678242878585,
+        "p50_total_sec": 5.969160474836826,
+        "p95_total_sec": 11.766468247864395,
+        "avg_storage_bytes": 1019821.0560747663,
+        "p95_storage_bytes": 1546613.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -6176,20 +6196,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.16126714428968011,
-            "avg_total_sec": 3.9134210295043887,
-            "p50_total_sec": 3.8568074270151556,
+            "token_f1": 0.16720469581410446,
+            "avg_total_sec": 4.058956705599225,
+            "p50_total_sec": 4.062560975085944,
             "p95_total_sec": 4.902222590986639,
-            "avg_storage_bytes": 724169.0,
+            "avg_storage_bytes": 738704.7142857143,
             "p95_storage_bytes": 840625.0,
             "categories": {},
             "sample_errors": [],
@@ -6293,6 +6313,26 @@
                 "prediction": "How do we think we can stay connected and build our team culture while working from home?",
                 "retrieved_doc_ids": [
                   "answer_f7b22c66"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::06f04340",
+                "category": "single-session-preference",
+                "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+                "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+                "prediction": "**Minty Yogurt Sauce**: Mix mint leaves with yogurt, cucumber, garlic, and dill for a refreshing sauce to serve with grilled meats or as a dip.",
+                "retrieved_doc_ids": [
+                  "answer_92d5f7cd"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6b7dfb22",
+                "category": "single-session-preference",
+                "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+                "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+                "prediction": "user: Do you have any suggestions for how to stay motivated and focused while working on a project?",
+                "retrieved_doc_ids": [
+                  "answer_f6502d0f"
                 ]
               }
             ]
@@ -6531,19 +6571,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2196,
-      "rows_successful": 2193,
+      "rows_recorded": 2201,
+      "rows_successful": 2198,
       "rows_failed": 3,
       "complete": false,
-      "doc_recall_any": 0.7227542179662563,
-      "doc_recall_all": 0.6078431372549019,
-      "ndcg_at_10": 0.5002418957482803,
-      "exact_match": 0.018695850433196534,
-      "token_f1": 0.06235076830722946,
-      "avg_total_sec": 44.637015892174034,
-      "p50_total_sec": 49.595746552571654,
+      "doc_recall_any": 0.7233848953594176,
+      "doc_recall_all": 0.6087352138307552,
+      "ndcg_at_10": 0.5013787431191895,
+      "exact_match": 0.0186533212010919,
+      "token_f1": 0.06269244340298619,
+      "avg_total_sec": 44.56424742309695,
+      "p50_total_sec": 49.57040004618466,
       "p95_total_sec": 53.90203210199252,
-      "avg_storage_bytes": 19724656.8622891,
+      "avg_storage_bytes": 19691782.329845313,
       "p95_storage_bytes": 23584388.0,
       "categories": {
         "category_2": {
@@ -9008,20 +9048,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 15,
+          "rows_recorded": 15,
+          "rows_successful": 15,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.24382363766673598,
-          "avg_total_sec": 12.528428471460938,
-          "p50_total_sec": 12.470516895875335,
-          "p95_total_sec": 12.697923688217998,
-          "avg_storage_bytes": 5209050.4,
+          "token_f1": 0.2333994719117862,
+          "avg_total_sec": 12.568284609603385,
+          "p50_total_sec": 12.483514463994652,
+          "p95_total_sec": 12.818020092323422,
+          "avg_storage_bytes": 5230371.066666666,
           "p95_storage_bytes": 5462364.0,
           "categories": {},
           "sample_errors": [],
@@ -9125,6 +9165,26 @@
               "prediction": "user: I'm looking for some suggestions on how to socialize with my colleagues.",
               "retrieved_doc_ids": [
                 "answer_f7b22c66"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::06f04340",
+              "category": "single-session-preference",
+              "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+              "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+              "prediction": "**Minty Yogurt Sauce**: Mix mint leaves with yogurt, cucumber, garlic, and dill for a refreshing sauce to serve with grilled meats or as a dip.",
+              "retrieved_doc_ids": [
+                "answer_92d5f7cd"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6b7dfb22",
+              "category": "single-session-preference",
+              "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+              "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+              "prediction": "user: Do you have any suggestions for how to stay motivated and focused while working on a project?",
+              "retrieved_doc_ids": [
+                "answer_f6502d0f"
               ]
             }
           ]
@@ -9527,19 +9587,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2196,
-      "rows_successful": 2196,
+      "rows_recorded": 2200,
+      "rows_successful": 2200,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7668488160291439,
-      "doc_recall_all": 0.6675774134790529,
-      "ndcg_at_10": 0.5582404304694002,
-      "exact_match": 0.019581056466302368,
-      "token_f1": 0.0645207972022548,
-      "avg_total_sec": 77.1155077472252,
-      "p50_total_sec": 87.57872347394004,
+      "doc_recall_any": 0.7672727272727272,
+      "doc_recall_all": 0.6681818181818182,
+      "ndcg_at_10": 0.5590436296867286,
+      "exact_match": 0.019545454545454546,
+      "token_f1": 0.06473448407029646,
+      "avg_total_sec": 76.98333918022267,
+      "p50_total_sec": 87.45260922098532,
       "p95_total_sec": 97.93711059028283,
-      "avg_storage_bytes": 8489413.204007287,
+      "avg_storage_bytes": 8475387.078181818,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -12009,20 +12069,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 14,
+          "rows_recorded": 14,
+          "rows_successful": 14,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.16126714428968011,
-          "avg_total_sec": 3.9134210295043887,
-          "p50_total_sec": 3.8568074270151556,
+          "token_f1": 0.16720469581410446,
+          "avg_total_sec": 4.058956705599225,
+          "p50_total_sec": 4.062560975085944,
           "p95_total_sec": 4.902222590986639,
-          "avg_storage_bytes": 724169.0,
+          "avg_storage_bytes": 738704.7142857143,
           "p95_storage_bytes": 840625.0,
           "categories": {},
           "sample_errors": [],
@@ -12126,6 +12186,26 @@
               "prediction": "How do we think we can stay connected and build our team culture while working from home?",
               "retrieved_doc_ids": [
                 "answer_f7b22c66"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::06f04340",
+              "category": "single-session-preference",
+              "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+              "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+              "prediction": "**Minty Yogurt Sauce**: Mix mint leaves with yogurt, cucumber, garlic, and dill for a refreshing sauce to serve with grilled meats or as a dip.",
+              "retrieved_doc_ids": [
+                "answer_92d5f7cd"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6b7dfb22",
+              "category": "single-session-preference",
+              "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+              "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+              "prediction": "user: Do you have any suggestions for how to stay motivated and focused while working on a project?",
+              "retrieved_doc_ids": [
+                "answer_f6502d0f"
               ]
             }
           ]
@@ -12517,11 +12597,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.044094598062887624,
-    "doc_recall_all_delta": 0.05973427622415095,
-    "ndcg_at_10_delta": 0.05799853472111993,
-    "token_f1_delta": 0.002170028895025343,
-    "avg_storage_ratio_nova_over_stock": 0.430395989308078,
-    "avg_latency_ratio_nova_over_stock": 1.7276134214147914
+    "doc_recall_any_delta": 0.04388783191330958,
+    "doc_recall_all_delta": 0.05944660435106297,
+    "ndcg_at_10_delta": 0.0576648865675391,
+    "token_f1_delta": 0.0020420406673102715,
+    "avg_storage_ratio_nova_over_stock": 0.43040223257680077,
+    "avg_latency_ratio_nova_over_stock": 1.72746862410434
   }
 }
