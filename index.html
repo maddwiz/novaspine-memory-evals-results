@@ -245,9 +245,9 @@
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>61.0%</strong></div>
-          <div><span>NovaSpine</span><strong>66.9%</strong></div>
+          <div><span>NovaSpine</span><strong>67.0%</strong></div>
         </div>
-        <div class="delta good">+0.059</div>
+        <div class="delta good">+0.060</div>
       </div>
     
       
@@ -255,7 +255,7 @@
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>50.3%</strong></div>
-          <div><span>NovaSpine</span><strong>56.0%</strong></div>
+          <div><span>NovaSpine</span><strong>56.1%</strong></div>
         </div>
         <div class="delta good">+0.058</div>
       </div>
@@ -265,7 +265,7 @@
         <div class="metric-label">Answer F1</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>6.3%</strong></div>
-          <div><span>NovaSpine</span><strong>6.5%</strong></div>
+          <div><span>NovaSpine</span><strong>6.6%</strong></div>
         </div>
         <div class="delta good">+0.002</div>
       </div>
@@ -275,16 +275,16 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.044, evidence-all +0.059, NDCG@10 +0.058, answer F1 +0.002.</p>
+        <p><b>Current delta:</b> evidence-any +0.044, evidence-all +0.060, NDCG@10 +0.058, answer F1 +0.002.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-21T17:52:51Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_oracle::75f70248</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2206 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2206 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-21T17:54:06Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_oracle::a89d7624</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2211 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2210 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -375,11 +375,11 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>220 / 500 failed 3</td>
-      <td>99.5%</td>
-      <td>83.9%</td>
-      <td>94.2%</td>
-      <td>14.0%</td>
+      <td>225 / 500 failed 3</td>
+      <td>99.1%</td>
+      <td>83.8%</td>
+      <td>93.9%</td>
+      <td>14.1%</td>
       <td>13.7s</td>
       <td>5.6 MB</td>
     </tr>
@@ -387,13 +387,13 @@
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>220 / 500 failed 0</td>
+      <td>224 / 500 failed 0</td>
       <td>100.0%</td>
       <td>95.5%</td>
       <td>99.2%</td>
-      <td>11.0%</td>
-      <td>6.7s</td>
-      <td>986.9 KB</td>
+      <td>11.3%</td>
+      <td>6.6s</td>
+      <td>979.4 KB</td>
     </tr>
     
     </table>
@@ -402,12 +402,13 @@
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
 <tr><td>knowledge-update</td><td>77</td><td>100.0%</td><td>17.3%</td><td>78</td><td>100.0%</td><td>16.2%</td></tr>
 <tr><td>multi-session</td><td>61</td><td>98.4%</td><td>2.9%</td><td>62</td><td>100.0%</td><td>2.3%</td></tr>
-<tr><td>single-session-preference</td><td>20</td><td>100.0%</td><td>22.5%</td><td>20</td><td>100.0%</td><td>18.6%</td></tr>
+<tr><td>single-session-preference</td><td>25</td><td>96.0%</td><td>21.9%</td><td>24</td><td>100.0%</td><td>20.2%</td></tr>
 <tr><td>temporal-reasoning</td><td>59</td><td>100.0%</td><td>18.2%</td><td>60</td><td>100.0%</td><td>10.6%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many days did it take for my iPad case to arrive after I bought it?</p><p><b>Gold:</b> The information provided is not enough. You did not mention buying an iPad case.</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_e0956e0a_abs_2, answer_e0956e0a_abs_1</p><p><b>Retrieved:</b> </p></div></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> an issue with my car&#x27;s GPS system on 3/22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_1, answer_4be1b6b4_2</p></div>
+        <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many days did it take for my iPad case to arrive after I bought it?</p><p><b>Gold:</b> The information provided is not enough. You did not mention buying an iPad case.</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_e0956e0a_abs_2, answer_e0956e0a_abs_1</p><p><b>Retrieved:</b> </p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> I&#x27;ve been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?</p><p><b>Gold:</b> The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_b0fac439</p><p><b>Retrieved:</b> </p></div></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> an issue with my car&#x27;s GPS system on 3/22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_1, answer_4be1b6b4_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which event did I attend first, the &#x27;Effective Time Management&#x27; workshop or the &#x27;Data Analysis using Python&#x27; webinar?</p><p><b>Gold:</b> &#x27;Data Analysis using Python&#x27; webinar</p><p><b>Pred:</b> Data Analysis using Python</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_1c6b85ea_1, answer_1c6b85ea_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which vehicle did I take care of first in February, the bike or the car?</p><p><b>Gold:</b> bike</p><p><b>Pred:</b> bike</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_b535969f_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?</p><p><b>Gold:</b> Samsung Galaxy S22</p><p><b>Pred:</b> Dell</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_5328c3c2_2, answer_5328c3c2_1</p></div>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:52:51Z",
+  "generated_at": "2026-04-21T17:54:06Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:52:47Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T17:53:53Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 220,
+    "current_case_index": 225,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::75f70248"
+    "current_case_id": "longmemeval_oracle::a89d7624"
   },
   "benchmarks": {
     "locomo": {
@@ -4896,19 +4896,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 220,
-        "rows_successful": 217,
+        "rows_recorded": 225,
+        "rows_successful": 222,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9953917050691244,
-        "doc_recall_all": 0.8387096774193549,
-        "ndcg_at_10": 0.9424975291040101,
-        "exact_match": 0.07373271889400922,
-        "token_f1": 0.1396443873887914,
-        "avg_total_sec": 13.685841265134513,
-        "p50_total_sec": 13.327435210812837,
+        "doc_recall_any": 0.990990990990991,
+        "doc_recall_all": 0.8378378378378378,
+        "ndcg_at_10": 0.9392881252953612,
+        "exact_match": 0.07207207207207207,
+        "token_f1": 0.1409246786508399,
+        "avg_total_sec": 13.658766185415926,
+        "p50_total_sec": 13.325027075130492,
         "p95_total_sec": 16.18711350299418,
-        "avg_storage_bytes": 5864017.806451613,
+        "avg_storage_bytes": 5844086.117117117,
         "p95_storage_bytes": 7145616.0,
         "categories": {
           "temporal-reasoning": {
@@ -5394,24 +5394,36 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 20,
-            "rows_recorded": 20,
-            "rows_successful": 20,
+            "expected_total": 25,
+            "rows_recorded": 25,
+            "rows_successful": 25,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
+            "doc_recall_any": 0.96,
+            "doc_recall_all": 0.96,
+            "ndcg_at_10": 0.96,
             "exact_match": 0.0,
-            "token_f1": 0.2246649885492243,
-            "avg_total_sec": 12.54410612634383,
-            "p50_total_sec": 12.483514463994652,
+            "token_f1": 0.21902985472412856,
+            "avg_total_sec": 12.532026446200907,
+            "p50_total_sec": 12.48724365979433,
             "p95_total_sec": 12.818020092323422,
-            "avg_storage_bytes": 5194517.0,
+            "avg_storage_bytes": 5151423.76,
             "p95_storage_bytes": 5462364.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_oracle::d6233ab6",
+                "category": "single-session-preference",
+                "query": "I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?",
+                "gold": "The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.",
+                "prediction": "",
+                "expected_doc_ids": [
+                  "answer_b0fac439"
+                ],
+                "retrieved_doc_ids": []
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_oracle::8a2466db",
@@ -5565,6 +5577,17 @@
               "answer_e0956e0a_abs_1"
             ],
             "retrieved_doc_ids": []
+          },
+          {
+            "case_id": "longmemeval_oracle::d6233ab6",
+            "category": "single-session-preference",
+            "query": "I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?",
+            "gold": "The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.",
+            "prediction": "",
+            "expected_doc_ids": [
+              "answer_b0fac439"
+            ],
+            "retrieved_doc_ids": []
           }
         ],
         "sample_successes": [
@@ -5703,19 +5726,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 220,
-        "rows_successful": 220,
+        "rows_recorded": 224,
+        "rows_successful": 224,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9545454545454546,
-        "ndcg_at_10": 0.9921138681924283,
-        "exact_match": 0.06363636363636363,
-        "token_f1": 0.10978349256853076,
-        "avg_total_sec": 6.655679939520037,
-        "p50_total_sec": 5.943114046007395,
+        "doc_recall_all": 0.9553571428571429,
+        "ndcg_at_10": 0.9922546919747063,
+        "exact_match": 0.0625,
+        "token_f1": 0.1128128137098838,
+        "avg_total_sec": 6.589329555535057,
+        "p50_total_sec": 5.900186043232679,
         "p95_total_sec": 11.766468247864395,
-        "avg_storage_bytes": 1010553.2181818181,
+        "avg_storage_bytes": 1002920.7232142857,
         "p95_storage_bytes": 1546613.0,
         "categories": {
           "temporal-reasoning": {
@@ -6196,20 +6219,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 20,
-            "rows_recorded": 20,
-            "rows_successful": 20,
+            "expected_total": 24,
+            "rows_recorded": 24,
+            "rows_successful": 24,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.1860201435467296,
-            "avg_total_sec": 3.9157633087597787,
-            "p50_total_sec": 3.8816442801617086,
+            "token_f1": 0.20158769903632467,
+            "avg_total_sec": 3.7531458300266727,
+            "p50_total_sec": 3.7382254800759256,
             "p95_total_sec": 4.902222590986639,
-            "avg_storage_bytes": 721093.4,
+            "avg_storage_bytes": 698100.0833333334,
             "p95_storage_bytes": 840625.0,
             "categories": {},
             "sample_errors": [],
@@ -6571,19 +6594,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2206,
-      "rows_successful": 2203,
+      "rows_recorded": 2211,
+      "rows_successful": 2208,
       "rows_failed": 3,
       "complete": false,
-      "doc_recall_any": 0.7240127099409895,
-      "doc_recall_all": 0.6096232410349524,
-      "ndcg_at_10": 0.502510430039028,
-      "exact_match": 0.01861098502042669,
-      "token_f1": 0.06300058932912907,
-      "avg_total_sec": 44.491408846731694,
-      "p50_total_sec": 49.54877063585445,
+      "doc_recall_any": 0.7241847826086957,
+      "doc_recall_all": 0.6100543478260869,
+      "ndcg_at_10": 0.5031840930144831,
+      "exact_match": 0.018568840579710144,
+      "token_f1": 0.06330287359111868,
+      "avg_total_sec": 44.418927639482824,
+      "p50_total_sec": 49.53328591492027,
       "p95_total_sec": 53.90203210199252,
-      "avg_storage_bytes": 19658634.741261914,
+      "avg_storage_bytes": 19625392.929800726,
       "p95_storage_bytes": 23584388.0,
       "categories": {
         "category_2": {
@@ -9048,24 +9071,36 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 20,
-          "rows_recorded": 20,
-          "rows_successful": 20,
+          "expected_total": 25,
+          "rows_recorded": 25,
+          "rows_successful": 25,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 1.0,
-          "ndcg_at_10": 1.0,
+          "doc_recall_any": 0.96,
+          "doc_recall_all": 0.96,
+          "ndcg_at_10": 0.96,
           "exact_match": 0.0,
-          "token_f1": 0.2246649885492243,
-          "avg_total_sec": 12.54410612634383,
-          "p50_total_sec": 12.483514463994652,
+          "token_f1": 0.21902985472412856,
+          "avg_total_sec": 12.532026446200907,
+          "p50_total_sec": 12.48724365979433,
           "p95_total_sec": 12.818020092323422,
-          "avg_storage_bytes": 5194517.0,
+          "avg_storage_bytes": 5151423.76,
           "p95_storage_bytes": 5462364.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "longmemeval_oracle::d6233ab6",
+              "category": "single-session-preference",
+              "query": "I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?",
+              "gold": "The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.",
+              "prediction": "",
+              "expected_doc_ids": [
+                "answer_b0fac439"
+              ],
+              "retrieved_doc_ids": []
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::8a2466db",
@@ -9587,19 +9622,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2206,
-      "rows_successful": 2206,
+      "rows_recorded": 2210,
+      "rows_successful": 2210,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7679057116953762,
-      "doc_recall_all": 0.6690843155031732,
-      "ndcg_at_10": 0.5602429670493213,
-      "exact_match": 0.019492293744333637,
-      "token_f1": 0.06518377247696705,
-      "avg_total_sec": 76.78369722066486,
-      "p50_total_sec": 87.4302237201482,
+      "doc_recall_any": 0.7683257918552037,
+      "doc_recall_all": 0.669683257918552,
+      "ndcg_at_10": 0.5610389073804538,
+      "exact_match": 0.019457013574660634,
+      "token_f1": 0.06557154026702558,
+      "avg_total_sec": 76.6500435758064,
+      "p50_total_sec": 87.39992589596659,
       "p95_total_sec": 97.93711059028283,
-      "avg_storage_bytes": 8454184.757026292,
+      "avg_storage_bytes": 8439938.51040724,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -12069,20 +12104,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 20,
-          "rows_recorded": 20,
-          "rows_successful": 20,
+          "expected_total": 24,
+          "rows_recorded": 24,
+          "rows_successful": 24,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.1860201435467296,
-          "avg_total_sec": 3.9157633087597787,
-          "p50_total_sec": 3.8816442801617086,
+          "token_f1": 0.20158769903632467,
+          "avg_total_sec": 3.7531458300266727,
+          "p50_total_sec": 3.7382254800759256,
           "p95_total_sec": 4.902222590986639,
-          "avg_storage_bytes": 721093.4,
+          "avg_storage_bytes": 698100.0833333334,
           "p95_storage_bytes": 840625.0,
           "categories": {},
           "sample_errors": [],
@@ -12597,11 +12632,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04389300175438671,
-    "doc_recall_all_delta": 0.0594610744682208,
-    "ndcg_at_10_delta": 0.05773253701029335,
-    "token_f1_delta": 0.002183183147837983,
-    "avg_storage_ratio_nova_over_stock": 0.4300494346782704,
-    "avg_latency_ratio_nova_over_stock": 1.7258095261756436
+    "doc_recall_any_delta": 0.04414100924650799,
+    "doc_recall_all_delta": 0.05962891009246507,
+    "ndcg_at_10_delta": 0.05785481436597073,
+    "token_f1_delta": 0.0022686666759069024,
+    "avg_storage_ratio_nova_over_stock": 0.43005195058242013,
+    "avg_latency_ratio_nova_over_stock": 1.7256167055161902
   }
 }
