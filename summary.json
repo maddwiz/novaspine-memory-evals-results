@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T22:20:18Z",
+  "generated_at": "2026-04-21T22:31:41Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T22:18:32Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T22:30:44Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 70,
+    "current_case_index": 75,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::f4f1d8a4_abs"
+    "current_case_id": "longmemeval_s::e831120c"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,19 +7257,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 70,
-        "rows_successful": 59,
-        "rows_failed": 11,
+        "rows_recorded": 75,
+        "rows_successful": 63,
+        "rows_failed": 12,
         "complete": false,
-        "doc_recall_any": 0.9661016949152542,
-        "doc_recall_all": 0.9661016949152542,
-        "ndcg_at_10": 0.9439412892409544,
-        "exact_match": 0.06779661016949153,
-        "token_f1": 0.1686817940924563,
-        "avg_total_sec": 57.44327859272707,
+        "doc_recall_any": 0.9523809523809523,
+        "doc_recall_all": 0.9365079365079365,
+        "ndcg_at_10": 0.9241786879237072,
+        "exact_match": 0.06349206349206349,
+        "token_f1": 0.15797183891198288,
+        "avg_total_sec": 57.45467476773682,
         "p50_total_sec": 57.238123059272766,
         "p95_total_sec": 59.617683321703225,
-        "avg_storage_bytes": 28109475.27118644,
+        "avg_storage_bytes": 28106499.111111112,
         "p95_storage_bytes": 28894890.0,
         "categories": {
           "single-session-user": {
@@ -7449,6 +7449,82 @@
                 ]
               }
             ]
+          },
+          "multi-session": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.75,
+            "doc_recall_all": 0.5,
+            "ndcg_at_10": 0.6326803184943108,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 57.62276834913064,
+            "p50_total_sec": 58.105302174109966,
+            "p95_total_sec": 58.69112873123959,
+            "avg_storage_bytes": 28062600.75,
+            "p95_storage_bytes": 28755673.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::6d550036",
+                "category": "multi-session",
+                "query": "How many projects have I led or am currently leading?",
+                "gold": "2",
+                "prediction": "By the way, I've been pretty busy lately, especially since I was promoted to a senior software engineer position three months ago and have been leading a team of five engineers.",
+                "expected_doc_ids": [
+                  "answer_ec904b3c_1",
+                  "answer_ec904b3c_4",
+                  "answer_ec904b3c_3",
+                  "answer_ec904b3c_2"
+                ],
+                "retrieved_doc_ids": [
+                  "2e4430d8_2",
+                  "sharegpt_zciCXP1_12",
+                  "a9981dc6_3"
+                ]
+              }
+            ],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_s::0a995998",
+                "category": "multi-session",
+                "query": "How many items of clothing do I need to pick up or return from a store?",
+                "gold": "3",
+                "prediction": "up",
+                "retrieved_doc_ids": [
+                  "85846900_2",
+                  "answer_afa9873b_1",
+                  "answer_afa9873b_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::b5ef892d",
+                "category": "multi-session",
+                "query": "How many days did I spend on camping trips in the United States this year?",
+                "gold": "8 days.",
+                "prediction": "user: I'm planning a trip to the Rocky Mountains in Colorado and I was wondering if you could recommend some good hiking trails and camping spots in the area.",
+                "retrieved_doc_ids": [
+                  "answer_a8b4290f_1",
+                  "answer_a8b4290f_2",
+                  "answer_a8b4290f_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::e831120c",
+                "category": "multi-session",
+                "query": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+                "gold": "3.5 weeks",
+                "prediction": "22",
+                "retrieved_doc_ids": [
+                  "answer_86c505e7_2",
+                  "answer_86c505e7_1"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [
@@ -7517,6 +7593,24 @@
             "retrieved_doc_ids": [
               "1dd13331_1",
               "31299b8e_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::6d550036",
+            "category": "multi-session",
+            "query": "How many projects have I led or am currently leading?",
+            "gold": "2",
+            "prediction": "By the way, I've been pretty busy lately, especially since I was promoted to a senior software engineer position three months ago and have been leading a team of five engineers.",
+            "expected_doc_ids": [
+              "answer_ec904b3c_1",
+              "answer_ec904b3c_4",
+              "answer_ec904b3c_3",
+              "answer_ec904b3c_2"
+            ],
+            "retrieved_doc_ids": [
+              "2e4430d8_2",
+              "sharegpt_zciCXP1_12",
+              "a9981dc6_3"
             ]
           }
         ],
@@ -7655,20 +7749,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 70,
-        "rows_successful": 70,
+        "rows_recorded": 74,
+        "rows_successful": 74,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9714285714285714,
-        "doc_recall_all": 0.9714285714285714,
-        "ndcg_at_10": 0.9248019055500267,
-        "exact_match": 0.04285714285714286,
-        "token_f1": 0.11360194656704042,
-        "avg_total_sec": 104.10493667254092,
+        "doc_recall_any": 0.972972972972973,
+        "doc_recall_all": 0.9594594594594594,
+        "ndcg_at_10": 0.9167926696148894,
+        "exact_match": 0.04054054054054054,
+        "token_f1": 0.11216165333309935,
+        "avg_total_sec": 104.07281440097486,
         "p50_total_sec": 103.48252919409424,
-        "p95_total_sec": 111.80127852736041,
-        "avg_storage_bytes": 11324413.228571428,
-        "p95_storage_bytes": 12175701.0,
+        "p95_total_sec": 110.05417155101895,
+        "avg_storage_bytes": 11325498.35135135,
+        "p95_storage_bytes": 12052605.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -7883,6 +7977,80 @@
                   "ae15e8b6_2",
                   "b65f51fb_5",
                   "705b5399_3"
+                ]
+              }
+            ]
+          },
+          "multi-session": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 0.75,
+            "ndcg_at_10": 0.7766310407499862,
+            "exact_match": 0.0,
+            "token_f1": 0.08695652173913043,
+            "avg_total_sec": 103.51067464856897,
+            "p50_total_sec": 103.93092090496793,
+            "p95_total_sec": 106.50940728699788,
+            "avg_storage_bytes": 11344488.0,
+            "p95_storage_bytes": 11999717.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_s::0a995998",
+                "category": "multi-session",
+                "query": "How many items of clothing do I need to pick up or return from a store?",
+                "gold": "3",
+                "prediction": "return",
+                "retrieved_doc_ids": [
+                  "answer_afa9873b_1",
+                  "answer_afa9873b_2",
+                  "85846900_2",
+                  "answer_afa9873b_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6d550036",
+                "category": "multi-session",
+                "query": "How many projects have I led or am currently leading?",
+                "gold": "2",
+                "prediction": "By the way, I've been pretty busy lately, especially since I was promoted to a senior software engineer position three months ago and have been leading a team of five engineers.",
+                "retrieved_doc_ids": [
+                  "2e4430d8_2",
+                  "sharegpt_J7ZAFLd_0",
+                  "sharegpt_zciCXP1_12",
+                  "a9981dc6_3",
+                  "sharegpt_nVi6tIt_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_59c863d7",
+                "category": "multi-session",
+                "query": "How many model kits have I worked on or bought?",
+                "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+                "prediction": "user: I'm looking for some tips on weathering techniques for my model kits.",
+                "retrieved_doc_ids": [
+                  "answer_593bdffd_1",
+                  "answer_593bdffd_4",
+                  "answer_593bdffd_2",
+                  "answer_593bdffd_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::b5ef892d",
+                "category": "multi-session",
+                "query": "How many days did I spend on camping trips in the United States this year?",
+                "gold": "8 days.",
+                "prediction": "user: I'm planning a trip to the Rocky Mountains in Colorado and I was wondering if you could recommend some good hiking trails and camping spots in the area.",
+                "retrieved_doc_ids": [
+                  "answer_a8b4290f_1",
+                  "answer_a8b4290f_2",
+                  "answer_a8b4290f_3"
                 ]
               }
             ]
@@ -8137,19 +8305,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2556,
-      "rows_successful": 2542,
-      "rows_failed": 14,
+      "rows_recorded": 2561,
+      "rows_successful": 2546,
+      "rows_failed": 15,
       "complete": false,
-      "doc_recall_any": 0.7564909520062942,
-      "doc_recall_all": 0.6483084185680567,
-      "ndcg_at_10": 0.5610329908635178,
-      "exact_match": 0.022423288749016522,
-      "token_f1": 0.06944180576788883,
-      "avg_total_sec": 41.32096314328092,
-      "p50_total_sec": 49.07580645522103,
-      "p95_total_sec": 54.25551543617621,
-      "avg_storage_bytes": 18271070.944138475,
+      "doc_recall_any": 0.7564807541241163,
+      "doc_recall_all": 0.648075412411626,
+      "ndcg_at_10": 0.5611455554002512,
+      "exact_match": 0.022388059701492536,
+      "token_f1": 0.06933270630870911,
+      "avg_total_sec": 41.346574777539914,
+      "p50_total_sec": 49.081174075603485,
+      "p95_total_sec": 54.29719928978011,
+      "avg_storage_bytes": 18286454.337391987,
       "p95_storage_bytes": 23588484.0,
       "categories": {
         "category_2": {
@@ -10321,21 +10489,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 132,
-          "rows_recorded": 132,
-          "rows_successful": 132,
+          "expected_total": 136,
+          "rows_recorded": 136,
+          "rows_successful": 136,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9848484848484849,
-          "doc_recall_all": 0.7348484848484849,
-          "ndcg_at_10": 0.9009688093708039,
+          "doc_recall_any": 0.9779411764705882,
+          "doc_recall_all": 0.7279411764705882,
+          "ndcg_at_10": 0.8930779714038484,
           "exact_match": 0.0,
-          "token_f1": 0.02402264037010977,
-          "avg_total_sec": 13.937277711409314,
-          "p50_total_sec": 13.450366965029389,
-          "p95_total_sec": 16.236221861094236,
-          "avg_storage_bytes": 6002938.636363637,
-          "p95_storage_bytes": 7329401.0,
+          "token_f1": 0.02331609212393007,
+          "avg_total_sec": 15.222145083107,
+          "p50_total_sec": 13.455697250086814,
+          "p95_total_sec": 17.11207514582202,
+          "avg_storage_bytes": 6651752.227941177,
+          "p95_storage_bytes": 7720640.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -10362,6 +10530,24 @@
                 "answer_2e2085fa_2"
               ],
               "retrieved_doc_ids": []
+            },
+            {
+              "case_id": "longmemeval_s::6d550036",
+              "category": "multi-session",
+              "query": "How many projects have I led or am currently leading?",
+              "gold": "2",
+              "prediction": "By the way, I've been pretty busy lately, especially since I was promoted to a senior software engineer position three months ago and have been leading a team of five engineers.",
+              "expected_doc_ids": [
+                "answer_ec904b3c_1",
+                "answer_ec904b3c_4",
+                "answer_ec904b3c_3",
+                "answer_ec904b3c_2"
+              ],
+              "retrieved_doc_ids": [
+                "2e4430d8_2",
+                "sharegpt_zciCXP1_12",
+                "a9981dc6_3"
+              ]
             }
           ],
           "sample_successes": [
@@ -11592,20 +11778,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2556,
-      "rows_successful": 2556,
+      "rows_recorded": 2560,
+      "rows_successful": 2560,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.798904538341158,
-      "doc_recall_all": 0.7124413145539906,
-      "ndcg_at_10": 0.6180528719550284,
-      "exact_match": 0.022300469483568074,
-      "token_f1": 0.0702716064322613,
-      "avg_total_sec": 69.59251032330144,
-      "p50_total_sec": 86.70269651897252,
-      "p95_total_sec": 99.23575177276507,
-      "avg_storage_bytes": 7688864.9538341155,
-      "p95_storage_bytes": 10604817.0,
+      "doc_recall_any": 0.79921875,
+      "doc_recall_all": 0.7125,
+      "ndcg_at_10": 0.6183006503437707,
+      "exact_match": 0.022265625,
+      "token_f1": 0.07029767661242828,
+      "avg_total_sec": 69.64550745505967,
+      "p50_total_sec": 86.71209065010771,
+      "p95_total_sec": 99.41360609512776,
+      "avg_storage_bytes": 7694576.86484375,
+      "p95_storage_bytes": 10608913.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13754,21 +13940,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 133,
-          "rows_recorded": 133,
-          "rows_successful": 133,
+          "expected_total": 137,
+          "rows_recorded": 137,
+          "rows_successful": 137,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9398496240601504,
-          "ndcg_at_10": 0.9887522198073012,
-          "exact_match": 0.015037593984962405,
-          "token_f1": 0.022437387448455866,
-          "avg_total_sec": 7.213282135129675,
-          "p50_total_sec": 6.094178569037467,
-          "p95_total_sec": 12.196317330002785,
-          "avg_storage_bytes": 1063555.3308270676,
-          "p95_storage_bytes": 1624617.0,
+          "doc_recall_all": 0.9343065693430657,
+          "ndcg_at_10": 0.9825589007107374,
+          "exact_match": 0.014598540145985401,
+          "token_f1": 0.024321157792709137,
+          "avg_total_sec": 10.02488483625199,
+          "p50_total_sec": 6.156613688915968,
+          "p95_total_sec": 13.921635582111776,
+          "avg_storage_bytes": 1363728.5474452556,
+          "p95_storage_bytes": 1809297.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -14916,11 +15102,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.042413586334863806,
-    "doc_recall_all_delta": 0.06413289598593397,
-    "ndcg_at_10_delta": 0.05701988109151068,
-    "token_f1_delta": 0.0008298006643724654,
-    "avg_storage_ratio_nova_over_stock": 0.4208217995180394,
-    "avg_latency_ratio_nova_over_stock": 1.684193809374399
+    "doc_recall_any_delta": 0.04273799587588367,
+    "doc_recall_all_delta": 0.064424587588374,
+    "ndcg_at_10_delta": 0.05715509494351945,
+    "token_f1_delta": 0.0009649703037191704,
+    "avg_storage_ratio_nova_over_stock": 0.4207801426605673,
+    "avg_latency_ratio_nova_over_stock": 1.684432333990872
   }
 }
