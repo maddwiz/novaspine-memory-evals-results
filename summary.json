@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T18:11:39Z",
+  "generated_at": "2026-04-21T18:11:43Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T18:11:26Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T18:11:40Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 295,
     "current_case_total": 500,
@@ -5980,19 +5980,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 294,
-        "rows_successful": 294,
+        "rows_recorded": 295,
+        "rows_successful": 295,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9659863945578231,
-        "ndcg_at_10": 0.9940988129331096,
-        "exact_match": 0.05442176870748299,
-        "token_f1": 0.11678696266723936,
-        "avg_total_sec": 5.527482284657454,
+        "doc_recall_all": 0.9661016949152542,
+        "ndcg_at_10": 0.9941188169570653,
+        "exact_match": 0.05423728813559322,
+        "token_f1": 0.11639107465819787,
+        "avg_total_sec": 5.5185263769196,
         "p50_total_sec": 5.473997890017927,
         "p95_total_sec": 11.10847282037139,
-        "avg_storage_bytes": 888191.2653061225,
+        "avg_storage_bytes": 887209.6033898306,
         "p95_storage_bytes": 1493221.0,
         "categories": {
           "temporal-reasoning": {
@@ -6757,20 +6757,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.04194078947368421,
-            "avg_total_sec": 2.851569758495316,
+            "token_f1": 0.03728070175438596,
+            "avg_total_sec": 2.855338618883656,
             "p50_total_sec": 2.8349659447558224,
             "p95_total_sec": 3.5465487390756607,
-            "avg_storage_bytes": 608854.5,
+            "avg_storage_bytes": 607715.2222222222,
             "p95_storage_bytes": 680629.0,
             "categories": {},
             "sample_errors": [],
@@ -6854,6 +6854,16 @@
                 "prediction": "assistant: ZZ Plant to your bedroom to complement your new gray walls.",
                 "retrieved_doc_ids": [
                   "answer_feb5200f"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::58ef2f1c",
+                "category": "single-session-user",
+                "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+                "gold": "February 14th",
+                "prediction": "Love is in the Air",
+                "retrieved_doc_ids": [
+                  "answer_59547700"
                 ]
               }
             ]
@@ -10374,19 +10384,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2280,
-      "rows_successful": 2280,
+      "rows_recorded": 2281,
+      "rows_successful": 2281,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.775438596491228,
-      "doc_recall_all": 0.6798245614035088,
-      "ndcg_at_10": 0.5745157830310539,
-      "exact_match": 0.019736842105263157,
-      "token_f1": 0.06753438629091268,
-      "avg_total_sec": 74.36213433060595,
-      "p50_total_sec": 87.06747366674244,
+      "doc_recall_any": 0.7755370451556335,
+      "doc_recall_all": 0.6799649276633055,
+      "ndcg_at_10": 0.5747023171025002,
+      "exact_match": 0.01972818939061815,
+      "token_f1": 0.06750477893173211,
+      "avg_total_sec": 74.33079866869073,
+      "p50_total_sec": 87.05878876615316,
       "p95_total_sec": 97.85496077872813,
-      "avg_storage_bytes": 8196814.955263158,
+      "avg_storage_bytes": 8193483.866286716,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -13140,20 +13150,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.04194078947368421,
-          "avg_total_sec": 2.851569758495316,
+          "token_f1": 0.03728070175438596,
+          "avg_total_sec": 2.855338618883656,
           "p50_total_sec": 2.8349659447558224,
           "p95_total_sec": 3.5465487390756607,
-          "avg_storage_bytes": 608854.5,
+          "avg_storage_bytes": 607715.2222222222,
           "p95_storage_bytes": 680629.0,
           "categories": {},
           "sample_errors": [],
@@ -13237,6 +13247,16 @@
               "prediction": "assistant: ZZ Plant to your bedroom to complement your new gray walls.",
               "retrieved_doc_ids": [
                 "answer_feb5200f"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::58ef2f1c",
+              "category": "single-session-user",
+              "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+              "gold": "February 14th",
+              "prediction": "Love is in the Air",
+              "retrieved_doc_ids": [
+                "answer_59547700"
               ]
             }
           ]
@@ -13628,11 +13648,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04277836822081538,
-    "doc_recall_all_delta": 0.057787686952235684,
-    "ndcg_at_10_delta": 0.05606517838839431,
-    "token_f1_delta": 0.0030502786018006822,
-    "avg_storage_ratio_nova_over_stock": 0.4276448091716975,
-    "avg_latency_ratio_nova_over_stock": 1.7119207082016934
+    "doc_recall_any_delta": 0.042876816885220825,
+    "doc_recall_all_delta": 0.057928053212032427,
+    "ndcg_at_10_delta": 0.05625171245984062,
+    "token_f1_delta": 0.003020671242620107,
+    "avg_storage_ratio_nova_over_stock": 0.42747101936218745,
+    "avg_latency_ratio_nova_over_stock": 1.7111993172811562
   }
 }
