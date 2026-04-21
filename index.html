@@ -235,7 +235,7 @@
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>75.2%</strong></div>
-          <div><span>NovaSpine</span><strong>79.4%</strong></div>
+          <div><span>NovaSpine</span><strong>79.5%</strong></div>
         </div>
         <div class="delta good">+0.042</div>
       </div>
@@ -244,7 +244,7 @@
       <div class="metric-card">
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>64.1%</strong></div>
+          <div><span>Stock</span><strong>64.2%</strong></div>
           <div><span>NovaSpine</span><strong>70.6%</strong></div>
         </div>
         <div class="delta good">+0.064</div>
@@ -254,8 +254,8 @@
       <div class="metric-card">
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>55.3%</strong></div>
-          <div><span>NovaSpine</span><strong>61.0%</strong></div>
+          <div><span>Stock</span><strong>55.4%</strong></div>
+          <div><span>NovaSpine</span><strong>61.1%</strong></div>
         </div>
         <div class="delta good">+0.057</div>
       </div>
@@ -281,10 +281,10 @@
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-21T19:29:22Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::1e043500</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2491 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2491 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-21T19:40:31Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_s::f8c5f88b</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2496 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2495 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -437,32 +437,32 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>5 / 500 failed 0</td>
+      <td>10 / 500 failed 1</td>
       <td>100.0%</td>
       <td>100.0%</td>
       <td>100.0%</td>
-      <td>11.8%</td>
-      <td>58.1s</td>
-      <td>27.1 MB</td>
+      <td>7.5%</td>
+      <td>57.4s</td>
+      <td>26.8 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>5 / 500 failed 0</td>
+      <td>9 / 500 failed 0</td>
       <td>100.0%</td>
       <td>100.0%</td>
       <td>100.0%</td>
-      <td>4.2%</td>
-      <td>107.7s</td>
-      <td>11.3 MB</td>
+      <td>3.7%</td>
+      <td>105.2s</td>
+      <td>11.0 MB</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>single-session-user</td><td>5</td><td>100.0%</td><td>11.8%</td><td>5</td><td>100.0%</td><td>4.2%</td></tr></table>
+<tr><td>single-session-user</td><td>9</td><td>100.0%</td><td>7.5%</td><td>9</td><td>100.0%</td><td>3.7%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
@@ -470,11 +470,13 @@
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> user: I&#x27;ve been listening to audiobooks during my daily commute, which takes 45 minutes each way.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 004edb32, 7d8b5834_1, d600c646, 0afa904a</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> s performance - she reminded me of my friend Emily, who</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What is the name of the playlist I created on Spotify?</p><p><b>Gold:</b> Summer Vibes</p><p><b>Pred:</b> ve been listening to this one playlist on Spotify that I created, called Summer Vibes, and it</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_3e012175, 8020d945_2</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> definitely helped me in my new role</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9, sharegpt_8dJs7Ai_0, sharegpt_QZMeA7V_17, ultrachat_530213, d414cac5_4</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What is the name of the playlist I created on Spotify?</p><p><b>Gold:</b> Summer Vibes</p><p><b>Pred:</b> ve been listening to this one playlist on Spotify that I created, called Summer Vibes, and it</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_3e012175, 8020d945_2</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was my last name before I changed it?</p><p><b>Gold:</b> Johnson</p><p><b>Pred:</b> re changing your email address associated with your Facebook account, update it after you</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_f6168136</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> definitely helped me in my new role</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9, sharegpt_8dJs7Ai_0, sharegpt_QZMeA7V_17, ultrachat_530213, d414cac5_4</p></div>
 <div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> I&#x27;ve been wearing my new boots almost daily since January 15th, and I want to make sure they last long.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, d600c646, 7d8b5834_1, 0afa904a, 5dce60dd</p></div>
 <div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7, 6e0b1800_2, 07d1915d_1, 98c198fb, ultrachat_254165</p></div>
 <div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> Perhaps you could encourage Emily to audition for a role at the community theater or explore other local theater groups.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb, 793382f9_2, ultrachat_155546, 987b36db_2</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What is the name of the playlist I created on Spotify?</p><p><b>Gold:</b> Summer Vibes</p><p><b>Pred:</b> ve been listening to this one playlist on Spotify that I created, called Summer Vibes, and it</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_3e012175, 01bd9def, 8020d945_2, sharegpt_bph7DTk_7, 3548cae3</p></div></div></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What is the name of the playlist I created on Spotify?</p><p><b>Gold:</b> Summer Vibes</p><p><b>Pred:</b> ve been listening to this one playlist on Spotify that I created, called Summer Vibes, and it</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_3e012175, 01bd9def, 8020d945_2, sharegpt_bph7DTk_7, 3548cae3</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What was my last name before I changed it?</p><p><b>Gold:</b> Johnson</p><p><b>Pred:</b> I need to update my credit report with the three major credit bureaus (Experian</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_f6168136, 0fe848c5_3, aaf71ce2_2, d777e7da_1, 89b1028d_1</p></div></div></div>
       </details>
     </section>
     
