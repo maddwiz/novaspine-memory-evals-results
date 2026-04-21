@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:01:07Z",
+  "generated_at": "2026-04-21T17:01:14Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:00:54Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T17:01:08Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 70,
     "current_case_total": 500,
@@ -5347,19 +5347,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 69,
-        "rows_successful": 69,
+        "rows_recorded": 70,
+        "rows_successful": 70,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9565217391304348,
-        "ndcg_at_10": 0.9940996845172757,
-        "exact_match": 0.057971014492753624,
-        "token_f1": 0.1022459089789555,
-        "avg_total_sec": 6.6975339844593424,
-        "p50_total_sec": 6.015184815041721,
+        "doc_recall_all": 0.9571428571428572,
+        "ndcg_at_10": 0.9941839747384575,
+        "exact_match": 0.05714285714285714,
+        "token_f1": 0.100785253136399,
+        "avg_total_sec": 6.680732324420076,
+        "p50_total_sec": 6.007549939677119,
         "p95_total_sec": 12.196317330002785,
-        "avg_storage_bytes": 1018030.0434782609,
+        "avg_storage_bytes": 1016083.9142857143,
         "p95_storage_bytes": 1669565.0,
         "categories": {
           "temporal-reasoning": {
@@ -5520,20 +5520,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.8888888888888888,
-            "ndcg_at_10": 0.9813191626365424,
+            "doc_recall_all": 0.9,
+            "ndcg_at_10": 0.9831872463728881,
             "exact_match": 0.0,
-            "token_f1": 0.07536231884057971,
-            "avg_total_sec": 9.254781730783483,
-            "p50_total_sec": 9.159522757865489,
+            "token_f1": 0.06782608695652174,
+            "avg_total_sec": 8.881445335876197,
+            "p50_total_sec": 8.777982980012894,
             "p95_total_sec": 12.708947564009577,
-            "avg_storage_bytes": 1314856.5555555555,
+            "avg_storage_bytes": 1271551.0,
             "p95_storage_bytes": 1763773.0,
             "categories": {},
             "sample_errors": [],
@@ -5646,6 +5646,17 @@
                   "answer_55a6940c_2",
                   "answer_55a6940c_3",
                   "answer_55a6940c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::dd2973ad",
+                "category": "multi-session",
+                "query": "What time did I go to bed on the day before I had a doctor's appointment?",
+                "gold": "2 AM",
+                "prediction": "s great to hear that you were proactive about researching healthy recipes and making a meal plan for the week after your doctor",
+                "retrieved_doc_ids": [
+                  "answer_f9de4602_2",
+                  "answer_f9de4602_1"
                 ]
               }
             ]
@@ -8557,19 +8568,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2055,
-      "rows_successful": 2055,
+      "rows_recorded": 2056,
+      "rows_successful": 2056,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7508515815085158,
-      "doc_recall_all": 0.6481751824817519,
-      "ndcg_at_10": 0.5285760644964286,
-      "exact_match": 0.016058394160583942,
-      "token_f1": 0.06165352868061337,
-      "avg_total_sec": 81.93806147300242,
+      "doc_recall_any": 0.7509727626459144,
+      "doc_recall_all": 0.6483463035019456,
+      "ndcg_at_10": 0.5288053562938525,
+      "exact_match": 0.016050583657587547,
+      "token_f1": 0.06162354155576871,
+      "avg_total_sec": 81.9008938447479,
       "p50_total_sec": 91.87975646927953,
       "p95_total_sec": 98.10017711203545,
-      "avg_storage_bytes": 9001388.77810219,
+      "avg_storage_bytes": 8997439.56225681,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -10719,20 +10730,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 9,
-          "rows_recorded": 9,
-          "rows_successful": 9,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.8888888888888888,
-          "ndcg_at_10": 0.9813191626365424,
+          "doc_recall_all": 0.9,
+          "ndcg_at_10": 0.9831872463728881,
           "exact_match": 0.0,
-          "token_f1": 0.07536231884057971,
-          "avg_total_sec": 9.254781730783483,
-          "p50_total_sec": 9.159522757865489,
+          "token_f1": 0.06782608695652174,
+          "avg_total_sec": 8.881445335876197,
+          "p50_total_sec": 8.777982980012894,
           "p95_total_sec": 12.708947564009577,
-          "avg_storage_bytes": 1314856.5555555555,
+          "avg_storage_bytes": 1271551.0,
           "p95_storage_bytes": 1763773.0,
           "categories": {},
           "sample_errors": [],
@@ -10845,6 +10856,17 @@
                 "answer_55a6940c_2",
                 "answer_55a6940c_3",
                 "answer_55a6940c_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::dd2973ad",
+              "category": "multi-session",
+              "query": "What time did I go to bed on the day before I had a doctor's appointment?",
+              "gold": "2 AM",
+              "prediction": "s great to hear that you were proactive about researching healthy recipes and making a meal plan for the week after your doctor",
+              "retrieved_doc_ids": [
+                "answer_f9de4602_2",
+                "answer_f9de4602_1"
               ]
             }
           ]
@@ -11236,11 +11258,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04622871046228716,
-    "doc_recall_all_delta": 0.05790754257907549,
-    "ndcg_at_10_delta": 0.05867103916618388,
-    "token_f1_delta": 0.0033081831012335416,
-    "avg_storage_ratio_nova_over_stock": 0.43585416549130007,
-    "avg_latency_ratio_nova_over_stock": 1.754178347425901
+    "doc_recall_any_delta": 0.04634989159968572,
+    "doc_recall_all_delta": 0.058078663599269165,
+    "ndcg_at_10_delta": 0.058900330963607805,
+    "token_f1_delta": 0.003278195976388884,
+    "avg_storage_ratio_nova_over_stock": 0.4356629414236517,
+    "avg_latency_ratio_nova_over_stock": 1.7533826409186053
   }
 }
