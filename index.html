@@ -234,10 +234,10 @@
       <div class="metric-card">
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>75.7%</strong></div>
+          <div><span>Stock</span><strong>75.6%</strong></div>
           <div><span>NovaSpine</span><strong>79.9%</strong></div>
         </div>
-        <div class="delta good">+0.042</div>
+        <div class="delta good">+0.043</div>
       </div>
     
       
@@ -245,7 +245,7 @@
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>64.8%</strong></div>
-          <div><span>NovaSpine</span><strong>71.2%</strong></div>
+          <div><span>NovaSpine</span><strong>71.3%</strong></div>
         </div>
         <div class="delta good">+0.064</div>
       </div>
@@ -275,16 +275,16 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.042, evidence-all +0.064, NDCG@10 +0.057, answer F1 +0.001.</p>
+        <p><b>Current delta:</b> evidence-any +0.043, evidence-all +0.064, NDCG@10 +0.057, answer F1 +0.001.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-21T22:07:25Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::0862e8bf_abs</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2551 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2551 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-21T22:18:31Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_s::f4f1d8a4_abs</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2556 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2555 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -437,11 +437,11 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>65 / 500 failed 9</td>
-      <td>98.2%</td>
-      <td>98.2%</td>
-      <td>95.9%</td>
-      <td>17.1%</td>
+      <td>70 / 500 failed 11</td>
+      <td>96.6%</td>
+      <td>96.6%</td>
+      <td>94.4%</td>
+      <td>16.9%</td>
       <td>57.4s</td>
       <td>26.8 MB</td>
     </tr>
@@ -449,12 +449,12 @@
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>65 / 500 failed 0</td>
-      <td>98.5%</td>
-      <td>98.5%</td>
-      <td>94.0%</td>
-      <td>11.2%</td>
-      <td>104.0s</td>
+      <td>69 / 500 failed 0</td>
+      <td>98.6%</td>
+      <td>98.6%</td>
+      <td>93.8%</td>
+      <td>11.4%</td>
+      <td>104.1s</td>
       <td>10.8 MB</td>
     </tr>
     
@@ -462,11 +462,12 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>single-session-user</td><td>56</td><td>98.2%</td><td>17.1%</td><td>65</td><td>98.5%</td><td>11.2%</td></tr></table>
+<tr><td>single-session-user</td><td>59</td><td>96.6%</td><td>16.9%</td><td>69</td><td>98.6%</td><td>11.4%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Where did I attend my cousin&#x27;s wedding?</p><p><b>Gold:</b> The Grand Ballroom</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_0df6aa4b</p><p><b>Retrieved:</b> </p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> definitely helped me in my new role</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
+        <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Where did I attend my cousin&#x27;s wedding?</p><p><b>Gold:</b> The Grand Ballroom</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_0df6aa4b</p><p><b>Retrieved:</b> </p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What did my dad gave me as a birthday gift?</p><p><b>Gold:</b> You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.</p><p><b>Pred:</b> ve been thinking about my sister</p><p><b>Expected docs:</b> answer_f5b33470_abs</p><p><b>Retrieved:</b> 1dd13331_1, 31299b8e_2</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> definitely helped me in my new role</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> user: I&#x27;ve been listening to audiobooks during my daily commute, which takes 45 minutes each way.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 004edb32, 7d8b5834_1, d600c646, 0afa904a</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> s performance - she reminded me of my friend Emily, who</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb</p></div>
