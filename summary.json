@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T22:18:31Z",
+  "generated_at": "2026-04-21T22:20:18Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T22:17:33Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T22:18:32Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_s",
     "current_case_index": 70,
     "current_case_total": 500,
@@ -7655,36 +7655,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 69,
-        "rows_successful": 69,
+        "rows_recorded": 70,
+        "rows_successful": 70,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9855072463768116,
-        "doc_recall_all": 0.9855072463768116,
-        "ndcg_at_10": 0.9382048317174184,
-        "exact_match": 0.043478260869565216,
-        "token_f1": 0.11363804563161911,
-        "avg_total_sec": 104.08281770822984,
+        "doc_recall_any": 0.9714285714285714,
+        "doc_recall_all": 0.9714285714285714,
+        "ndcg_at_10": 0.9248019055500267,
+        "exact_match": 0.04285714285714286,
+        "token_f1": 0.11360194656704042,
+        "avg_total_sec": 104.10493667254092,
         "p50_total_sec": 103.48252919409424,
         "p95_total_sec": 111.80127852736041,
-        "avg_storage_bytes": 11320701.52173913,
+        "avg_storage_bytes": 11324413.228571428,
         "p95_storage_bytes": 12175701.0,
         "categories": {
           "single-session-user": {
-            "expected_total": 69,
-            "rows_recorded": 69,
-            "rows_successful": 69,
+            "expected_total": 70,
+            "rows_recorded": 70,
+            "rows_successful": 70,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9855072463768116,
-            "doc_recall_all": 0.9855072463768116,
-            "ndcg_at_10": 0.9382048317174184,
-            "exact_match": 0.043478260869565216,
-            "token_f1": 0.11363804563161911,
-            "avg_total_sec": 104.08281770822984,
+            "doc_recall_any": 0.9714285714285714,
+            "doc_recall_all": 0.9714285714285714,
+            "ndcg_at_10": 0.9248019055500267,
+            "exact_match": 0.04285714285714286,
+            "token_f1": 0.11360194656704042,
+            "avg_total_sec": 104.10493667254092,
             "p50_total_sec": 103.48252919409424,
             "p95_total_sec": 111.80127852736041,
-            "avg_storage_bytes": 11320701.52173913,
+            "avg_storage_bytes": 11324413.228571428,
             "p95_storage_bytes": 12175701.0,
             "categories": {},
             "sample_errors": [],
@@ -7700,6 +7700,22 @@
                 ],
                 "retrieved_doc_ids": [
                   "ad17b46e_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::f4f1d8a4_abs",
+                "category": "single-session-user",
+                "query": "What did my dad gave me as a birthday gift?",
+                "gold": "You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.",
+                "prediction": "ve been thinking about my sister",
+                "expected_doc_ids": [
+                  "answer_f5b33470_abs"
+                ],
+                "retrieved_doc_ids": [
+                  "1dd13331_1",
+                  "31299b8e_2",
+                  "ea3db78e_2",
+                  "793382f9_2"
                 ]
               }
             ],
@@ -7885,6 +7901,22 @@
             ],
             "retrieved_doc_ids": [
               "ad17b46e_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::f4f1d8a4_abs",
+            "category": "single-session-user",
+            "query": "What did my dad gave me as a birthday gift?",
+            "gold": "You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.",
+            "prediction": "ve been thinking about my sister",
+            "expected_doc_ids": [
+              "answer_f5b33470_abs"
+            ],
+            "retrieved_doc_ids": [
+              "1dd13331_1",
+              "31299b8e_2",
+              "ea3db78e_2",
+              "793382f9_2"
             ]
           }
         ],
@@ -11560,19 +11592,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2555,
-      "rows_successful": 2555,
+      "rows_recorded": 2556,
+      "rows_successful": 2556,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7992172211350294,
-      "doc_recall_all": 0.712720156555773,
-      "ndcg_at_10": 0.6182947713178288,
-      "exact_match": 0.022309197651663407,
-      "token_f1": 0.07025562228170205,
-      "avg_total_sec": 69.5784051824456,
-      "p50_total_sec": 86.7022410533391,
-      "p95_total_sec": 99.22529071103781,
-      "avg_storage_bytes": 7687341.800782779,
+      "doc_recall_any": 0.798904538341158,
+      "doc_recall_all": 0.7124413145539906,
+      "ndcg_at_10": 0.6180528719550284,
+      "exact_match": 0.022300469483568074,
+      "token_f1": 0.0702716064322613,
+      "avg_total_sec": 69.59251032330144,
+      "p50_total_sec": 86.70269651897252,
+      "p95_total_sec": 99.23575177276507,
+      "avg_storage_bytes": 7688864.9538341155,
       "p95_storage_bytes": 10604817.0,
       "categories": {
         "category_2": {
@@ -14326,20 +14358,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 139,
-          "rows_recorded": 139,
-          "rows_successful": 139,
+          "expected_total": 140,
+          "rows_recorded": 140,
+          "rows_successful": 140,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9928057553956835,
-          "doc_recall_all": 0.9928057553956835,
-          "ndcg_at_10": 0.9693247006367042,
-          "exact_match": 0.05755395683453238,
-          "token_f1": 0.12571752079027718,
-          "avg_total_sec": 53.1908377581142,
-          "p50_total_sec": 3.667559389024973,
+          "doc_recall_any": 0.9857142857142858,
+          "doc_recall_all": 0.9857142857142858,
+          "ndcg_at_10": 0.9624009527750135,
+          "exact_match": 0.05714285714285714,
+          "token_f1": 0.12561318929256884,
+          "avg_total_sec": 53.56541138277056,
+          "p50_total_sec": 96.72449411218986,
           "p95_total_sec": 109.02160351118073,
-          "avg_storage_bytes": 5929102.45323741,
+          "avg_storage_bytes": 5969469.728571429,
           "p95_storage_bytes": 11905293.0,
           "categories": {},
           "sample_errors": [],
@@ -14355,6 +14387,22 @@
               ],
               "retrieved_doc_ids": [
                 "ad17b46e_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::f4f1d8a4_abs",
+              "category": "single-session-user",
+              "query": "What did my dad gave me as a birthday gift?",
+              "gold": "You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.",
+              "prediction": "ve been thinking about my sister",
+              "expected_doc_ids": [
+                "answer_f5b33470_abs"
+              ],
+              "retrieved_doc_ids": [
+                "1dd13331_1",
+                "31299b8e_2",
+                "ea3db78e_2",
+                "793382f9_2"
               ]
             }
           ],
@@ -14868,11 +14916,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04272626912873512,
-    "doc_recall_all_delta": 0.06441173798771638,
-    "ndcg_at_10_delta": 0.05726178045431107,
-    "token_f1_delta": 0.0008138165138132231,
-    "avg_storage_ratio_nova_over_stock": 0.4207384353268547,
-    "avg_latency_ratio_nova_over_stock": 1.6838524538061144
+    "doc_recall_any_delta": 0.042413586334863806,
+    "doc_recall_all_delta": 0.06413289598593397,
+    "ndcg_at_10_delta": 0.05701988109151068,
+    "token_f1_delta": 0.0008298006643724654,
+    "avg_storage_ratio_nova_over_stock": 0.4208217995180394,
+    "avg_latency_ratio_nova_over_stock": 1.684193809374399
   }
 }
