@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:48:34Z",
+  "generated_at": "2026-04-21T17:48:38Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:48:21Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T17:48:35Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 205,
     "current_case_total": 500,
@@ -5633,19 +5633,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 204,
-        "rows_successful": 204,
+        "rows_recorded": 205,
+        "rows_successful": 205,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9509803921568627,
-        "ndcg_at_10": 0.991495348050658,
-        "exact_match": 0.06862745098039216,
-        "token_f1": 0.10322853144566052,
-        "avg_total_sec": 6.875924210068678,
-        "p50_total_sec": 6.014921092893928,
+        "doc_recall_all": 0.9512195121951219,
+        "ndcg_at_10": 0.9915368341577279,
+        "exact_match": 0.06829268292682927,
+        "token_f1": 0.10400867468122726,
+        "avg_total_sec": 6.8601998346585145,
+        "p50_total_sec": 6.008830674923956,
         "p95_total_sec": 11.891430397052318,
-        "avg_storage_bytes": 1033951.6862745098,
+        "avg_storage_bytes": 1032348.5707317073,
         "p95_storage_bytes": 1550709.0,
         "categories": {
           "temporal-reasoning": {
@@ -6126,20 +6126,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.15666373019314195,
-            "avg_total_sec": 4.1885545836994424,
-            "p50_total_sec": 4.3664675378240645,
+            "token_f1": 0.177962563101882,
+            "avg_total_sec": 4.0813291171565655,
+            "p50_total_sec": 4.092477118130773,
             "p95_total_sec": 4.902222590986639,
-            "avg_storage_bytes": 756576.0,
+            "avg_storage_bytes": 746323.4,
             "p95_storage_bytes": 840625.0,
             "categories": {},
             "sample_errors": [],
@@ -6183,6 +6183,16 @@
                 "prediction": "Be sure to check the hotel's website or contact their reservations team directly to inquire about current packages and promotions.",
                 "retrieved_doc_ids": [
                   "answer_d586e9cd"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::35a27287",
+                "category": "single-session-preference",
+                "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+                "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+                "prediction": "assistant: I'm happy to help you discover cultural events and festivals in your area that celebrate language diversity and cultural exchange!",
+                "retrieved_doc_ids": [
+                  "answer_9b182436"
                 ]
               }
             ]
@@ -9367,19 +9377,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2190,
-      "rows_successful": 2190,
+      "rows_recorded": 2191,
+      "rows_successful": 2191,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7662100456621005,
-      "doc_recall_all": 0.6666666666666666,
-      "ndcg_at_10": 0.5570301302789055,
-      "exact_match": 0.019634703196347032,
-      "token_f1": 0.06424733065480698,
-      "avg_total_sec": 77.31656393650515,
+      "doc_recall_any": 0.7663167503423094,
+      "doc_recall_all": 0.6668188041989959,
+      "ndcg_at_10": 0.5572323073075321,
+      "exact_match": 0.019625741670470105,
+      "token_f1": 0.06433811594192794,
+      "avg_total_sec": 77.28294269657566,
       "p50_total_sec": 87.59662624169141,
-      "p95_total_sec": 97.95282381214201,
-      "avg_storage_bytes": 8510747.03652968,
+      "p95_total_sec": 97.93711059028283,
+      "avg_storage_bytes": 8507184.538110452,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -11849,20 +11859,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.15666373019314195,
-          "avg_total_sec": 4.1885545836994424,
-          "p50_total_sec": 4.3664675378240645,
+          "token_f1": 0.177962563101882,
+          "avg_total_sec": 4.0813291171565655,
+          "p50_total_sec": 4.092477118130773,
           "p95_total_sec": 4.902222590986639,
-          "avg_storage_bytes": 756576.0,
+          "avg_storage_bytes": 746323.4,
           "p95_storage_bytes": 840625.0,
           "categories": {},
           "sample_errors": [],
@@ -11906,6 +11916,16 @@
               "prediction": "Be sure to check the hotel's website or contact their reservations team directly to inquire about current packages and promotions.",
               "retrieved_doc_ids": [
                 "answer_d586e9cd"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::35a27287",
+              "category": "single-session-preference",
+              "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+              "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+              "prediction": "assistant: I'm happy to help you discover cultural events and festivals in your area that celebrate language diversity and cultural exchange!",
+              "retrieved_doc_ids": [
+                "answer_9b182436"
               ]
             }
           ]
@@ -12297,11 +12317,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.044089387526817125,
-    "doc_recall_all_delta": 0.05971968312004872,
-    "ndcg_at_10_delta": 0.057930277730469215,
-    "token_f1_delta": 0.0021752443335176647,
-    "avg_storage_ratio_nova_over_stock": 0.43075044595273787,
-    "avg_latency_ratio_nova_over_stock": 1.7292741727850665
+    "doc_recall_any_delta": 0.04419609220702603,
+    "doc_recall_all_delta": 0.05987182065237795,
+    "ndcg_at_10_delta": 0.0581324547590959,
+    "token_f1_delta": 0.0022660296206386266,
+    "avg_storage_ratio_nova_over_stock": 0.430570138892006,
+    "avg_latency_ratio_nova_over_stock": 1.7285221949564238
   }
 }
