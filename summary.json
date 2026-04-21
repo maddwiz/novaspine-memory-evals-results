@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:56:46Z",
+  "generated_at": "2026-04-21T17:56:48Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:56:33Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-21T17:56:47Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 235,
     "current_case_total": 500,
@@ -5798,19 +5798,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 234,
-        "rows_successful": 234,
+        "rows_recorded": 235,
+        "rows_successful": 235,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9572649572649573,
-        "ndcg_at_10": 0.9925856880441634,
-        "exact_match": 0.05982905982905983,
-        "token_f1": 0.11372190222596379,
-        "avg_total_sec": 6.437358856352413,
+        "doc_recall_all": 0.9574468085106383,
+        "ndcg_at_10": 0.9926172383078051,
+        "exact_match": 0.059574468085106386,
+        "token_f1": 0.11323797923776821,
+        "avg_total_sec": 6.416706574997527,
         "p50_total_sec": 5.789571520872414,
         "p95_total_sec": 11.562424056231976,
-        "avg_storage_bytes": 986817.3504273504,
+        "avg_storage_bytes": 984623.970212766,
         "p95_storage_bytes": 1525989.0,
         "categories": {
           "temporal-reasoning": {
@@ -6433,20 +6433,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.13787185354691073,
-            "avg_total_sec": 2.069835746777244,
-            "p50_total_sec": 2.4790155859664083,
+            "token_f1": 0.11029748283752858,
+            "avg_total_sec": 1.9726831450127065,
+            "p50_total_sec": 2.3032208420336246,
             "p95_total_sec": 2.622917593922466,
-            "avg_storage_bytes": 517570.0,
+            "avg_storage_bytes": 508330.6,
             "p95_storage_bytes": 582181.0,
             "categories": {},
             "sample_errors": [],
@@ -6490,6 +6490,16 @@
                 "prediction": "Better Than Sex - A dessert shop located in the Ivanhoe Village neighborhood of Orlando that specializes in decadent desserts like chocolate fondue and cheesecake.",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_480665"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::4c36ccef",
+                "category": "single-session-assistant",
+                "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+                "gold": "Roscioli",
+                "prediction": "La Pergola - This is a fine-dining restaurant located atop the Rome Cavalieri Hotel that offers a range of Italian and International dishes made with the finest ingredients.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_448704"
                 ]
               }
             ]
@@ -9828,19 +9838,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2220,
-      "rows_successful": 2220,
+      "rows_recorded": 2221,
+      "rows_successful": 2221,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7693693693693694,
-      "doc_recall_all": 0.6711711711711712,
-      "ndcg_at_10": 0.5630162095994607,
-      "exact_match": 0.01936936936936937,
-      "token_f1": 0.06588016163963427,
-      "avg_total_sec": 76.31843624075618,
-      "p50_total_sec": 87.33817929401994,
+      "doc_recall_any": 0.7694732102656461,
+      "doc_recall_all": 0.6713192255740658,
+      "ndcg_at_10": 0.5632129605181463,
+      "exact_match": 0.01936064835659613,
+      "token_f1": 0.06585049925258356,
+      "avg_total_sec": 76.28478727024614,
+      "p50_total_sec": 87.33495477866381,
       "p95_total_sec": 97.92576676094905,
-      "avg_storage_bytes": 8404741.047747748,
+      "avg_storage_bytes": 8401169.067537146,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -12452,20 +12462,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.13787185354691073,
-          "avg_total_sec": 2.069835746777244,
-          "p50_total_sec": 2.4790155859664083,
+          "token_f1": 0.11029748283752858,
+          "avg_total_sec": 1.9726831450127065,
+          "p50_total_sec": 2.3032208420336246,
           "p95_total_sec": 2.622917593922466,
-          "avg_storage_bytes": 517570.0,
+          "avg_storage_bytes": 508330.6,
           "p95_storage_bytes": 582181.0,
           "categories": {},
           "sample_errors": [],
@@ -12509,6 +12519,16 @@
               "prediction": "Better Than Sex - A dessert shop located in the Ivanhoe Village neighborhood of Orlando that specializes in decadent desserts like chocolate fondue and cheesecake.",
               "retrieved_doc_ids": [
                 "answer_ultrachat_480665"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::4c36ccef",
+              "category": "single-session-assistant",
+              "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+              "gold": "Roscioli",
+              "prediction": "La Pergola - This is a fine-dining restaurant located atop the Rome Cavalieri Hotel that offers a range of Italian and International dishes made with the finest ingredients.",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_448704"
               ]
             }
           ]
@@ -12900,11 +12920,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04394105557315664,
-    "doc_recall_all_delta": 0.059358727528249666,
-    "ndcg_at_10_delta": 0.057592189141400074,
-    "token_f1_delta": 0.002446767120346874,
-    "avg_storage_ratio_nova_over_stock": 0.42971028954941465,
-    "avg_latency_ratio_nova_over_stock": 1.7237299523136587
+    "doc_recall_any_delta": 0.044044896469433326,
+    "doc_recall_all_delta": 0.059506781931144226,
+    "ndcg_at_10_delta": 0.057788940060085614,
+    "token_f1_delta": 0.002417104733296163,
+    "avg_storage_ratio_nova_over_stock": 0.42952766445224116,
+    "avg_latency_ratio_nova_over_stock": 1.7229699558935314
   }
 }
