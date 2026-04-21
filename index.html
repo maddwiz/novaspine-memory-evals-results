@@ -235,9 +235,9 @@
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>71.1%</strong></div>
-          <div><span>NovaSpine</span><strong>75.6%</strong></div>
+          <div><span>NovaSpine</span><strong>75.7%</strong></div>
         </div>
-        <div class="delta good">+0.045</div>
+        <div class="delta good">+0.046</div>
       </div>
     
       
@@ -247,17 +247,17 @@
           <div><span>Stock</span><strong>59.2%</strong></div>
           <div><span>NovaSpine</span><strong>65.3%</strong></div>
         </div>
-        <div class="delta good">+0.060</div>
+        <div class="delta good">+0.061</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>47.9%</strong></div>
-          <div><span>NovaSpine</span><strong>53.8%</strong></div>
+          <div><span>Stock</span><strong>48.0%</strong></div>
+          <div><span>NovaSpine</span><strong>53.9%</strong></div>
         </div>
-        <div class="delta good">+0.059</div>
+        <div class="delta good">+0.060</div>
       </div>
     
       
@@ -265,7 +265,7 @@
         <div class="metric-label">Answer F1</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>5.7%</strong></div>
-          <div><span>NovaSpine</span><strong>6.1%</strong></div>
+          <div><span>NovaSpine</span><strong>6.0%</strong></div>
         </div>
         <div class="delta good">+0.003</div>
       </div>
@@ -275,16 +275,16 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.045, evidence-all +0.060, NDCG@10 +0.059, answer F1 +0.003.</p>
+        <p><b>Current delta:</b> evidence-any +0.046, evidence-all +0.061, NDCG@10 +0.060, answer F1 +0.003.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-21T17:19:36Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_oracle::gpt4_2f91af09</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2101 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2101 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-21T17:21:31Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_oracle::60bf93ed_abs</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2106 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2105 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -375,24 +375,24 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>115 / 500 failed 2</td>
-      <td>100.0%</td>
-      <td>72.6%</td>
-      <td>91.0%</td>
-      <td>10.8%</td>
+      <td>120 / 500 failed 2</td>
+      <td>99.2%</td>
+      <td>72.0%</td>
+      <td>90.2%</td>
+      <td>10.3%</td>
       <td>14.2s</td>
-      <td>5.8 MB</td>
+      <td>5.9 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>115 / 500 failed 0</td>
+      <td>119 / 500 failed 0</td>
       <td>100.0%</td>
-      <td>91.3%</td>
+      <td>91.6%</td>
       <td>98.5%</td>
-      <td>6.5%</td>
-      <td>7.7s</td>
+      <td>6.4%</td>
+      <td>7.8s</td>
       <td>1.1 MB</td>
     </tr>
     
@@ -400,12 +400,12 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>multi-session</td><td>54</td><td>100.0%</td><td>2.7%</td><td>55</td><td>100.0%</td><td>2.1%</td></tr>
+<tr><td>multi-session</td><td>59</td><td>98.3%</td><td>2.5%</td><td>59</td><td>100.0%</td><td>2.0%</td></tr>
 <tr><td>temporal-reasoning</td><td>59</td><td>100.0%</td><td>18.2%</td><td>60</td><td>100.0%</td><td>10.6%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> an issue with my car&#x27;s GPS system on 3/22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_1, answer_4be1b6b4_2</p></div>
+        <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many days did it take for my iPad case to arrive after I bought it?</p><p><b>Gold:</b> The information provided is not enough. You did not mention buying an iPad case.</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_e0956e0a_abs_2, answer_e0956e0a_abs_1</p><p><b>Retrieved:</b> </p></div></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> an issue with my car&#x27;s GPS system on 3/22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_1, answer_4be1b6b4_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which event did I attend first, the &#x27;Effective Time Management&#x27; workshop or the &#x27;Data Analysis using Python&#x27; webinar?</p><p><b>Gold:</b> &#x27;Data Analysis using Python&#x27; webinar</p><p><b>Pred:</b> Data Analysis using Python</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_1c6b85ea_1, answer_1c6b85ea_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which vehicle did I take care of first in February, the bike or the car?</p><p><b>Gold:</b> bike</p><p><b>Pred:</b> bike</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_b535969f_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?</p><p><b>Gold:</b> Samsung Galaxy S22</p><p><b>Pred:</b> Dell</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_5328c3c2_2, answer_5328c3c2_1</p></div>
