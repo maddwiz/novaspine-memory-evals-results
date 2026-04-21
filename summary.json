@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T17:48:38Z",
+  "generated_at": "2026-04-21T17:49:58Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T17:48:35Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T17:49:45Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 205,
+    "current_case_index": 210,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::35a27287"
+    "current_case_id": "longmemeval_oracle::54026fce"
   },
   "benchmarks": {
     "locomo": {
@@ -4896,19 +4896,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 205,
-        "rows_successful": 202,
+        "rows_recorded": 210,
+        "rows_successful": 207,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.995049504950495,
-        "doc_recall_all": 0.8267326732673267,
-        "ndcg_at_10": 0.9382275436414366,
-        "exact_match": 0.07920792079207921,
-        "token_f1": 0.13527850813008624,
-        "avg_total_sec": 13.770491995620494,
-        "p50_total_sec": 13.343299848027527,
+        "doc_recall_any": 0.9951690821256038,
+        "doc_recall_all": 0.8309178743961353,
+        "ndcg_at_10": 0.9397196319592763,
+        "exact_match": 0.07729468599033816,
+        "token_f1": 0.1364626505751237,
+        "avg_total_sec": 13.74024017740059,
+        "p50_total_sec": 13.340316369663924,
         "p95_total_sec": 16.203083727974445,
-        "avg_storage_bytes": 5915448.237623762,
+        "avg_storage_bytes": 5897062.937198068,
         "p95_storage_bytes": 7234081.0,
         "categories": {
           "temporal-reasoning": {
@@ -5394,20 +5394,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.30334526997883504,
-            "avg_total_sec": 12.53879022160545,
-            "p50_total_sec": 12.559036415070295,
-            "p95_total_sec": 12.657457866240293,
-            "avg_storage_bytes": 5263804.0,
+            "token_f1": 0.24382363766673598,
+            "avg_total_sec": 12.528428471460938,
+            "p50_total_sec": 12.470516895875335,
+            "p95_total_sec": 12.697923688217998,
+            "avg_storage_bytes": 5209050.4,
             "p95_storage_bytes": 5462364.0,
             "categories": {},
             "sample_errors": [],
@@ -5461,6 +5461,56 @@
                 "prediction": "Can you suggest some ways to find language exchange partners or events that focus on French and Spanish languages?",
                 "retrieved_doc_ids": [
                   "answer_9b182436"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::32260d93",
+                "category": "single-session-preference",
+                "query": "Can you recommend a show or movie for me to watch tonight?",
+                "gold": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+                "prediction": "s",
+                "retrieved_doc_ids": [
+                  "answer_0250ae1c"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::195a1a1b",
+                "category": "single-session-preference",
+                "query": "Can you suggest some activities that I can do in the evening?",
+                "gold": "The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.",
+                "prediction": "assistant: Here are some popular meditation apps and guided meditation resources that can help you relax before bed:",
+                "retrieved_doc_ids": [
+                  "answer_6dc4305e"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::afdc33df",
+                "category": "single-session-preference",
+                "query": "My kitchen's becoming a bit of a mess again. Any tips for keeping it clean?",
+                "gold": "The user would prefer responses that acknowledge and build upon their existing efforts to organize their kitchen, such as utilizing their new utensil holder to keep countertops clutter-free. They would also appreciate tips that address their concern for maintaining their granite surface, particularly around the sink area. Preferred responses would provide practical and actionable steps to maintain cleanliness, leveraging the user's current tools and setup. They might not prefer generic or vague suggestions that do not take into account their specific kitchen setup or concerns.",
+                "prediction": "user: I also need some help with organizing my kitchen utensils, can you give me some tips on how to maximize the space in my utensil holder?",
+                "retrieved_doc_ids": [
+                  "answer_8549e5e0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::caf03d32",
+                "category": "single-session-preference",
+                "query": "I've been struggling with my slow cooker recipes. Any advice on getting better results?",
+                "gold": "The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.",
+                "prediction": "Here are some delicious and easy-to-make slow cooker recipes that are vegetarian or vegan:",
+                "retrieved_doc_ids": [
+                  "answer_2fc6aabb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::54026fce",
+                "category": "single-session-preference",
+                "query": "I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+                "gold": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+                "prediction": "user: I'm looking for some suggestions on how to socialize with my colleagues.",
+                "retrieved_doc_ids": [
+                  "answer_f7b22c66"
                 ]
               }
             ]
@@ -5633,19 +5683,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 205,
-        "rows_successful": 205,
+        "rows_recorded": 209,
+        "rows_successful": 209,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9512195121951219,
-        "ndcg_at_10": 0.9915368341577279,
-        "exact_match": 0.06829268292682927,
-        "token_f1": 0.10400867468122726,
-        "avg_total_sec": 6.8601998346585145,
-        "p50_total_sec": 6.008830674923956,
+        "doc_recall_all": 0.9521531100478469,
+        "ndcg_at_10": 0.9916988086236087,
+        "exact_match": 0.06698564593301436,
+        "token_f1": 0.10458655705938312,
+        "avg_total_sec": 6.804357480072822,
+        "p50_total_sec": 5.976794823072851,
         "p95_total_sec": 11.891430397052318,
-        "avg_storage_bytes": 1032348.5707317073,
+        "avg_storage_bytes": 1026442.6267942584,
         "p95_storage_bytes": 1550709.0,
         "categories": {
           "temporal-reasoning": {
@@ -6126,20 +6176,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.177962563101882,
-            "avg_total_sec": 4.0813291171565655,
-            "p50_total_sec": 4.092477118130773,
+            "token_f1": 0.15851388125209934,
+            "avg_total_sec": 4.019599201778571,
+            "p50_total_sec": 4.062560975085944,
             "p95_total_sec": 4.902222590986639,
-            "avg_storage_bytes": 746323.4,
+            "avg_storage_bytes": 736296.5555555555,
             "p95_storage_bytes": 840625.0,
             "categories": {},
             "sample_errors": [],
@@ -6193,6 +6243,46 @@
                 "prediction": "assistant: I'm happy to help you discover cultural events and festivals in your area that celebrate language diversity and cultural exchange!",
                 "retrieved_doc_ids": [
                   "answer_9b182436"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::32260d93",
+                "category": "single-session-preference",
+                "query": "Can you recommend a show or movie for me to watch tonight?",
+                "gold": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+                "prediction": "s",
+                "retrieved_doc_ids": [
+                  "answer_0250ae1c"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::195a1a1b",
+                "category": "single-session-preference",
+                "query": "Can you suggest some activities that I can do in the evening?",
+                "gold": "The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.",
+                "prediction": "Here are some tips to help you unwind and prepare for a restful night's sleep by 9:30 pm:",
+                "retrieved_doc_ids": [
+                  "answer_6dc4305e"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::afdc33df",
+                "category": "single-session-preference",
+                "query": "My kitchen's becoming a bit of a mess again. Any tips for keeping it clean?",
+                "gold": "The user would prefer responses that acknowledge and build upon their existing efforts to organize their kitchen, such as utilizing their new utensil holder to keep countertops clutter-free. They would also appreciate tips that address their concern for maintaining their granite surface, particularly around the sink area. Preferred responses would provide practical and actionable steps to maintain cleanliness, leveraging the user's current tools and setup. They might not prefer generic or vague suggestions that do not take into account their specific kitchen setup or concerns.",
+                "prediction": "**Clean Your Utensil Holder Regularly:** Remove any food residue or debris from your utensil holder to prevent bacteria growth and keep your kitchen clean.",
+                "retrieved_doc_ids": [
+                  "answer_8549e5e0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::caf03d32",
+                "category": "single-session-preference",
+                "query": "I've been struggling with my slow cooker recipes. Any advice on getting better results?",
+                "gold": "The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.",
+                "prediction": "I've been wanting to try more recipes with it.",
+                "retrieved_doc_ids": [
+                  "answer_2fc6aabb"
                 ]
               }
             ]
@@ -6431,19 +6521,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2191,
-      "rows_successful": 2188,
+      "rows_recorded": 2196,
+      "rows_successful": 2193,
       "rows_failed": 3,
       "complete": false,
-      "doc_recall_any": 0.7221206581352834,
-      "doc_recall_all": 0.6069469835466179,
-      "ndcg_at_10": 0.49909985254843625,
-      "exact_match": 0.018738574040219377,
-      "token_f1": 0.06207208632128931,
-      "avg_total_sec": 44.710413856458445,
-      "p50_total_sec": 49.64801491191611,
-      "p95_total_sec": 53.90955957118422,
-      "avg_storage_bytes": 19757952.93190128,
+      "doc_recall_any": 0.7227542179662563,
+      "doc_recall_all": 0.6078431372549019,
+      "ndcg_at_10": 0.5002418957482803,
+      "exact_match": 0.018695850433196534,
+      "token_f1": 0.06235076830722946,
+      "avg_total_sec": 44.637015892174034,
+      "p50_total_sec": 49.595746552571654,
+      "p95_total_sec": 53.90203210199252,
+      "avg_storage_bytes": 19724656.8622891,
       "p95_storage_bytes": 23584388.0,
       "categories": {
         "category_2": {
@@ -8908,20 +8998,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.30334526997883504,
-          "avg_total_sec": 12.53879022160545,
-          "p50_total_sec": 12.559036415070295,
-          "p95_total_sec": 12.657457866240293,
-          "avg_storage_bytes": 5263804.0,
+          "token_f1": 0.24382363766673598,
+          "avg_total_sec": 12.528428471460938,
+          "p50_total_sec": 12.470516895875335,
+          "p95_total_sec": 12.697923688217998,
+          "avg_storage_bytes": 5209050.4,
           "p95_storage_bytes": 5462364.0,
           "categories": {},
           "sample_errors": [],
@@ -8975,6 +9065,56 @@
               "prediction": "Can you suggest some ways to find language exchange partners or events that focus on French and Spanish languages?",
               "retrieved_doc_ids": [
                 "answer_9b182436"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::32260d93",
+              "category": "single-session-preference",
+              "query": "Can you recommend a show or movie for me to watch tonight?",
+              "gold": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+              "prediction": "s",
+              "retrieved_doc_ids": [
+                "answer_0250ae1c"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::195a1a1b",
+              "category": "single-session-preference",
+              "query": "Can you suggest some activities that I can do in the evening?",
+              "gold": "The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.",
+              "prediction": "assistant: Here are some popular meditation apps and guided meditation resources that can help you relax before bed:",
+              "retrieved_doc_ids": [
+                "answer_6dc4305e"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::afdc33df",
+              "category": "single-session-preference",
+              "query": "My kitchen's becoming a bit of a mess again. Any tips for keeping it clean?",
+              "gold": "The user would prefer responses that acknowledge and build upon their existing efforts to organize their kitchen, such as utilizing their new utensil holder to keep countertops clutter-free. They would also appreciate tips that address their concern for maintaining their granite surface, particularly around the sink area. Preferred responses would provide practical and actionable steps to maintain cleanliness, leveraging the user's current tools and setup. They might not prefer generic or vague suggestions that do not take into account their specific kitchen setup or concerns.",
+              "prediction": "user: I also need some help with organizing my kitchen utensils, can you give me some tips on how to maximize the space in my utensil holder?",
+              "retrieved_doc_ids": [
+                "answer_8549e5e0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::caf03d32",
+              "category": "single-session-preference",
+              "query": "I've been struggling with my slow cooker recipes. Any advice on getting better results?",
+              "gold": "The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.",
+              "prediction": "Here are some delicious and easy-to-make slow cooker recipes that are vegetarian or vegan:",
+              "retrieved_doc_ids": [
+                "answer_2fc6aabb"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::54026fce",
+              "category": "single-session-preference",
+              "query": "I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+              "gold": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+              "prediction": "user: I'm looking for some suggestions on how to socialize with my colleagues.",
+              "retrieved_doc_ids": [
+                "answer_f7b22c66"
               ]
             }
           ]
@@ -9377,19 +9517,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2191,
-      "rows_successful": 2191,
+      "rows_recorded": 2195,
+      "rows_successful": 2195,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7663167503423094,
-      "doc_recall_all": 0.6668188041989959,
-      "ndcg_at_10": 0.5572323073075321,
-      "exact_match": 0.019625741670470105,
-      "token_f1": 0.06433811594192794,
-      "avg_total_sec": 77.28294269657566,
-      "p50_total_sec": 87.59662624169141,
+      "doc_recall_any": 0.7667425968109339,
+      "doc_recall_all": 0.6674259681093394,
+      "ndcg_at_10": 0.5580391732623248,
+      "exact_match": 0.01958997722095672,
+      "token_f1": 0.06446543241208365,
+      "avg_total_sec": 77.14929257194875,
+      "p50_total_sec": 87.57872347394004,
       "p95_total_sec": 97.93711059028283,
-      "avg_storage_bytes": 8507184.538110452,
+      "avg_storage_bytes": 8493000.62642369,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -11859,20 +11999,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.177962563101882,
-          "avg_total_sec": 4.0813291171565655,
-          "p50_total_sec": 4.092477118130773,
+          "token_f1": 0.15851388125209934,
+          "avg_total_sec": 4.019599201778571,
+          "p50_total_sec": 4.062560975085944,
           "p95_total_sec": 4.902222590986639,
-          "avg_storage_bytes": 746323.4,
+          "avg_storage_bytes": 736296.5555555555,
           "p95_storage_bytes": 840625.0,
           "categories": {},
           "sample_errors": [],
@@ -11926,6 +12066,46 @@
               "prediction": "assistant: I'm happy to help you discover cultural events and festivals in your area that celebrate language diversity and cultural exchange!",
               "retrieved_doc_ids": [
                 "answer_9b182436"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::32260d93",
+              "category": "single-session-preference",
+              "query": "Can you recommend a show or movie for me to watch tonight?",
+              "gold": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+              "prediction": "s",
+              "retrieved_doc_ids": [
+                "answer_0250ae1c"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::195a1a1b",
+              "category": "single-session-preference",
+              "query": "Can you suggest some activities that I can do in the evening?",
+              "gold": "The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.",
+              "prediction": "Here are some tips to help you unwind and prepare for a restful night's sleep by 9:30 pm:",
+              "retrieved_doc_ids": [
+                "answer_6dc4305e"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::afdc33df",
+              "category": "single-session-preference",
+              "query": "My kitchen's becoming a bit of a mess again. Any tips for keeping it clean?",
+              "gold": "The user would prefer responses that acknowledge and build upon their existing efforts to organize their kitchen, such as utilizing their new utensil holder to keep countertops clutter-free. They would also appreciate tips that address their concern for maintaining their granite surface, particularly around the sink area. Preferred responses would provide practical and actionable steps to maintain cleanliness, leveraging the user's current tools and setup. They might not prefer generic or vague suggestions that do not take into account their specific kitchen setup or concerns.",
+              "prediction": "**Clean Your Utensil Holder Regularly:** Remove any food residue or debris from your utensil holder to prevent bacteria growth and keep your kitchen clean.",
+              "retrieved_doc_ids": [
+                "answer_8549e5e0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::caf03d32",
+              "category": "single-session-preference",
+              "query": "I've been struggling with my slow cooker recipes. Any advice on getting better results?",
+              "gold": "The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.",
+              "prediction": "I've been wanting to try more recipes with it.",
+              "retrieved_doc_ids": [
+                "answer_2fc6aabb"
               ]
             }
           ]
@@ -12317,11 +12497,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04419609220702603,
-    "doc_recall_all_delta": 0.05987182065237795,
-    "ndcg_at_10_delta": 0.0581324547590959,
-    "token_f1_delta": 0.0022660296206386266,
-    "avg_storage_ratio_nova_over_stock": 0.430570138892006,
-    "avg_latency_ratio_nova_over_stock": 1.7285221949564238
+    "doc_recall_any_delta": 0.043988378844677656,
+    "doc_recall_all_delta": 0.059582830854437496,
+    "ndcg_at_10_delta": 0.05779727751404451,
+    "token_f1_delta": 0.00211466410485419,
+    "avg_storage_ratio_nova_over_stock": 0.43057786433087053,
+    "avg_latency_ratio_nova_over_stock": 1.7283703005217004
   }
 }
