@@ -255,7 +255,7 @@
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>45.6%</strong></div>
-          <div><span>NovaSpine</span><strong>51.3%</strong></div>
+          <div><span>NovaSpine</span><strong>51.4%</strong></div>
         </div>
         <div class="delta good">+0.058</div>
       </div>
@@ -281,10 +281,10 @@
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-21T16:38:39Z</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-21T16:38:46Z</strong></div>
           <div class="pill"><span>Current</span><strong>longmemeval_oracle::0bb5a684</strong></div>
           <div class="pill"><span>Stock Rows</span><strong>1991 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>1990 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>1991 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -387,20 +387,20 @@
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>4 / 500 failed 0</td>
+      <td>5 / 500 failed 0</td>
       <td>100.0%</td>
       <td>100.0%</td>
       <td>100.0%</td>
-      <td>28.9%</td>
-      <td>6.5s</td>
-      <td>1000.3 KB</td>
+      <td>23.1%</td>
+      <td>6.4s</td>
+      <td>1000.5 KB</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>temporal-reasoning</td><td>5</td><td>100.0%</td><td>43.1%</td><td>4</td><td>100.0%</td><td>28.9%</td></tr></table>
+<tr><td>temporal-reasoning</td><td>5</td><td>100.0%</td><td>43.1%</td><td>5</td><td>100.0%</td><td>23.1%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
@@ -411,7 +411,8 @@
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How many days before the team meeting I was preparing for did I attend the workshop on &#x27;Effective Communication in the Workplace&#x27;?</p><p><b>Gold:</b> 7 days. 8 days (including the last day) is also acceptable.</p><p><b>Pred:</b> Effective Communication in the Workplace</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_e936197f_1, answer_e936197f_2</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> an issue with my car&#x27;s GPS system on 3/22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_2, answer_4be1b6b4_1</p></div>
 <div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which event did I attend first, the &#x27;Effective Time Management&#x27; workshop or the &#x27;Data Analysis using Python&#x27; webinar?</p><p><b>Gold:</b> &#x27;Data Analysis using Python&#x27; webinar</p><p><b>Pred:</b> Data Analysis using Python</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_1c6b85ea_1, answer_1c6b85ea_2</p></div>
 <div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which vehicle did I take care of first in February, the bike or the car?</p><p><b>Gold:</b> bike</p><p><b>Pred:</b> car</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_b535969f_2, answer_b535969f_1</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?</p><p><b>Gold:</b> Samsung Galaxy S22</p><p><b>Pred:</b> Dell</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_5328c3c2_2, answer_5328c3c2_1</p></div></div></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?</p><p><b>Gold:</b> Samsung Galaxy S22</p><p><b>Pred:</b> Dell</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_5328c3c2_2, answer_5328c3c2_1</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> How many days before the team meeting I was preparing for did I attend the workshop on &#x27;Effective Communication in the Workplace&#x27;?</p><p><b>Gold:</b> 7 days. 8 days (including the last day) is also acceptable.</p><p><b>Pred:</b> Effective Communication in the Workplace</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_e936197f_1, answer_e936197f_2</p></div></div></div>
       </details>
     </section>
     
