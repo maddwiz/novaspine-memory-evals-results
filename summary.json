@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T16:59:15Z",
+  "generated_at": "2026-04-21T17:01:07Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T16:59:11Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T17:00:54Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 65,
+    "current_case_index": 70,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::e831120c"
+    "current_case_id": "longmemeval_oracle::dd2973ad"
   },
   "benchmarks": {
     "locomo": {
@@ -4896,19 +4896,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 65,
-        "rows_successful": 64,
+        "rows_recorded": 70,
+        "rows_successful": 69,
         "rows_failed": 1,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.765625,
-        "ndcg_at_10": 0.9148293811332353,
-        "exact_match": 0.125,
-        "token_f1": 0.17315287741114446,
-        "avg_total_sec": 13.61110202454438,
-        "p50_total_sec": 13.343135082162917,
+        "doc_recall_all": 0.7536231884057971,
+        "ndcg_at_10": 0.9151639636702111,
+        "exact_match": 0.11594202898550725,
+        "token_f1": 0.1653944773466948,
+        "avg_total_sec": 13.692199402664235,
+        "p50_total_sec": 13.346216404344887,
         "p95_total_sec": 16.203083727974445,
-        "avg_storage_bytes": 5836076.65625,
+        "avg_storage_bytes": 5869357.072463769,
         "p95_storage_bytes": 7329401.0,
         "categories": {
           "temporal-reasoning": {
@@ -5065,20 +5065,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.4,
-            "ndcg_at_10": 0.8420760586965926,
+            "doc_recall_all": 0.5,
+            "ndcg_at_10": 0.8807613394200466,
             "exact_match": 0.0,
-            "token_f1": 0.06956521739130435,
-            "avg_total_sec": 14.869843070022762,
-            "p50_total_sec": 14.924304948188365,
+            "token_f1": 0.06782608695652174,
+            "avg_total_sec": 14.80004445631057,
+            "p50_total_sec": 14.838910883758217,
             "p95_total_sec": 16.236221861094236,
-            "avg_storage_bytes": 6533003.4,
+            "avg_storage_bytes": 6414174.9,
             "p95_storage_bytes": 7329853.0,
             "categories": {},
             "sample_errors": [],
@@ -5140,6 +5140,64 @@
                 "prediction": "By the way, I just finished a Star Wars marathon, watched all the main films in a week and a half, it was a wild ride!",
                 "retrieved_doc_ids": [
                   "answer_86c505e7_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::3a704032",
+                "category": "multi-session",
+                "query": "How many plants did I acquire in the last month?",
+                "gold": "3",
+                "prediction": "user: I'm also wondering if I should repot my snake plant, which I got from my sister last month.",
+                "retrieved_doc_ids": [
+                  "answer_c2204106_2",
+                  "answer_c2204106_1",
+                  "answer_c2204106_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_d84a3211",
+                "category": "multi-session",
+                "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+                "gold": "$185",
+                "prediction": "ve been keeping track of my bike mileage, and as of last week, I",
+                "retrieved_doc_ids": [
+                  "answer_2880eb6c_2",
+                  "answer_2880eb6c_4",
+                  "answer_2880eb6c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::aae3761f",
+                "category": "multi-session",
+                "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+                "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+                "prediction": "By the way, I've had some great experiences with coastal trips, like my recent trip to Outer Banks in North Carolina - it only took me four hours to drive there from my place.",
+                "retrieved_doc_ids": [
+                  "answer_526354c8_2",
+                  "answer_526354c8_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_f2262a51",
+                "category": "multi-session",
+                "query": "How many different doctors did I visit?",
+                "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+                "prediction": "Patel and your primary care physician, you'll be able to get a comprehensive understanding of how your UTI, antibiotic use, and chronic sinusitis are impacting your overall health.",
+                "retrieved_doc_ids": [
+                  "answer_55a6940c_2",
+                  "answer_55a6940c_3",
+                  "answer_55a6940c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::dd2973ad",
+                "category": "multi-session",
+                "query": "What time did I go to bed on the day before I had a doctor's appointment?",
+                "gold": "2 AM",
+                "prediction": "pretty exhausted after my doctor's appointment",
+                "retrieved_doc_ids": [
+                  "answer_f9de4602_2",
+                  "answer_f9de4602_1"
                 ]
               }
             ]
@@ -5289,19 +5347,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 65,
-        "rows_successful": 65,
+        "rows_recorded": 69,
+        "rows_successful": 69,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9538461538461539,
-        "ndcg_at_10": 0.9937365881798773,
-        "exact_match": 0.06153846153846154,
-        "token_f1": 0.10345435287598821,
-        "avg_total_sec": 6.53543366036163,
-        "p50_total_sec": 5.969160474836826,
+        "doc_recall_all": 0.9565217391304348,
+        "ndcg_at_10": 0.9940996845172757,
+        "exact_match": 0.057971014492753624,
+        "token_f1": 0.1022459089789555,
+        "avg_total_sec": 6.6975339844593424,
+        "p50_total_sec": 6.015184815041721,
         "p95_total_sec": 12.196317330002785,
-        "avg_storage_bytes": 999142.5384615385,
+        "avg_storage_bytes": 1018030.0434782609,
         "p95_storage_bytes": 1669565.0,
         "categories": {
           "temporal-reasoning": {
@@ -5462,20 +5520,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.8,
-            "ndcg_at_10": 0.9663744927457765,
+            "doc_recall_all": 0.8888888888888888,
+            "ndcg_at_10": 0.9813191626365424,
             "exact_match": 0.0,
-            "token_f1": 0.06956521739130435,
-            "avg_total_sec": 9.193275714572518,
+            "token_f1": 0.07536231884057971,
+            "avg_total_sec": 9.254781730783483,
             "p50_total_sec": 9.159522757865489,
             "p95_total_sec": 12.708947564009577,
-            "avg_storage_bytes": 1306780.2,
+            "avg_storage_bytes": 1314856.5555555555,
             "p95_storage_bytes": 1763773.0,
             "categories": {},
             "sample_errors": [],
@@ -5539,6 +5597,55 @@
                 "retrieved_doc_ids": [
                   "answer_86c505e7_2",
                   "answer_86c505e7_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::3a704032",
+                "category": "multi-session",
+                "query": "How many plants did I acquire in the last month?",
+                "gold": "3",
+                "prediction": "user: I'm also wondering if I should repot my snake plant, which I got from my sister last month.",
+                "retrieved_doc_ids": [
+                  "answer_c2204106_2",
+                  "answer_c2204106_1",
+                  "answer_c2204106_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_d84a3211",
+                "category": "multi-session",
+                "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+                "gold": "$185",
+                "prediction": "ve been keeping track of my bike mileage, and as of last week, I",
+                "retrieved_doc_ids": [
+                  "answer_2880eb6c_1",
+                  "answer_2880eb6c_4",
+                  "answer_2880eb6c_3",
+                  "answer_2880eb6c_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::aae3761f",
+                "category": "multi-session",
+                "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+                "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+                "prediction": "By the way, I've had some great experiences with coastal trips, like my recent trip to Outer Banks in North Carolina - it only took me four hours to drive there from my place.",
+                "retrieved_doc_ids": [
+                  "answer_526354c8_2",
+                  "answer_526354c8_1",
+                  "answer_526354c8_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_f2262a51",
+                "category": "multi-session",
+                "query": "How many different doctors did I visit?",
+                "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+                "prediction": "Patel and your primary care physician, you'll be able to get a better understanding of how your UTI, antibiotic use, and chronic sinusitis are impacting your overall health.",
+                "retrieved_doc_ids": [
+                  "answer_55a6940c_2",
+                  "answer_55a6940c_3",
+                  "answer_55a6940c_1"
                 ]
               }
             ]
@@ -5777,19 +5884,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2051,
-      "rows_successful": 2050,
+      "rows_recorded": 2056,
+      "rows_successful": 2055,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7039024390243902,
-      "doc_recall_all": 0.5902439024390244,
-      "ndcg_at_10": 0.46880858241606604,
-      "exact_match": 0.016097560975609757,
-      "token_f1": 0.058326463601471625,
-      "avg_total_sec": 46.78822276311541,
-      "p50_total_sec": 51.05831558769569,
-      "p95_total_sec": 53.94748146831989,
-      "avg_storage_bytes": 20687311.89121951,
+      "doc_recall_any": 0.7046228710462287,
+      "doc_recall_all": 0.5902676399026764,
+      "ndcg_at_10": 0.4699050253302447,
+      "exact_match": 0.016058394160583942,
+      "token_f1": 0.05834534557937983,
+      "avg_total_sec": 46.710222819269866,
+      "p50_total_sec": 51.0492498842068,
+      "p95_total_sec": 53.93834944674745,
+      "avg_storage_bytes": 20652294.94355231,
       "p95_storage_bytes": 23584388.0,
       "categories": {
         "category_2": {
@@ -7925,20 +8032,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.4,
-          "ndcg_at_10": 0.8420760586965926,
+          "doc_recall_all": 0.5,
+          "ndcg_at_10": 0.8807613394200466,
           "exact_match": 0.0,
-          "token_f1": 0.06956521739130435,
-          "avg_total_sec": 14.869843070022762,
-          "p50_total_sec": 14.924304948188365,
+          "token_f1": 0.06782608695652174,
+          "avg_total_sec": 14.80004445631057,
+          "p50_total_sec": 14.838910883758217,
           "p95_total_sec": 16.236221861094236,
-          "avg_storage_bytes": 6533003.4,
+          "avg_storage_bytes": 6414174.9,
           "p95_storage_bytes": 7329853.0,
           "categories": {},
           "sample_errors": [],
@@ -8000,6 +8107,64 @@
               "prediction": "By the way, I just finished a Star Wars marathon, watched all the main films in a week and a half, it was a wild ride!",
               "retrieved_doc_ids": [
                 "answer_86c505e7_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::3a704032",
+              "category": "multi-session",
+              "query": "How many plants did I acquire in the last month?",
+              "gold": "3",
+              "prediction": "user: I'm also wondering if I should repot my snake plant, which I got from my sister last month.",
+              "retrieved_doc_ids": [
+                "answer_c2204106_2",
+                "answer_c2204106_1",
+                "answer_c2204106_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_d84a3211",
+              "category": "multi-session",
+              "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+              "gold": "$185",
+              "prediction": "ve been keeping track of my bike mileage, and as of last week, I",
+              "retrieved_doc_ids": [
+                "answer_2880eb6c_2",
+                "answer_2880eb6c_4",
+                "answer_2880eb6c_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::aae3761f",
+              "category": "multi-session",
+              "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+              "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+              "prediction": "By the way, I've had some great experiences with coastal trips, like my recent trip to Outer Banks in North Carolina - it only took me four hours to drive there from my place.",
+              "retrieved_doc_ids": [
+                "answer_526354c8_2",
+                "answer_526354c8_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_f2262a51",
+              "category": "multi-session",
+              "query": "How many different doctors did I visit?",
+              "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+              "prediction": "Patel and your primary care physician, you'll be able to get a comprehensive understanding of how your UTI, antibiotic use, and chronic sinusitis are impacting your overall health.",
+              "retrieved_doc_ids": [
+                "answer_55a6940c_2",
+                "answer_55a6940c_3",
+                "answer_55a6940c_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::dd2973ad",
+              "category": "multi-session",
+              "query": "What time did I go to bed on the day before I had a doctor's appointment?",
+              "gold": "2 AM",
+              "prediction": "pretty exhausted after my doctor's appointment",
+              "retrieved_doc_ids": [
+                "answer_f9de4602_2",
+                "answer_f9de4602_1"
               ]
             }
           ]
@@ -8392,19 +8557,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2051,
-      "rows_successful": 2051,
+      "rows_recorded": 2055,
+      "rows_successful": 2055,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.750365675280351,
-      "doc_recall_all": 0.6474890297415895,
-      "ndcg_at_10": 0.5276566614042714,
-      "exact_match": 0.016089712335446125,
-      "token_f1": 0.06161266048564202,
-      "avg_total_sec": 82.07966341785264,
-      "p50_total_sec": 91.91428434010595,
-      "p95_total_sec": 98.10731396498159,
-      "avg_storage_bytes": 9016359.888347147,
+      "doc_recall_any": 0.7508515815085158,
+      "doc_recall_all": 0.6481751824817519,
+      "ndcg_at_10": 0.5285760644964286,
+      "exact_match": 0.016058394160583942,
+      "token_f1": 0.06165352868061337,
+      "avg_total_sec": 81.93806147300242,
+      "p50_total_sec": 91.87975646927953,
+      "p95_total_sec": 98.10017711203545,
+      "avg_storage_bytes": 9001388.77810219,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -10554,20 +10719,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.8,
-          "ndcg_at_10": 0.9663744927457765,
+          "doc_recall_all": 0.8888888888888888,
+          "ndcg_at_10": 0.9813191626365424,
           "exact_match": 0.0,
-          "token_f1": 0.06956521739130435,
-          "avg_total_sec": 9.193275714572518,
+          "token_f1": 0.07536231884057971,
+          "avg_total_sec": 9.254781730783483,
           "p50_total_sec": 9.159522757865489,
           "p95_total_sec": 12.708947564009577,
-          "avg_storage_bytes": 1306780.2,
+          "avg_storage_bytes": 1314856.5555555555,
           "p95_storage_bytes": 1763773.0,
           "categories": {},
           "sample_errors": [],
@@ -10631,6 +10796,55 @@
               "retrieved_doc_ids": [
                 "answer_86c505e7_2",
                 "answer_86c505e7_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::3a704032",
+              "category": "multi-session",
+              "query": "How many plants did I acquire in the last month?",
+              "gold": "3",
+              "prediction": "user: I'm also wondering if I should repot my snake plant, which I got from my sister last month.",
+              "retrieved_doc_ids": [
+                "answer_c2204106_2",
+                "answer_c2204106_1",
+                "answer_c2204106_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_d84a3211",
+              "category": "multi-session",
+              "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+              "gold": "$185",
+              "prediction": "ve been keeping track of my bike mileage, and as of last week, I",
+              "retrieved_doc_ids": [
+                "answer_2880eb6c_1",
+                "answer_2880eb6c_4",
+                "answer_2880eb6c_3",
+                "answer_2880eb6c_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::aae3761f",
+              "category": "multi-session",
+              "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+              "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+              "prediction": "By the way, I've had some great experiences with coastal trips, like my recent trip to Outer Banks in North Carolina - it only took me four hours to drive there from my place.",
+              "retrieved_doc_ids": [
+                "answer_526354c8_2",
+                "answer_526354c8_1",
+                "answer_526354c8_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_f2262a51",
+              "category": "multi-session",
+              "query": "How many different doctors did I visit?",
+              "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+              "prediction": "Patel and your primary care physician, you'll be able to get a better understanding of how your UTI, antibiotic use, and chronic sinusitis are impacting your overall health.",
+              "retrieved_doc_ids": [
+                "answer_55a6940c_2",
+                "answer_55a6940c_3",
+                "answer_55a6940c_1"
               ]
             }
           ]
@@ -11022,11 +11236,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04646323625596083,
-    "doc_recall_all_delta": 0.057245127302565146,
-    "ndcg_at_10_delta": 0.05884807898820532,
-    "token_f1_delta": 0.003286196884170395,
-    "avg_storage_ratio_nova_over_stock": 0.435840090571363,
-    "avg_latency_ratio_nova_over_stock": 1.7542804272223513
+    "doc_recall_any_delta": 0.04622871046228716,
+    "doc_recall_all_delta": 0.05790754257907549,
+    "ndcg_at_10_delta": 0.05867103916618388,
+    "token_f1_delta": 0.0033081831012335416,
+    "avg_storage_ratio_nova_over_stock": 0.43585416549130007,
+    "avg_latency_ratio_nova_over_stock": 1.754178347425901
   }
 }
