@@ -235,7 +235,7 @@
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>73.8%</strong></div>
-          <div><span>NovaSpine</span><strong>78.1%</strong></div>
+          <div><span>NovaSpine</span><strong>78.2%</strong></div>
         </div>
         <div class="delta good">+0.043</div>
       </div>
@@ -245,7 +245,7 @@
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>63.0%</strong></div>
-          <div><span>NovaSpine</span><strong>68.8%</strong></div>
+          <div><span>NovaSpine</span><strong>68.9%</strong></div>
         </div>
         <div class="delta good">+0.058</div>
       </div>
@@ -281,10 +281,10 @@
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-21T18:27:41Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_oracle::29f2956b_abs</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2341 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2341 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-21T18:29:10Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_oracle::b46e15ed</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2346 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2345 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -375,10 +375,10 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>355 / 500 failed 3</td>
-      <td>98.6%</td>
-      <td>88.9%</td>
-      <td>95.3%</td>
+      <td>360 / 500 failed 3</td>
+      <td>98.3%</td>
+      <td>88.5%</td>
+      <td>95.0%</td>
       <td>14.1%</td>
       <td>13.2s</td>
       <td>5.2 MB</td>
@@ -387,13 +387,13 @@
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>355 / 500 failed 0</td>
+      <td>359 / 500 failed 0</td>
       <td>100.0%</td>
       <td>97.2%</td>
       <td>99.5%</td>
       <td>12.3%</td>
       <td>5.1s</td>
-      <td>822.0 KB</td>
+      <td>821.4 KB</td>
     </tr>
     
     </table>
@@ -404,8 +404,8 @@
 <tr><td>multi-session</td><td>61</td><td>98.4%</td><td>2.9%</td><td>62</td><td>100.0%</td><td>2.3%</td></tr>
 <tr><td>single-session-assistant</td><td>56</td><td>100.0%</td><td>10.0%</td><td>56</td><td>100.0%</td><td>14.2%</td></tr>
 <tr><td>single-session-preference</td><td>30</td><td>96.7%</td><td>21.1%</td><td>30</td><td>100.0%</td><td>18.8%</td></tr>
-<tr><td>single-session-user</td><td>69</td><td>95.7%</td><td>17.5%</td><td>69</td><td>100.0%</td><td>14.0%</td></tr>
-<tr><td>temporal-reasoning</td><td>59</td><td>100.0%</td><td>18.2%</td><td>60</td><td>100.0%</td><td>10.6%</td></tr></table>
+<tr><td>single-session-user</td><td>70</td><td>94.3%</td><td>17.2%</td><td>70</td><td>100.0%</td><td>13.8%</td></tr>
+<tr><td>temporal-reasoning</td><td>63</td><td>100.0%</td><td>17.7%</td><td>63</td><td>100.0%</td><td>10.8%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
@@ -413,7 +413,8 @@
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> I&#x27;ve been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?</p><p><b>Gold:</b> The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_b0fac439</p><p><b>Retrieved:</b> </p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> </p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Where did I attend my cousin&#x27;s wedding?</p><p><b>Gold:</b> The Grand Ballroom</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_0df6aa4b</p><p><b>Retrieved:</b> </p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Where does my sister Emily live?</p><p><b>Gold:</b> Denver</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_d01949bf</p><p><b>Retrieved:</b> </p></div></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> an issue with my car&#x27;s GPS system on 3/22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_1, answer_4be1b6b4_2</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Where does my sister Emily live?</p><p><b>Gold:</b> Denver</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_d01949bf</p><p><b>Retrieved:</b> </p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What did my dad gave me as a birthday gift?</p><p><b>Gold:</b> You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_f5b33470_abs</p><p><b>Retrieved:</b> </p></div></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> an issue with my car&#x27;s GPS system on 3/22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_1, answer_4be1b6b4_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which event did I attend first, the &#x27;Effective Time Management&#x27; workshop or the &#x27;Data Analysis using Python&#x27; webinar?</p><p><b>Gold:</b> &#x27;Data Analysis using Python&#x27; webinar</p><p><b>Pred:</b> Data Analysis using Python</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_1c6b85ea_1, answer_1c6b85ea_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which vehicle did I take care of first in February, the bike or the car?</p><p><b>Gold:</b> bike</p><p><b>Pred:</b> bike</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_b535969f_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?</p><p><b>Gold:</b> Samsung Galaxy S22</p><p><b>Pred:</b> Dell</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_5328c3c2_2, answer_5328c3c2_1</p></div>
