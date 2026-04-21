@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T18:09:06Z",
+  "generated_at": "2026-04-21T18:10:21Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T18:09:03Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T18:10:08Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 285,
+    "current_case_index": 290,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::65240037"
+    "current_case_id": "longmemeval_oracle::58bf7951"
   },
   "benchmarks": {
     "locomo": {
@@ -4896,19 +4896,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 285,
-        "rows_successful": 282,
+        "rows_recorded": 290,
+        "rows_successful": 287,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9929078014184397,
-        "doc_recall_all": 0.8723404255319149,
-        "ndcg_at_10": 0.9522055454452844,
-        "exact_match": 0.06382978723404255,
-        "token_f1": 0.13379041088160484,
-        "avg_total_sec": 13.411284341179627,
-        "p50_total_sec": 13.134425158146769,
+        "doc_recall_any": 0.9930313588850174,
+        "doc_recall_all": 0.8745644599303136,
+        "ndcg_at_10": 0.9530382014479798,
+        "exact_match": 0.0627177700348432,
+        "token_f1": 0.13278692769883257,
+        "avg_total_sec": 13.39569193457873,
+        "p50_total_sec": 13.132123886141926,
         "p95_total_sec": 15.717831722926348,
-        "avg_storage_bytes": 5598566.911347518,
+        "avg_storage_bytes": 5586000.554006969,
         "p95_storage_bytes": 6944248.0,
         "categories": {
           "temporal-reasoning": {
@@ -5548,20 +5548,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 55,
-            "rows_recorded": 55,
-            "rows_successful": 55,
+            "expected_total": 56,
+            "rows_recorded": 56,
+            "rows_successful": 56,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.03636363636363636,
-            "token_f1": 0.10173031141110568,
-            "avg_total_sec": 12.489740733785386,
-            "p50_total_sec": 12.468715992290527,
+            "exact_match": 0.03571428571428571,
+            "token_f1": 0.09991369870733594,
+            "avg_total_sec": 12.489976485509292,
+            "p50_total_sec": 12.471013474278152,
             "p95_total_sec": 12.641036150977015,
-            "avg_storage_bytes": 4646116.2727272725,
+            "avg_storage_bytes": 4646601.607142857,
             "p95_storage_bytes": 4912705.0,
             "categories": {},
             "sample_errors": [],
@@ -5685,6 +5685,68 @@
                 "prediction": "user: Which song on the Fifth Album do you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation?",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_187684"
+                ]
+              }
+            ]
+          },
+          "single-session-user": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.09523809523809523,
+            "avg_total_sec": 12.519614545279182,
+            "p50_total_sec": 12.5268116267398,
+            "p95_total_sec": 12.64278839994222,
+            "avg_storage_bytes": 4928248.75,
+            "p95_storage_bytes": 5064457.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::e47becba",
+                "category": "single-session-user",
+                "query": "What degree did I graduate with?",
+                "gold": "Business Administration",
+                "prediction": "definitely helped me in my new role",
+                "retrieved_doc_ids": [
+                  "answer_280352e9"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::118b2229",
+                "category": "single-session-user",
+                "query": "How long is my daily commute to work?",
+                "gold": "45 minutes each way",
+                "prediction": "user: I've been listening to audiobooks during my daily commute, which takes 45 minutes each way.",
+                "retrieved_doc_ids": [
+                  "answer_40a90d51"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::51a45a95",
+                "category": "single-session-user",
+                "query": "Where did I redeem a $5 coupon on coffee creamer?",
+                "gold": "Target",
+                "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+                "retrieved_doc_ids": [
+                  "answer_d61669c7"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::58bf7951",
+                "category": "single-session-user",
+                "query": "What play did I attend at the local community theater?",
+                "gold": "The Glass Menagerie",
+                "prediction": "s performance - she reminded me of my friend Emily, who",
+                "retrieved_doc_ids": [
+                  "answer_355c48bb"
                 ]
               }
             ]
@@ -5868,19 +5930,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 285,
-        "rows_successful": 285,
+        "rows_recorded": 289,
+        "rows_successful": 289,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9649122807017544,
-        "ndcg_at_10": 0.9939124596573131,
-        "exact_match": 0.056140350877192984,
-        "token_f1": 0.1192976866960663,
-        "avg_total_sec": 5.61441702690433,
-        "p50_total_sec": 5.521417781710625,
+        "doc_recall_all": 0.9653979238754326,
+        "ndcg_at_10": 0.9939967162710528,
+        "exact_match": 0.05536332179930796,
+        "token_f1": 0.11764650764144947,
+        "avg_total_sec": 5.576538381139365,
+        "p50_total_sec": 5.499968269839883,
         "p95_total_sec": 11.401264565996826,
-        "avg_storage_bytes": 897293.1052631579,
+        "avg_storage_bytes": 893272.4671280277,
         "p95_storage_bytes": 1509533.0,
         "categories": {
           "temporal-reasoning": {
@@ -6503,20 +6565,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 55,
-            "rows_recorded": 55,
-            "rows_successful": 55,
+            "expected_total": 56,
+            "rows_recorded": 56,
+            "rows_successful": 56,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.03636363636363636,
-            "token_f1": 0.14437096366710933,
-            "avg_total_sec": 1.8553858776068823,
-            "p50_total_sec": 1.6138328220695257,
+            "exact_match": 0.03571428571428571,
+            "token_f1": 0.14179291074448236,
+            "avg_total_sec": 1.8607965039638137,
+            "p50_total_sec": 1.636677409056574,
             "p95_total_sec": 3.390962613746524,
-            "avg_storage_bytes": 488791.9090909091,
+            "avg_storage_bytes": 489507.4285714286,
             "p95_storage_bytes": 660221.0,
             "categories": {},
             "sample_errors": [],
@@ -6640,6 +6702,58 @@
                 "prediction": "user: Which song on the Fifth Album do you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation?",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_187684"
+                ]
+              }
+            ]
+          },
+          "single-session-user": {
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 3.1174528426490724,
+            "p50_total_sec": 3.07673055306077,
+            "p95_total_sec": 3.5465487390756607,
+            "avg_storage_bytes": 632782.3333333334,
+            "p95_storage_bytes": 680629.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::e47becba",
+                "category": "single-session-user",
+                "query": "What degree did I graduate with?",
+                "gold": "Business Administration",
+                "prediction": "definitely helped me in my new role",
+                "retrieved_doc_ids": [
+                  "answer_280352e9"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::118b2229",
+                "category": "single-session-user",
+                "query": "How long is my daily commute to work?",
+                "gold": "45 minutes each way",
+                "prediction": "You might even find yourself looking forward to your commute, knowing that you'll have some dedicated time to immerse yourself in a good story or learn something new.",
+                "retrieved_doc_ids": [
+                  "answer_40a90d51"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::51a45a95",
+                "category": "single-session-user",
+                "query": "Where did I redeem a $5 coupon on coffee creamer?",
+                "gold": "Target",
+                "prediction": "Redeeming a surprise coupon is always a great feeling, especially when it's on something you need or regularly buy like coffee creamer!",
+                "retrieved_doc_ids": [
+                  "answer_d61669c7"
                 ]
               }
             ]
@@ -6878,19 +6992,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2271,
-      "rows_successful": 2268,
+      "rows_recorded": 2276,
+      "rows_successful": 2273,
       "rows_failed": 3,
       "complete": false,
-      "doc_recall_any": 0.7314814814814815,
-      "doc_recall_all": 0.6203703703703703,
-      "ndcg_at_10": 0.5163273709770628,
-      "exact_match": 0.01895943562610229,
-      "token_f1": 0.06446929545737044,
-      "avg_total_sec": 43.57439520239347,
-      "p50_total_sec": 49.32213973021135,
-      "p95_total_sec": 53.87217961717397,
-      "avg_storage_bytes": 19230280.57319224,
+      "doc_recall_any": 0.732072151341839,
+      "doc_recall_all": 0.6212054553453585,
+      "ndcg_at_10": 0.5173913230866601,
+      "exact_match": 0.01891772987241531,
+      "token_f1": 0.06449507896096285,
+      "avg_total_sec": 43.5060755477518,
+      "p50_total_sec": 49.3172198147513,
+      "p95_total_sec": 53.864834995009005,
+      "avg_storage_bytes": 19198707.712274525,
       "p95_storage_bytes": 23584388.0,
       "categories": {
         "category_2": {
@@ -9509,20 +9623,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 55,
-          "rows_recorded": 55,
-          "rows_successful": 55,
+          "expected_total": 56,
+          "rows_recorded": 56,
+          "rows_successful": 56,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03636363636363636,
-          "token_f1": 0.10173031141110568,
-          "avg_total_sec": 12.489740733785386,
-          "p50_total_sec": 12.468715992290527,
+          "exact_match": 0.03571428571428571,
+          "token_f1": 0.09991369870733594,
+          "avg_total_sec": 12.489976485509292,
+          "p50_total_sec": 12.471013474278152,
           "p95_total_sec": 12.641036150977015,
-          "avg_storage_bytes": 4646116.2727272725,
+          "avg_storage_bytes": 4646601.607142857,
           "p95_storage_bytes": 4912705.0,
           "categories": {},
           "sample_errors": [],
@@ -9646,6 +9760,68 @@
               "prediction": "user: Which song on the Fifth Album do you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation?",
               "retrieved_doc_ids": [
                 "answer_ultrachat_187684"
+              ]
+            }
+          ]
+        },
+        "single-session-user": {
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.09523809523809523,
+          "avg_total_sec": 12.519614545279182,
+          "p50_total_sec": 12.5268116267398,
+          "p95_total_sec": 12.64278839994222,
+          "avg_storage_bytes": 4928248.75,
+          "p95_storage_bytes": 5064457.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::e47becba",
+              "category": "single-session-user",
+              "query": "What degree did I graduate with?",
+              "gold": "Business Administration",
+              "prediction": "definitely helped me in my new role",
+              "retrieved_doc_ids": [
+                "answer_280352e9"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::118b2229",
+              "category": "single-session-user",
+              "query": "How long is my daily commute to work?",
+              "gold": "45 minutes each way",
+              "prediction": "user: I've been listening to audiobooks during my daily commute, which takes 45 minutes each way.",
+              "retrieved_doc_ids": [
+                "answer_40a90d51"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::51a45a95",
+              "category": "single-session-user",
+              "query": "Where did I redeem a $5 coupon on coffee creamer?",
+              "gold": "Target",
+              "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+              "retrieved_doc_ids": [
+                "answer_d61669c7"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::58bf7951",
+              "category": "single-session-user",
+              "query": "What play did I attend at the local community theater?",
+              "gold": "The Glass Menagerie",
+              "prediction": "s performance - she reminded me of my friend Emily, who",
+              "retrieved_doc_ids": [
+                "answer_355c48bb"
               ]
             }
           ]
@@ -10048,19 +10224,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2271,
-      "rows_successful": 2271,
+      "rows_recorded": 2275,
+      "rows_successful": 2275,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7745486569793043,
-      "doc_recall_all": 0.6785557023337737,
-      "ndcg_at_10": 0.5728295840206089,
-      "exact_match": 0.019815059445178335,
-      "token_f1": 0.06765428200241808,
-      "avg_total_sec": 74.64583678324968,
-      "p50_total_sec": 87.10540408268571,
+      "doc_recall_any": 0.774945054945055,
+      "doc_recall_all": 0.6791208791208792,
+      "ndcg_at_10": 0.5735806528838694,
+      "exact_match": 0.01978021978021978,
+      "token_f1": 0.06753532941867756,
+      "avg_total_sec": 74.51965102164463,
+      "p50_total_sec": 87.0978887300007,
       "p95_total_sec": 97.85496077872813,
-      "avg_storage_bytes": 8226921.35667107,
+      "avg_storage_bytes": 8213523.344615385,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -12672,20 +12848,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 55,
-          "rows_recorded": 55,
-          "rows_successful": 55,
+          "expected_total": 56,
+          "rows_recorded": 56,
+          "rows_successful": 56,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03636363636363636,
-          "token_f1": 0.14437096366710933,
-          "avg_total_sec": 1.8553858776068823,
-          "p50_total_sec": 1.6138328220695257,
+          "exact_match": 0.03571428571428571,
+          "token_f1": 0.14179291074448236,
+          "avg_total_sec": 1.8607965039638137,
+          "p50_total_sec": 1.636677409056574,
           "p95_total_sec": 3.390962613746524,
-          "avg_storage_bytes": 488791.9090909091,
+          "avg_storage_bytes": 489507.4285714286,
           "p95_storage_bytes": 660221.0,
           "categories": {},
           "sample_errors": [],
@@ -12809,6 +12985,58 @@
               "prediction": "user: Which song on the Fifth Album do you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation?",
               "retrieved_doc_ids": [
                 "answer_ultrachat_187684"
+              ]
+            }
+          ]
+        },
+        "single-session-user": {
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 3.1174528426490724,
+          "p50_total_sec": 3.07673055306077,
+          "p95_total_sec": 3.5465487390756607,
+          "avg_storage_bytes": 632782.3333333334,
+          "p95_storage_bytes": 680629.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::e47becba",
+              "category": "single-session-user",
+              "query": "What degree did I graduate with?",
+              "gold": "Business Administration",
+              "prediction": "definitely helped me in my new role",
+              "retrieved_doc_ids": [
+                "answer_280352e9"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::118b2229",
+              "category": "single-session-user",
+              "query": "How long is my daily commute to work?",
+              "gold": "45 minutes each way",
+              "prediction": "You might even find yourself looking forward to your commute, knowing that you'll have some dedicated time to immerse yourself in a good story or learn something new.",
+              "retrieved_doc_ids": [
+                "answer_40a90d51"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::51a45a95",
+              "category": "single-session-user",
+              "query": "Where did I redeem a $5 coupon on coffee creamer?",
+              "gold": "Target",
+              "prediction": "Redeeming a surprise coupon is always a great feeling, especially when it's on something you need or regularly buy like coffee creamer!",
+              "retrieved_doc_ids": [
+                "answer_d61669c7"
               ]
             }
           ]
@@ -13200,11 +13428,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.043067175497822796,
-    "doc_recall_all_delta": 0.058185331963403364,
-    "ndcg_at_10_delta": 0.05650221304354608,
-    "token_f1_delta": 0.003184986545047633,
-    "avg_storage_ratio_nova_over_stock": 0.42781078130184536,
-    "avg_latency_ratio_nova_over_stock": 1.7130665023928893
+    "doc_recall_any_delta": 0.04287290360321594,
+    "doc_recall_all_delta": 0.057915423775520614,
+    "ndcg_at_10_delta": 0.05618932979720925,
+    "token_f1_delta": 0.0030402504577147077,
+    "avg_storage_ratio_nova_over_stock": 0.42781646909308074,
+    "avg_latency_ratio_nova_over_stock": 1.7128561949894257
   }
 }
