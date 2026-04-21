@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T16:57:12Z",
+  "generated_at": "2026-04-21T16:59:09Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-21T16:57:07Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-21T16:58:57Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 60,
+    "current_case_index": 65,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::gpt4_fe651585_abs"
+    "current_case_id": "longmemeval_oracle::e831120c"
   },
   "benchmarks": {
     "locomo": {
@@ -4896,20 +4896,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 60,
-        "rows_successful": 59,
+        "rows_recorded": 65,
+        "rows_successful": 64,
         "rows_failed": 1,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.7966101694915254,
-        "ndcg_at_10": 0.9209949169329508,
-        "exact_match": 0.13559322033898305,
-        "token_f1": 0.18193149266706313,
-        "avg_total_sec": 13.504429054588584,
-        "p50_total_sec": 13.331841020379215,
-        "p95_total_sec": 14.422477728221565,
-        "avg_storage_bytes": 5777015.06779661,
-        "p95_storage_bytes": 6325604.0,
+        "doc_recall_all": 0.765625,
+        "ndcg_at_10": 0.9148293811332353,
+        "exact_match": 0.125,
+        "token_f1": 0.17315287741114446,
+        "avg_total_sec": 13.61110202454438,
+        "p50_total_sec": 13.343135082162917,
+        "p95_total_sec": 16.203083727974445,
+        "avg_storage_bytes": 5836076.65625,
+        "p95_storage_bytes": 7329401.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 59,
@@ -5063,6 +5063,86 @@
                 ]
               }
             ]
+          },
+          "multi-session": {
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 0.4,
+            "ndcg_at_10": 0.8420760586965926,
+            "exact_match": 0.0,
+            "token_f1": 0.06956521739130435,
+            "avg_total_sec": 14.869843070022762,
+            "p50_total_sec": 14.924304948188365,
+            "p95_total_sec": 16.236221861094236,
+            "avg_storage_bytes": 6533003.4,
+            "p95_storage_bytes": 7329853.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::0a995998",
+                "category": "multi-session",
+                "query": "How many items of clothing do I need to pick up or return from a store?",
+                "gold": "3",
+                "prediction": "up",
+                "retrieved_doc_ids": [
+                  "answer_afa9873b_1",
+                  "answer_afa9873b_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6d550036",
+                "category": "multi-session",
+                "query": "How many projects have I led or am currently leading?",
+                "gold": "2",
+                "prediction": "One question I have is, how can I ensure that my presentation is engaging and holds the audience's attention throughout?",
+                "retrieved_doc_ids": [
+                  "answer_ec904b3c_2",
+                  "answer_ec904b3c_1",
+                  "answer_ec904b3c_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_59c863d7",
+                "category": "multi-session",
+                "query": "How many model kits have I worked on or bought?",
+                "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+                "prediction": "user: I'm looking for some tips on weathering techniques for my model kits.",
+                "retrieved_doc_ids": [
+                  "answer_593bdffd_1",
+                  "answer_593bdffd_2",
+                  "answer_593bdffd_4",
+                  "answer_593bdffd_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::b5ef892d",
+                "category": "multi-session",
+                "query": "How many days did I spend on camping trips in the United States this year?",
+                "gold": "8 days.",
+                "prediction": "user: I'm planning a trip to the Rocky Mountains in Colorado and I was wondering if you could recommend some good hiking trails and camping spots in the area.",
+                "retrieved_doc_ids": [
+                  "answer_a8b4290f_1",
+                  "answer_a8b4290f_2",
+                  "answer_a8b4290f_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::e831120c",
+                "category": "multi-session",
+                "query": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+                "gold": "3.5 weeks",
+                "prediction": "By the way, I just finished a Star Wars marathon, watched all the main films in a week and a half, it was a wild ride!",
+                "retrieved_doc_ids": [
+                  "answer_86c505e7_2"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [
@@ -5209,20 +5289,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 60,
-        "rows_successful": 60,
+        "rows_recorded": 64,
+        "rows_successful": 64,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9666666666666667,
-        "ndcg_at_10": 0.9960167627993858,
-        "exact_match": 0.06666666666666667,
-        "token_f1": 0.10627844749971187,
-        "avg_total_sec": 6.313946822510721,
-        "p50_total_sec": 5.901663762982935,
-        "p95_total_sec": 8.509005547035486,
-        "avg_storage_bytes": 973506.0666666667,
-        "p95_storage_bytes": 1259281.0,
+        "doc_recall_all": 0.953125,
+        "ndcg_at_10": 0.9936387223701879,
+        "exact_match": 0.0625,
+        "token_f1": 0.10507082713967553,
+        "avg_total_sec": 6.570515155712201,
+        "p50_total_sec": 6.007549939677119,
+        "p95_total_sec": 12.196317330002785,
+        "avg_storage_bytes": 1002514.8125,
+        "p95_storage_bytes": 1669565.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5377,6 +5457,77 @@
                 "retrieved_doc_ids": [
                   "answer_c4e5d969_1",
                   "answer_c4e5d969_2"
+                ]
+              }
+            ]
+          },
+          "multi-session": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 0.75,
+            "ndcg_at_10": 0.9579681159322206,
+            "exact_match": 0.0,
+            "token_f1": 0.08695652173913043,
+            "avg_total_sec": 10.419040153734386,
+            "p50_total_sec": 12.196317330002785,
+            "p95_total_sec": 12.708947564009577,
+            "avg_storage_bytes": 1437646.0,
+            "p95_storage_bytes": 1763773.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::0a995998",
+                "category": "multi-session",
+                "query": "How many items of clothing do I need to pick up or return from a store?",
+                "gold": "3",
+                "prediction": "return",
+                "retrieved_doc_ids": [
+                  "answer_afa9873b_1",
+                  "answer_afa9873b_3",
+                  "answer_afa9873b_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6d550036",
+                "category": "multi-session",
+                "query": "How many projects have I led or am currently leading?",
+                "gold": "2",
+                "prediction": "I've also been thinking about how to visualize my data to identify patterns or structures that might help me decide on the number of clusters.",
+                "retrieved_doc_ids": [
+                  "answer_ec904b3c_2",
+                  "answer_ec904b3c_1",
+                  "answer_ec904b3c_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_59c863d7",
+                "category": "multi-session",
+                "query": "How many model kits have I worked on or bought?",
+                "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+                "prediction": "user: I'm looking for some tips on weathering techniques for my model kits.",
+                "retrieved_doc_ids": [
+                  "answer_593bdffd_1",
+                  "answer_593bdffd_2",
+                  "answer_593bdffd_4",
+                  "answer_593bdffd_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::b5ef892d",
+                "category": "multi-session",
+                "query": "How many days did I spend on camping trips in the United States this year?",
+                "gold": "8 days.",
+                "prediction": "user: I'm planning a trip to the Rocky Mountains in Colorado and I was wondering if you could recommend some good hiking trails and camping spots in the area.",
+                "retrieved_doc_ids": [
+                  "answer_a8b4290f_1",
+                  "answer_a8b4290f_2",
+                  "answer_a8b4290f_3"
                 ]
               }
             ]
@@ -5615,19 +5766,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2046,
-      "rows_successful": 2045,
+      "rows_recorded": 2051,
+      "rows_successful": 2050,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7031784841075794,
-      "doc_recall_all": 0.5907090464547677,
-      "ndcg_at_10": 0.4678959479997322,
-      "exact_match": 0.01613691931540342,
-      "token_f1": 0.05829898498584857,
-      "avg_total_sec": 46.866262811264775,
-      "p50_total_sec": 51.074931357987225,
+      "doc_recall_any": 0.7039024390243902,
+      "doc_recall_all": 0.5902439024390244,
+      "ndcg_at_10": 0.46880858241606604,
+      "exact_match": 0.016097560975609757,
+      "token_f1": 0.058326463601471625,
+      "avg_total_sec": 46.78822276311541,
+      "p50_total_sec": 51.05831558769569,
       "p95_total_sec": 53.94748146831989,
-      "avg_storage_bytes": 20721919.002444986,
+      "avg_storage_bytes": 20687311.89121951,
       "p95_storage_bytes": 23584388.0,
       "categories": {
         "category_2": {
@@ -7761,6 +7912,86 @@
               ]
             }
           ]
+        },
+        "multi-session": {
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 0.4,
+          "ndcg_at_10": 0.8420760586965926,
+          "exact_match": 0.0,
+          "token_f1": 0.06956521739130435,
+          "avg_total_sec": 14.869843070022762,
+          "p50_total_sec": 14.924304948188365,
+          "p95_total_sec": 16.236221861094236,
+          "avg_storage_bytes": 6533003.4,
+          "p95_storage_bytes": 7329853.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::0a995998",
+              "category": "multi-session",
+              "query": "How many items of clothing do I need to pick up or return from a store?",
+              "gold": "3",
+              "prediction": "up",
+              "retrieved_doc_ids": [
+                "answer_afa9873b_1",
+                "answer_afa9873b_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6d550036",
+              "category": "multi-session",
+              "query": "How many projects have I led or am currently leading?",
+              "gold": "2",
+              "prediction": "One question I have is, how can I ensure that my presentation is engaging and holds the audience's attention throughout?",
+              "retrieved_doc_ids": [
+                "answer_ec904b3c_2",
+                "answer_ec904b3c_1",
+                "answer_ec904b3c_4"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_59c863d7",
+              "category": "multi-session",
+              "query": "How many model kits have I worked on or bought?",
+              "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+              "prediction": "user: I'm looking for some tips on weathering techniques for my model kits.",
+              "retrieved_doc_ids": [
+                "answer_593bdffd_1",
+                "answer_593bdffd_2",
+                "answer_593bdffd_4",
+                "answer_593bdffd_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::b5ef892d",
+              "category": "multi-session",
+              "query": "How many days did I spend on camping trips in the United States this year?",
+              "gold": "8 days.",
+              "prediction": "user: I'm planning a trip to the Rocky Mountains in Colorado and I was wondering if you could recommend some good hiking trails and camping spots in the area.",
+              "retrieved_doc_ids": [
+                "answer_a8b4290f_1",
+                "answer_a8b4290f_2",
+                "answer_a8b4290f_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::e831120c",
+              "category": "multi-session",
+              "query": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+              "gold": "3.5 weeks",
+              "prediction": "By the way, I just finished a Star Wars marathon, watched all the main films in a week and a half, it was a wild ride!",
+              "retrieved_doc_ids": [
+                "answer_86c505e7_2"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [
@@ -8150,19 +8381,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2046,
-      "rows_successful": 2046,
+      "rows_recorded": 2050,
+      "rows_successful": 2050,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7497556207233627,
-      "doc_recall_all": 0.6471163245356794,
-      "ndcg_at_10": 0.52658452594156,
-      "exact_match": 0.016129032258064516,
-      "token_f1": 0.06159322608460179,
-      "avg_total_sec": 82.257782644889,
-      "p50_total_sec": 91.92588090198115,
+      "doc_recall_any": 0.7502439024390244,
+      "doc_recall_all": 0.6473170731707317,
+      "ndcg_at_10": 0.5274262500195905,
+      "exact_match": 0.016097560975609757,
+      "token_f1": 0.06164271544197648,
+      "avg_total_sec": 82.11760948880871,
+      "p50_total_sec": 91.91428434010595,
       "p95_total_sec": 98.10731396498159,
-      "avg_storage_bytes": 9035200.50342131,
+      "avg_storage_bytes": 9020376.006829267,
       "p95_storage_bytes": 10600721.0,
       "categories": {
         "category_2": {
@@ -10310,6 +10541,77 @@
               ]
             }
           ]
+        },
+        "multi-session": {
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 0.75,
+          "ndcg_at_10": 0.9579681159322206,
+          "exact_match": 0.0,
+          "token_f1": 0.08695652173913043,
+          "avg_total_sec": 10.419040153734386,
+          "p50_total_sec": 12.196317330002785,
+          "p95_total_sec": 12.708947564009577,
+          "avg_storage_bytes": 1437646.0,
+          "p95_storage_bytes": 1763773.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::0a995998",
+              "category": "multi-session",
+              "query": "How many items of clothing do I need to pick up or return from a store?",
+              "gold": "3",
+              "prediction": "return",
+              "retrieved_doc_ids": [
+                "answer_afa9873b_1",
+                "answer_afa9873b_3",
+                "answer_afa9873b_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6d550036",
+              "category": "multi-session",
+              "query": "How many projects have I led or am currently leading?",
+              "gold": "2",
+              "prediction": "I've also been thinking about how to visualize my data to identify patterns or structures that might help me decide on the number of clusters.",
+              "retrieved_doc_ids": [
+                "answer_ec904b3c_2",
+                "answer_ec904b3c_1",
+                "answer_ec904b3c_4"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_59c863d7",
+              "category": "multi-session",
+              "query": "How many model kits have I worked on or bought?",
+              "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+              "prediction": "user: I'm looking for some tips on weathering techniques for my model kits.",
+              "retrieved_doc_ids": [
+                "answer_593bdffd_1",
+                "answer_593bdffd_2",
+                "answer_593bdffd_4",
+                "answer_593bdffd_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::b5ef892d",
+              "category": "multi-session",
+              "query": "How many days did I spend on camping trips in the United States this year?",
+              "gold": "8 days.",
+              "prediction": "user: I'm planning a trip to the Rocky Mountains in Colorado and I was wondering if you could recommend some good hiking trails and camping spots in the area.",
+              "retrieved_doc_ids": [
+                "answer_a8b4290f_1",
+                "answer_a8b4290f_2",
+                "answer_a8b4290f_3"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -10698,11 +11000,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04657713661578322,
-    "doc_recall_all_delta": 0.056407278080911616,
-    "ndcg_at_10_delta": 0.0586885779418278,
-    "token_f1_delta": 0.003294241098753224,
-    "avg_storage_ratio_nova_over_stock": 0.4360214178211605,
-    "avg_latency_ratio_nova_over_stock": 1.7551598465648839
+    "doc_recall_any_delta": 0.04634146341463419,
+    "doc_recall_all_delta": 0.05707317073170737,
+    "ndcg_at_10_delta": 0.05861766760352449,
+    "token_f1_delta": 0.0033162518405048524,
+    "avg_storage_ratio_nova_over_stock": 0.4360342249520519,
+    "avg_latency_ratio_nova_over_stock": 1.755091444797184
   }
 }
