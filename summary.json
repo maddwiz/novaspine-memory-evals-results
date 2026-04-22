@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T01:23:47Z",
+  "generated_at": "2026-04-22T01:35:26Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T01:22:02Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T01:34:28Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 140,
+    "current_case_index": 145,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::afdc33df"
+    "current_case_id": "longmemeval_s::1a1907b4"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,19 +7257,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 140,
-        "rows_successful": 118,
+        "rows_recorded": 145,
+        "rows_successful": 123,
         "rows_failed": 22,
         "complete": false,
-        "doc_recall_any": 0.9661016949152542,
-        "doc_recall_all": 0.8135593220338984,
-        "ndcg_at_10": 0.8949491638260937,
-        "exact_match": 0.03389830508474576,
-        "token_f1": 0.10599475894663375,
-        "avg_total_sec": 57.38490214052026,
-        "p50_total_sec": 57.31309747323394,
+        "doc_recall_any": 0.967479674796748,
+        "doc_recall_all": 0.8211382113821138,
+        "ndcg_at_10": 0.8921539112605733,
+        "exact_match": 0.032520325203252036,
+        "token_f1": 0.1099509632321371,
+        "avg_total_sec": 57.38116660187536,
+        "p50_total_sec": 57.323194202035666,
         "p95_total_sec": 59.33261271007359,
-        "avg_storage_bytes": 28069719.79661017,
+        "avg_storage_bytes": 28070086.975609757,
         "p95_storage_bytes": 28904897.0,
         "categories": {
           "single-session-user": {
@@ -7657,20 +7657,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.8978088012057569,
+            "ndcg_at_10": 0.8652529600732727,
             "exact_match": 0.0,
-            "token_f1": 0.20246274393441213,
-            "avg_total_sec": 57.22071648327013,
-            "p50_total_sec": 57.41814044583589,
-            "p95_total_sec": 57.753873525653034,
-            "avg_storage_bytes": 28224913.666666668,
+            "token_f1": 0.20285121685968657,
+            "avg_total_sec": 57.25357621353628,
+            "p50_total_sec": 57.425208459142596,
+            "p95_total_sec": 58.36660146480426,
+            "avg_storage_bytes": 28158476.727272727,
             "p95_storage_bytes": 28665498.0,
             "categories": {},
             "sample_errors": [],
@@ -7744,6 +7744,62 @@
                   "answer_6dc4305e",
                   "ed9dad6c_2",
                   "9f12daa1_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::caf03d32",
+                "category": "single-session-preference",
+                "query": "I've been struggling with my slow cooker recipes. Any advice on getting better results?",
+                "gold": "The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.",
+                "prediction": "Here are some delicious and easy-to-make slow cooker recipes that are vegetarian or vegan:",
+                "retrieved_doc_ids": [
+                  "answer_2fc6aabb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::54026fce",
+                "category": "single-session-preference",
+                "query": "I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+                "gold": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+                "prediction": "user: I'm looking for some suggestions on how to socialize with my colleagues.",
+                "retrieved_doc_ids": [
+                  "answer_f7b22c66",
+                  "ef5d4aa7_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::06f04340",
+                "category": "single-session-preference",
+                "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+                "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+                "prediction": "m trying to plan a family dinner for my mom",
+                "retrieved_doc_ids": [
+                  "91223fd5_1",
+                  "8b156015_2",
+                  "answer_92d5f7cd",
+                  "6e6fbb6b"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6b7dfb22",
+                "category": "single-session-preference",
+                "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+                "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+                "prediction": "user: I've been thinking about selling my paintings online and I was wondering if you could give me some tips on how to take good photos of my artwork.",
+                "retrieved_doc_ids": [
+                  "574df152_1",
+                  "answer_f6502d0f",
+                  "fd418106_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::1a1907b4",
+                "category": "single-session-preference",
+                "query": "I've been thinking about making a cocktail for an upcoming get-together, but I'm not sure which one to choose. Any suggestions?",
+                "gold": "Considering their mixology class background, the user would prefer cocktail suggestions that build upon their existing skills and interests, such as creative variations of classic cocktails or innovative twists on familiar flavors. They might appreciate recommendations that incorporate their experience with refreshing summer drinks like Pimm's Cup. The user would not prefer overly simplistic or basic cocktail recipes, and may not be interested in suggestions that don't take into account their mixology class background.",
+                "prediction": "s Cup with a Twist, but I",
+                "retrieved_doc_ids": [
+                  "answer_719502eb"
                 ]
               }
             ]
@@ -7989,19 +8045,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 140,
-        "rows_successful": 140,
+        "rows_recorded": 144,
+        "rows_successful": 144,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9785714285714285,
-        "doc_recall_all": 0.8714285714285714,
-        "ndcg_at_10": 0.9001999046751405,
-        "exact_match": 0.02142857142857143,
-        "token_f1": 0.07418120780955285,
-        "avg_total_sec": 103.64473926800835,
-        "p50_total_sec": 103.34856950677931,
+        "doc_recall_any": 0.9791666666666666,
+        "doc_recall_all": 0.875,
+        "ndcg_at_10": 0.900409141722855,
+        "exact_match": 0.020833333333333332,
+        "token_f1": 0.07414669121073313,
+        "avg_total_sec": 103.62006466492636,
+        "p50_total_sec": 103.29132494563237,
         "p95_total_sec": 109.51527576707304,
-        "avg_storage_bytes": 11250454.82857143,
+        "avg_storage_bytes": 11244335.611111112,
         "p95_storage_bytes": 12052605.0,
         "categories": {
           "single-session-user": {
@@ -8420,21 +8476,21 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.8827007889556063,
+            "ndcg_at_10": 0.891044672101359,
             "exact_match": 0.0,
-            "token_f1": 0.10578822074205112,
-            "avg_total_sec": 104.192878228263,
-            "p50_total_sec": 105.91060280799866,
-            "p95_total_sec": 109.0434627016075,
-            "avg_storage_bytes": 11136367.5,
-            "p95_storage_bytes": 11440537.0,
+            "token_f1": 0.0948383505787151,
+            "avg_total_sec": 103.71407000452746,
+            "p50_total_sec": 103.1912325299345,
+            "p95_total_sec": 107.35144445300102,
+            "avg_storage_bytes": 11100966.0,
+            "p95_storage_bytes": 11432597.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -8545,6 +8601,60 @@
                   "22f9f163_3",
                   "e58109ed_1",
                   "0b0bc8ae_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::caf03d32",
+                "category": "single-session-preference",
+                "query": "I've been struggling with my slow cooker recipes. Any advice on getting better results?",
+                "gold": "The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.",
+                "prediction": "I've been wanting to try more recipes with it.",
+                "retrieved_doc_ids": [
+                  "answer_2fc6aabb",
+                  "sharegpt_3D7Qpuq_14",
+                  "eb0d8dc1_6"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::54026fce",
+                "category": "single-session-preference",
+                "query": "I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+                "gold": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+                "prediction": "ve been thinking about getting my watch battery replaced, as I haven",
+                "retrieved_doc_ids": [
+                  "answer_f7b22c66",
+                  "fab585c2_1",
+                  "ef5d4aa7_1",
+                  "ultrachat_166270",
+                  "670c49e6"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::06f04340",
+                "category": "single-session-preference",
+                "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+                "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+                "prediction": "**Minty Yogurt Sauce**: Mix mint leaves with yogurt, cucumber, garlic, and dill for a refreshing sauce to serve with grilled meats or as a dip.",
+                "retrieved_doc_ids": [
+                  "91223fd5_1",
+                  "answer_92d5f7cd",
+                  "8b156015_2",
+                  "de1f4aec_2",
+                  "66bfa1db"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6b7dfb22",
+                "category": "single-session-preference",
+                "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+                "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+                "prediction": "ve been feeling really disconnected from my social circle lately and I",
+                "retrieved_doc_ids": [
+                  "answer_f6502d0f",
+                  "574df152_1",
+                  "377f8fd9_1",
+                  "9ee69ca6_3",
+                  "009c1517_1"
                 ]
               }
             ]
@@ -8813,19 +8923,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2626,
-      "rows_successful": 2601,
+      "rows_recorded": 2631,
+      "rows_successful": 2606,
       "rows_failed": 25,
       "complete": false,
-      "doc_recall_any": 0.7612456747404844,
-      "doc_recall_all": 0.6485966935793925,
-      "ndcg_at_10": 0.5674960892123511,
-      "exact_match": 0.02191464821222607,
-      "token_f1": 0.0688489911442604,
-      "avg_total_sec": 41.684026653529635,
-      "p50_total_sec": 49.144147366750985,
-      "p95_total_sec": 55.21063620503992,
-      "avg_storage_bytes": 18492437.614379086,
+      "doc_recall_any": 0.7617037605525709,
+      "doc_recall_all": 0.649270913277053,
+      "ndcg_at_10": 0.5679924243265143,
+      "exact_match": 0.021872601688411358,
+      "token_f1": 0.06910698882888386,
+      "avg_total_sec": 41.71397481399841,
+      "p50_total_sec": 49.145711372140795,
+      "p95_total_sec": 55.31600050907582,
+      "avg_storage_bytes": 18510830.39025326,
       "p95_storage_bytes": 23600772.0,
       "categories": {
         "category_2": {
@@ -11374,21 +11484,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 36,
-          "rows_recorded": 36,
-          "rows_successful": 36,
+          "expected_total": 41,
+          "rows_recorded": 41,
+          "rows_successful": 41,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9722222222222222,
-          "doc_recall_all": 0.9722222222222222,
-          "ndcg_at_10": 0.955190355756515,
+          "doc_recall_any": 0.975609756097561,
+          "doc_recall_all": 0.975609756097561,
+          "ndcg_at_10": 0.9394581112391707,
           "exact_match": 0.0,
-          "token_f1": 0.2094159142284718,
-          "avg_total_sec": 19.984036409632406,
-          "p50_total_sec": 12.524441180750728,
-          "p95_total_sec": 57.425208459142596,
-          "avg_storage_bytes": 9000206.444444444,
-          "p95_storage_bytes": 28373264.0,
+          "token_f1": 0.20867219107500157,
+          "avg_total_sec": 24.53391098039134,
+          "p50_total_sec": 12.530471666250378,
+          "p95_total_sec": 57.661903207190335,
+          "avg_storage_bytes": 11326858.390243903,
+          "p95_storage_bytes": 28417063.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -12304,20 +12414,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2626,
-      "rows_successful": 2626,
+      "rows_recorded": 2630,
+      "rows_successful": 2630,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8038842345773038,
-      "doc_recall_all": 0.714013709063214,
-      "ndcg_at_10": 0.6249181241367366,
-      "exact_match": 0.021706016755521706,
-      "token_f1": 0.06932500337947617,
-      "avg_total_sec": 70.48795670860693,
-      "p50_total_sec": 86.86806580377743,
-      "p95_total_sec": 100.78909266926348,
-      "avg_storage_bytes": 7781833.0434120335,
-      "p95_storage_bytes": 10629393.0,
+      "doc_recall_any": 0.8041825095057035,
+      "doc_recall_all": 0.714448669201521,
+      "ndcg_at_10": 0.6253482599759095,
+      "exact_match": 0.02167300380228137,
+      "token_f1": 0.0693304993595105,
+      "avg_total_sec": 70.53703427035362,
+      "p50_total_sec": 86.88810573937371,
+      "p95_total_sec": 100.96019245078787,
+      "avg_storage_bytes": 7786773.469201521,
+      "p95_storage_bytes": 10681517.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14801,20 +14911,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 38,
-          "rows_recorded": 38,
-          "rows_successful": 38,
+          "expected_total": 42,
+          "rows_recorded": 42,
+          "rows_successful": 42,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
-          "ndcg_at_10": 0.9753054292538119,
+          "ndcg_at_10": 0.9688699063146741,
           "exact_match": 0.0,
-          "token_f1": 0.1703625783811083,
-          "avg_total_sec": 24.88608775542755,
-          "p50_total_sec": 3.8816442801617086,
+          "token_f1": 0.16108410522595923,
+          "avg_total_sec": 32.30231306986839,
+          "p50_total_sec": 4.0156414858065546,
           "p95_total_sec": 106.60717508243397,
-          "avg_storage_bytes": 2895686.3157894737,
+          "avg_storage_bytes": 3670398.380952381,
           "p95_storage_bytes": 11403997.0,
           "categories": {},
           "sample_errors": [],
@@ -15643,11 +15753,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04263855983681941,
-    "doc_recall_all_delta": 0.0654170154838215,
-    "ndcg_at_10_delta": 0.05742203492438558,
-    "token_f1_delta": 0.0004760122352157753,
-    "avg_storage_ratio_nova_over_stock": 0.4208116423419023,
-    "avg_latency_ratio_nova_over_stock": 1.6910064206246327
+    "doc_recall_any_delta": 0.04247874895313253,
+    "doc_recall_all_delta": 0.06517775592446795,
+    "ndcg_at_10_delta": 0.05735583564939517,
+    "token_f1_delta": 0.00022351053062663606,
+    "avg_storage_ratio_nova_over_stock": 0.42066040826032247,
+    "avg_latency_ratio_nova_over_stock": 1.690968903943499
   }
 }
