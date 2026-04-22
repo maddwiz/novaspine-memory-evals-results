@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T12:36:37Z",
+  "generated_at": "2026-04-22T12:47:37Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T12:34:52Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T12:46:40Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 395,
+    "current_case_index": 400,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::01493427"
+    "current_case_id": "longmemeval_s::7a87bd0c"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,19 +7257,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 395,
-        "rows_successful": 343,
-        "rows_failed": 52,
+        "rows_recorded": 400,
+        "rows_successful": 347,
+        "rows_failed": 53,
         "complete": false,
-        "doc_recall_any": 0.9708454810495627,
-        "doc_recall_all": 0.8104956268221575,
-        "ndcg_at_10": 0.8822418001703052,
-        "exact_match": 0.061224489795918366,
-        "token_f1": 0.11431960228456141,
-        "avg_total_sec": 57.279269542551866,
-        "p50_total_sec": 57.11360106989741,
+        "doc_recall_any": 0.9711815561959655,
+        "doc_recall_all": 0.8126801152737753,
+        "ndcg_at_10": 0.8835992433960077,
+        "exact_match": 0.06051873198847262,
+        "token_f1": 0.11372225816600738,
+        "avg_total_sec": 57.28071441117175,
+        "p50_total_sec": 57.14036695798859,
         "p95_total_sec": 59.85712923575193,
-        "avg_storage_bytes": 28038745.41399417,
+        "avg_storage_bytes": 28039430.043227665,
         "p95_storage_bytes": 29039157.0,
         "categories": {
           "single-session-user": {
@@ -8068,20 +8068,20 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 24,
-            "rows_recorded": 24,
-            "rows_successful": 24,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.9583333333333334,
-            "ndcg_at_10": 0.9644172989449626,
-            "exact_match": 0.20833333333333334,
-            "token_f1": 0.2284115025466893,
-            "avg_total_sec": 56.97834709162513,
+            "doc_recall_all": 0.9642857142857143,
+            "ndcg_at_10": 0.9695005419528251,
+            "exact_match": 0.17857142857142858,
+            "token_f1": 0.20470985932573368,
+            "avg_total_sec": 57.03924206358248,
             "p50_total_sec": 57.455722854007035,
             "p95_total_sec": 59.25515552191064,
-            "avg_storage_bytes": 27952709.083333332,
+            "avg_storage_bytes": 27973484.5,
             "p95_storage_bytes": 29112007.0,
             "categories": {},
             "sample_errors": [],
@@ -8560,19 +8560,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 395,
-        "rows_successful": 395,
+        "rows_recorded": 399,
+        "rows_successful": 399,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.979746835443038,
-        "doc_recall_all": 0.8810126582278481,
-        "ndcg_at_10": 0.8973434232284933,
-        "exact_match": 0.043037974683544304,
-        "token_f1": 0.07892946086105247,
-        "avg_total_sec": 103.31918276343966,
-        "p50_total_sec": 102.88469914067537,
-        "p95_total_sec": 110.25397391524166,
-        "avg_storage_bytes": 11241767.389873417,
+        "doc_recall_any": 0.9774436090225563,
+        "doc_recall_all": 0.8796992481203008,
+        "ndcg_at_10": 0.8958662961785836,
+        "exact_match": 0.042606516290726815,
+        "token_f1": 0.07813818807046548,
+        "avg_total_sec": 103.31055636109112,
+        "p50_total_sec": 102.87845970597118,
+        "p95_total_sec": 110.36121166404337,
+        "avg_storage_bytes": 11241050.293233084,
         "p95_storage_bytes": 12053253.0,
         "categories": {
           "single-session-user": {
@@ -9429,20 +9429,20 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 29,
-            "rows_recorded": 29,
-            "rows_successful": 29,
+            "expected_total": 33,
+            "rows_recorded": 33,
+            "rows_successful": 33,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9655172413793104,
-            "doc_recall_all": 0.896551724137931,
-            "ndcg_at_10": 0.9242409083906697,
-            "exact_match": 0.13793103448275862,
-            "token_f1": 0.16384209968748345,
-            "avg_total_sec": 103.06946991881806,
-            "p50_total_sec": 104.25407524220645,
+            "doc_recall_any": 0.9393939393939394,
+            "doc_recall_all": 0.8787878787878788,
+            "ndcg_at_10": 0.9031207982827097,
+            "exact_match": 0.12121212121212122,
+            "token_f1": 0.14398245124051576,
+            "avg_total_sec": 102.99543709583072,
+            "p50_total_sec": 104.10626243799925,
             "p95_total_sec": 107.28912074584514,
-            "avg_storage_bytes": 11226597.27586207,
+            "avg_storage_bytes": 11219765.727272727,
             "p95_storage_bytes": 11868501.0,
             "categories": {},
             "sample_errors": [],
@@ -9459,6 +9459,20 @@
                 ],
                 "retrieved_doc_ids": [
                   "a4b136d1_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::2133c1b5",
+                "category": "knowledge-update",
+                "query": "How long have I been living in my current apartment in Harajuku?",
+                "gold": "3 months",
+                "prediction": "User location your Math",
+                "expected_doc_ids": [
+                  "answer_52382508_1",
+                  "answer_52382508_2"
+                ],
+                "retrieved_doc_ids": [
+                  "sharegpt_WZhGKMr_0"
                 ]
               }
             ],
@@ -9748,6 +9762,20 @@
             "retrieved_doc_ids": [
               "a4b136d1_2"
             ]
+          },
+          {
+            "case_id": "longmemeval_s::2133c1b5",
+            "category": "knowledge-update",
+            "query": "How long have I been living in my current apartment in Harajuku?",
+            "gold": "3 months",
+            "prediction": "User location your Math",
+            "expected_doc_ids": [
+              "answer_52382508_1",
+              "answer_52382508_2"
+            ],
+            "retrieved_doc_ids": [
+              "sharegpt_WZhGKMr_0"
+            ]
           }
         ],
         "sample_successes": [
@@ -9967,20 +9995,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2881,
-      "rows_successful": 2826,
-      "rows_failed": 55,
+      "rows_recorded": 2886,
+      "rows_successful": 2830,
+      "rows_failed": 56,
       "complete": false,
-      "doc_recall_any": 0.778131634819533,
-      "doc_recall_all": 0.6613588110403397,
-      "ndcg_at_10": 0.592024863470722,
-      "exact_match": 0.026185421089879687,
-      "token_f1": 0.07281686765538678,
-      "avg_total_sec": 42.92127541625778,
-      "p50_total_sec": 50.121733707841486,
-      "p95_total_sec": 57.455722854007035,
-      "avg_storage_bytes": 19251200.628450107,
-      "p95_storage_bytes": 28136019.0,
+      "doc_recall_any": 0.7784452296819788,
+      "doc_recall_all": 0.6618374558303887,
+      "ndcg_at_10": 0.592601506773237,
+      "exact_match": 0.026148409893992933,
+      "token_f1": 0.07280228551029083,
+      "avg_total_sec": 42.94174656322466,
+      "p50_total_sec": 50.15289686108008,
+      "p95_total_sec": 57.499797663185745,
+      "avg_storage_bytes": 19263705.132155478,
+      "p95_storage_bytes": 28154575.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -12452,21 +12480,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 101,
-          "rows_recorded": 101,
-          "rows_successful": 101,
+          "expected_total": 105,
+          "rows_recorded": 105,
+          "rows_successful": 105,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9801980198019802,
-          "ndcg_at_10": 0.9877144788855897,
-          "exact_match": 0.12871287128712872,
-          "token_f1": 0.18592957920708744,
-          "avg_total_sec": 23.606524001880743,
-          "p50_total_sec": 13.2750309468247,
+          "doc_recall_all": 0.9809523809523809,
+          "ndcg_at_10": 0.9881824987375672,
+          "exact_match": 0.12380952380952381,
+          "token_f1": 0.1812274999991984,
+          "avg_total_sec": 24.894070207345344,
+          "p50_total_sec": 13.322512770071626,
           "p95_total_sec": 58.40109215211123,
-          "avg_storage_bytes": 10919311.02970297,
-          "p95_storage_bytes": 28440595.0,
+          "avg_storage_bytes": 11573742.495238096,
+          "p95_storage_bytes": 28454045.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -13549,20 +13577,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2881,
-      "rows_successful": 2881,
+      "rows_recorded": 2885,
+      "rows_successful": 2885,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8195071155848663,
-      "doc_recall_all": 0.7292606733772995,
-      "ndcg_at_10": 0.6488919331842435,
-      "exact_match": 0.02464422075668171,
-      "token_f1": 0.07040584061828628,
-      "avg_total_sec": 73.37805901105146,
-      "p50_total_sec": 90.84843930602074,
-      "p95_total_sec": 104.25907672708854,
-      "avg_storage_bytes": 8087652.903505727,
-      "p95_storage_bytes": 11383445.0,
+      "doc_recall_any": 0.8194107452339688,
+      "doc_recall_all": 0.7292894280762565,
+      "ndcg_at_10": 0.6490321176789621,
+      "exact_match": 0.02461005199306759,
+      "token_f1": 0.0703082242014845,
+      "avg_total_sec": 73.41837878937815,
+      "p50_total_sec": 90.97064333222806,
+      "p95_total_sec": 104.26356061315164,
+      "avg_storage_bytes": 8091926.850259965,
+      "p95_storage_bytes": 11387649.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15942,20 +15970,20 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 107,
-          "rows_recorded": 107,
-          "rows_successful": 107,
+          "expected_total": 111,
+          "rows_recorded": 111,
+          "rows_successful": 111,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9906542056074766,
-          "doc_recall_all": 0.9719626168224299,
-          "ndcg_at_10": 0.9794671620871909,
-          "exact_match": 0.12149532710280374,
-          "token_f1": 0.16264019566324142,
-          "avg_total_sec": 32.01509357757309,
-          "p50_total_sec": 5.943114046007395,
+          "doc_recall_any": 0.9819819819819819,
+          "doc_recall_all": 0.963963963963964,
+          "ndcg_at_10": 0.9711980751651299,
+          "exact_match": 0.11711711711711711,
+          "token_f1": 0.1567792877114129,
+          "avg_total_sec": 34.55360188573884,
+          "p50_total_sec": 5.969515777658671,
           "p95_total_sec": 105.87497023399919,
-          "avg_storage_bytes": 3697835.2429906544,
+          "avg_storage_bytes": 3967110.981981982,
           "p95_storage_bytes": 11617601.0,
           "categories": {},
           "sample_errors": [],
@@ -15972,6 +16000,20 @@
               ],
               "retrieved_doc_ids": [
                 "a4b136d1_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::2133c1b5",
+              "category": "knowledge-update",
+              "query": "How long have I been living in my current apartment in Harajuku?",
+              "gold": "3 months",
+              "prediction": "User location your Math",
+              "expected_doc_ids": [
+                "answer_52382508_1",
+                "answer_52382508_2"
+              ],
+              "retrieved_doc_ids": [
+                "sharegpt_WZhGKMr_0"
               ]
             }
           ],
@@ -16971,11 +17013,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04137548076533337,
-    "doc_recall_all_delta": 0.06790186233695983,
-    "ndcg_at_10_delta": 0.05686706971352151,
-    "token_f1_delta": -0.0024110270371004994,
-    "avg_storage_ratio_nova_over_stock": 0.42011161067811564,
-    "avg_latency_ratio_nova_over_stock": 1.7095964250693543
+    "doc_recall_any_delta": 0.04096551555199002,
+    "doc_recall_all_delta": 0.06745197224586785,
+    "ndcg_at_10_delta": 0.0564306109057251,
+    "token_f1_delta": -0.0024940613088063335,
+    "avg_storage_ratio_nova_over_stock": 0.4200607720449744,
+    "avg_latency_ratio_nova_over_stock": 1.709720369228151
   }
 }
