@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T15:38:54Z",
+  "generated_at": "2026-04-22T15:40:38Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T15:37:57Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-22T15:38:55Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_s",
     "current_case_index": 465,
     "current_case_total": 500,
@@ -8717,19 +8717,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 464,
-        "rows_successful": 464,
+        "rows_recorded": 465,
+        "rows_successful": 465,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9698275862068966,
-        "doc_recall_all": 0.8836206896551724,
-        "ndcg_at_10": 0.897325099344621,
-        "exact_match": 0.04956896551724138,
-        "token_f1": 0.08852508008985838,
-        "avg_total_sec": 103.2463251609869,
+        "doc_recall_any": 0.967741935483871,
+        "doc_recall_all": 0.8817204301075269,
+        "ndcg_at_10": 0.895395367948181,
+        "exact_match": 0.04946236559139785,
+        "token_f1": 0.08833470357353611,
+        "avg_total_sec": 103.24685580952654,
         "p50_total_sec": 102.88469914067537,
         "p95_total_sec": 110.25397391524166,
-        "avg_storage_bytes": 11231433.26724138,
+        "avg_storage_bytes": 11230886.341935484,
         "p95_storage_bytes": 12036257.0,
         "categories": {
           "single-session-user": {
@@ -9823,20 +9823,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 20,
-            "rows_recorded": 20,
-            "rows_successful": 20,
+            "expected_total": 21,
+            "rows_recorded": 21,
+            "rows_successful": 21,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.85,
-            "doc_recall_all": 0.85,
-            "ndcg_at_10": 0.85,
-            "exact_match": 0.1,
-            "token_f1": 0.16868949530823402,
-            "avg_total_sec": 104.12129750482272,
-            "p50_total_sec": 103.70943497493863,
+            "doc_recall_any": 0.8095238095238095,
+            "doc_recall_all": 0.8095238095238095,
+            "ndcg_at_10": 0.8095238095238095,
+            "exact_match": 0.09523809523809523,
+            "token_f1": 0.1606566621983181,
+            "avg_total_sec": 104.09138222992243,
+            "p50_total_sec": 103.49307673191652,
             "p95_total_sec": 109.97711450513452,
-            "avg_storage_bytes": 11236378.0,
+            "avg_storage_bytes": 11224032.047619049,
             "p95_storage_bytes": 11834833.0,
             "categories": {},
             "sample_errors": [],
@@ -9886,6 +9886,19 @@
                   "sharegpt_efPCiqy_127",
                   "sharegpt_wG5XsUW_93",
                   "8bd3814a_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::8aef76bc",
+                "category": "single-session-assistant",
+                "query": "I'm going back to our previous conversation about DIY home decor projects using recycled materials. Can you remind me what sealant you recommended for the newspaper flower vase?",
+                "gold": "Mod Podge or another sealant",
+                "prediction": "User location previous/historical: mood for more, area of Ocean; current: the",
+                "expected_doc_ids": [
+                  "answer_ultrachat_563222"
+                ],
+                "retrieved_doc_ids": [
+                  "44b1595a"
                 ]
               }
             ],
@@ -14041,20 +14054,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2950,
-      "rows_successful": 2950,
+      "rows_recorded": 2951,
+      "rows_successful": 2951,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8216949152542373,
-      "doc_recall_all": 0.7332203389830508,
-      "ndcg_at_10": 0.6547002892964254,
-      "exact_match": 0.02610169491525424,
-      "token_f1": 0.07211448370944451,
-      "avg_total_sec": 74.0669171843995,
-      "p50_total_sec": 92.01619290094823,
-      "p95_total_sec": 104.63347386708483,
-      "avg_storage_bytes": 8159801.671864407,
-      "p95_storage_bytes": 11432993.0,
+      "doc_recall_any": 0.8214164689935615,
+      "doc_recall_all": 0.7329718739410369,
+      "ndcg_at_10": 0.6544784322007642,
+      "exact_match": 0.026092849881396138,
+      "token_f1": 0.07209004640557821,
+      "avg_total_sec": 74.07688877353793,
+      "p50_total_sec": 92.02293474413455,
+      "p95_total_sec": 104.62106139585376,
+      "avg_storage_bytes": 8160756.369027448,
+      "p95_storage_bytes": 11432597.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -16805,20 +16818,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 76,
-          "rows_recorded": 76,
-          "rows_successful": 76,
+          "expected_total": 77,
+          "rows_recorded": 77,
+          "rows_successful": 77,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9605263157894737,
-          "doc_recall_all": 0.9605263157894737,
-          "ndcg_at_10": 0.9605263157894737,
-          "exact_match": 0.05263157894736842,
-          "token_f1": 0.1488709593138907,
-          "avg_total_sec": 28.77145466208458,
+          "doc_recall_any": 0.948051948051948,
+          "doc_recall_all": 0.948051948051948,
+          "ndcg_at_10": 0.948051948051948,
+          "exact_match": 0.05194805194805195,
+          "token_f1": 0.1469375702318921,
+          "avg_total_sec": 29.741865338316163,
           "p50_total_sec": 2.2797283958643675,
           "p95_total_sec": 106.51670011784881,
-          "avg_storage_bytes": 3317631.263157895,
+          "avg_storage_bytes": 3417105.051948052,
           "p95_storage_bytes": 11658885.0,
           "categories": {},
           "sample_errors": [],
@@ -16868,6 +16881,19 @@
                 "sharegpt_efPCiqy_127",
                 "sharegpt_wG5XsUW_93",
                 "8bd3814a_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::8aef76bc",
+              "category": "single-session-assistant",
+              "query": "I'm going back to our previous conversation about DIY home decor projects using recycled materials. Can you remind me what sealant you recommended for the newspaper flower vase?",
+              "gold": "Mod Podge or another sealant",
+              "prediction": "User location previous/historical: mood for more, area of Ocean; current: the",
+              "expected_doc_ids": [
+                "answer_ultrachat_563222"
+              ],
+              "retrieved_doc_ids": [
+                "44b1595a"
               ]
             }
           ],
@@ -17553,11 +17579,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.038800178412132014,
-    "doc_recall_all_delta": 0.06493779050659654,
-    "ndcg_at_10_delta": 0.05418486043430926,
-    "token_f1_delta": -0.00184007306830479,
-    "avg_storage_ratio_nova_over_stock": 0.4197783841096618,
-    "avg_latency_ratio_nova_over_stock": 1.7135282960745253
+    "doc_recall_any_delta": 0.038521732151456156,
+    "doc_recall_all_delta": 0.06468932546458261,
+    "ndcg_at_10_delta": 0.05396300333864801,
+    "token_f1_delta": -0.0018645103721710854,
+    "avg_storage_ratio_nova_over_stock": 0.41982749819950504,
+    "avg_latency_ratio_nova_over_stock": 1.713758987465433
   }
 }
