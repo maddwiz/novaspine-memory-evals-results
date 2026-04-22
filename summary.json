@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T15:00:33Z",
+  "generated_at": "2026-04-22T15:12:25Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T14:58:52Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T15:11:30Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 450,
+    "current_case_index": 455,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::6ae235be"
+    "current_case_id": "longmemeval_s::0e5e2d1a"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,20 +7257,20 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 450,
-        "rows_successful": 391,
+        "rows_recorded": 455,
+        "rows_successful": 396,
         "rows_failed": 59,
         "complete": false,
-        "doc_recall_any": 0.9744245524296675,
-        "doc_recall_all": 0.8312020460358056,
-        "ndcg_at_10": 0.8947192630279939,
-        "exact_match": 0.058823529411764705,
-        "token_f1": 0.1155611710943441,
-        "avg_total_sec": 57.238323330333756,
+        "doc_recall_any": 0.9747474747474747,
+        "doc_recall_all": 0.8333333333333334,
+        "ndcg_at_10": 0.896048565262489,
+        "exact_match": 0.06060606060606061,
+        "token_f1": 0.11698806828471134,
+        "avg_total_sec": 57.24306072887254,
         "p50_total_sec": 57.11360106989741,
-        "p95_total_sec": 59.85712923575193,
-        "avg_storage_bytes": 28022855.084398977,
-        "p95_storage_bytes": 29039157.0,
+        "p95_total_sec": 59.87091523082927,
+        "avg_storage_bytes": 28026518.33080808,
+        "p95_storage_bytes": 29064818.0,
         "categories": {
           "single-session-user": {
             "expected_total": 59,
@@ -8229,21 +8229,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.0291005291005291,
-            "avg_total_sec": 58.17526853829622,
-            "p50_total_sec": 57.608304681722075,
-            "p95_total_sec": 61.08487844001502,
-            "avg_storage_bytes": 28257926.8,
-            "p95_storage_bytes": 29093863.0,
+            "exact_match": 0.1,
+            "token_f1": 0.12883597883597883,
+            "avg_total_sec": 57.89439691645093,
+            "p50_total_sec": 57.07714788382873,
+            "p95_total_sec": 62.375443411991,
+            "avg_storage_bytes": 28285455.5,
+            "p95_storage_bytes": 29455241.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -8301,6 +8301,63 @@
                 "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
                 "retrieved_doc_ids": [
                   "answer_sharegpt_IUWQYGQ_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "Enjoy your trip to Tokyo, and I hope you have a fantastic time exploring Shinjuku!",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515",
+                  "24f78a31_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "user: Brainstorm ideas for work from home jobs for seniors",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0",
+                  "sharegpt_ELyN256_27",
+                  "sharegpt_64onasJ_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "sexual compulsions.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0",
+                  "44202c74_2",
+                  "0bbd7094_1",
+                  "c60d5c8a_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "doc martin",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::0e5e2d1a",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+                "gold": "38 subjects",
+                "prediction": "15",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_113156",
+                  "c756c34e"
                 ]
               }
             ]
@@ -8637,20 +8694,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 450,
-        "rows_successful": 450,
+        "rows_recorded": 454,
+        "rows_successful": 454,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9755555555555555,
-        "doc_recall_all": 0.8866666666666667,
-        "ndcg_at_10": 0.9007974357686759,
-        "exact_match": 0.04666666666666667,
-        "token_f1": 0.08423046802125972,
-        "avg_total_sec": 103.2281272801612,
-        "p50_total_sec": 102.83602102613077,
+        "doc_recall_any": 0.973568281938326,
+        "doc_recall_all": 0.8854625550660793,
+        "ndcg_at_10": 0.8994688239997889,
+        "exact_match": 0.048458149779735685,
+        "token_f1": 0.08634909933341794,
+        "avg_total_sec": 103.24800149376283,
+        "p50_total_sec": 102.83794113621116,
         "p95_total_sec": 110.25397391524166,
-        "avg_storage_bytes": 11231450.208888888,
-        "p95_storage_bytes": 12048977.0,
+        "avg_storage_bytes": 11231820.444933921,
+        "p95_storage_bytes": 12036257.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -9743,24 +9800,38 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.03364389233954451,
-            "avg_total_sec": 104.7980585785117,
+            "doc_recall_any": 0.9,
+            "doc_recall_all": 0.9,
+            "ndcg_at_10": 0.9,
+            "exact_match": 0.1,
+            "token_f1": 0.1500643841842145,
+            "avg_total_sec": 105.07237535668537,
             "p50_total_sec": 102.9622177737765,
-            "p95_total_sec": 109.97711450513452,
-            "avg_storage_bytes": 11249186.333333334,
+            "p95_total_sec": 113.14757501659915,
+            "avg_storage_bytes": 11258900.6,
             "p95_storage_bytes": 11921605.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "User location previous/historical: mood for more; current: city of Oakdale",
+                "expected_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0"
+                ],
+                "retrieved_doc_ids": [
+                  "fa68c9d6_1"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_s::7161e7e2",
@@ -9844,6 +9915,48 @@
                   "cc5a6057_1",
                   "31cde680",
                   "sharegpt_TVK4gjw_24"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515",
+                  "4dd1ba8d_2",
+                  "24f78a31_2",
+                  "2fa50779_5",
+                  "64c2b3c8"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "Do you think it's possible to set up a schedule that blocks social media during certain times of the day, but still allows me to access other websites and apps?",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0",
+                  "c60d5c8a_1",
+                  "de293134_1",
+                  "sharegpt_iTrNGx4_13",
+                  "44202c74_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "doc martin",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0",
+                  "fbfda981",
+                  "22aa7cca_4",
+                  "debc34d7_1",
+                  "a07f9d5c_1"
                 ]
               }
             ]
@@ -10014,6 +10127,19 @@
             ],
             "retrieved_doc_ids": [
               "8bfbebd5"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::1903aded",
+            "category": "single-session-assistant",
+            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "gold": "Transcriptionist.",
+            "prediction": "User location previous/historical: mood for more; current: city of Oakdale",
+            "expected_doc_ids": [
+              "answer_sharegpt_hA7AkP3_0"
+            ],
+            "retrieved_doc_ids": [
+              "fa68c9d6_1"
             ]
           }
         ],
@@ -10234,20 +10360,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2936,
-      "rows_successful": 2874,
+      "rows_recorded": 2941,
+      "rows_successful": 2879,
       "rows_failed": 62,
       "complete": false,
-      "doc_recall_any": 0.7818371607515657,
-      "doc_recall_all": 0.6666666666666666,
-      "ndcg_at_10": 0.5985694358224745,
-      "exact_match": 0.026443980514961725,
-      "token_f1": 0.07367893608504071,
-      "avg_total_sec": 43.15550427815229,
-      "p50_total_sec": 50.64917377196252,
-      "p95_total_sec": 57.661903207190335,
-      "avg_storage_bytes": 19395803.631524008,
-      "p95_storage_bytes": 28209666.0,
+      "doc_recall_any": 0.7822160472386245,
+      "doc_recall_all": 0.667245571378951,
+      "ndcg_at_10": 0.5992666059582464,
+      "exact_match": 0.02674539770753734,
+      "token_f1": 0.07394794006643424,
+      "avg_total_sec": 43.18061372764249,
+      "p50_total_sec": 50.65979682886973,
+      "p95_total_sec": 57.66715141804889,
+      "avg_storage_bytes": 19411290.22507815,
+      "p95_storage_bytes": 28220879.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13040,21 +13166,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 61,
-          "rows_recorded": 61,
-          "rows_successful": 61,
+          "expected_total": 66,
+          "rows_recorded": 66,
+          "rows_successful": 66,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03278688524590164,
-          "token_f1": 0.09410934054284358,
-          "avg_total_sec": 16.234672555409862,
-          "p50_total_sec": 12.483711646869779,
-          "p95_total_sec": 57.07714788382873,
-          "avg_storage_bytes": 6581956.131147541,
-          "p95_storage_bytes": 27595703.0,
+          "exact_match": 0.045454545454545456,
+          "token_f1": 0.10429586236319092,
+          "avg_total_sec": 19.369434126561057,
+          "p50_total_sec": 12.488703698851168,
+          "p95_total_sec": 57.608304681722075,
+          "avg_storage_bytes": 8228246.136363637,
+          "p95_storage_bytes": 28566398.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -13816,20 +13942,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2936,
-      "rows_successful": 2936,
+      "rows_recorded": 2940,
+      "rows_successful": 2940,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.821866485013624,
-      "doc_recall_all": 0.7329700272479565,
-      "ndcg_at_10": 0.6540755631554683,
-      "exact_match": 0.025544959128065394,
-      "token_f1": 0.07137799740828811,
-      "avg_total_sec": 73.92498913329467,
-      "p50_total_sec": 91.97810515901074,
-      "p95_total_sec": 104.56528632296249,
-      "avg_storage_bytes": 8145157.523841962,
-      "p95_storage_bytes": 11420417.0,
+      "doc_recall_any": 0.8217687074829932,
+      "doc_recall_all": 0.7329931972789115,
+      "ndcg_at_10": 0.6542060725933521,
+      "exact_match": 0.02585034013605442,
+      "token_f1": 0.07172264655732612,
+      "avg_total_sec": 73.96792635967651,
+      "p50_total_sec": 91.99742051679641,
+      "p95_total_sec": 104.5975208892487,
+      "avg_storage_bytes": 8149413.734013606,
+      "p95_storage_bytes": 11420525.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -16580,24 +16706,38 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 62,
-          "rows_recorded": 62,
-          "rows_successful": 62,
+          "expected_total": 66,
+          "rows_recorded": 66,
+          "rows_successful": 66,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 1.0,
-          "ndcg_at_10": 1.0,
-          "exact_match": 0.03225806451612903,
-          "token_f1": 0.13132687670529483,
-          "avg_total_sec": 11.822467027307157,
-          "p50_total_sec": 1.6515358220785856,
-          "p95_total_sec": 102.9622177737765,
-          "avg_storage_bytes": 1530766.677419355,
-          "p95_storage_bytes": 11157733.0,
+          "doc_recall_any": 0.9848484848484849,
+          "doc_recall_all": 0.9848484848484849,
+          "ndcg_at_10": 0.9848484848484849,
+          "exact_match": 0.045454545454545456,
+          "token_f1": 0.14304616429595693,
+          "avg_total_sec": 17.498914511951927,
+          "p50_total_sec": 1.8645976702682674,
+          "p95_total_sec": 106.51670011784881,
+          "avg_storage_bytes": 2121233.6666666665,
+          "p95_storage_bytes": 11469821.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "longmemeval_s::1903aded",
+              "category": "single-session-assistant",
+              "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+              "gold": "Transcriptionist.",
+              "prediction": "User location previous/historical: mood for more; current: city of Oakdale",
+              "expected_doc_ids": [
+                "answer_sharegpt_hA7AkP3_0"
+              ],
+              "retrieved_doc_ids": [
+                "fa68c9d6_1"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::7161e7e2",
@@ -17280,11 +17420,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0400293242620583,
-    "doc_recall_all_delta": 0.06630336058128983,
-    "ndcg_at_10_delta": 0.05550612733299387,
-    "token_f1_delta": -0.0023009386767526008,
-    "avg_storage_ratio_nova_over_stock": 0.41994431778034885,
-    "avg_latency_ratio_nova_over_stock": 1.7129909699773709
+    "doc_recall_any_delta": 0.039552660244368765,
+    "doc_recall_all_delta": 0.06574762589996053,
+    "ndcg_at_10_delta": 0.05493946663510563,
+    "token_f1_delta": -0.00222529350910812,
+    "avg_storage_ratio_nova_over_stock": 0.41982854511572254,
+    "avg_latency_ratio_nova_over_stock": 1.7129892323027642
   }
 }
