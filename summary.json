@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T15:14:03Z",
+  "generated_at": "2026-04-22T15:25:33Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T15:12:26Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T15:24:35Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 455,
+    "current_case_index": 460,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::0e5e2d1a"
+    "current_case_id": "longmemeval_s::488d3006"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,19 +7257,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 455,
-        "rows_successful": 396,
-        "rows_failed": 59,
+        "rows_recorded": 460,
+        "rows_successful": 400,
+        "rows_failed": 60,
         "complete": false,
-        "doc_recall_any": 0.9747474747474747,
-        "doc_recall_all": 0.8333333333333334,
-        "ndcg_at_10": 0.896048565262489,
-        "exact_match": 0.06060606060606061,
-        "token_f1": 0.11698806828471134,
-        "avg_total_sec": 57.24306072887254,
-        "p50_total_sec": 57.11360106989741,
+        "doc_recall_any": 0.975,
+        "doc_recall_all": 0.835,
+        "ndcg_at_10": 0.897088079609864,
+        "exact_match": 0.06,
+        "token_f1": 0.11606818760186423,
+        "avg_total_sec": 57.24951281911461,
+        "p50_total_sec": 57.11518185026944,
         "p95_total_sec": 59.87091523082927,
-        "avg_storage_bytes": 28026518.33080808,
+        "avg_storage_bytes": 28029185.505,
         "p95_storage_bytes": 29064818.0,
         "categories": {
           "single-session-user": {
@@ -8229,21 +8229,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1,
-            "token_f1": 0.12883597883597883,
-            "avg_total_sec": 57.89439691645093,
-            "p50_total_sec": 57.07714788382873,
-            "p95_total_sec": 62.375443411991,
-            "avg_storage_bytes": 28285455.5,
-            "p95_storage_bytes": 29455241.0,
+            "exact_match": 0.07142857142857142,
+            "token_f1": 0.09916855631141346,
+            "avg_total_sec": 57.892646298344644,
+            "p50_total_sec": 57.11518185026944,
+            "p95_total_sec": 61.08487844001502,
+            "avg_storage_bytes": 28287678.42857143,
+            "p95_storage_bytes": 29093863.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -8358,6 +8358,29 @@
                 "retrieved_doc_ids": [
                   "answer_ultrachat_113156",
                   "c756c34e"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::fea54f57",
+                "category": "single-session-assistant",
+                "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+                "gold": "Evolution",
+                "prediction": "user: Which song on the Fifth Album do you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation?",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_187684",
+                  "ultrachat_129340"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::dc439ea3",
+                "category": "single-session-assistant",
+                "query": "I was looking back at our previous conversation about Native American powwows and I was wondering, which traditional game did you say was often performed by skilled dancers at powwows?",
+                "gold": "Hoop Dance",
+                "prediction": "assistant: There are many traditional games that are played during Native American powwows.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_459954",
+                  "49d8a382",
+                  "cb5637b3"
                 ]
               }
             ]
@@ -8694,19 +8717,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 455,
-        "rows_successful": 455,
+        "rows_recorded": 459,
+        "rows_successful": 459,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9714285714285714,
-        "doc_recall_all": 0.8835164835164835,
-        "ndcg_at_10": 0.8974919694415475,
-        "exact_match": 0.04835164835164835,
-        "token_f1": 0.08615932109312473,
-        "avg_total_sec": 103.23446898649928,
-        "p50_total_sec": 102.83794113621116,
+        "doc_recall_any": 0.9694989106753813,
+        "doc_recall_all": 0.8823529411764706,
+        "ndcg_at_10": 0.8962066363745188,
+        "exact_match": 0.04793028322440087,
+        "token_f1": 0.08594983866199694,
+        "avg_total_sec": 103.25252562205354,
+        "p50_total_sec": 102.88469914067537,
         "p95_total_sec": 110.25397391524166,
-        "avg_storage_bytes": 11229806.389010988,
+        "avg_storage_bytes": 11231144.503267974,
         "p95_storage_bytes": 12036257.0,
         "categories": {
           "single-session-user": {
@@ -9800,21 +9823,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 11,
-            "rows_recorded": 11,
-            "rows_successful": 11,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8181818181818182,
-            "doc_recall_all": 0.8181818181818182,
-            "ndcg_at_10": 0.8181818181818182,
-            "exact_match": 0.09090909090909091,
-            "token_f1": 0.136422167440195,
-            "avg_total_sec": 104.34676947779107,
-            "p50_total_sec": 102.9622177737765,
-            "p95_total_sec": 113.14757501659915,
-            "avg_storage_bytes": 11173130.090909092,
-            "p95_storage_bytes": 11921605.0,
+            "doc_recall_any": 0.8,
+            "doc_recall_all": 0.8,
+            "ndcg_at_10": 0.8,
+            "exact_match": 0.06666666666666667,
+            "token_f1": 0.1166085793551329,
+            "avg_total_sec": 104.602689061407,
+            "p50_total_sec": 103.70943497493863,
+            "p95_total_sec": 109.97711450513452,
+            "avg_storage_bytes": 11229190.066666666,
+            "p95_storage_bytes": 11834833.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -9846,6 +9869,23 @@
                   "ultrachat_180166",
                   "ultrachat_201585",
                   "sharegpt_DcVIUDF_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::cc539528",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about front-end and back-end development. Can you remind me of the specific back-end programming languages you recommended I learn?",
+                "gold": "I recommended learning Ruby, Python, or PHP as a back-end programming language.",
+                "prediction": "**Digital Literacy:** Basic understanding of digital tools, programming languages, and data analysis will be essential for many jobs.",
+                "expected_doc_ids": [
+                  "answer_ultrachat_374124"
+                ],
+                "retrieved_doc_ids": [
+                  "fb760626",
+                  "18807892_4",
+                  "sharegpt_efPCiqy_127",
+                  "sharegpt_wG5XsUW_93",
+                  "8bd3814a_1"
                 ]
               }
             ],
@@ -9974,6 +10014,48 @@
                   "22aa7cca_4",
                   "debc34d7_1",
                   "a07f9d5c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::fea54f57",
+                "category": "single-session-assistant",
+                "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+                "gold": "Evolution",
+                "prediction": "user: Which song on the Fifth Album do you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation?",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_187684",
+                  "ultrachat_129340",
+                  "0aa99e2e_1",
+                  "712e923c",
+                  "ee659010_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::dc439ea3",
+                "category": "single-session-assistant",
+                "query": "I was looking back at our previous conversation about Native American powwows and I was wondering, which traditional game did you say was often performed by skilled dancers at powwows?",
+                "gold": "Hoop Dance",
+                "prediction": "Hoop Dance - This traditional dance involves intricate movements with multiple hoops, and is often performed by skilled dancers at powwows.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_459954",
+                  "1bfd5a8b_2",
+                  "49d8a382",
+                  "cb5637b3",
+                  "ultrachat_186512"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::18dcd5a5",
+                "category": "single-session-assistant",
+                "query": "I'm going back to our previous chat about the Lost Temple of the Djinn one-shot. Can you remind me how many mummies the party will face in the temple?",
+                "gold": "4",
+                "prediction": "Can you tell me about the types of housing they offer and how they help people get back on their feet?",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hn3IS1q_0",
+                  "sharegpt_d1tE544_5",
+                  "sharegpt_MW0whoh_79",
+                  "c00077f5_2",
+                  "6ea1541e_1"
                 ]
               }
             ]
@@ -10377,20 +10459,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2941,
-      "rows_successful": 2879,
-      "rows_failed": 62,
+      "rows_recorded": 2946,
+      "rows_successful": 2883,
+      "rows_failed": 63,
       "complete": false,
-      "doc_recall_any": 0.7822160472386245,
-      "doc_recall_all": 0.667245571378951,
-      "ndcg_at_10": 0.5992666059582464,
-      "exact_match": 0.02674539770753734,
-      "token_f1": 0.07394794006643424,
-      "avg_total_sec": 43.18061372764249,
-      "p50_total_sec": 50.65979682886973,
-      "p95_total_sec": 57.66715141804889,
-      "avg_storage_bytes": 19411290.22507815,
-      "p95_storage_bytes": 28220879.0,
+      "doc_recall_any": 0.7825182101977107,
+      "doc_recall_all": 0.6677072493929934,
+      "ndcg_at_10": 0.5998226009551826,
+      "exact_match": 0.026708289975719737,
+      "token_f1": 0.0738800275585377,
+      "avg_total_sec": 43.201019771382256,
+      "p50_total_sec": 50.73692306596786,
+      "p95_total_sec": 57.6811355962418,
+      "avg_storage_bytes": 19423613.42386403,
+      "p95_storage_bytes": 28231337.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13183,21 +13265,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 66,
-          "rows_recorded": 66,
-          "rows_successful": 66,
+          "expected_total": 70,
+          "rows_recorded": 70,
+          "rows_successful": 70,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.045454545454545456,
-          "token_f1": 0.10429586236319092,
-          "avg_total_sec": 19.369434126561057,
-          "p50_total_sec": 12.488703698851168,
-          "p95_total_sec": 57.608304681722075,
-          "avg_storage_bytes": 8228246.136363637,
-          "p95_storage_bytes": 28566398.0,
+          "exact_match": 0.04285714285714286,
+          "token_f1": 0.09976467022815144,
+          "avg_total_sec": 21.570510448076362,
+          "p50_total_sec": 12.493148717097938,
+          "p95_total_sec": 59.283799931872636,
+          "avg_storage_bytes": 9374816.971428571,
+          "p95_storage_bytes": 28656694.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -13959,20 +14041,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2941,
-      "rows_successful": 2941,
+      "rows_recorded": 2945,
+      "rows_successful": 2945,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8214892893573614,
-      "doc_recall_all": 0.7327439646378783,
-      "ndcg_at_10": 0.6539836291820657,
-      "exact_match": 0.02584155049302958,
-      "token_f1": 0.07169825939426684,
-      "avg_total_sec": 73.97578857808153,
-      "p50_total_sec": 91.99742051679641,
-      "p95_total_sec": 104.5975208892487,
-      "avg_storage_bytes": 8150150.222033322,
-      "p95_storage_bytes": 11420525.0,
+      "doc_recall_any": 0.8213921901528014,
+      "doc_recall_all": 0.7327674023769101,
+      "ndcg_at_10": 0.6541140419098319,
+      "exact_match": 0.025806451612903226,
+      "token_f1": 0.07168525152021177,
+      "avg_total_sec": 74.01834298125745,
+      "p50_total_sec": 92.00682080769911,
+      "p95_total_sec": 104.61996008595452,
+      "avg_storage_bytes": 8154541.6716468595,
+      "p95_storage_bytes": 11420993.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -16723,21 +16805,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 67,
-          "rows_recorded": 67,
-          "rows_successful": 67,
+          "expected_total": 71,
+          "rows_recorded": 71,
+          "rows_successful": 71,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9701492537313433,
-          "doc_recall_all": 0.9701492537313433,
-          "ndcg_at_10": 0.9701492537313433,
-          "exact_match": 0.04477611940298507,
-          "token_f1": 0.14091114691840534,
-          "avg_total_sec": 18.68685176832351,
-          "p50_total_sec": 1.9336124542169273,
+          "doc_recall_any": 0.9577464788732394,
+          "doc_recall_all": 0.9577464788732394,
+          "ndcg_at_10": 0.9577464788732394,
+          "exact_match": 0.04225352112676056,
+          "token_f1": 0.13647227735236628,
+          "avg_total_sec": 23.566830142860262,
+          "p50_total_sec": 2.1825930210761726,
           "p95_total_sec": 106.51670011784881,
-          "avg_storage_bytes": 2243535.029850746,
-          "p95_storage_bytes": 11469821.0,
+          "avg_storage_bytes": 2758454.4647887326,
+          "p95_storage_bytes": 11609085.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -16769,6 +16851,23 @@
                 "ultrachat_180166",
                 "ultrachat_201585",
                 "sharegpt_DcVIUDF_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::cc539528",
+              "category": "single-session-assistant",
+              "query": "I wanted to follow up on our previous conversation about front-end and back-end development. Can you remind me of the specific back-end programming languages you recommended I learn?",
+              "gold": "I recommended learning Ruby, Python, or PHP as a back-end programming language.",
+              "prediction": "**Digital Literacy:** Basic understanding of digital tools, programming languages, and data analysis will be essential for many jobs.",
+              "expected_doc_ids": [
+                "answer_ultrachat_374124"
+              ],
+              "retrieved_doc_ids": [
+                "fb760626",
+                "18807892_4",
+                "sharegpt_efPCiqy_127",
+                "sharegpt_wG5XsUW_93",
+                "8bd3814a_1"
               ]
             }
           ],
@@ -17454,11 +17553,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03927324211873695,
-    "doc_recall_all_delta": 0.06549839325892726,
-    "ndcg_at_10_delta": 0.05471702322381922,
-    "token_f1_delta": -0.002249680672167395,
-    "avg_storage_ratio_nova_over_stock": 0.41986648633504264,
-    "avg_latency_ratio_nova_over_stock": 1.7131713098076051
+    "doc_recall_any_delta": 0.038873979955090676,
+    "doc_recall_all_delta": 0.06506015298391665,
+    "ndcg_at_10_delta": 0.05429144095464933,
+    "token_f1_delta": -0.002194776038325935,
+    "avg_storage_ratio_nova_over_stock": 0.41982619267062404,
+    "avg_latency_ratio_nova_over_stock": 1.7133471240484368
   }
 }
