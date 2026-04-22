@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T20:25:33Z",
+  "generated_at": "2026-04-22T20:42:51Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T20:19:31Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-22T20:25:34Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 10,
     "current_case_total": 500,
@@ -10532,36 +10532,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 9,
-        "rows_successful": 9,
+        "rows_recorded": 10,
+        "rows_successful": 10,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.8888888888888888,
-        "doc_recall_all": 0.8888888888888888,
-        "ndcg_at_10": 0.8888888888888888,
-        "exact_match": 0.0,
-        "token_f1": 0.06928672508382654,
-        "avg_total_sec": 1047.8936001922314,
-        "p50_total_sec": 1048.2527131130919,
+        "doc_recall_any": 0.9,
+        "doc_recall_all": 0.9,
+        "ndcg_at_10": 0.9,
+        "exact_match": 0.1,
+        "token_f1": 0.1623580525754439,
+        "avg_total_sec": 1046.8558310561348,
+        "p50_total_sec": 1038.9179272232577,
         "p95_total_sec": 1088.8760700193234,
-        "avg_storage_bytes": 107680048.55555555,
+        "avg_storage_bytes": 107552199.0,
         "p95_storage_bytes": 111720265.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8888888888888888,
-            "doc_recall_all": 0.8888888888888888,
-            "ndcg_at_10": 0.8888888888888888,
-            "exact_match": 0.0,
-            "token_f1": 0.06928672508382654,
-            "avg_total_sec": 1047.8936001922314,
-            "p50_total_sec": 1048.2527131130919,
+            "doc_recall_any": 0.9,
+            "doc_recall_all": 0.9,
+            "ndcg_at_10": 0.9,
+            "exact_match": 0.1,
+            "token_f1": 0.1623580525754439,
+            "avg_total_sec": 1046.8558310561348,
+            "p50_total_sec": 1038.9179272232577,
             "p95_total_sec": 1088.8760700193234,
-            "avg_storage_bytes": 107680048.55555555,
+            "avg_storage_bytes": 107552199.0,
             "p95_storage_bytes": 111720265.0,
             "categories": {},
             "sample_errors": [],
@@ -10691,6 +10691,20 @@
                   "ultrachat_250208",
                   "3489e0eb",
                   "sharegpt_A47BWMK_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "doc martin",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0",
+                  "5b4d2438_2",
+                  "0dcfb511_4",
+                  "ac0a8115_3",
+                  "604de0a3_1"
                 ]
               }
             ]
@@ -10823,6 +10837,20 @@
               "ultrachat_250208",
               "3489e0eb",
               "sharegpt_A47BWMK_0"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::f523d9fe",
+            "category": "single-session-assistant",
+            "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+            "gold": "Doc Martin",
+            "prediction": "doc martin",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_m2xJfjo_0",
+              "5b4d2438_2",
+              "0dcfb511_4",
+              "ac0a8115_3",
+              "604de0a3_1"
             ]
           }
         ]
@@ -14414,20 +14442,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2995,
-      "rows_successful": 2995,
+      "rows_recorded": 2996,
+      "rows_successful": 2996,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8227045075125209,
-      "doc_recall_all": 0.735559265442404,
-      "ndcg_at_10": 0.6582189827794508,
-      "exact_match": 0.025709515859766278,
-      "token_f1": 0.07230167530894797,
-      "avg_total_sec": 77.35759173148438,
-      "p50_total_sec": 92.25253098737448,
-      "p95_total_sec": 105.31103588221595,
-      "avg_storage_bytes": 8496587.439398998,
-      "p95_storage_bytes": 11481713.0,
+      "doc_recall_any": 0.8227636849132176,
+      "doc_recall_all": 0.7356475300400535,
+      "ndcg_at_10": 0.6583330618906725,
+      "exact_match": 0.0260347129506008,
+      "token_f1": 0.07261132094469265,
+      "avg_total_sec": 77.67807181062315,
+      "p50_total_sec": 92.25326635269448,
+      "p95_total_sec": 105.35806980030611,
+      "avg_storage_bytes": 8529265.999332443,
+      "p95_storage_bytes": 11486205.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17178,20 +17206,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 121,
-          "rows_recorded": 121,
-          "rows_successful": 121,
+          "expected_total": 122,
+          "rows_recorded": 122,
+          "rows_successful": 122,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9338842975206612,
-          "doc_recall_all": 0.9338842975206612,
-          "ndcg_at_10": 0.9338842975206612,
-          "exact_match": 0.03305785123966942,
-          "token_f1": 0.12495854144870712,
-          "avg_total_sec": 127.06786856310411,
+          "doc_recall_any": 0.9344262295081968,
+          "doc_recall_all": 0.9344262295081968,
+          "ndcg_at_10": 0.9344262295081968,
+          "exact_match": 0.040983606557377046,
+          "token_f1": 0.13213101242043904,
+          "avg_total_sec": 134.53055741776117,
           "p50_total_sec": 98.62294495292008,
-          "p95_total_sec": 1030.0116271469742,
-          "avg_storage_bytes": 13454582.024793388,
+          "p95_total_sec": 1037.5159088312648,
+          "avg_storage_bytes": 14216442.44262295,
           "p95_storage_bytes": 106659169.0,
           "categories": {},
           "sample_errors": [],
@@ -17995,11 +18023,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03787266125308364,
-    "doc_recall_all_delta": 0.06431698678763398,
-    "ndcg_at_10_delta": 0.05413917545145097,
-    "token_f1_delta": -0.0017054533610456196,
-    "avg_storage_ratio_nova_over_stock": 0.4353192084882655,
-    "avg_latency_ratio_nova_over_stock": 1.784103721614813
+    "doc_recall_any_delta": 0.03793183865378036,
+    "doc_recall_all_delta": 0.06440525138528341,
+    "ndcg_at_10_delta": 0.054253254562672715,
+    "token_f1_delta": -0.0013958077253009432,
+    "avg_storage_ratio_nova_over_stock": 0.4369934812414415,
+    "avg_latency_ratio_nova_over_stock": 1.7914949768115824
   }
 }
