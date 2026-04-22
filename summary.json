@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T05:36:00Z",
+  "generated_at": "2026-04-22T05:47:27Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T05:34:18Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T05:46:32Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 235,
+    "current_case_index": 240,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::gpt4_f49edff3"
+    "current_case_id": "longmemeval_s::af082822"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,20 +7257,20 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 235,
-        "rows_successful": 206,
-        "rows_failed": 29,
+        "rows_recorded": 240,
+        "rows_successful": 210,
+        "rows_failed": 30,
         "complete": false,
-        "doc_recall_any": 0.970873786407767,
-        "doc_recall_all": 0.8252427184466019,
-        "ndcg_at_10": 0.8880815009444916,
-        "exact_match": 0.019417475728155338,
-        "token_f1": 0.08865406739073578,
-        "avg_total_sec": 57.321295444433154,
+        "doc_recall_any": 0.9714285714285714,
+        "doc_recall_all": 0.8238095238095238,
+        "ndcg_at_10": 0.8860923040079656,
+        "exact_match": 0.01904761904761905,
+        "token_f1": 0.0869654184880551,
+        "avg_total_sec": 57.335026361571536,
         "p50_total_sec": 57.2258134894073,
-        "p95_total_sec": 59.83215543581173,
-        "avg_storage_bytes": 28050875.145631067,
-        "p95_storage_bytes": 28920824.0,
+        "p95_total_sec": 59.83408217923716,
+        "avg_storage_bytes": 28053928.176190477,
+        "p95_storage_bytes": 28950935.0,
         "categories": {
           "single-session-user": {
             "expected_total": 59,
@@ -7844,21 +7844,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 6,
+            "rows_recorded": 6,
+            "rows_successful": 6,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.9598603945740938,
+            "doc_recall_all": 0.8333333333333334,
+            "ndcg_at_10": 0.8423859060426192,
             "exact_match": 0.0,
-            "token_f1": 0.20689655172413793,
-            "avg_total_sec": 56.495126341469586,
+            "token_f1": 0.06896551724137931,
+            "avg_total_sec": 57.52648784328873,
             "p50_total_sec": 56.23895397596061,
-            "p95_total_sec": 56.75129870697856,
-            "avg_storage_bytes": 27850813.0,
-            "p95_storage_bytes": 27939384.0,
+            "p95_total_sec": 62.547885701060295,
+            "avg_storage_bytes": 28091043.833333332,
+            "p95_storage_bytes": 30279972.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -7885,6 +7885,52 @@
                   "answer_3e9fce53_3",
                   "answer_3e9fce53_2",
                   "answer_3e9fce53_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::71017276",
+                "category": "temporal-reasoning",
+                "query": "How many weeks ago did I meet up with my aunt and receive the crystal chandelier?",
+                "gold": "4",
+                "prediction": "By the way, I also got a stunning crystal chandelier from my aunt today, which used to belong to my great-grandmother - it's got intricate etchings and sparkling droplets that catch the light.",
+                "retrieved_doc_ids": [
+                  "answer_0b4a8adc_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_fa19884c",
+                "category": "temporal-reasoning",
+                "query": "How many days passed between the day I started playing along to my favorite songs on my old keyboard and the day I discovered a bluegrass band?",
+                "gold": "6 days. 7 days (including the last day) is also acceptable.",
+                "prediction": "By the way, I started playing along to my favorite songs on my old keyboard today, and it was a lot of fun!",
+                "retrieved_doc_ids": [
+                  "answer_ff201786_2",
+                  "answer_ff201786_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::0bc8ad92",
+                "category": "temporal-reasoning",
+                "query": "How many months have passed since I last visited a museum with a friend?",
+                "gold": "5",
+                "prediction": "user: I was thinking about my recent visits to various museums in the past few months, and I realized that I've been trying to take advantage of the many museum events and exhibits in my area.",
+                "retrieved_doc_ids": [
+                  "answer_f4ea84fb_3",
+                  "ultrachat_349938",
+                  "answer_f4ea84fb_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::af082822",
+                "category": "temporal-reasoning",
+                "query": "How many weeks ago did I attend the friends and family sale at Nordstrom?",
+                "gold": "2",
+                "prediction": "40",
+                "retrieved_doc_ids": [
+                  "1fcb4134_2",
+                  "1040e24b_1",
+                  "1dfef591_2",
+                  "answer_b51b6115_1"
                 ]
               }
             ]
@@ -8158,20 +8204,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 235,
-        "rows_successful": 235,
+        "rows_recorded": 239,
+        "rows_successful": 239,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9744680851063829,
-        "doc_recall_all": 0.8765957446808511,
-        "ndcg_at_10": 0.8889604105729464,
-        "exact_match": 0.02127659574468085,
-        "token_f1": 0.060801562592605725,
-        "avg_total_sec": 103.39161217304819,
+        "doc_recall_any": 0.9748953974895398,
+        "doc_recall_all": 0.8744769874476988,
+        "ndcg_at_10": 0.8893234795539458,
+        "exact_match": 0.02092050209205021,
+        "token_f1": 0.0597839632186709,
+        "avg_total_sec": 103.41734700525475,
         "p50_total_sec": 102.89091558381915,
-        "p95_total_sec": 109.85302134603262,
-        "avg_storage_bytes": 11229522.85531915,
-        "p95_storage_bytes": 12048977.0,
+        "p95_total_sec": 110.05417155101895,
+        "avg_storage_bytes": 11235023.276150627,
+        "p95_storage_bytes": 12052605.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -8822,21 +8868,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 6,
+            "rows_recorded": 6,
+            "rows_successful": 6,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.9598603945740938,
+            "doc_recall_all": 0.8333333333333334,
+            "ndcg_at_10": 0.9270559863164713,
             "exact_match": 0.0,
-            "token_f1": 0.20689655172413793,
-            "avg_total_sec": 102.61381196998991,
-            "p50_total_sec": 102.33670835616067,
-            "p95_total_sec": 102.89091558381915,
-            "avg_storage_bytes": 11247431.0,
-            "p95_storage_bytes": 11260025.0,
+            "token_f1": 0.06896551724137931,
+            "avg_total_sec": 104.1574495882572,
+            "p50_total_sec": 102.78688893979415,
+            "p95_total_sec": 116.05207256600261,
+            "avg_storage_bytes": 11454592.333333334,
+            "p95_storage_bytes": 12985169.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -8866,6 +8912,61 @@
                   "answer_3e9fce53_3",
                   "64574780",
                   "acfdbdcb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::71017276",
+                "category": "temporal-reasoning",
+                "query": "How many weeks ago did I meet up with my aunt and receive the crystal chandelier?",
+                "gold": "4",
+                "prediction": "user: I remember I have a doctor's appointment on Wednesday, and I need to meet up with my book club later that day.",
+                "retrieved_doc_ids": [
+                  "answer_0b4a8adc_1",
+                  "sharegpt_duoAhsS_0",
+                  "398f23e7",
+                  "683c8358_1",
+                  "f78a22b6_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::b46e15ed",
+                "category": "temporal-reasoning",
+                "query": "How many months have passed since I participated in two charity events in a row, on consecutive days?",
+                "gold": "2",
+                "prediction": "By the way, do you have any tips on how to stay organized and manage my time effectively when volunteering for multiple charity events?",
+                "retrieved_doc_ids": [
+                  "answer_4bfcc250_1",
+                  "sharegpt_KCGdZJP_0",
+                  "answer_4bfcc250_3",
+                  "9d754f54",
+                  "answer_4bfcc250_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_fa19884c",
+                "category": "temporal-reasoning",
+                "query": "How many days passed between the day I started playing along to my favorite songs on my old keyboard and the day I discovered a bluegrass band?",
+                "gold": "6 days. 7 days (including the last day) is also acceptable.",
+                "prediction": "s wonderful that you",
+                "retrieved_doc_ids": [
+                  "answer_ff201786_2",
+                  "answer_ff201786_1",
+                  "bb2180e9_3",
+                  "f3745025_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::0bc8ad92",
+                "category": "temporal-reasoning",
+                "query": "How many months have passed since I last visited a museum with a friend?",
+                "gold": "5",
+                "prediction": "user: I was thinking about my recent visits to various museums in the past few months, and I realized that I've been trying to take advantage of the many museum events and exhibits in my area.",
+                "retrieved_doc_ids": [
+                  "answer_f4ea84fb_3",
+                  "ultrachat_349938",
+                  "answer_f4ea84fb_1",
+                  "answer_f4ea84fb_2",
+                  "d3cc5bdc_1"
                 ]
               }
             ]
@@ -9182,19 +9283,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2721,
-      "rows_successful": 2689,
-      "rows_failed": 32,
+      "rows_recorded": 2726,
+      "rows_successful": 2693,
+      "rows_failed": 33,
       "complete": false,
-      "doc_recall_any": 0.7683153588694682,
-      "doc_recall_all": 0.6548902937895128,
-      "ndcg_at_10": 0.5776861717755342,
-      "exact_match": 0.021197471178876905,
-      "token_f1": 0.06873617787021571,
-      "avg_total_sec": 42.19297944767662,
-      "p50_total_sec": 49.315022783353925,
-      "p95_total_sec": 56.721823615953326,
-      "avg_storage_bytes": 18804419.33023429,
+      "doc_recall_any": 0.7686594875603416,
+      "doc_recall_all": 0.6550315633122912,
+      "ndcg_at_10": 0.577992094523401,
+      "exact_match": 0.02116598588934274,
+      "token_f1": 0.0686340818020832,
+      "avg_total_sec": 42.21652076092804,
+      "p50_total_sec": 49.3172198147513,
+      "p95_total_sec": 56.75129870697856,
+      "avg_storage_bytes": 18818391.465280358,
       "p95_storage_bytes": 27854306.0,
       "categories": {
         "category_2": {
@@ -11177,21 +11278,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 134,
-          "rows_recorded": 134,
-          "rows_successful": 134,
+          "expected_total": 138,
+          "rows_recorded": 138,
+          "rows_successful": 138,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9776119402985075,
-          "doc_recall_all": 0.8059701492537313,
-          "ndcg_at_10": 0.9203246560363748,
-          "exact_match": 0.08955223880597014,
-          "token_f1": 0.13469162035839083,
-          "avg_total_sec": 14.260394447997434,
-          "p50_total_sec": 13.33778559602797,
-          "p95_total_sec": 16.91986333904788,
-          "avg_storage_bytes": 6120223.634328358,
-          "p95_storage_bytes": 7571484.0,
+          "doc_recall_any": 0.9782608695652174,
+          "doc_recall_all": 0.8043478260869565,
+          "ndcg_at_10": 0.9163630330143605,
+          "exact_match": 0.08695652173913043,
+          "token_f1": 0.13078751542046643,
+          "avg_total_sec": 15.529431379771372,
+          "p50_total_sec": 13.346216404344887,
+          "p95_total_sec": 18.210083961021155,
+          "avg_storage_bytes": 6760540.608695652,
+          "p95_storage_bytes": 8188970.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -12701,20 +12802,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2721,
-      "rows_successful": 2721,
+      "rows_recorded": 2725,
+      "rows_successful": 2725,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8096288129364204,
-      "doc_recall_all": 0.7199558985667034,
-      "ndcg_at_10": 0.6335585093029009,
-      "exact_match": 0.021683204704152886,
-      "token_f1": 0.06833901396193656,
-      "avg_total_sec": 71.62371910325136,
-      "p50_total_sec": 87.1940339258872,
-      "p95_total_sec": 102.49045800603926,
-      "avg_storage_bytes": 7901127.441014333,
-      "p95_storage_bytes": 11120869.0,
+      "doc_recall_any": 0.809908256880734,
+      "doc_recall_all": 0.72,
+      "ndcg_at_10": 0.6339652546575941,
+      "exact_match": 0.02165137614678899,
+      "token_f1": 0.06823869981300161,
+      "avg_total_sec": 71.67260798294917,
+      "p50_total_sec": 87.20862458599731,
+      "p95_total_sec": 102.57143161306158,
+      "avg_storage_bytes": 7906495.581284404,
+      "p95_storage_bytes": 11125289.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14706,21 +14807,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 135,
-          "rows_recorded": 135,
-          "rows_successful": 135,
+          "expected_total": 139,
+          "rows_recorded": 139,
+          "rows_successful": 139,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9629629629629629,
-          "ndcg_at_10": 0.991049989443402,
-          "exact_match": 0.05185185185185185,
-          "token_f1": 0.10071119358759106,
-          "avg_total_sec": 7.789926758439591,
-          "p50_total_sec": 5.969160474836826,
-          "p95_total_sec": 13.699533071834594,
-          "avg_storage_bytes": 1125856.2296296295,
-          "p95_storage_bytes": 1735353.0,
+          "doc_recall_all": 0.9568345323741008,
+          "ndcg_at_10": 0.9887364295223734,
+          "exact_match": 0.050359712230215826,
+          "token_f1": 0.09781302974334384,
+          "avg_total_sec": 10.585303496251138,
+          "p50_total_sec": 5.984091865830123,
+          "p95_total_sec": 15.717463660053909,
+          "avg_storage_bytes": 1426066.7841726618,
+          "p95_storage_bytes": 2071873.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -16089,11 +16190,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04131345406695219,
-    "doc_recall_all_delta": 0.06506560477719059,
-    "ndcg_at_10_delta": 0.055872337527366756,
-    "token_f1_delta": -0.00039716390827915227,
-    "avg_storage_ratio_nova_over_stock": 0.4201739656119384,
-    "avg_latency_ratio_nova_over_stock": 1.6975269355431917
+    "doc_recall_any_delta": 0.04124876932039234,
+    "doc_recall_all_delta": 0.0649684366877088,
+    "ndcg_at_10_delta": 0.05597316013419318,
+    "token_f1_delta": -0.0003953819890815946,
+    "avg_storage_ratio_nova_over_stock": 0.42014725838134287,
+    "avg_latency_ratio_nova_over_stock": 1.6977383898789484
   }
 }
