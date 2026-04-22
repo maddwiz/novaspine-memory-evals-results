@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T15:12:25Z",
+  "generated_at": "2026-04-22T15:14:03Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T15:11:30Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-22T15:12:26Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_s",
     "current_case_index": 455,
     "current_case_total": 500,
@@ -8694,19 +8694,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 454,
-        "rows_successful": 454,
+        "rows_recorded": 455,
+        "rows_successful": 455,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.973568281938326,
-        "doc_recall_all": 0.8854625550660793,
-        "ndcg_at_10": 0.8994688239997889,
-        "exact_match": 0.048458149779735685,
-        "token_f1": 0.08634909933341794,
-        "avg_total_sec": 103.24800149376283,
+        "doc_recall_any": 0.9714285714285714,
+        "doc_recall_all": 0.8835164835164835,
+        "ndcg_at_10": 0.8974919694415475,
+        "exact_match": 0.04835164835164835,
+        "token_f1": 0.08615932109312473,
+        "avg_total_sec": 103.23446898649928,
         "p50_total_sec": 102.83794113621116,
         "p95_total_sec": 110.25397391524166,
-        "avg_storage_bytes": 11231820.444933921,
+        "avg_storage_bytes": 11229806.389010988,
         "p95_storage_bytes": 12036257.0,
         "categories": {
           "single-session-user": {
@@ -9800,20 +9800,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9,
-            "doc_recall_all": 0.9,
-            "ndcg_at_10": 0.9,
-            "exact_match": 0.1,
-            "token_f1": 0.1500643841842145,
-            "avg_total_sec": 105.07237535668537,
+            "doc_recall_any": 0.8181818181818182,
+            "doc_recall_all": 0.8181818181818182,
+            "ndcg_at_10": 0.8181818181818182,
+            "exact_match": 0.09090909090909091,
+            "token_f1": 0.136422167440195,
+            "avg_total_sec": 104.34676947779107,
             "p50_total_sec": 102.9622177737765,
             "p95_total_sec": 113.14757501659915,
-            "avg_storage_bytes": 11258900.6,
+            "avg_storage_bytes": 11173130.090909092,
             "p95_storage_bytes": 11921605.0,
             "categories": {},
             "sample_errors": [],
@@ -9829,6 +9829,23 @@
                 ],
                 "retrieved_doc_ids": [
                   "fa68c9d6_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::0e5e2d1a",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+                "gold": "38 subjects",
+                "prediction": "user: Can you tell me more about Lennon's collaborations with Yoko Ono and how they affected his relationship with the other Beatles?",
+                "expected_doc_ids": [
+                  "answer_ultrachat_113156"
+                ],
+                "retrieved_doc_ids": [
+                  "c756c34e",
+                  "f84b4266",
+                  "ultrachat_180166",
+                  "ultrachat_201585",
+                  "sharegpt_DcVIUDF_0"
                 ]
               }
             ],
@@ -13942,19 +13959,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2940,
-      "rows_successful": 2940,
+      "rows_recorded": 2941,
+      "rows_successful": 2941,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8217687074829932,
-      "doc_recall_all": 0.7329931972789115,
-      "ndcg_at_10": 0.6542060725933521,
-      "exact_match": 0.02585034013605442,
-      "token_f1": 0.07172264655732612,
-      "avg_total_sec": 73.96792635967651,
+      "doc_recall_any": 0.8214892893573614,
+      "doc_recall_all": 0.7327439646378783,
+      "ndcg_at_10": 0.6539836291820657,
+      "exact_match": 0.02584155049302958,
+      "token_f1": 0.07169825939426684,
+      "avg_total_sec": 73.97578857808153,
       "p50_total_sec": 91.99742051679641,
       "p95_total_sec": 104.5975208892487,
-      "avg_storage_bytes": 8149413.734013606,
+      "avg_storage_bytes": 8150150.222033322,
       "p95_storage_bytes": 11420525.0,
       "categories": {
         "category_2": {
@@ -16706,20 +16723,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 66,
-          "rows_recorded": 66,
-          "rows_successful": 66,
+          "expected_total": 67,
+          "rows_recorded": 67,
+          "rows_successful": 67,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9848484848484849,
-          "doc_recall_all": 0.9848484848484849,
-          "ndcg_at_10": 0.9848484848484849,
-          "exact_match": 0.045454545454545456,
-          "token_f1": 0.14304616429595693,
-          "avg_total_sec": 17.498914511951927,
-          "p50_total_sec": 1.8645976702682674,
+          "doc_recall_any": 0.9701492537313433,
+          "doc_recall_all": 0.9701492537313433,
+          "ndcg_at_10": 0.9701492537313433,
+          "exact_match": 0.04477611940298507,
+          "token_f1": 0.14091114691840534,
+          "avg_total_sec": 18.68685176832351,
+          "p50_total_sec": 1.9336124542169273,
           "p95_total_sec": 106.51670011784881,
-          "avg_storage_bytes": 2121233.6666666665,
+          "avg_storage_bytes": 2243535.029850746,
           "p95_storage_bytes": 11469821.0,
           "categories": {},
           "sample_errors": [],
@@ -16735,6 +16752,23 @@
               ],
               "retrieved_doc_ids": [
                 "fa68c9d6_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::0e5e2d1a",
+              "category": "single-session-assistant",
+              "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+              "gold": "38 subjects",
+              "prediction": "user: Can you tell me more about Lennon's collaborations with Yoko Ono and how they affected his relationship with the other Beatles?",
+              "expected_doc_ids": [
+                "answer_ultrachat_113156"
+              ],
+              "retrieved_doc_ids": [
+                "c756c34e",
+                "f84b4266",
+                "ultrachat_180166",
+                "ultrachat_201585",
+                "sharegpt_DcVIUDF_0"
               ]
             }
           ],
@@ -17420,11 +17454,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.039552660244368765,
-    "doc_recall_all_delta": 0.06574762589996053,
-    "ndcg_at_10_delta": 0.05493946663510563,
-    "token_f1_delta": -0.00222529350910812,
-    "avg_storage_ratio_nova_over_stock": 0.41982854511572254,
-    "avg_latency_ratio_nova_over_stock": 1.7129892323027642
+    "doc_recall_any_delta": 0.03927324211873695,
+    "doc_recall_all_delta": 0.06549839325892726,
+    "ndcg_at_10_delta": 0.05471702322381922,
+    "token_f1_delta": -0.002249680672167395,
+    "avg_storage_ratio_nova_over_stock": 0.41986648633504264,
+    "avg_latency_ratio_nova_over_stock": 1.7131713098076051
   }
 }
