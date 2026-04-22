@@ -257,7 +257,7 @@
           <div><span>Stock</span><strong>60.4%</strong></div>
           <div><span>NovaSpine</span><strong>65.8%</strong></div>
         </div>
-        <div class="delta good">+0.053</div>
+        <div class="delta good">+0.054</div>
       </div>
     
       
@@ -275,16 +275,16 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.038, evidence-all +0.064, NDCG@10 +0.053, answer F1 -0.002.</p>
+        <p><b>Current delta:</b> evidence-any +0.038, evidence-all +0.064, NDCG@10 +0.054, answer F1 -0.002.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-22T17:12:38Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::778164c6</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2986 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2986 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-22T18:41:10Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_m::4c36ccef</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2991 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2990 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -504,7 +504,7 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>0 / 500 failed 0</td>
+      <td>5 / 500 failed 5</td>
       <td>0.0%</td>
       <td>0.0%</td>
       <td>0.0%</td>
@@ -516,23 +516,27 @@
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>0 / 500 failed 0</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0s</td>
-      <td>0.0 B</td>
+      <td>4 / 500 failed 0</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>6.0%</td>
+      <td>1042.7s</td>
+      <td>102.7 MB</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
-        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr></table>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
+<tr><td>single-session-assistant</td><td>0</td><td>0.0%</td><td>0.0%</td><td>4</td><td>100.0%</td><td>6.0%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?</p><p><b>Gold:</b> Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.</p><p><b>Pred:</b> Here&#x27;s an updated version of the shift rotation sheet for GM social media agents with 7 agents, 4 shifts, and 2 days off for every agent for a week starting on Sunday and ending on Saturday:</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_5Lzox6N_0, 9b3a7f2c_3, 266ba230, c2808c05_4, f0c6ddb9_2</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?</p><p><b>Gold:</b> Miss Bee Providore</p><p><b>Pred:</b> user: I&#x27;m planning to attend a few more charity events in the upcoming months and I was wondering if you could help me keep track of them.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_234453, 0aff275a_1, 92edd095_2, 3c00365f_2, e8f22b15</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m going back to our previous conversation about the children&#x27;s book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?</p><p><b>Gold:</b> The Plesiosaur had a blue scaly body.</p><p><b>Pred:</b> m a new conversation each time you interact with me, so I don</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_YkWn1Ne_0, fe5a5209_3, sharegpt_AnlAeg9_9, sharegpt_YkWn1Ne_0, bd5f30d0_2</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?</p><p><b>Gold:</b> The Sugar Factory at Icon Park.</p><p><b>Pred:</b> user: I&#x27;m planning to visit Disneyland again soon, and I was wondering if you could help me with some tips on how to make the most of my time at the park.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_480665, 7ae303b7_1, eca3b71c_1, 3bdb004d_2, ea6ec88e_3</p></div></div></div>
       </details>
     </section>
     

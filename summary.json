@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T17:12:38Z",
+  "generated_at": "2026-04-22T18:41:10Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T17:10:48Z",
-    "current_system": "novaspine",
-    "current_benchmark": "longmemeval_s",
-    "current_case_index": 500,
+    "updated_at": "2026-04-22T18:38:40Z",
+    "current_system": "stock",
+    "current_benchmark": "longmemeval_m",
+    "current_case_index": 5,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::778164c6"
+    "current_case_id": "longmemeval_m::4c36ccef"
   },
   "benchmarks": {
     "locomo": {
@@ -10470,9 +10470,9 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 0,
+        "rows_recorded": 5,
         "rows_successful": 0,
-        "rows_failed": 0,
+        "rows_failed": 5,
         "complete": false,
         "doc_recall_any": 0.0,
         "doc_recall_all": 0.0,
@@ -10485,39 +10485,201 @@
         "avg_storage_bytes": 0.0,
         "p95_storage_bytes": 0.0,
         "categories": {},
-        "sample_errors": [],
+        "sample_errors": [
+          {
+            "case_id": "longmemeval_m::7161e7e2",
+            "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null}}"
+          },
+          {
+            "case_id": "longmemeval_m::c4f10528",
+            "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null}}"
+          },
+          {
+            "case_id": "longmemeval_m::89527b6b",
+            "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null}}"
+          },
+          {
+            "case_id": "longmemeval_m::e9327a54",
+            "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null}}"
+          },
+          {
+            "case_id": "longmemeval_m::4c36ccef",
+            "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null}}"
+          }
+        ],
         "sample_misses": [],
         "sample_successes": []
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 0,
-        "rows_successful": 0,
+        "rows_recorded": 4,
+        "rows_successful": 4,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.0,
-        "doc_recall_all": 0.0,
-        "ndcg_at_10": 0.0,
+        "doc_recall_any": 1.0,
+        "doc_recall_all": 1.0,
+        "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.0,
-        "avg_total_sec": 0.0,
-        "p50_total_sec": 0.0,
-        "p95_total_sec": 0.0,
-        "avg_storage_bytes": 0.0,
-        "p95_storage_bytes": 0.0,
-        "categories": {},
+        "token_f1": 0.06038647342995169,
+        "avg_total_sec": 1042.7182573189493,
+        "p50_total_sec": 1050.8274628636427,
+        "p95_total_sec": 1088.8760700193234,
+        "avg_storage_bytes": 107647157.0,
+        "p95_storage_bytes": 111720265.0,
+        "categories": {
+          "single-session-assistant": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.06038647342995169,
+            "avg_total_sec": 1042.7182573189493,
+            "p50_total_sec": 1050.8274628636427,
+            "p95_total_sec": 1088.8760700193234,
+            "avg_storage_bytes": 107647157.0,
+            "p95_storage_bytes": 111720265.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_m::7161e7e2",
+                "category": "single-session-assistant",
+                "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+                "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+                "prediction": "Here's an updated version of the shift rotation sheet for GM social media agents with 7 agents, 4 shifts, and 2 days off for every agent for a week starting on Sunday and ending on Saturday:",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_5Lzox6N_0",
+                  "9b3a7f2c_3",
+                  "266ba230",
+                  "c2808c05_4",
+                  "f0c6ddb9_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c4f10528",
+                "category": "single-session-assistant",
+                "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+                "gold": "Miss Bee Providore",
+                "prediction": "user: I'm planning to attend a few more charity events in the upcoming months and I was wondering if you could help me keep track of them.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_234453",
+                  "0aff275a_1",
+                  "92edd095_2",
+                  "3c00365f_2",
+                  "e8f22b15"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::89527b6b",
+                "category": "single-session-assistant",
+                "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+                "gold": "The Plesiosaur had a blue scaly body.",
+                "prediction": "m a new conversation each time you interact with me, so I don",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_YkWn1Ne_0",
+                  "fe5a5209_3",
+                  "sharegpt_AnlAeg9_9",
+                  "sharegpt_YkWn1Ne_0",
+                  "bd5f30d0_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::e9327a54",
+                "category": "single-session-assistant",
+                "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+                "gold": "The Sugar Factory at Icon Park.",
+                "prediction": "user: I'm planning to visit Disneyland again soon, and I was wondering if you could help me with some tips on how to make the most of my time at the park.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_480665",
+                  "7ae303b7_1",
+                  "eca3b71c_1",
+                  "3bdb004d_2",
+                  "ea6ec88e_3"
+                ]
+              }
+            ]
+          }
+        },
         "sample_errors": [],
         "sample_misses": [],
-        "sample_successes": []
+        "sample_successes": [
+          {
+            "case_id": "longmemeval_m::7161e7e2",
+            "category": "single-session-assistant",
+            "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+            "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+            "prediction": "Here's an updated version of the shift rotation sheet for GM social media agents with 7 agents, 4 shifts, and 2 days off for every agent for a week starting on Sunday and ending on Saturday:",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_5Lzox6N_0",
+              "9b3a7f2c_3",
+              "266ba230",
+              "c2808c05_4",
+              "f0c6ddb9_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::c4f10528",
+            "category": "single-session-assistant",
+            "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+            "gold": "Miss Bee Providore",
+            "prediction": "user: I'm planning to attend a few more charity events in the upcoming months and I was wondering if you could help me keep track of them.",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_234453",
+              "0aff275a_1",
+              "92edd095_2",
+              "3c00365f_2",
+              "e8f22b15"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::89527b6b",
+            "category": "single-session-assistant",
+            "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+            "gold": "The Plesiosaur had a blue scaly body.",
+            "prediction": "m a new conversation each time you interact with me, so I don",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_YkWn1Ne_0",
+              "fe5a5209_3",
+              "sharegpt_AnlAeg9_9",
+              "sharegpt_YkWn1Ne_0",
+              "bd5f30d0_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::e9327a54",
+            "category": "single-session-assistant",
+            "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+            "gold": "The Sugar Factory at Icon Park.",
+            "prediction": "user: I'm planning to visit Disneyland again soon, and I was wondering if you could help me with some tips on how to make the most of my time at the park.",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_480665",
+              "7ae303b7_1",
+              "eca3b71c_1",
+              "3bdb004d_2",
+              "ea6ec88e_3"
+            ]
+          }
+        ]
       }
     }
   },
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2986,
+      "rows_recorded": 2991,
       "rows_successful": 2914,
-      "rows_failed": 72,
+      "rows_failed": 77,
       "complete": false,
       "doc_recall_any": 0.7848318462594372,
       "doc_recall_all": 0.67124227865477,
@@ -14097,20 +14259,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2986,
-      "rows_successful": 2986,
+      "rows_recorded": 2990,
+      "rows_successful": 2990,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8225050234427328,
-      "doc_recall_all": 0.7350971198928332,
-      "ndcg_at_10": 0.6575237285413447,
-      "exact_match": 0.02578700602813128,
-      "token_f1": 0.07231076256682678,
-      "avg_total_sec": 74.43233249633812,
-      "p50_total_sec": 92.19375823484734,
-      "p95_total_sec": 104.99804939655587,
-      "avg_storage_bytes": 8197641.977227059,
-      "p95_storage_bytes": 11461809.0,
+      "doc_recall_any": 0.822742474916388,
+      "doc_recall_all": 0.7354515050167224,
+      "ndcg_at_10": 0.6579818907774098,
+      "exact_match": 0.025752508361204015,
+      "token_f1": 0.07229481034055671,
+      "avg_total_sec": 75.72769828205399,
+      "p50_total_sec": 92.22137853968889,
+      "p95_total_sec": 105.17068399908021,
+      "avg_storage_bytes": 8330684.806688963,
+      "p95_storage_bytes": 11470109.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -16861,21 +17023,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 112,
-          "rows_recorded": 112,
-          "rows_successful": 112,
+          "expected_total": 116,
+          "rows_recorded": 116,
+          "rows_successful": 116,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9375,
-          "doc_recall_all": 0.9375,
-          "ndcg_at_10": 0.9375,
-          "exact_match": 0.03571428571428571,
-          "token_f1": 0.12943216954945644,
-          "avg_total_sec": 53.07294370004924,
-          "p50_total_sec": 97.09071068884805,
-          "p95_total_sec": 108.83123617991805,
-          "avg_storage_bytes": 5882892.75,
-          "p95_storage_bytes": 11834833.0,
+          "doc_recall_any": 0.9396551724137931,
+          "doc_recall_all": 0.9396551724137931,
+          "ndcg_at_10": 0.9396551724137931,
+          "exact_match": 0.034482758620689655,
+          "token_f1": 0.1270512834763701,
+          "avg_total_sec": 87.19864416966648,
+          "p50_total_sec": 97.5618616649881,
+          "p95_total_sec": 113.14757501659915,
+          "avg_storage_bytes": 9392005.310344828,
+          "p95_storage_bytes": 12225357.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17665,11 +17827,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03767317718329555,
-    "doc_recall_all_delta": 0.06385484123806318,
-    "ndcg_at_10_delta": 0.05344392121334485,
-    "token_f1_delta": -0.0016963661031668131,
-    "avg_storage_ratio_nova_over_stock": 0.42000285908304447,
-    "avg_latency_ratio_nova_over_stock": 1.7166382567354503
+    "doc_recall_any_delta": 0.03791062865695072,
+    "doc_recall_all_delta": 0.06420922636195237,
+    "ndcg_at_10_delta": 0.05390208344940994,
+    "token_f1_delta": -0.0017123183294368849,
+    "avg_storage_ratio_nova_over_stock": 0.4268192544452385,
+    "avg_latency_ratio_nova_over_stock": 1.746513371348249
   }
 }
