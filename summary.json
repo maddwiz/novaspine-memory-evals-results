@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T14:47:22Z",
+  "generated_at": "2026-04-22T14:58:51Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T14:45:32Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T14:57:55Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 445,
+    "current_case_index": 450,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::7161e7e2"
+    "current_case_id": "longmemeval_s::6ae235be"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,20 +7257,20 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 445,
-        "rows_successful": 387,
-        "rows_failed": 58,
+        "rows_recorded": 450,
+        "rows_successful": 391,
+        "rows_failed": 59,
         "complete": false,
-        "doc_recall_any": 0.9741602067183462,
-        "doc_recall_all": 0.8294573643410853,
-        "ndcg_at_10": 0.8936310900360352,
-        "exact_match": 0.059431524547803614,
-        "token_f1": 0.11657103185131776,
-        "avg_total_sec": 57.231503564343384,
+        "doc_recall_any": 0.9744245524296675,
+        "doc_recall_all": 0.8312020460358056,
+        "ndcg_at_10": 0.8947192630279939,
+        "exact_match": 0.058823529411764705,
+        "token_f1": 0.1155611710943441,
+        "avg_total_sec": 57.238323330333756,
         "p50_total_sec": 57.11360106989741,
         "p95_total_sec": 59.85712923575193,
-        "avg_storage_bytes": 28022585.444444444,
-        "p95_storage_bytes": 29064818.0,
+        "avg_storage_bytes": 28022855.084398977,
+        "p95_storage_bytes": 29039157.0,
         "categories": {
           "single-session-user": {
             "expected_total": 59,
@@ -8229,20 +8229,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 1,
-            "rows_recorded": 1,
-            "rows_successful": 1,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.07407407407407407,
-            "avg_total_sec": 59.283799931872636,
-            "p50_total_sec": 59.283799931872636,
-            "p95_total_sec": 59.283799931872636,
-            "avg_storage_bytes": 29093863.0,
+            "token_f1": 0.0291005291005291,
+            "avg_total_sec": 58.17526853829622,
+            "p50_total_sec": 57.608304681722075,
+            "p95_total_sec": 61.08487844001502,
+            "avg_storage_bytes": 28257926.8,
             "p95_storage_bytes": 29093863.0,
             "categories": {},
             "sample_errors": [],
@@ -8256,6 +8256,51 @@
                 "prediction": "assistant: Sure, I can help you create a shift rotation sheet for GM social media agents.",
                 "retrieved_doc_ids": [
                   "answer_sharegpt_5Lzox6N_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::89527b6b",
+                "category": "single-session-assistant",
+                "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+                "gold": "The Plesiosaur had a blue scaly body.",
+                "prediction": "re an author, write a children",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_YkWn1Ne_0",
+                  "ultrachat_66044",
+                  "ultrachat_442154",
+                  "ultrachat_468629"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::e9327a54",
+                "category": "single-session-assistant",
+                "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+                "gold": "The Sugar Factory at Icon Park.",
+                "prediction": "Better Than Sex - A dessert shop located in the Ivanhoe Village neighborhood of Orlando that specializes in decadent desserts like chocolate fondue and cheesecake.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_480665"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::4c36ccef",
+                "category": "single-session-assistant",
+                "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+                "gold": "Roscioli",
+                "prediction": "user: Can you recommend some authentic Italian restaurants in Rome?",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_448704",
+                  "sharegpt_m8F4NxL_0",
+                  "3dc8ba5f_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0"
                 ]
               }
             ]
@@ -8592,19 +8637,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 445,
-        "rows_successful": 445,
+        "rows_recorded": 449,
+        "rows_successful": 449,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9752808988764045,
-        "doc_recall_all": 0.8853932584269663,
-        "ndcg_at_10": 0.8996828002155149,
-        "exact_match": 0.04719101123595506,
-        "token_f1": 0.08501636413064786,
-        "avg_total_sec": 103.22212593057664,
-        "p50_total_sec": 102.83602102613077,
+        "doc_recall_any": 0.9755011135857461,
+        "doc_recall_all": 0.8864142538975501,
+        "ndcg_at_10": 0.9005764946456662,
+        "exact_match": 0.0467706013363029,
+        "token_f1": 0.08425898004039711,
+        "avg_total_sec": 103.23256297113544,
+        "p50_total_sec": 102.87845970597118,
         "p95_total_sec": 110.25397391524166,
-        "avg_storage_bytes": 11232538.725842698,
+        "avg_storage_bytes": 11231614.38975501,
         "p95_storage_bytes": 12048977.0,
         "categories": {
           "single-session-user": {
@@ -9698,21 +9743,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 1,
-            "rows_recorded": 1,
-            "rows_successful": 1,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.13043478260869565,
-            "avg_total_sec": 109.97711450513452,
-            "p50_total_sec": 109.97711450513452,
+            "token_f1": 0.02608695652173913,
+            "avg_total_sec": 105.51036988766865,
+            "p50_total_sec": 106.51670011784881,
             "p95_total_sec": 109.97711450513452,
-            "avg_storage_bytes": 11822257.0,
-            "p95_storage_bytes": 11822257.0,
+            "avg_storage_bytes": 11267477.0,
+            "p95_storage_bytes": 11921605.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -9729,6 +9774,62 @@
                   "sharegpt_yguSguz_0",
                   "dba97bb1_4",
                   "2bd9990a_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::c4f10528",
+                "category": "single-session-assistant",
+                "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+                "gold": "Miss Bee Providore",
+                "prediction": "user: I'm thinking of hosting a backyard BBQ party soon and I was wondering if you could give me some ideas for sides and desserts that would go well with grilled meats.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_234453",
+                  "de55485d_1",
+                  "107d40f0",
+                  "b4f94171_4",
+                  "51c89181_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::89527b6b",
+                "category": "single-session-assistant",
+                "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+                "gold": "The Plesiosaur had a blue scaly body.",
+                "prediction": "ve mentioned leaving your camera",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_YkWn1Ne_0",
+                  "51c262b6_2",
+                  "ultrachat_66044",
+                  "ultrachat_442154",
+                  "48d385f0_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::e9327a54",
+                "category": "single-session-assistant",
+                "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+                "gold": "The Sugar Factory at Icon Park.",
+                "prediction": "user: I'm planning a trip to Universal Studios Hollywood soon and was wondering if you could recommend some must-see attractions.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_480665",
+                  "61e1ba53_2",
+                  "ba944cdc",
+                  "7613d5ec_2",
+                  "8221810f_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::4c36ccef",
+                "category": "single-session-assistant",
+                "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+                "gold": "Roscioli",
+                "prediction": "La Pergola - This is a fine-dining restaurant located atop the Rome Cavalieri Hotel that offers a range of Italian and International dishes made with the finest ingredients.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_448704",
+                  "sharegpt_m8F4NxL_0",
+                  "5fc83435_2",
+                  "3dc8ba5f_2",
+                  "1ba83815_4"
                 ]
               }
             ]
@@ -10119,20 +10220,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2931,
-      "rows_successful": 2870,
-      "rows_failed": 61,
+      "rows_recorded": 2936,
+      "rows_successful": 2874,
+      "rows_failed": 62,
       "complete": false,
-      "doc_recall_any": 0.7815331010452962,
-      "doc_recall_all": 0.6662020905923345,
-      "ndcg_at_10": 0.5980099507156068,
-      "exact_match": 0.0264808362369338,
-      "token_f1": 0.07375673649372072,
-      "avg_total_sec": 43.134957056672505,
-      "p50_total_sec": 50.57154202507809,
+      "doc_recall_any": 0.7818371607515657,
+      "doc_recall_all": 0.6666666666666666,
+      "ndcg_at_10": 0.5985694358224745,
+      "exact_match": 0.026443980514961725,
+      "token_f1": 0.07367893608504071,
+      "avg_total_sec": 43.15550427815229,
+      "p50_total_sec": 50.64917377196252,
       "p95_total_sec": 57.661903207190335,
-      "avg_storage_bytes": 19383743.507317074,
-      "p95_storage_bytes": 28208973.0,
+      "avg_storage_bytes": 19395803.631524008,
+      "p95_storage_bytes": 28209666.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -12925,21 +13026,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 57,
-          "rows_recorded": 57,
-          "rows_successful": 57,
+          "expected_total": 61,
+          "rows_recorded": 61,
+          "rows_successful": 61,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03508771929824561,
-          "token_f1": 0.09946037195938398,
-          "avg_total_sec": 13.310920756498122,
-          "p50_total_sec": 12.471013474278152,
-          "p95_total_sec": 12.650437965989113,
-          "avg_storage_bytes": 5075500.929824562,
-          "p95_storage_bytes": 4945945.0,
+          "exact_match": 0.03278688524590164,
+          "token_f1": 0.09410934054284358,
+          "avg_total_sec": 16.234672555409862,
+          "p50_total_sec": 12.483711646869779,
+          "p95_total_sec": 57.07714788382873,
+          "avg_storage_bytes": 6581956.131147541,
+          "p95_storage_bytes": 27595703.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -13701,19 +13802,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2931,
-      "rows_successful": 2931,
+      "rows_recorded": 2935,
+      "rows_successful": 2935,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8215626066189013,
-      "doc_recall_all": 0.7325145001705903,
-      "ndcg_at_10": 0.6534854498206943,
-      "exact_match": 0.0255885363357216,
-      "token_f1": 0.0714753912723662,
-      "avg_total_sec": 73.8740896821519,
-      "p50_total_sec": 91.95077585987747,
-      "p95_total_sec": 104.56111709913239,
-      "avg_storage_bytes": 8140057.874104401,
+      "doc_recall_any": 0.8218057921635434,
+      "doc_recall_all": 0.7328790459965928,
+      "ndcg_at_10": 0.6539577013371227,
+      "exact_match": 0.02555366269165247,
+      "token_f1": 0.07137798017693538,
+      "avg_total_sec": 73.9156836774516,
+      "p50_total_sec": 91.97396813193336,
+      "p95_total_sec": 104.56528632296249,
+      "avg_storage_bytes": 8144131.092674617,
       "p95_storage_bytes": 11420417.0,
       "categories": {
         "category_2": {
@@ -16465,21 +16566,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 57,
-          "rows_recorded": 57,
-          "rows_successful": 57,
+          "expected_total": 61,
+          "rows_recorded": 61,
+          "rows_successful": 61,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03508771929824561,
-          "token_f1": 0.14159364533859134,
-          "avg_total_sec": 3.7575740127562822,
-          "p50_total_sec": 1.636677409056574,
-          "p95_total_sec": 3.64087388291955,
-          "avg_storage_bytes": 688327.5964912281,
-          "p95_storage_bytes": 676677.0,
+          "exact_match": 0.03278688524590164,
+          "token_f1": 0.13230881613606077,
+          "avg_total_sec": 10.35666317475929,
+          "p50_total_sec": 1.6515358220785856,
+          "p95_total_sec": 102.9622177737765,
+          "avg_storage_bytes": 1372947.5573770492,
+          "p95_storage_bytes": 10812445.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -17165,11 +17266,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.040029505573605184,
-    "doc_recall_all_delta": 0.0663124095782558,
-    "ndcg_at_10_delta": 0.05547549910508753,
-    "token_f1_delta": -0.002281345221354522,
-    "avg_storage_ratio_nova_over_stock": 0.419942508578472,
-    "avg_latency_ratio_nova_over_stock": 1.7126269439678135
+    "doc_recall_any_delta": 0.039968631411977706,
+    "doc_recall_all_delta": 0.06621237932992619,
+    "ndcg_at_10_delta": 0.05538826551464826,
+    "token_f1_delta": -0.0023009559081053343,
+    "avg_storage_ratio_nova_over_stock": 0.41989139751023036,
+    "avg_latency_ratio_nova_over_stock": 1.7127753438133686
   }
 }
