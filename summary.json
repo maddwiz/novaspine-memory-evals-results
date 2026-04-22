@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T23:50:23Z",
+  "generated_at": "2026-04-22T23:51:40Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -71,8 +71,7 @@
     "current_benchmark": "longmemeval_m",
     "current_case_index": 3,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::89527b6b",
-    "finished_at": "2026-04-22T23:42:11Z"
+    "current_case_id": "longmemeval_m::89527b6b"
   },
   "benchmarks": {
     "longmemeval_m": {
