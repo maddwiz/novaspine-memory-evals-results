@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T08:26:13Z",
+  "generated_at": "2026-04-22T08:27:55Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T08:25:17Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-22T08:26:14Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_s",
     "current_case_index": 300,
     "current_case_total": 500,
@@ -8339,19 +8339,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 299,
-        "rows_successful": 299,
+        "rows_recorded": 300,
+        "rows_successful": 300,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.979933110367893,
-        "doc_recall_all": 0.8762541806020067,
-        "ndcg_at_10": 0.8900520731667755,
-        "exact_match": 0.026755852842809364,
-        "token_f1": 0.06412826360582664,
-        "avg_total_sec": 103.46678472162353,
+        "doc_recall_any": 0.9766666666666667,
+        "doc_recall_all": 0.8733333333333333,
+        "ndcg_at_10": 0.8870852329228863,
+        "exact_match": 0.02666666666666667,
+        "token_f1": 0.06391450272714055,
+        "avg_total_sec": 103.4587346937616,
         "p50_total_sec": 102.89528277888894,
         "p95_total_sec": 110.25397391524166,
-        "avg_storage_bytes": 11248152.545150502,
+        "avg_storage_bytes": 11247934.626666667,
         "p95_storage_bytes": 12053253.0,
         "categories": {
           "single-session-user": {
@@ -9003,24 +9003,43 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 66,
-            "rows_recorded": 66,
-            "rows_successful": 66,
+            "expected_total": 67,
+            "rows_recorded": 67,
+            "rows_successful": 67,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.8787878787878788,
-            "ndcg_at_10": 0.8960544572935104,
-            "exact_match": 0.045454545454545456,
-            "token_f1": 0.08029964715648634,
-            "avg_total_sec": 103.70859689453165,
+            "doc_recall_any": 0.9850746268656716,
+            "doc_recall_all": 0.8656716417910447,
+            "ndcg_at_10": 0.8826805101697266,
+            "exact_match": 0.04477611940298507,
+            "token_f1": 0.07910114496012087,
+            "avg_total_sec": 103.66894285674833,
             "p50_total_sec": 102.89091558381915,
             "p95_total_sec": 111.17169098323211,
-            "avg_storage_bytes": 11314463.666666666,
+            "avg_storage_bytes": 11312498.19402985,
             "p95_storage_bytes": 12225501.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::eac54add",
+                "category": "temporal-reasoning",
+                "query": "What was the significant buisiness milestone I mentioned four weeks ago?",
+                "gold": "I signed a contract with my first client.",
+                "prediction": "in two weeks",
+                "expected_doc_ids": [
+                  "answer_0d4d0348_1",
+                  "answer_0d4d0348_2"
+                ],
+                "retrieved_doc_ids": [
+                  "369695b4_2",
+                  "e58109ed_2",
+                  "ultrachat_75926",
+                  "sharegpt_5YtukCb_0",
+                  "ultrachat_133409"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_s::gpt4_59149c77",
@@ -9280,6 +9299,24 @@
             ],
             "retrieved_doc_ids": [
               "1bab001f"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::eac54add",
+            "category": "temporal-reasoning",
+            "query": "What was the significant buisiness milestone I mentioned four weeks ago?",
+            "gold": "I signed a contract with my first client.",
+            "prediction": "in two weeks",
+            "expected_doc_ids": [
+              "answer_0d4d0348_1",
+              "answer_0d4d0348_2"
+            ],
+            "retrieved_doc_ids": [
+              "369695b4_2",
+              "e58109ed_2",
+              "ultrachat_75926",
+              "sharegpt_5YtukCb_0",
+              "ultrachat_133409"
             ]
           }
         ],
@@ -13052,19 +13089,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2785,
-      "rows_successful": 2785,
+      "rows_recorded": 2786,
+      "rows_successful": 2786,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8140035906642729,
-      "doc_recall_all": 0.7235188509874326,
-      "ndcg_at_10": 0.6395449110252843,
-      "exact_match": 0.022262118491921005,
-      "token_f1": 0.06852295892255268,
-      "avg_total_sec": 72.3618238603397,
+      "doc_recall_any": 0.8137114142139268,
+      "doc_recall_all": 0.7232591529073941,
+      "ndcg_at_10": 0.6393153543450886,
+      "exact_match": 0.022254127781765973,
+      "token_f1": 0.06849836345990998,
+      "avg_total_sec": 72.37212176145337,
       "p50_total_sec": 87.67217931896448,
       "p95_total_sec": 103.1912325299345,
-      "avg_storage_bytes": 7979614.903770197,
+      "avg_storage_bytes": 7980764.63890883,
       "p95_storage_bytes": 11268109.0,
       "categories": {
         "category_2": {
@@ -15057,24 +15094,43 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 199,
-          "rows_recorded": 199,
-          "rows_successful": 199,
+          "expected_total": 200,
+          "rows_recorded": 200,
+          "rows_successful": 200,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9346733668341709,
-          "ndcg_at_10": 0.9598573968195113,
-          "exact_match": 0.05025125628140704,
-          "token_f1": 0.09287434544323928,
-          "avg_total_sec": 38.64914514315806,
-          "p50_total_sec": 6.701719139702618,
+          "doc_recall_any": 0.995,
+          "doc_recall_all": 0.93,
+          "ndcg_at_10": 0.9550581098354138,
+          "exact_match": 0.05,
+          "token_f1": 0.09240997371602308,
+          "avg_total_sec": 38.96115829925751,
+          "p50_total_sec": 6.722469550091773,
           "p95_total_sec": 107.71402478776872,
-          "avg_storage_bytes": 4403267.994974874,
+          "avg_storage_bytes": 4437165.54,
           "p95_storage_bytes": 11822401.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "longmemeval_s::eac54add",
+              "category": "temporal-reasoning",
+              "query": "What was the significant buisiness milestone I mentioned four weeks ago?",
+              "gold": "I signed a contract with my first client.",
+              "prediction": "in two weeks",
+              "expected_doc_ids": [
+                "answer_0d4d0348_1",
+                "answer_0d4d0348_2"
+              ],
+              "retrieved_doc_ids": [
+                "369695b4_2",
+                "e58109ed_2",
+                "ultrachat_75926",
+                "sharegpt_5YtukCb_0",
+                "ultrachat_133409"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::gpt4_2655b836",
@@ -16440,11 +16496,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.041690293760812014,
-    "doc_recall_all_delta": 0.06668824989453648,
-    "ndcg_at_10_delta": 0.05632517288379002,
-    "token_f1_delta": -0.0006447051721409636,
-    "avg_storage_ratio_nova_over_stock": 0.4201026594378418,
-    "avg_latency_ratio_nova_over_stock": 1.702313022063772
+    "doc_recall_any_delta": 0.04139811731046594,
+    "doc_recall_all_delta": 0.06642855181449792,
+    "ndcg_at_10_delta": 0.05609561620359427,
+    "token_f1_delta": -0.0006693006347836677,
+    "avg_storage_ratio_nova_over_stock": 0.42016318952547305,
+    "avg_latency_ratio_nova_over_stock": 1.7025552803462551
   }
 }
