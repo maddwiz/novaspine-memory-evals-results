@@ -237,7 +237,7 @@
           <div><span>Stock</span><strong>76.3%</strong></div>
           <div><span>NovaSpine</span><strong>80.5%</strong></div>
         </div>
-        <div class="delta good">+0.042</div>
+        <div class="delta good">+0.043</div>
       </div>
     
       
@@ -255,7 +255,7 @@
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>57.0%</strong></div>
-          <div><span>NovaSpine</span><strong>62.6%</strong></div>
+          <div><span>NovaSpine</span><strong>62.7%</strong></div>
         </div>
         <div class="delta good">+0.057</div>
       </div>
@@ -275,16 +275,16 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.042, evidence-all +0.065, NDCG@10 +0.057, answer F1 -0.000.</p>
+        <p><b>Current delta:</b> evidence-any +0.043, evidence-all +0.065, NDCG@10 +0.057, answer F1 -0.000.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-22T02:16:05Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::07b6f563</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2646 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2646 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-22T02:27:59Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_s::cc06de0d</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2651 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2650 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -437,11 +437,11 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>160 / 500 failed 26</td>
-      <td>97.0%</td>
-      <td>83.6%</td>
-      <td>89.5%</td>
-      <td>12.0%</td>
+      <td>165 / 500 failed 26</td>
+      <td>96.4%</td>
+      <td>83.5%</td>
+      <td>89.0%</td>
+      <td>11.8%</td>
       <td>57.4s</td>
       <td>26.8 MB</td>
     </tr>
@@ -449,12 +449,12 @@
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>160 / 500 failed 0</td>
-      <td>97.5%</td>
-      <td>88.1%</td>
-      <td>89.1%</td>
+      <td>164 / 500 failed 0</td>
+      <td>97.6%</td>
+      <td>88.4%</td>
+      <td>88.9%</td>
       <td>7.9%</td>
-      <td>103.5s</td>
+      <td>103.6s</td>
       <td>10.7 MB</td>
     </tr>
     
@@ -462,8 +462,8 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>multi-session</td><td>53</td><td>96.2%</td><td>2.5%</td><td>62</td><td>98.4%</td><td>2.6%</td></tr>
-<tr><td>single-session-preference</td><td>22</td><td>100.0%</td><td>21.5%</td><td>28</td><td>96.4%</td><td>11.0%</td></tr>
+<tr><td>multi-session</td><td>56</td><td>96.4%</td><td>2.4%</td><td>64</td><td>98.4%</td><td>2.5%</td></tr>
+<tr><td>single-session-preference</td><td>24</td><td>95.8%</td><td>21.3%</td><td>30</td><td>96.7%</td><td>11.3%</td></tr>
 <tr><td>single-session-user</td><td>59</td><td>96.6%</td><td>16.9%</td><td>70</td><td>97.1%</td><td>11.4%</td></tr></table>
       </details>
       <details>
@@ -471,7 +471,8 @@
         <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Where did I attend my cousin&#x27;s wedding?</p><p><b>Gold:</b> The Grand Ballroom</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_0df6aa4b</p><p><b>Retrieved:</b> </p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What did my dad gave me as a birthday gift?</p><p><b>Gold:</b> You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.</p><p><b>Pred:</b> ve been thinking about my sister</p><p><b>Expected docs:</b> answer_f5b33470_abs</p><p><b>Retrieved:</b> 1dd13331_1, 31299b8e_2</p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many projects have I led or am currently leading?</p><p><b>Gold:</b> 2</p><p><b>Pred:</b> By the way, I&#x27;ve been pretty busy lately, especially since I was promoted to a senior software engineer position three months ago and have been leading a team of five engineers.</p><p><b>Expected docs:</b> answer_ec904b3c_1, answer_ec904b3c_4, answer_ec904b3c_3, answer_ec904b3c_2</p><p><b>Retrieved:</b> 2e4430d8_2, sharegpt_zciCXP1_12, a9981dc6_3</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many days did it take for my iPad case to arrive after I bought it?</p><p><b>Gold:</b> The information provided is not enough. You did not mention buying an iPad case.</p><p><b>Pred:</b> ve been using my laptop</p><p><b>Expected docs:</b> answer_e0956e0a_abs_2, answer_e0956e0a_abs_1</p><p><b>Retrieved:</b> 1e91cdf0, cdf068b1_3, 3e82fae8_1, 9a6c8d3c, 1a892e14</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many days did it take for my iPad case to arrive after I bought it?</p><p><b>Gold:</b> The information provided is not enough. You did not mention buying an iPad case.</p><p><b>Pred:</b> ve been using my laptop</p><p><b>Expected docs:</b> answer_e0956e0a_abs_2, answer_e0956e0a_abs_1</p><p><b>Retrieved:</b> 1e91cdf0, cdf068b1_3, 3e82fae8_1, 9a6c8d3c, 1a892e14</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Can you suggest some activities I can do during my commute to work?</p><p><b>Gold:</b> The user would prefer suggestions related to listening to new podcasts or audiobooks, especially the genre beyond true crime or self-improvement, such as history. They may not be interested in activities that require visual attention, such as reading or watching videos, as they are commuting. The user would not prefer general podcast topics such as true crime or self-improvement, as the user wants to explore other topics.</p><p><b>Pred:</b> * You may want to consider adding some lights or reflectors to your bike, especially if you plan to commute during early morning or late evening hours.</p><p><b>Expected docs:</b> answer_8da8c7e0</p><p><b>Retrieved:</b> 2aa70c9c_1, 99883f38_1</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What did my dad gave me as a birthday gift?</p><p><b>Gold:</b> You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.</p><p><b>Pred:</b> ve been thinking about my sister</p><p><b>Expected docs:</b> answer_f5b33470_abs</p><p><b>Retrieved:</b> 1dd13331_1, 31299b8e_2, ea3db78e_2, 793382f9_2</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> How many days did I spend in total traveling in Hawaii and in New York City?</p><p><b>Gold:</b> 15 days</p><p><b>Pred:</b> User location Cartagena</p><p><b>Expected docs:</b> answer_60e8941a_2, answer_60e8941a_1</p><p><b>Retrieved:</b> ultrachat_378743</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> I&#x27;ve been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?</p><p><b>Gold:</b> The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.</p><p><b>Pred:</b> user: I&#x27;ve been thinking a lot about my relationships lately, and I was wondering if you could help me explore some philosophical perspectives on commitment and partnerships.</p><p><b>Expected docs:</b> answer_b0fac439</p><p><b>Retrieved:</b> 0e726047, ultrachat_125013, 87cfeb28_2, c927ffbb, 32f28c7b_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> definitely helped me in my new role</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
