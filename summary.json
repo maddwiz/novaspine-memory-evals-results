@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T04:28:24Z",
+  "generated_at": "2026-04-22T04:40:05Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T04:26:44Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T04:39:10Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 210,
+    "current_case_index": 215,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::099778bb"
+    "current_case_id": "longmemeval_s::a3332713"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,20 +7257,20 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 210,
-        "rows_successful": 181,
+        "rows_recorded": 215,
+        "rows_successful": 186,
         "rows_failed": 29,
         "complete": false,
-        "doc_recall_any": 0.9723756906077348,
-        "doc_recall_all": 0.8232044198895028,
-        "ndcg_at_10": 0.8907631618835958,
-        "exact_match": 0.022099447513812154,
-        "token_f1": 0.0954743621668895,
-        "avg_total_sec": 57.284470432358205,
-        "p50_total_sec": 57.229302380234,
+        "doc_recall_any": 0.967741935483871,
+        "doc_recall_all": 0.8225806451612904,
+        "ndcg_at_10": 0.8883232919404884,
+        "exact_match": 0.021505376344086023,
+        "token_f1": 0.09290784705487633,
+        "avg_total_sec": 57.28162425352881,
+        "p50_total_sec": 57.2258134894073,
         "p95_total_sec": 59.66941556101665,
-        "avg_storage_bytes": 28035073.215469614,
-        "p95_storage_bytes": 28904897.0,
+        "avg_storage_bytes": 28034728.97849462,
+        "p95_storage_bytes": 28912552.0,
         "categories": {
           "single-session-user": {
             "expected_total": 59,
@@ -7451,21 +7451,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 98,
-            "rows_recorded": 98,
-            "rows_successful": 98,
+            "expected_total": 103,
+            "rows_recorded": 103,
+            "rows_successful": 103,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9795918367346939,
-            "doc_recall_all": 0.7040816326530612,
-            "ndcg_at_10": 0.8648566751812818,
+            "doc_recall_any": 0.970873786407767,
+            "doc_recall_all": 0.7087378640776699,
+            "ndcg_at_10": 0.8617082928909284,
             "exact_match": 0.0,
-            "token_f1": 0.022731192034340954,
-            "avg_total_sec": 57.171641138781396,
+            "token_f1": 0.02162773611034382,
+            "avg_total_sec": 57.17197858737963,
             "p50_total_sec": 57.094212371855974,
             "p95_total_sec": 59.66941556101665,
-            "avg_storage_bytes": 27951275.41836735,
-            "p95_storage_bytes": 28841570.0,
+            "avg_storage_bytes": 27954721.640776698,
+            "p95_storage_bytes": 28904897.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -7503,6 +7503,20 @@
                   "3e82fae8_1",
                   "9a6c8d3c",
                   "1a892e14"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::c18a7dc8",
+                "category": "multi-session",
+                "query": "How many years older am I than when I graduated from college?",
+                "gold": "7",
+                "prediction": "Benchmark: longmemeval_s",
+                "expected_doc_ids": [
+                  "answer_2e2085fa_2",
+                  "answer_2e2085fa_1"
+                ],
+                "retrieved_doc_ids": [
+                  "9d5a389d"
                 ]
               }
             ],
@@ -7947,6 +7961,20 @@
               "2aa70c9c_1",
               "99883f38_1"
             ]
+          },
+          {
+            "case_id": "longmemeval_s::c18a7dc8",
+            "category": "multi-session",
+            "query": "How many years older am I than when I graduated from college?",
+            "gold": "7",
+            "prediction": "Benchmark: longmemeval_s",
+            "expected_doc_ids": [
+              "answer_2e2085fa_2",
+              "answer_2e2085fa_1"
+            ],
+            "retrieved_doc_ids": [
+              "9d5a389d"
+            ]
           }
         ],
         "sample_successes": [
@@ -8084,19 +8112,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 210,
-        "rows_successful": 210,
+        "rows_recorded": 214,
+        "rows_successful": 214,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9761904761904762,
-        "doc_recall_all": 0.8857142857142857,
-        "ndcg_at_10": 0.8948981494677215,
-        "exact_match": 0.023809523809523808,
-        "token_f1": 0.0641454159641837,
-        "avg_total_sec": 103.28945119186481,
-        "p50_total_sec": 102.83602102613077,
-        "p95_total_sec": 109.51527576707304,
-        "avg_storage_bytes": 11217222.371428572,
+        "doc_recall_any": 0.9766355140186916,
+        "doc_recall_all": 0.8785046728971962,
+        "ndcg_at_10": 0.8914904499708237,
+        "exact_match": 0.02336448598130841,
+        "token_f1": 0.06294643622653541,
+        "avg_total_sec": 103.29606941188077,
+        "p50_total_sec": 102.79951918311417,
+        "p95_total_sec": 109.28208777494729,
+        "avg_storage_bytes": 11218989.859813085,
         "p95_storage_bytes": 12015237.0,
         "categories": {
           "single-session-user": {
@@ -8317,20 +8345,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 110,
-            "rows_recorded": 110,
-            "rows_successful": 110,
+            "expected_total": 114,
+            "rows_recorded": 114,
+            "rows_successful": 114,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9818181818181818,
-            "doc_recall_all": 0.8090909090909091,
-            "ndcg_at_10": 0.8908358272045572,
-            "exact_match": 0.01818181818181818,
-            "token_f1": 0.0193042644696761,
-            "avg_total_sec": 102.71690862222829,
-            "p50_total_sec": 102.57551150768995,
-            "p95_total_sec": 108.54608594020829,
-            "avg_storage_bytes": 11166232.636363637,
+            "doc_recall_any": 0.9824561403508771,
+            "doc_recall_all": 0.7982456140350878,
+            "ndcg_at_10": 0.8845814552459302,
+            "exact_match": 0.017543859649122806,
+            "token_f1": 0.01862692185670501,
+            "avg_total_sec": 102.74942151136827,
+            "p50_total_sec": 102.57143161306158,
+            "p95_total_sec": 107.96182672306895,
+            "avg_storage_bytes": 11171339.666666666,
             "p95_storage_bytes": 11901053.0,
             "categories": {},
             "sample_errors": [],
@@ -9031,20 +9059,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2696,
-      "rows_successful": 2664,
+      "rows_recorded": 2701,
+      "rows_successful": 2669,
       "rows_failed": 32,
       "complete": false,
-      "doc_recall_any": 0.7665165165165165,
-      "doc_recall_all": 0.6531531531531531,
-      "ndcg_at_10": 0.5749555026316729,
-      "exact_match": 0.021396396396396396,
-      "token_f1": 0.06901265163765971,
-      "avg_total_sec": 42.04850751558034,
-      "p50_total_sec": 49.2407842008397,
-      "p95_total_sec": 56.34572885511443,
-      "avg_storage_bytes": 18716573.40503003,
-      "p95_storage_bytes": 27751921.0,
+      "doc_recall_any": 0.766579243162233,
+      "doc_recall_all": 0.6534282502810042,
+      "ndcg_at_10": 0.5753770921733896,
+      "exact_match": 0.021356313225927313,
+      "token_f1": 0.0688833660407364,
+      "avg_total_sec": 42.0768516239811,
+      "p50_total_sec": 49.255806018132716,
+      "p95_total_sec": 56.3728462792933,
+      "avg_storage_bytes": 18734006.32783814,
+      "p95_storage_bytes": 27764210.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -11215,20 +11243,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 230,
-          "rows_recorded": 230,
-          "rows_successful": 230,
+          "expected_total": 235,
+          "rows_recorded": 235,
+          "rows_successful": 235,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9826086956521739,
-          "doc_recall_all": 0.7217391304347827,
-          "ndcg_at_10": 0.8855819000204858,
+          "doc_recall_any": 0.9787234042553191,
+          "doc_recall_all": 0.723404255319149,
+          "ndcg_at_10": 0.8837610085306882,
           "exact_match": 0.0,
-          "token_f1": 0.023472371079216972,
-          "avg_total_sec": 32.35887604133307,
-          "p50_total_sec": 15.476626479998231,
+          "token_f1": 0.022972958928595334,
+          "avg_total_sec": 32.886955116621834,
+          "p50_total_sec": 15.522861890960485,
           "p95_total_sec": 58.971260994672775,
-          "avg_storage_bytes": 15354838.65652174,
+          "avg_storage_bytes": 15624358.421276595,
           "p95_storage_bytes": 28734141.0,
           "categories": {},
           "sample_errors": [],
@@ -11291,6 +11319,20 @@
                 "3e82fae8_1",
                 "9a6c8d3c",
                 "1a892e14"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::c18a7dc8",
+              "category": "multi-session",
+              "query": "How many years older am I than when I graduated from college?",
+              "gold": "7",
+              "prediction": "Benchmark: longmemeval_s",
+              "expected_doc_ids": [
+                "answer_2e2085fa_2",
+                "answer_2e2085fa_1"
+              ],
+              "retrieved_doc_ids": [
+                "9d5a389d"
               ]
             }
           ],
@@ -12536,20 +12578,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2696,
-      "rows_successful": 2696,
+      "rows_recorded": 2700,
+      "rows_successful": 2700,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8082344213649851,
-      "doc_recall_all": 0.719213649851632,
-      "ndcg_at_10": 0.6316526775655684,
-      "exact_match": 0.02188427299703264,
-      "token_f1": 0.06866937208221277,
-      "avg_total_sec": 71.3211778818888,
-      "p50_total_sec": 87.0978887300007,
-      "p95_total_sec": 102.06262709898874,
-      "avg_storage_bytes": 7869305.116468843,
-      "p95_storage_bytes": 11042469.0,
+      "doc_recall_any": 0.8085185185185185,
+      "doc_recall_all": 0.7188888888888889,
+      "ndcg_at_10": 0.631772579119373,
+      "exact_match": 0.02185185185185185,
+      "token_f1": 0.068567639679128,
+      "avg_total_sec": 71.36906284200856,
+      "p50_total_sec": 87.10540408268571,
+      "p95_total_sec": 102.17260270705447,
+      "avg_storage_bytes": 7874405.083703703,
+      "p95_storage_bytes": 11062877.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14698,21 +14740,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 243,
-          "rows_recorded": 243,
-          "rows_successful": 243,
+          "expected_total": 247,
+          "rows_recorded": 247,
+          "rows_successful": 247,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9917695473251029,
-          "doc_recall_all": 0.8806584362139918,
-          "ndcg_at_10": 0.944427926859557,
-          "exact_match": 0.01646090534979424,
-          "token_f1": 0.021019101326374492,
-          "avg_total_sec": 50.445376429701064,
-          "p50_total_sec": 11.559011823963374,
-          "p95_total_sec": 106.865369127132,
-          "avg_storage_bytes": 5636783.740740741,
-          "p95_storage_bytes": 11707713.0,
+          "doc_recall_any": 0.9919028340080972,
+          "doc_recall_all": 0.8744939271255061,
+          "ndcg_at_10": 0.9406734053943608,
+          "exact_match": 0.016194331983805668,
+          "token_f1": 0.020678711021493934,
+          "avg_total_sec": 51.30688492416287,
+          "p50_total_sec": 11.766468247864395,
+          "p95_total_sec": 106.88359841611236,
+          "avg_storage_bytes": 5728686.562753037,
+          "p95_storage_bytes": 11749465.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15910,11 +15952,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0417179048484686,
-    "doc_recall_all_delta": 0.06606049669847891,
-    "ndcg_at_10_delta": 0.05669717493389548,
-    "token_f1_delta": -0.00034327955544694033,
-    "avg_storage_ratio_nova_over_stock": 0.4204458233981006,
-    "avg_latency_ratio_nova_over_stock": 1.6961643134530275
+    "doc_recall_any_delta": 0.0419392753562855,
+    "doc_recall_all_delta": 0.06546063860788476,
+    "ndcg_at_10_delta": 0.0563954869459834,
+    "token_f1_delta": -0.0003157263616083983,
+    "avg_storage_ratio_nova_over_stock": 0.4203268081532879,
+    "avg_latency_ratio_nova_over_stock": 1.696159766890277
   }
 }
