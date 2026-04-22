@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T14:32:14Z",
+  "generated_at": "2026-04-22T14:33:54Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,8 +116,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T14:31:19Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-22T14:32:15Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_s",
     "current_case_index": 440,
     "current_case_total": 500,
@@ -8560,19 +8560,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 439,
-        "rows_successful": 439,
+        "rows_recorded": 440,
+        "rows_successful": 440,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.979498861047836,
-        "doc_recall_all": 0.8883826879271071,
-        "ndcg_at_10": 0.9028675309701689,
-        "exact_match": 0.04783599088838269,
-        "token_f1": 0.08523703280286365,
-        "avg_total_sec": 103.22133331820538,
+        "doc_recall_any": 0.9772727272727273,
+        "doc_recall_all": 0.8863636363636364,
+        "ndcg_at_10": 0.900815559308873,
+        "exact_match": 0.04772727272727273,
+        "token_f1": 0.08504331227376623,
+        "avg_total_sec": 103.21159704795467,
         "p50_total_sec": 102.83602102613077,
         "p95_total_sec": 110.24393902672455,
-        "avg_storage_bytes": 11233396.216400912,
+        "avg_storage_bytes": 11232158.845454546,
         "p95_storage_bytes": 12048977.0,
         "categories": {
           "single-session-user": {
@@ -9429,20 +9429,20 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 73,
-            "rows_recorded": 73,
-            "rows_successful": 73,
+            "expected_total": 74,
+            "rows_recorded": 74,
+            "rows_successful": 74,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9726027397260274,
-            "doc_recall_all": 0.9315068493150684,
-            "ndcg_at_10": 0.9412490447120372,
-            "exact_match": 0.1095890410958904,
-            "token_f1": 0.15059371577093744,
-            "avg_total_sec": 102.63154469560577,
-            "p50_total_sec": 103.23368720291182,
+            "doc_recall_any": 0.9594594594594594,
+            "doc_recall_all": 0.918918918918919,
+            "ndcg_at_10": 0.9285294630267394,
+            "exact_match": 0.10810810810810811,
+            "token_f1": 0.14855866555781666,
+            "avg_total_sec": 102.58162347550152,
+            "p50_total_sec": 102.59808638319373,
             "p95_total_sec": 107.75674760295078,
-            "avg_storage_bytes": 11185399.191780822,
+            "avg_storage_bytes": 11178690.45945946,
             "p95_storage_bytes": 11769549.0,
             "categories": {},
             "sample_errors": [],
@@ -9473,6 +9473,20 @@
                 ],
                 "retrieved_doc_ids": [
                   "sharegpt_WZhGKMr_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::2133c1b5_abs",
+                "category": "knowledge-update",
+                "query": "How long have I been living in my current apartment in Shinjuku?",
+                "gold": "The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.",
+                "prediction": "User location Africa",
+                "expected_doc_ids": [
+                  "answer_52382508_abs_1",
+                  "answer_52382508_abs_2"
+                ],
+                "retrieved_doc_ids": [
+                  "ef0341d4_1"
                 ]
               }
             ],
@@ -9775,6 +9789,20 @@
             ],
             "retrieved_doc_ids": [
               "sharegpt_WZhGKMr_0"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::2133c1b5_abs",
+            "category": "knowledge-update",
+            "query": "How long have I been living in my current apartment in Shinjuku?",
+            "gold": "The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.",
+            "prediction": "User location Africa",
+            "expected_doc_ids": [
+              "answer_52382508_abs_1",
+              "answer_52382508_abs_2"
+            ],
+            "retrieved_doc_ids": [
+              "ef0341d4_1"
             ]
           }
         ],
@@ -13577,19 +13605,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2925,
-      "rows_successful": 2925,
+      "rows_recorded": 2926,
+      "rows_successful": 2926,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8218803418803419,
-      "doc_recall_all": 0.7326495726495726,
-      "ndcg_at_10": 0.6534584114271641,
-      "exact_match": 0.02564102564102564,
-      "token_f1": 0.07148073407918776,
-      "avg_total_sec": 73.8137696225548,
+      "doc_recall_any": 0.8215994531784006,
+      "doc_recall_all": 0.7323991797676008,
+      "ndcg_at_10": 0.6532350831935937,
+      "exact_match": 0.02563226247436774,
+      "token_f1": 0.07145630457335071,
+      "avg_total_sec": 73.82235595365026,
       "p50_total_sec": 91.92588090198115,
       "p95_total_sec": 104.54492059070617,
-      "avg_storage_bytes": 8133843.02051282,
+      "avg_storage_bytes": 8134716.263841421,
       "p95_storage_bytes": 11420345.0,
       "categories": {
         "category_2": {
@@ -15970,20 +15998,20 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 151,
-          "rows_recorded": 151,
-          "rows_successful": 151,
+          "expected_total": 152,
+          "rows_recorded": 152,
+          "rows_successful": 152,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9867549668874173,
-          "doc_recall_all": 0.9668874172185431,
-          "ndcg_at_10": 0.9715972202912498,
-          "exact_match": 0.11258278145695365,
-          "token_f1": 0.1565855714987301,
-          "avg_total_sec": 52.50796786711138,
-          "p50_total_sec": 7.034599240869284,
+          "doc_recall_any": 0.9802631578947368,
+          "doc_recall_all": 0.9605263157894737,
+          "ndcg_at_10": 0.9652051333156495,
+          "exact_match": 0.1118421052631579,
+          "token_f1": 0.15555540326518583,
+          "avg_total_sec": 52.813424489090195,
+          "p50_total_sec": 7.342609582003206,
           "p95_total_sec": 106.65137689420953,
-          "avg_storage_bytes": 5871729.741721855,
+          "avg_storage_bytes": 5903422.0,
           "p95_storage_bytes": 11703437.0,
           "categories": {},
           "sample_errors": [],
@@ -16014,6 +16042,20 @@
               ],
               "retrieved_doc_ids": [
                 "sharegpt_WZhGKMr_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::2133c1b5_abs",
+              "category": "knowledge-update",
+              "query": "How long have I been living in my current apartment in Shinjuku?",
+              "gold": "The information provided is not enough. You mentioned living in Harajuku but not Shinjuku.",
+              "prediction": "User location Africa",
+              "expected_doc_ids": [
+                "answer_52382508_abs_1",
+                "answer_52382508_abs_2"
+              ],
+              "retrieved_doc_ids": [
+                "ef0341d4_1"
               ]
             }
           ],
@@ -17013,11 +17055,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04072850941960893,
-    "doc_recall_all_delta": 0.06703002640175415,
-    "ndcg_at_10_delta": 0.0561500140261898,
-    "token_f1_delta": -0.0023267015721788187,
-    "avg_storage_ratio_nova_over_stock": 0.41995221879016287,
-    "avg_latency_ratio_nova_over_stock": 1.712198572961187
+    "doc_recall_any_delta": 0.04044762071766761,
+    "doc_recall_all_delta": 0.06677963351978233,
+    "ndcg_at_10_delta": 0.05592668579261939,
+    "token_f1_delta": -0.002351131078015864,
+    "avg_storage_ratio_nova_over_stock": 0.41999730454759204,
+    "avg_latency_ratio_nova_over_stock": 1.712397743169182
   }
 }
