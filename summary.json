@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T03:35:55Z",
+  "generated_at": "2026-04-22T03:47:38Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T03:34:13Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T03:46:41Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 190,
+    "current_case_index": 195,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::27016adc"
+    "current_case_id": "longmemeval_s::a96c20ee"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,19 +7257,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 190,
-        "rows_successful": 162,
+        "rows_recorded": 195,
+        "rows_successful": 167,
         "rows_failed": 28,
         "complete": false,
-        "doc_recall_any": 0.9691358024691358,
-        "doc_recall_all": 0.8271604938271605,
-        "ndcg_at_10": 0.8904093547391452,
-        "exact_match": 0.024691358024691357,
-        "token_f1": 0.10389078110641851,
-        "avg_total_sec": 57.3711497249099,
-        "p50_total_sec": 57.24288336234167,
+        "doc_recall_any": 0.9700598802395209,
+        "doc_recall_all": 0.8263473053892215,
+        "ndcg_at_10": 0.8908933140697912,
+        "exact_match": 0.023952095808383235,
+        "token_f1": 0.10078027867808263,
+        "avg_total_sec": 57.37343867121175,
+        "p50_total_sec": 57.296451814007014,
         "p95_total_sec": 59.83215543581173,
-        "avg_storage_bytes": 28063832.080246914,
+        "avg_storage_bytes": 28066653.0,
         "p95_storage_bytes": 28912552.0,
         "categories": {
           "single-session-user": {
@@ -7451,20 +7451,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 79,
-            "rows_recorded": 79,
-            "rows_successful": 79,
+            "expected_total": 84,
+            "rows_recorded": 84,
+            "rows_successful": 84,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9746835443037974,
-            "doc_recall_all": 0.6835443037974683,
-            "ndcg_at_10": 0.8579004725895731,
+            "doc_recall_any": 0.9761904761904762,
+            "doc_recall_all": 0.6904761904761905,
+            "ndcg_at_10": 0.8607976823391658,
             "exact_match": 0.0,
-            "token_f1": 0.022494984891116617,
-            "avg_total_sec": 57.32225238960944,
-            "p50_total_sec": 57.14142317837104,
+            "token_f1": 0.021155997695216817,
+            "avg_total_sec": 57.32971358852505,
+            "p50_total_sec": 57.24288336234167,
             "p95_total_sec": 59.83215543581173,
-            "avg_storage_bytes": 27990095.392405063,
+            "avg_storage_bytes": 28000092.73809524,
             "p95_storage_bytes": 28904897.0,
             "categories": {},
             "sample_errors": [],
@@ -8084,20 +8084,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 190,
-        "rows_successful": 190,
+        "rows_recorded": 194,
+        "rows_successful": 194,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9789473684210527,
-        "doc_recall_all": 0.8947368421052632,
-        "ndcg_at_10": 0.8990220966321799,
-        "exact_match": 0.02631578947368421,
-        "token_f1": 0.0688833762229922,
-        "avg_total_sec": 103.48302383657398,
+        "doc_recall_any": 0.9742268041237113,
+        "doc_recall_all": 0.8917525773195877,
+        "ndcg_at_10": 0.8959494760830627,
+        "exact_match": 0.02577319587628866,
+        "token_f1": 0.06746310042458,
+        "avg_total_sec": 103.48898524400471,
         "p50_total_sec": 103.0653768312186,
-        "p95_total_sec": 109.63705598982051,
-        "avg_storage_bytes": 11238273.968421053,
-        "p95_storage_bytes": 12028497.0,
+        "p95_total_sec": 109.51527576707304,
+        "avg_storage_bytes": 11237626.402061855,
+        "p95_storage_bytes": 12015237.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -8317,21 +8317,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 90,
-            "rows_recorded": 90,
-            "rows_successful": 90,
+            "expected_total": 94,
+            "rows_recorded": 94,
+            "rows_successful": 94,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9888888888888889,
-            "doc_recall_all": 0.8111111111111111,
-            "ndcg_at_10": 0.8986391996043772,
-            "exact_match": 0.022222222222222223,
-            "token_f1": 0.01934192468393682,
-            "avg_total_sec": 102.9983303011395,
+            "doc_recall_any": 0.9787234042553191,
+            "doc_recall_all": 0.8085106382978723,
+            "ndcg_at_10": 0.8923141272807867,
+            "exact_match": 0.02127659574468085,
+            "token_f1": 0.018518864059088442,
+            "avg_total_sec": 103.03125888819588,
             "p50_total_sec": 102.75747291510925,
-            "p95_total_sec": 109.51527576707304,
-            "avg_storage_bytes": 11199343.844444444,
-            "p95_storage_bytes": 11999717.0,
+            "p95_total_sec": 107.96182672306895,
+            "avg_storage_bytes": 11199663.978723405,
+            "p95_storage_bytes": 11901053.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -8347,6 +8347,23 @@
                 ],
                 "retrieved_doc_ids": [
                   "ultrachat_378743"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::8979f9ec",
+                "category": "multi-session",
+                "query": "What is the total number of lunch meals I got from the chicken fajitas and lentil soup?",
+                "gold": "8 meals",
+                "prediction": "Grilled Chicken Salad: Season chicken breasts with herbs, salt-free seasoning, and a drizzle of olive oil, then grill and serve over a bed of mixed greens with veggies and a low-sodium vinaigrette.",
+                "expected_doc_ids": [
+                  "answer_35e36341_1",
+                  "answer_35e36341_2"
+                ],
+                "retrieved_doc_ids": [
+                  "sharegpt_dY8VI8d_0",
+                  "ultrachat_562471",
+                  "c4293e27_2",
+                  "sharegpt_uO1NWA9_57"
                 ]
               }
             ],
@@ -8778,6 +8795,23 @@
               "c927ffbb",
               "32f28c7b_1"
             ]
+          },
+          {
+            "case_id": "longmemeval_s::8979f9ec",
+            "category": "multi-session",
+            "query": "What is the total number of lunch meals I got from the chicken fajitas and lentil soup?",
+            "gold": "8 meals",
+            "prediction": "Grilled Chicken Salad: Season chicken breasts with herbs, salt-free seasoning, and a drizzle of olive oil, then grill and serve over a bed of mixed greens with veggies and a low-sodium vinaigrette.",
+            "expected_doc_ids": [
+              "answer_35e36341_1",
+              "answer_35e36341_2"
+            ],
+            "retrieved_doc_ids": [
+              "sharegpt_dY8VI8d_0",
+              "ultrachat_562471",
+              "c4293e27_2",
+              "sharegpt_uO1NWA9_57"
+            ]
           }
         ],
         "sample_successes": [
@@ -8997,20 +9031,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2676,
-      "rows_successful": 2645,
+      "rows_recorded": 2681,
+      "rows_successful": 2650,
       "rows_failed": 31,
       "complete": false,
-      "doc_recall_any": 0.7648393194706994,
-      "doc_recall_all": 0.6521739130434783,
-      "ndcg_at_10": 0.5726652711446455,
-      "exact_match": 0.02155009451795841,
-      "token_f1": 0.06933805328913356,
-      "avg_total_sec": 41.94437093712083,
-      "p50_total_sec": 49.1975202569738,
-      "p95_total_sec": 56.06940382812172,
-      "avg_storage_bytes": 18651396.63364839,
-      "p95_storage_bytes": 27589258.0,
+      "doc_recall_any": 0.7652830188679245,
+      "doc_recall_all": 0.6524528301886793,
+      "ndcg_at_10": 0.573295286852642,
+      "exact_match": 0.02150943396226415,
+      "token_f1": 0.0692072267734937,
+      "avg_total_sec": 41.9736223137138,
+      "p50_total_sec": 49.19869258720428,
+      "p95_total_sec": 56.20307967392728,
+      "avg_storage_bytes": 18669333.71698113,
+      "p95_storage_bytes": 27628050.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -11181,20 +11215,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 211,
-          "rows_recorded": 211,
-          "rows_successful": 211,
+          "expected_total": 216,
+          "rows_recorded": 216,
+          "rows_successful": 216,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.981042654028436,
-          "doc_recall_all": 0.7156398104265402,
-          "ndcg_at_10": 0.8848436974953668,
+          "doc_recall_any": 0.9814814814814815,
+          "doc_recall_all": 0.7175925925925926,
+          "ndcg_at_10": 0.8853467044140558,
           "exact_match": 0.0,
-          "token_f1": 0.02345067457465736,
-          "avg_total_sec": 30.180941216517418,
-          "p50_total_sec": 14.91832375060767,
-          "p95_total_sec": 58.971260994672775,
-          "avg_storage_bytes": 14235096.853080569,
+          "token_f1": 0.02290783488542918,
+          "avg_total_sec": 30.812113885843214,
+          "p50_total_sec": 15.07718110224232,
+          "p95_total_sec": 58.961173467338085,
+          "avg_storage_bytes": 14557387.453703703,
           "p95_storage_bytes": 28734141.0,
           "categories": {},
           "sample_errors": [],
@@ -12502,20 +12536,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2676,
-      "rows_successful": 2676,
+      "rows_recorded": 2680,
+      "rows_successful": 2680,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8071748878923767,
-      "doc_recall_all": 0.718609865470852,
-      "ndcg_at_10": 0.6299780290316387,
-      "exact_match": 0.022047832585949178,
-      "token_f1": 0.06903958567396695,
-      "avg_total_sec": 71.09599601951781,
-      "p50_total_sec": 86.99203496193513,
-      "p95_total_sec": 101.81310847820714,
-      "avg_storage_bytes": 7845778.008221226,
-      "p95_storage_bytes": 10977005.0,
+      "doc_recall_any": 0.807089552238806,
+      "doc_recall_all": 0.7186567164179104,
+      "ndcg_at_10": 0.6301571663017407,
+      "exact_match": 0.022014925373134327,
+      "token_f1": 0.0689365415162446,
+      "avg_total_sec": 71.14476640172296,
+      "p50_total_sec": 87.00415205582976,
+      "p95_total_sec": 101.8754243273288,
+      "avg_storage_bytes": 7850794.558955224,
+      "p95_storage_bytes": 10993065.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14664,21 +14698,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 223,
-          "rows_recorded": 223,
-          "rows_successful": 223,
+          "expected_total": 227,
+          "rows_recorded": 227,
+          "rows_successful": 227,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9955156950672646,
-          "doc_recall_all": 0.8878923766816144,
-          "ndcg_at_10": 0.9523837363173319,
-          "exact_match": 0.017937219730941704,
-          "token_f1": 0.02118809754349302,
-          "avg_total_sec": 45.87092489271212,
-          "p50_total_sec": 10.032610131893307,
-          "p95_total_sec": 106.67036397475749,
-          "avg_storage_bytes": 5154232.30941704,
-          "p95_storage_bytes": 11707713.0,
+          "doc_recall_any": 0.9911894273127754,
+          "doc_recall_all": 0.8854625550660793,
+          "ndcg_at_10": 0.94881750307826,
+          "exact_match": 0.01762114537444934,
+          "token_f1": 0.02081473899647112,
+          "avg_total_sec": 46.89121083463727,
+          "p50_total_sec": 10.458599803037941,
+          "p95_total_sec": 106.865369127132,
+          "avg_storage_bytes": 5260886.665198238,
+          "p95_storage_bytes": 11749465.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14694,6 +14728,23 @@
               ],
               "retrieved_doc_ids": [
                 "ultrachat_378743"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::8979f9ec",
+              "category": "multi-session",
+              "query": "What is the total number of lunch meals I got from the chicken fajitas and lentil soup?",
+              "gold": "8 meals",
+              "prediction": "Grilled Chicken Salad: Season chicken breasts with herbs, salt-free seasoning, and a drizzle of olive oil, then grill and serve over a bed of mixed greens with veggies and a low-sodium vinaigrette.",
+              "expected_doc_ids": [
+                "answer_35e36341_1",
+                "answer_35e36341_2"
+              ],
+              "retrieved_doc_ids": [
+                "sharegpt_dY8VI8d_0",
+                "ultrachat_562471",
+                "c4293e27_2",
+                "sharegpt_uO1NWA9_57"
               ]
             }
           ],
@@ -15859,11 +15910,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.042335568421677294,
-    "doc_recall_all_delta": 0.06643595242737377,
-    "ndcg_at_10_delta": 0.05731275788699319,
-    "token_f1_delta": -0.0002984676151666088,
-    "avg_storage_ratio_nova_over_stock": 0.42065364660504334,
-    "avg_latency_ratio_nova_over_stock": 1.6950068490977832
+    "doc_recall_any_delta": 0.04180653337088147,
+    "doc_recall_all_delta": 0.06620388622923112,
+    "ndcg_at_10_delta": 0.05686187944909871,
+    "token_f1_delta": -0.00027068525724908976,
+    "avg_storage_ratio_nova_over_stock": 0.42051819727312223,
+    "avg_latency_ratio_nova_over_stock": 1.694987529786731
   }
 }

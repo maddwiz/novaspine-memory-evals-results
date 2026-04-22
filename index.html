@@ -281,10 +281,10 @@
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-22T03:35:55Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::27016adc</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2676 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2676 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-22T03:47:38Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_s::a96c20ee</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2681 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2680 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -437,11 +437,11 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>190 / 500 failed 28</td>
-      <td>96.9%</td>
-      <td>82.7%</td>
-      <td>89.0%</td>
-      <td>10.4%</td>
+      <td>195 / 500 failed 28</td>
+      <td>97.0%</td>
+      <td>82.6%</td>
+      <td>89.1%</td>
+      <td>10.1%</td>
       <td>57.4s</td>
       <td>26.8 MB</td>
     </tr>
@@ -449,11 +449,11 @@
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>190 / 500 failed 0</td>
-      <td>97.9%</td>
-      <td>89.5%</td>
-      <td>89.9%</td>
-      <td>6.9%</td>
+      <td>194 / 500 failed 0</td>
+      <td>97.4%</td>
+      <td>89.2%</td>
+      <td>89.6%</td>
+      <td>6.7%</td>
       <td>103.5s</td>
       <td>10.7 MB</td>
     </tr>
@@ -462,7 +462,7 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>multi-session</td><td>79</td><td>97.5%</td><td>2.2%</td><td>90</td><td>98.9%</td><td>1.9%</td></tr>
+<tr><td>multi-session</td><td>84</td><td>97.6%</td><td>2.1%</td><td>94</td><td>97.9%</td><td>1.9%</td></tr>
 <tr><td>single-session-preference</td><td>24</td><td>95.8%</td><td>21.3%</td><td>30</td><td>96.7%</td><td>11.3%</td></tr>
 <tr><td>single-session-user</td><td>59</td><td>96.6%</td><td>16.9%</td><td>70</td><td>97.1%</td><td>11.4%</td></tr></table>
       </details>
@@ -475,7 +475,8 @@
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Can you suggest some activities I can do during my commute to work?</p><p><b>Gold:</b> The user would prefer suggestions related to listening to new podcasts or audiobooks, especially the genre beyond true crime or self-improvement, such as history. They may not be interested in activities that require visual attention, such as reading or watching videos, as they are commuting. The user would not prefer general podcast topics such as true crime or self-improvement, as the user wants to explore other topics.</p><p><b>Pred:</b> * You may want to consider adding some lights or reflectors to your bike, especially if you plan to commute during early morning or late evening hours.</p><p><b>Expected docs:</b> answer_8da8c7e0</p><p><b>Retrieved:</b> 2aa70c9c_1, 99883f38_1</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What did my dad gave me as a birthday gift?</p><p><b>Gold:</b> You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.</p><p><b>Pred:</b> ve been thinking about my sister</p><p><b>Expected docs:</b> answer_f5b33470_abs</p><p><b>Retrieved:</b> 1dd13331_1, 31299b8e_2, ea3db78e_2, 793382f9_2</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> How many days did I spend in total traveling in Hawaii and in New York City?</p><p><b>Gold:</b> 15 days</p><p><b>Pred:</b> User location Cartagena</p><p><b>Expected docs:</b> answer_60e8941a_2, answer_60e8941a_1</p><p><b>Retrieved:</b> ultrachat_378743</p></div>
-<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> I&#x27;ve been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?</p><p><b>Gold:</b> The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.</p><p><b>Pred:</b> user: I&#x27;ve been thinking a lot about my relationships lately, and I was wondering if you could help me explore some philosophical perspectives on commitment and partnerships.</p><p><b>Expected docs:</b> answer_b0fac439</p><p><b>Retrieved:</b> 0e726047, ultrachat_125013, 87cfeb28_2, c927ffbb, 32f28c7b_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> definitely helped me in my new role</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
+<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> I&#x27;ve been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?</p><p><b>Gold:</b> The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.</p><p><b>Pred:</b> user: I&#x27;ve been thinking a lot about my relationships lately, and I was wondering if you could help me explore some philosophical perspectives on commitment and partnerships.</p><p><b>Expected docs:</b> answer_b0fac439</p><p><b>Retrieved:</b> 0e726047, ultrachat_125013, 87cfeb28_2, c927ffbb, 32f28c7b_1</p></div>
+<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What is the total number of lunch meals I got from the chicken fajitas and lentil soup?</p><p><b>Gold:</b> 8 meals</p><p><b>Pred:</b> Grilled Chicken Salad: Season chicken breasts with herbs, salt-free seasoning, and a drizzle of olive oil, then grill and serve over a bed of mixed greens with veggies and a low-sodium vinaigrette.</p><p><b>Expected docs:</b> answer_35e36341_1, answer_35e36341_2</p><p><b>Retrieved:</b> sharegpt_dY8VI8d_0, ultrachat_562471, c4293e27_2, sharegpt_uO1NWA9_57</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> definitely helped me in my new role</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> user: I&#x27;ve been listening to audiobooks during my daily commute, which takes 45 minutes each way.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 004edb32, 7d8b5834_1, d600c646, 0afa904a</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> s performance - she reminded me of my friend Emily, who</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb</p></div>
