@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T18:59:17Z",
+  "generated_at": "2026-04-22T20:25:33Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T18:41:11Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T20:19:31Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 5,
+    "current_case_index": 10,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::4c36ccef"
+    "current_case_id": "longmemeval_m::f523d9fe"
   },
   "benchmarks": {
     "locomo": {
@@ -10470,9 +10470,9 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 5,
+        "rows_recorded": 10,
         "rows_successful": 0,
-        "rows_failed": 5,
+        "rows_failed": 10,
         "complete": false,
         "doc_recall_any": 0.0,
         "doc_recall_all": 0.0,
@@ -10510,6 +10510,21 @@
             "case_id": "longmemeval_m::4c36ccef",
             "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
             "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null}}"
+          },
+          {
+            "case_id": "longmemeval_m::6ae235be",
+            "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null}}"
+          },
+          {
+            "case_id": "longmemeval_m::7e00a6cb",
+            "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null}}"
+          },
+          {
+            "case_id": "longmemeval_m::1903aded",
+            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null}}"
           }
         ],
         "sample_misses": [],
@@ -10517,40 +10532,54 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 9,
+        "rows_successful": 9,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 1.0,
-        "doc_recall_all": 1.0,
-        "ndcg_at_10": 1.0,
+        "doc_recall_any": 0.8888888888888888,
+        "doc_recall_all": 0.8888888888888888,
+        "ndcg_at_10": 0.8888888888888888,
         "exact_match": 0.0,
-        "token_f1": 0.04830917874396135,
-        "avg_total_sec": 1051.3762212639674,
-        "p50_total_sec": 1050.8274628636427,
+        "token_f1": 0.06928672508382654,
+        "avg_total_sec": 1047.8936001922314,
+        "p50_total_sec": 1048.2527131130919,
         "p95_total_sec": 1088.8760700193234,
-        "avg_storage_bytes": 108208745.0,
+        "avg_storage_bytes": 107680048.55555555,
         "p95_storage_bytes": 111720265.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
+            "doc_recall_any": 0.8888888888888888,
+            "doc_recall_all": 0.8888888888888888,
+            "ndcg_at_10": 0.8888888888888888,
             "exact_match": 0.0,
-            "token_f1": 0.04830917874396135,
-            "avg_total_sec": 1051.3762212639674,
-            "p50_total_sec": 1050.8274628636427,
+            "token_f1": 0.06928672508382654,
+            "avg_total_sec": 1047.8936001922314,
+            "p50_total_sec": 1048.2527131130919,
             "p95_total_sec": 1088.8760700193234,
-            "avg_storage_bytes": 108208745.0,
+            "avg_storage_bytes": 107680048.55555555,
             "p95_storage_bytes": 111720265.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "User location previous/historical: midst of, San Francisco Bay, city; current: the",
+                "expected_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0"
+                ],
+                "retrieved_doc_ids": [
+                  "44b1595a"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::7161e7e2",
@@ -10621,12 +10650,68 @@
                   "246ceaa0",
                   "d31c3ec8_1"
                 ]
+              },
+              {
+                "case_id": "longmemeval_m::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0",
+                  "f8cbf729_1",
+                  "c870d63c",
+                  "f8e8d445_5",
+                  "ef2e4f61_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515",
+                  "4f3b0353_2",
+                  "a68ad96e_2",
+                  "9bd6beaa_1",
+                  "d9b87d3c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "Since you mentioned you water Felix, your fiddle leaf fig, on Sundays, I can suggest a few options to help you remember:",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0",
+                  "ultrachat_415175",
+                  "ultrachat_250208",
+                  "3489e0eb",
+                  "sharegpt_A47BWMK_0"
+                ]
               }
             ]
           }
         },
         "sample_errors": [],
-        "sample_misses": [],
+        "sample_misses": [
+          {
+            "case_id": "longmemeval_m::1903aded",
+            "category": "single-session-assistant",
+            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "gold": "Transcriptionist.",
+            "prediction": "User location previous/historical: midst of, San Francisco Bay, city; current: the",
+            "expected_doc_ids": [
+              "answer_sharegpt_hA7AkP3_0"
+            ],
+            "retrieved_doc_ids": [
+              "44b1595a"
+            ]
+          }
+        ],
         "sample_successes": [
           {
             "case_id": "longmemeval_m::7161e7e2",
@@ -10697,6 +10782,48 @@
               "246ceaa0",
               "d31c3ec8_1"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::6ae235be",
+            "category": "single-session-assistant",
+            "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+            "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+            "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_IUWQYGQ_0",
+              "f8cbf729_1",
+              "c870d63c",
+              "f8e8d445_5",
+              "ef2e4f61_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::7e00a6cb",
+            "category": "single-session-assistant",
+            "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+            "gold": "International Budget Hostel",
+            "prediction": "International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_370515",
+              "4f3b0353_2",
+              "a68ad96e_2",
+              "9bd6beaa_1",
+              "d9b87d3c_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::ceb54acb",
+            "category": "single-session-assistant",
+            "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+            "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+            "prediction": "Since you mentioned you water Felix, your fiddle leaf fig, on Sundays, I can suggest a few options to help you remember:",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_cGdjmYo_0",
+              "ultrachat_415175",
+              "ultrachat_250208",
+              "3489e0eb",
+              "sharegpt_A47BWMK_0"
+            ]
           }
         ]
       }
@@ -10705,9 +10832,9 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2991,
+      "rows_recorded": 2996,
       "rows_successful": 2914,
-      "rows_failed": 77,
+      "rows_failed": 82,
       "complete": false,
       "doc_recall_any": 0.7848318462594372,
       "doc_recall_all": 0.67124227865477,
@@ -14287,20 +14414,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2991,
-      "rows_successful": 2991,
+      "rows_recorded": 2995,
+      "rows_successful": 2995,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8228017385489803,
-      "doc_recall_all": 0.7355399531929121,
-      "ndcg_at_10": 0.6580962398610682,
-      "exact_match": 0.02574389836175192,
-      "token_f1": 0.0722706395580958,
-      "avg_total_sec": 76.06547172864776,
-      "p50_total_sec": 92.23436869913712,
-      "p95_total_sec": 105.17068399908021,
-      "avg_storage_bytes": 8364828.709127382,
-      "p95_storage_bytes": 11470109.0,
+      "doc_recall_any": 0.8227045075125209,
+      "doc_recall_all": 0.735559265442404,
+      "ndcg_at_10": 0.6582189827794508,
+      "exact_match": 0.025709515859766278,
+      "token_f1": 0.07230167530894797,
+      "avg_total_sec": 77.35759173148438,
+      "p50_total_sec": 92.25253098737448,
+      "p95_total_sec": 105.31103588221595,
+      "avg_storage_bytes": 8496587.439398998,
+      "p95_storage_bytes": 11481713.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17051,21 +17178,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 117,
-          "rows_recorded": 117,
-          "rows_successful": 117,
+          "expected_total": 121,
+          "rows_recorded": 121,
+          "rows_successful": 121,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9401709401709402,
-          "doc_recall_all": 0.9401709401709402,
-          "ndcg_at_10": 0.9401709401709402,
-          "exact_match": 0.03418803418803419,
-          "token_f1": 0.12596537507058914,
-          "avg_total_sec": 95.73547692927652,
-          "p50_total_sec": 97.5618616649881,
-          "p95_total_sec": 114.29308866988868,
-          "avg_storage_bytes": 10255792.418803418,
-          "p95_storage_bytes": 12677069.0,
+          "doc_recall_any": 0.9338842975206612,
+          "doc_recall_all": 0.9338842975206612,
+          "ndcg_at_10": 0.9338842975206612,
+          "exact_match": 0.03305785123966942,
+          "token_f1": 0.12495854144870712,
+          "avg_total_sec": 127.06786856310411,
+          "p50_total_sec": 98.62294495292008,
+          "p95_total_sec": 1030.0116271469742,
+          "avg_storage_bytes": 13454582.024793388,
+          "p95_storage_bytes": 106659169.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17170,6 +17297,19 @@
               ],
               "retrieved_doc_ids": [
                 "e24943fc"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::1903aded",
+              "category": "single-session-assistant",
+              "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+              "gold": "Transcriptionist.",
+              "prediction": "User location previous/historical: midst of, San Francisco Bay, city; current: the",
+              "expected_doc_ids": [
+                "answer_sharegpt_hA7AkP3_0"
+              ],
+              "retrieved_doc_ids": [
+                "44b1595a"
               ]
             }
           ],
@@ -17855,11 +17995,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03796989228954306,
-    "doc_recall_all_delta": 0.06429767453814206,
-    "ndcg_at_10_delta": 0.054016432533068426,
-    "token_f1_delta": -0.0017364891118977904,
-    "avg_storage_ratio_nova_over_stock": 0.4285686034268391,
-    "avg_latency_ratio_nova_over_stock": 1.7543034647268327
+    "doc_recall_any_delta": 0.03787266125308364,
+    "doc_recall_all_delta": 0.06431698678763398,
+    "ndcg_at_10_delta": 0.05413917545145097,
+    "token_f1_delta": -0.0017054533610456196,
+    "avg_storage_ratio_nova_over_stock": 0.4353192084882655,
+    "avg_latency_ratio_nova_over_stock": 1.784103721614813
   }
 }
