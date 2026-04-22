@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T01:10:53Z",
+  "generated_at": "2026-04-22T01:22:00Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T01:09:11Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T01:21:35Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 135,
+    "current_case_index": 140,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::75832dbd"
+    "current_case_id": "longmemeval_s::afdc33df"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,19 +7257,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 135,
-        "rows_successful": 115,
-        "rows_failed": 20,
+        "rows_recorded": 140,
+        "rows_successful": 118,
+        "rows_failed": 22,
         "complete": false,
-        "doc_recall_any": 0.9652173913043478,
-        "doc_recall_all": 0.808695652173913,
-        "ndcg_at_10": 0.8922087072302527,
-        "exact_match": 0.034782608695652174,
-        "token_f1": 0.1038851655687209,
-        "avg_total_sec": 57.379191853510946,
-        "p50_total_sec": 57.30964490305632,
+        "doc_recall_any": 0.9661016949152542,
+        "doc_recall_all": 0.8135593220338984,
+        "ndcg_at_10": 0.8949491638260937,
+        "exact_match": 0.03389830508474576,
+        "token_f1": 0.10599475894663375,
+        "avg_total_sec": 57.38490214052026,
+        "p50_total_sec": 57.31309747323394,
         "p95_total_sec": 59.33261271007359,
-        "avg_storage_bytes": 28058879.226086956,
+        "avg_storage_bytes": 28069719.79661017,
         "p95_storage_bytes": 28904897.0,
         "categories": {
           "single-session-user": {
@@ -7657,21 +7657,21 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 6,
+            "rows_recorded": 6,
+            "rows_successful": 6,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.7956176024115139,
+            "ndcg_at_10": 0.8978088012057569,
             "exact_match": 0.0,
-            "token_f1": 0.21806298276886513,
-            "avg_total_sec": 56.837636490662895,
+            "token_f1": 0.20246274393441213,
+            "avg_total_sec": 57.22071648327013,
             "p50_total_sec": 57.41814044583589,
-            "p95_total_sec": 57.425208459142596,
-            "avg_storage_bytes": 27964552.333333332,
-            "p95_storage_bytes": 28200754.0,
+            "p95_total_sec": 57.753873525653034,
+            "avg_storage_bytes": 28224913.666666668,
+            "p95_storage_bytes": 28665498.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -7709,6 +7709,41 @@
                   "sharegpt_E0YL5SX_157",
                   "ultrachat_533748",
                   "answer_d87a6ef8"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::0edc2aef",
+                "category": "single-session-preference",
+                "query": "Can you suggest a hotel for my upcoming trip to Miami?",
+                "gold": "The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.",
+                "prediction": "massage at the hotel",
+                "retrieved_doc_ids": [
+                  "answer_d586e9cd"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::35a27287",
+                "category": "single-session-preference",
+                "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+                "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+                "prediction": "Can you suggest some ways to find language exchange partners or events that focus on French and Spanish languages?",
+                "retrieved_doc_ids": [
+                  "answer_9b182436",
+                  "02f2ab8e_2",
+                  "58ae7c4f_3",
+                  "ultrachat_267380"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::195a1a1b",
+                "category": "single-session-preference",
+                "query": "Can you suggest some activities that I can do in the evening?",
+                "gold": "The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.",
+                "prediction": "user: I'm planning to start a new exercise routine and was wondering if you could recommend some outdoor activities that are easy on the joints?",
+                "retrieved_doc_ids": [
+                  "answer_6dc4305e",
+                  "ed9dad6c_2",
+                  "9f12daa1_1"
                 ]
               }
             ]
@@ -7954,19 +7989,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 135,
-        "rows_successful": 135,
+        "rows_recorded": 139,
+        "rows_successful": 139,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9777777777777777,
-        "doc_recall_all": 0.8666666666666667,
-        "ndcg_at_10": 0.896503604848294,
-        "exact_match": 0.022222222222222223,
-        "token_f1": 0.0733678286082383,
-        "avg_total_sec": 103.55413371172423,
-        "p50_total_sec": 103.15018347697333,
+        "doc_recall_any": 0.9784172661870504,
+        "doc_recall_all": 0.8705035971223022,
+        "ndcg_at_10": 0.8994819183778394,
+        "exact_match": 0.02158273381294964,
+        "token_f1": 0.07305467527027458,
+        "avg_total_sec": 103.62843809146166,
+        "p50_total_sec": 103.29132494563237,
         "p95_total_sec": 109.51527576707304,
-        "avg_storage_bytes": 11249249.503703704,
+        "avg_storage_bytes": 11249350.208633093,
         "p95_storage_bytes": 12052605.0,
         "categories": {
           "single-session-user": {
@@ -8385,21 +8420,21 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.6872021038816168,
+            "ndcg_at_10": 0.8659437588064073,
             "exact_match": 0.0,
-            "token_f1": 0.12186451157039391,
-            "avg_total_sec": 101.02919312923525,
-            "p50_total_sec": 102.09593656798825,
-            "p95_total_sec": 102.77669827500358,
-            "avg_storage_bytes": 10891982.333333334,
-            "p95_storage_bytes": 11120869.0,
+            "token_f1": 0.0879337907381683,
+            "avg_total_sec": 103.94748900258648,
+            "p50_total_sec": 102.77669827500358,
+            "p95_total_sec": 109.0434627016075,
+            "avg_storage_bytes": 11098134.714285715,
+            "p95_storage_bytes": 11440537.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -8444,6 +8479,58 @@
                   "sharegpt_FYqt26U_0",
                   "answer_d87a6ef8",
                   "ultrachat_165893"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::0edc2aef",
+                "category": "single-session-preference",
+                "query": "Can you suggest a hotel for my upcoming trip to Miami?",
+                "gold": "The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.",
+                "prediction": "Be sure to check the hotel's website or contact their reservations team directly to inquire about current packages and promotions.",
+                "retrieved_doc_ids": [
+                  "answer_d586e9cd"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::35a27287",
+                "category": "single-session-preference",
+                "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+                "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+                "prediction": "watercolor classes near me",
+                "retrieved_doc_ids": [
+                  "answer_9b182436",
+                  "02f2ab8e_2",
+                  "e4a1b565_2",
+                  "58ae7c4f_3",
+                  "a98ff421_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::32260d93",
+                "category": "single-session-preference",
+                "query": "Can you recommend a show or movie for me to watch tonight?",
+                "gold": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+                "prediction": "however, you can try searching online for thai restaurants in your area or read reviews on websites like yelp or google maps.",
+                "retrieved_doc_ids": [
+                  "answer_0250ae1c",
+                  "573dc24b_1",
+                  "5ace29d7_1",
+                  "ultrachat_486807",
+                  "6d3f5c68_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::195a1a1b",
+                "category": "single-session-preference",
+                "query": "Can you suggest some activities that I can do in the evening?",
+                "gold": "The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.",
+                "prediction": "Try to recreate the experience you had with your dad, and see if you can catch some of the same species you used to catch together.",
+                "retrieved_doc_ids": [
+                  "answer_6dc4305e",
+                  "ed9dad6c_2",
+                  "9b90460f_3",
+                  "9f12daa1_1",
+                  "1b71c896_2"
                 ]
               }
             ]
@@ -8712,19 +8799,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2621,
-      "rows_successful": 2598,
-      "rows_failed": 23,
+      "rows_recorded": 2626,
+      "rows_successful": 2601,
+      "rows_failed": 25,
       "complete": false,
-      "doc_recall_any": 0.7609699769053118,
-      "doc_recall_all": 0.6481909160892995,
-      "ndcg_at_10": 0.5669966620636355,
-      "exact_match": 0.021939953810623556,
-      "token_f1": 0.06871271687872263,
-      "avg_total_sec": 41.665643547499215,
-      "p50_total_sec": 49.136601529084146,
-      "p95_total_sec": 55.067110139876604,
-      "avg_storage_bytes": 18480898.541185528,
+      "doc_recall_any": 0.7612456747404844,
+      "doc_recall_all": 0.6485966935793925,
+      "ndcg_at_10": 0.5674960892123511,
+      "exact_match": 0.02191464821222607,
+      "token_f1": 0.0688489911442604,
+      "avg_total_sec": 41.684026653529635,
+      "p50_total_sec": 49.144147366750985,
+      "p95_total_sec": 55.21063620503992,
+      "avg_storage_bytes": 18492437.614379086,
       "p95_storage_bytes": 23600772.0,
       "categories": {
         "category_2": {
@@ -11273,21 +11360,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 33,
-          "rows_recorded": 33,
-          "rows_successful": 33,
+          "expected_total": 36,
+          "rows_recorded": 36,
+          "rows_successful": 36,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9696969696969697,
-          "doc_recall_all": 0.9696969696969697,
-          "ndcg_at_10": 0.95111675173438,
+          "doc_recall_any": 0.9722222222222222,
+          "doc_recall_all": 0.9722222222222222,
+          "ndcg_at_10": 0.955190355756515,
           "exact_match": 0.0,
-          "token_f1": 0.21146622414924568,
-          "avg_total_sec": 16.564058221791957,
-          "p50_total_sec": 12.505673695821315,
-          "p95_total_sec": 55.669560567010194,
-          "avg_storage_bytes": 7228836.575757576,
-          "p95_storage_bytes": 27834872.0,
+          "token_f1": 0.2094159142284718,
+          "avg_total_sec": 19.984036409632406,
+          "p50_total_sec": 12.524441180750728,
+          "p95_total_sec": 57.425208459142596,
+          "avg_storage_bytes": 9000206.444444444,
+          "p95_storage_bytes": 28373264.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -12203,20 +12290,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2621,
-      "rows_successful": 2621,
+      "rows_recorded": 2625,
+      "rows_successful": 2625,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.803510110644792,
-      "doc_recall_all": 0.7134681419305609,
-      "ndcg_at_10": 0.6242025921339452,
-      "exact_match": 0.02174742464708127,
-      "token_f1": 0.06927384457965631,
-      "avg_total_sec": 70.42003772238206,
-      "p50_total_sec": 86.85936712566763,
-      "p95_total_sec": 100.64746686629951,
-      "avg_storage_bytes": 7775153.979015643,
-      "p95_storage_bytes": 10625297.0,
+      "doc_recall_any": 0.8038095238095239,
+      "doc_recall_all": 0.7139047619047619,
+      "ndcg_at_10": 0.6247752358030745,
+      "exact_match": 0.021714285714285714,
+      "token_f1": 0.06926350081666104,
+      "avg_total_sec": 70.47446236723573,
+      "p50_total_sec": 86.86806580377743,
+      "p95_total_sec": 100.76302238274366,
+      "avg_storage_bytes": 7780453.171428571,
+      "p95_storage_bytes": 10629393.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14700,21 +14787,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 33,
-          "rows_recorded": 33,
-          "rows_successful": 33,
+          "expected_total": 37,
+          "rows_recorded": 37,
+          "rows_successful": 37,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
-          "ndcg_at_10": 0.9715638276256016,
+          "ndcg_at_10": 0.9746380084228339,
           "exact_match": 0.0,
-          "token_f1": 0.1816080529471784,
-          "avg_total_sec": 12.582299644480262,
-          "p50_total_sec": 3.7382254800759256,
-          "p95_total_sec": 98.21494454471394,
-          "avg_storage_bytes": 1624881.4242424243,
-          "p95_storage_bytes": 10541317.0,
+          "token_f1": 0.16872996615440228,
+          "avg_total_sec": 22.69623599724995,
+          "p50_total_sec": 3.8816442801617086,
+          "p95_total_sec": 106.60717508243397,
+          "avg_storage_bytes": 2665731.972972973,
+          "p95_storage_bytes": 11260457.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -15542,11 +15629,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04254013373948029,
-    "doc_recall_all_delta": 0.06527722584126139,
-    "ndcg_at_10_delta": 0.05720593007030972,
-    "token_f1_delta": 0.0005611277009336807,
-    "avg_storage_ratio_nova_over_stock": 0.42071298436536275,
-    "avg_latency_ratio_nova_over_stock": 1.690122406056265
+    "doc_recall_any_delta": 0.04256384906903943,
+    "doc_recall_all_delta": 0.0653080683253694,
+    "ndcg_at_10_delta": 0.05727914659072342,
+    "token_f1_delta": 0.0004145096724006425,
+    "avg_storage_ratio_nova_over_stock": 0.4207370241648812,
+    "avg_latency_ratio_nova_over_stock": 1.6906826913102033
   }
 }
