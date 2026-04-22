@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T00:18:05Z",
+  "generated_at": "2026-04-22T00:29:27Z",
   "manifest": {
     "generated_at": "2026-04-18T15:21:44Z",
     "top_k": 10,
@@ -116,12 +116,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T00:16:19Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-22T00:28:45Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 115,
+    "current_case_index": 120,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::gpt4_e05b82a6"
+    "current_case_id": "longmemeval_s::2b8f3739"
   },
   "benchmarks": {
     "locomo": {
@@ -7257,19 +7257,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 115,
-        "rows_successful": 98,
-        "rows_failed": 17,
+        "rows_recorded": 120,
+        "rows_successful": 102,
+        "rows_failed": 18,
         "complete": false,
-        "doc_recall_any": 0.9693877551020408,
-        "doc_recall_all": 0.8673469387755102,
-        "ndcg_at_10": 0.9207948749734441,
-        "exact_match": 0.04081632653061224,
-        "token_f1": 0.11306056539631011,
-        "avg_total_sec": 57.311365015600444,
+        "doc_recall_any": 0.9705882352941176,
+        "doc_recall_all": 0.8431372549019608,
+        "ndcg_at_10": 0.9109469399402315,
+        "exact_match": 0.0392156862745098,
+        "token_f1": 0.10920351900245251,
+        "avg_total_sec": 57.27750075855931,
         "p50_total_sec": 57.2258134894073,
         "p95_total_sec": 59.282923054881394,
-        "avg_storage_bytes": 28028224.44897959,
+        "avg_storage_bytes": 28009455.10784314,
         "p95_storage_bytes": 28894890.0,
         "categories": {
           "single-session-user": {
@@ -7451,20 +7451,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 39,
-            "rows_recorded": 39,
-            "rows_successful": 39,
+            "expected_total": 43,
+            "rows_recorded": 43,
+            "rows_successful": 43,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9743589743589743,
-            "doc_recall_all": 0.717948717948718,
-            "ndcg_at_10": 0.8857785046713132,
+            "doc_recall_any": 0.9767441860465116,
+            "doc_recall_all": 0.6744186046511628,
+            "ndcg_at_10": 0.8656756234578442,
             "exact_match": 0.0,
-            "token_f1": 0.02891562967649924,
-            "avg_total_sec": 57.111803450203766,
+            "token_f1": 0.027593792716168256,
+            "avg_total_sec": 57.05003814888728,
             "p50_total_sec": 57.08705948898569,
             "p95_total_sec": 58.69112873123959,
-            "avg_storage_bytes": 27905306.53846154,
+            "avg_storage_bytes": 27872218.139534883,
             "p95_storage_bytes": 28789394.0,
             "categories": {},
             "sample_errors": [],
@@ -7861,19 +7861,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 115,
-        "rows_successful": 115,
+        "rows_recorded": 119,
+        "rows_successful": 119,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9826086956521739,
-        "doc_recall_all": 0.8782608695652174,
-        "ndcg_at_10": 0.9151434781880707,
-        "exact_match": 0.02608695652173913,
-        "token_f1": 0.07850138290452131,
-        "avg_total_sec": 103.41804947089403,
+        "doc_recall_any": 0.9747899159663865,
+        "doc_recall_all": 0.8487394957983193,
+        "ndcg_at_10": 0.8984150516746053,
+        "exact_match": 0.025210084033613446,
+        "token_f1": 0.07586268095815085,
+        "avg_total_sec": 103.41110066125685,
         "p50_total_sec": 102.89528277888894,
         "p95_total_sec": 109.28208777494729,
-        "avg_storage_bytes": 11240629.034782609,
+        "avg_storage_bytes": 11236907.521008404,
         "p95_storage_bytes": 12028497.0,
         "categories": {
           "single-session-user": {
@@ -8094,24 +8094,39 @@
             ]
           },
           "multi-session": {
-            "expected_total": 45,
-            "rows_recorded": 45,
-            "rows_successful": 45,
+            "expected_total": 49,
+            "rows_recorded": 49,
+            "rows_successful": 49,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.7333333333333333,
-            "ndcg_at_10": 0.9001192578472501,
+            "doc_recall_any": 0.9795918367346939,
+            "doc_recall_all": 0.673469387755102,
+            "ndcg_at_10": 0.8607195461382888,
             "exact_match": 0.0,
-            "token_f1": 0.023900506096158274,
-            "avg_total_sec": 102.34955826833223,
+            "token_f1": 0.021949444374022905,
+            "avg_total_sec": 102.4199063594225,
             "p50_total_sec": 102.35070857265964,
-            "p95_total_sec": 106.50940728699788,
-            "avg_storage_bytes": 11110298.066666666,
+            "p95_total_sec": 107.0103889531456,
+            "avg_storage_bytes": 11111899.367346939,
             "p95_storage_bytes": 11999717.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::edced276",
+                "category": "multi-session",
+                "query": "How many days did I spend in total traveling in Hawaii and in New York City?",
+                "gold": "15 days",
+                "prediction": "User location Cartagena",
+                "expected_doc_ids": [
+                  "answer_60e8941a_2",
+                  "answer_60e8941a_1"
+                ],
+                "retrieved_doc_ids": [
+                  "ultrachat_378743"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_s::0a995998",
@@ -8306,6 +8321,20 @@
               "31299b8e_2",
               "ea3db78e_2",
               "793382f9_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::edced276",
+            "category": "multi-session",
+            "query": "How many days did I spend in total traveling in Hawaii and in New York City?",
+            "gold": "15 days",
+            "prediction": "User location Cartagena",
+            "expected_doc_ids": [
+              "answer_60e8941a_2",
+              "answer_60e8941a_1"
+            ],
+            "retrieved_doc_ids": [
+              "ultrachat_378743"
             ]
           }
         ],
@@ -8526,20 +8555,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2601,
-      "rows_successful": 2581,
-      "rows_failed": 20,
+      "rows_recorded": 2606,
+      "rows_successful": 2585,
+      "rows_failed": 21,
       "complete": false,
-      "doc_recall_any": 0.759783029833398,
-      "doc_recall_all": 0.649360712901976,
-      "ndcg_at_10": 0.5659400327226825,
-      "exact_match": 0.022084463386284385,
-      "token_f1": 0.0688294381322576,
-      "avg_total_sec": 41.559569409057744,
-      "p50_total_sec": 49.123194597195834,
-      "p95_total_sec": 54.69414362637326,
-      "avg_storage_bytes": 18416648.31266951,
-      "p95_storage_bytes": 23596674.0,
+      "doc_recall_any": 0.7601547388781431,
+      "doc_recall_all": 0.648742746615087,
+      "ndcg_at_10": 0.566100547227756,
+      "exact_match": 0.022050290135396517,
+      "token_f1": 0.06874568794923351,
+      "avg_total_sec": 41.58260733099507,
+      "p50_total_sec": 49.12539572129026,
+      "p95_total_sec": 54.750530240125954,
+      "avg_storage_bytes": 18430780.54932302,
+      "p95_storage_bytes": 23596676.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -10710,21 +10739,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 171,
-          "rows_recorded": 171,
-          "rows_successful": 171,
+          "expected_total": 175,
+          "rows_recorded": 175,
+          "rows_successful": 175,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9824561403508771,
-          "doc_recall_all": 0.7309941520467836,
-          "ndcg_at_10": 0.8975043539130254,
+          "doc_recall_any": 0.9828571428571429,
+          "doc_recall_all": 0.72,
+          "ndcg_at_10": 0.8922967694036196,
           "exact_match": 0.0,
-          "token_f1": 0.0251385852996372,
-          "avg_total_sec": 23.784099371134364,
-          "p50_total_sec": 14.133664512075484,
-          "p95_total_sec": 58.3163056531921,
-          "avg_storage_bytes": 10998215.52631579,
-          "p95_storage_bytes": 28344217.0,
+          "token_f1": 0.02490012351799843,
+          "avg_total_sec": 24.53069884747533,
+          "p50_total_sec": 14.176663088146597,
+          "p95_total_sec": 58.105302174109966,
+          "avg_storage_bytes": 11376533.028571429,
+          "p95_storage_bytes": 28276883.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -11999,19 +12028,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2601,
-      "rows_successful": 2601,
+      "rows_recorded": 2605,
+      "rows_successful": 2605,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8023836985774702,
-      "doc_recall_all": 0.71280276816609,
-      "ndcg_at_10": 0.6229329132334406,
-      "exact_match": 0.02191464821222607,
-      "token_f1": 0.0694693382603564,
-      "avg_total_sec": 70.15924125660646,
-      "p50_total_sec": 86.81976007902995,
-      "p95_total_sec": 100.15647668810561,
-      "avg_storage_bytes": 7748059.29834679,
+      "doc_recall_any": 0.8023032629558541,
+      "doc_recall_all": 0.7117082533589252,
+      "ndcg_at_10": 0.622617427438706,
+      "exact_match": 0.021880998080614205,
+      "token_f1": 0.06936266749143455,
+      "avg_total_sec": 70.2099930126565,
+      "p50_total_sec": 86.82400832511485,
+      "p95_total_sec": 100.18006987310946,
+      "avg_storage_bytes": 7753252.165451055,
       "p95_storage_bytes": 10613009.0,
       "categories": {
         "category_2": {
@@ -14161,24 +14190,39 @@
           ]
         },
         "multi-session": {
-          "expected_total": 178,
-          "rows_recorded": 178,
-          "rows_successful": 178,
+          "expected_total": 182,
+          "rows_recorded": 182,
+          "rows_successful": 182,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 0.8876404494382022,
-          "ndcg_at_10": 0.9663450103230188,
-          "exact_match": 0.011235955056179775,
-          "token_f1": 0.022807276994223327,
-          "avg_total_sec": 31.264587899141556,
-          "p50_total_sec": 7.651590657886118,
-          "p95_total_sec": 104.75838587014005,
-          "avg_storage_bytes": 3603462.202247191,
+          "doc_recall_any": 0.9945054945054945,
+          "doc_recall_all": 0.8681318681318682,
+          "ndcg_at_10": 0.954281884588721,
+          "exact_match": 0.01098901098901099,
+          "token_f1": 0.022306018159185453,
+          "avg_total_sec": 32.84583481090082,
+          "p50_total_sec": 8.062162036076188,
+          "p95_total_sec": 105.48598469002172,
+          "avg_storage_bytes": 3768878.7252747254,
           "p95_storage_bytes": 11416753.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "longmemeval_s::edced276",
+              "category": "multi-session",
+              "query": "How many days did I spend in total traveling in Hawaii and in New York City?",
+              "gold": "15 days",
+              "prediction": "User location Cartagena",
+              "expected_doc_ids": [
+                "answer_60e8941a_2",
+                "answer_60e8941a_1"
+              ],
+              "retrieved_doc_ids": [
+                "ultrachat_378743"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::0a995998",
@@ -15323,11 +15367,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0426006687440722,
-    "doc_recall_all_delta": 0.06344205526411406,
-    "ndcg_at_10_delta": 0.056992880510758126,
-    "token_f1_delta": 0.0006399001280987943,
-    "avg_storage_ratio_nova_over_stock": 0.4207095214505783,
-    "avg_latency_ratio_nova_over_stock": 1.6881609278972831
+    "doc_recall_any_delta": 0.04214852407771097,
+    "doc_recall_all_delta": 0.06296550674383816,
+    "ndcg_at_10_delta": 0.056516880210949916,
+    "token_f1_delta": 0.0006169795422010377,
+    "avg_storage_ratio_nova_over_stock": 0.42066868219185866,
+    "avg_latency_ratio_nova_over_stock": 1.6884461441724699
   }
 }
