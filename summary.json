@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T03:11:52Z",
+  "generated_at": "2026-04-23T03:24:40Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T02:59:07Z",
+    "updated_at": "2026-04-23T03:11:54Z",
     "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 9,
+    "current_case_index": 10,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::ceb54acb"
+    "current_case_id": "longmemeval_m::f523d9fe"
   },
   "benchmarks": {
     "locomo": {
@@ -10467,36 +10467,36 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 9,
-        "rows_successful": 9,
+        "rows_recorded": 10,
+        "rows_successful": 10,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
-        "exact_match": 0.0,
-        "token_f1": 0.05981775426219871,
-        "avg_total_sec": 775.7757071080721,
-        "p50_total_sec": 775.475091831293,
+        "exact_match": 0.1,
+        "token_f1": 0.15383597883597883,
+        "avg_total_sec": 774.8439539568499,
+        "p50_total_sec": 768.9437318299897,
         "p95_total_sec": 815.4697632240131,
-        "avg_storage_bytes": 412271655.4444444,
+        "avg_storage_bytes": 411532462.7,
         "p95_storage_bytes": 430665713.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.05981775426219871,
-            "avg_total_sec": 775.7757071080721,
-            "p50_total_sec": 775.475091831293,
+            "exact_match": 0.1,
+            "token_f1": 0.15383597883597883,
+            "avg_total_sec": 774.8439539568499,
+            "p50_total_sec": 768.9437318299897,
             "p95_total_sec": 815.4697632240131,
-            "avg_storage_bytes": 412271655.4444444,
+            "avg_storage_bytes": 411532462.7,
             "p95_storage_bytes": 430665713.0,
             "categories": {},
             "sample_errors": [],
@@ -10606,6 +10606,17 @@
                   "ultrachat_250208",
                   "ultrachat_415175",
                   "6d920fa0_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "doc martin",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0",
+                  "5b4d2438_2"
                 ]
               }
             ]
@@ -10718,6 +10729,17 @@
               "ultrachat_250208",
               "ultrachat_415175",
               "6d920fa0_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::f523d9fe",
+            "category": "single-session-assistant",
+            "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+            "gold": "Doc Martin",
+            "prediction": "doc martin",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_m2xJfjo_0",
+              "5b4d2438_2"
             ]
           }
         ]
@@ -11136,20 +11158,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2995,
-      "rows_successful": 2923,
+      "rows_recorded": 2996,
+      "rows_successful": 2924,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7854943551146083,
-      "doc_recall_all": 0.6722545330140267,
-      "ndcg_at_10": 0.6052988568435824,
-      "exact_match": 0.02668491276086213,
-      "token_f1": 0.07396343918327784,
-      "avg_total_sec": 45.614488600356246,
-      "p50_total_sec": 51.077527089975774,
-      "p95_total_sec": 57.932802931871265,
-      "avg_storage_bytes": 20727361.78344167,
-      "p95_storage_bytes": 28318209.0,
+      "doc_recall_any": 0.7855677154582763,
+      "doc_recall_all": 0.6723666210670315,
+      "ndcg_at_10": 0.6054338435546482,
+      "exact_match": 0.027017783857729138,
+      "token_f1": 0.0742801411534614,
+      "avg_total_sec": 45.861015169096156,
+      "p50_total_sec": 51.0803888970986,
+      "p95_total_sec": 57.93934544408694,
+      "avg_storage_bytes": 20858740.841655266,
+      "p95_storage_bytes": 28318598.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13942,21 +13964,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 110,
-          "rows_recorded": 110,
-          "rows_successful": 110,
+          "expected_total": 111,
+          "rows_recorded": 111,
+          "rows_successful": 111,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03636363636363636,
-          "token_f1": 0.09256854724934153,
-          "avg_total_sec": 93.56859917556021,
-          "p50_total_sec": 12.670150057878345,
-          "p95_total_sec": 768.9437318299897,
-          "avg_storage_bytes": 47673074.36363637,
-          "p95_storage_bytes": 412470436.0,
+          "exact_match": 0.04504504504504504,
+          "token_f1": 0.10074360538223034,
+          "avg_total_sec": 99.63066743159885,
+          "p50_total_sec": 12.747924174182117,
+          "p95_total_sec": 766.4581755958498,
+          "avg_storage_bytes": 50891152.324324325,
+          "p95_storage_bytes": 404879728.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -18299,11 +18321,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0376235662711345,
-    "doc_recall_all_delta": 0.0639213497308101,
-    "ndcg_at_10_delta": 0.053717083670892896,
-    "token_f1_delta": -0.001344582980628714,
-    "avg_storage_ratio_nova_over_stock": 0.42088047714579313,
-    "avg_latency_ratio_nova_over_stock": 1.7446000703195645
+    "doc_recall_any_delta": 0.037550205927466496,
+    "doc_recall_all_delta": 0.06380926167780532,
+    "ndcg_at_10_delta": 0.053582096959827075,
+    "token_f1_delta": -0.0016612849508122751,
+    "avg_storage_ratio_nova_over_stock": 0.418229555830472,
+    "avg_latency_ratio_nova_over_stock": 1.7352219467090537
   }
 }
