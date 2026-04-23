@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T02:45:52Z",
+  "generated_at": "2026-04-23T02:59:06Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T02:32:57Z",
+    "updated_at": "2026-04-23T02:45:53Z",
     "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 7,
+    "current_case_index": 8,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::7e00a6cb"
+    "current_case_id": "longmemeval_m::1903aded"
   },
   "benchmarks": {
     "locomo": {
@@ -10467,36 +10467,36 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 7,
-        "rows_successful": 7,
+        "rows_recorded": 8,
+        "rows_successful": 8,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.05650037792894935,
-        "avg_total_sec": 774.9032314491591,
-        "p50_total_sec": 775.475091831293,
+        "token_f1": 0.04943783068783068,
+        "avg_total_sec": 777.1231479593553,
+        "p50_total_sec": 775.6410046690144,
         "p95_total_sec": 815.4697632240131,
-        "avg_storage_bytes": 412301646.71428573,
+        "avg_storage_bytes": 413296689.125,
         "p95_storage_bytes": 430665713.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.05650037792894935,
-            "avg_total_sec": 774.9032314491591,
-            "p50_total_sec": 775.475091831293,
+            "token_f1": 0.04943783068783068,
+            "avg_total_sec": 777.1231479593553,
+            "p50_total_sec": 775.6410046690144,
             "p95_total_sec": 815.4697632240131,
-            "avg_storage_bytes": 412301646.71428573,
+            "avg_storage_bytes": 413296689.125,
             "p95_storage_bytes": 430665713.0,
             "categories": {},
             "sample_errors": [],
@@ -10578,6 +10578,20 @@
                   "05a37787",
                   "4f3b0353_2",
                   "9bd6beaa_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "user: Brainstorm ideas for work from home jobs for seniors",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0",
+                  "sharegpt_0z277Yx_17",
+                  "267a912c",
+                  "cde4b9ce_4",
+                  "ultrachat_422192"
                 ]
               }
             ]
@@ -10662,6 +10676,20 @@
               "05a37787",
               "4f3b0353_2",
               "9bd6beaa_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::1903aded",
+            "category": "single-session-assistant",
+            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "gold": "Transcriptionist.",
+            "prediction": "user: Brainstorm ideas for work from home jobs for seniors",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_hA7AkP3_0",
+              "sharegpt_0z277Yx_17",
+              "267a912c",
+              "cde4b9ce_4",
+              "ultrachat_422192"
             ]
           }
         ]
@@ -11080,20 +11108,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2993,
-      "rows_successful": 2921,
+      "rows_recorded": 2994,
+      "rows_successful": 2922,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7853474837384458,
-      "doc_recall_all": 0.672030126668949,
-      "ndcg_at_10": 0.6050286061464538,
-      "exact_match": 0.02670318384115029,
-      "token_f1": 0.07396517479967957,
-      "avg_total_sec": 45.11245855358192,
+      "doc_recall_any": 0.7854209445585215,
+      "doc_recall_all": 0.6721423682409309,
+      "ndcg_at_10": 0.6051637777391483,
+      "exact_match": 0.026694045174537988,
+      "token_f1": 0.07393986159817385,
+      "avg_total_sec": 45.36829363399846,
       "p50_total_sec": 51.074931357987225,
-      "p95_total_sec": 57.92872851109132,
-      "avg_storage_bytes": 20459344.44402602,
-      "p95_storage_bytes": 28311573.0,
+      "p95_total_sec": 57.9325760952197,
+      "avg_storage_bytes": 20596169.441136207,
+      "p95_storage_bytes": 28314659.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13886,21 +13914,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 108,
-          "rows_recorded": 108,
-          "rows_successful": 108,
+          "expected_total": 109,
+          "rows_recorded": 109,
+          "rows_successful": 109,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.037037037037037035,
-          "token_f1": 0.09296002828305949,
-          "avg_total_sec": 80.87858486558414,
+          "exact_match": 0.03669724770642202,
+          "token_f1": 0.09210718398688462,
+          "avg_total_sec": 87.40871311021849,
           "p50_total_sec": 12.670150057878345,
-          "p95_total_sec": 766.2576895360835,
-          "avg_storage_bytes": 40923192.666666664,
-          "p95_storage_bytes": 404535172.0,
+          "p95_total_sec": 768.9437318299897,
+          "avg_storage_bytes": 44403365.08256881,
+          "p95_storage_bytes": 412470436.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -18243,11 +18271,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03777043764729704,
-    "doc_recall_all_delta": 0.0641457560758878,
-    "ndcg_at_10_delta": 0.0539873343680215,
-    "token_f1_delta": -0.001346318597030438,
-    "avg_storage_ratio_nova_over_stock": 0.4263940098987716,
-    "avg_latency_ratio_nova_over_stock": 1.76401469951484
+    "doc_recall_any_delta": 0.037696976827221285,
+    "doc_recall_all_delta": 0.06403351450390593,
+    "ndcg_at_10_delta": 0.053852162775327006,
+    "token_f1_delta": -0.0013210053955247242,
+    "avg_storage_ratio_nova_over_stock": 0.4235613783582834,
+    "avg_latency_ratio_nova_over_stock": 1.754067293378142
   }
 }
