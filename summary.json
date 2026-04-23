@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T17:57:39Z",
+  "generated_at": "2026-04-23T18:19:08Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T17:36:11Z",
+    "updated_at": "2026-04-23T17:57:40Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 6,
+    "current_case_index": 7,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::6ae235be"
+    "current_case_id": "longmemeval_m::7e00a6cb"
   },
   "benchmarks": {
     "locomo": {
@@ -10790,36 +10790,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 6,
-        "rows_successful": 6,
+        "rows_recorded": 7,
+        "rows_successful": 7,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.05216241085806303,
-        "avg_total_sec": 1294.2982062470012,
-        "p50_total_sec": 1281.7566013610922,
+        "token_f1": 0.08042492359262544,
+        "avg_total_sec": 1293.3271693134282,
+        "p50_total_sec": 1287.3160445871763,
         "p95_total_sec": 1357.1338865910657,
-        "avg_storage_bytes": 134759673.0,
+        "avg_storage_bytes": 134660304.42857143,
         "p95_storage_bytes": 141070401.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.05216241085806303,
-            "avg_total_sec": 1294.2982062470012,
-            "p50_total_sec": 1281.7566013610922,
+            "token_f1": 0.08042492359262544,
+            "avg_total_sec": 1293.3271693134282,
+            "p50_total_sec": 1287.3160445871763,
             "p95_total_sec": 1357.1338865910657,
-            "avg_storage_bytes": 134759673.0,
+            "avg_storage_bytes": 134660304.42857143,
             "p95_storage_bytes": 141070401.0,
             "categories": {},
             "sample_errors": [],
@@ -10907,6 +10907,20 @@
                   "f8cbf729_1",
                   "c870d63c",
                   "f8e8d445_5"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515",
+                  "a68ad96e_2",
+                  "4f3b0353_2",
+                  "9bd6beaa_1",
+                  "d9b87d3c_1"
                 ]
               }
             ]
@@ -10997,6 +11011,20 @@
               "f8cbf729_1",
               "c870d63c",
               "f8e8d445_5"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::7e00a6cb",
+            "category": "single-session-assistant",
+            "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+            "gold": "International Budget Hostel",
+            "prediction": "International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_370515",
+              "a68ad96e_2",
+              "4f3b0353_2",
+              "9bd6beaa_1",
+              "d9b87d3c_1"
             ]
           }
         ]
@@ -14588,20 +14616,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2992,
-      "rows_successful": 2992,
+      "rows_recorded": 2993,
+      "rows_successful": 2993,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8228609625668449,
-      "doc_recall_all": 0.7356283422459893,
-      "ndcg_at_10": 0.6582105125081735,
-      "exact_match": 0.025735294117647058,
-      "token_f1": 0.07227035811821295,
-      "avg_total_sec": 76.8785875907579,
+      "doc_recall_any": 0.8229201470096893,
+      "doc_recall_all": 0.7357166722352155,
+      "ndcg_at_10": 0.6583247087953408,
+      "exact_match": 0.025726695623120615,
+      "token_f1": 0.0723297398896402,
+      "avg_total_sec": 77.28307217482781,
       "p50_total_sec": 92.23997613089159,
-      "p95_total_sec": 105.2341585769318,
-      "avg_storage_bytes": 8451442.84157754,
-      "p95_storage_bytes": 11477869.0,
+      "p95_total_sec": 105.29218793474138,
+      "avg_storage_bytes": 8493411.652188439,
+      "p95_storage_bytes": 11478085.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17352,21 +17380,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 118,
-          "rows_recorded": 118,
-          "rows_successful": 118,
+          "expected_total": 119,
+          "rows_recorded": 119,
+          "rows_successful": 119,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.940677966101695,
-          "doc_recall_all": 0.940677966101695,
-          "ndcg_at_10": 0.940677966101695,
-          "exact_match": 0.03389830508474576,
-          "token_f1": 0.12550319876853816,
-          "avg_total_sec": 116.18609264311459,
-          "p50_total_sec": 97.5618616649881,
-          "p95_total_sec": 115.11338885920122,
-          "avg_storage_bytes": 12435949.372881357,
-          "p95_storage_bytes": 12734305.0,
+          "doc_recall_any": 0.9411764705882353,
+          "doc_recall_all": 0.9411764705882353,
+          "ndcg_at_10": 0.9411764705882353,
+          "exact_match": 0.03361344537815126,
+          "token_f1": 0.12654939037552523,
+          "avg_total_sec": 126.02907461848329,
+          "p50_total_sec": 97.72340316185728,
+          "p95_total_sec": 1230.0169508666731,
+          "avg_storage_bytes": 13458034.613445379,
+          "p95_storage_bytes": 128228169.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18156,11 +18184,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03605375413433898,
-    "doc_recall_all_delta": 0.06136788661865167,
-    "ndcg_at_10_delta": 0.05062143113878792,
-    "token_f1_delta": -0.0024344173292147053,
-    "avg_storage_ratio_nova_over_stock": 0.36612777020917603,
-    "avg_latency_ratio_nova_over_stock": 1.5372058570051876
+    "doc_recall_any_delta": 0.03611293857718334,
+    "doc_recall_all_delta": 0.06145621660787792,
+    "ndcg_at_10_delta": 0.050735627425955165,
+    "token_f1_delta": -0.0023750355577874527,
+    "avg_storage_ratio_nova_over_stock": 0.36794591503194,
+    "avg_latency_ratio_nova_over_stock": 1.5452936235886532
   }
 }
