@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T01:28:56Z",
+  "generated_at": "2026-04-23T01:41:46Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T01:15:21Z",
+    "updated_at": "2026-04-23T01:28:57Z",
     "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 1,
+    "current_case_index": 2,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::7161e7e2"
+    "current_case_id": "longmemeval_m::c4f10528"
   },
   "benchmarks": {
     "locomo": {
@@ -10467,36 +10467,36 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 1,
-        "rows_successful": 1,
+        "rows_recorded": 2,
+        "rows_successful": 2,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.07407407407407407,
-        "avg_total_sec": 815.4697632240131,
-        "p50_total_sec": 815.4697632240131,
+        "token_f1": 0.037037037037037035,
+        "avg_total_sec": 792.2067475270014,
+        "p50_total_sec": 768.9437318299897,
         "p95_total_sec": 815.4697632240131,
-        "avg_storage_bytes": 430665713.0,
+        "avg_storage_bytes": 421568074.5,
         "p95_storage_bytes": 430665713.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 1,
-            "rows_recorded": 1,
-            "rows_successful": 1,
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.07407407407407407,
-            "avg_total_sec": 815.4697632240131,
-            "p50_total_sec": 815.4697632240131,
+            "token_f1": 0.037037037037037035,
+            "avg_total_sec": 792.2067475270014,
+            "p50_total_sec": 768.9437318299897,
             "p95_total_sec": 815.4697632240131,
-            "avg_storage_bytes": 430665713.0,
+            "avg_storage_bytes": 421568074.5,
             "p95_storage_bytes": 430665713.0,
             "categories": {},
             "sample_errors": [],
@@ -10511,6 +10511,16 @@
                 "retrieved_doc_ids": [
                   "answer_sharegpt_5Lzox6N_0",
                   "06fe8cfb_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c4f10528",
+                "category": "single-session-assistant",
+                "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+                "gold": "Miss Bee Providore",
+                "prediction": "Take a cooking class: Bandung is famous for its cuisine, and you can take a cooking class to learn how to make traditional Indonesian dishes such as nasi goreng, sate, and rendang.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_234453"
                 ]
               }
             ]
@@ -10528,6 +10538,16 @@
             "retrieved_doc_ids": [
               "answer_sharegpt_5Lzox6N_0",
               "06fe8cfb_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::c4f10528",
+            "category": "single-session-assistant",
+            "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+            "gold": "Miss Bee Providore",
+            "prediction": "Take a cooking class: Bandung is famous for its cuisine, and you can take a cooking class to learn how to make traditional Indonesian dishes such as nasi goreng, sate, and rendang.",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_234453"
             ]
           }
         ]
@@ -10946,20 +10966,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2987,
-      "rows_successful": 2915,
+      "rows_recorded": 2988,
+      "rows_successful": 2916,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7849056603773585,
-      "doc_recall_all": 0.6713550600343053,
-      "ndcg_at_10": 0.6042156290064465,
-      "exact_match": 0.026758147512864493,
-      "token_f1": 0.0740071516358269,
-      "avg_total_sec": 43.62423278836798,
-      "p50_total_sec": 51.05831558769569,
-      "p95_total_sec": 57.886716548819095,
-      "avg_storage_bytes": 19659107.82401372,
-      "p95_storage_bytes": 28285388.0,
+      "doc_recall_any": 0.7849794238683128,
+      "doc_recall_all": 0.6714677640603567,
+      "ndcg_at_10": 0.604351357528735,
+      "exact_match": 0.026748971193415638,
+      "token_f1": 0.07398177195419596,
+      "avg_total_sec": 43.87297061382807,
+      "p50_total_sec": 51.0630001090467,
+      "p95_total_sec": 57.890973361674696,
+      "avg_storage_bytes": 19793816.78429355,
+      "p95_storage_bytes": 28286985.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13752,21 +13772,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 102,
-          "rows_recorded": 102,
-          "rows_successful": 102,
+          "expected_total": 103,
+          "rows_recorded": 103,
+          "rows_successful": 103,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.0392156862745098,
-          "token_f1": 0.09527700473668484,
-          "avg_total_sec": 40.451316750617515,
-          "p50_total_sec": 12.63087754510343,
-          "p95_total_sec": 60.682184351142496,
-          "avg_storage_bytes": 19257441.11764706,
-          "p95_storage_bytes": 29093863.0,
+          "exact_match": 0.038834951456310676,
+          "token_f1": 0.09435198527322188,
+          "avg_total_sec": 47.524058644592,
+          "p50_total_sec": 12.632622919976711,
+          "p95_total_sec": 61.08487844001502,
+          "avg_storage_bytes": 23075043.009708736,
+          "p95_storage_bytes": 29228027.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -18109,11 +18129,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03821226100838426,
-    "doc_recall_all_delta": 0.06482082271053147,
-    "ndcg_at_10_delta": 0.054800311508028776,
-    "token_f1_delta": -0.0013882954331777692,
-    "avg_storage_ratio_nova_over_stock": 0.44375065213958,
-    "avg_latency_ratio_nova_over_stock": 1.8241934570134497
+    "doc_recall_any_delta": 0.03813849751743004,
+    "doc_recall_all_delta": 0.06470811868448012,
+    "ndcg_at_10_delta": 0.054664582985740284,
+    "token_f1_delta": -0.001362915751546831,
+    "avg_storage_ratio_nova_over_stock": 0.44073065909707326,
+    "avg_latency_ratio_nova_over_stock": 1.8138511914369986
   }
 }
