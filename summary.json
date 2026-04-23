@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T00:00:43Z",
+  "generated_at": "2026-04-23T00:21:33Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -66,47 +66,47 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-22T23:56:21Z",
+    "updated_at": "2026-04-23T00:17:23Z",
     "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 5,
+    "current_case_index": 10,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::4c36ccef"
+    "current_case_id": "longmemeval_m::f523d9fe"
   },
   "benchmarks": {
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 10,
+        "rows_successful": 10,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 0.0,
         "doc_recall_all": 0.0,
         "ndcg_at_10": 0.0,
         "exact_match": 0.0,
-        "token_f1": 0.0,
-        "avg_total_sec": 252.16496875463054,
-        "p50_total_sec": 248.1252772519365,
+        "token_f1": 0.012333965844402276,
+        "avg_total_sec": 250.96544682621024,
+        "p50_total_sec": 249.35215566912666,
         "p95_total_sec": 264.9740773891099,
-        "avg_storage_bytes": 31263937.8,
+        "avg_storage_bytes": 31209974.1,
         "p95_storage_bytes": 32730834.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 0.0,
             "doc_recall_all": 0.0,
             "ndcg_at_10": 0.0,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 252.16496875463054,
-            "p50_total_sec": 248.1252772519365,
+            "token_f1": 0.012333965844402276,
+            "avg_total_sec": 250.96544682621024,
+            "p50_total_sec": 249.35215566912666,
             "p95_total_sec": 264.9740773891099,
-            "avg_storage_bytes": 31263937.8,
+            "avg_storage_bytes": 31209974.1,
             "p95_storage_bytes": 32730834.0,
             "categories": {},
             "sample_errors": [],
@@ -194,6 +194,91 @@
                   "d31c3ec8_1",
                   "2fa50779_2",
                   "7fa3c60f_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "**Contact the organizations directly**: Reach out to the organizations that interest you and ask about volunteer opportunities, requirements, and any necessary training or orientation.",
+                "expected_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0"
+                ],
+                "retrieved_doc_ids": [
+                  "ultrachat_26263",
+                  "ultrachat_562061",
+                  "0161a230_2",
+                  "d15c9567_1",
+                  "sharegpt_ld3avxY_56"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "re considering New Zealand, it",
+                "expected_doc_ids": [
+                  "answer_ultrachat_370515"
+                ],
+                "retrieved_doc_ids": [
+                  "ce127fed",
+                  "ultrachat_336885",
+                  "66d120f4_1",
+                  "ultrachat_36404",
+                  "13071cd4_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "You mentioned earlier that you were setting up a home studio, and then we talked about digital pianos, acoustic guitars, and now banjos!",
+                "expected_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0"
+                ],
+                "retrieved_doc_ids": [
+                  "6e96dcc4",
+                  "22eebf8a_4",
+                  "ultrachat_2843",
+                  "ultrachat_447457",
+                  "8a7150f1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "Can you tell me about any previous changes in Saginaw's law enforcement policies and how they affected crime rates in the city?",
+                "expected_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0"
+                ],
+                "retrieved_doc_ids": [
+                  "40f07f4a_3",
+                  "sharegpt_UbMVpdp_137",
+                  "ultrachat_147236",
+                  "169f0af7",
+                  "651d4348"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "user: I've always wanted to try avocado ice cream, have you ever had it?",
+                "expected_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0"
+                ],
+                "retrieved_doc_ids": [
+                  "ultrachat_98401",
+                  "ultrachat_538216",
+                  "sharegpt_QGN2wCc_0",
+                  "ca57313f_1",
+                  "sharegpt_63IrNjK_0"
                 ]
               }
             ],
@@ -285,6 +370,91 @@
               "d31c3ec8_1",
               "2fa50779_2",
               "7fa3c60f_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::6ae235be",
+            "category": "single-session-assistant",
+            "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+            "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+            "prediction": "**Contact the organizations directly**: Reach out to the organizations that interest you and ask about volunteer opportunities, requirements, and any necessary training or orientation.",
+            "expected_doc_ids": [
+              "answer_sharegpt_IUWQYGQ_0"
+            ],
+            "retrieved_doc_ids": [
+              "ultrachat_26263",
+              "ultrachat_562061",
+              "0161a230_2",
+              "d15c9567_1",
+              "sharegpt_ld3avxY_56"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::7e00a6cb",
+            "category": "single-session-assistant",
+            "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+            "gold": "International Budget Hostel",
+            "prediction": "re considering New Zealand, it",
+            "expected_doc_ids": [
+              "answer_ultrachat_370515"
+            ],
+            "retrieved_doc_ids": [
+              "ce127fed",
+              "ultrachat_336885",
+              "66d120f4_1",
+              "ultrachat_36404",
+              "13071cd4_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::1903aded",
+            "category": "single-session-assistant",
+            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "gold": "Transcriptionist.",
+            "prediction": "You mentioned earlier that you were setting up a home studio, and then we talked about digital pianos, acoustic guitars, and now banjos!",
+            "expected_doc_ids": [
+              "answer_sharegpt_hA7AkP3_0"
+            ],
+            "retrieved_doc_ids": [
+              "6e96dcc4",
+              "22eebf8a_4",
+              "ultrachat_2843",
+              "ultrachat_447457",
+              "8a7150f1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::ceb54acb",
+            "category": "single-session-assistant",
+            "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+            "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+            "prediction": "Can you tell me about any previous changes in Saginaw's law enforcement policies and how they affected crime rates in the city?",
+            "expected_doc_ids": [
+              "answer_sharegpt_cGdjmYo_0"
+            ],
+            "retrieved_doc_ids": [
+              "40f07f4a_3",
+              "sharegpt_UbMVpdp_137",
+              "ultrachat_147236",
+              "169f0af7",
+              "651d4348"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::f523d9fe",
+            "category": "single-session-assistant",
+            "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+            "gold": "Doc Martin",
+            "prediction": "user: I've always wanted to try avocado ice cream, have you ever had it?",
+            "expected_doc_ids": [
+              "answer_sharegpt_m2xJfjo_0"
+            ],
+            "retrieved_doc_ids": [
+              "ultrachat_98401",
+              "ultrachat_538216",
+              "sharegpt_QGN2wCc_0",
+              "ca57313f_1",
+              "sharegpt_63IrNjK_0"
             ]
           }
         ],
@@ -704,36 +874,36 @@
   "overall": {
     "stock": {
       "expected_total": 500,
-      "rows_recorded": 5,
-      "rows_successful": 5,
+      "rows_recorded": 10,
+      "rows_successful": 10,
       "rows_failed": 0,
       "complete": false,
       "doc_recall_any": 0.0,
       "doc_recall_all": 0.0,
       "ndcg_at_10": 0.0,
       "exact_match": 0.0,
-      "token_f1": 0.0,
-      "avg_total_sec": 252.16496875463054,
-      "p50_total_sec": 248.1252772519365,
+      "token_f1": 0.012333965844402276,
+      "avg_total_sec": 250.96544682621024,
+      "p50_total_sec": 249.35215566912666,
       "p95_total_sec": 264.9740773891099,
-      "avg_storage_bytes": 31263937.8,
+      "avg_storage_bytes": 31209974.1,
       "p95_storage_bytes": 32730834.0,
       "categories": {
         "single-session-assistant": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 0.0,
           "doc_recall_all": 0.0,
           "ndcg_at_10": 0.0,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 252.16496875463054,
-          "p50_total_sec": 248.1252772519365,
+          "token_f1": 0.012333965844402276,
+          "avg_total_sec": 250.96544682621024,
+          "p50_total_sec": 249.35215566912666,
           "p95_total_sec": 264.9740773891099,
-          "avg_storage_bytes": 31263937.8,
+          "avg_storage_bytes": 31209974.1,
           "p95_storage_bytes": 32730834.0,
           "categories": {},
           "sample_errors": [],
@@ -821,6 +991,91 @@
                 "d31c3ec8_1",
                 "2fa50779_2",
                 "7fa3c60f_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::6ae235be",
+              "category": "single-session-assistant",
+              "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+              "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+              "prediction": "**Contact the organizations directly**: Reach out to the organizations that interest you and ask about volunteer opportunities, requirements, and any necessary training or orientation.",
+              "expected_doc_ids": [
+                "answer_sharegpt_IUWQYGQ_0"
+              ],
+              "retrieved_doc_ids": [
+                "ultrachat_26263",
+                "ultrachat_562061",
+                "0161a230_2",
+                "d15c9567_1",
+                "sharegpt_ld3avxY_56"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::7e00a6cb",
+              "category": "single-session-assistant",
+              "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+              "gold": "International Budget Hostel",
+              "prediction": "re considering New Zealand, it",
+              "expected_doc_ids": [
+                "answer_ultrachat_370515"
+              ],
+              "retrieved_doc_ids": [
+                "ce127fed",
+                "ultrachat_336885",
+                "66d120f4_1",
+                "ultrachat_36404",
+                "13071cd4_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::1903aded",
+              "category": "single-session-assistant",
+              "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+              "gold": "Transcriptionist.",
+              "prediction": "You mentioned earlier that you were setting up a home studio, and then we talked about digital pianos, acoustic guitars, and now banjos!",
+              "expected_doc_ids": [
+                "answer_sharegpt_hA7AkP3_0"
+              ],
+              "retrieved_doc_ids": [
+                "6e96dcc4",
+                "22eebf8a_4",
+                "ultrachat_2843",
+                "ultrachat_447457",
+                "8a7150f1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::ceb54acb",
+              "category": "single-session-assistant",
+              "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+              "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+              "prediction": "Can you tell me about any previous changes in Saginaw's law enforcement policies and how they affected crime rates in the city?",
+              "expected_doc_ids": [
+                "answer_sharegpt_cGdjmYo_0"
+              ],
+              "retrieved_doc_ids": [
+                "40f07f4a_3",
+                "sharegpt_UbMVpdp_137",
+                "ultrachat_147236",
+                "169f0af7",
+                "651d4348"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::f523d9fe",
+              "category": "single-session-assistant",
+              "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+              "gold": "Doc Martin",
+              "prediction": "user: I've always wanted to try avocado ice cream, have you ever had it?",
+              "expected_doc_ids": [
+                "answer_sharegpt_m2xJfjo_0"
+              ],
+              "retrieved_doc_ids": [
+                "ultrachat_98401",
+                "ultrachat_538216",
+                "sharegpt_QGN2wCc_0",
+                "ca57313f_1",
+                "sharegpt_63IrNjK_0"
               ]
             }
           ],
@@ -912,6 +1167,91 @@
             "d31c3ec8_1",
             "2fa50779_2",
             "7fa3c60f_1"
+          ]
+        },
+        {
+          "case_id": "longmemeval_m::6ae235be",
+          "category": "single-session-assistant",
+          "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+          "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+          "prediction": "**Contact the organizations directly**: Reach out to the organizations that interest you and ask about volunteer opportunities, requirements, and any necessary training or orientation.",
+          "expected_doc_ids": [
+            "answer_sharegpt_IUWQYGQ_0"
+          ],
+          "retrieved_doc_ids": [
+            "ultrachat_26263",
+            "ultrachat_562061",
+            "0161a230_2",
+            "d15c9567_1",
+            "sharegpt_ld3avxY_56"
+          ]
+        },
+        {
+          "case_id": "longmemeval_m::7e00a6cb",
+          "category": "single-session-assistant",
+          "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+          "gold": "International Budget Hostel",
+          "prediction": "re considering New Zealand, it",
+          "expected_doc_ids": [
+            "answer_ultrachat_370515"
+          ],
+          "retrieved_doc_ids": [
+            "ce127fed",
+            "ultrachat_336885",
+            "66d120f4_1",
+            "ultrachat_36404",
+            "13071cd4_2"
+          ]
+        },
+        {
+          "case_id": "longmemeval_m::1903aded",
+          "category": "single-session-assistant",
+          "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+          "gold": "Transcriptionist.",
+          "prediction": "You mentioned earlier that you were setting up a home studio, and then we talked about digital pianos, acoustic guitars, and now banjos!",
+          "expected_doc_ids": [
+            "answer_sharegpt_hA7AkP3_0"
+          ],
+          "retrieved_doc_ids": [
+            "6e96dcc4",
+            "22eebf8a_4",
+            "ultrachat_2843",
+            "ultrachat_447457",
+            "8a7150f1"
+          ]
+        },
+        {
+          "case_id": "longmemeval_m::ceb54acb",
+          "category": "single-session-assistant",
+          "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+          "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+          "prediction": "Can you tell me about any previous changes in Saginaw's law enforcement policies and how they affected crime rates in the city?",
+          "expected_doc_ids": [
+            "answer_sharegpt_cGdjmYo_0"
+          ],
+          "retrieved_doc_ids": [
+            "40f07f4a_3",
+            "sharegpt_UbMVpdp_137",
+            "ultrachat_147236",
+            "169f0af7",
+            "651d4348"
+          ]
+        },
+        {
+          "case_id": "longmemeval_m::f523d9fe",
+          "category": "single-session-assistant",
+          "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+          "gold": "Doc Martin",
+          "prediction": "user: I've always wanted to try avocado ice cream, have you ever had it?",
+          "expected_doc_ids": [
+            "answer_sharegpt_m2xJfjo_0"
+          ],
+          "retrieved_doc_ids": [
+            "ultrachat_98401",
+            "ultrachat_538216",
+            "sharegpt_QGN2wCc_0",
+            "ca57313f_1",
+            "sharegpt_63IrNjK_0"
           ]
         }
       ],
@@ -1331,8 +1671,8 @@
     "doc_recall_any_delta": 0.9375,
     "doc_recall_all_delta": 0.9375,
     "ndcg_at_10_delta": 0.9375,
-    "token_f1_delta": 0.13011683098799467,
-    "avg_storage_ratio_nova_over_stock": 3.4195034526328927,
-    "avg_latency_ratio_nova_over_stock": 4.124614678705688
+    "token_f1_delta": 0.1177828651435924,
+    "avg_storage_ratio_nova_over_stock": 3.4254159554076655,
+    "avg_latency_ratio_nova_over_stock": 4.144328809937538
   }
 }

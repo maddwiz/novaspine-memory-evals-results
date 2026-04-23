@@ -264,10 +264,10 @@
       <div class="metric-card">
         <div class="metric-label">Answer F1</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>0.0%</strong></div>
+          <div><span>Stock</span><strong>1.2%</strong></div>
           <div><span>NovaSpine</span><strong>13.0%</strong></div>
         </div>
-        <div class="delta good">+0.130</div>
+        <div class="delta good">+0.118</div>
       </div>
     
     </section>
@@ -275,15 +275,15 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.938, evidence-all +0.938, NDCG@10 +0.938, answer F1 +0.130.</p>
+        <p><b>Current delta:</b> evidence-any +0.938, evidence-all +0.938, NDCG@10 +0.938, answer F1 +0.118.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-23T00:00:43Z</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_m::4c36ccef</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>5 / 500</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-23T00:21:33Z</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_m::f523d9fe</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>10 / 500</strong></div>
           <div class="pill"><span>Nova Rows</span><strong>16 / 500</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
@@ -309,12 +309,12 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>5 / 500 failed 0</td>
+      <td>10 / 500 failed 0</td>
       <td>0.0%</td>
       <td>0.0%</td>
       <td>0.0%</td>
-      <td>0.0%</td>
-      <td>252.2s</td>
+      <td>1.2%</td>
+      <td>251.0s</td>
       <td>29.8 MB</td>
     </tr>
     
@@ -334,7 +334,7 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>single-session-assistant</td><td>5</td><td>0.0%</td><td>0.0%</td><td>16</td><td>93.8%</td><td>13.0%</td></tr></table>
+<tr><td>single-session-assistant</td><td>10</td><td>0.0%</td><td>1.2%</td><td>16</td><td>93.8%</td><td>13.0%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
@@ -342,7 +342,8 @@
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> I&#x27;m planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?</p><p><b>Gold:</b> Miss Bee Providore</p><p><b>Pred:</b> Can you help me find some online resources to learn about event planning and management?</p><p><b>Expected docs:</b> answer_ultrachat_234453</p><p><b>Retrieved:</b> 08cf8c6c, 87307faf, 0cd57281_1, 827895b2, 78e40ca2_3</p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> I&#x27;m going back to our previous conversation about the children&#x27;s book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?</p><p><b>Gold:</b> The Plesiosaur had a blue scaly body.</p><p><b>Pred:</b> user: I&#x27;m going to try reaching out to the fashion blogger and see if they can provide more information about the skincare-inspired clothing line.</p><p><b>Expected docs:</b> answer_sharegpt_YkWn1Ne_0</p><p><b>Retrieved:</b> 2225c644, ultrachat_83156, sharegpt_ef7SGNi_289, ultrachat_343838, sharegpt_KzDwaf1_165</p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> I&#x27;m planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?</p><p><b>Gold:</b> The Sugar Factory at Icon Park.</p><p><b>Pred:</b> If you have any more questions or need help with planning your itinerary, feel free to ask!</p><p><b>Expected docs:</b> answer_ultrachat_480665</p><p><b>Retrieved:</b> ultrachat_87973, ultrachat_64215, f16b149f_2, 6e42386d_1, a3a62463</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?</p><p><b>Gold:</b> Roscioli</p><p><b>Pred:</b> user: I&#x27;m trying to plan my week and was wondering if you can remind me what time the recreation center opens on Mondays?</p><p><b>Expected docs:</b> answer_ultrachat_448704</p><p><b>Retrieved:</b> f7879502, bd42acb2, d31c3ec8_1, 2fa50779_2, 7fa3c60f_1</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?</p><p><b>Gold:</b> Transcriptionist.</p><p><b>Pred:</b> User location previous/historical: midst of, San Francisco Bay, city; current: the</p><p><b>Expected docs:</b> answer_sharegpt_hA7AkP3_0</p><p><b>Retrieved:</b> 44b1595a</p></div></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?</p><p><b>Gold:</b> Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.</p><p><b>Pred:</b> Here&#x27;s an updated version of the shift rotation sheet for GM social media agents with 7 agents, 4 shifts, and 2 days off for every agent for a week starting on Sunday and ending on Saturday:</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_5Lzox6N_0, 9b3a7f2c_3, 266ba230, c2808c05_4, f0c6ddb9_2</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?</p><p><b>Gold:</b> Roscioli</p><p><b>Pred:</b> user: I&#x27;m trying to plan my week and was wondering if you can remind me what time the recreation center opens on Mondays?</p><p><b>Expected docs:</b> answer_ultrachat_448704</p><p><b>Retrieved:</b> f7879502, bd42acb2, d31c3ec8_1, 2fa50779_2, 7fa3c60f_1</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> I remember you told me about the refining processes at CITGO&#x27;s three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?</p><p><b>Gold:</b> Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.</p><p><b>Pred:</b> **Contact the organizations directly**: Reach out to the organizations that interest you and ask about volunteer opportunities, requirements, and any necessary training or orientation.</p><p><b>Expected docs:</b> answer_sharegpt_IUWQYGQ_0</p><p><b>Retrieved:</b> ultrachat_26263, ultrachat_562061, 0161a230_2, d15c9567_1, sharegpt_ld3avxY_56</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?</p><p><b>Gold:</b> Transcriptionist.</p><p><b>Pred:</b> User location previous/historical: midst of, San Francisco Bay, city; current: the</p><p><b>Expected docs:</b> answer_sharegpt_hA7AkP3_0</p><p><b>Retrieved:</b> 44b1595a</p></div></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?</p><p><b>Gold:</b> Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.</p><p><b>Pred:</b> Here&#x27;s an updated version of the shift rotation sheet for GM social media agents with 7 agents, 4 shifts, and 2 days off for every agent for a week starting on Sunday and ending on Saturday:</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_5Lzox6N_0, 9b3a7f2c_3, 266ba230, c2808c05_4, f0c6ddb9_2</p></div>
 <div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?</p><p><b>Gold:</b> Miss Bee Providore</p><p><b>Pred:</b> user: I&#x27;m planning to attend a few more charity events in the upcoming months and I was wondering if you could help me keep track of them.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_234453, 0aff275a_1, 92edd095_2, 3c00365f_2, e8f22b15</p></div>
 <div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m going back to our previous conversation about the children&#x27;s book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?</p><p><b>Gold:</b> The Plesiosaur had a blue scaly body.</p><p><b>Pred:</b> m a new conversation each time you interact with me, so I don</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_YkWn1Ne_0, fe5a5209_3, sharegpt_AnlAeg9_9, sharegpt_YkWn1Ne_0, bd5f30d0_2</p></div>
 <div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?</p><p><b>Gold:</b> The Sugar Factory at Icon Park.</p><p><b>Pred:</b> user: I&#x27;m planning to visit Disneyland again soon, and I was wondering if you could help me with some tips on how to make the most of my time at the park.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_480665, 7ae303b7_1, eca3b71c_1, 3bdb004d_2, ea6ec88e_3</p></div>
