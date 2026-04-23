@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T17:36:10Z",
+  "generated_at": "2026-04-23T17:57:39Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T17:13:59Z",
+    "updated_at": "2026-04-23T17:36:11Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 5,
+    "current_case_index": 6,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::4c36ccef"
+    "current_case_id": "longmemeval_m::6ae235be"
   },
   "benchmarks": {
     "locomo": {
@@ -10790,36 +10790,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 6,
+        "rows_successful": 6,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.04830917874396135,
-        "avg_total_sec": 1295.6946385789663,
+        "token_f1": 0.05216241085806303,
+        "avg_total_sec": 1294.2982062470012,
         "p50_total_sec": 1281.7566013610922,
         "p95_total_sec": 1357.1338865910657,
-        "avg_storage_bytes": 134861192.2,
+        "avg_storage_bytes": 134759673.0,
         "p95_storage_bytes": 141070401.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 6,
+            "rows_recorded": 6,
+            "rows_successful": 6,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.04830917874396135,
-            "avg_total_sec": 1295.6946385789663,
+            "token_f1": 0.05216241085806303,
+            "avg_total_sec": 1294.2982062470012,
             "p50_total_sec": 1281.7566013610922,
             "p95_total_sec": 1357.1338865910657,
-            "avg_storage_bytes": 134861192.2,
+            "avg_storage_bytes": 134759673.0,
             "p95_storage_bytes": 141070401.0,
             "categories": {},
             "sample_errors": [],
@@ -10893,6 +10893,20 @@
                   "d31c3ec8_1",
                   "246ceaa0",
                   "1a892e14"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0",
+                  "0afa904a",
+                  "f8cbf729_1",
+                  "c870d63c",
+                  "f8e8d445_5"
                 ]
               }
             ]
@@ -10969,6 +10983,20 @@
               "d31c3ec8_1",
               "246ceaa0",
               "1a892e14"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::6ae235be",
+            "category": "single-session-assistant",
+            "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+            "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+            "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_IUWQYGQ_0",
+              "0afa904a",
+              "f8cbf729_1",
+              "c870d63c",
+              "f8e8d445_5"
             ]
           }
         ]
@@ -14560,20 +14588,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2991,
-      "rows_successful": 2991,
+      "rows_recorded": 2992,
+      "rows_successful": 2992,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8228017385489803,
-      "doc_recall_all": 0.7355399531929121,
-      "ndcg_at_10": 0.6580962398610682,
-      "exact_match": 0.02574389836175192,
-      "token_f1": 0.0722706395580958,
-      "avg_total_sec": 76.47389435872968,
-      "p50_total_sec": 92.23436869913712,
-      "p95_total_sec": 105.17068399908021,
-      "avg_storage_bytes": 8409383.117686393,
-      "p95_storage_bytes": 11470109.0,
+      "doc_recall_any": 0.8228609625668449,
+      "doc_recall_all": 0.7356283422459893,
+      "ndcg_at_10": 0.6582105125081735,
+      "exact_match": 0.025735294117647058,
+      "token_f1": 0.07227035811821295,
+      "avg_total_sec": 76.8785875907579,
+      "p50_total_sec": 92.23997613089159,
+      "p95_total_sec": 105.2341585769318,
+      "avg_storage_bytes": 8451442.84157754,
+      "p95_storage_bytes": 11477869.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17324,21 +17352,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 117,
-          "rows_recorded": 117,
-          "rows_successful": 117,
+          "expected_total": 118,
+          "rows_recorded": 118,
+          "rows_successful": 118,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9401709401709402,
-          "doc_recall_all": 0.9401709401709402,
-          "ndcg_at_10": 0.9401709401709402,
-          "exact_match": 0.03418803418803419,
-          "token_f1": 0.12596537507058914,
-          "avg_total_sec": 106.176434934191,
+          "doc_recall_any": 0.940677966101695,
+          "doc_recall_all": 0.940677966101695,
+          "ndcg_at_10": 0.940677966101695,
+          "exact_match": 0.03389830508474576,
+          "token_f1": 0.12550319876853816,
+          "avg_total_sec": 116.18609264311459,
           "p50_total_sec": 97.5618616649881,
-          "p95_total_sec": 114.29308866988868,
-          "avg_storage_bytes": 11394785.888888888,
-          "p95_storage_bytes": 12677069.0,
+          "p95_total_sec": 115.11338885920122,
+          "avg_storage_bytes": 12435949.372881357,
+          "p95_storage_bytes": 12734305.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18128,11 +18156,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.035994530116474355,
-    "doc_recall_all_delta": 0.06127949756557449,
-    "ndcg_at_10_delta": 0.050507158491682635,
-    "token_f1_delta": -0.002434135889331848,
-    "avg_storage_ratio_nova_over_stock": 0.36430568690191856,
-    "avg_latency_ratio_nova_over_stock": 1.5291139184555917
+    "doc_recall_any_delta": 0.03605375413433898,
+    "doc_recall_all_delta": 0.06136788661865167,
+    "ndcg_at_10_delta": 0.05062143113878792,
+    "token_f1_delta": -0.0024344173292147053,
+    "avg_storage_ratio_nova_over_stock": 0.36612777020917603,
+    "avg_latency_ratio_nova_over_stock": 1.5372058570051876
   }
 }
