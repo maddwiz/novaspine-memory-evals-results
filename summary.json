@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T18:41:16Z",
+  "generated_at": "2026-04-23T19:02:33Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T18:19:09Z",
+    "updated_at": "2026-04-23T18:41:17Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 8,
+    "current_case_index": 9,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::1903aded"
+    "current_case_id": "longmemeval_m::ceb54acb"
   },
   "benchmarks": {
     "locomo": {
@@ -10790,36 +10790,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 8,
-        "rows_successful": 8,
+        "rows_recorded": 9,
+        "rows_successful": 9,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.875,
-        "doc_recall_all": 0.875,
-        "ndcg_at_10": 0.875,
+        "doc_recall_any": 0.8888888888888888,
+        "doc_recall_all": 0.8888888888888888,
+        "ndcg_at_10": 0.8888888888888888,
         "exact_match": 0.0,
-        "token_f1": 0.07037180814354727,
-        "avg_total_sec": 1297.5357854620088,
-        "p50_total_sec": 1287.5009477119893,
+        "token_f1": 0.06928672508382654,
+        "avg_total_sec": 1295.1452864364514,
+        "p50_total_sec": 1287.3160445871763,
         "p95_total_sec": 1357.1338865910657,
-        "avg_storage_bytes": 134948549.5,
+        "avg_storage_bytes": 134601625.0,
         "p95_storage_bytes": 141070401.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.875,
-            "doc_recall_all": 0.875,
-            "ndcg_at_10": 0.875,
+            "doc_recall_any": 0.8888888888888888,
+            "doc_recall_all": 0.8888888888888888,
+            "ndcg_at_10": 0.8888888888888888,
             "exact_match": 0.0,
-            "token_f1": 0.07037180814354727,
-            "avg_total_sec": 1297.5357854620088,
-            "p50_total_sec": 1287.5009477119893,
+            "token_f1": 0.06928672508382654,
+            "avg_total_sec": 1295.1452864364514,
+            "p50_total_sec": 1287.3160445871763,
             "p95_total_sec": 1357.1338865910657,
-            "avg_storage_bytes": 134948549.5,
+            "avg_storage_bytes": 134601625.0,
             "p95_storage_bytes": 141070401.0,
             "categories": {},
             "sample_errors": [],
@@ -10935,6 +10935,20 @@
                   "4f3b0353_2",
                   "9bd6beaa_1",
                   "d9b87d3c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "Since you mentioned you water Felix, your fiddle leaf fig, on Sundays, I can suggest a few options to help you remember:",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0",
+                  "ultrachat_415175",
+                  "3489e0eb",
+                  "ultrachat_250208",
+                  "5600db68_1"
                 ]
               }
             ]
@@ -11053,6 +11067,20 @@
               "4f3b0353_2",
               "9bd6beaa_1",
               "d9b87d3c_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::ceb54acb",
+            "category": "single-session-assistant",
+            "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+            "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+            "prediction": "Since you mentioned you water Felix, your fiddle leaf fig, on Sundays, I can suggest a few options to help you remember:",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_cGdjmYo_0",
+              "ultrachat_415175",
+              "3489e0eb",
+              "ultrachat_250208",
+              "5600db68_1"
             ]
           }
         ]
@@ -14644,20 +14672,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2994,
-      "rows_successful": 2994,
+      "rows_recorded": 2995,
+      "rows_successful": 2995,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8226452905811623,
-      "doc_recall_all": 0.7354709418837675,
-      "ndcg_at_10": 0.6581048274630779,
-      "exact_match": 0.02571810287241149,
-      "token_f1": 0.07230558165988414,
-      "avg_total_sec": 77.70047799524438,
-      "p50_total_sec": 92.23997613089159,
-      "p95_total_sec": 105.29830004880205,
-      "avg_storage_bytes": 8536321.756847028,
-      "p95_storage_bytes": 11478301.0,
+      "doc_recall_any": 0.8227045075125209,
+      "doc_recall_all": 0.735559265442404,
+      "ndcg_at_10": 0.6582189827794508,
+      "exact_match": 0.025709515859766278,
+      "token_f1": 0.07230167530894797,
+      "avg_total_sec": 78.10058511251876,
+      "p50_total_sec": 92.25253098737448,
+      "p95_total_sec": 105.31103588221595,
+      "avg_storage_bytes": 8577487.00133556,
+      "p95_storage_bytes": 11481713.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17408,20 +17436,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 120,
-          "rows_recorded": 120,
-          "rows_successful": 120,
+          "expected_total": 121,
+          "rows_recorded": 121,
+          "rows_successful": 121,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9333333333333333,
-          "doc_recall_all": 0.9333333333333333,
-          "ndcg_at_10": 0.9333333333333333,
-          "exact_match": 0.03333333333333333,
-          "token_f1": 0.12549481212239585,
-          "avg_total_sec": 136.03713315084653,
+          "doc_recall_any": 0.9338842975206612,
+          "doc_recall_all": 0.9338842975206612,
+          "ndcg_at_10": 0.9338842975206612,
+          "exact_match": 0.03305785123966942,
+          "token_f1": 0.12495854144870712,
+          "avg_total_sec": 145.4584898539965,
           "p50_total_sec": 98.62294495292008,
           "p95_total_sec": 1278.308709952049,
-          "avg_storage_bytes": 14487269.866666667,
+          "avg_storage_bytes": 15457013.330578512,
           "p95_storage_bytes": 133202349.0,
           "categories": {},
           "sample_errors": [],
@@ -18225,11 +18253,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03583808214865636,
-    "doc_recall_all_delta": 0.061210486256429886,
-    "ndcg_at_10_delta": 0.05051574609369225,
-    "token_f1_delta": -0.0023991937875435104,
-    "avg_storage_ratio_nova_over_stock": 0.36980483796765484,
-    "avg_latency_ratio_nova_over_stock": 1.5536397534019115
+    "doc_recall_any_delta": 0.03589729908001493,
+    "doc_recall_all_delta": 0.06129880981506641,
+    "ndcg_at_10_delta": 0.05062990141006518,
+    "token_f1_delta": -0.0024031001384796774,
+    "avg_storage_ratio_nova_over_stock": 0.371588171234793,
+    "avg_latency_ratio_nova_over_stock": 1.561639991483517
   }
 }
