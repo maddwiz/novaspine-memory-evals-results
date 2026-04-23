@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T02:06:47Z",
+  "generated_at": "2026-04-23T02:19:59Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T01:54:00Z",
+    "updated_at": "2026-04-23T02:06:48Z",
     "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 4,
+    "current_case_index": 5,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::e9327a54"
+    "current_case_id": "longmemeval_m::4c36ccef"
   },
   "benchmarks": {
     "locomo": {
@@ -10467,36 +10467,36 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 4,
-        "rows_successful": 4,
+        "rows_recorded": 5,
+        "rows_successful": 5,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.018518518518518517,
-        "avg_total_sec": 770.5483346877154,
+        "token_f1": 0.014814814814814814,
+        "avg_total_sec": 774.6413047287613,
         "p50_total_sec": 768.9437318299897,
         "p95_total_sec": 815.4697632240131,
-        "avg_storage_bytes": 409881565.5,
+        "avg_storage_bytes": 412082452.4,
         "p95_storage_bytes": 430665713.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.018518518518518517,
-            "avg_total_sec": 770.5483346877154,
+            "token_f1": 0.014814814814814814,
+            "avg_total_sec": 774.6413047287613,
             "p50_total_sec": 768.9437318299897,
             "p95_total_sec": 815.4697632240131,
-            "avg_storage_bytes": 409881565.5,
+            "avg_storage_bytes": 412082452.4,
             "p95_storage_bytes": 430665713.0,
             "categories": {},
             "sample_errors": [],
@@ -10542,6 +10542,19 @@
                 "prediction": "Better Than Sex - A dessert shop located in the Ivanhoe Village neighborhood of Orlando that specializes in decadent desserts like chocolate fondue and cheesecake.",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_480665"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::4c36ccef",
+                "category": "single-session-assistant",
+                "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+                "gold": "Roscioli",
+                "prediction": "Can you give me some tips on how to plan a romantic dinner at the B&B or a nearby restaurant?",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_448704",
+                  "527a88df",
+                  "d31c3ec8_1",
+                  "726c8370"
                 ]
               }
             ]
@@ -10590,6 +10603,19 @@
             "prediction": "Better Than Sex - A dessert shop located in the Ivanhoe Village neighborhood of Orlando that specializes in decadent desserts like chocolate fondue and cheesecake.",
             "retrieved_doc_ids": [
               "answer_ultrachat_480665"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::4c36ccef",
+            "category": "single-session-assistant",
+            "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+            "gold": "Roscioli",
+            "prediction": "Can you give me some tips on how to plan a romantic dinner at the B&B or a nearby restaurant?",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_448704",
+              "527a88df",
+              "d31c3ec8_1",
+              "726c8370"
             ]
           }
         ]
@@ -11008,20 +11034,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2990,
-      "rows_successful": 2918,
+      "rows_recorded": 2991,
+      "rows_successful": 2919,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7851267991775188,
-      "doc_recall_all": 0.6716929403701165,
-      "ndcg_at_10": 0.604622535487934,
-      "exact_match": 0.026730637422892393,
-      "token_f1": 0.07393106477670851,
-      "avg_total_sec": 44.356189908711286,
-      "p50_total_sec": 51.0630001090467,
-      "p95_total_sec": 57.89685097895563,
-      "avg_storage_bytes": 20053173.3570939,
-      "p95_storage_bytes": 28288432.0,
+      "doc_recall_any": 0.7852004110996916,
+      "doc_recall_all": 0.6718054128126071,
+      "ndcg_at_10": 0.6047579851160643,
+      "exact_match": 0.02672147995889003,
+      "token_f1": 0.07390573724509607,
+      "avg_total_sec": 44.611981959065595,
+      "p50_total_sec": 51.070986847393215,
+      "p95_total_sec": 57.90528682991862,
+      "avg_storage_bytes": 20190491.89996574,
+      "p95_storage_bytes": 28297333.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13814,21 +13840,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 105,
-          "rows_recorded": 105,
-          "rows_successful": 105,
+          "expected_total": 106,
+          "rows_recorded": 106,
+          "rows_successful": 106,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.0380952380952381,
-          "token_f1": 0.09255480460135099,
-          "avg_total_sec": 60.88340841990319,
+          "exact_match": 0.03773584905660377,
+          "token_f1": 0.09168164606737597,
+          "avg_total_sec": 67.77142517908283,
           "p50_total_sec": 12.641036150977015,
-          "p95_total_sec": 62.375443411991,
-          "avg_storage_bytes": 30220186.123809524,
-          "p95_storage_bytes": 30144763.0,
+          "p95_total_sec": 62.40868176706135,
+          "avg_storage_bytes": 33905712.66981132,
+          "p95_storage_bytes": 30499626.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -18171,11 +18197,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03799112220822398,
-    "doc_recall_all_delta": 0.0644829423747203,
-    "ndcg_at_10_delta": 0.05439340502654133,
-    "token_f1_delta": -0.0013122085740593786,
-    "avg_storage_ratio_nova_over_stock": 0.4350304942784701,
-    "avg_latency_ratio_nova_over_stock": 1.7940909754321266
+    "doc_recall_any_delta": 0.03791751028605117,
+    "doc_recall_all_delta": 0.06437046993222972,
+    "ndcg_at_10_delta": 0.05425795539841105,
+    "token_f1_delta": -0.0012868810424469385,
+    "avg_storage_ratio_nova_over_stock": 0.43207178708722843,
+    "avg_latency_ratio_nova_over_stock": 1.7838041827594981
   }
 }
