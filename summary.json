@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T02:19:59Z",
+  "generated_at": "2026-04-23T02:32:55Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T02:06:48Z",
+    "updated_at": "2026-04-23T02:20:00Z",
     "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 5,
+    "current_case_index": 6,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::4c36ccef"
+    "current_case_id": "longmemeval_m::6ae235be"
   },
   "benchmarks": {
     "locomo": {
@@ -10467,36 +10467,36 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 6,
+        "rows_successful": 6,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.014814814814814814,
-        "avg_total_sec": 774.6413047287613,
+        "token_f1": 0.024250440917107582,
+        "avg_total_sec": 774.7802692458499,
         "p50_total_sec": 768.9437318299897,
         "p95_total_sec": 815.4697632240131,
-        "avg_storage_bytes": 412082452.4,
+        "avg_storage_bytes": 412253625.0,
         "p95_storage_bytes": 430665713.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 6,
+            "rows_recorded": 6,
+            "rows_successful": 6,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.014814814814814814,
-            "avg_total_sec": 774.6413047287613,
+            "token_f1": 0.024250440917107582,
+            "avg_total_sec": 774.7802692458499,
             "p50_total_sec": 768.9437318299897,
             "p95_total_sec": 815.4697632240131,
-            "avg_storage_bytes": 412082452.4,
+            "avg_storage_bytes": 412253625.0,
             "p95_storage_bytes": 430665713.0,
             "categories": {},
             "sample_errors": [],
@@ -10555,6 +10555,16 @@
                   "527a88df",
                   "d31c3ec8_1",
                   "726c8370"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0"
                 ]
               }
             ]
@@ -10616,6 +10626,16 @@
               "527a88df",
               "d31c3ec8_1",
               "726c8370"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::6ae235be",
+            "category": "single-session-assistant",
+            "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+            "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+            "prediction": "assistant: CITGO operates three refineries in the United States, located in Lake Charles, Louisiana; Lemont, Illinois; and Corpus Christi, Texas.",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_IUWQYGQ_0"
             ]
           }
         ]
@@ -11034,20 +11054,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2991,
-      "rows_successful": 2919,
+      "rows_recorded": 2992,
+      "rows_successful": 2920,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7852004110996916,
-      "doc_recall_all": 0.6718054128126071,
-      "ndcg_at_10": 0.6047579851160643,
-      "exact_match": 0.02672147995889003,
-      "token_f1": 0.07390573724509607,
-      "avg_total_sec": 44.611981959065595,
-      "p50_total_sec": 51.070986847393215,
-      "p95_total_sec": 57.90528682991862,
-      "avg_storage_bytes": 20190491.89996574,
-      "p95_storage_bytes": 28297333.0,
+      "doc_recall_any": 0.7852739726027397,
+      "doc_recall_all": 0.6719178082191781,
+      "ndcg_at_10": 0.6048933419704765,
+      "exact_match": 0.02671232876712329,
+      "token_f1": 0.07390488890063836,
+      "avg_total_sec": 44.862277544638275,
+      "p50_total_sec": 51.074931357987225,
+      "p95_total_sec": 57.922313193790615,
+      "avg_storage_bytes": 20325053.2,
+      "p95_storage_bytes": 28308238.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13840,21 +13860,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 106,
-          "rows_recorded": 106,
-          "rows_successful": 106,
+          "expected_total": 107,
+          "rows_recorded": 107,
+          "rows_successful": 107,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03773584905660377,
-          "token_f1": 0.09168164606737597,
-          "avg_total_sec": 67.77142517908283,
-          "p50_total_sec": 12.641036150977015,
-          "p95_total_sec": 62.40868176706135,
-          "avg_storage_bytes": 33905712.66981132,
-          "p95_storage_bytes": 30499626.0,
+          "exact_match": 0.037383177570093455,
+          "token_f1": 0.09149236499598527,
+          "avg_total_sec": 74.38547813844929,
+          "p50_total_sec": 12.650437965989113,
+          "p95_total_sec": 731.5221541607752,
+          "avg_storage_bytes": 37449673.18691589,
+          "p95_storage_bytes": 391854941.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -18197,11 +18217,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03791751028605117,
-    "doc_recall_all_delta": 0.06437046993222972,
-    "ndcg_at_10_delta": 0.05425795539841105,
-    "token_f1_delta": -0.0012868810424469385,
-    "avg_storage_ratio_nova_over_stock": 0.43207178708722843,
-    "avg_latency_ratio_nova_over_stock": 1.7838041827594981
+    "doc_recall_any_delta": 0.03784394878300312,
+    "doc_recall_all_delta": 0.06425807452565868,
+    "ndcg_at_10_delta": 0.05412259854399881,
+    "token_f1_delta": -0.0012860326979892284,
+    "avg_storage_ratio_nova_over_stock": 0.4292112710134706,
+    "avg_latency_ratio_nova_over_stock": 1.7738519837872873
   }
 }
