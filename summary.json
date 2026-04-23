@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T23:26:12Z",
+  "generated_at": "2026-04-23T23:47:44Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T23:05:44Z",
+    "updated_at": "2026-04-23T23:26:13Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 3,
+    "current_case_index": 4,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::89527b6b"
+    "current_case_id": "longmemeval_m::e9327a54"
   },
   "benchmarks": {
     "locomo": {
@@ -10790,36 +10790,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 3,
-        "rows_successful": 3,
+        "rows_recorded": 4,
+        "rows_successful": 4,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.043478260869565216,
-        "avg_total_sec": 1292.4491103032294,
-        "p50_total_sec": 1286.3184345480986,
+        "token_f1": 0.06038647342995169,
+        "avg_total_sec": 1292.1615215971833,
+        "p50_total_sec": 1291.2987554790452,
         "p95_total_sec": 1363.0158924399875,
-        "avg_storage_bytes": 134115090.33333333,
+        "avg_storage_bytes": 133919340.0,
         "p95_storage_bytes": 141025345.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.043478260869565216,
-            "avg_total_sec": 1292.4491103032294,
-            "p50_total_sec": 1286.3184345480986,
+            "token_f1": 0.06038647342995169,
+            "avg_total_sec": 1292.1615215971833,
+            "p50_total_sec": 1291.2987554790452,
             "p95_total_sec": 1363.0158924399875,
-            "avg_storage_bytes": 134115090.33333333,
+            "avg_storage_bytes": 133919340.0,
             "p95_storage_bytes": 141025345.0,
             "categories": {},
             "sample_errors": [],
@@ -10865,6 +10865,20 @@
                   "fe5a5209_3",
                   "sharegpt_AnlAeg9_9",
                   "bd5f30d0_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::e9327a54",
+                "category": "single-session-assistant",
+                "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+                "gold": "The Sugar Factory at Icon Park.",
+                "prediction": "user: I'm planning to visit Disneyland again soon, and I was wondering if you could help me with some tips on how to make the most of my time at the park.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_480665",
+                  "eca3b71c_1",
+                  "7ae303b7_1",
+                  "3bdb004d_2",
+                  "ea6ec88e_3"
                 ]
               }
             ]
@@ -10913,6 +10927,20 @@
               "fe5a5209_3",
               "sharegpt_AnlAeg9_9",
               "bd5f30d0_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::e9327a54",
+            "category": "single-session-assistant",
+            "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+            "gold": "The Sugar Factory at Icon Park.",
+            "prediction": "user: I'm planning to visit Disneyland again soon, and I was wondering if you could help me with some tips on how to make the most of my time at the park.",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_480665",
+              "eca3b71c_1",
+              "7ae303b7_1",
+              "3bdb004d_2",
+              "ea6ec88e_3"
             ]
           }
         ]
@@ -14504,19 +14532,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2989,
-      "rows_successful": 2989,
+      "rows_recorded": 2990,
+      "rows_successful": 2990,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8226831716293075,
-      "doc_recall_all": 0.7353629976580797,
-      "ndcg_at_10": 0.6578674651804801,
-      "exact_match": 0.02576112412177986,
-      "token_f1": 0.07228182395689309,
-      "avg_total_sec": 75.65483177148722,
+      "doc_recall_any": 0.822742474916388,
+      "doc_recall_all": 0.7354515050167224,
+      "ndcg_at_10": 0.6579818907774098,
+      "exact_match": 0.025752508361204015,
+      "token_f1": 0.07229481034055671,
+      "avg_total_sec": 76.0614016456369,
       "p50_total_sec": 92.22137853968889,
-      "p95_total_sec": 105.159025862813,
-      "avg_storage_bytes": 8324022.8220140515,
+      "p95_total_sec": 105.17068399908021,
+      "avg_storage_bytes": 8365831.539799331,
       "p95_storage_bytes": 11470109.0,
       "categories": {
         "category_2": {
@@ -17268,21 +17296,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 115,
-          "rows_recorded": 115,
-          "rows_successful": 115,
+          "expected_total": 116,
+          "rows_recorded": 116,
+          "rows_successful": 116,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9391304347826087,
-          "doc_recall_all": 0.9391304347826087,
-          "ndcg_at_10": 0.9391304347826087,
-          "exact_match": 0.034782608695652174,
-          "token_f1": 0.1271898936708506,
-          "avg_total_sec": 85.40449587230611,
-          "p50_total_sec": 97.49314894201234,
-          "p95_total_sec": 109.97711450513452,
-          "avg_storage_bytes": 9228080.513043478,
-          "p95_storage_bytes": 12098165.0,
+          "doc_recall_any": 0.9396551724137931,
+          "doc_recall_all": 0.9396551724137931,
+          "ndcg_at_10": 0.9396551724137931,
+          "exact_match": 0.034482758620689655,
+          "token_f1": 0.1270512834763701,
+          "avg_total_sec": 95.80013604132972,
+          "p50_total_sec": 97.5618616649881,
+          "p95_total_sec": 113.14757501659915,
+          "avg_storage_bytes": 10297942.655172413,
+          "p95_storage_bytes": 12225357.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18072,11 +18100,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03587596319680153,
-    "doc_recall_all_delta": 0.06110254203074206,
-    "ndcg_at_10_delta": 0.05027838381109451,
-    "token_f1_delta": -0.002422951490534564,
-    "avg_storage_ratio_nova_over_stock": 0.3606077651026774,
-    "avg_latency_ratio_nova_over_stock": 1.5127365649450768
+    "doc_recall_any_delta": 0.03593526648388201,
+    "doc_recall_all_delta": 0.0611910493893848,
+    "ndcg_at_10_delta": 0.05039280940802415,
+    "token_f1_delta": -0.0024099651068709427,
+    "avg_storage_ratio_nova_over_stock": 0.36241897449082155,
+    "avg_latency_ratio_nova_over_stock": 1.520866027405439
   }
 }
