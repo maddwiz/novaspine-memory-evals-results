@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T03:24:40Z",
+  "generated_at": "2026-04-23T03:36:45Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T03:11:54Z",
+    "updated_at": "2026-04-23T03:24:41Z",
     "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 10,
+    "current_case_index": 11,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::f523d9fe"
+    "current_case_id": "longmemeval_m::0e5e2d1a"
   },
   "benchmarks": {
     "locomo": {
@@ -10467,36 +10467,36 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 10,
-        "rows_successful": 10,
+        "rows_recorded": 11,
+        "rows_successful": 11,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
-        "exact_match": 0.1,
-        "token_f1": 0.15383597883597883,
-        "avg_total_sec": 774.8439539568499,
+        "exact_match": 0.09090909090909091,
+        "token_f1": 0.13985088985088986,
+        "avg_total_sec": 770.2133922906677,
         "p50_total_sec": 768.9437318299897,
         "p95_total_sec": 815.4697632240131,
-        "avg_storage_bytes": 411532462.7,
+        "avg_storage_bytes": 409466198.45454544,
         "p95_storage_bytes": 430665713.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1,
-            "token_f1": 0.15383597883597883,
-            "avg_total_sec": 774.8439539568499,
+            "exact_match": 0.09090909090909091,
+            "token_f1": 0.13985088985088986,
+            "avg_total_sec": 770.2133922906677,
             "p50_total_sec": 768.9437318299897,
             "p95_total_sec": 815.4697632240131,
-            "avg_storage_bytes": 411532462.7,
+            "avg_storage_bytes": 409466198.45454544,
             "p95_storage_bytes": 430665713.0,
             "categories": {},
             "sample_errors": [],
@@ -10617,6 +10617,17 @@
                 "retrieved_doc_ids": [
                   "answer_sharegpt_m2xJfjo_0",
                   "5b4d2438_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::0e5e2d1a",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+                "gold": "38 subjects",
+                "prediction": "15",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_113156",
+                  "ultrachat_304185"
                 ]
               }
             ]
@@ -10740,6 +10751,17 @@
             "retrieved_doc_ids": [
               "answer_sharegpt_m2xJfjo_0",
               "5b4d2438_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::0e5e2d1a",
+            "category": "single-session-assistant",
+            "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+            "gold": "38 subjects",
+            "prediction": "15",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_113156",
+              "ultrachat_304185"
             ]
           }
         ]
@@ -11158,20 +11180,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2996,
-      "rows_successful": 2924,
+      "rows_recorded": 2997,
+      "rows_successful": 2925,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7855677154582763,
-      "doc_recall_all": 0.6723666210670315,
-      "ndcg_at_10": 0.6054338435546482,
-      "exact_match": 0.027017783857729138,
-      "token_f1": 0.0742801411534614,
-      "avg_total_sec": 45.861015169096156,
+      "doc_recall_any": 0.7856410256410257,
+      "doc_recall_all": 0.6724786324786325,
+      "ndcg_at_10": 0.6055687379671082,
+      "exact_match": 0.027008547008547008,
+      "token_f1": 0.07425474623340894,
+      "avg_total_sec": 46.09282602737299,
       "p50_total_sec": 51.0803888970986,
-      "p95_total_sec": 57.93934544408694,
-      "avg_storage_bytes": 20858740.841655266,
-      "p95_storage_bytes": 28318598.0,
+      "p95_total_sec": 57.949520805850625,
+      "avg_storage_bytes": 20984533.940854702,
+      "p95_storage_bytes": 28325547.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13964,20 +13986,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 111,
-          "rows_recorded": 111,
-          "rows_successful": 111,
+          "expected_total": 112,
+          "rows_recorded": 112,
+          "rows_successful": 112,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.04504504504504504,
-          "token_f1": 0.10074360538223034,
-          "avg_total_sec": 99.63066743159885,
-          "p50_total_sec": 12.747924174182117,
+          "exact_match": 0.044642857142857144,
+          "token_f1": 0.09984410890560329,
+          "avg_total_sec": 105.20457018335999,
+          "p50_total_sec": 54.97138340398669,
           "p95_total_sec": 766.4581755958498,
-          "avg_storage_bytes": 50891152.324324325,
+          "avg_storage_bytes": 53908227.35714286,
           "p95_storage_bytes": 404879728.0,
           "categories": {},
           "sample_errors": [],
@@ -18321,11 +18343,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.037550205927466496,
-    "doc_recall_all_delta": 0.06380926167780532,
-    "ndcg_at_10_delta": 0.053582096959827075,
-    "token_f1_delta": -0.0016612849508122751,
-    "avg_storage_ratio_nova_over_stock": 0.418229555830472,
-    "avg_latency_ratio_nova_over_stock": 1.7352219467090537
+    "doc_recall_any_delta": 0.03747689574471713,
+    "doc_recall_all_delta": 0.06369725026620432,
+    "ndcg_at_10_delta": 0.05344720254736712,
+    "token_f1_delta": -0.0016358900307598123,
+    "avg_storage_ratio_nova_over_stock": 0.41572245263947416,
+    "avg_latency_ratio_nova_over_stock": 1.7264951377143405
   }
 }
