@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T11:07:44Z",
+  "generated_at": "2026-04-23T11:25:04Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T10:49:54Z",
+    "updated_at": "2026-04-23T11:07:45Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 2,
+    "current_case_index": 3,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::c4f10528"
+    "current_case_id": "longmemeval_m::89527b6b"
   },
   "benchmarks": {
     "locomo": {
@@ -10790,36 +10790,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 2,
-        "rows_successful": 2,
+        "rows_recorded": 3,
+        "rows_successful": 3,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
-        "ndcg_at_10": 1.0,
+        "ndcg_at_10": 0.8769765845238192,
         "exact_match": 0.0,
-        "token_f1": 0.06521739130434782,
-        "avg_total_sec": 1099.5103732233401,
+        "token_f1": 0.043478260869565216,
+        "avg_total_sec": 1079.3550908455315,
         "p50_total_sec": 1069.9516529911198,
         "p95_total_sec": 1129.0690934555605,
-        "avg_storage_bytes": 112111107.0,
+        "avg_storage_bytes": 110369193.0,
         "p95_storage_bytes": 115080521.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
+            "ndcg_at_10": 0.8769765845238192,
             "exact_match": 0.0,
-            "token_f1": 0.06521739130434782,
-            "avg_total_sec": 1099.5103732233401,
+            "token_f1": 0.043478260869565216,
+            "avg_total_sec": 1079.3550908455315,
             "p50_total_sec": 1069.9516529911198,
             "p95_total_sec": 1129.0690934555605,
-            "avg_storage_bytes": 112111107.0,
+            "avg_storage_bytes": 110369193.0,
             "p95_storage_bytes": 115080521.0,
             "categories": {},
             "sample_errors": [],
@@ -10851,6 +10851,20 @@
                   "92edd095_2",
                   "3c00365f_2",
                   "e8f22b15"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::89527b6b",
+                "category": "single-session-assistant",
+                "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+                "gold": "The Plesiosaur had a blue scaly body.",
+                "prediction": "m a new conversation each time you interact with me, so I don",
+                "retrieved_doc_ids": [
+                  "sharegpt_YkWn1Ne_0",
+                  "answer_sharegpt_YkWn1Ne_0",
+                  "fe5a5209_3",
+                  "sharegpt_AnlAeg9_9",
+                  "bd5f30d0_2"
                 ]
               }
             ]
@@ -10885,6 +10899,20 @@
               "92edd095_2",
               "3c00365f_2",
               "e8f22b15"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::89527b6b",
+            "category": "single-session-assistant",
+            "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+            "gold": "The Plesiosaur had a blue scaly body.",
+            "prediction": "m a new conversation each time you interact with me, so I don",
+            "retrieved_doc_ids": [
+              "sharegpt_YkWn1Ne_0",
+              "answer_sharegpt_YkWn1Ne_0",
+              "fe5a5209_3",
+              "sharegpt_AnlAeg9_9",
+              "bd5f30d0_2"
             ]
           }
         ]
@@ -14476,20 +14504,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2988,
-      "rows_successful": 2988,
+      "rows_recorded": 2989,
+      "rows_successful": 2989,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.822623828647925,
-      "doc_recall_all": 0.7352744310575636,
-      "ndcg_at_10": 0.6577529629934589,
-      "exact_match": 0.025769745649263723,
-      "token_f1": 0.0723060146610286,
-      "avg_total_sec": 75.1184623763428,
+      "doc_recall_any": 0.8226831716293075,
+      "doc_recall_all": 0.7353629976580797,
+      "ndcg_at_10": 0.6577439890190788,
+      "exact_match": 0.02576112412177986,
+      "token_f1": 0.07228182395689309,
+      "avg_total_sec": 75.4409535318174,
       "p50_total_sec": 92.22137853968889,
-      "p95_total_sec": 105.06248588487506,
-      "avg_storage_bytes": 8267195.836010709,
-      "p95_storage_bytes": 11469821.0,
+      "p95_total_sec": 105.159025862813,
+      "avg_storage_bytes": 8300189.535965206,
+      "p95_storage_bytes": 11470109.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17240,21 +17268,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 114,
-          "rows_recorded": 114,
-          "rows_successful": 114,
+          "expected_total": 115,
+          "rows_recorded": 115,
+          "rows_successful": 115,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9385964912280702,
-          "doc_recall_all": 0.9385964912280702,
-          "ndcg_at_10": 0.9385964912280702,
-          "exact_match": 0.03508771929824561,
-          "token_f1": 0.1283055944925247,
-          "avg_total_sec": 71.43149509519469,
-          "p50_total_sec": 97.09071068884805,
-          "p95_total_sec": 109.05311754671857,
-          "avg_storage_bytes": 7746545.631578947,
-          "p95_storage_bytes": 11946037.0,
+          "doc_recall_any": 0.9391304347826087,
+          "doc_recall_all": 0.9391304347826087,
+          "ndcg_at_10": 0.9359211282919256,
+          "exact_match": 0.034782608695652174,
+          "token_f1": 0.1271898936708506,
+          "avg_total_sec": 79.84552145167052,
+          "p50_total_sec": 97.49314894201234,
+          "p95_total_sec": 109.97711450513452,
+          "avg_storage_bytes": 8608622.32173913,
+          "p95_storage_bytes": 12098165.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18044,11 +18072,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03581662021541909,
-    "doc_recall_all_delta": 0.06101397543022602,
-    "ndcg_at_10_delta": 0.05016388162407326,
-    "token_f1_delta": -0.0023987607863990568,
-    "avg_storage_ratio_nova_over_stock": 0.3581459443150179,
-    "avg_latency_ratio_nova_over_stock": 1.5020117298307354
+    "doc_recall_any_delta": 0.03587596319680153,
+    "doc_recall_all_delta": 0.06110254203074206,
+    "ndcg_at_10_delta": 0.050154907649693214,
+    "token_f1_delta": -0.002422951490534564,
+    "avg_storage_ratio_nova_over_stock": 0.35957527537975187,
+    "avg_latency_ratio_nova_over_stock": 1.5084600180806031
   }
 }
