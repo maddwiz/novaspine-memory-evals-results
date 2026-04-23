@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T00:55:30Z",
+  "generated_at": "2026-04-23T01:15:00Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -10467,455 +10467,23 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 17,
-        "rows_successful": 17,
+        "rows_recorded": 0,
+        "rows_successful": 0,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 0.0,
         "doc_recall_all": 0.0,
         "ndcg_at_10": 0.0,
         "exact_match": 0.0,
-        "token_f1": 0.011961156379060162,
-        "avg_total_sec": 249.3959215514855,
-        "p50_total_sec": 249.63860632898286,
-        "p95_total_sec": 261.7253376781009,
-        "avg_storage_bytes": 31018385.529411763,
-        "p95_storage_bytes": 31880399.0,
-        "categories": {
-          "single-session-assistant": {
-            "expected_total": 17,
-            "rows_recorded": 17,
-            "rows_successful": 17,
-            "rows_failed": 0,
-            "complete": true,
-            "doc_recall_any": 0.0,
-            "doc_recall_all": 0.0,
-            "ndcg_at_10": 0.0,
-            "exact_match": 0.0,
-            "token_f1": 0.011961156379060162,
-            "avg_total_sec": 249.3959215514855,
-            "p50_total_sec": 249.63860632898286,
-            "p95_total_sec": 261.7253376781009,
-            "avg_storage_bytes": 31018385.529411763,
-            "p95_storage_bytes": 31880399.0,
-            "categories": {},
-            "sample_errors": [],
-            "sample_misses": [
-              {
-                "case_id": "longmemeval_m::7161e7e2",
-                "category": "single-session-assistant",
-                "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
-                "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
-                "prediction": "Can you tell me more about the boutique and what I can expect from the experience?",
-                "expected_doc_ids": [
-                  "answer_sharegpt_5Lzox6N_0"
-                ],
-                "retrieved_doc_ids": [
-                  "553e42d1",
-                  "5b958327",
-                  "65912979_3",
-                  "8988495b",
-                  "ultrachat_188722"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::c4f10528",
-                "category": "single-session-assistant",
-                "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
-                "gold": "Miss Bee Providore",
-                "prediction": "Can you help me find some online resources to learn about event planning and management?",
-                "expected_doc_ids": [
-                  "answer_ultrachat_234453"
-                ],
-                "retrieved_doc_ids": [
-                  "08cf8c6c",
-                  "87307faf",
-                  "0cd57281_1",
-                  "827895b2",
-                  "78e40ca2_3"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::89527b6b",
-                "category": "single-session-assistant",
-                "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
-                "gold": "The Plesiosaur had a blue scaly body.",
-                "prediction": "user: I'm going to try reaching out to the fashion blogger and see if they can provide more information about the skincare-inspired clothing line.",
-                "expected_doc_ids": [
-                  "answer_sharegpt_YkWn1Ne_0"
-                ],
-                "retrieved_doc_ids": [
-                  "2225c644",
-                  "ultrachat_83156",
-                  "sharegpt_ef7SGNi_289",
-                  "ultrachat_343838",
-                  "sharegpt_KzDwaf1_165"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::e9327a54",
-                "category": "single-session-assistant",
-                "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
-                "gold": "The Sugar Factory at Icon Park.",
-                "prediction": "If you have any more questions or need help with planning your itinerary, feel free to ask!",
-                "expected_doc_ids": [
-                  "answer_ultrachat_480665"
-                ],
-                "retrieved_doc_ids": [
-                  "ultrachat_87973",
-                  "ultrachat_64215",
-                  "f16b149f_2",
-                  "6e42386d_1",
-                  "a3a62463"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::4c36ccef",
-                "category": "single-session-assistant",
-                "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
-                "gold": "Roscioli",
-                "prediction": "user: I'm trying to plan my week and was wondering if you can remind me what time the recreation center opens on Mondays?",
-                "expected_doc_ids": [
-                  "answer_ultrachat_448704"
-                ],
-                "retrieved_doc_ids": [
-                  "f7879502",
-                  "bd42acb2",
-                  "d31c3ec8_1",
-                  "2fa50779_2",
-                  "7fa3c60f_1"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::6ae235be",
-                "category": "single-session-assistant",
-                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
-                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
-                "prediction": "**Contact the organizations directly**: Reach out to the organizations that interest you and ask about volunteer opportunities, requirements, and any necessary training or orientation.",
-                "expected_doc_ids": [
-                  "answer_sharegpt_IUWQYGQ_0"
-                ],
-                "retrieved_doc_ids": [
-                  "ultrachat_26263",
-                  "ultrachat_562061",
-                  "0161a230_2",
-                  "d15c9567_1",
-                  "sharegpt_ld3avxY_56"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::7e00a6cb",
-                "category": "single-session-assistant",
-                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
-                "gold": "International Budget Hostel",
-                "prediction": "re considering New Zealand, it",
-                "expected_doc_ids": [
-                  "answer_ultrachat_370515"
-                ],
-                "retrieved_doc_ids": [
-                  "ce127fed",
-                  "ultrachat_336885",
-                  "66d120f4_1",
-                  "ultrachat_36404",
-                  "13071cd4_2"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::1903aded",
-                "category": "single-session-assistant",
-                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
-                "gold": "Transcriptionist.",
-                "prediction": "You mentioned earlier that you were setting up a home studio, and then we talked about digital pianos, acoustic guitars, and now banjos!",
-                "expected_doc_ids": [
-                  "answer_sharegpt_hA7AkP3_0"
-                ],
-                "retrieved_doc_ids": [
-                  "6e96dcc4",
-                  "22eebf8a_4",
-                  "ultrachat_2843",
-                  "ultrachat_447457",
-                  "8a7150f1"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::ceb54acb",
-                "category": "single-session-assistant",
-                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
-                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
-                "prediction": "Can you tell me about any previous changes in Saginaw's law enforcement policies and how they affected crime rates in the city?",
-                "expected_doc_ids": [
-                  "answer_sharegpt_cGdjmYo_0"
-                ],
-                "retrieved_doc_ids": [
-                  "40f07f4a_3",
-                  "sharegpt_UbMVpdp_137",
-                  "ultrachat_147236",
-                  "169f0af7",
-                  "651d4348"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::f523d9fe",
-                "category": "single-session-assistant",
-                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
-                "gold": "Doc Martin",
-                "prediction": "user: I've always wanted to try avocado ice cream, have you ever had it?",
-                "expected_doc_ids": [
-                  "answer_sharegpt_m2xJfjo_0"
-                ],
-                "retrieved_doc_ids": [
-                  "ultrachat_98401",
-                  "ultrachat_538216",
-                  "sharegpt_QGN2wCc_0",
-                  "ca57313f_1",
-                  "sharegpt_63IrNjK_0"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::0e5e2d1a",
-                "category": "single-session-assistant",
-                "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
-                "gold": "38 subjects",
-                "prediction": "Now, I was thinking about my PhD applications, and I wanted to ask - what are some common mistakes that applicants make when applying to PhD programs, and how can I avoid them?",
-                "expected_doc_ids": [
-                  "answer_ultrachat_113156"
-                ],
-                "retrieved_doc_ids": [
-                  "8fd5852e",
-                  "ultrachat_429323",
-                  "ultrachat_412029",
-                  "ultrachat_340554",
-                  "ultrachat_146029"
-                ]
-              },
-              {
-                "case_id": "longmemeval_m::fea54f57",
-                "category": "single-session-assistant",
-                "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
-                "gold": "Evolution",
-                "prediction": "user: I'm thinking of planning a family vacation for next summer and was wondering if you could help me find a good beach house to rent.",
-                "expected_doc_ids": [
-                  "answer_ultrachat_187684"
-                ],
-                "retrieved_doc_ids": [
-                  "dd820fc3",
-                  "76703db4_4",
-                  "e7a51288",
-                  "ultrachat_10110",
-                  "sharegpt_jCOaAxC_0"
-                ]
-              }
-            ],
-            "sample_successes": []
-          }
-        },
+        "token_f1": 0.0,
+        "avg_total_sec": 0.0,
+        "p50_total_sec": 0.0,
+        "p95_total_sec": 0.0,
+        "avg_storage_bytes": 0.0,
+        "p95_storage_bytes": 0.0,
+        "categories": {},
         "sample_errors": [],
-        "sample_misses": [
-          {
-            "case_id": "longmemeval_m::7161e7e2",
-            "category": "single-session-assistant",
-            "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
-            "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
-            "prediction": "Can you tell me more about the boutique and what I can expect from the experience?",
-            "expected_doc_ids": [
-              "answer_sharegpt_5Lzox6N_0"
-            ],
-            "retrieved_doc_ids": [
-              "553e42d1",
-              "5b958327",
-              "65912979_3",
-              "8988495b",
-              "ultrachat_188722"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::c4f10528",
-            "category": "single-session-assistant",
-            "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
-            "gold": "Miss Bee Providore",
-            "prediction": "Can you help me find some online resources to learn about event planning and management?",
-            "expected_doc_ids": [
-              "answer_ultrachat_234453"
-            ],
-            "retrieved_doc_ids": [
-              "08cf8c6c",
-              "87307faf",
-              "0cd57281_1",
-              "827895b2",
-              "78e40ca2_3"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::89527b6b",
-            "category": "single-session-assistant",
-            "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
-            "gold": "The Plesiosaur had a blue scaly body.",
-            "prediction": "user: I'm going to try reaching out to the fashion blogger and see if they can provide more information about the skincare-inspired clothing line.",
-            "expected_doc_ids": [
-              "answer_sharegpt_YkWn1Ne_0"
-            ],
-            "retrieved_doc_ids": [
-              "2225c644",
-              "ultrachat_83156",
-              "sharegpt_ef7SGNi_289",
-              "ultrachat_343838",
-              "sharegpt_KzDwaf1_165"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::e9327a54",
-            "category": "single-session-assistant",
-            "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
-            "gold": "The Sugar Factory at Icon Park.",
-            "prediction": "If you have any more questions or need help with planning your itinerary, feel free to ask!",
-            "expected_doc_ids": [
-              "answer_ultrachat_480665"
-            ],
-            "retrieved_doc_ids": [
-              "ultrachat_87973",
-              "ultrachat_64215",
-              "f16b149f_2",
-              "6e42386d_1",
-              "a3a62463"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::4c36ccef",
-            "category": "single-session-assistant",
-            "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
-            "gold": "Roscioli",
-            "prediction": "user: I'm trying to plan my week and was wondering if you can remind me what time the recreation center opens on Mondays?",
-            "expected_doc_ids": [
-              "answer_ultrachat_448704"
-            ],
-            "retrieved_doc_ids": [
-              "f7879502",
-              "bd42acb2",
-              "d31c3ec8_1",
-              "2fa50779_2",
-              "7fa3c60f_1"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::6ae235be",
-            "category": "single-session-assistant",
-            "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
-            "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
-            "prediction": "**Contact the organizations directly**: Reach out to the organizations that interest you and ask about volunteer opportunities, requirements, and any necessary training or orientation.",
-            "expected_doc_ids": [
-              "answer_sharegpt_IUWQYGQ_0"
-            ],
-            "retrieved_doc_ids": [
-              "ultrachat_26263",
-              "ultrachat_562061",
-              "0161a230_2",
-              "d15c9567_1",
-              "sharegpt_ld3avxY_56"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::7e00a6cb",
-            "category": "single-session-assistant",
-            "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
-            "gold": "International Budget Hostel",
-            "prediction": "re considering New Zealand, it",
-            "expected_doc_ids": [
-              "answer_ultrachat_370515"
-            ],
-            "retrieved_doc_ids": [
-              "ce127fed",
-              "ultrachat_336885",
-              "66d120f4_1",
-              "ultrachat_36404",
-              "13071cd4_2"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::1903aded",
-            "category": "single-session-assistant",
-            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
-            "gold": "Transcriptionist.",
-            "prediction": "You mentioned earlier that you were setting up a home studio, and then we talked about digital pianos, acoustic guitars, and now banjos!",
-            "expected_doc_ids": [
-              "answer_sharegpt_hA7AkP3_0"
-            ],
-            "retrieved_doc_ids": [
-              "6e96dcc4",
-              "22eebf8a_4",
-              "ultrachat_2843",
-              "ultrachat_447457",
-              "8a7150f1"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::ceb54acb",
-            "category": "single-session-assistant",
-            "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
-            "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
-            "prediction": "Can you tell me about any previous changes in Saginaw's law enforcement policies and how they affected crime rates in the city?",
-            "expected_doc_ids": [
-              "answer_sharegpt_cGdjmYo_0"
-            ],
-            "retrieved_doc_ids": [
-              "40f07f4a_3",
-              "sharegpt_UbMVpdp_137",
-              "ultrachat_147236",
-              "169f0af7",
-              "651d4348"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::f523d9fe",
-            "category": "single-session-assistant",
-            "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
-            "gold": "Doc Martin",
-            "prediction": "user: I've always wanted to try avocado ice cream, have you ever had it?",
-            "expected_doc_ids": [
-              "answer_sharegpt_m2xJfjo_0"
-            ],
-            "retrieved_doc_ids": [
-              "ultrachat_98401",
-              "ultrachat_538216",
-              "sharegpt_QGN2wCc_0",
-              "ca57313f_1",
-              "sharegpt_63IrNjK_0"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::0e5e2d1a",
-            "category": "single-session-assistant",
-            "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
-            "gold": "38 subjects",
-            "prediction": "Now, I was thinking about my PhD applications, and I wanted to ask - what are some common mistakes that applicants make when applying to PhD programs, and how can I avoid them?",
-            "expected_doc_ids": [
-              "answer_ultrachat_113156"
-            ],
-            "retrieved_doc_ids": [
-              "8fd5852e",
-              "ultrachat_429323",
-              "ultrachat_412029",
-              "ultrachat_340554",
-              "ultrachat_146029"
-            ]
-          },
-          {
-            "case_id": "longmemeval_m::fea54f57",
-            "category": "single-session-assistant",
-            "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
-            "gold": "Evolution",
-            "prediction": "user: I'm thinking of planning a family vacation for next summer and was wondering if you could help me find a good beach house to rent.",
-            "expected_doc_ids": [
-              "answer_ultrachat_187684"
-            ],
-            "retrieved_doc_ids": [
-              "dd820fc3",
-              "76703db4_4",
-              "e7a51288",
-              "ultrachat_10110",
-              "sharegpt_jCOaAxC_0"
-            ]
-          }
-        ],
+        "sample_misses": [],
         "sample_successes": []
       },
       "novaspine": {
@@ -11332,20 +10900,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3003,
-      "rows_successful": 2931,
+      "rows_recorded": 2986,
+      "rows_successful": 2914,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7802797679972705,
-      "doc_recall_all": 0.6673490276356192,
-      "ndcg_at_10": 0.6005761032254492,
-      "exact_match": 0.02661207778915046,
-      "token_f1": 0.07364725779693121,
-      "avg_total_sec": 44.55438399223607,
-      "p50_total_sec": 51.09746347274631,
-      "p95_total_sec": 58.09812426427379,
-      "avg_storage_bytes": 19584764.977140907,
-      "p95_storage_bytes": 28344217.0,
+      "doc_recall_any": 0.7848318462594372,
+      "doc_recall_all": 0.67124227865477,
+      "ndcg_at_10": 0.6040798073279998,
+      "exact_match": 0.026767330130404943,
+      "token_f1": 0.0740071286699936,
+      "avg_total_sec": 43.359357863716085,
+      "p50_total_sec": 51.05696625215933,
+      "p95_total_sec": 57.85040366882458,
+      "avg_storage_bytes": 19518062.31777625,
+      "p95_storage_bytes": 28284497.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14138,229 +13706,24 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 118,
-          "rows_recorded": 118,
-          "rows_successful": 118,
+          "expected_total": 101,
+          "rows_recorded": 101,
+          "rows_successful": 101,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.8559322033898306,
-          "doc_recall_all": 0.8559322033898306,
-          "ndcg_at_10": 0.8559322033898306,
-          "exact_match": 0.03389830508474576,
-          "token_f1": 0.0834535598941678,
-          "avg_total_sec": 63.98555264164599,
-          "p50_total_sec": 55.822211754042655,
-          "p95_total_sec": 250.85538117401302,
-          "avg_storage_bytes": 17465303.686440676,
-          "p95_storage_bytes": 31170405.0,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.039603960396039604,
+          "token_f1": 0.09548693474324534,
+          "avg_total_sec": 32.77786678553439,
+          "p50_total_sec": 12.63087754510343,
+          "p95_total_sec": 60.44051832286641,
+          "avg_storage_bytes": 15184091.89108911,
+          "p95_storage_bytes": 29032780.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [
-            {
-              "case_id": "longmemeval_m::7161e7e2",
-              "category": "single-session-assistant",
-              "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
-              "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
-              "prediction": "Can you tell me more about the boutique and what I can expect from the experience?",
-              "expected_doc_ids": [
-                "answer_sharegpt_5Lzox6N_0"
-              ],
-              "retrieved_doc_ids": [
-                "553e42d1",
-                "5b958327",
-                "65912979_3",
-                "8988495b",
-                "ultrachat_188722"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::c4f10528",
-              "category": "single-session-assistant",
-              "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
-              "gold": "Miss Bee Providore",
-              "prediction": "Can you help me find some online resources to learn about event planning and management?",
-              "expected_doc_ids": [
-                "answer_ultrachat_234453"
-              ],
-              "retrieved_doc_ids": [
-                "08cf8c6c",
-                "87307faf",
-                "0cd57281_1",
-                "827895b2",
-                "78e40ca2_3"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::89527b6b",
-              "category": "single-session-assistant",
-              "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
-              "gold": "The Plesiosaur had a blue scaly body.",
-              "prediction": "user: I'm going to try reaching out to the fashion blogger and see if they can provide more information about the skincare-inspired clothing line.",
-              "expected_doc_ids": [
-                "answer_sharegpt_YkWn1Ne_0"
-              ],
-              "retrieved_doc_ids": [
-                "2225c644",
-                "ultrachat_83156",
-                "sharegpt_ef7SGNi_289",
-                "ultrachat_343838",
-                "sharegpt_KzDwaf1_165"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::e9327a54",
-              "category": "single-session-assistant",
-              "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
-              "gold": "The Sugar Factory at Icon Park.",
-              "prediction": "If you have any more questions or need help with planning your itinerary, feel free to ask!",
-              "expected_doc_ids": [
-                "answer_ultrachat_480665"
-              ],
-              "retrieved_doc_ids": [
-                "ultrachat_87973",
-                "ultrachat_64215",
-                "f16b149f_2",
-                "6e42386d_1",
-                "a3a62463"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::4c36ccef",
-              "category": "single-session-assistant",
-              "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
-              "gold": "Roscioli",
-              "prediction": "user: I'm trying to plan my week and was wondering if you can remind me what time the recreation center opens on Mondays?",
-              "expected_doc_ids": [
-                "answer_ultrachat_448704"
-              ],
-              "retrieved_doc_ids": [
-                "f7879502",
-                "bd42acb2",
-                "d31c3ec8_1",
-                "2fa50779_2",
-                "7fa3c60f_1"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::6ae235be",
-              "category": "single-session-assistant",
-              "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
-              "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
-              "prediction": "**Contact the organizations directly**: Reach out to the organizations that interest you and ask about volunteer opportunities, requirements, and any necessary training or orientation.",
-              "expected_doc_ids": [
-                "answer_sharegpt_IUWQYGQ_0"
-              ],
-              "retrieved_doc_ids": [
-                "ultrachat_26263",
-                "ultrachat_562061",
-                "0161a230_2",
-                "d15c9567_1",
-                "sharegpt_ld3avxY_56"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::7e00a6cb",
-              "category": "single-session-assistant",
-              "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
-              "gold": "International Budget Hostel",
-              "prediction": "re considering New Zealand, it",
-              "expected_doc_ids": [
-                "answer_ultrachat_370515"
-              ],
-              "retrieved_doc_ids": [
-                "ce127fed",
-                "ultrachat_336885",
-                "66d120f4_1",
-                "ultrachat_36404",
-                "13071cd4_2"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::1903aded",
-              "category": "single-session-assistant",
-              "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
-              "gold": "Transcriptionist.",
-              "prediction": "You mentioned earlier that you were setting up a home studio, and then we talked about digital pianos, acoustic guitars, and now banjos!",
-              "expected_doc_ids": [
-                "answer_sharegpt_hA7AkP3_0"
-              ],
-              "retrieved_doc_ids": [
-                "6e96dcc4",
-                "22eebf8a_4",
-                "ultrachat_2843",
-                "ultrachat_447457",
-                "8a7150f1"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::ceb54acb",
-              "category": "single-session-assistant",
-              "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
-              "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
-              "prediction": "Can you tell me about any previous changes in Saginaw's law enforcement policies and how they affected crime rates in the city?",
-              "expected_doc_ids": [
-                "answer_sharegpt_cGdjmYo_0"
-              ],
-              "retrieved_doc_ids": [
-                "40f07f4a_3",
-                "sharegpt_UbMVpdp_137",
-                "ultrachat_147236",
-                "169f0af7",
-                "651d4348"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::f523d9fe",
-              "category": "single-session-assistant",
-              "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
-              "gold": "Doc Martin",
-              "prediction": "user: I've always wanted to try avocado ice cream, have you ever had it?",
-              "expected_doc_ids": [
-                "answer_sharegpt_m2xJfjo_0"
-              ],
-              "retrieved_doc_ids": [
-                "ultrachat_98401",
-                "ultrachat_538216",
-                "sharegpt_QGN2wCc_0",
-                "ca57313f_1",
-                "sharegpt_63IrNjK_0"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::0e5e2d1a",
-              "category": "single-session-assistant",
-              "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
-              "gold": "38 subjects",
-              "prediction": "Now, I was thinking about my PhD applications, and I wanted to ask - what are some common mistakes that applicants make when applying to PhD programs, and how can I avoid them?",
-              "expected_doc_ids": [
-                "answer_ultrachat_113156"
-              ],
-              "retrieved_doc_ids": [
-                "8fd5852e",
-                "ultrachat_429323",
-                "ultrachat_412029",
-                "ultrachat_340554",
-                "ultrachat_146029"
-              ]
-            },
-            {
-              "case_id": "longmemeval_m::fea54f57",
-              "category": "single-session-assistant",
-              "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
-              "gold": "Evolution",
-              "prediction": "user: I'm thinking of planning a family vacation for next summer and was wondering if you could help me find a good beach house to rent.",
-              "expected_doc_ids": [
-                "answer_ultrachat_187684"
-              ],
-              "retrieved_doc_ids": [
-                "dd820fc3",
-                "76703db4_4",
-                "e7a51288",
-                "ultrachat_10110",
-                "sharegpt_jCOaAxC_0"
-              ]
-            }
-          ],
+          "sample_misses": [],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::7161e7e2",
@@ -18700,11 +18063,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0428381533884723,
-    "doc_recall_all_delta": 0.0688268551092176,
-    "ndcg_at_10_delta": 0.05843983728902613,
-    "token_f1_delta": -0.0010284015942820801,
-    "avg_storage_ratio_nova_over_stock": 0.4454351087475724,
-    "avg_latency_ratio_nova_over_stock": 1.7861102071041923
+    "doc_recall_any_delta": 0.03828607512630555,
+    "doc_recall_all_delta": 0.06493360409006677,
+    "ndcg_at_10_delta": 0.0549361331864755,
+    "token_f1_delta": -0.0013882724673444646,
+    "avg_storage_ratio_nova_over_stock": 0.446957375960583,
+    "avg_latency_ratio_nova_over_stock": 1.835337143827162
   }
 }
