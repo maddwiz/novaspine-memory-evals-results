@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T22:08:20Z",
+  "generated_at": "2026-04-23T22:08:21Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -10790,9 +10790,9 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 3,
+        "rows_recorded": 4,
         "rows_successful": 2,
-        "rows_failed": 1,
+        "rows_failed": 2,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
@@ -10860,6 +10860,11 @@
           {
             "case_id": "longmemeval_m::7161e7e2",
             "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+            "error": "Error in faiss::FileIOWriter::FileIOWriter(const char*) at /project/third-party/faiss/faiss/impl/io.cpp:103: Error: 'f' failed: could not open /home/nova/benchmarks/official-memory-evals/state/novaspine-case/faiss/memory.index.tmp for writing: No such file or directory"
+          },
+          {
+            "case_id": "longmemeval_m::58470ed2",
+            "query": "I was going through our previous conversation about The Library of Babel, and I wanted to confirm - what did Borges say about the center and circumference of the Library?",
             "error": "Error in faiss::FileIOWriter::FileIOWriter(const char*) at /project/third-party/faiss/faiss/impl/io.cpp:103: Error: 'f' failed: could not open /home/nova/benchmarks/official-memory-evals/state/novaspine-case/faiss/memory.index.tmp for writing: No such file or directory"
           }
         ],
@@ -14482,9 +14487,9 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2989,
+      "rows_recorded": 2990,
       "rows_successful": 2988,
-      "rows_failed": 1,
+      "rows_failed": 2,
       "complete": false,
       "doc_recall_any": 0.822623828647925,
       "doc_recall_all": 0.7352744310575636,
@@ -17668,6 +17673,11 @@
         {
           "case_id": "longmemeval_m::7161e7e2",
           "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+          "error": "Error in faiss::FileIOWriter::FileIOWriter(const char*) at /project/third-party/faiss/faiss/impl/io.cpp:103: Error: 'f' failed: could not open /home/nova/benchmarks/official-memory-evals/state/novaspine-case/faiss/memory.index.tmp for writing: No such file or directory"
+        },
+        {
+          "case_id": "longmemeval_m::58470ed2",
+          "query": "I was going through our previous conversation about The Library of Babel, and I wanted to confirm - what did Borges say about the center and circumference of the Library?",
           "error": "Error in faiss::FileIOWriter::FileIOWriter(const char*) at /project/third-party/faiss/faiss/impl/io.cpp:103: Error: 'f' failed: could not open /home/nova/benchmarks/official-memory-evals/state/novaspine-case/faiss/memory.index.tmp for writing: No such file or directory"
         }
       ],
