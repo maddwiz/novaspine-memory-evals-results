@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T14:06:29Z",
+  "generated_at": "2026-04-23T14:24:26Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T13:48:55Z",
+    "updated_at": "2026-04-23T14:06:30Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 12,
+    "current_case_index": 13,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::fea54f57"
+    "current_case_id": "longmemeval_m::cc539528"
   },
   "benchmarks": {
     "locomo": {
@@ -10790,36 +10790,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 12,
-        "rows_successful": 12,
+        "rows_recorded": 13,
+        "rows_successful": 13,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9166666666666666,
-        "doc_recall_all": 0.9166666666666666,
-        "ndcg_at_10": 0.8859108127976215,
-        "exact_match": 0.08333333333333333,
-        "token_f1": 0.13529837714620324,
-        "avg_total_sec": 1075.890982539587,
+        "doc_recall_any": 0.9230769230769231,
+        "doc_recall_all": 0.9230769230769231,
+        "ndcg_at_10": 0.8946869041208814,
+        "exact_match": 0.07692307692307693,
+        "token_f1": 0.13846547030690254,
+        "avg_total_sec": 1075.9049175070743,
         "p50_total_sec": 1075.9918981948867,
         "p95_total_sec": 1119.649693639949,
-        "avg_storage_bytes": 110029441.33333333,
+        "avg_storage_bytes": 110019917.92307693,
         "p95_storage_bytes": 114686765.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9166666666666666,
-            "doc_recall_all": 0.9166666666666666,
-            "ndcg_at_10": 0.8859108127976215,
-            "exact_match": 0.08333333333333333,
-            "token_f1": 0.13529837714620324,
-            "avg_total_sec": 1075.890982539587,
+            "doc_recall_any": 0.9230769230769231,
+            "doc_recall_all": 0.9230769230769231,
+            "ndcg_at_10": 0.8946869041208814,
+            "exact_match": 0.07692307692307693,
+            "token_f1": 0.13846547030690254,
+            "avg_total_sec": 1075.9049175070743,
             "p50_total_sec": 1075.9918981948867,
             "p95_total_sec": 1119.649693639949,
-            "avg_storage_bytes": 110029441.33333333,
+            "avg_storage_bytes": 110019917.92307693,
             "p95_storage_bytes": 114686765.0,
             "categories": {},
             "sample_errors": [],
@@ -10990,6 +10990,20 @@
                   "7726e7e9_3",
                   "sharegpt_XgksWad_7",
                   "sharegpt_HOO59Ue_255"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::cc539528",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about front-end and back-end development. Can you remind me of the specific back-end programming languages you recommended I learn?",
+                "gold": "I recommended learning Ruby, Python, or PHP as a back-end programming language.",
+                "prediction": "user: Do you recommend any specific resources or online courses for someone who wants to learn front-end and back-end development?",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_374124",
+                  "sharegpt_2f0sL3N_0",
+                  "sharegpt_kTtcsIZ_18",
+                  "0b5645aa",
+                  "sharegpt_Nlk1nK5_4"
                 ]
               }
             ]
@@ -11163,6 +11177,20 @@
               "7726e7e9_3",
               "sharegpt_XgksWad_7",
               "sharegpt_HOO59Ue_255"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::cc539528",
+            "category": "single-session-assistant",
+            "query": "I wanted to follow up on our previous conversation about front-end and back-end development. Can you remind me of the specific back-end programming languages you recommended I learn?",
+            "gold": "I recommended learning Ruby, Python, or PHP as a back-end programming language.",
+            "prediction": "user: Do you recommend any specific resources or online courses for someone who wants to learn front-end and back-end development?",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_374124",
+              "sharegpt_2f0sL3N_0",
+              "sharegpt_kTtcsIZ_18",
+              "0b5645aa",
+              "sharegpt_Nlk1nK5_4"
             ]
           }
         ]
@@ -14754,20 +14782,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2998,
-      "rows_successful": 2998,
+      "rows_recorded": 2999,
+      "rows_successful": 2999,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8228819212808539,
-      "doc_recall_all": 0.7358238825883923,
-      "ndcg_at_10": 0.6584378863168868,
-      "exact_match": 0.02601734489659773,
-      "token_f1": 0.07256288110416917,
-      "avg_total_sec": 78.44083943446986,
-      "p50_total_sec": 92.25326635269448,
-      "p95_total_sec": 105.37940225424245,
-      "avg_storage_bytes": 8605240.907271514,
-      "p95_storage_bytes": 11499069.0,
+      "doc_recall_any": 0.8229409803267755,
+      "doc_recall_all": 0.7359119706568856,
+      "ndcg_at_10": 0.6585517783187818,
+      "exact_match": 0.02600866955651884,
+      "token_f1": 0.07259752855569673,
+      "avg_total_sec": 78.7734940852476,
+      "p50_total_sec": 92.27284690923989,
+      "p95_total_sec": 105.38491843221709,
+      "avg_storage_bytes": 8639018.965321774,
+      "p95_storage_bytes": 11502697.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17518,20 +17546,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 124,
-          "rows_recorded": 124,
-          "rows_successful": 124,
+          "expected_total": 125,
+          "rows_recorded": 125,
+          "rows_successful": 125,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9354838709677419,
-          "doc_recall_all": 0.9354838709677419,
-          "ndcg_at_10": 0.932507498012673,
-          "exact_match": 0.04032258064516129,
-          "token_f1": 0.12999986705881905,
-          "avg_total_sec": 152.05533455548837,
+          "doc_recall_any": 0.936,
+          "doc_recall_all": 0.936,
+          "ndcg_at_10": 0.9330474380285716,
+          "exact_match": 0.04,
+          "token_f1": 0.13037163282823083,
+          "avg_total_sec": 159.44746897597983,
           "p50_total_sec": 99.38414590898901,
-          "p95_total_sec": 1071.1490722307935,
-          "avg_storage_bytes": 15961591.0,
+          "p95_total_sec": 1075.9918981948867,
+          "avg_storage_bytes": 16713143.368,
           "p95_storage_bytes": 109979689.0,
           "categories": {},
           "sample_errors": [],
@@ -18335,11 +18363,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.036074712848347956,
-    "doc_recall_all_delta": 0.06156342696105466,
-    "ndcg_at_10_delta": 0.050848804947501214,
-    "token_f1_delta": -0.0021418943432584825,
-    "avg_storage_ratio_nova_over_stock": 0.3727905074376643,
-    "avg_latency_ratio_nova_over_stock": 1.568443458521164
+    "doc_recall_any_delta": 0.036133771894269584,
+    "doc_recall_all_delta": 0.06165151502954802,
+    "ndcg_at_10_delta": 0.05096269694939615,
+    "token_f1_delta": -0.0021072468917309184,
+    "avg_storage_ratio_nova_over_stock": 0.3742538179407061,
+    "avg_latency_ratio_nova_over_stock": 1.5750949683051059
   }
 }
