@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T10:30:43Z",
+  "generated_at": "2026-04-23T10:31:51Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-23T10:18:01Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-23T10:31:04Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 28,
+    "current_case_index": 1,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::1568498a"
+    "current_case_id": "longmemeval_m::7161e7e2"
   },
   "benchmarks": {
     "locomo": {
