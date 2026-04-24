@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T18:54:24Z",
+  "generated_at": "2026-04-24T19:16:24Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-24T18:32:34Z",
+    "updated_at": "2026-04-24T18:54:25Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 7,
+    "current_case_index": 8,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::7e00a6cb"
+    "current_case_id": "longmemeval_m::1903aded"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,36 +10789,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 7,
-        "rows_successful": 7,
+        "rows_recorded": 8,
+        "rows_successful": 8,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.08120985294898339,
-        "avg_total_sec": 1500.3116444655295,
+        "token_f1": 0.07105862133036046,
+        "avg_total_sec": 1477.5697823477094,
         "p50_total_sec": 1320.7624449874274,
         "p95_total_sec": 1910.384880215861,
-        "avg_storage_bytes": 135151845.0,
+        "avg_storage_bytes": 135446743.5,
         "p95_storage_bytes": 141602881.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.08120985294898339,
-            "avg_total_sec": 1500.3116444655295,
+            "token_f1": 0.07105862133036046,
+            "avg_total_sec": 1477.5697823477094,
             "p50_total_sec": 1320.7624449874274,
             "p95_total_sec": 1910.384880215861,
-            "avg_storage_bytes": 135151845.0,
+            "avg_storage_bytes": 135446743.5,
             "p95_storage_bytes": 141602881.0,
             "categories": {},
             "sample_errors": [],
@@ -10920,6 +10920,20 @@
                   "4f3b0353_2",
                   "9bd6beaa_1",
                   "d9b87d3c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "That way, I can provide you with a list of top-rated home improvement stores in your area.",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0",
+                  "267a912c",
+                  "cf8ec9f9",
+                  "444dbbd3_2",
+                  "ultrachat_422192"
                 ]
               }
             ]
@@ -11024,6 +11038,20 @@
               "4f3b0353_2",
               "9bd6beaa_1",
               "d9b87d3c_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::1903aded",
+            "category": "single-session-assistant",
+            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "gold": "Transcriptionist.",
+            "prediction": "That way, I can provide you with a list of top-rated home improvement stores in your area.",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_hA7AkP3_0",
+              "267a912c",
+              "cf8ec9f9",
+              "444dbbd3_2",
+              "ultrachat_422192"
             ]
           }
         ]
@@ -14615,20 +14643,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2993,
-      "rows_successful": 2993,
+      "rows_recorded": 2994,
+      "rows_successful": 2994,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8229201470096893,
-      "doc_recall_all": 0.7357166722352155,
-      "ndcg_at_10": 0.6583247087953408,
-      "exact_match": 0.025726695623120615,
-      "token_f1": 0.07233157567497081,
-      "avg_total_sec": 77.76716550127776,
+      "doc_recall_any": 0.8229792919171677,
+      "doc_recall_all": 0.7358049432197729,
+      "ndcg_at_10": 0.6584388287990832,
+      "exact_match": 0.02571810287241149,
+      "token_f1": 0.07230741683206,
+      "avg_total_sec": 78.18153075913403,
       "p50_total_sec": 92.23997613089159,
-      "p95_total_sec": 105.29218793474138,
-      "avg_storage_bytes": 8494561.262612764,
-      "p95_storage_bytes": 11478085.0,
+      "p95_total_sec": 105.29830004880205,
+      "avg_storage_bytes": 8537652.936539747,
+      "p95_storage_bytes": 11478301.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17379,21 +17407,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 119,
-          "rows_recorded": 119,
-          "rows_successful": 119,
+          "expected_total": 120,
+          "rows_recorded": 120,
+          "rows_successful": 120,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9411764705882353,
-          "doc_recall_all": 0.9411764705882353,
-          "ndcg_at_10": 0.9411764705882353,
-          "exact_match": 0.03361344537815126,
-          "token_f1": 0.1265955626906051,
-          "avg_total_sec": 138.2046319803716,
-          "p50_total_sec": 97.72340316185728,
-          "p95_total_sec": 1285.7353944797069,
-          "avg_storage_bytes": 13486948.764705881,
-          "p95_storage_bytes": 128666441.0,
+          "doc_recall_any": 0.9416666666666667,
+          "doc_recall_all": 0.9416666666666667,
+          "ndcg_at_10": 0.9416666666666667,
+          "exact_match": 0.03333333333333333,
+          "token_f1": 0.1255405996681834,
+          "avg_total_sec": 148.03939960989325,
+          "p50_total_sec": 98.62294495292008,
+          "p95_total_sec": 1295.8753673373722,
+          "avg_storage_bytes": 14520482.8,
+          "p95_storage_bytes": 133726637.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18183,11 +18211,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03510288812644058,
-    "doc_recall_all_delta": 0.059912949730985376,
-    "ndcg_at_10_delta": 0.04887648940198608,
-    "token_f1_delta": -0.002254049414098999,
-    "avg_storage_ratio_nova_over_stock": 0.34105789915069573,
-    "avg_latency_ratio_nova_over_stock": 1.4561220477990433
+    "doc_recall_any_delta": 0.03516203303391896,
+    "doc_recall_all_delta": 0.0600012207155427,
+    "ndcg_at_10_delta": 0.048990609405728525,
+    "token_f1_delta": -0.002278208257009806,
+    "avg_storage_ratio_nova_over_stock": 0.34278803627326954,
+    "avg_latency_ratio_nova_over_stock": 1.463880674256845
   }
 }
