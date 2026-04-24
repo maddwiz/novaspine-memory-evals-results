@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T20:19:43Z",
+  "generated_at": "2026-04-24T20:40:42Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-24T19:59:16Z",
+    "updated_at": "2026-04-24T20:19:45Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 11,
+    "current_case_index": 12,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::0e5e2d1a"
+    "current_case_id": "longmemeval_m::fea54f57"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,37 +10789,37 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 11,
-        "rows_successful": 11,
+        "rows_recorded": 12,
+        "rows_successful": 12,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
-        "exact_match": 0.09090909090909091,
-        "token_f1": 0.1480977301135404,
-        "avg_total_sec": 1419.56803306425,
+        "exact_match": 0.08333333333333333,
+        "token_f1": 0.1357562526040787,
+        "avg_total_sec": 1406.0172916856438,
         "p50_total_sec": 1309.3407022622414,
-        "p95_total_sec": 1910.384880215861,
-        "avg_storage_bytes": 134359112.27272728,
-        "p95_storage_bytes": 141602881.0,
+        "p95_total_sec": 1793.112188803032,
+        "avg_storage_bytes": 134105626.33333333,
+        "p95_storage_bytes": 139058789.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 11,
-            "rows_recorded": 11,
-            "rows_successful": 11,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.09090909090909091,
-            "token_f1": 0.1480977301135404,
-            "avg_total_sec": 1419.56803306425,
+            "exact_match": 0.08333333333333333,
+            "token_f1": 0.1357562526040787,
+            "avg_total_sec": 1406.0172916856438,
             "p50_total_sec": 1309.3407022622414,
-            "p95_total_sec": 1910.384880215861,
-            "avg_storage_bytes": 134359112.27272728,
-            "p95_storage_bytes": 141602881.0,
+            "p95_total_sec": 1793.112188803032,
+            "avg_storage_bytes": 134105626.33333333,
+            "p95_storage_bytes": 139058789.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -10974,6 +10974,20 @@
                   "af20772a_2",
                   "ultrachat_304185",
                   "sharegpt_ltGQxlc_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::fea54f57",
+                "category": "single-session-assistant",
+                "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+                "gold": "Evolution",
+                "prediction": "user: Which song on the Fifth Album do you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation?",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_187684",
+                  "ultrachat_566186",
+                  "7726e7e9_3",
+                  "d77d4ac9_1",
+                  "5c05a50c"
                 ]
               }
             ]
@@ -11132,6 +11146,20 @@
               "af20772a_2",
               "ultrachat_304185",
               "sharegpt_ltGQxlc_0"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::fea54f57",
+            "category": "single-session-assistant",
+            "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+            "gold": "Evolution",
+            "prediction": "user: Which song on the Fifth Album do you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation?",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_187684",
+              "ultrachat_566186",
+              "7726e7e9_3",
+              "d77d4ac9_1",
+              "5c05a50c"
             ]
           }
         ]
@@ -14723,20 +14751,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2997,
-      "rows_successful": 2997,
+      "rows_recorded": 2998,
+      "rows_successful": 2998,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8231564898231565,
-      "doc_recall_all": 0.7360694027360694,
-      "ndcg_at_10": 0.6587807318733584,
-      "exact_match": 0.026026026026026026,
-      "token_f1": 0.07258892627820944,
-      "avg_total_sec": 79.36943383309055,
+      "doc_recall_any": 0.8232154769846565,
+      "doc_recall_all": 0.7361574382921948,
+      "ndcg_at_10": 0.6588945475064893,
+      "exact_match": 0.02601734489659773,
+      "token_f1": 0.07256471382781644,
+      "avg_total_sec": 79.76222559516123,
       "p50_total_sec": 92.25326635269448,
-      "p95_total_sec": 105.36214560689405,
-      "avg_storage_bytes": 8660697.09009009,
-      "p95_storage_bytes": 11490625.0,
+      "p95_total_sec": 105.37940225424245,
+      "avg_storage_bytes": 8701609.893262174,
+      "p95_storage_bytes": 11499069.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17487,20 +17515,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 123,
-          "rows_recorded": 123,
-          "rows_successful": 123,
+          "expected_total": 124,
+          "rows_recorded": 124,
+          "rows_successful": 124,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.943089430894309,
-          "doc_recall_all": 0.943089430894309,
-          "ndcg_at_10": 0.943089430894309,
-          "exact_match": 0.04065040650406504,
-          "token_f1": 0.1311014473234802,
-          "avg_total_sec": 175.27982161066882,
-          "p50_total_sec": 99.32774418406188,
+          "doc_recall_any": 0.9435483870967742,
+          "doc_recall_all": 0.9435483870967742,
+          "ndcg_at_10": 0.9435483870967742,
+          "exact_match": 0.04032258064516129,
+          "token_f1": 0.13004417758700054,
+          "avg_total_sec": 184.00304189220356,
+          "p50_total_sec": 99.38414590898901,
           "p95_total_sec": 1303.5168761280365,
-          "avg_storage_bytes": 17372635.959349595,
+          "avg_storage_bytes": 18291544.387096774,
           "p95_storage_bytes": 133868665.0,
           "categories": {},
           "sample_errors": [],
@@ -18291,11 +18319,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03533923093990776,
-    "doc_recall_all_delta": 0.0602656802318392,
-    "ndcg_at_10_delta": 0.0493325124800037,
-    "token_f1_delta": -0.00199669881086037,
-    "avg_storage_ratio_nova_over_stock": 0.34772827735403705,
-    "avg_latency_ratio_nova_over_stock": 1.4861231186803585
+    "doc_recall_any_delta": 0.03539821810140775,
+    "doc_recall_all_delta": 0.06035371578796467,
+    "ndcg_at_10_delta": 0.04944632811313465,
+    "token_f1_delta": -0.0020209112612533664,
+    "avg_storage_ratio_nova_over_stock": 0.3493709324914661,
+    "avg_latency_ratio_nova_over_stock": 1.4934778003285607
   }
 }
