@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T05:32:36Z",
+  "generated_at": "2026-04-24T05:53:15Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-24T05:11:07Z",
+    "updated_at": "2026-04-24T05:32:37Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 20,
+    "current_case_index": 21,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::8464fc84"
+    "current_case_id": "longmemeval_m::8aef76bc"
   },
   "benchmarks": {
     "locomo": {
@@ -10790,36 +10790,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 20,
-        "rows_successful": 20,
+        "rows_recorded": 21,
+        "rows_successful": 21,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.95,
-        "doc_recall_all": 0.95,
-        "ndcg_at_10": 0.95,
-        "exact_match": 0.05,
-        "token_f1": 0.13738711558404654,
-        "avg_total_sec": 1291.8263010680444,
-        "p50_total_sec": 1296.6827458650805,
+        "doc_recall_any": 0.9047619047619048,
+        "doc_recall_all": 0.9047619047619048,
+        "ndcg_at_10": 0.9047619047619048,
+        "exact_match": 0.047619047619047616,
+        "token_f1": 0.1308448719848062,
+        "avg_total_sec": 1289.2358923540894,
+        "p50_total_sec": 1295.670381887816,
         "p95_total_sec": 1331.0825257347897,
-        "avg_storage_bytes": 133917608.8,
+        "avg_storage_bytes": 133669981.1904762,
         "p95_storage_bytes": 138534501.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 20,
-            "rows_recorded": 20,
-            "rows_successful": 20,
+            "expected_total": 21,
+            "rows_recorded": 21,
+            "rows_successful": 21,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.95,
-            "doc_recall_all": 0.95,
-            "ndcg_at_10": 0.95,
-            "exact_match": 0.05,
-            "token_f1": 0.13738711558404654,
-            "avg_total_sec": 1291.8263010680444,
-            "p50_total_sec": 1296.6827458650805,
+            "doc_recall_any": 0.9047619047619048,
+            "doc_recall_all": 0.9047619047619048,
+            "ndcg_at_10": 0.9047619047619048,
+            "exact_match": 0.047619047619047616,
+            "token_f1": 0.1308448719848062,
+            "avg_total_sec": 1289.2358923540894,
+            "p50_total_sec": 1295.670381887816,
             "p95_total_sec": 1331.0825257347897,
-            "avg_storage_bytes": 133917608.8,
+            "avg_storage_bytes": 133669981.1904762,
             "p95_storage_bytes": 138534501.0,
             "categories": {},
             "sample_errors": [],
@@ -10835,6 +10835,19 @@
                 ],
                 "retrieved_doc_ids": [
                   "44b1595a"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::8aef76bc",
+                "category": "single-session-assistant",
+                "query": "I'm going back to our previous conversation about DIY home decor projects using recycled materials. Can you remind me what sealant you recommended for the newspaper flower vase?",
+                "gold": "Mod Podge or another sealant",
+                "prediction": "User location previous/historical: mood for travel, mood for something, New Orleans; current: today",
+                "expected_doc_ids": [
+                  "answer_ultrachat_563222"
+                ],
+                "retrieved_doc_ids": [
+                  "ultrachat_474903"
                 ]
               }
             ],
@@ -11021,6 +11034,19 @@
             ],
             "retrieved_doc_ids": [
               "44b1595a"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::8aef76bc",
+            "category": "single-session-assistant",
+            "query": "I'm going back to our previous conversation about DIY home decor projects using recycled materials. Can you remind me what sealant you recommended for the newspaper flower vase?",
+            "gold": "Mod Podge or another sealant",
+            "prediction": "User location previous/historical: mood for travel, mood for something, New Orleans; current: today",
+            "expected_doc_ids": [
+              "answer_ultrachat_563222"
+            ],
+            "retrieved_doc_ids": [
+              "ultrachat_474903"
             ]
           }
         ],
@@ -14780,20 +14806,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3006,
-      "rows_successful": 3006,
+      "rows_recorded": 3007,
+      "rows_successful": 3007,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8233532934131736,
-      "doc_recall_all": 0.7365269461077845,
-      "ndcg_at_10": 0.6594696784512492,
-      "exact_match": 0.02594810379241517,
-      "token_f1": 0.07274373896747362,
-      "avg_total_sec": 82.53209276627628,
-      "p50_total_sec": 92.27973236888647,
-      "p95_total_sec": 105.46247503906488,
-      "avg_storage_bytes": 9034102.168995343,
-      "p95_storage_bytes": 11523249.0,
+      "doc_recall_any": 0.8230794812105088,
+      "doc_recall_all": 0.7362820086464915,
+      "ndcg_at_10": 0.6592503669519305,
+      "exact_match": 0.025939474559361488,
+      "token_f1": 0.072719547501239,
+      "avg_total_sec": 82.9161618136021,
+      "p50_total_sec": 92.28088532714173,
+      "p95_total_sec": 105.47091840999201,
+      "avg_storage_bytes": 9073903.740937812,
+      "p95_storage_bytes": 11523537.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17544,20 +17570,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 132,
-          "rows_recorded": 132,
-          "rows_successful": 132,
+          "expected_total": 133,
+          "rows_recorded": 133,
+          "rows_successful": 133,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9393939393939394,
-          "doc_recall_all": 0.9393939393939394,
-          "ndcg_at_10": 0.9393939393939394,
-          "exact_match": 0.03787878787878788,
-          "token_f1": 0.13063746440318225,
-          "avg_total_sec": 240.76284633156365,
+          "doc_recall_any": 0.9323308270676691,
+          "doc_recall_all": 0.9323308270676691,
+          "ndcg_at_10": 0.9323308270676691,
+          "exact_match": 0.03759398496240601,
+          "token_f1": 0.1296552278287222,
+          "avg_total_sec": 248.2565671717398,
           "p50_total_sec": 100.99882552493364,
           "p95_total_sec": 1297.7106034760363,
-          "avg_storage_bytes": 25282092.151515152,
+          "avg_storage_bytes": 26059801.45112782,
           "p95_storage_bytes": 134377549.0,
           "categories": {},
           "sample_errors": [],
@@ -17676,6 +17702,19 @@
               ],
               "retrieved_doc_ids": [
                 "44b1595a"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::8aef76bc",
+              "category": "single-session-assistant",
+              "query": "I'm going back to our previous conversation about DIY home decor projects using recycled materials. Can you remind me what sealant you recommended for the newspaper flower vase?",
+              "gold": "Mod Podge or another sealant",
+              "prediction": "User location previous/historical: mood for travel, mood for something, New Orleans; current: today",
+              "expected_doc_ids": [
+                "answer_ultrachat_563222"
+              ],
+              "retrieved_doc_ids": [
+                "ultrachat_474903"
               ]
             }
           ],
@@ -18361,11 +18400,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03654608498066769,
-    "doc_recall_all_delta": 0.06226649048044686,
-    "ndcg_at_10_delta": 0.051880597081863544,
-    "token_f1_delta": -0.001961036479954034,
-    "avg_storage_ratio_nova_over_stock": 0.3913693489949398,
-    "avg_latency_ratio_nova_over_stock": 1.6502490533068421
+    "doc_recall_any_delta": 0.03627227277800282,
+    "doc_recall_all_delta": 0.06202155301915391,
+    "ndcg_at_10_delta": 0.0516612855825449,
+    "token_f1_delta": -0.0019852279461886474,
+    "avg_storage_ratio_nova_over_stock": 0.3930936061495201,
+    "avg_latency_ratio_nova_over_stock": 1.657928606320829
   }
 }
