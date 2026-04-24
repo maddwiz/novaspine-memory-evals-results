@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T15:58:19Z",
+  "generated_at": "2026-04-24T16:31:03Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -108,17 +108,16 @@
       "longmemeval_m"
     ],
     "systems": [
-      "stock",
       "novaspine"
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-24T15:40:36Z",
+    "updated_at": "2026-04-24T15:59:12Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 41,
+    "current_case_index": 1,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::5809eb10"
+    "current_case_id": "longmemeval_m::7161e7e2"
   },
   "benchmarks": {
     "locomo": {
@@ -10790,24 +10789,76 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 0,
-        "rows_successful": 0,
+        "rows_recorded": 1,
+        "rows_successful": 1,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.0,
-        "doc_recall_all": 0.0,
-        "ndcg_at_10": 0.0,
+        "doc_recall_any": 1.0,
+        "doc_recall_all": 1.0,
+        "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.0,
-        "avg_total_sec": 0.0,
-        "p50_total_sec": 0.0,
-        "p95_total_sec": 0.0,
-        "avg_storage_bytes": 0.0,
-        "p95_storage_bytes": 0.0,
-        "categories": {},
+        "token_f1": 0.13043478260869565,
+        "avg_total_sec": 1910.384880215861,
+        "p50_total_sec": 1910.384880215861,
+        "p95_total_sec": 1910.384880215861,
+        "avg_storage_bytes": 141602881.0,
+        "p95_storage_bytes": 141602881.0,
+        "categories": {
+          "single-session-assistant": {
+            "expected_total": 1,
+            "rows_recorded": 1,
+            "rows_successful": 1,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.13043478260869565,
+            "avg_total_sec": 1910.384880215861,
+            "p50_total_sec": 1910.384880215861,
+            "p95_total_sec": 1910.384880215861,
+            "avg_storage_bytes": 141602881.0,
+            "p95_storage_bytes": 141602881.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_m::7161e7e2",
+                "category": "single-session-assistant",
+                "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+                "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+                "prediction": "Here's an updated version of the shift rotation sheet for GM social media agents with 7 agents, 4 shifts, and 2 days off for every agent for a week starting on Sunday and ending on Saturday:",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_5Lzox6N_0",
+                  "9b3a7f2c_3",
+                  "266ba230",
+                  "c2808c05_4",
+                  "c7d41f6a_1"
+                ]
+              }
+            ]
+          }
+        },
         "sample_errors": [],
         "sample_misses": [],
-        "sample_successes": []
+        "sample_successes": [
+          {
+            "case_id": "longmemeval_m::7161e7e2",
+            "category": "single-session-assistant",
+            "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+            "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+            "prediction": "Here's an updated version of the shift rotation sheet for GM social media agents with 7 agents, 4 shifts, and 2 days off for every agent for a week starting on Sunday and ending on Saturday:",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_5Lzox6N_0",
+              "9b3a7f2c_3",
+              "266ba230",
+              "c2808c05_4",
+              "c7d41f6a_1"
+            ]
+          }
+        ]
       }
     }
   },
@@ -14396,20 +14447,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2986,
-      "rows_successful": 2986,
+      "rows_recorded": 2987,
+      "rows_successful": 2987,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8225050234427328,
-      "doc_recall_all": 0.7350971198928332,
-      "ndcg_at_10": 0.6575237285413447,
-      "exact_match": 0.02578700602813128,
-      "token_f1": 0.07231076256682678,
-      "avg_total_sec": 74.43233249633812,
-      "p50_total_sec": 92.19375823484734,
-      "p95_total_sec": 104.99804939655587,
-      "avg_storage_bytes": 8197641.977227059,
-      "p95_storage_bytes": 11461809.0,
+      "doc_recall_any": 0.8225644459323737,
+      "doc_recall_all": 0.7351858051556746,
+      "ndcg_at_10": 0.6576383841394225,
+      "exact_match": 0.025778372949447605,
+      "token_f1": 0.0723302215624886,
+      "avg_total_sec": 75.0469801520862,
+      "p50_total_sec": 92.2204826651141,
+      "p95_total_sec": 105.0063641848974,
+      "avg_storage_bytes": 8242303.925343154,
+      "p95_storage_bytes": 11469677.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17160,21 +17211,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 112,
-          "rows_recorded": 112,
-          "rows_successful": 112,
+          "expected_total": 113,
+          "rows_recorded": 113,
+          "rows_successful": 113,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9375,
-          "doc_recall_all": 0.9375,
-          "ndcg_at_10": 0.9375,
-          "exact_match": 0.03571428571428571,
-          "token_f1": 0.12943216954945644,
-          "avg_total_sec": 53.07294370004924,
+          "doc_recall_any": 0.9380530973451328,
+          "doc_recall_all": 0.9380530973451328,
+          "ndcg_at_10": 0.9380530973451328,
+          "exact_match": 0.035398230088495575,
+          "token_f1": 0.12944104223139663,
+          "avg_total_sec": 69.50933251877323,
           "p50_total_sec": 97.09071068884805,
-          "p95_total_sec": 108.83123617991805,
-          "avg_storage_bytes": 5882892.75,
-          "p95_storage_bytes": 11834833.0,
+          "p95_total_sec": 108.99338128743693,
+          "avg_storage_bytes": 7083954.592920354,
+          "p95_storage_bytes": 11921605.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17964,11 +18015,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03468776455948408,
-    "doc_recall_all_delta": 0.059293397388603064,
-    "ndcg_at_10_delta": 0.04807550914798997,
-    "token_f1_delta": -0.002274862522243029,
-    "avg_storage_ratio_nova_over_stock": 0.3291365456445787,
-    "avg_latency_ratio_nova_over_stock": 1.3936802211885473
+    "doc_recall_any_delta": 0.03474718704912494,
+    "doc_recall_all_delta": 0.0593820826514444,
+    "ndcg_at_10_delta": 0.048190164746067854,
+    "token_f1_delta": -0.0022554035265812122,
+    "avg_storage_ratio_nova_over_stock": 0.3309297295095883,
+    "avg_latency_ratio_nova_over_stock": 1.40518896009389
   }
 }
