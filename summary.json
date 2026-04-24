@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T19:59:15Z",
+  "generated_at": "2026-04-24T20:19:43Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-24T19:37:31Z",
+    "updated_at": "2026-04-24T19:59:16Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 10,
+    "current_case_index": 11,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::f523d9fe"
+    "current_case_id": "longmemeval_m::0e5e2d1a"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,36 +10789,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 10,
-        "rows_successful": 10,
+        "rows_recorded": 11,
+        "rows_successful": 11,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
-        "exact_match": 0.1,
-        "token_f1": 0.16290750312489444,
-        "avg_total_sec": 1438.829527175473,
+        "exact_match": 0.09090909090909091,
+        "token_f1": 0.1480977301135404,
+        "avg_total_sec": 1419.56803306425,
         "p50_total_sec": 1309.3407022622414,
         "p95_total_sec": 1910.384880215861,
-        "avg_storage_bytes": 134965254.2,
+        "avg_storage_bytes": 134359112.27272728,
         "p95_storage_bytes": 141602881.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1,
-            "token_f1": 0.16290750312489444,
-            "avg_total_sec": 1438.829527175473,
+            "exact_match": 0.09090909090909091,
+            "token_f1": 0.1480977301135404,
+            "avg_total_sec": 1419.56803306425,
             "p50_total_sec": 1309.3407022622414,
             "p95_total_sec": 1910.384880215861,
-            "avg_storage_bytes": 134965254.2,
+            "avg_storage_bytes": 134359112.27272728,
             "p95_storage_bytes": 141602881.0,
             "categories": {},
             "sample_errors": [],
@@ -10960,6 +10960,20 @@
                   "answer_sharegpt_m2xJfjo_0",
                   "5b4d2438_2",
                   "0dcfb511_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::0e5e2d1a",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+                "gold": "38 subjects",
+                "prediction": "user: Can you provide me with some specific examples of the studies that suggest the effectiveness of binaural beats in reducing symptoms of anxiety and depression?",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_113156",
+                  "e10c32ec",
+                  "af20772a_2",
+                  "ultrachat_304185",
+                  "sharegpt_ltGQxlc_0"
                 ]
               }
             ]
@@ -11104,6 +11118,20 @@
               "answer_sharegpt_m2xJfjo_0",
               "5b4d2438_2",
               "0dcfb511_4"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::0e5e2d1a",
+            "category": "single-session-assistant",
+            "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+            "gold": "38 subjects",
+            "prediction": "user: Can you provide me with some specific examples of the studies that suggest the effectiveness of binaural beats in reducing symptoms of anxiety and depression?",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_113156",
+              "e10c32ec",
+              "af20772a_2",
+              "ultrachat_304185",
+              "sharegpt_ltGQxlc_0"
             ]
           }
         ]
@@ -14695,20 +14723,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2996,
-      "rows_successful": 2996,
+      "rows_recorded": 2997,
+      "rows_successful": 2997,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8230974632843792,
-      "doc_recall_all": 0.735981308411215,
-      "ndcg_at_10": 0.6586668402618341,
-      "exact_match": 0.0260347129506008,
-      "token_f1": 0.07261315489178695,
-      "avg_total_sec": 78.986395228912,
+      "doc_recall_any": 0.8231564898231565,
+      "doc_recall_all": 0.7360694027360694,
+      "ndcg_at_10": 0.6587807318733584,
+      "exact_match": 0.026026026026026026,
+      "token_f1": 0.07258892627820944,
+      "avg_total_sec": 79.36943383309055,
       "p50_total_sec": 92.25326635269448,
-      "p95_total_sec": 105.35806980030611,
-      "avg_storage_bytes": 8620764.84846462,
-      "p95_storage_bytes": 11486205.0,
+      "p95_total_sec": 105.36214560689405,
+      "avg_storage_bytes": 8660697.09009009,
+      "p95_storage_bytes": 11490625.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17459,20 +17487,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 122,
-          "rows_recorded": 122,
-          "rows_successful": 122,
+          "expected_total": 123,
+          "rows_recorded": 123,
+          "rows_successful": 123,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9426229508196722,
-          "doc_recall_all": 0.9426229508196722,
-          "ndcg_at_10": 0.9426229508196722,
-          "exact_match": 0.040983606557377046,
-          "token_f1": 0.13217604935072186,
-          "avg_total_sec": 166.65954890295282,
-          "p50_total_sec": 98.62294495292008,
+          "doc_recall_any": 0.943089430894309,
+          "doc_recall_all": 0.943089430894309,
+          "ndcg_at_10": 0.943089430894309,
+          "exact_match": 0.04065040650406504,
+          "token_f1": 0.1311014473234802,
+          "avg_total_sec": 175.27982161066882,
+          "p50_total_sec": 99.32774418406188,
           "p95_total_sec": 1303.5168761280365,
-          "avg_storage_bytes": 16463414.180327868,
+          "avg_storage_bytes": 17372635.959349595,
           "p95_storage_bytes": 133868665.0,
           "categories": {},
           "sample_errors": [],
@@ -18263,11 +18291,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.035280204401130444,
-    "doc_recall_all_delta": 0.060177585906984854,
-    "ndcg_at_10_delta": 0.04921862086847939,
-    "token_f1_delta": -0.0019724701972828607,
-    "avg_storage_ratio_nova_over_stock": 0.3461249919086658,
-    "avg_latency_ratio_nova_over_stock": 1.4789510563696473
+    "doc_recall_any_delta": 0.03533923093990776,
+    "doc_recall_all_delta": 0.0602656802318392,
+    "ndcg_at_10_delta": 0.0493325124800037,
+    "token_f1_delta": -0.00199669881086037,
+    "avg_storage_ratio_nova_over_stock": 0.34772827735403705,
+    "avg_latency_ratio_nova_over_stock": 1.4861231186803585
   }
 }
