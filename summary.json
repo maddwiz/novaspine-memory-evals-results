@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T18:32:33Z",
+  "generated_at": "2026-04-24T18:54:24Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-24T18:10:57Z",
+    "updated_at": "2026-04-24T18:32:34Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 6,
+    "current_case_index": 7,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::6ae235be"
+    "current_case_id": "longmemeval_m::7e00a6cb"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,36 +10789,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 6,
-        "rows_successful": 6,
+        "rows_recorded": 7,
+        "rows_successful": 7,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.05307816177381394,
-        "avg_total_sec": 1532.1401348327443,
+        "token_f1": 0.08120985294898339,
+        "avg_total_sec": 1500.3116444655295,
         "p50_total_sec": 1320.7624449874274,
         "p95_total_sec": 1910.384880215861,
-        "avg_storage_bytes": 135261457.0,
+        "avg_storage_bytes": 135151845.0,
         "p95_storage_bytes": 141602881.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.05307816177381394,
-            "avg_total_sec": 1532.1401348327443,
+            "token_f1": 0.08120985294898339,
+            "avg_total_sec": 1500.3116444655295,
             "p50_total_sec": 1320.7624449874274,
             "p95_total_sec": 1910.384880215861,
-            "avg_storage_bytes": 135261457.0,
+            "avg_storage_bytes": 135151845.0,
             "p95_storage_bytes": 141602881.0,
             "categories": {},
             "sample_errors": [],
@@ -10906,6 +10906,20 @@
                   "f8cbf729_1",
                   "c870d63c",
                   "d9bce149_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515",
+                  "a68ad96e_2",
+                  "4f3b0353_2",
+                  "9bd6beaa_1",
+                  "d9b87d3c_1"
                 ]
               }
             ]
@@ -10996,6 +11010,20 @@
               "f8cbf729_1",
               "c870d63c",
               "d9bce149_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::7e00a6cb",
+            "category": "single-session-assistant",
+            "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+            "gold": "International Budget Hostel",
+            "prediction": "International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_370515",
+              "a68ad96e_2",
+              "4f3b0353_2",
+              "9bd6beaa_1",
+              "d9b87d3c_1"
             ]
           }
         ]
@@ -14587,20 +14615,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2992,
-      "rows_successful": 2992,
+      "rows_recorded": 2993,
+      "rows_successful": 2993,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8228609625668449,
-      "doc_recall_all": 0.7356283422459893,
-      "ndcg_at_10": 0.6582105125081735,
-      "exact_match": 0.025735294117647058,
-      "token_f1": 0.07227219451710816,
-      "avg_total_sec": 77.35554332990043,
+      "doc_recall_any": 0.8229201470096893,
+      "doc_recall_all": 0.7357166722352155,
+      "ndcg_at_10": 0.6583247087953408,
+      "exact_match": 0.025726695623120615,
+      "token_f1": 0.07233157567497081,
+      "avg_total_sec": 77.76716550127776,
       "p50_total_sec": 92.23997613089159,
-      "p95_total_sec": 105.2341585769318,
-      "avg_storage_bytes": 8452449.092914438,
-      "p95_storage_bytes": 11477869.0,
+      "p95_total_sec": 105.29218793474138,
+      "avg_storage_bytes": 8494561.262612764,
+      "p95_storage_bytes": 11478085.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17351,21 +17379,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 118,
-          "rows_recorded": 118,
-          "rows_successful": 118,
+          "expected_total": 119,
+          "rows_recorded": 119,
+          "rows_successful": 119,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.940677966101695,
-          "doc_recall_all": 0.940677966101695,
-          "ndcg_at_10": 0.940677966101695,
-          "exact_match": 0.03389830508474576,
-          "token_f1": 0.12554976237442378,
-          "avg_total_sec": 128.27975002883034,
-          "p50_total_sec": 97.5618616649881,
-          "p95_total_sec": 115.11338885920122,
-          "avg_storage_bytes": 12461463.813559322,
-          "p95_storage_bytes": 12734305.0,
+          "doc_recall_any": 0.9411764705882353,
+          "doc_recall_all": 0.9411764705882353,
+          "ndcg_at_10": 0.9411764705882353,
+          "exact_match": 0.03361344537815126,
+          "token_f1": 0.1265955626906051,
+          "avg_total_sec": 138.2046319803716,
+          "p50_total_sec": 97.72340316185728,
+          "p95_total_sec": 1285.7353944797069,
+          "avg_storage_bytes": 13486948.764705881,
+          "p95_storage_bytes": 128666441.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18155,11 +18183,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03504370368359622,
-    "doc_recall_all_delta": 0.05982461974175912,
-    "ndcg_at_10_delta": 0.04876229311481883,
-    "token_f1_delta": -0.00231343057196165,
-    "avg_storage_ratio_nova_over_stock": 0.3393670892687065,
-    "avg_latency_ratio_nova_over_stock": 1.4484147832325394
+    "doc_recall_any_delta": 0.03510288812644058,
+    "doc_recall_all_delta": 0.059912949730985376,
+    "ndcg_at_10_delta": 0.04887648940198608,
+    "token_f1_delta": -0.002254049414098999,
+    "avg_storage_ratio_nova_over_stock": 0.34105789915069573,
+    "avg_latency_ratio_nova_over_stock": 1.4561220477990433
   }
 }
