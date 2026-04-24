@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T00:53:25Z",
+  "generated_at": "2026-04-24T01:15:24Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -113,12 +113,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-24T00:31:40Z",
+    "updated_at": "2026-04-24T00:53:27Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 7,
+    "current_case_index": 8,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::7e00a6cb"
+    "current_case_id": "longmemeval_m::1903aded"
   },
   "benchmarks": {
     "locomo": {
@@ -10790,40 +10790,54 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 7,
-        "rows_successful": 7,
+        "rows_recorded": 8,
+        "rows_successful": 8,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 1.0,
-        "doc_recall_all": 1.0,
-        "ndcg_at_10": 1.0,
+        "doc_recall_any": 0.875,
+        "doc_recall_all": 0.875,
+        "ndcg_at_10": 0.875,
         "exact_match": 0.0,
-        "token_f1": 0.08042492359262544,
-        "avg_total_sec": 1300.7146329626307,
-        "p50_total_sec": 1299.9267241209745,
+        "token_f1": 0.07037180814354727,
+        "avg_total_sec": 1302.7734321707976,
+        "p50_total_sec": 1305.3470944939181,
         "p95_total_sec": 1363.0158924399875,
-        "avg_storage_bytes": 134650377.57142857,
+        "avg_storage_bytes": 134936279.5,
         "p95_storage_bytes": 141025345.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
+            "doc_recall_any": 0.875,
+            "doc_recall_all": 0.875,
+            "ndcg_at_10": 0.875,
             "exact_match": 0.0,
-            "token_f1": 0.08042492359262544,
-            "avg_total_sec": 1300.7146329626307,
-            "p50_total_sec": 1299.9267241209745,
+            "token_f1": 0.07037180814354727,
+            "avg_total_sec": 1302.7734321707976,
+            "p50_total_sec": 1305.3470944939181,
             "p95_total_sec": 1363.0158924399875,
-            "avg_storage_bytes": 134650377.57142857,
+            "avg_storage_bytes": 134936279.5,
             "p95_storage_bytes": 141025345.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "User location previous/historical: midst of, San Francisco Bay, city; current: the",
+                "expected_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0"
+                ],
+                "retrieved_doc_ids": [
+                  "44b1595a"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::7161e7e2",
@@ -10927,7 +10941,21 @@
           }
         },
         "sample_errors": [],
-        "sample_misses": [],
+        "sample_misses": [
+          {
+            "case_id": "longmemeval_m::1903aded",
+            "category": "single-session-assistant",
+            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "gold": "Transcriptionist.",
+            "prediction": "User location previous/historical: midst of, San Francisco Bay, city; current: the",
+            "expected_doc_ids": [
+              "answer_sharegpt_hA7AkP3_0"
+            ],
+            "retrieved_doc_ids": [
+              "44b1595a"
+            ]
+          }
+        ],
         "sample_successes": [
           {
             "case_id": "longmemeval_m::7161e7e2",
@@ -14616,20 +14644,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2993,
-      "rows_successful": 2993,
+      "rows_recorded": 2994,
+      "rows_successful": 2994,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8229201470096893,
-      "doc_recall_all": 0.7357166722352155,
-      "ndcg_at_10": 0.6583247087953408,
-      "exact_match": 0.025726695623120615,
-      "token_f1": 0.0723297398896402,
-      "avg_total_sec": 77.30034990471235,
+      "doc_recall_any": 0.8226452905811623,
+      "doc_recall_all": 0.7354709418837675,
+      "ndcg_at_10": 0.6581048274630779,
+      "exact_match": 0.02571810287241149,
+      "token_f1": 0.07230558165988414,
+      "avg_total_sec": 77.71447304323046,
       "p50_total_sec": 92.23997613089159,
-      "p95_total_sec": 105.29218793474138,
-      "avg_storage_bytes": 8493388.435349148,
-      "p95_storage_bytes": 11478085.0,
+      "p95_total_sec": 105.29830004880205,
+      "avg_storage_bytes": 8536288.971275885,
+      "p95_storage_bytes": 11478301.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17380,21 +17408,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 119,
-          "rows_recorded": 119,
-          "rows_successful": 119,
+          "expected_total": 120,
+          "rows_recorded": 120,
+          "rows_successful": 120,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9411764705882353,
-          "doc_recall_all": 0.9411764705882353,
-          "ndcg_at_10": 0.9411764705882353,
-          "exact_match": 0.03361344537815126,
-          "token_f1": 0.12654939037552523,
-          "avg_total_sec": 126.46363130373051,
-          "p50_total_sec": 97.72340316185728,
-          "p95_total_sec": 1228.013003921602,
-          "avg_storage_bytes": 13457450.68067227,
-          "p95_storage_bytes": 128236361.0,
+          "doc_recall_any": 0.9333333333333333,
+          "doc_recall_all": 0.9333333333333333,
+          "ndcg_at_10": 0.9333333333333333,
+          "exact_match": 0.03333333333333333,
+          "token_f1": 0.12549481212239585,
+          "avg_total_sec": 136.38630959809913,
+          "p50_total_sec": 98.62294495292008,
+          "p95_total_sec": 1286.3184345480986,
+          "avg_storage_bytes": 14486451.866666667,
+          "p95_storage_bytes": 133083565.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17499,6 +17527,19 @@
               ],
               "retrieved_doc_ids": [
                 "e24943fc"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::1903aded",
+              "category": "single-session-assistant",
+              "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+              "gold": "Transcriptionist.",
+              "prediction": "User location previous/historical: midst of, San Francisco Bay, city; current: the",
+              "expected_doc_ids": [
+                "answer_sharegpt_hA7AkP3_0"
+              ],
+              "retrieved_doc_ids": [
+                "44b1595a"
               ]
             }
           ],
@@ -18184,11 +18225,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03611293857718334,
-    "doc_recall_all_delta": 0.06145621660787792,
-    "ndcg_at_10_delta": 0.050735627425955165,
-    "token_f1_delta": -0.0023750355577874527,
-    "avg_storage_ratio_nova_over_stock": 0.3679449092475124,
-    "avg_latency_ratio_nova_over_stock": 1.5456390959549726
+    "doc_recall_any_delta": 0.03583808214865636,
+    "doc_recall_all_delta": 0.061210486256429886,
+    "ndcg_at_10_delta": 0.05051574609369225,
+    "token_f1_delta": -0.0023991937875435104,
+    "avg_storage_ratio_nova_over_stock": 0.36980341765300767,
+    "avg_latency_ratio_nova_over_stock": 1.553919587753809
   }
 }
