@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T15:04:08Z",
+  "generated_at": "2026-04-25T15:24:53Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-25T14:42:47Z",
+    "updated_at": "2026-04-25T15:04:09Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 63,
+    "current_case_index": 64,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::6ade9755"
+    "current_case_id": "longmemeval_m::6f9b354f"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,19 +10789,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 63,
-        "rows_successful": 63,
+        "rows_recorded": 64,
+        "rows_successful": 64,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
-        "ndcg_at_10": 0.9595935805136385,
-        "exact_match": 0.031746031746031744,
-        "token_f1": 0.10047810804802994,
-        "avg_total_sec": 1317.5200903448867,
+        "ndcg_at_10": 0.9524124308181129,
+        "exact_match": 0.03125,
+        "token_f1": 0.09890813760977947,
+        "avg_total_sec": 1316.3611639495793,
         "p50_total_sec": 1298.8652894208208,
         "p95_total_sec": 1430.9196375198662,
-        "avg_storage_bytes": 134241413.63492063,
+        "avg_storage_bytes": 134175739.1875,
         "p95_storage_bytes": 139420569.0,
         "categories": {
           "single-session-assistant": {
@@ -10993,20 +10993,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.7945151873778358,
+            "ndcg_at_10": 0.7577007889556063,
             "exact_match": 0.0,
-            "token_f1": 0.14163981382026494,
-            "avg_total_sec": 1298.9470949937324,
+            "token_f1": 0.12393483709273183,
+            "avg_total_sec": 1291.9973082501674,
             "p50_total_sec": 1292.1372414710931,
             "p95_total_sec": 1426.4236469874159,
-            "avg_storage_bytes": 133033466.71428572,
+            "avg_storage_bytes": 132659064.5,
             "p95_storage_bytes": 136062373.0,
             "categories": {},
             "sample_errors": [],
@@ -11103,6 +11103,20 @@
                   "dbefb778_2",
                   "a21f3697_3",
                   "answer_9398da02"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6f9b354f",
+                "category": "single-session-user",
+                "query": "What color did I repaint my bedroom walls?",
+                "gold": "a lighter shade of gray",
+                "prediction": "s great to hear that you",
+                "retrieved_doc_ids": [
+                  "a642672f_1",
+                  "7dd3e067",
+                  "answer_feb5200f",
+                  "8858d9dc_1",
+                  "27bc339b"
                 ]
               }
             ]
@@ -14866,20 +14880,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3049,
-      "rows_successful": 3049,
+      "rows_recorded": 3050,
+      "rows_successful": 3050,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8261725155788783,
-      "doc_recall_all": 0.7405706789111184,
-      "ndcg_at_10": 0.6637652505729139,
-      "exact_match": 0.025910134470318136,
-      "token_f1": 0.07289277068926554,
-      "avg_total_sec": 100.11764858176238,
+      "doc_recall_any": 0.8262295081967214,
+      "doc_recall_all": 0.740655737704918,
+      "ndcg_at_10": 0.6637115570481359,
+      "exact_match": 0.025901639344262296,
+      "token_f1": 0.0728688714201871,
+      "avg_total_sec": 100.49247846781597,
       "p50_total_sec": 92.4380753277801,
-      "p95_total_sec": 106.78299405705184,
-      "avg_storage_bytes": 10802022.959330928,
-      "p95_storage_bytes": 11678609.0,
+      "p95_total_sec": 106.865369127132,
+      "avg_storage_bytes": 10841116.803934427,
+      "p95_storage_bytes": 11679113.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17876,21 +17890,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 147,
-          "rows_recorded": 147,
-          "rows_successful": 147,
+          "expected_total": 148,
+          "rows_recorded": 148,
+          "rows_successful": 148,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9863945578231292,
-          "doc_recall_all": 0.9863945578231292,
-          "ndcg_at_10": 0.954406392518005,
-          "exact_match": 0.05442176870748299,
-          "token_f1": 0.12637636188912582,
-          "avg_total_sec": 112.86930107853065,
-          "p50_total_sec": 98.42874268861488,
-          "p95_total_sec": 114.31030672369525,
-          "avg_storage_bytes": 12020136.25170068,
-          "p95_storage_bytes": 12726617.0,
+          "doc_recall_any": 0.9864864864864865,
+          "doc_recall_all": 0.9864864864864865,
+          "ndcg_at_10": 0.9513360790550455,
+          "exact_match": 0.05405405405405406,
+          "token_f1": 0.12552246755203714,
+          "avg_total_sec": 120.50767607830554,
+          "p50_total_sec": 98.68804924702272,
+          "p95_total_sec": 1240.2228599023074,
+          "avg_storage_bytes": 12817555.932432432,
+          "p95_storage_bytes": 129689045.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18434,11 +18448,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03835525669562956,
-    "doc_recall_all_delta": 0.06476695640688823,
-    "ndcg_at_10_delta": 0.054317031179559216,
-    "token_f1_delta": -0.0016928543998042667,
-    "avg_storage_ratio_nova_over_stock": 0.4337028297508357,
-    "avg_latency_ratio_nova_over_stock": 1.874615263832723
+    "doc_recall_any_delta": 0.038412249313472646,
+    "doc_recall_all_delta": 0.06485201520068784,
+    "ndcg_at_10_delta": 0.054263337654781196,
+    "token_f1_delta": -0.0017167536688827145,
+    "avg_storage_ratio_nova_over_stock": 0.43527245343097526,
+    "avg_latency_ratio_nova_over_stock": 1.881633625087611
   }
 }
