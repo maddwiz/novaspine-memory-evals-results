@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T14:42:46Z",
+  "generated_at": "2026-04-25T15:04:08Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-25T14:21:13Z",
+    "updated_at": "2026-04-25T14:42:47Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 62,
+    "current_case_index": 63,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::c5e8278d"
+    "current_case_id": "longmemeval_m::6ade9755"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,19 +10789,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 62,
-        "rows_successful": 62,
+        "rows_recorded": 63,
+        "rows_successful": 63,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
-        "ndcg_at_10": 0.9681245002304166,
-        "exact_match": 0.03225806451612903,
-        "token_f1": 0.09564710979074009,
-        "avg_total_sec": 1318.1114376690464,
+        "ndcg_at_10": 0.9595935805136385,
+        "exact_match": 0.031746031746031744,
+        "token_f1": 0.10047810804802994,
+        "avg_total_sec": 1317.5200903448867,
         "p50_total_sec": 1298.8652894208208,
         "p95_total_sec": 1430.9196375198662,
-        "avg_storage_bytes": 134280032.67741936,
+        "avg_storage_bytes": 134241413.63492063,
         "p95_storage_bytes": 139420569.0,
         "categories": {
           "single-session-assistant": {
@@ -10993,20 +10993,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.8551549589285763,
+            "ndcg_at_10": 0.7945151873778358,
             "exact_match": 0.0,
-            "token_f1": 0.0985797827903091,
-            "avg_total_sec": 1301.9621847848564,
+            "token_f1": 0.14163981382026494,
+            "avg_total_sec": 1298.9470949937324,
             "p50_total_sec": 1292.1372414710931,
             "p95_total_sec": 1426.4236469874159,
-            "avg_storage_bytes": 133231205.66666667,
+            "avg_storage_bytes": 133033466.71428572,
             "p95_storage_bytes": 136062373.0,
             "categories": {},
             "sample_errors": [],
@@ -11090,6 +11090,19 @@
                   "sharegpt_E6mafmR_0",
                   "3e37f67d_2",
                   "8d969f3e_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6ade9755",
+                "category": "single-session-user",
+                "query": "Where do I take yoga classes?",
+                "gold": "Serenity Yoga",
+                "prediction": "Beginner's Yoga,",
+                "retrieved_doc_ids": [
+                  "b8f3481c_1",
+                  "dbefb778_2",
+                  "a21f3697_3",
+                  "answer_9398da02"
                 ]
               }
             ]
@@ -14853,20 +14866,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3048,
-      "rows_successful": 3048,
+      "rows_recorded": 3049,
+      "rows_successful": 3049,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8261154855643045,
-      "doc_recall_all": 0.740485564304462,
-      "ndcg_at_10": 0.6638417232410567,
-      "exact_match": 0.025918635170603676,
-      "token_f1": 0.07278545204447856,
-      "avg_total_sec": 99.73026705037614,
+      "doc_recall_any": 0.8261725155788783,
+      "doc_recall_all": 0.7405706789111184,
+      "ndcg_at_10": 0.6637652505729139,
+      "exact_match": 0.025910134470318136,
+      "token_f1": 0.07289277068926554,
+      "avg_total_sec": 100.11764858176238,
       "p50_total_sec": 92.4380753277801,
-      "p95_total_sec": 106.77565396390855,
-      "avg_storage_bytes": 10762310.02952756,
-      "p95_storage_bytes": 11675269.0,
+      "p95_total_sec": 106.78299405705184,
+      "avg_storage_bytes": 10802022.959330928,
+      "p95_storage_bytes": 11678609.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17863,21 +17876,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 146,
-          "rows_recorded": 146,
-          "rows_successful": 146,
+          "expected_total": 147,
+          "rows_recorded": 147,
+          "rows_successful": 147,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9863013698630136,
-          "doc_recall_all": 0.9863013698630136,
-          "ndcg_at_10": 0.9579935831648858,
-          "exact_match": 0.0547945205479452,
-          "token_f1": 0.12450222738151709,
-          "avg_total_sec": 104.86938837189737,
-          "p50_total_sec": 98.39528660383075,
-          "p95_total_sec": 113.66123728919774,
-          "avg_storage_bytes": 11199404.08219178,
-          "p95_storage_bytes": 12254389.0,
+          "doc_recall_any": 0.9863945578231292,
+          "doc_recall_all": 0.9863945578231292,
+          "ndcg_at_10": 0.954406392518005,
+          "exact_match": 0.05442176870748299,
+          "token_f1": 0.12637636188912582,
+          "avg_total_sec": 112.86930107853065,
+          "p50_total_sec": 98.42874268861488,
+          "p95_total_sec": 114.31030672369525,
+          "avg_storage_bytes": 12020136.25170068,
+          "p95_storage_bytes": 12726617.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18421,11 +18434,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03829822668105576,
-    "doc_recall_all_delta": 0.06468184180023184,
-    "ndcg_at_10_delta": 0.05439350384770203,
-    "token_f1_delta": -0.0018001730445912495,
-    "avg_storage_ratio_nova_over_stock": 0.43210834970776757,
-    "avg_latency_ratio_nova_over_stock": 1.8673618840145734
+    "doc_recall_any_delta": 0.03835525669562956,
+    "doc_recall_all_delta": 0.06476695640688823,
+    "ndcg_at_10_delta": 0.054317031179559216,
+    "token_f1_delta": -0.0016928543998042667,
+    "avg_storage_ratio_nova_over_stock": 0.4337028297508357,
+    "avg_latency_ratio_nova_over_stock": 1.874615263832723
   }
 }
