@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T12:53:20Z",
+  "generated_at": "2026-04-25T13:14:59Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-25T12:32:26Z",
+    "updated_at": "2026-04-25T12:53:22Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 57,
+    "current_case_index": 58,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::e47becba"
+    "current_case_id": "longmemeval_m::118b2229"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,19 +10789,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 57,
-        "rows_successful": 57,
+        "rows_recorded": 58,
+        "rows_successful": 58,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
-        "ndcg_at_10": 0.9805752501879714,
-        "exact_match": 0.03508771929824561,
-        "token_f1": 0.09366038789971985,
-        "avg_total_sec": 1318.682143916523,
-        "p50_total_sec": 1299.1064370260574,
+        "ndcg_at_10": 0.9722894700123168,
+        "exact_match": 0.034482758620689655,
+        "token_f1": 0.09861369812476573,
+        "avg_total_sec": 1318.3169540040485,
+        "p50_total_sec": 1298.8652894208208,
         "p95_total_sec": 1430.9196375198662,
-        "avg_storage_bytes": 134319676.78947368,
+        "avg_storage_bytes": 134349723.27586207,
         "p95_storage_bytes": 139420569.0,
         "categories": {
           "single-session-assistant": {
@@ -10993,21 +10993,21 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 1,
-            "rows_recorded": 1,
-            "rows_successful": 1,
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
+            "ndcg_at_10": 0.75,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 1253.746176470071,
+            "token_f1": 0.19047619047619047,
+            "avg_total_sec": 1275.623652731534,
             "p50_total_sec": 1253.746176470071,
-            "p95_total_sec": 1253.746176470071,
-            "avg_storage_bytes": 130246785.0,
-            "p95_storage_bytes": 130246785.0,
+            "p95_total_sec": 1297.501128992997,
+            "avg_storage_bytes": 133154579.0,
+            "p95_storage_bytes": 136062373.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -11024,6 +11024,20 @@
                   "ea80f588_2",
                   "sharegpt_lZ1MDfW_37",
                   "sharegpt_J3oTIxC_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::118b2229",
+                "category": "single-session-user",
+                "query": "How long is my daily commute to work?",
+                "gold": "45 minutes each way",
+                "prediction": "user: I've been listening to audiobooks during my daily commute, which takes 45 minutes each way.",
+                "retrieved_doc_ids": [
+                  "4d2c2c88_1",
+                  "4524c250_2",
+                  "answer_40a90d51",
+                  "ultrachat_143028",
+                  "752b10e6_1"
                 ]
               }
             ]
@@ -14787,20 +14801,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3043,
-      "rows_successful": 3043,
+      "rows_recorded": 3044,
+      "rows_successful": 3044,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8258297732500821,
-      "doc_recall_all": 0.7400591521524811,
-      "ndcg_at_10": 0.6635749729494477,
-      "exact_match": 0.025961222477817944,
-      "token_f1": 0.07271067339297692,
-      "avg_total_sec": 97.73901644341355,
-      "p50_total_sec": 92.421950657852,
-      "p95_total_sec": 106.54427919723094,
-      "avg_storage_bytes": 10560098.75813342,
-      "p95_storage_bytes": 11653997.0,
+      "doc_recall_any": 0.8258869908015769,
+      "doc_recall_all": 0.7401445466491459,
+      "ndcg_at_10": 0.6635212360989388,
+      "exact_match": 0.0259526938239159,
+      "token_f1": 0.0728119354519649,
+      "avg_total_sec": 98.13315642782537,
+      "p50_total_sec": 92.4333810210228,
+      "p95_total_sec": 106.60717508243397,
+      "avg_storage_bytes": 10601328.151773982,
+      "p95_storage_bytes": 11654717.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17797,21 +17811,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 141,
-          "rows_recorded": 141,
-          "rows_successful": 141,
+          "expected_total": 142,
+          "rows_recorded": 142,
+          "rows_successful": 142,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9858156028368794,
-          "doc_recall_all": 0.9858156028368794,
-          "ndcg_at_10": 0.9626676126844105,
-          "exact_match": 0.05673758865248227,
-          "token_f1": 0.12472231560964284,
-          "avg_total_sec": 62.07733170253865,
+          "doc_recall_any": 0.9859154929577465,
+          "doc_recall_all": 0.9859154929577465,
+          "ndcg_at_10": 0.9594093900598725,
+          "exact_match": 0.056338028169014086,
+          "token_f1": 0.1265267526895213,
+          "avg_total_sec": 70.77749928909118,
           "p50_total_sec": 96.72449411218986,
-          "p95_total_sec": 109.08336912235245,
-          "avg_storage_bytes": 6850869.127659574,
-          "p95_storage_bytes": 11970829.0,
+          "p95_total_sec": 109.28208777494729,
+          "avg_storage_bytes": 7760809.295774648,
+          "p95_storage_bytes": 12015237.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18355,11 +18369,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.038012514366833394,
-    "doc_recall_all_delta": 0.06425542964825093,
-    "ndcg_at_10_delta": 0.05412675355609298,
-    "token_f1_delta": -0.0018749516960928914,
-    "avg_storage_ratio_nova_over_stock": 0.4239895370611608,
-    "avg_latency_ratio_nova_over_stock": 1.8300774607904322
+    "doc_recall_any_delta": 0.03806973191832819,
+    "doc_recall_all_delta": 0.06434082414491571,
+    "ndcg_at_10_delta": 0.054073016705584065,
+    "token_f1_delta": -0.0017736896371049055,
+    "avg_storage_ratio_nova_over_stock": 0.4256449033530253,
+    "avg_latency_ratio_nova_over_stock": 1.8374573867208919
   }
 }
