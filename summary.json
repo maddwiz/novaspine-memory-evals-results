@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T17:10:59Z",
+  "generated_at": "2026-04-25T17:32:06Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-25T16:49:38Z",
+    "updated_at": "2026-04-25T17:11:01Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 69,
+    "current_case_index": 70,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::c960da58"
+    "current_case_id": "longmemeval_m::3b6f954b"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,19 +10789,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 69,
-        "rows_successful": 69,
+        "rows_recorded": 70,
+        "rows_successful": 70,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9710144927536232,
-        "doc_recall_all": 0.9710144927536232,
-        "ndcg_at_10": 0.9268752981501337,
-        "exact_match": 0.028985507246376812,
-        "token_f1": 0.09174088126124473,
-        "avg_total_sec": 1313.138956797586,
-        "p50_total_sec": 1297.501128992997,
+        "doc_recall_any": 0.9714285714285714,
+        "doc_recall_all": 0.9714285714285714,
+        "ndcg_at_10": 0.919786744720466,
+        "exact_match": 0.02857142857142857,
+        "token_f1": 0.09400172581465552,
+        "avg_total_sec": 1312.451165036092,
+        "p50_total_sec": 1295.8753673373722,
         "p95_total_sec": 1430.9196375198662,
-        "avg_storage_bytes": 134030102.56521739,
+        "avg_storage_bytes": 133968185.97142857,
         "p95_storage_bytes": 139420569.0,
         "categories": {
           "single-session-assistant": {
@@ -10993,20 +10993,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 13,
-            "rows_recorded": 13,
-            "rows_successful": 13,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8461538461538461,
-            "doc_recall_all": 0.8461538461538461,
-            "ndcg_at_10": 0.6970466393572962,
+            "doc_recall_any": 0.8571428571428571,
+            "doc_recall_all": 0.8571428571428571,
+            "ndcg_at_10": 0.6780202049798746,
             "exact_match": 0.0,
-            "token_f1": 0.07626759205706574,
-            "avg_total_sec": 1284.2655378662837,
-            "p50_total_sec": 1281.0065736658871,
+            "token_f1": 0.08867704976727533,
+            "avg_total_sec": 1282.8889661253363,
+            "p50_total_sec": 1280.8565562469885,
             "p95_total_sec": 1317.6022370327264,
-            "avg_storage_bytes": 132469406.53846154,
+            "avg_storage_bytes": 132271301.85714285,
             "p95_storage_bytes": 136062373.0,
             "categories": {},
             "sample_errors": [],
@@ -11189,6 +11189,20 @@
                   "9b90460f_3",
                   "debc34d7_1",
                   "ultrachat_345686"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::3b6f954b",
+                "category": "single-session-user",
+                "query": "Where did I attend for my study abroad program?",
+                "gold": "University of Melbourne in Australia",
+                "prediction": "It's great to hear that you have fond memories of your study abroad program at the University of Melbourne.",
+                "retrieved_doc_ids": [
+                  "1bfd5a8b_1",
+                  "f7e682c3_3",
+                  "36c897bb_2",
+                  "answer_94030872",
+                  "af4d4ecd_9"
                 ]
               }
             ]
@@ -14983,20 +14997,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3055,
-      "rows_successful": 3055,
+      "rows_recorded": 3056,
+      "rows_successful": 3056,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8258592471358429,
-      "doc_recall_all": 0.7404255319148936,
-      "ndcg_at_10": 0.6636072828140145,
-      "exact_match": 0.02585924713584288,
-      "token_f1": 0.07274960976483491,
-      "avg_total_sec": 102.40966705502424,
-      "p50_total_sec": 92.4986333088018,
-      "p95_total_sec": 107.01362964790314,
-      "avg_storage_bytes": 11039684.45859247,
-      "p95_storage_bytes": 11690681.0,
+      "doc_recall_any": 0.8259162303664922,
+      "doc_recall_all": 0.7405104712041884,
+      "ndcg_at_10": 0.663531062027123,
+      "exact_match": 0.025850785340314136,
+      "token_f1": 0.07280761054697993,
+      "avg_total_sec": 102.79009371289007,
+      "p50_total_sec": 92.50476488890126,
+      "p95_total_sec": 107.10614243894815,
+      "avg_storage_bytes": 11078511.767670156,
+      "p95_storage_bytes": 11691293.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17993,20 +18007,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 153,
-          "rows_recorded": 153,
-          "rows_successful": 153,
+          "expected_total": 154,
+          "rows_recorded": 154,
+          "rows_successful": 154,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9738562091503268,
-          "doc_recall_all": 0.9738562091503268,
-          "ndcg_at_10": 0.9398545078440963,
-          "exact_match": 0.05228758169934641,
-          "token_f1": 0.12142042612876794,
-          "avg_total_sec": 158.13470317548737,
+          "doc_recall_any": 0.974025974025974,
+          "doc_recall_all": 0.974025974025974,
+          "ndcg_at_10": 0.9365481575209098,
+          "exact_match": 0.05194805194805195,
+          "token_f1": 0.12225535842663308,
+          "avg_total_sec": 165.32209817754926,
           "p50_total_sec": 99.1876006340608,
-          "p95_total_sec": 1253.948776485864,
-          "avg_storage_bytes": 16717830.37254902,
+          "p95_total_sec": 1264.9935334930196,
+          "avg_storage_bytes": 17451454.467532467,
           "p95_storage_bytes": 130246785.0,
           "categories": {},
           "sample_errors": [],
@@ -18581,11 +18595,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.038041988252594194,
-    "doc_recall_all_delta": 0.06462180941066342,
-    "ndcg_at_10_delta": 0.05415906342065979,
-    "token_f1_delta": -0.0018360153242348992,
-    "avg_storage_ratio_nova_over_stock": 0.4432449743232577,
-    "avg_latency_ratio_nova_over_stock": 1.9175313018722533
+    "doc_recall_any_delta": 0.03809897148324348,
+    "doc_recall_all_delta": 0.0647067486999583,
+    "ndcg_at_10_delta": 0.05408284263376828,
+    "token_f1_delta": -0.0017780145420898813,
+    "avg_storage_ratio_nova_over_stock": 0.44480389656236075,
+    "avg_latency_ratio_nova_over_stock": 1.9246544577763969
   }
 }
