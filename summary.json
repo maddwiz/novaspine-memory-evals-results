@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T16:28:42Z",
+  "generated_at": "2026-04-25T16:49:37Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-25T16:08:17Z",
+    "updated_at": "2026-04-25T16:28:43Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 67,
+    "current_case_index": 68,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::5d3d2817"
+    "current_case_id": "longmemeval_m::7527f7e2"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,19 +10789,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 67,
-        "rows_successful": 67,
+        "rows_recorded": 68,
+        "rows_successful": 68,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9701492537313433,
-        "doc_recall_all": 0.9701492537313433,
-        "ndcg_at_10": 0.9246924712292421,
-        "exact_match": 0.029850746268656716,
-        "token_f1": 0.0944794150302371,
-        "avg_total_sec": 1314.5019801325623,
+        "doc_recall_any": 0.9705882352941176,
+        "doc_recall_all": 0.9705882352941176,
+        "ndcg_at_10": 0.9257999348876357,
+        "exact_match": 0.029411764705882353,
+        "token_f1": 0.09309001186802773,
+        "avg_total_sec": 1313.6114918436404,
         "p50_total_sec": 1298.1116716871038,
         "p95_total_sec": 1430.9196375198662,
-        "avg_storage_bytes": 134111024.40298508,
+        "avg_storage_bytes": 134047306.1764706,
         "p95_storage_bytes": 139420569.0,
         "categories": {
           "single-session-assistant": {
@@ -10993,21 +10993,21 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 11,
-            "rows_recorded": 11,
-            "rows_successful": 11,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8181818181818182,
-            "doc_recall_all": 0.8181818181818182,
-            "ndcg_at_10": 0.6419642101495319,
+            "doc_recall_any": 0.8333333333333334,
+            "doc_recall_all": 0.8333333333333334,
+            "ndcg_at_10": 0.6718005259704042,
             "exact_match": 0.0,
-            "token_f1": 0.09013442697653223,
-            "avg_total_sec": 1287.317876555449,
+            "token_f1": 0.08262322472848789,
+            "avg_total_sec": 1284.537118216317,
             "p50_total_sec": 1282.3192992107943,
-            "p95_total_sec": 1426.4236469874159,
-            "avg_storage_bytes": 132678531.18181819,
-            "p95_storage_bytes": 137638117.0,
+            "p95_total_sec": 1317.6022370327264,
+            "avg_storage_bytes": 132436835.66666667,
+            "p95_storage_bytes": 136062373.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -11162,6 +11162,19 @@
                   "cbf8c858",
                   "07c81817",
                   "ultrachat_235665"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7527f7e2",
+                "category": "single-session-user",
+                "query": "How much did I spend on a designer handbag?",
+                "gold": "$800",
+                "prediction": "Now, about that designer handbag...",
+                "retrieved_doc_ids": [
+                  "answer_7cb94507",
+                  "5fe4d2ee_1",
+                  "939f9816_4",
+                  "8d424788_1"
                 ]
               }
             ]
@@ -14956,20 +14969,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3053,
-      "rows_successful": 3053,
+      "rows_recorded": 3054,
+      "rows_successful": 3054,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8257451686865378,
-      "doc_recall_all": 0.7402554864068129,
-      "ndcg_at_10": 0.6633869141817276,
-      "exact_match": 0.02587618735669833,
-      "token_f1": 0.07279726755046532,
-      "avg_total_sec": 101.64643874973707,
+      "doc_recall_any": 0.8258022265880812,
+      "doc_recall_all": 0.7403405370006548,
+      "ndcg_at_10": 0.66349713457656,
+      "exact_match": 0.025867714472822528,
+      "token_f1": 0.07277343085513119,
+      "avg_total_sec": 102.02374796314118,
       "p50_total_sec": 92.47944317711517,
-      "p95_total_sec": 106.90290833124891,
-      "avg_storage_bytes": 10960890.13396659,
-      "p95_storage_bytes": 11687233.0,
+      "p95_total_sec": 107.0103889531456,
+      "avg_storage_bytes": 10999795.600523904,
+      "p95_storage_bytes": 11687773.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17966,20 +17979,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 151,
-          "rows_recorded": 151,
-          "rows_successful": 151,
+          "expected_total": 152,
+          "rows_recorded": 152,
+          "rows_successful": 152,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9735099337748344,
-          "doc_recall_all": 0.9735099337748344,
-          "ndcg_at_10": 0.9390578788089188,
-          "exact_match": 0.052980132450331126,
-          "token_f1": 0.12302864369338738,
-          "avg_total_sec": 143.44141877945574,
-          "p50_total_sec": 99.17734548682347,
-          "p95_total_sec": 1243.348801045213,
-          "avg_storage_bytes": 15199931.158940397,
+          "doc_recall_any": 0.9736842105263158,
+          "doc_recall_all": 0.9736842105263158,
+          "ndcg_at_10": 0.9394588138167549,
+          "exact_match": 0.05263157894736842,
+          "token_f1": 0.12221924472172035,
+          "avg_total_sec": 150.74738823805055,
+          "p50_total_sec": 99.1876006340608,
+          "p95_total_sec": 1253.746176470071,
+          "avg_storage_bytes": 15953735.460526315,
           "p95_storage_bytes": 130038249.0,
           "categories": {},
           "sample_errors": [],
@@ -18554,11 +18567,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.037927909803289084,
-    "doc_recall_all_delta": 0.06445176390258278,
-    "ndcg_at_10_delta": 0.053938694788372876,
-    "token_f1_delta": -0.0017883575386044848,
-    "avg_storage_ratio_nova_over_stock": 0.4400813704606098,
-    "avg_latency_ratio_nova_over_stock": 1.9032405204650964
+    "doc_recall_any_delta": 0.037984967704832506,
+    "doc_recall_all_delta": 0.06453681449642468,
+    "ndcg_at_10_delta": 0.054048915183205315,
+    "token_f1_delta": -0.0018121942339386216,
+    "avg_storage_ratio_nova_over_stock": 0.4416434307341541,
+    "avg_latency_ratio_nova_over_stock": 1.9103053049526628
   }
 }
