@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T16:49:37Z",
+  "generated_at": "2026-04-25T17:10:59Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-25T16:28:43Z",
+    "updated_at": "2026-04-25T16:49:38Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 68,
+    "current_case_index": 69,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::7527f7e2"
+    "current_case_id": "longmemeval_m::c960da58"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,19 +10789,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 68,
-        "rows_successful": 68,
+        "rows_recorded": 69,
+        "rows_successful": 69,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9705882352941176,
-        "doc_recall_all": 0.9705882352941176,
-        "ndcg_at_10": 0.9257999348876357,
-        "exact_match": 0.029411764705882353,
-        "token_f1": 0.09309001186802773,
-        "avg_total_sec": 1313.6114918436404,
-        "p50_total_sec": 1298.1116716871038,
+        "doc_recall_any": 0.9710144927536232,
+        "doc_recall_all": 0.9710144927536232,
+        "ndcg_at_10": 0.9268752981501337,
+        "exact_match": 0.028985507246376812,
+        "token_f1": 0.09174088126124473,
+        "avg_total_sec": 1313.138956797586,
+        "p50_total_sec": 1297.501128992997,
         "p95_total_sec": 1430.9196375198662,
-        "avg_storage_bytes": 134047306.1764706,
+        "avg_storage_bytes": 134030102.56521739,
         "p95_storage_bytes": 139420569.0,
         "categories": {
           "single-session-assistant": {
@@ -10993,20 +10993,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8333333333333334,
-            "doc_recall_all": 0.8333333333333334,
-            "ndcg_at_10": 0.6718005259704042,
+            "doc_recall_any": 0.8461538461538461,
+            "doc_recall_all": 0.8461538461538461,
+            "ndcg_at_10": 0.6970466393572962,
             "exact_match": 0.0,
-            "token_f1": 0.08262322472848789,
-            "avg_total_sec": 1284.537118216317,
-            "p50_total_sec": 1282.3192992107943,
+            "token_f1": 0.07626759205706574,
+            "avg_total_sec": 1284.2655378662837,
+            "p50_total_sec": 1281.0065736658871,
             "p95_total_sec": 1317.6022370327264,
-            "avg_storage_bytes": 132436835.66666667,
+            "avg_storage_bytes": 132469406.53846154,
             "p95_storage_bytes": 136062373.0,
             "categories": {},
             "sample_errors": [],
@@ -11175,6 +11175,20 @@
                   "5fe4d2ee_1",
                   "939f9816_4",
                   "8d424788_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c960da58",
+                "category": "single-session-user",
+                "query": "How many playlists do I have on Spotify?",
+                "gold": "20",
+                "prediction": "By the way, do you have any recommendations for music discovery platforms or websites that can help me find new artists and songs for my playlists?",
+                "retrieved_doc_ids": [
+                  "answer_e05e4612",
+                  "a21c4257",
+                  "9b90460f_3",
+                  "debc34d7_1",
+                  "ultrachat_345686"
                 ]
               }
             ]
@@ -14969,20 +14983,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3054,
-      "rows_successful": 3054,
+      "rows_recorded": 3055,
+      "rows_successful": 3055,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8258022265880812,
-      "doc_recall_all": 0.7403405370006548,
-      "ndcg_at_10": 0.66349713457656,
-      "exact_match": 0.025867714472822528,
-      "token_f1": 0.07277343085513119,
-      "avg_total_sec": 102.02374796314118,
-      "p50_total_sec": 92.47944317711517,
-      "p95_total_sec": 107.0103889531456,
-      "avg_storage_bytes": 10999795.600523904,
-      "p95_storage_bytes": 11687773.0,
+      "doc_recall_any": 0.8258592471358429,
+      "doc_recall_all": 0.7404255319148936,
+      "ndcg_at_10": 0.6636072828140145,
+      "exact_match": 0.02585924713584288,
+      "token_f1": 0.07274960976483491,
+      "avg_total_sec": 102.40966705502424,
+      "p50_total_sec": 92.4986333088018,
+      "p95_total_sec": 107.01362964790314,
+      "avg_storage_bytes": 11039684.45859247,
+      "p95_storage_bytes": 11690681.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17979,21 +17993,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 152,
-          "rows_recorded": 152,
-          "rows_successful": 152,
+          "expected_total": 153,
+          "rows_recorded": 153,
+          "rows_successful": 153,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9736842105263158,
-          "doc_recall_all": 0.9736842105263158,
-          "ndcg_at_10": 0.9394588138167549,
-          "exact_match": 0.05263157894736842,
-          "token_f1": 0.12221924472172035,
-          "avg_total_sec": 150.74738823805055,
+          "doc_recall_any": 0.9738562091503268,
+          "doc_recall_all": 0.9738562091503268,
+          "ndcg_at_10": 0.9398545078440963,
+          "exact_match": 0.05228758169934641,
+          "token_f1": 0.12142042612876794,
+          "avg_total_sec": 158.13470317548737,
           "p50_total_sec": 99.1876006340608,
-          "p95_total_sec": 1253.746176470071,
-          "avg_storage_bytes": 15953735.460526315,
-          "p95_storage_bytes": 130038249.0,
+          "p95_total_sec": 1253.948776485864,
+          "avg_storage_bytes": 16717830.37254902,
+          "p95_storage_bytes": 130246785.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18567,11 +18581,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.037984967704832506,
-    "doc_recall_all_delta": 0.06453681449642468,
-    "ndcg_at_10_delta": 0.054048915183205315,
-    "token_f1_delta": -0.0018121942339386216,
-    "avg_storage_ratio_nova_over_stock": 0.4416434307341541,
-    "avg_latency_ratio_nova_over_stock": 1.9103053049526628
+    "doc_recall_any_delta": 0.038041988252594194,
+    "doc_recall_all_delta": 0.06462180941066342,
+    "ndcg_at_10_delta": 0.05415906342065979,
+    "token_f1_delta": -0.0018360153242348992,
+    "avg_storage_ratio_nova_over_stock": 0.4432449743232577,
+    "avg_latency_ratio_nova_over_stock": 1.9175313018722533
   }
 }
