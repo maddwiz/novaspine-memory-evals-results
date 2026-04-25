@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T16:08:15Z",
+  "generated_at": "2026-04-25T16:28:42Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-25T15:46:53Z",
+    "updated_at": "2026-04-25T16:08:17Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 66,
+    "current_case_index": 67,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::f8c5f88b"
+    "current_case_id": "longmemeval_m::5d3d2817"
   },
   "benchmarks": {
     "locomo": {
@@ -10789,19 +10789,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 66,
-        "rows_successful": 66,
+        "rows_recorded": 67,
+        "rows_successful": 67,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9848484848484849,
-        "doc_recall_all": 0.9848484848484849,
-        "ndcg_at_10": 0.938702963217564,
-        "exact_match": 0.030303030303030304,
-        "token_f1": 0.09591092131857404,
-        "avg_total_sec": 1315.8641822578272,
+        "doc_recall_any": 0.9701492537313433,
+        "doc_recall_all": 0.9701492537313433,
+        "ndcg_at_10": 0.9246924712292421,
+        "exact_match": 0.029850746268656716,
+        "token_f1": 0.0944794150302371,
+        "avg_total_sec": 1314.5019801325623,
         "p50_total_sec": 1298.1116716871038,
         "p95_total_sec": 1430.9196375198662,
-        "avg_storage_bytes": 134219715.96969697,
+        "avg_storage_bytes": 134111024.40298508,
         "p95_storage_bytes": 139420569.0,
         "categories": {
           "single-session-assistant": {
@@ -10993,20 +10993,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9,
-            "doc_recall_all": 0.9,
-            "ndcg_at_10": 0.706160631164485,
+            "doc_recall_any": 0.8181818181818182,
+            "doc_recall_all": 0.8181818181818182,
+            "ndcg_at_10": 0.6419642101495319,
             "exact_match": 0.0,
-            "token_f1": 0.09914786967418546,
-            "avg_total_sec": 1293.590000224486,
+            "token_f1": 0.09013442697653223,
+            "avg_total_sec": 1287.317876555449,
             "p50_total_sec": 1282.3192992107943,
             "p95_total_sec": 1426.4236469874159,
-            "avg_storage_bytes": 133252646.2,
+            "avg_storage_bytes": 132678531.18181819,
             "p95_storage_bytes": 137638117.0,
             "categories": {},
             "sample_errors": [],
@@ -11022,6 +11022,23 @@
                 ],
                 "retrieved_doc_ids": [
                   "1b26bdd5_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::5d3d2817",
+                "category": "single-session-user",
+                "query": "What was my previous occupation?",
+                "gold": "Marketing specialist at a small startup",
+                "prediction": "told it would take about 6-8 weeks for the judge to review my application and schedule a hearing",
+                "expected_doc_ids": [
+                  "answer_235eb6fb"
+                ],
+                "retrieved_doc_ids": [
+                  "sharegpt_aVExml0_162",
+                  "9b3a7f2c_3",
+                  "0e3d8491_2",
+                  "a15fe646",
+                  "sharegpt_xOzzaof_0"
                 ]
               }
             ],
@@ -11163,6 +11180,23 @@
             ],
             "retrieved_doc_ids": [
               "1b26bdd5_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::5d3d2817",
+            "category": "single-session-user",
+            "query": "What was my previous occupation?",
+            "gold": "Marketing specialist at a small startup",
+            "prediction": "told it would take about 6-8 weeks for the judge to review my application and schedule a hearing",
+            "expected_doc_ids": [
+              "answer_235eb6fb"
+            ],
+            "retrieved_doc_ids": [
+              "sharegpt_aVExml0_162",
+              "9b3a7f2c_3",
+              "0e3d8491_2",
+              "a15fe646",
+              "sharegpt_xOzzaof_0"
             ]
           }
         ],
@@ -14922,20 +14956,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3052,
-      "rows_successful": 3052,
+      "rows_recorded": 3053,
+      "rows_successful": 3053,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8260157273918742,
-      "doc_recall_all": 0.7404980340760158,
-      "ndcg_at_10": 0.663604275555968,
-      "exact_match": 0.025884665792922673,
-      "token_f1": 0.0728211198661765,
-      "avg_total_sec": 101.27849962748435,
+      "doc_recall_any": 0.8257451686865378,
+      "doc_recall_all": 0.7402554864068129,
+      "ndcg_at_10": 0.6633869141817276,
+      "exact_match": 0.02587618735669833,
+      "token_f1": 0.07279726755046532,
+      "avg_total_sec": 101.64643874973707,
       "p50_total_sec": 92.47944317711517,
-      "p95_total_sec": 106.88359841611236,
-      "avg_storage_bytes": 10922889.973132372,
-      "p95_storage_bytes": 11679185.0,
+      "p95_total_sec": 106.90290833124891,
+      "avg_storage_bytes": 10960890.13396659,
+      "p95_storage_bytes": 11687233.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17932,21 +17966,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 150,
-          "rows_recorded": 150,
-          "rows_successful": 150,
+          "expected_total": 151,
+          "rows_recorded": 151,
+          "rows_successful": 151,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.98,
-          "doc_recall_all": 0.98,
-          "ndcg_at_10": 0.9453182646676449,
-          "exact_match": 0.05333333333333334,
-          "token_f1": 0.12384883465134329,
-          "avg_total_sec": 136.2337173055516,
-          "p50_total_sec": 98.68804924702272,
-          "p95_total_sec": 1253.746176470071,
-          "avg_storage_bytes": 14455014.826666666,
-          "p95_storage_bytes": 130246785.0,
+          "doc_recall_any": 0.9735099337748344,
+          "doc_recall_all": 0.9735099337748344,
+          "ndcg_at_10": 0.9390578788089188,
+          "exact_match": 0.052980132450331126,
+          "token_f1": 0.12302864369338738,
+          "avg_total_sec": 143.44141877945574,
+          "p50_total_sec": 99.17734548682347,
+          "p95_total_sec": 1243.348801045213,
+          "avg_storage_bytes": 15199931.158940397,
+          "p95_storage_bytes": 130038249.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17990,6 +18024,23 @@
               ],
               "retrieved_doc_ids": [
                 "1b26bdd5_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::5d3d2817",
+              "category": "single-session-user",
+              "query": "What was my previous occupation?",
+              "gold": "Marketing specialist at a small startup",
+              "prediction": "told it would take about 6-8 weeks for the judge to review my application and schedule a hearing",
+              "expected_doc_ids": [
+                "answer_235eb6fb"
+              ],
+              "retrieved_doc_ids": [
+                "sharegpt_aVExml0_162",
+                "9b3a7f2c_3",
+                "0e3d8491_2",
+                "a15fe646",
+                "sharegpt_xOzzaof_0"
               ]
             }
           ],
@@ -18503,11 +18554,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.038198468508625516,
-    "doc_recall_all_delta": 0.06469431157178562,
-    "ndcg_at_10_delta": 0.05415605616261332,
-    "token_f1_delta": -0.0017645052228933145,
-    "avg_storage_ratio_nova_over_stock": 0.43855565834660704,
-    "avg_latency_ratio_nova_over_stock": 1.8963511827258779
+    "doc_recall_any_delta": 0.037927909803289084,
+    "doc_recall_all_delta": 0.06445176390258278,
+    "ndcg_at_10_delta": 0.053938694788372876,
+    "token_f1_delta": -0.0017883575386044848,
+    "avg_storage_ratio_nova_over_stock": 0.4400813704606098,
+    "avg_latency_ratio_nova_over_stock": 1.9032405204650964
   }
 }
