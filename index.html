@@ -237,7 +237,7 @@
           <div><span>Stock</span><strong>78.9%</strong></div>
           <div><span>NovaSpine</span><strong>82.7%</strong></div>
         </div>
-        <div class="delta good">+0.038</div>
+        <div class="delta good">+0.037</div>
       </div>
     
       
@@ -255,7 +255,7 @@
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>61.1%</strong></div>
-          <div><span>NovaSpine</span><strong>66.5%</strong></div>
+          <div><span>NovaSpine</span><strong>66.4%</strong></div>
         </div>
         <div class="delta good">+0.053</div>
       </div>
@@ -275,18 +275,18 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.038, evidence-all +0.064, NDCG@10 +0.053, answer F1 -0.001.</p>
+        <p><b>Current delta:</b> evidence-any +0.037, evidence-all +0.064, NDCG@10 +0.053, answer F1 -0.001.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-26T03:03:55Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-04-26T02:37:05Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>93 / 500</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_m::3f1e9474</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>3049 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>3079 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-26T03:30:47Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-04-26T03:03:56Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>94 / 500</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_m::86b68151</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>3051 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>3080 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -506,24 +506,24 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>63 / 500 failed 0</td>
-      <td>98.4%</td>
-      <td>98.4%</td>
-      <td>94.8%</td>
-      <td>10.5%</td>
-      <td>850.6s</td>
+      <td>65 / 500 failed 0</td>
+      <td>98.5%</td>
+      <td>98.5%</td>
+      <td>93.5%</td>
+      <td>10.4%</td>
+      <td>855.4s</td>
       <td>389.1 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>93 / 500 failed 0</td>
-      <td>96.8%</td>
-      <td>96.8%</td>
-      <td>89.3%</td>
-      <td>10.8%</td>
-      <td>1356.4s</td>
+      <td>94 / 500 failed 0</td>
+      <td>95.7%</td>
+      <td>95.7%</td>
+      <td>88.4%</td>
+      <td>10.6%</td>
+      <td>1359.1s</td>
       <td>127.8 MB</td>
     </tr>
     
@@ -532,13 +532,14 @@
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
 <tr><td>single-session-assistant</td><td>56</td><td>100.0%</td><td>10.8%</td><td>56</td><td>100.0%</td><td>9.5%</td></tr>
-<tr><td>single-session-user</td><td>7</td><td>85.7%</td><td>7.8%</td><td>37</td><td>91.9%</td><td>12.6%</td></tr></table>
+<tr><td>single-session-user</td><td>9</td><td>88.9%</td><td>7.4%</td><td>38</td><td>89.5%</td><td>12.3%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
         <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> But overall, I&#x27;m excited to make some changes to my daily commute and save some money in the process.</p><p><b>Expected docs:</b> answer_40a90d51</p><p><b>Retrieved:</b> 4524c250_2, 4d2c2c88_1, ultrachat_143028</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location previous/historical: nearby city where, the, consequences of; current: Chicago for the work</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> 1b26bdd5_1</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> told it would take about 6-8 weeks for the judge to review my application and schedule a hearing</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> sharegpt_aVExml0_162, 9b3a7f2c_3, 0e3d8491_2, a15fe646, sharegpt_xOzzaof_0</p></div>
-<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I attend my cousin&#x27;s wedding?</p><p><b>Gold:</b> The Grand Ballroom</p><p><b>Pred:</b> user: Can you suggest some ideas for a fun and engaging playlist for my cousin Emily&#x27;s wedding reception?</p><p><b>Expected docs:</b> answer_0df6aa4b</p><p><b>Retrieved:</b> 1e2feff5, e72acbf9_3, e9c1ef4b_1, 4056f920, 22db3cc3_5</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?</p><p><b>Gold:</b> Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.</p><p><b>Pred:</b> assistant: Sure, I can help you create a shift rotation sheet for GM social media agents.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_5Lzox6N_0, 06fe8cfb_2</p></div>
+<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I attend my cousin&#x27;s wedding?</p><p><b>Gold:</b> The Grand Ballroom</p><p><b>Pred:</b> user: Can you suggest some ideas for a fun and engaging playlist for my cousin Emily&#x27;s wedding reception?</p><p><b>Expected docs:</b> answer_0df6aa4b</p><p><b>Retrieved:</b> 1e2feff5, e72acbf9_3, e9c1ef4b_1, 4056f920, 22db3cc3_5</p></div>
+<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new bookshelf from?</p><p><b>Gold:</b> IKEA</p><p><b>Pred:</b> User location previous/historical: Seoul to learn more, process of buying, mood for travel; current: city center</p><p><b>Expected docs:</b> answer_dc11c1eb</p><p><b>Retrieved:</b> 5eefce69_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?</p><p><b>Gold:</b> Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.</p><p><b>Pred:</b> assistant: Sure, I can help you create a shift rotation sheet for GM social media agents.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_5Lzox6N_0, 06fe8cfb_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?</p><p><b>Gold:</b> Miss Bee Providore</p><p><b>Pred:</b> Take a cooking class: Bandung is famous for its cuisine, and you can take a cooking class to learn how to make traditional Indonesian dishes such as nasi goreng, sate, and rendang.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_234453</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m going back to our previous conversation about the children&#x27;s book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?</p><p><b>Gold:</b> The Plesiosaur had a blue scaly body.</p><p><b>Pred:</b> re an author, write a children</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_YkWn1Ne_0, sharegpt_YkWn1Ne_0</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?</p><p><b>Gold:</b> The Sugar Factory at Icon Park.</p><p><b>Pred:</b> Better Than Sex - A dessert shop located in the Ivanhoe Village neighborhood of Orlando that specializes in decadent desserts like chocolate fondue and cheesecake.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_480665</p></div>

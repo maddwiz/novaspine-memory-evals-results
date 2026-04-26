@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T03:03:55Z",
+  "generated_at": "2026-04-26T03:30:47Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-26T02:37:05Z",
+    "updated_at": "2026-04-26T03:03:56Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 93,
+    "current_case_index": 94,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::3f1e9474"
+    "current_case_id": "longmemeval_m::86b68151"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 63,
-        "rows_successful": 63,
+        "rows_recorded": 65,
+        "rows_successful": 65,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9841269841269841,
-        "doc_recall_all": 0.9841269841269841,
-        "ndcg_at_10": 0.9484784504263676,
-        "exact_match": 0.047619047619047616,
-        "token_f1": 0.10499411182512615,
-        "avg_total_sec": 850.6170942575212,
-        "p50_total_sec": 779.2951731244102,
-        "p95_total_sec": 1023.1746547701769,
-        "avg_storage_bytes": 407986270.52380955,
+        "doc_recall_any": 0.9846153846153847,
+        "doc_recall_all": 0.9846153846153847,
+        "ndcg_at_10": 0.9349526913487255,
+        "exact_match": 0.046153846153846156,
+        "token_f1": 0.10368660069204534,
+        "avg_total_sec": 855.4077668372183,
+        "p50_total_sec": 780.1005446589552,
+        "p95_total_sec": 1034.7187508787028,
+        "avg_storage_bytes": 407958198.84615386,
         "p95_storage_bytes": 422813291.0,
         "categories": {
           "single-session-assistant": {
@@ -10643,21 +10643,21 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8571428571428571,
-            "doc_recall_all": 0.8571428571428571,
-            "ndcg_at_10": 0.5890303747556717,
+            "doc_recall_any": 0.8888888888888888,
+            "doc_recall_all": 0.8888888888888888,
+            "ndcg_at_10": 0.5712216871217445,
             "exact_match": 0.0,
-            "token_f1": 0.07769423558897241,
-            "avg_total_sec": 993.3803044039357,
+            "token_f1": 0.07431773879142299,
+            "avg_total_sec": 996.2544485581004,
             "p50_total_sec": 989.4775670776144,
-            "p95_total_sec": 1015.4526121439412,
-            "avg_storage_bytes": 403305611.85714287,
-            "p95_storage_bytes": 413705157.0,
+            "p95_total_sec": 1038.448362599127,
+            "avg_storage_bytes": 404143018.3333333,
+            "p95_storage_bytes": 420592950.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -10751,6 +10751,31 @@
                   "b8f3481c_1",
                   "a21f3697_3",
                   "answer_9398da02"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6f9b354f",
+                "category": "single-session-user",
+                "query": "What color did I repaint my bedroom walls?",
+                "gold": "a lighter shade of gray",
+                "prediction": "assistant: ZZ Plant to your bedroom to complement your new gray walls.",
+                "retrieved_doc_ids": [
+                  "8858d9dc_1",
+                  "a93750ef_2",
+                  "7dd3e067",
+                  "27bc339b",
+                  "answer_feb5200f"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::58ef2f1c",
+                "category": "single-session-user",
+                "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+                "gold": "February 14th",
+                "prediction": "* You can also try searching for local animal shelters, animal welfare organizations, or pet rescue groups in your area and reach out to them directly to inquire about volunteer opportunities.",
+                "retrieved_doc_ids": [
+                  "1ce5d0fb_1",
+                  "answer_59547700"
                 ]
               }
             ]
@@ -10918,19 +10943,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 93,
-        "rows_successful": 93,
+        "rows_recorded": 94,
+        "rows_successful": 94,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.967741935483871,
-        "doc_recall_all": 0.967741935483871,
-        "ndcg_at_10": 0.8930914350440419,
-        "exact_match": 0.043010752688172046,
-        "token_f1": 0.10760546703455391,
-        "avg_total_sec": 1356.4195489949416,
+        "doc_recall_any": 0.9574468085106383,
+        "doc_recall_all": 0.9574468085106383,
+        "ndcg_at_10": 0.8835904623308074,
+        "exact_match": 0.0425531914893617,
+        "token_f1": 0.10646072802354802,
+        "avg_total_sec": 1359.1198344027446,
         "p50_total_sec": 1301.7420548852533,
         "p95_total_sec": 1625.2301154648885,
-        "avg_storage_bytes": 134029223.40860215,
+        "avg_storage_bytes": 134040851.89361702,
         "p95_storage_bytes": 140007989.0,
         "categories": {
           "single-session-assistant": {
@@ -11122,20 +11147,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 37,
-            "rows_recorded": 37,
-            "rows_successful": 37,
+            "expected_total": 38,
+            "rows_recorded": 38,
+            "rows_successful": 38,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.918918918918919,
-            "doc_recall_all": 0.918918918918919,
-            "ndcg_at_10": 0.7612084918481495,
-            "exact_match": 0.05405405405405406,
-            "token_f1": 0.126180170917013,
-            "avg_total_sec": 1411.7805953988604,
+            "doc_recall_any": 0.8947368421052632,
+            "doc_recall_all": 0.8947368421052632,
+            "ndcg_at_10": 0.7411766894310929,
+            "exact_match": 0.05263157894736842,
+            "token_f1": 0.1228596401034074,
+            "avg_total_sec": 1417.0033791338485,
             "p50_total_sec": 1325.260351342149,
             "p95_total_sec": 1625.3799620703794,
-            "avg_storage_bytes": 133479540.13513513,
+            "avg_storage_bytes": 133522770.68421052,
             "p95_storage_bytes": 140133777.0,
             "categories": {},
             "sample_errors": [],
@@ -11185,6 +11210,19 @@
                   "e9c1ef4b_1",
                   "4056f920",
                   "22db3cc3_5"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::86b68151",
+                "category": "single-session-user",
+                "query": "Where did I buy my new bookshelf from?",
+                "gold": "IKEA",
+                "prediction": "User location previous/historical: Seoul to learn more, process of buying, mood for travel; current: city center",
+                "expected_doc_ids": [
+                  "answer_dc11c1eb"
+                ],
+                "retrieved_doc_ids": [
+                  "5eefce69_1"
                 ]
               }
             ],
@@ -11402,6 +11440,19 @@
               "4056f920",
               "22db3cc3_5"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::86b68151",
+            "category": "single-session-user",
+            "query": "Where did I buy my new bookshelf from?",
+            "gold": "IKEA",
+            "prediction": "User location previous/historical: Seoul to learn more, process of buying, mood for travel; current: city center",
+            "expected_doc_ids": [
+              "answer_dc11c1eb"
+            ],
+            "retrieved_doc_ids": [
+              "5eefce69_1"
+            ]
           }
         ],
         "sample_successes": [
@@ -11578,20 +11629,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3049,
-      "rows_successful": 2977,
+      "rows_recorded": 3051,
+      "rows_successful": 2979,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7890493785690292,
-      "doc_recall_all": 0.6778636210950622,
-      "ndcg_at_10": 0.6113680554016301,
-      "exact_match": 0.02720859926100101,
-      "token_f1": 0.0746628827643078,
-      "avg_total_sec": 60.44274294695751,
-      "p50_total_sec": 51.206508717965335,
-      "p95_total_sec": 58.62592605687678,
-      "avg_storage_bytes": 27738921.275445078,
-      "p95_storage_bytes": 28513950.0,
+      "doc_recall_any": 0.7891910036925143,
+      "doc_recall_all": 0.6780798925814031,
+      "ndcg_at_10": 0.611299255955508,
+      "exact_match": 0.027190332326283987,
+      "token_f1": 0.074654717015557,
+      "avg_total_sec": 61.07776893564547,
+      "p50_total_sec": 51.210494202096015,
+      "p95_total_sec": 58.641413719858974,
+      "avg_storage_bytes": 27993593.997650217,
+      "p95_storage_bytes": 28544756.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14526,21 +14577,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 136,
-          "rows_recorded": 136,
-          "rows_successful": 136,
+          "expected_total": 138,
+          "rows_recorded": 138,
+          "rows_successful": 138,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9485294117647058,
-          "doc_recall_all": 0.9485294117647058,
-          "ndcg_at_10": 0.9251157991801913,
-          "exact_match": 0.07352941176470588,
-          "token_f1": 0.16584717730836332,
-          "avg_total_sec": 82.47693202904809,
+          "doc_recall_any": 0.9492753623188406,
+          "doc_recall_all": 0.9492753623188406,
+          "ndcg_at_10": 0.9190835597776232,
+          "exact_match": 0.07246376811594203,
+          "token_f1": 0.16434939212998126,
+          "avg_total_sec": 95.86587436337604,
           "p50_total_sec": 12.673763765953481,
-          "p95_total_sec": 62.671091698110104,
-          "avg_storage_bytes": 35507881.433823526,
-          "p95_storage_bytes": 29982614.0,
+          "p95_total_sec": 972.5687182801776,
+          "avg_storage_bytes": 40892896.78985507,
+          "p95_storage_bytes": 393569248.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15175,20 +15226,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3079,
-      "rows_successful": 3079,
+      "rows_recorded": 3080,
+      "rows_successful": 3080,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8268918480025983,
-      "doc_recall_all": 0.7421240662552777,
-      "ndcg_at_10": 0.6646389596893637,
-      "exact_match": 0.026307242611237416,
-      "token_f1": 0.07337682541694,
-      "avg_total_sec": 113.15425881474349,
-      "p50_total_sec": 92.55654580518603,
-      "p95_total_sec": 107.69763609999791,
-      "avg_storage_bytes": 11998336.057486197,
-      "p95_storage_bytes": 11769549.0,
+      "doc_recall_any": 0.8266233766233766,
+      "doc_recall_all": 0.7418831168831169,
+      "ndcg_at_10": 0.6644231678193347,
+      "exact_match": 0.026298701298701297,
+      "token_f1": 0.07335300177232412,
+      "avg_total_sec": 113.64032768439078,
+      "p50_total_sec": 92.55766687169671,
+      "p95_total_sec": 107.71402478776872,
+      "avg_storage_bytes": 12038311.37077922,
+      "p95_storage_bytes": 11773357.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18185,20 +18236,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 177,
-          "rows_recorded": 177,
-          "rows_successful": 177,
+          "expected_total": 178,
+          "rows_recorded": 178,
+          "rows_successful": 178,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9717514124293786,
-          "doc_recall_all": 0.9717514124293786,
-          "ndcg_at_10": 0.9203437716773073,
-          "exact_match": 0.05649717514124294,
-          "token_f1": 0.12573171087507978,
-          "avg_total_sec": 337.48609956692496,
+          "doc_recall_any": 0.9662921348314607,
+          "doc_recall_all": 0.9662921348314607,
+          "ndcg_at_10": 0.9151733010499068,
+          "exact_match": 0.056179775280898875,
+          "token_f1": 0.12502535294881528,
+          "avg_total_sec": 344.6364382060344,
           "p50_total_sec": 101.68406591517851,
-          "p95_total_sec": 1600.669789700769,
-          "avg_storage_bytes": 32624117.214689266,
+          "p95_total_sec": 1602.2690967558883,
+          "avg_storage_bytes": 33199949.707865167,
           "p95_storage_bytes": 135245397.0,
           "categories": {},
           "sample_errors": [],
@@ -18277,6 +18328,19 @@
                 "e9c1ef4b_1",
                 "4056f920",
                 "22db3cc3_5"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::86b68151",
+              "category": "single-session-user",
+              "query": "Where did I buy my new bookshelf from?",
+              "gold": "IKEA",
+              "prediction": "User location previous/historical: Seoul to learn more, process of buying, mood for travel; current: city center",
+              "expected_doc_ids": [
+                "answer_dc11c1eb"
+              ],
+              "retrieved_doc_ids": [
+                "5eefce69_1"
               ]
             }
           ],
@@ -18790,11 +18854,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03784246943356906,
-    "doc_recall_all_delta": 0.06426044516021556,
-    "ndcg_at_10_delta": 0.05327090428773362,
-    "token_f1_delta": -0.0012860573473677944,
-    "avg_storage_ratio_nova_over_stock": 0.4325451569779431,
-    "avg_latency_ratio_nova_over_stock": 1.8720900690103328
+    "doc_recall_any_delta": 0.03743237293086232,
+    "doc_recall_all_delta": 0.06380322430171381,
+    "ndcg_at_10_delta": 0.0531239118638267,
+    "token_f1_delta": -0.0013017152432328732,
+    "avg_storage_ratio_nova_over_stock": 0.4300380784185738,
+    "avg_latency_ratio_nova_over_stock": 1.860584131750585
   }
 }
