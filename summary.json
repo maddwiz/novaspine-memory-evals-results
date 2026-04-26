@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T08:02:29Z",
+  "generated_at": "2026-04-26T08:29:05Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-26T07:34:52Z",
+    "updated_at": "2026-04-26T08:02:30Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 104,
+    "current_case_index": 105,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::4fd1909e"
+    "current_case_id": "longmemeval_m::545bd2b5"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 81,
-        "rows_successful": 81,
+        "rows_recorded": 83,
+        "rows_successful": 83,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9629629629629629,
-        "doc_recall_all": 0.9629629629629629,
-        "ndcg_at_10": 0.8991793981396543,
-        "exact_match": 0.06172839506172839,
-        "token_f1": 0.11905438146615804,
-        "avg_total_sec": 883.1044215229684,
-        "p50_total_sec": 815.4697632240131,
+        "doc_recall_any": 0.9518072289156626,
+        "doc_recall_all": 0.9518072289156626,
+        "ndcg_at_10": 0.8895606174615904,
+        "exact_match": 0.060240963855421686,
+        "token_f1": 0.11962794198160344,
+        "avg_total_sec": 885.9383691294197,
+        "p50_total_sec": 943.6964644677937,
         "p95_total_sec": 1038.448362599127,
-        "avg_storage_bytes": 407409856.30864197,
+        "avg_storage_bytes": 407421300.74698794,
         "p95_storage_bytes": 423611048.0,
         "categories": {
           "single-session-assistant": {
@@ -10643,20 +10643,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 25,
-            "rows_recorded": 25,
-            "rows_successful": 25,
+            "expected_total": 27,
+            "rows_recorded": 27,
+            "rows_successful": 27,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.88,
-            "doc_recall_all": 0.88,
-            "ndcg_at_10": 0.6881040598296221,
-            "exact_match": 0.08,
-            "token_f1": 0.14290542011594642,
-            "avg_total_sec": 995.8497334385663,
+            "doc_recall_any": 0.8518518518518519,
+            "doc_recall_all": 0.8518518518518519,
+            "ndcg_at_10": 0.6741704257681685,
+            "exact_match": 0.07407407407407407,
+            "token_f1": 0.14290184402270173,
+            "avg_total_sec": 996.2099937165018,
             "p50_total_sec": 995.0342233930714,
             "p95_total_sec": 1050.5322781912982,
-            "avg_storage_bytes": 404808104.04,
+            "avg_storage_bytes": 405036007.4814815,
             "p95_storage_bytes": 423611048.0,
             "categories": {},
             "sample_errors": [],
@@ -10708,6 +10708,19 @@
                   "a46d10a2_1",
                   "aac45fbb_2",
                   "9b45e884"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::95bcc1c8",
+                "category": "single-session-user",
+                "query": "How many amateur comedians did I watch perform at the open mic night?",
+                "gold": "10",
+                "prediction": "I recently started writing my own jokes and even tried out some at an open mic night, but I'm still trying to figure out how to structure a set and engage with the audience.",
+                "expected_doc_ids": [
+                  "answer_cb742a61"
+                ],
+                "retrieved_doc_ids": [
+                  "2ba7fdd0_1"
                 ]
               }
             ],
@@ -10915,6 +10928,19 @@
               "aac45fbb_2",
               "9b45e884"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::95bcc1c8",
+            "category": "single-session-user",
+            "query": "How many amateur comedians did I watch perform at the open mic night?",
+            "gold": "10",
+            "prediction": "I recently started writing my own jokes and even tried out some at an open mic night, but I'm still trying to figure out how to structure a set and engage with the audience.",
+            "expected_doc_ids": [
+              "answer_cb742a61"
+            ],
+            "retrieved_doc_ids": [
+              "2ba7fdd0_1"
+            ]
           }
         ],
         "sample_successes": [
@@ -11061,19 +11087,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 104,
-        "rows_successful": 104,
+        "rows_recorded": 105,
+        "rows_successful": 105,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9519230769230769,
-        "doc_recall_all": 0.9519230769230769,
-        "ndcg_at_10": 0.8736397447573065,
-        "exact_match": 0.04807692307692308,
-        "token_f1": 0.11554594163687243,
-        "avg_total_sec": 1385.045609142094,
+        "doc_recall_any": 0.9523809523809523,
+        "doc_recall_all": 0.9523809523809523,
+        "ndcg_at_10": 0.8748431757596179,
+        "exact_match": 0.047619047619047616,
+        "token_f1": 0.11591070556267513,
+        "avg_total_sec": 1387.0464916227297,
         "p50_total_sec": 1303.5168761280365,
         "p95_total_sec": 1656.495963017922,
-        "avg_storage_bytes": 134157245.61538461,
+        "avg_storage_bytes": 134154552.35238095,
         "p95_storage_bytes": 140068421.0,
         "categories": {
           "single-session-assistant": {
@@ -11265,20 +11291,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 48,
-            "rows_recorded": 48,
-            "rows_successful": 48,
+            "expected_total": 49,
+            "rows_recorded": 49,
+            "rows_successful": 49,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8958333333333334,
-            "doc_recall_all": 0.8958333333333334,
-            "ndcg_at_10": 0.7492863373759482,
-            "exact_match": 0.0625,
-            "token_f1": 0.1391278295823063,
-            "avg_total_sec": 1461.1168192501257,
+            "doc_recall_any": 0.8979591836734694,
+            "doc_recall_all": 0.8979591836734694,
+            "ndcg_at_10": 0.7544029427356227,
+            "exact_match": 0.061224489795918366,
+            "token_f1": 0.1394282035468746,
+            "avg_total_sec": 1463.8519508900995,
             "p50_total_sec": 1571.4977313042618,
             "p95_total_sec": 1660.3112381063402,
-            "avg_storage_bytes": 133882890.66666667,
+            "avg_storage_bytes": 133882718.46938775,
             "p95_storage_bytes": 140133777.0,
             "categories": {},
             "sample_errors": [],
@@ -11781,20 +11807,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3067,
-      "rows_successful": 2995,
+      "rows_recorded": 3069,
+      "rows_successful": 2997,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7896494156928213,
-      "doc_recall_all": 0.6791318864774625,
-      "ndcg_at_10": 0.6120607979309194,
-      "exact_match": 0.027712854757929884,
-      "token_f1": 0.07522543500605013,
-      "avg_total_sec": 66.07032619640371,
-      "p50_total_sec": 51.23892549891025,
-      "p95_total_sec": 58.961173467338085,
-      "avg_storage_bytes": 30008625.026711185,
-      "p95_storage_bytes": 28659275.0,
+      "doc_recall_any": 0.7894561227894561,
+      "doc_recall_all": 0.6790123456790124,
+      "ndcg_at_10": 0.6119860159503182,
+      "exact_match": 0.02769436102769436,
+      "token_f1": 0.07527056794422238,
+      "avg_total_sec": 66.69404519606623,
+      "p50_total_sec": 51.241510442923754,
+      "p95_total_sec": 58.99009069567546,
+      "avg_storage_bytes": 30260794.646646645,
+      "p95_storage_bytes": 28665498.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14729,21 +14755,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 154,
-          "rows_recorded": 154,
-          "rows_successful": 154,
+          "expected_total": 156,
+          "rows_recorded": 156,
+          "rows_successful": 156,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9415584415584416,
-          "doc_recall_all": 0.9415584415584416,
-          "ndcg_at_10": 0.9019164776685511,
-          "exact_match": 0.07792207792207792,
-          "token_f1": 0.16612981797216406,
-          "avg_total_sec": 189.3470387083581,
-          "p50_total_sec": 55.88841587584466,
-          "p95_total_sec": 1008.3103252458386,
-          "avg_storage_bytes": 78741137.61688311,
-          "p95_storage_bytes": 411922879.0,
+          "doc_recall_any": 0.9358974358974359,
+          "doc_recall_all": 0.9358974358974359,
+          "ndcg_at_10": 0.8967637023138261,
+          "exact_match": 0.07692307692307693,
+          "token_f1": 0.1658314503424843,
+          "avg_total_sec": 199.7491695863368,
+          "p50_total_sec": 55.93702587578446,
+          "p95_total_sec": 1009.8448026529513,
+          "avg_storage_bytes": 82960928.16666667,
+          "p95_storage_bytes": 413060139.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14863,6 +14889,19 @@
                 "a46d10a2_1",
                 "aac45fbb_2",
                 "9b45e884"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::95bcc1c8",
+              "category": "single-session-user",
+              "query": "How many amateur comedians did I watch perform at the open mic night?",
+              "gold": "10",
+              "prediction": "I recently started writing my own jokes and even tried out some at an open mic night, but I'm still trying to figure out how to structure a set and engage with the audience.",
+              "expected_doc_ids": [
+                "answer_cb742a61"
+              ],
+              "retrieved_doc_ids": [
+                "2ba7fdd0_1"
               ]
             }
           ],
@@ -15412,20 +15451,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3090,
-      "rows_successful": 3090,
+      "rows_recorded": 3091,
+      "rows_successful": 3091,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8268608414239482,
-      "doc_recall_all": 0.7423948220064724,
-      "ndcg_at_10": 0.6647975362068657,
-      "exact_match": 0.026537216828478965,
-      "token_f1": 0.07376592716983155,
-      "avg_total_sec": 118.54358840933443,
-      "p50_total_sec": 92.59773625992239,
-      "p95_total_sec": 108.52960832091048,
-      "avg_storage_bytes": 12437059.057605177,
-      "p95_storage_bytes": 11827109.0,
+      "doc_recall_any": 0.8269168553866063,
+      "doc_recall_all": 0.742478162406988,
+      "ndcg_at_10": 0.6649059808732497,
+      "exact_match": 0.026528631510837918,
+      "token_f1": 0.07379183471647546,
+      "avg_total_sec": 119.02129616772962,
+      "p50_total_sec": 92.59993076464161,
+      "p95_total_sec": 108.53173252101988,
+      "avg_storage_bytes": 12476346.47072145,
+      "p95_storage_bytes": 11834833.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18422,20 +18461,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 188,
-          "rows_recorded": 188,
-          "rows_successful": 188,
+          "expected_total": 189,
+          "rows_recorded": 189,
+          "rows_successful": 189,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9627659574468085,
-          "doc_recall_all": 0.9627659574468085,
-          "ndcg_at_10": 0.9079887105454648,
-          "exact_match": 0.05851063829787234,
-          "token_f1": 0.1290637357495231,
-          "avg_total_sec": 412.9402389233719,
+          "doc_recall_any": 0.9629629629629629,
+          "doc_recall_all": 0.9629629629629629,
+          "ndcg_at_10": 0.9084755427648009,
+          "exact_match": 0.0582010582010582,
+          "token_f1": 0.1291948596547963,
+          "avg_total_sec": 419.1952549587447,
           "p50_total_sec": 102.37123111728579,
           "p95_total_sec": 1625.3799620703794,
-          "avg_storage_bytes": 38628215.5,
+          "avg_storage_bytes": 39132163.84656084,
           "p95_storage_bytes": 136120329.0,
           "categories": {},
           "sample_errors": [],
@@ -19057,11 +19096,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0372114257311269,
-    "doc_recall_all_delta": 0.06326293552900997,
-    "ndcg_at_10_delta": 0.05273673827594627,
-    "token_f1_delta": -0.0014595078362185793,
-    "avg_storage_ratio_nova_over_stock": 0.41444948065880194,
-    "avg_latency_ratio_nova_over_stock": 1.7942031655322281
+    "doc_recall_any_delta": 0.037460732597150215,
+    "doc_recall_all_delta": 0.06346581672797569,
+    "ndcg_at_10_delta": 0.052919964922931495,
+    "token_f1_delta": -0.0014787332277469145,
+    "avg_storage_ratio_nova_over_stock": 0.41229407939900276,
+    "avg_latency_ratio_nova_over_stock": 1.7845865521851683
   }
 }
