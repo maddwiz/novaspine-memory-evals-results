@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T22:03:16Z",
+  "generated_at": "2026-04-26T22:29:22Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-26T21:35:57Z",
+    "updated_at": "2026-04-26T22:03:18Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 135,
+    "current_case_index": 136,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::e6041065"
+    "current_case_id": "longmemeval_m::51c32626"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,20 +10466,20 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 131,
-        "rows_successful": 130,
+        "rows_recorded": 133,
+        "rows_successful": 132,
         "rows_failed": 1,
         "complete": false,
-        "doc_recall_any": 0.9307692307692308,
-        "doc_recall_all": 0.9230769230769231,
-        "ndcg_at_10": 0.844504651122494,
-        "exact_match": 0.06153846153846154,
-        "token_f1": 0.12663577350489258,
-        "avg_total_sec": 930.218359267332,
-        "p50_total_sec": 989.4775670776144,
+        "doc_recall_any": 0.9318181818181818,
+        "doc_recall_all": 0.9242424242424242,
+        "ndcg_at_10": 0.8468606412570016,
+        "exact_match": 0.06060606060606061,
+        "token_f1": 0.12471704966390935,
+        "avg_total_sec": 931.5681102407221,
+        "p50_total_sec": 990.3006797516719,
         "p95_total_sec": 1048.7318506417796,
-        "avg_storage_bytes": 408439499.36923075,
-        "p95_storage_bytes": 425571393.0,
+        "avg_storage_bytes": 408489541.0,
+        "p95_storage_bytes": 425315471.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -10946,20 +10946,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8,
-            "doc_recall_all": 0.6,
-            "ndcg_at_10": 0.7226294385530917,
+            "doc_recall_any": 0.8571428571428571,
+            "doc_recall_all": 0.7142857142857143,
+            "ndcg_at_10": 0.8018781703950655,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 1024.9862950629554,
+            "avg_total_sec": 1023.362188905278,
             "p50_total_sec": 1023.7957078600302,
-            "p95_total_sec": 1038.119761576876,
-            "avg_storage_bytes": 417554020.8,
+            "p95_total_sec": 1051.9424546901137,
+            "avg_storage_bytes": 415893514.0,
             "p95_storage_bytes": 422531228.0,
             "categories": {},
             "sample_errors": [],
@@ -11028,6 +11028,30 @@
                 "prediction": "user: I'll also mention that I received the antique tea set from my cousin Rachel and a vintage typewriter that belonged to my dad, in case that adds any context or significance to the items.",
                 "retrieved_doc_ids": [
                   "answer_50940cb7_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::85fa3a3f",
+                "category": "multi-session",
+                "query": "What is the total cost of the new food bowl, measuring cup, dental chews, and flea and tick collar I got for Max?",
+                "gold": "$50",
+                "prediction": "been working out great for his new grain-free kibble",
+                "retrieved_doc_ids": [
+                  "answer_dcb18b9b_2",
+                  "answer_dcb18b9b_1",
+                  "04f56644_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::9aaed6a3",
+                "category": "multi-session",
+                "query": "How much cashback did I earn at SaveMart last Thursday?",
+                "gold": "$0.75",
+                "prediction": "you create a list of items to buy at SaveMart and estimate your total cost, including the cashback you'll earn.",
+                "retrieved_doc_ids": [
+                  "answer_353d3c6d_2",
+                  "answer_353d3c6d_1",
+                  "97d2d2c9"
                 ]
               }
             ]
@@ -11334,19 +11358,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 135,
-        "rows_successful": 135,
+        "rows_recorded": 136,
+        "rows_successful": 136,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9481481481481482,
-        "doc_recall_all": 0.9407407407407408,
-        "ndcg_at_10": 0.8722853421323641,
-        "exact_match": 0.044444444444444446,
-        "token_f1": 0.11404442239453241,
-        "avg_total_sec": 1440.3572786460218,
-        "p50_total_sec": 1337.334386611823,
+        "doc_recall_any": 0.9485294117647058,
+        "doc_recall_all": 0.9411764705882353,
+        "ndcg_at_10": 0.8732244204990378,
+        "exact_match": 0.04411764705882353,
+        "token_f1": 0.11320586046516085,
+        "avg_total_sec": 1441.2626953595009,
+        "p50_total_sec": 1340.744971003849,
         "p95_total_sec": 1681.5359816621058,
-        "avg_storage_bytes": 134299901.11851853,
+        "avg_storage_bytes": 134274927.67647058,
         "p95_storage_bytes": 140068421.0,
         "categories": {
           "single-session-assistant": {
@@ -11830,20 +11854,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.8888888888888888,
-            "ndcg_at_10": 0.9042364695518168,
+            "doc_recall_all": 0.9,
+            "ndcg_at_10": 0.9138128225966351,
             "exact_match": 0.0,
-            "token_f1": 0.02222222222222222,
-            "avg_total_sec": 1639.5020580501814,
-            "p50_total_sec": 1639.3620704347268,
+            "token_f1": 0.019999999999999997,
+            "avg_total_sec": 1631.9012474130839,
+            "p50_total_sec": 1620.857623779215,
             "p95_total_sec": 1697.7072927127592,
-            "avg_storage_bytes": 136099476.1111111,
+            "avg_storage_bytes": 135579879.8,
             "p95_storage_bytes": 140770493.0,
             "categories": {},
             "sample_errors": [],
@@ -11967,6 +11991,18 @@
                   "answer_4eb6d671_1",
                   "b78760f8_1",
                   "b909542d_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::51c32626",
+                "category": "multi-session",
+                "query": "When did I submit my research paper on sentiment analysis?",
+                "gold": "February 1st",
+                "prediction": "ve done some work in this area, actually - my master",
+                "retrieved_doc_ids": [
+                  "answer_58820c75_2",
+                  "answer_58820c75_1",
+                  "337cbfc8_1"
                 ]
               }
             ]
@@ -12256,20 +12292,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3117,
-      "rows_successful": 3044,
+      "rows_recorded": 3119,
+      "rows_successful": 3046,
       "rows_failed": 73,
       "complete": false,
-      "doc_recall_any": 0.7910643889618922,
-      "doc_recall_all": 0.6819973718791065,
-      "ndcg_at_10": 0.6143476226017462,
-      "exact_match": 0.028252299605781867,
-      "token_f1": 0.07625473833771268,
-      "avg_total_sec": 81.23441377122924,
+      "doc_recall_any": 0.7912015758371634,
+      "doc_recall_all": 0.6822061720288903,
+      "ndcg_at_10": 0.6146008414969519,
+      "exact_match": 0.028233749179251477,
+      "token_f1": 0.07620466956664393,
+      "avg_total_sec": 81.8503477894432,
       "p50_total_sec": 51.31671053590253,
-      "p95_total_sec": 59.95224671764299,
-      "avg_storage_bytes": 36127716.33114323,
-      "p95_storage_bytes": 29080998.0,
+      "p95_total_sec": 59.97852475801483,
+      "avg_storage_bytes": 36374344.3880499,
+      "p95_storage_bytes": 29107263.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14503,21 +14539,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 258,
-          "rows_recorded": 258,
-          "rows_successful": 258,
+          "expected_total": 260,
+          "rows_recorded": 260,
+          "rows_successful": 260,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9767441860465116,
-          "doc_recall_all": 0.7286821705426356,
-          "ndcg_at_10": 0.8802089934184629,
+          "doc_recall_any": 0.9769230769230769,
+          "doc_recall_all": 0.7307692307692307,
+          "ndcg_at_10": 0.8811304626998594,
           "exact_match": 0.0,
-          "token_f1": 0.023126862694016283,
-          "avg_total_sec": 53.85341250168542,
-          "p50_total_sec": 17.11207514582202,
-          "p95_total_sec": 59.65493188565597,
-          "avg_storage_bytes": 24293850.375968993,
-          "p95_storage_bytes": 28866747.0,
+          "token_f1": 0.022948963750216156,
+          "avg_total_sec": 61.27993950945003,
+          "p50_total_sec": 17.454598003067076,
+          "p95_total_sec": 59.83215543581173,
+          "avg_storage_bytes": 27274222.65769231,
+          "p95_storage_bytes": 28920824.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15952,20 +15988,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3121,
-      "rows_successful": 3121,
+      "rows_recorded": 3122,
+      "rows_successful": 3122,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8279397628965075,
-      "doc_recall_all": 0.743992310157001,
-      "ndcg_at_10": 0.66681332092673,
-      "exact_match": 0.026594040371675745,
-      "token_f1": 0.07411596733348498,
-      "avg_total_sec": 133.51591715837185,
+      "doc_recall_any": 0.8279948750800769,
+      "doc_recall_all": 0.7440743113388854,
+      "ndcg_at_10": 0.6669200431173363,
+      "exact_match": 0.026585522101217167,
+      "token_f1": 0.0740922274336344,
+      "avg_total_sec": 133.97394984079364,
       "p50_total_sec": 92.71511018369347,
-      "p95_total_sec": 110.83109816117212,
-      "avg_storage_bytes": 13652241.459468119,
-      "p95_storage_bytes": 12126729.0,
+      "p95_total_sec": 110.98608169332147,
+      "avg_storage_bytes": 13689797.92056374,
+      "p95_storage_bytes": 12126909.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18133,21 +18169,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 275,
-          "rows_recorded": 275,
-          "rows_successful": 275,
+          "expected_total": 276,
+          "rows_recorded": 276,
+          "rows_successful": 276,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9890909090909091,
-          "doc_recall_all": 0.8727272727272727,
-          "ndcg_at_10": 0.9334235591276778,
-          "exact_match": 0.014545454545454545,
-          "token_f1": 0.020769739547798153,
-          "avg_total_sec": 106.96276902292263,
-          "p50_total_sec": 96.74350261501968,
-          "p95_total_sec": 110.24393902672455,
-          "avg_storage_bytes": 10383491.072727272,
-          "p95_storage_bytes": 12126909.0,
+          "doc_recall_any": 0.9891304347826086,
+          "doc_recall_all": 0.8731884057971014,
+          "ndcg_at_10": 0.9336647781163456,
+          "exact_match": 0.014492753623188406,
+          "token_f1": 0.020694486868277146,
+          "avg_total_sec": 112.24005591660482,
+          "p50_total_sec": 97.88795536244288,
+          "p95_total_sec": 110.25397391524166,
+          "avg_storage_bytes": 10820157.81884058,
+          "p95_storage_bytes": 12143077.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19627,11 +19663,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03687537393461526,
-    "doc_recall_all_delta": 0.061994938277894485,
-    "ndcg_at_10_delta": 0.05246569832498371,
-    "token_f1_delta": -0.002138771004227699,
-    "avg_storage_ratio_nova_over_stock": 0.3778883042131134,
-    "avg_latency_ratio_nova_over_stock": 1.6435881169079
+    "doc_recall_any_delta": 0.03679329924291341,
+    "doc_recall_all_delta": 0.06186813930999502,
+    "ndcg_at_10_delta": 0.05231920162038439,
+    "token_f1_delta": -0.002112442133009526,
+    "avg_storage_ratio_nova_over_stock": 0.3763586162411016,
+    "avg_latency_ratio_nova_over_stock": 1.6368158897190803
   }
 }
