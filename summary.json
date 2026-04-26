@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T11:37:55Z",
+  "generated_at": "2026-04-26T12:05:48Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-26T11:11:27Z",
+    "updated_at": "2026-04-26T11:37:56Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 112,
+    "current_case_index": 113,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::4100d0a0"
+    "current_case_id": "longmemeval_m::29f2956b"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 94,
-        "rows_successful": 94,
+        "rows_recorded": 95,
+        "rows_successful": 95,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9468085106382979,
-        "doc_recall_all": 0.9468085106382979,
-        "ndcg_at_10": 0.8800672394683657,
-        "exact_match": 0.06382978723404255,
-        "token_f1": 0.12523097635176256,
-        "avg_total_sec": 899.6044080057083,
-        "p50_total_sec": 969.9924309868366,
+        "doc_recall_any": 0.9368421052631579,
+        "doc_recall_all": 0.9368421052631579,
+        "ndcg_at_10": 0.8708033737897514,
+        "exact_match": 0.06315789473684211,
+        "token_f1": 0.12391275554805978,
+        "avg_total_sec": 900.6768328345331,
+        "p50_total_sec": 972.5687182801776,
         "p95_total_sec": 1038.448362599127,
-        "avg_storage_bytes": 407509290.5212766,
+        "avg_storage_bytes": 407546765.3578947,
         "p95_storage_bytes": 423611048.0,
         "categories": {
           "single-session-assistant": {
@@ -10643,20 +10643,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 38,
-            "rows_recorded": 38,
-            "rows_successful": 38,
+            "expected_total": 39,
+            "rows_recorded": 39,
+            "rows_successful": 39,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.868421052631579,
-            "doc_recall_all": 0.868421052631579,
-            "ndcg_at_10": 0.7130365988540769,
-            "exact_match": 0.07894736842105263,
-            "token_f1": 0.15002479950540892,
-            "avg_total_sec": 998.0947248721128,
-            "p50_total_sec": 998.125933050178,
+            "doc_recall_any": 0.8461538461538461,
+            "doc_recall_all": 0.8461538461538461,
+            "ndcg_at_10": 0.6947536091398698,
+            "exact_match": 0.07692307692307693,
+            "token_f1": 0.14617800977450102,
+            "avg_total_sec": 998.181649022676,
+            "p50_total_sec": 998.4751827260479,
             "p95_total_sec": 1048.7318506417796,
-            "avg_storage_bytes": 405944146.0263158,
+            "avg_storage_bytes": 406075562.7948718,
             "p95_storage_bytes": 423611048.0,
             "categories": {},
             "sample_errors": [],
@@ -10738,6 +10738,23 @@
                   "4056f920",
                   "ca1f6079_1",
                   "b30a47be_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::577d4d32",
+                "category": "single-session-user",
+                "query": "What time do I stop checking work emails and messages?",
+                "gold": "7 pm",
+                "prediction": "By checking your emails during your commute, you can make the most of your travel time and get a head start on your day.",
+                "expected_doc_ids": [
+                  "answer_0dd4d99a"
+                ],
+                "retrieved_doc_ids": [
+                  "7e8c306b",
+                  "7b0b47f4_2",
+                  "060406af_1",
+                  "295dc1ab_1",
+                  "62ecacbf"
                 ]
               }
             ],
@@ -10975,6 +10992,23 @@
               "ca1f6079_1",
               "b30a47be_2"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::577d4d32",
+            "category": "single-session-user",
+            "query": "What time do I stop checking work emails and messages?",
+            "gold": "7 pm",
+            "prediction": "By checking your emails during your commute, you can make the most of your travel time and get a head start on your day.",
+            "expected_doc_ids": [
+              "answer_0dd4d99a"
+            ],
+            "retrieved_doc_ids": [
+              "7e8c306b",
+              "7b0b47f4_2",
+              "060406af_1",
+              "295dc1ab_1",
+              "62ecacbf"
+            ]
           }
         ],
         "sample_successes": [
@@ -11121,19 +11155,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 112,
-        "rows_successful": 112,
+        "rows_recorded": 113,
+        "rows_successful": 113,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9464285714285714,
-        "doc_recall_all": 0.9464285714285714,
-        "ndcg_at_10": 0.8737369058460703,
-        "exact_match": 0.05357142857142857,
-        "token_f1": 0.12224528265678607,
-        "avg_total_sec": 1401.4185255959164,
+        "doc_recall_any": 0.9469026548672567,
+        "doc_recall_all": 0.9469026548672567,
+        "ndcg_at_10": 0.874854278360707,
+        "exact_match": 0.05309734513274336,
+        "token_f1": 0.12411331850348117,
+        "avg_total_sec": 1403.8111740241354,
         "p50_total_sec": 1309.3407022622414,
-        "p95_total_sec": 1656.495963017922,
-        "avg_storage_bytes": 134097037.5,
+        "p95_total_sec": 1660.3112381063402,
+        "avg_storage_bytes": 134133272.07964602,
         "p95_storage_bytes": 140007989.0,
         "categories": {
           "single-session-assistant": {
@@ -11325,20 +11359,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 56,
-            "rows_recorded": 56,
-            "rows_successful": 56,
+            "expected_total": 57,
+            "rows_recorded": 57,
+            "rows_successful": 57,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8928571428571429,
-            "doc_recall_all": 0.8928571428571429,
-            "ndcg_at_10": 0.7672454320365271,
-            "exact_match": 0.07142857142857142,
-            "token_f1": 0.14915767048707157,
-            "avg_total_sec": 1482.9953364280518,
+            "doc_recall_any": 0.8947368421052632,
+            "doc_recall_all": 0.8947368421052632,
+            "ndcg_at_10": 0.7713288455095704,
+            "exact_match": 0.07017543859649122,
+            "token_f1": 0.15238882246683055,
+            "avg_total_sec": 1486.3074848764136,
             "p50_total_sec": 1587.4625157392584,
-            "p95_total_sec": 1660.3112381063402,
-            "avg_storage_bytes": 133801668.0,
+            "p95_total_sec": 1671.7877979846671,
+            "avg_storage_bytes": 133878683.38596492,
             "p95_storage_bytes": 140068421.0,
             "categories": {},
             "sample_errors": [],
@@ -11867,20 +11901,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3080,
-      "rows_successful": 3008,
+      "rows_recorded": 3081,
+      "rows_successful": 3009,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7898936170212766,
-      "doc_recall_all": 0.6798537234042553,
-      "ndcg_at_10": 0.6127044145823863,
-      "exact_match": 0.027925531914893616,
-      "token_f1": 0.07560787391004888,
-      "avg_total_sec": 70.11701568065334,
+      "doc_recall_any": 0.7896311066799602,
+      "doc_recall_all": 0.6796277833167165,
+      "ndcg_at_10": 0.6125007906493247,
+      "exact_match": 0.027916251246261216,
+      "token_f1": 0.07558274666714092,
+      "avg_total_sec": 70.42654301566944,
       "p50_total_sec": 51.261692572850734,
-      "p95_total_sec": 59.20326030487195,
-      "avg_storage_bytes": 31642788.19913564,
-      "p95_storage_bytes": 28749232.0,
+      "p95_total_sec": 59.20503138517961,
+      "avg_storage_bytes": 31768885.444666002,
+      "p95_storage_bytes": 28749780.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14815,20 +14849,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 167,
-          "rows_recorded": 167,
-          "rows_successful": 167,
+          "expected_total": 168,
+          "rows_recorded": 168,
+          "rows_successful": 168,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9341317365269461,
-          "doc_recall_all": 0.9341317365269461,
-          "ndcg_at_10": 0.8909456695908456,
-          "exact_match": 0.07784431137724551,
-          "token_f1": 0.16594190925760566,
-          "avg_total_sec": 252.6395219776244,
-          "p50_total_sec": 56.29767780797556,
+          "doc_recall_any": 0.9285714285714286,
+          "doc_recall_all": 0.9285714285714286,
+          "ndcg_at_10": 0.8856424215575668,
+          "exact_match": 0.07738095238095238,
+          "token_f1": 0.16495415979773895,
+          "avg_total_sec": 257.0969341488533,
+          "p50_total_sec": 56.356653144117445,
           "p95_total_sec": 1015.2265402707271,
-          "avg_storage_bytes": 104382096.65269461,
+          "avg_storage_bytes": 106207616.3154762,
           "p95_storage_bytes": 413705157.0,
           "categories": {},
           "sample_errors": [],
@@ -14979,6 +15013,23 @@
                 "4056f920",
                 "ca1f6079_1",
                 "b30a47be_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::577d4d32",
+              "category": "single-session-user",
+              "query": "What time do I stop checking work emails and messages?",
+              "gold": "7 pm",
+              "prediction": "By checking your emails during your commute, you can make the most of your travel time and get a head start on your day.",
+              "expected_doc_ids": [
+                "answer_0dd4d99a"
+              ],
+              "retrieved_doc_ids": [
+                "7e8c306b",
+                "7b0b47f4_2",
+                "060406af_1",
+                "295dc1ab_1",
+                "62ecacbf"
               ]
             }
           ],
@@ -15528,20 +15579,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3098,
-      "rows_successful": 3098,
+      "rows_recorded": 3099,
+      "rows_successful": 3099,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8269851517107811,
-      "doc_recall_all": 0.7427372498386056,
-      "ndcg_at_10": 0.6653403443767639,
-      "exact_match": 0.026791478373143964,
-      "token_f1": 0.07411601313173169,
-      "avg_total_sec": 122.4060102326689,
-      "p50_total_sec": 92.61203649500385,
-      "p95_total_sec": 108.7330562970601,
-      "avg_storage_bytes": 12749201.78954164,
-      "p95_storage_bytes": 11868501.0,
+      "doc_recall_any": 0.8270409809616005,
+      "doc_recall_all": 0.7428202646014843,
+      "ndcg_at_10": 0.6654483339397272,
+      "exact_match": 0.026782833171990966,
+      "token_f1": 0.07419965860452989,
+      "avg_total_sec": 122.90597208738075,
+      "p50_total_sec": 92.62041183235124,
+      "p95_total_sec": 108.78986887214705,
+      "avg_storage_bytes": 12789680.119070668,
+      "p95_storage_bytes": 11892861.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18538,21 +18589,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 196,
-          "rows_recorded": 196,
-          "rows_successful": 196,
+          "expected_total": 197,
+          "rows_recorded": 197,
+          "rows_successful": 197,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9591836734693877,
-          "doc_recall_all": 0.9591836734693877,
-          "ndcg_at_10": 0.9066422325640172,
-          "exact_match": 0.061224489795918366,
-          "token_f1": 0.13234018391956964,
-          "avg_total_sec": 461.97396139570805,
+          "doc_recall_any": 0.9593908629441624,
+          "doc_recall_all": 0.9593908629441624,
+          "ndcg_at_10": 0.9071161298606466,
+          "exact_match": 0.06091370558375635,
+          "token_f1": 0.13336045371354813,
+          "avg_total_sec": 468.11514838346926,
           "p50_total_sec": 102.79144056327641,
-          "p95_total_sec": 1625.5046140290797,
-          "avg_storage_bytes": 42492954.948979594,
-          "p95_storage_bytes": 136062373.0,
+          "p95_total_sec": 1633.114429823123,
+          "avg_storage_bytes": 42978734.59390863,
+          "p95_storage_bytes": 136120329.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19186,11 +19237,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.037091534689504546,
-    "doc_recall_all_delta": 0.06288352643435025,
-    "ndcg_at_10_delta": 0.05263592979437759,
-    "token_f1_delta": -0.0014918607783171861,
-    "avg_storage_ratio_nova_over_stock": 0.4029101894974571,
-    "avg_latency_ratio_nova_over_stock": 1.745739019900174
+    "doc_recall_any_delta": 0.03740987428164033,
+    "doc_recall_all_delta": 0.06319248128476784,
+    "ndcg_at_10_delta": 0.05294754329040252,
+    "token_f1_delta": -0.001383088062611032,
+    "avg_storage_ratio_nova_over_stock": 0.40258510615197096,
+    "avg_latency_ratio_nova_over_stock": 1.7451654848376554
   }
 }
