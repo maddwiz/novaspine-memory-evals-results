@@ -281,12 +281,12 @@
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-26T04:50:15Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-04-26T04:24:52Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>97 / 500</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_m::15745da0</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>3055 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>3083 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-26T05:17:52Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-04-26T04:50:16Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>98 / 500</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_m::e01b8e2f</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>3057 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>3084 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -506,24 +506,24 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>69 / 500 failed 0</td>
-      <td>97.1%</td>
-      <td>97.1%</td>
-      <td>91.7%</td>
-      <td>11.2%</td>
-      <td>862.4s</td>
+      <td>71 / 500 failed 0</td>
+      <td>95.8%</td>
+      <td>95.8%</td>
+      <td>90.5%</td>
+      <td>11.3%</td>
+      <td>866.4s</td>
       <td>388.5 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>97 / 500 failed 0</td>
+      <td>98 / 500 failed 0</td>
       <td>95.9%</td>
       <td>95.9%</td>
-      <td>88.0%</td>
-      <td>11.8%</td>
-      <td>1366.2s</td>
+      <td>88.1%</td>
+      <td>11.7%</td>
+      <td>1369.2s</td>
       <td>127.8 MB</td>
     </tr>
     
@@ -532,12 +532,13 @@
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
 <tr><td>single-session-assistant</td><td>56</td><td>100.0%</td><td>10.8%</td><td>56</td><td>100.0%</td><td>9.5%</td></tr>
-<tr><td>single-session-user</td><td>13</td><td>84.6%</td><td>12.8%</td><td>41</td><td>90.2%</td><td>14.9%</td></tr></table>
+<tr><td>single-session-user</td><td>15</td><td>80.0%</td><td>12.8%</td><td>42</td><td>90.5%</td><td>14.6%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
         <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> But overall, I&#x27;m excited to make some changes to my daily commute and save some money in the process.</p><p><b>Expected docs:</b> answer_40a90d51</p><p><b>Retrieved:</b> 4524c250_2, 4d2c2c88_1, ultrachat_143028</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> I do that?</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> 82269cc9, 0e3d8491_2, 6cc835bd, a15fe646, 5e523d80_2</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location previous/historical: nearby city where, the, consequences of; current: Chicago for the work</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> 1b26bdd5_1</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> I do that?</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> 82269cc9, 0e3d8491_2, 6cc835bd, a15fe646, 5e523d80_2</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was the discount I got on my first purchase from the new clothing brand?</p><p><b>Gold:</b> 10%</p><p><b>Pred:</b> a week ago</p><p><b>Expected docs:</b> answer_f38f679b</p><p><b>Retrieved:</b> sharegpt_yyeh5GA_0, b1c6d332, a46d10a2_1, aac45fbb_2, 9b45e884</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location previous/historical: nearby city where, the, consequences of; current: Chicago for the work</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> 1b26bdd5_1</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> told it would take about 6-8 weeks for the judge to review my application and schedule a hearing</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> sharegpt_aVExml0_162, 9b3a7f2c_3, 0e3d8491_2, a15fe646, sharegpt_xOzzaof_0</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I attend my cousin&#x27;s wedding?</p><p><b>Gold:</b> The Grand Ballroom</p><p><b>Pred:</b> user: Can you suggest some ideas for a fun and engaging playlist for my cousin Emily&#x27;s wedding reception?</p><p><b>Expected docs:</b> answer_0df6aa4b</p><p><b>Retrieved:</b> 1e2feff5, e72acbf9_3, e9c1ef4b_1, 4056f920, 22db3cc3_5</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new bookshelf from?</p><p><b>Gold:</b> IKEA</p><p><b>Pred:</b> User location previous/historical: Seoul to learn more, process of buying, mood for travel; current: city center</p><p><b>Expected docs:</b> answer_dc11c1eb</p><p><b>Retrieved:</b> 5eefce69_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?</p><p><b>Gold:</b> Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.</p><p><b>Pred:</b> assistant: Sure, I can help you create a shift rotation sheet for GM social media agents.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_5Lzox6N_0, 06fe8cfb_2</p></div>
