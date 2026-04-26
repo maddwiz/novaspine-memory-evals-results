@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T00:23:36Z",
+  "generated_at": "2026-04-26T00:50:22Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-25T23:56:56Z",
+    "updated_at": "2026-04-26T00:23:38Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 87,
+    "current_case_index": 88,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::b86304ba"
+    "current_case_id": "longmemeval_m::d52b4f67"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,36 +10466,36 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 53,
-        "rows_successful": 53,
+        "rows_recorded": 55,
+        "rows_successful": 55,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
-        "ndcg_at_10": 0.9930364104447444,
-        "exact_match": 0.05660377358490566,
-        "token_f1": 0.10575208122549148,
-        "avg_total_sec": 824.3426514314926,
-        "p50_total_sec": 775.475091831293,
+        "ndcg_at_10": 0.9932896318831174,
+        "exact_match": 0.05454545454545454,
+        "token_f1": 0.11037762537927527,
+        "avg_total_sec": 829.7630534477024,
+        "p50_total_sec": 775.6100574643351,
         "p95_total_sec": 1023.1746547701769,
-        "avg_storage_bytes": 409154660.3396226,
+        "avg_storage_bytes": 408644599.5090909,
         "p95_storage_bytes": 422813291.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 53,
-            "rows_recorded": 53,
-            "rows_successful": 53,
+            "expected_total": 55,
+            "rows_recorded": 55,
+            "rows_successful": 55,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.9930364104447444,
-            "exact_match": 0.05660377358490566,
-            "token_f1": 0.10575208122549148,
-            "avg_total_sec": 824.3426514314926,
-            "p50_total_sec": 775.475091831293,
+            "ndcg_at_10": 0.9932896318831174,
+            "exact_match": 0.05454545454545454,
+            "token_f1": 0.11037762537927527,
+            "avg_total_sec": 829.7630534477024,
+            "p50_total_sec": 775.6100574643351,
             "p95_total_sec": 1023.1746547701769,
-            "avg_storage_bytes": 409154660.3396226,
+            "avg_storage_bytes": 408644599.5090909,
             "p95_storage_bytes": 422813291.0,
             "categories": {},
             "sample_errors": [],
@@ -10789,19 +10789,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 87,
-        "rows_successful": 87,
+        "rows_recorded": 88,
+        "rows_successful": 88,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9770114942528736,
-        "doc_recall_all": 0.9770114942528736,
-        "ndcg_at_10": 0.9056970569189998,
-        "exact_match": 0.04597701149425287,
-        "token_f1": 0.10903380359593094,
-        "avg_total_sec": 1339.5075395273943,
-        "p50_total_sec": 1300.2694984013215,
+        "doc_recall_any": 0.9659090909090909,
+        "doc_recall_all": 0.9659090909090909,
+        "ndcg_at_10": 0.8954050449085567,
+        "exact_match": 0.045454545454545456,
+        "token_f1": 0.10779478310052264,
+        "avg_total_sec": 1342.51280985172,
+        "p50_total_sec": 1300.4617688693106,
         "p95_total_sec": 1625.3799620703794,
-        "avg_storage_bytes": 134104609.13793103,
+        "avg_storage_bytes": 134086605.5,
         "p95_storage_bytes": 140133777.0,
         "categories": {
           "single-session-assistant": {
@@ -10993,20 +10993,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 31,
-            "rows_recorded": 31,
-            "rows_successful": 31,
+            "expected_total": 32,
+            "rows_recorded": 32,
+            "rows_successful": 32,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9354838709677419,
-            "doc_recall_all": 0.9354838709677419,
-            "ndcg_at_10": 0.7710598287496327,
-            "exact_match": 0.06451612903225806,
-            "token_f1": 0.1337838323407084,
-            "avg_total_sec": 1375.0329003906959,
-            "p50_total_sec": 1301.7420548852533,
+            "doc_recall_any": 0.90625,
+            "doc_recall_all": 0.90625,
+            "ndcg_at_10": 0.7469642091012068,
+            "exact_match": 0.0625,
+            "token_f1": 0.12960308758006125,
+            "avg_total_sec": 1382.1872262556135,
+            "p50_total_sec": 1302.8223348092288,
             "p95_total_sec": 1625.3799620703794,
-            "avg_storage_bytes": 133584716.22580644,
+            "avg_storage_bytes": 133551452.875,
             "p95_storage_bytes": 140133777.0,
             "categories": {},
             "sample_errors": [],
@@ -11039,6 +11039,23 @@
                   "0e3d8491_2",
                   "a15fe646",
                   "sharegpt_xOzzaof_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::d52b4f67",
+                "category": "single-session-user",
+                "query": "Where did I attend my cousin's wedding?",
+                "gold": "The Grand Ballroom",
+                "prediction": "user: Can you suggest some ideas for a fun and engaging playlist for my cousin Emily's wedding reception?",
+                "expected_doc_ids": [
+                  "answer_0df6aa4b"
+                ],
+                "retrieved_doc_ids": [
+                  "1e2feff5",
+                  "e72acbf9_3",
+                  "e9c1ef4b_1",
+                  "4056f920",
+                  "22db3cc3_5"
                 ]
               }
             ],
@@ -11239,6 +11256,23 @@
               "a15fe646",
               "sharegpt_xOzzaof_0"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::d52b4f67",
+            "category": "single-session-user",
+            "query": "Where did I attend my cousin's wedding?",
+            "gold": "The Grand Ballroom",
+            "prediction": "user: Can you suggest some ideas for a fun and engaging playlist for my cousin Emily's wedding reception?",
+            "expected_doc_ids": [
+              "answer_0df6aa4b"
+            ],
+            "retrieved_doc_ids": [
+              "1e2feff5",
+              "e72acbf9_3",
+              "e9c1ef4b_1",
+              "4056f920",
+              "22db3cc3_5"
+            ]
           }
         ],
         "sample_successes": [
@@ -11415,20 +11449,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3039,
-      "rows_successful": 2967,
+      "rows_recorded": 3041,
+      "rows_successful": 2969,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.788675429726997,
-      "doc_recall_all": 0.6771149309066397,
-      "ndcg_at_10": 0.6110278019236141,
-      "exact_match": 0.027300303336703743,
-      "token_f1": 0.07457419388247805,
-      "avg_total_sec": 57.31018852063963,
-      "p50_total_sec": 51.192178706172854,
-      "p95_total_sec": 58.52985875494778,
-      "avg_storage_bytes": 26478203.772160433,
-      "p95_storage_bytes": 28468953.0,
+      "doc_recall_any": 0.7888177837655777,
+      "doc_recall_all": 0.6773324351633546,
+      "ndcg_at_10": 0.6112898242867508,
+      "exact_match": 0.027281913102054564,
+      "token_f1": 0.07468088324022279,
+      "avg_total_sec": 57.92729429252014,
+      "p50_total_sec": 51.198461038060486,
+      "p95_total_sec": 58.55863391701132,
+      "avg_storage_bytes": 26726536.398450658,
+      "p95_storage_bytes": 28476734.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14221,20 +14255,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 154,
-          "rows_recorded": 154,
-          "rows_successful": 154,
+          "expected_total": 156,
+          "rows_recorded": 156,
+          "rows_successful": 156,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
-          "ndcg_at_10": 0.9976034399582562,
-          "exact_match": 0.045454545454545456,
-          "token_f1": 0.09901974489622616,
-          "avg_total_sec": 305.1995134494031,
-          "p50_total_sec": 57.333428274374455,
+          "ndcg_at_10": 0.9976341650869964,
+          "exact_match": 0.04487179487179487,
+          "token_f1": 0.10073685772389693,
+          "avg_total_sec": 313.7662338779654,
+          "p50_total_sec": 57.608304681722075,
           "p95_total_sec": 1009.0917216166854,
-          "avg_storage_bytes": 150771365.44805196,
+          "avg_storage_bytes": 153904142.65384614,
           "p95_storage_bytes": 420201510.0,
           "categories": {},
           "sample_errors": [],
@@ -14997,20 +15031,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3073,
-      "rows_successful": 3073,
+      "rows_recorded": 3074,
+      "rows_successful": 3074,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.826879271070615,
-      "doc_recall_all": 0.7419459811259356,
-      "ndcg_at_10": 0.6645497876265565,
-      "exact_match": 0.026358607224210868,
-      "token_f1": 0.07335043213061854,
-      "avg_total_sec": 110.24799894986948,
+      "doc_recall_any": 0.8266102797657775,
+      "doc_recall_all": 0.741704619388419,
+      "ndcg_at_10": 0.6643336035707248,
+      "exact_match": 0.026350032530904358,
+      "token_f1": 0.0733265705716951,
+      "avg_total_sec": 110.7339206574551,
       "p50_total_sec": 92.54196048108861,
-      "p95_total_sec": 107.51647136406973,
-      "avg_storage_bytes": 11762206.293198828,
-      "p95_storage_bytes": 11749465.0,
+      "p95_total_sec": 107.54327436489984,
+      "avg_storage_bytes": 11801489.98959011,
+      "p95_storage_bytes": 11753093.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18007,21 +18041,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 171,
-          "rows_recorded": 171,
-          "rows_successful": 171,
+          "expected_total": 172,
+          "rows_recorded": 172,
+          "rows_successful": 172,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9766081871345029,
-          "doc_recall_all": 0.9766081871345029,
-          "ndcg_at_10": 0.9277133805832778,
-          "exact_match": 0.05847953216374269,
-          "token_f1": 0.1270944169796585,
-          "avg_total_sec": 293.12969301578624,
-          "p50_total_sec": 101.39627496479079,
+          "doc_recall_any": 0.9709302325581395,
+          "doc_recall_all": 0.9709302325581395,
+          "ndcg_at_10": 0.9223196981380262,
+          "exact_match": 0.05813953488372093,
+          "token_f1": 0.126355495950707,
+          "avg_total_sec": 300.75086531260183,
+          "p50_total_sec": 101.43606468196958,
           "p95_total_sec": 1426.4236469874159,
-          "avg_storage_bytes": 29104397.45614035,
-          "p95_storage_bytes": 135245397.0,
+          "avg_storage_bytes": 29705652.639534883,
+          "p95_storage_bytes": 134855521.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18082,6 +18116,23 @@
                 "0e3d8491_2",
                 "a15fe646",
                 "sharegpt_xOzzaof_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::d52b4f67",
+              "category": "single-session-user",
+              "query": "Where did I attend my cousin's wedding?",
+              "gold": "The Grand Ballroom",
+              "prediction": "user: Can you suggest some ideas for a fun and engaging playlist for my cousin Emily's wedding reception?",
+              "expected_doc_ids": [
+                "answer_0df6aa4b"
+              ],
+              "retrieved_doc_ids": [
+                "1e2feff5",
+                "e72acbf9_3",
+                "e9c1ef4b_1",
+                "4056f920",
+                "22db3cc3_5"
               ]
             }
           ],
@@ -18595,11 +18646,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.038203841343617984,
-    "doc_recall_all_delta": 0.06483105021929592,
-    "ndcg_at_10_delta": 0.05352198570294242,
-    "token_f1_delta": -0.001223761751859509,
-    "avg_storage_ratio_nova_over_stock": 0.4442222136520371,
-    "avg_latency_ratio_nova_over_stock": 1.9237067927313638
+    "doc_recall_any_delta": 0.03779249600019985,
+    "doc_recall_all_delta": 0.06437218422506441,
+    "ndcg_at_10_delta": 0.05304377928397397,
+    "token_f1_delta": -0.001354312668527688,
+    "avg_storage_ratio_nova_over_stock": 0.4415645115269873,
+    "avg_latency_ratio_nova_over_stock": 1.9116018106813875
   }
 }
