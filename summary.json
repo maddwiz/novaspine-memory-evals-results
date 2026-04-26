@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T20:40:51Z",
+  "generated_at": "2026-04-26T21:09:09Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-26T20:14:26Z",
+    "updated_at": "2026-04-26T20:40:51Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 132,
+    "current_case_index": 133,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::85fa3a3f"
+    "current_case_id": "longmemeval_m::9aaed6a3"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 126,
-        "rows_successful": 125,
+        "rows_recorded": 128,
+        "rows_successful": 127,
         "rows_failed": 1,
         "complete": false,
-        "doc_recall_any": 0.936,
-        "doc_recall_all": 0.936,
-        "ndcg_at_10": 0.8493796596252701,
-        "exact_match": 0.064,
-        "token_f1": 0.1317012044450883,
-        "avg_total_sec": 926.427641835507,
-        "p50_total_sec": 987.9017426581122,
+        "doc_recall_any": 0.9291338582677166,
+        "doc_recall_all": 0.9291338582677166,
+        "ndcg_at_10": 0.8438776177414076,
+        "exact_match": 0.06299212598425197,
+        "token_f1": 0.1296271697294176,
+        "avg_total_sec": 928.1430506247103,
+        "p50_total_sec": 987.9932693401352,
         "p95_total_sec": 1048.7318506417796,
-        "avg_storage_bytes": 408074918.512,
+        "avg_storage_bytes": 408283260.8503937,
         "p95_storage_bytes": 425571393.0,
         "categories": {
           "single-session-assistant": {
@@ -10944,6 +10944,60 @@
                 ]
               }
             ]
+          },
+          "multi-session": {
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.5,
+            "doc_recall_all": 0.5,
+            "ndcg_at_10": 0.5,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 1035.3560999499168,
+            "p50_total_sec": 1032.5924383229576,
+            "p95_total_sec": 1038.119761576876,
+            "avg_storage_bytes": 421304657.0,
+            "p95_storage_bytes": 422531228.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::d3ab962e",
+                "category": "multi-session",
+                "query": "What is the total distance of the hikes I did on two consecutive weekends?",
+                "gold": "8 miles",
+                "prediction": "m a beginner, but I",
+                "expected_doc_ids": [
+                  "answer_5237bb0b_1",
+                  "answer_5237bb0b_2"
+                ],
+                "retrieved_doc_ids": [
+                  "d2fee04d",
+                  "20fa75e8_6",
+                  "b807492f_1",
+                  "3de0912a_2",
+                  "d82e4af9_2"
+                ]
+              }
+            ],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_m::2311e44b",
+                "category": "multi-session",
+                "query": "How many pages do I have left to read in 'The Nightingale'?",
+                "gold": "190",
+                "prediction": "50",
+                "retrieved_doc_ids": [
+                  "answer_bf633415_2",
+                  "answer_bf633415_1",
+                  "5e3bb940_1",
+                  "fd6bf77a"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [
@@ -11082,6 +11136,24 @@
               "69945db0_2",
               "ea8bb4f8_1",
               "fc733b20_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::d3ab962e",
+            "category": "multi-session",
+            "query": "What is the total distance of the hikes I did on two consecutive weekends?",
+            "gold": "8 miles",
+            "prediction": "m a beginner, but I",
+            "expected_doc_ids": [
+              "answer_5237bb0b_1",
+              "answer_5237bb0b_2"
+            ],
+            "retrieved_doc_ids": [
+              "d2fee04d",
+              "20fa75e8_6",
+              "b807492f_1",
+              "3de0912a_2",
+              "d82e4af9_2"
             ]
           }
         ],
@@ -11229,20 +11301,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 132,
-        "rows_successful": 132,
+        "rows_recorded": 133,
+        "rows_successful": 133,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.946969696969697,
-        "doc_recall_all": 0.9393939393939394,
-        "ndcg_at_10": 0.8699909121115225,
-        "exact_match": 0.045454545454545456,
-        "token_f1": 0.11512118957016573,
-        "avg_total_sec": 1435.648355076414,
+        "doc_recall_any": 0.9473684210526315,
+        "doc_recall_all": 0.9398496240601504,
+        "ndcg_at_10": 0.8709684240505335,
+        "exact_match": 0.045112781954887216,
+        "token_f1": 0.11575937611475094,
+        "avg_total_sec": 1437.618723028567,
         "p50_total_sec": 1333.8514346359298,
-        "p95_total_sec": 1672.0358857479878,
-        "avg_storage_bytes": 134237694.9090909,
-        "p95_storage_bytes": 140007989.0,
+        "p95_total_sec": 1681.5359816621058,
+        "avg_storage_bytes": 134286813.69172934,
+        "p95_storage_bytes": 140068421.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -11725,21 +11797,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.8333333333333334,
-            "ndcg_at_10": 0.8697345728030274,
+            "doc_recall_all": 0.8571428571428571,
+            "ndcg_at_10": 0.888343919545452,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 1635.4781292208936,
-            "p50_total_sec": 1620.857623779215,
-            "p95_total_sec": 1672.0358857479878,
-            "avg_storage_bytes": 135630727.0,
-            "p95_storage_bytes": 138307169.0,
+            "token_f1": 0.02857142857142857,
+            "avg_total_sec": 1644.3680097197316,
+            "p50_total_sec": 1649.5370628461242,
+            "p95_total_sec": 1697.7072927127592,
+            "avg_storage_bytes": 136364979.2857143,
+            "p95_storage_bytes": 140770493.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -11821,6 +11893,19 @@
                   "04f56644_2",
                   "c04c626c_1",
                   "f5c7d070_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::9aaed6a3",
+                "category": "multi-session",
+                "query": "How much cashback did I earn at SaveMart last Thursday?",
+                "gold": "$0.75",
+                "prediction": "I spent $75 on groceries at SaveMart last Thursday.",
+                "retrieved_doc_ids": [
+                  "answer_353d3c6d_2",
+                  "answer_353d3c6d_1",
+                  "97d2d2c9",
+                  "8f589040_2"
                 ]
               }
             ]
@@ -12110,20 +12195,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3112,
-      "rows_successful": 3039,
+      "rows_recorded": 3114,
+      "rows_successful": 3041,
       "rows_failed": 73,
       "complete": false,
-      "doc_recall_any": 0.7910496873971701,
-      "doc_recall_all": 0.6821322803553801,
-      "ndcg_at_10": 0.6141694689065319,
-      "exact_match": 0.028298782494241528,
-      "token_f1": 0.07638019858506002,
-      "avg_total_sec": 79.68167951441495,
-      "p50_total_sec": 51.30997925018892,
-      "p95_total_sec": 59.83408217923716,
-      "avg_storage_bytes": 35500164.003948666,
-      "p95_storage_bytes": 29030089.0,
+      "doc_recall_any": 0.7908582703058205,
+      "doc_recall_all": 0.6820124958895101,
+      "ndcg_at_10": 0.6140943821134331,
+      "exact_match": 0.02828017099638277,
+      "token_f1": 0.0763299649786246,
+      "avg_total_sec": 80.31020593364251,
+      "p50_total_sec": 51.31244745012373,
+      "p95_total_sec": 59.85712923575193,
+      "avg_storage_bytes": 35753899.28378823,
+      "p95_storage_bytes": 29034050.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14357,21 +14442,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 253,
-          "rows_recorded": 253,
-          "rows_successful": 253,
+          "expected_total": 255,
+          "rows_recorded": 255,
+          "rows_successful": 255,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9802371541501976,
-          "doc_recall_all": 0.7312252964426877,
-          "ndcg_at_10": 0.8833232138703477,
+          "doc_recall_any": 0.9764705882352941,
+          "doc_recall_all": 0.7294117647058823,
+          "ndcg_at_10": 0.8803167572909725,
           "exact_match": 0.0,
-          "token_f1": 0.023583915316427673,
-          "avg_total_sec": 34.661063043952815,
-          "p50_total_sec": 16.762797276955098,
-          "p95_total_sec": 59.153713029809296,
-          "avg_storage_bytes": 16521910.249011857,
-          "p95_storage_bytes": 28771525.0,
+          "token_f1": 0.023398943431592944,
+          "avg_total_sec": 42.50965156870547,
+          "p50_total_sec": 16.931407005060464,
+          "p95_total_sec": 59.305873460136354,
+          "avg_storage_bytes": 19696676.890196078,
+          "p95_storage_bytes": 28789394.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14447,6 +14532,24 @@
               ],
               "retrieved_doc_ids": [
                 "9d5a389d"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::d3ab962e",
+              "category": "multi-session",
+              "query": "What is the total distance of the hikes I did on two consecutive weekends?",
+              "gold": "8 miles",
+              "prediction": "m a beginner, but I",
+              "expected_doc_ids": [
+                "answer_5237bb0b_1",
+                "answer_5237bb0b_2"
+              ],
+              "retrieved_doc_ids": [
+                "d2fee04d",
+                "20fa75e8_6",
+                "b807492f_1",
+                "3de0912a_2",
+                "d82e4af9_2"
               ]
             }
           ],
@@ -15788,20 +15891,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3118,
-      "rows_successful": 3118,
+      "rows_recorded": 3119,
+      "rows_successful": 3119,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8277742142398974,
-      "doc_recall_all": 0.7437459910198846,
-      "ndcg_at_10": 0.6665184906424555,
-      "exact_match": 0.026619627966645285,
-      "token_f1": 0.07412313471706435,
-      "avg_total_sec": 132.05918143173582,
-      "p50_total_sec": 92.70006096223369,
-      "p95_total_sec": 110.51599271828309,
-      "avg_storage_bytes": 13533526.193713918,
-      "p95_storage_bytes": 12053253.0,
+      "doc_recall_any": 0.82782943251042,
+      "doc_recall_all": 0.7438281500480923,
+      "ndcg_at_10": 0.6666254100106368,
+      "exact_match": 0.026611093299134338,
+      "token_f1": 0.07416349280147695,
+      "avg_total_sec": 132.56115261201188,
+      "p50_total_sec": 92.70111272204667,
+      "p95_total_sec": 110.70729307504371,
+      "avg_storage_bytes": 13574320.347867906,
+      "p95_storage_bytes": 12069061.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17969,21 +18072,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 272,
-          "rows_recorded": 272,
-          "rows_successful": 272,
+          "expected_total": 273,
+          "rows_recorded": 273,
+          "rows_successful": 273,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9889705882352942,
-          "doc_recall_all": 0.8713235294117647,
-          "ndcg_at_10": 0.9329844043050118,
-          "exact_match": 0.014705882352941176,
-          "token_f1": 0.020263523439869455,
-          "avg_total_sec": 89.97099902271123,
+          "doc_recall_any": 0.989010989010989,
+          "doc_recall_all": 0.8717948717948718,
+          "ndcg_at_10": 0.9332298826775209,
+          "exact_match": 0.014652014652014652,
+          "token_f1": 0.02092189881188459,
+          "avg_total_sec": 95.86014295564179,
           "p50_total_sec": 95.84290051460266,
-          "p95_total_sec": 109.51527576707304,
-          "avg_storage_bytes": 8986577.654411765,
-          "p95_storage_bytes": 11999717.0,
+          "p95_total_sec": 109.63705598982051,
+          "avg_storage_bytes": 9469302.61904762,
+          "p95_storage_bytes": 12028497.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19463,11 +19566,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03672452684272731,
-    "doc_recall_all_delta": 0.061613710664504495,
-    "ndcg_at_10_delta": 0.052349021735923595,
-    "token_f1_delta": -0.002257063867995679,
-    "avg_storage_ratio_nova_over_stock": 0.38122432877235696,
-    "avg_latency_ratio_nova_over_stock": 1.657334311180595
+    "doc_recall_any_delta": 0.036971162204599506,
+    "doc_recall_all_delta": 0.061815654158582256,
+    "ndcg_at_10_delta": 0.05253102789720365,
+    "token_f1_delta": -0.0021664721771476464,
+    "avg_storage_ratio_nova_over_stock": 0.37965985863877133,
+    "avg_latency_ratio_nova_over_stock": 1.650614029324523
   }
 }
