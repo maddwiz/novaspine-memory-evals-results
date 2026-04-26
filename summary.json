@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T10:44:42Z",
+  "generated_at": "2026-04-26T11:11:26Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-26T10:18:22Z",
+    "updated_at": "2026-04-26T10:44:43Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 110,
+    "current_case_index": 111,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::311778f1"
+    "current_case_id": "longmemeval_m::c19f7a0b"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,20 +10466,20 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 91,
-        "rows_successful": 91,
+        "rows_recorded": 92,
+        "rows_successful": 92,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.945054945054945,
-        "doc_recall_all": 0.945054945054945,
-        "ndcg_at_10": 0.8801691291918123,
-        "exact_match": 0.054945054945054944,
-        "token_f1": 0.11348645420462895,
-        "avg_total_sec": 896.4671176086374,
-        "p50_total_sec": 968.4278965080157,
-        "p95_total_sec": 1048.7318506417796,
-        "avg_storage_bytes": 407640004.6593407,
-        "p95_storage_bytes": 425315471.0,
+        "doc_recall_any": 0.9456521739130435,
+        "doc_recall_all": 0.9456521739130435,
+        "ndcg_at_10": 0.877460005543765,
+        "exact_match": 0.05434782608695652,
+        "token_f1": 0.11708382366375739,
+        "avg_total_sec": 897.3618166577628,
+        "p50_total_sec": 969.9924309868366,
+        "p95_total_sec": 1038.448362599127,
+        "avg_storage_bytes": 407526570.51086956,
+        "p95_storage_bytes": 423611048.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -10643,20 +10643,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 35,
-            "rows_recorded": 35,
-            "rows_successful": 35,
+            "expected_total": 36,
+            "rows_recorded": 36,
+            "rows_successful": 36,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8571428571428571,
-            "doc_recall_all": 0.8571428571428571,
-            "ndcg_at_10": 0.6989846000823848,
-            "exact_match": 0.05714285714285714,
-            "token_f1": 0.1216142267646027,
-            "avg_total_sec": 998.3797969997062,
+            "doc_recall_any": 0.8611111111111112,
+            "doc_recall_all": 0.8611111111111112,
+            "ndcg_at_10": 0.6970941876793034,
+            "exact_match": 0.05555555555555555,
+            "token_f1": 0.13058173281126498,
+            "avg_total_sec": 997.8353423643857,
             "p50_total_sec": 998.4751827260479,
             "p95_total_sec": 1048.7318506417796,
-            "avg_storage_bytes": 406149847.54285717,
+            "avg_storage_bytes": 405901353.5277778,
             "p95_storage_bytes": 423611048.0,
             "categories": {},
             "sample_errors": [],
@@ -11121,20 +11121,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 110,
-        "rows_successful": 110,
+        "rows_recorded": 111,
+        "rows_successful": 111,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9545454545454546,
-        "doc_recall_all": 0.9545454545454546,
-        "ndcg_at_10": 0.8805321223159989,
-        "exact_match": 0.05454545454545454,
-        "token_f1": 0.12351098636059366,
-        "avg_total_sec": 1397.9015011284584,
-        "p50_total_sec": 1305.51937438827,
-        "p95_total_sec": 1660.3112381063402,
-        "avg_storage_bytes": 134116566.38181818,
-        "p95_storage_bytes": 140068421.0,
+        "doc_recall_any": 0.9459459459459459,
+        "doc_recall_all": 0.9459459459459459,
+        "ndcg_at_10": 0.8725994004933323,
+        "exact_match": 0.05405405405405406,
+        "token_f1": 0.12239827477175948,
+        "avg_total_sec": 1399.742453612643,
+        "p50_total_sec": 1308.9719740119763,
+        "p95_total_sec": 1656.495963017922,
+        "avg_storage_bytes": 134107405.07207207,
+        "p95_storage_bytes": 140007989.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -11325,20 +11325,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 54,
-            "rows_recorded": 54,
-            "rows_successful": 54,
+            "expected_total": 55,
+            "rows_recorded": 55,
+            "rows_successful": 55,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9074074074074074,
-            "doc_recall_all": 0.9074074074074074,
-            "ndcg_at_10": 0.7771434110008428,
-            "exact_match": 0.07407407407407407,
-            "token_f1": 0.152732710914468,
-            "avg_total_sec": 1478.8523906918276,
-            "p50_total_sec": 1580.1817981461063,
+            "doc_recall_any": 0.8909090909090909,
+            "doc_recall_all": 0.8909090909090909,
+            "ndcg_at_10": 0.7630135308008275,
+            "exact_match": 0.07272727272727272,
+            "token_f1": 0.14995575253420493,
+            "avg_total_sec": 1481.095933167848,
+            "p50_total_sec": 1581.0460951533169,
             "p95_total_sec": 1660.3112381063402,
-            "avg_storage_bytes": 133830509.44444445,
+            "avg_storage_bytes": 133817221.2909091,
             "p95_storage_bytes": 140068421.0,
             "categories": {},
             "sample_errors": [],
@@ -11418,6 +11418,19 @@
                   "fb8ffbf3",
                   "e2a01f17_2",
                   "8fcaf3a9_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c19f7a0b",
+                "category": "single-session-user",
+                "query": "What time do I usually get home from work on weeknights?",
+                "gold": "6:30 pm",
+                "prediction": "User location previous/historical: mood for something, apartment, South America; current: middle of something",
+                "expected_doc_ids": [
+                  "answer_f442ccbe"
+                ],
+                "retrieved_doc_ids": [
+                  "sharegpt_yMwEvl7_479"
                 ]
               }
             ],
@@ -11665,6 +11678,19 @@
               "e2a01f17_2",
               "8fcaf3a9_1"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::c19f7a0b",
+            "category": "single-session-user",
+            "query": "What time do I usually get home from work on weeknights?",
+            "gold": "6:30 pm",
+            "prediction": "User location previous/historical: mood for something, apartment, South America; current: middle of something",
+            "expected_doc_ids": [
+              "answer_f442ccbe"
+            ],
+            "retrieved_doc_ids": [
+              "sharegpt_yMwEvl7_479"
+            ]
           }
         ],
         "sample_successes": [
@@ -11841,20 +11867,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3077,
-      "rows_successful": 3005,
+      "rows_recorded": 3078,
+      "rows_successful": 3006,
       "rows_failed": 72,
       "complete": false,
-      "doc_recall_any": 0.7896838602329451,
-      "doc_recall_all": 0.6795341098169717,
-      "ndcg_at_10": 0.6124405821331935,
-      "exact_match": 0.02762063227953411,
-      "token_f1": 0.0752026756329393,
-      "avg_total_sec": 69.1939023351929,
+      "doc_recall_any": 0.7897538256819694,
+      "doc_recall_all": 0.6796407185628742,
+      "ndcg_at_10": 0.6124467328888283,
+      "exact_match": 0.02761144377910845,
+      "token_f1": 0.0753255105527036,
+      "avg_total_sec": 69.49649233113202,
       "p50_total_sec": 51.2495680465363,
-      "p95_total_sec": 59.16311559500173,
-      "avg_storage_bytes": 31271505.496838603,
-      "p95_storage_bytes": 28719333.0,
+      "p95_total_sec": 59.19670813996345,
+      "avg_storage_bytes": 31393239.547904193,
+      "p95_storage_bytes": 28734141.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14789,20 +14815,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 164,
-          "rows_recorded": 164,
-          "rows_successful": 164,
+          "expected_total": 165,
+          "rows_recorded": 165,
+          "rows_successful": 165,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9329268292682927,
-          "doc_recall_all": 0.9329268292682927,
-          "ndcg_at_10": 0.8912012016347547,
-          "exact_match": 0.07317073170731707,
-          "token_f1": 0.16016984391204694,
-          "avg_total_sec": 239.06398487873602,
+          "doc_recall_any": 0.9333333333333333,
+          "doc_recall_all": 0.9333333333333333,
+          "ndcg_at_10": 0.8896237989192195,
+          "exact_match": 0.07272727272727272,
+          "token_f1": 0.16189272027890997,
+          "avg_total_sec": 243.54710878933864,
           "p50_total_sec": 56.22375876735896,
           "p95_total_sec": 1013.7058855909854,
-          "avg_storage_bytes": 98909617.41463415,
+          "avg_storage_bytes": 100717462.53939395,
           "p95_storage_bytes": 413705157.0,
           "categories": {},
           "sample_errors": [],
@@ -15502,20 +15528,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3096,
-      "rows_successful": 3096,
+      "rows_recorded": 3097,
+      "rows_successful": 3097,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8271963824289406,
-      "doc_recall_all": 0.7428940568475452,
-      "ndcg_at_10": 0.6654471533847592,
-      "exact_match": 0.026808785529715762,
-      "token_f1": 0.07412989196518413,
-      "avg_total_sec": 121.4548158779703,
+      "doc_recall_any": 0.8269292864061996,
+      "doc_recall_all": 0.7426541814659348,
+      "ndcg_at_10": 0.6652322850756264,
+      "exact_match": 0.02680012915724895,
+      "token_f1": 0.07410595593290606,
+      "avg_total_sec": 121.93295356314789,
       "p50_total_sec": 92.61203649500385,
-      "p95_total_sec": 108.58684219187126,
-      "avg_storage_bytes": 12671505.570413437,
-      "p95_storage_bytes": 11860597.0,
+      "p95_total_sec": 108.6628656401299,
+      "avg_storage_bytes": 12710390.993542137,
+      "p95_storage_bytes": 11868321.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18512,20 +18538,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 194,
-          "rows_recorded": 194,
-          "rows_successful": 194,
+          "expected_total": 195,
+          "rows_recorded": 195,
+          "rows_successful": 195,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9639175257731959,
-          "doc_recall_all": 0.9639175257731959,
-          "ndcg_at_10": 0.9108344205285948,
-          "exact_match": 0.061855670103092786,
-          "token_f1": 0.13316192211515934,
-          "avg_total_sec": 450.2947767574566,
-          "p50_total_sec": 102.67490643262863,
+          "doc_recall_any": 0.958974358974359,
+          "doc_recall_all": 0.958974358974359,
+          "ndcg_at_10": 0.9061634747822943,
+          "exact_match": 0.06153846153846154,
+          "token_f1": 0.13247904046328673,
+          "avg_total_sec": 456.2022252195873,
+          "p50_total_sec": 102.72440274897963,
           "p95_total_sec": 1625.5046140290797,
-          "avg_storage_bytes": 41559656.041237116,
+          "avg_storage_bytes": 42029091.964102566,
           "p95_storage_bytes": 136062373.0,
           "categories": {},
           "sample_errors": [],
@@ -18634,6 +18660,19 @@
                 "fb8ffbf3",
                 "e2a01f17_2",
                 "8fcaf3a9_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::c19f7a0b",
+              "category": "single-session-user",
+              "query": "What time do I usually get home from work on weeknights?",
+              "gold": "6:30 pm",
+              "prediction": "User location previous/historical: mood for something, apartment, South America; current: middle of something",
+              "expected_doc_ids": [
+                "answer_f442ccbe"
+              ],
+              "retrieved_doc_ids": [
+                "sharegpt_yMwEvl7_479"
               ]
             }
           ],
@@ -19147,11 +19186,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.037512522195995435,
-    "doc_recall_all_delta": 0.06335994703057346,
-    "ndcg_at_10_delta": 0.053006571251565715,
-    "token_f1_delta": -0.0010727836677551644,
-    "avg_storage_ratio_nova_over_stock": 0.40520932296318335,
-    "avg_latency_ratio_nova_over_stock": 1.7552820664689819
+    "doc_recall_any_delta": 0.03717546072423017,
+    "doc_recall_all_delta": 0.06301346290306054,
+    "ndcg_at_10_delta": 0.052785552186798035,
+    "token_f1_delta": -0.0012195546197975443,
+    "avg_storage_ratio_nova_over_stock": 0.40487669245306285,
+    "avg_latency_ratio_nova_over_stock": 1.7545195372188038
   }
 }
