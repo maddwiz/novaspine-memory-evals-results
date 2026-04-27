@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T08:48:16Z",
+  "generated_at": "2026-04-27T09:15:51Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-27T08:21:23Z",
+    "updated_at": "2026-04-27T08:48:18Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 159,
+    "current_case_index": 160,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::a96c20ee"
+    "current_case_id": "longmemeval_m::92a0aa75"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 170,
-        "rows_successful": 168,
+        "rows_recorded": 172,
+        "rows_successful": 170,
         "rows_failed": 2,
         "complete": false,
-        "doc_recall_any": 0.9345238095238095,
-        "doc_recall_all": 0.8690476190476191,
-        "ndcg_at_10": 0.8284849974806651,
-        "exact_match": 0.047619047619047616,
-        "token_f1": 0.10022332836480509,
-        "avg_total_sec": 946.48151724303,
-        "p50_total_sec": 992.9580662199296,
+        "doc_recall_any": 0.9352941176470588,
+        "doc_recall_all": 0.8647058823529412,
+        "ndcg_at_10": 0.8264238421949085,
+        "exact_match": 0.047058823529411764,
+        "token_f1": 0.09904423038404267,
+        "avg_total_sec": 946.9795845774551,
+        "p50_total_sec": 992.3691804506816,
         "p95_total_sec": 1045.0668665268458,
-        "avg_storage_bytes": 408272426.00595236,
+        "avg_storage_bytes": 408169522.41764706,
         "p95_storage_bytes": 423611048.0,
         "categories": {
           "single-session-assistant": {
@@ -10946,20 +10946,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 43,
-            "rows_recorded": 43,
-            "rows_successful": 43,
+            "expected_total": 45,
+            "rows_recorded": 45,
+            "rows_successful": 45,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9302325581395349,
-            "doc_recall_all": 0.6744186046511628,
-            "ndcg_at_10": 0.767744700548674,
+            "doc_recall_any": 0.9333333333333333,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.7626576826661269,
             "exact_match": 0.0,
-            "token_f1": 0.008717874643051588,
-            "avg_total_sec": 1004.7776666835038,
-            "p50_total_sec": 1009.22954248311,
+            "token_f1": 0.008330413547804852,
+            "avg_total_sec": 1004.0683144161995,
+            "p50_total_sec": 1008.8440835759975,
             "p95_total_sec": 1035.2394262272865,
-            "avg_storage_bytes": 408846575.6976744,
+            "avg_storage_bytes": 408432311.04444444,
             "p95_storage_bytes": 421903813.0,
             "categories": {},
             "sample_errors": [],
@@ -11501,19 +11501,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 159,
-        "rows_successful": 159,
+        "rows_recorded": 160,
+        "rows_successful": 160,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9559748427672956,
-        "doc_recall_all": 0.9119496855345912,
-        "ndcg_at_10": 0.8684800331715034,
-        "exact_match": 0.03773584905660377,
-        "token_f1": 0.09928527313440141,
-        "avg_total_sec": 1466.119194207921,
-        "p50_total_sec": 1541.3053688607179,
+        "doc_recall_any": 0.95,
+        "doc_recall_all": 0.90625,
+        "ndcg_at_10": 0.8630520329641815,
+        "exact_match": 0.0375,
+        "token_f1": 0.0986647401773114,
+        "avg_total_sec": 1467.286728837053,
+        "p50_total_sec": 1556.2478728387505,
         "p95_total_sec": 1687.5650923009962,
-        "avg_storage_bytes": 134080323.18867925,
+        "avg_storage_bytes": 134099200.625,
         "p95_storage_bytes": 140007989.0,
         "categories": {
           "single-session-assistant": {
@@ -11997,24 +11997,43 @@
             ]
           },
           "multi-session": {
-            "expected_total": 33,
-            "rows_recorded": 33,
-            "rows_successful": 33,
+            "expected_total": 34,
+            "rows_recorded": 34,
+            "rows_successful": 34,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.7878787878787878,
-            "ndcg_at_10": 0.8626646155262495,
+            "doc_recall_any": 0.9705882352941176,
+            "doc_recall_all": 0.7647058823529411,
+            "ndcg_at_10": 0.837292126834301,
             "exact_match": 0.0,
-            "token_f1": 0.017889739548725723,
-            "avg_total_sec": 1618.7950843726708,
+            "token_f1": 0.017363570738469086,
+            "avg_total_sec": 1619.798897622564,
             "p50_total_sec": 1616.371186858043,
             "p95_total_sec": 1697.7072927127592,
-            "avg_storage_bytes": 133732727.9090909,
+            "avg_storage_bytes": 133831786.29411764,
             "p95_storage_bytes": 138307169.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::92a0aa75",
+                "category": "multi-session",
+                "query": "How long have I been working in my current role?",
+                "gold": "1 year and 5 months",
+                "prediction": "user: Can you give me some tips on how I can best manage my productivity while working remotely?",
+                "expected_doc_ids": [
+                  "answer_6cb8f792_2",
+                  "answer_6cb8f792_1"
+                ],
+                "retrieved_doc_ids": [
+                  "2fd5e208",
+                  "sharegpt_VccgDtj_0",
+                  "2a0c336c",
+                  "8b4b9add_1",
+                  "ultrachat_467165"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::d3ab962e",
@@ -12285,6 +12304,24 @@
               "b124e4a1_1",
               "4c177c66_2"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::92a0aa75",
+            "category": "multi-session",
+            "query": "How long have I been working in my current role?",
+            "gold": "1 year and 5 months",
+            "prediction": "user: Can you give me some tips on how I can best manage my productivity while working remotely?",
+            "expected_doc_ids": [
+              "answer_6cb8f792_2",
+              "answer_6cb8f792_1"
+            ],
+            "retrieved_doc_ids": [
+              "2fd5e208",
+              "sharegpt_VccgDtj_0",
+              "2a0c336c",
+              "8b4b9add_1",
+              "ultrachat_467165"
+            ]
           }
         ],
         "sample_successes": [
@@ -12461,20 +12498,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3156,
-      "rows_successful": 3082,
+      "rows_recorded": 3158,
+      "rows_successful": 3084,
       "rows_failed": 74,
       "complete": false,
-      "doc_recall_any": 0.7929915639195327,
-      "doc_recall_all": 0.682024659312135,
-      "ndcg_at_10": 0.6163121473493002,
-      "exact_match": 0.027903958468526932,
-      "token_f1": 0.07543617524647911,
-      "avg_total_sec": 92.58859951709854,
-      "p50_total_sec": 51.36322003882378,
-      "p95_total_sec": 762.2303552809171,
-      "avg_storage_bytes": 40709085.38708631,
-      "p95_storage_bytes": 393569248.0,
+      "doc_recall_any": 0.7931258106355382,
+      "doc_recall_all": 0.6819066147859922,
+      "ndcg_at_10": 0.6163361257220902,
+      "exact_match": 0.027885862516212712,
+      "token_f1": 0.07538725425085882,
+      "avg_total_sec": 93.16981134663943,
+      "p50_total_sec": 51.36742955818772,
+      "p95_total_sec": 764.9961802978069,
+      "avg_storage_bytes": 40941780.93547341,
+      "p95_storage_bytes": 393640827.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14708,20 +14745,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 296,
-          "rows_recorded": 296,
-          "rows_successful": 296,
+          "expected_total": 298,
+          "rows_recorded": 298,
+          "rows_successful": 298,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.972972972972973,
-          "doc_recall_all": 0.722972972972973,
-          "ndcg_at_10": 0.8665330920026721,
+          "doc_recall_any": 0.9731543624161074,
+          "doc_recall_all": 0.7214765100671141,
+          "ndcg_at_10": 0.8651019088227305,
           "exact_match": 0.0,
-          "token_f1": 0.021424321569957494,
-          "avg_total_sec": 175.59016424834704,
+          "token_f1": 0.021280534176870532,
+          "avg_total_sec": 181.04806409009745,
           "p50_total_sec": 55.77015068894252,
           "p95_total_sec": 1017.7817890248261,
-          "avg_storage_bytes": 73515020.43243243,
+          "avg_storage_bytes": 75703011.04026845,
           "p95_storage_bytes": 413441038.0,
           "categories": {},
           "sample_errors": [],
@@ -16191,20 +16228,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3145,
-      "rows_successful": 3145,
+      "rows_recorded": 3146,
+      "rows_successful": 3146,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8292527821939587,
-      "doc_recall_all": 0.7440381558028617,
-      "ndcg_at_10": 0.6681889280441095,
-      "exact_match": 0.026391096979332274,
-      "token_f1": 0.07367449775927332,
-      "avg_total_sec": 144.79106413771862,
+      "doc_recall_any": 0.8289891926255563,
+      "doc_recall_all": 0.743801652892562,
+      "ndcg_at_10": 0.6679765348692702,
+      "exact_match": 0.026382708200890018,
+      "token_f1": 0.07365107929208982,
+      "avg_total_sec": 145.27044546980105,
       "p50_total_sec": 92.88325583282858,
-      "p95_total_sec": 1224.596639865078,
-      "avg_storage_bytes": 14561822.044833068,
-      "p95_storage_bytes": 126937381.0,
+      "p95_total_sec": 1226.433342628181,
+      "avg_storage_bytes": 14600772.74125874,
+      "p95_storage_bytes": 127122061.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18372,21 +18409,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 299,
-          "rows_recorded": 299,
-          "rows_successful": 299,
+          "expected_total": 300,
+          "rows_recorded": 300,
+          "rows_successful": 300,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9899665551839465,
-          "doc_recall_all": 0.862876254180602,
-          "ndcg_at_10": 0.9264925847709407,
-          "exact_match": 0.013377926421404682,
-          "token_f1": 0.02040815980184763,
-          "avg_total_sec": 227.69057104732516,
-          "p50_total_sec": 99.32162439124659,
-          "p95_total_sec": 1618.5564217898063,
-          "avg_storage_bytes": 20213193.24749164,
-          "p95_storage_bytes": 134271729.0,
+          "doc_recall_any": 0.9866666666666667,
+          "doc_recall_all": 0.86,
+          "ndcg_at_10": 0.9234042761550376,
+          "exact_match": 0.013333333333333334,
+          "token_f1": 0.020340132602508137,
+          "avg_total_sec": 232.44135159339757,
+          "p50_total_sec": 99.53199441311881,
+          "p95_total_sec": 1620.199674306903,
+          "avg_storage_bytes": 20602818.313333333,
+          "p95_storage_bytes": 134383077.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18433,6 +18470,24 @@
               ],
               "retrieved_doc_ids": [
                 "1bab001f"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::92a0aa75",
+              "category": "multi-session",
+              "query": "How long have I been working in my current role?",
+              "gold": "1 year and 5 months",
+              "prediction": "user: Can you give me some tips on how I can best manage my productivity while working remotely?",
+              "expected_doc_ids": [
+                "answer_6cb8f792_2",
+                "answer_6cb8f792_1"
+              ],
+              "retrieved_doc_ids": [
+                "2fd5e208",
+                "sharegpt_VccgDtj_0",
+                "2a0c336c",
+                "8b4b9add_1",
+                "ultrachat_467165"
               ]
             }
           ],
@@ -19866,11 +19921,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.036261218274425966,
-    "doc_recall_all_delta": 0.06201349649072674,
-    "ndcg_at_10_delta": 0.05187678069480928,
-    "token_f1_delta": -0.0017616774872057928,
-    "avg_storage_ratio_nova_over_stock": 0.3577044757053754,
-    "avg_latency_ratio_nova_over_stock": 1.563810932370564
+    "doc_recall_any_delta": 0.03586338199001804,
+    "doc_recall_all_delta": 0.06189503810656971,
+    "ndcg_at_10_delta": 0.051640409147180044,
+    "token_f1_delta": -0.0017361749587690017,
+    "avg_storage_ratio_nova_over_stock": 0.3566228045690146,
+    "avg_latency_ratio_nova_over_stock": 1.5592008116161207
   }
 }
