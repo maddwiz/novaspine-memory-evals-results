@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T17:00:24Z",
+  "generated_at": "2026-04-27T17:25:56Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-27T16:33:26Z",
+    "updated_at": "2026-04-27T17:00:26Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 177,
+    "current_case_index": 178,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::157a136e"
+    "current_case_id": "longmemeval_m::c18a7dc8"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 200,
-        "rows_successful": 197,
+        "rows_recorded": 201,
+        "rows_successful": 198,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9187817258883249,
-        "doc_recall_all": 0.8274111675126904,
-        "ndcg_at_10": 0.8070614361636071,
-        "exact_match": 0.04060913705583756,
-        "token_f1": 0.0887114988567707,
-        "avg_total_sec": 955.7248401113662,
+        "doc_recall_any": 0.9191919191919192,
+        "doc_recall_all": 0.8282828282828283,
+        "ndcg_at_10": 0.8076304227948423,
+        "exact_match": 0.04040404040404041,
+        "token_f1": 0.0882634609837567,
+        "avg_total_sec": 955.9701512104436,
         "p50_total_sec": 996.8315000729635,
         "p95_total_sec": 1049.8592092632316,
-        "avg_storage_bytes": 408636552.21319795,
+        "avg_storage_bytes": 408621176.96464646,
         "p95_storage_bytes": 425571393.0,
         "categories": {
           "single-session-assistant": {
@@ -11243,20 +11243,20 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 0.9197207891481876,
             "exact_match": 0.0,
-            "token_f1": 0.0625,
-            "avg_total_sec": 1004.2655508080497,
-            "p50_total_sec": 991.9767637411132,
+            "token_f1": 0.041666666666666664,
+            "avg_total_sec": 1004.2758464482613,
+            "p50_total_sec": 1004.2964377286844,
             "p95_total_sec": 1016.5543378749862,
-            "avg_storage_bytes": 411854980.0,
+            "avg_storage_bytes": 409767404.3333333,
             "p95_storage_bytes": 413952215.0,
             "categories": {},
             "sample_errors": [],
@@ -11286,6 +11286,18 @@
                   "answer_0b1a0942_1",
                   "13b6b7ab_1",
                   "answer_0b1a0942_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::852ce960",
+                "category": "knowledge-update",
+                "query": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+                "gold": "$400,000",
+                "prediction": "m really looking forward to finally owning a home, it",
+                "retrieved_doc_ids": [
+                  "answer_3a6f1e82_1",
+                  "1a73cecb_1",
+                  "answer_3a6f1e82_2"
                 ]
               }
             ]
@@ -11654,19 +11666,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 177,
-        "rows_successful": 177,
+        "rows_recorded": 178,
+        "rows_successful": 178,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9548022598870056,
-        "doc_recall_all": 0.903954802259887,
-        "ndcg_at_10": 0.8655666053098305,
-        "exact_match": 0.03389830508474576,
-        "token_f1": 0.09000258648164866,
-        "avg_total_sec": 1483.6809745398534,
-        "p50_total_sec": 1580.1362489443272,
+        "doc_recall_any": 0.949438202247191,
+        "doc_recall_all": 0.898876404494382,
+        "ndcg_at_10": 0.8607038715721349,
+        "exact_match": 0.033707865168539325,
+        "token_f1": 0.08949695397332479,
+        "avg_total_sec": 1483.9417880584429,
+        "p50_total_sec": 1579.4105397746898,
         "p95_total_sec": 1693.395001288969,
-        "avg_storage_bytes": 134139523.28248587,
+        "avg_storage_bytes": 134100337.33707865,
         "p95_storage_bytes": 139420569.0,
         "categories": {
           "single-session-assistant": {
@@ -12150,21 +12162,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 51,
-            "rows_recorded": 51,
-            "rows_successful": 51,
+            "expected_total": 52,
+            "rows_recorded": 52,
+            "rows_successful": 52,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9803921568627451,
-            "doc_recall_all": 0.803921568627451,
-            "ndcg_at_10": 0.8546058074105334,
+            "doc_recall_any": 0.9615384615384616,
+            "doc_recall_all": 0.7884615384615384,
+            "ndcg_at_10": 0.8381710803449463,
             "exact_match": 0.0,
-            "token_f1": 0.01440119184293993,
-            "avg_total_sec": 1625.8591842900541,
+            "token_f1": 0.014124245845960316,
+            "avg_total_sec": 1624.017772685414,
             "p50_total_sec": 1620.857623779215,
-            "p95_total_sec": 1711.9032895071432,
-            "avg_storage_bytes": 134060867.74509804,
-            "p95_storage_bytes": 138454481.0,
+            "p95_total_sec": 1697.7072927127592,
+            "avg_storage_bytes": 133928243.84615384,
+            "p95_storage_bytes": 138307169.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -12184,6 +12196,24 @@
                   "2a0c336c",
                   "8b4b9add_1",
                   "ultrachat_467165"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c18a7dc8",
+                "category": "multi-session",
+                "query": "How many years older am I than when I graduated from college?",
+                "gold": "7",
+                "prediction": "user: I'm looking for some gift ideas for my cousin Alex, who graduated with a degree in engineering from college about two weeks ago.",
+                "expected_doc_ids": [
+                  "answer_2e2085fa_2",
+                  "answer_2e2085fa_1"
+                ],
+                "retrieved_doc_ids": [
+                  "cf021b36_3",
+                  "69811d4a",
+                  "sharegpt_s25zmhi_7",
+                  "sharegpt_KILkkOY_0",
+                  "9f1bd693_1"
                 ]
               }
             ],
@@ -12475,6 +12505,24 @@
               "8b4b9add_1",
               "ultrachat_467165"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::c18a7dc8",
+            "category": "multi-session",
+            "query": "How many years older am I than when I graduated from college?",
+            "gold": "7",
+            "prediction": "user: I'm looking for some gift ideas for my cousin Alex, who graduated with a degree in engineering from college about two weeks ago.",
+            "expected_doc_ids": [
+              "answer_2e2085fa_2",
+              "answer_2e2085fa_1"
+            ],
+            "retrieved_doc_ids": [
+              "cf021b36_3",
+              "69811d4a",
+              "sharegpt_s25zmhi_7",
+              "sharegpt_KILkkOY_0",
+              "9f1bd693_1"
+            ]
           }
         ],
         "sample_successes": [
@@ -12651,20 +12699,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3186,
-      "rows_successful": 3111,
+      "rows_recorded": 3187,
+      "rows_successful": 3112,
       "rows_failed": 75,
       "complete": false,
-      "doc_recall_any": 0.7933140469302475,
-      "doc_recall_all": 0.681131468981035,
-      "ndcg_at_10": 0.6169333530948319,
-      "exact_match": 0.027643844423015106,
-      "token_f1": 0.0749382636512842,
-      "avg_total_sec": 101.13370694850782,
-      "p50_total_sec": 51.42899370286614,
-      "p95_total_sec": 815.4697632240131,
-      "avg_storage_bytes": 44158480.99646416,
-      "p95_storage_bytes": 399083317.0,
+      "doc_recall_any": 0.7933804627249358,
+      "doc_recall_all": 0.6812339331619537,
+      "ndcg_at_10": 0.6170306498287822,
+      "exact_match": 0.027634961439588688,
+      "token_f1": 0.07491418323237313,
+      "avg_total_sec": 101.4239263350053,
+      "p50_total_sec": 51.43079808820039,
+      "p95_total_sec": 943.6964644677937,
+      "avg_storage_bytes": 44274622.95404884,
+      "p95_storage_bytes": 399515378.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15253,21 +15301,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 146,
-          "rows_recorded": 146,
-          "rows_successful": 146,
+          "expected_total": 147,
+          "rows_recorded": 147,
+          "rows_successful": 147,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9794520547945206,
-          "ndcg_at_10": 0.9851020433648758,
-          "exact_match": 0.10273972602739725,
-          "token_f1": 0.16939163814176142,
-          "avg_total_sec": 46.817182549176586,
-          "p50_total_sec": 13.683304972946644,
-          "p95_total_sec": 59.24236504081637,
-          "avg_storage_bytes": 21403543.842465755,
-          "p95_storage_bytes": 28801902.0,
+          "doc_recall_all": 0.9795918367346939,
+          "ndcg_at_10": 0.9846572729280276,
+          "exact_match": 0.10204081632653061,
+          "token_f1": 0.16823931407276985,
+          "avg_total_sec": 53.33064687012562,
+          "p50_total_sec": 13.835109166800976,
+          "p95_total_sec": 59.25515552191064,
+          "avg_storage_bytes": 24017072.476190478,
+          "p95_storage_bytes": 29039157.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -16446,19 +16494,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3163,
-      "rows_successful": 3163,
+      "rows_recorded": 3164,
+      "rows_successful": 3164,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8299083148909263,
-      "doc_recall_all": 0.7445463167878597,
-      "ndcg_at_10": 0.6691657105799225,
-      "exact_match": 0.026240910527979767,
-      "token_f1": 0.07330078875491514,
-      "avg_total_sec": 153.29322710326264,
-      "p50_total_sec": 93.03041626606137,
-      "p95_total_sec": 1264.9935334930196,
-      "avg_storage_bytes": 15245290.725576984,
+      "doc_recall_any": 0.8296460176991151,
+      "doc_recall_all": 0.7443109987357776,
+      "ndcg_at_10": 0.6689542169925079,
+      "exact_match": 0.026232616940581543,
+      "token_f1": 0.07327762162825428,
+      "avg_total_sec": 153.72837645653237,
+      "p50_total_sec": 93.0418487819843,
+      "p95_total_sec": 1265.9014111803845,
+      "avg_storage_bytes": 15280663.397597978,
       "p95_storage_bytes": 130038249.0,
       "categories": {
         "category_2": {
@@ -18627,20 +18675,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 317,
-          "rows_recorded": 317,
-          "rows_successful": 317,
+          "expected_total": 318,
+          "rows_recorded": 318,
+          "rows_successful": 318,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9873817034700315,
-          "doc_recall_all": 0.861198738170347,
-          "ndcg_at_10": 0.9215717561895339,
-          "exact_match": 0.012618296529968454,
-          "token_f1": 0.019703909020928796,
-          "avg_total_sec": 307.81722825755475,
+          "doc_recall_any": 0.9842767295597484,
+          "doc_recall_all": 0.8584905660377359,
+          "ndcg_at_10": 0.9186737317990008,
+          "exact_match": 0.012578616352201259,
+          "token_f1": 0.01964194704287556,
+          "avg_total_sec": 311.6609029512378,
           "p50_total_sec": 99.97132539888844,
           "p95_total_sec": 1639.3620704347268,
-          "avg_storage_bytes": 26711889.637223974,
+          "avg_storage_bytes": 27027778.11320755,
           "p95_storage_bytes": 134971937.0,
           "categories": {},
           "sample_errors": [],
@@ -18706,6 +18754,24 @@
                 "2a0c336c",
                 "8b4b9add_1",
                 "ultrachat_467165"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::c18a7dc8",
+              "category": "multi-session",
+              "query": "How many years older am I than when I graduated from college?",
+              "gold": "7",
+              "prediction": "user: I'm looking for some gift ideas for my cousin Alex, who graduated with a degree in engineering from college about two weeks ago.",
+              "expected_doc_ids": [
+                "answer_2e2085fa_2",
+                "answer_2e2085fa_1"
+              ],
+              "retrieved_doc_ids": [
+                "cf021b36_3",
+                "69811d4a",
+                "sharegpt_s25zmhi_7",
+                "sharegpt_KILkkOY_0",
+                "9f1bd693_1"
               ]
             }
           ],
@@ -20139,11 +20205,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03659426796067877,
-    "doc_recall_all_delta": 0.0634148478068246,
-    "ndcg_at_10_delta": 0.052232357485090586,
-    "token_f1_delta": -0.0016374748963690622,
-    "avg_storage_ratio_nova_over_stock": 0.3452403792331013,
-    "avg_latency_ratio_nova_over_stock": 1.515748129170345
+    "doc_recall_any_delta": 0.03626555497417927,
+    "doc_recall_all_delta": 0.06307706557382387,
+    "ndcg_at_10_delta": 0.0519235671637257,
+    "token_f1_delta": -0.0016365616041188469,
+    "avg_storage_ratio_nova_over_stock": 0.34513367654101246,
+    "avg_latency_ratio_nova_over_stock": 1.5157012946704942
   }
 }
