@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T13:48:24Z",
+  "generated_at": "2026-04-27T14:16:58Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-27T13:20:49Z",
+    "updated_at": "2026-04-27T13:48:25Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 170,
+    "current_case_index": 171,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::60159905"
+    "current_case_id": "longmemeval_m::ef9cf60a"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 188,
-        "rows_successful": 186,
+        "rows_recorded": 190,
+        "rows_successful": 188,
         "rows_failed": 2,
         "complete": false,
-        "doc_recall_any": 0.9247311827956989,
-        "doc_recall_all": 0.8387096774193549,
-        "ndcg_at_10": 0.8151548030323686,
-        "exact_match": 0.043010752688172046,
-        "token_f1": 0.09158800337447767,
-        "avg_total_sec": 952.2829828614204,
-        "p50_total_sec": 996.3979415660724,
+        "doc_recall_any": 0.9202127659574468,
+        "doc_recall_all": 0.8351063829787234,
+        "ndcg_at_10": 0.8113750752828126,
+        "exact_match": 0.0425531914893617,
+        "token_f1": 0.09061366291304705,
+        "avg_total_sec": 952.6601318840874,
+        "p50_total_sec": 996.5781568773091,
         "p95_total_sec": 1049.0071944040246,
-        "avg_storage_bytes": 408251106.6505376,
+        "avg_storage_bytes": 408276093.12234044,
         "p95_storage_bytes": 425315471.0,
         "categories": {
           "single-session-assistant": {
@@ -10946,20 +10946,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 61,
-            "rows_recorded": 61,
-            "rows_successful": 61,
+            "expected_total": 63,
+            "rows_recorded": 63,
+            "rows_successful": 63,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9016393442622951,
-            "doc_recall_all": 0.639344262295082,
-            "ndcg_at_10": 0.7450219001780628,
+            "doc_recall_any": 0.8888888888888888,
+            "doc_recall_all": 0.6349206349206349,
+            "ndcg_at_10": 0.735969153968413,
             "exact_match": 0.0,
-            "token_f1": 0.009388820852734587,
-            "avg_total_sec": 1005.2652390620625,
+            "token_f1": 0.00909076304788587,
+            "avg_total_sec": 1004.7087232503183,
             "p50_total_sec": 1009.22954248311,
             "p95_total_sec": 1049.0071944040246,
-            "avg_storage_bytes": 408612147.91803277,
+            "avg_storage_bytes": 408675249.0952381,
             "p95_storage_bytes": 423817076.0,
             "categories": {},
             "sample_errors": [],
@@ -11064,6 +11064,21 @@
                   "cb8ca3f9_2",
                   "ad175dc4_3",
                   "f0e71553_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::efc3f7c2",
+                "category": "multi-session",
+                "query": "How much earlier do I wake up on Fridays compared to other weekdays?",
+                "gold": "30 minutes",
+                "prediction": "For example, you could set your wake-up window as 7:15-8:15 AM, allowing you to wake up earlier on jogging days and sleep in a bit later on other days.",
+                "expected_doc_ids": [
+                  "answer_fc81d1a2_1",
+                  "answer_fc81d1a2_2"
+                ],
+                "retrieved_doc_ids": [
+                  "2b17e4d3",
+                  "sharegpt_mnEu7tF_5"
                 ]
               }
             ],
@@ -11569,19 +11584,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 170,
-        "rows_successful": 170,
+        "rows_recorded": 171,
+        "rows_successful": 171,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9529411764705882,
-        "doc_recall_all": 0.9058823529411765,
-        "ndcg_at_10": 0.8658984606022141,
-        "exact_match": 0.03529411764705882,
-        "token_f1": 0.09370857533677537,
-        "avg_total_sec": 1477.075320884035,
-        "p50_total_sec": 1571.4977313042618,
-        "p95_total_sec": 1687.5650923009962,
-        "avg_storage_bytes": 134138635.32941176,
+        "doc_recall_any": 0.9532163742690059,
+        "doc_recall_all": 0.9064327485380117,
+        "ndcg_at_10": 0.8662132110615473,
+        "exact_match": 0.03508771929824561,
+        "token_f1": 0.09316057197223282,
+        "avg_total_sec": 1478.4546977094788,
+        "p50_total_sec": 1572.3510223501362,
+        "p95_total_sec": 1697.7072927127592,
+        "avg_storage_bytes": 134120652.76608187,
         "p95_storage_bytes": 140007989.0,
         "categories": {
           "single-session-assistant": {
@@ -12065,20 +12080,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 44,
-            "rows_recorded": 44,
-            "rows_successful": 44,
+            "expected_total": 45,
+            "rows_recorded": 45,
+            "rows_successful": 45,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9772727272727273,
-            "doc_recall_all": 0.7954545454545454,
-            "ndcg_at_10": 0.8541442122834905,
+            "doc_recall_any": 0.9777777777777777,
+            "doc_recall_all": 0.8,
+            "ndcg_at_10": 0.8556014695471503,
             "exact_match": 0.0,
-            "token_f1": 0.01669229054522583,
-            "avg_total_sec": 1622.9566012619232,
+            "token_f1": 0.01632135075533192,
+            "avg_total_sec": 1624.9564269679909,
             "p50_total_sec": 1620.857623779215,
-            "p95_total_sec": 1697.7072927127592,
-            "avg_storage_bytes": 134044923.63636364,
+            "p95_total_sec": 1711.9032895071432,
+            "avg_storage_bytes": 133978672.37777779,
             "p95_storage_bytes": 138307169.0,
             "categories": {},
             "sample_errors": [],
@@ -12566,20 +12581,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3174,
-      "rows_successful": 3100,
+      "rows_recorded": 3176,
+      "rows_successful": 3102,
       "rows_failed": 74,
       "complete": false,
-      "doc_recall_any": 0.7932258064516129,
-      "doc_recall_all": 0.6812903225806451,
-      "ndcg_at_10": 0.616744307070262,
-      "exact_match": 0.027741935483870966,
-      "token_f1": 0.07506198115226263,
-      "avg_total_sec": 97.89477536357835,
+      "doc_recall_any": 0.793036750483559,
+      "doc_recall_all": 0.6811734364925854,
+      "ndcg_at_10": 0.6166431569010188,
+      "exact_match": 0.027724049000644745,
+      "token_f1": 0.07501358529078471,
+      "avg_total_sec": 98.46849568313253,
       "p50_total_sec": 51.41382088186219,
-      "p95_total_sec": 775.8655950222164,
-      "avg_storage_bytes": 42842044.977741934,
-      "p95_storage_bytes": 396703423.0,
+      "p95_total_sec": 780.1005446589552,
+      "avg_storage_bytes": 43079155.09381045,
+      "p95_storage_bytes": 397311832.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14813,21 +14828,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 314,
-          "rows_recorded": 314,
-          "rows_successful": 314,
+          "expected_total": 316,
+          "rows_recorded": 316,
+          "rows_successful": 316,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.964968152866242,
-          "doc_recall_all": 0.7133757961783439,
-          "ndcg_at_10": 0.8564557612103815,
+          "doc_recall_any": 0.9620253164556962,
+          "doc_recall_all": 0.7120253164556962,
+          "ndcg_at_10": 0.8539456639531898,
           "exact_match": 0.0,
-          "token_f1": 0.020826269576665637,
-          "avg_total_sec": 223.21792526403146,
-          "p50_total_sec": 55.928915684111416,
+          "token_f1": 0.020694457743901933,
+          "avg_total_sec": 228.0566408699054,
+          "p50_total_sec": 56.014510735403746,
           "p95_total_sec": 1021.1144501911476,
-          "avg_storage_bytes": 92692306.7388535,
-          "p95_storage_bytes": 415530764.0,
+          "avg_storage_bytes": 94704379.70253165,
+          "p95_storage_bytes": 415589221.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15005,6 +15020,21 @@
                 "cb8ca3f9_2",
                 "ad175dc4_3",
                 "f0e71553_4"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::efc3f7c2",
+              "category": "multi-session",
+              "query": "How much earlier do I wake up on Fridays compared to other weekdays?",
+              "gold": "30 minutes",
+              "prediction": "For example, you could set your wake-up window as 7:15-8:15 AM, allowing you to wake up earlier on jogging days and sleep in a bit later on other days.",
+              "expected_doc_ids": [
+                "answer_fc81d1a2_1",
+                "answer_fc81d1a2_2"
+              ],
+              "retrieved_doc_ids": [
+                "2b17e4d3",
+                "sharegpt_mnEu7tF_5"
               ]
             }
           ],
@@ -16346,20 +16376,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3156,
-      "rows_successful": 3156,
+      "rows_recorded": 3157,
+      "rows_successful": 3157,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.829531051964512,
-      "doc_recall_all": 0.7442965779467681,
-      "ndcg_at_10": 0.6687479694951938,
-      "exact_match": 0.026299112801013942,
-      "token_f1": 0.07346336971856672,
-      "avg_total_sec": 149.98661260594156,
+      "doc_recall_any": 0.8295850490972442,
+      "doc_recall_all": 0.7443775736458663,
+      "ndcg_at_10": 0.6688274667456381,
+      "exact_match": 0.026290782388343363,
+      "token_f1": 0.07344009972499099,
+      "avg_total_sec": 150.48169089084146,
       "p50_total_sec": 92.99828701419756,
-      "p95_total_sec": 1244.5862357048318,
-      "avg_storage_bytes": 14981535.788973384,
-      "p95_storage_bytes": 129227773.0,
+      "p95_total_sec": 1248.8368275789544,
+      "avg_storage_bytes": 15018305.532784289,
+      "p95_storage_bytes": 129299061.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18527,21 +18557,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 310,
-          "rows_recorded": 310,
-          "rows_successful": 310,
+          "expected_total": 311,
+          "rows_recorded": 311,
+          "rows_successful": 311,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9870967741935484,
-          "doc_recall_all": 0.8612903225806452,
-          "ndcg_at_10": 0.9230183737890925,
-          "exact_match": 0.012903225806451613,
-          "token_f1": 0.02014883599882074,
-          "avg_total_sec": 277.64301101411843,
-          "p50_total_sec": 99.85855929087847,
+          "doc_recall_any": 0.9871382636655949,
+          "doc_recall_all": 0.8617363344051447,
+          "ndcg_at_10": 0.9230077706230445,
+          "exact_match": 0.012861736334405145,
+          "token_f1": 0.02008404874480524,
+          "avg_total_sec": 282.25814203347807,
+          "p50_total_sec": 99.88858134299517,
           "p95_total_sec": 1637.2243933952413,
-          "avg_storage_bytes": 24285617.419354837,
-          "p95_storage_bytes": 134969345.0,
+          "avg_storage_bytes": 24628955.03858521,
+          "p95_storage_bytes": 134839425.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -20039,11 +20069,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.036305245512899154,
-    "doc_recall_all_delta": 0.06300625536612292,
-    "ndcg_at_10_delta": 0.05200366242493182,
-    "token_f1_delta": -0.0015986114336959123,
-    "avg_storage_ratio_nova_over_stock": 0.3496923593809973,
-    "avg_latency_ratio_nova_over_stock": 1.5321207086782276
+    "doc_recall_any_delta": 0.03654829861368514,
+    "doc_recall_all_delta": 0.06320413715328088,
+    "ndcg_at_10_delta": 0.0521843098446193,
+    "token_f1_delta": -0.001573485565793717,
+    "avg_storage_ratio_nova_over_stock": 0.3486211718888168,
+    "avg_latency_ratio_nova_over_stock": 1.528221690063035
   }
 }
