@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T05:40:12Z",
+  "generated_at": "2026-04-27T06:05:53Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-27T05:11:40Z",
+    "updated_at": "2026-04-27T05:40:13Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 152,
+    "current_case_index": 153,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::3fdac837"
+    "current_case_id": "longmemeval_m::91b15a6e"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 159,
-        "rows_successful": 157,
+        "rows_recorded": 160,
+        "rows_successful": 158,
         "rows_failed": 2,
         "complete": false,
-        "doc_recall_any": 0.9363057324840764,
-        "doc_recall_all": 0.8853503184713376,
-        "ndcg_at_10": 0.8360876355898315,
-        "exact_match": 0.050955414012738856,
-        "token_f1": 0.10632751456309088,
-        "avg_total_sec": 941.4651510776139,
+        "doc_recall_any": 0.930379746835443,
+        "doc_recall_all": 0.879746835443038,
+        "ndcg_at_10": 0.8307959416936933,
+        "exact_match": 0.05063291139240506,
+        "token_f1": 0.10565455561015993,
+        "avg_total_sec": 942.0586591481815,
         "p50_total_sec": 990.2083816002123,
         "p95_total_sec": 1045.0668665268458,
-        "avg_storage_bytes": 408032446.17834395,
+        "avg_storage_bytes": 408122405.98101264,
         "p95_storage_bytes": 423611048.0,
         "categories": {
           "single-session-assistant": {
@@ -10946,21 +10946,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 32,
-            "rows_recorded": 32,
-            "rows_successful": 32,
+            "expected_total": 33,
+            "rows_recorded": 33,
+            "rows_successful": 33,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9375,
-            "doc_recall_all": 0.6875,
-            "ndcg_at_10": 0.7841656667013999,
+            "doc_recall_any": 0.9090909090909091,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.7604030707407514,
             "exact_match": 0.0,
-            "token_f1": 0.007211538461538462,
-            "avg_total_sec": 1000.2054215545941,
+            "token_f1": 0.006993006993006993,
+            "avg_total_sec": 1001.2670580598271,
             "p50_total_sec": 1006.2083533820696,
-            "p95_total_sec": 1032.5924383229576,
-            "avg_storage_bytes": 407866538.625,
-            "p95_storage_bytes": 420078086.0,
+            "p95_total_sec": 1035.2394262272865,
+            "avg_storage_bytes": 408302282.75757575,
+            "p95_storage_bytes": 421903813.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -10996,6 +10996,24 @@
                   "9387c33f_3",
                   "133a2b6d",
                   "47db3b56_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::92a0aa75",
+                "category": "multi-session",
+                "query": "How long have I been working in my current role?",
+                "gold": "1 year and 5 months",
+                "prediction": "t have direct experience in the field, highlight the skills you",
+                "expected_doc_ids": [
+                  "answer_6cb8f792_2",
+                  "answer_6cb8f792_1"
+                ],
+                "retrieved_doc_ids": [
+                  "44bbd8cd_3",
+                  "2fd5e208",
+                  "0418a4b1_4",
+                  "sharegpt_hGQUdgE_27",
+                  "2a0c336c"
                 ]
               }
             ],
@@ -11319,6 +11337,24 @@
               "133a2b6d",
               "47db3b56_2"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::92a0aa75",
+            "category": "multi-session",
+            "query": "How long have I been working in my current role?",
+            "gold": "1 year and 5 months",
+            "prediction": "t have direct experience in the field, highlight the skills you",
+            "expected_doc_ids": [
+              "answer_6cb8f792_2",
+              "answer_6cb8f792_1"
+            ],
+            "retrieved_doc_ids": [
+              "44bbd8cd_3",
+              "2fd5e208",
+              "0418a4b1_4",
+              "sharegpt_hGQUdgE_27",
+              "2a0c336c"
+            ]
           }
         ],
         "sample_successes": [
@@ -11465,19 +11501,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 152,
-        "rows_successful": 152,
+        "rows_recorded": 153,
+        "rows_successful": 153,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9539473684210527,
-        "doc_recall_all": 0.9144736842105263,
-        "ndcg_at_10": 0.8684739872593239,
-        "exact_match": 0.039473684210526314,
-        "token_f1": 0.1034190247480471,
-        "avg_total_sec": 1459.4707294244588,
+        "doc_recall_any": 0.954248366013072,
+        "doc_recall_all": 0.9150326797385621,
+        "ndcg_at_10": 0.8693336344014198,
+        "exact_match": 0.0392156862745098,
+        "token_f1": 0.10274308340982456,
+        "avg_total_sec": 1459.9926159669815,
         "p50_total_sec": 1519.4497034419328,
         "p95_total_sec": 1687.5650923009962,
-        "avg_storage_bytes": 134112423.65789473,
+        "avg_storage_bytes": 134080497.8366013,
         "p95_storage_bytes": 140007989.0,
         "categories": {
           "single-session-assistant": {
@@ -11961,20 +11997,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 26,
-            "rows_recorded": 26,
-            "rows_successful": 26,
+            "expected_total": 27,
+            "rows_recorded": 27,
+            "rows_successful": 27,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.7692307692307693,
-            "ndcg_at_10": 0.8610635808274778,
+            "doc_recall_all": 0.7777777777777778,
+            "ndcg_at_10": 0.8662093741301639,
             "exact_match": 0.0,
-            "token_f1": 0.020142105324664702,
-            "avg_total_sec": 1621.0321837598638,
+            "token_f1": 0.019396101423751193,
+            "avg_total_sec": 1618.005783266181,
             "p50_total_sec": 1616.371186858043,
             "p95_total_sec": 1711.9032895071432,
-            "avg_storage_bytes": 133826808.84615384,
+            "avg_storage_bytes": 133656474.18518518,
             "p95_storage_bytes": 138307169.0,
             "categories": {},
             "sample_errors": [],
@@ -12425,20 +12461,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3145,
-      "rows_successful": 3071,
+      "rows_recorded": 3146,
+      "rows_successful": 3072,
       "rows_failed": 74,
       "complete": false,
-      "doc_recall_any": 0.7925757082383589,
-      "doc_recall_all": 0.6821882123086942,
-      "ndcg_at_10": 0.6159408392515126,
-      "exact_match": 0.02800390752197981,
-      "token_f1": 0.07565945709240203,
-      "avg_total_sec": 89.27359086097495,
-      "p50_total_sec": 51.347267837263644,
-      "p95_total_sec": 729.51175120892,
-      "avg_storage_bytes": 39380243.45294692,
-      "p95_storage_bytes": 386843403.0,
+      "doc_recall_any": 0.7923177083333334,
+      "doc_recall_all": 0.6819661458333334,
+      "ndcg_at_10": 0.6157403376762354,
+      "exact_match": 0.027994791666666668,
+      "token_f1": 0.07563482836287976,
+      "avg_total_sec": 89.58152244800824,
+      "p50_total_sec": 51.348967351950705,
+      "p95_total_sec": 731.5221541607752,
+      "avg_storage_bytes": 39504874.2639974,
+      "p95_storage_bytes": 386912383.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14672,21 +14708,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 285,
-          "rows_recorded": 285,
-          "rows_successful": 285,
+          "expected_total": 286,
+          "rows_recorded": 286,
+          "rows_successful": 286,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9754385964912281,
-          "doc_recall_all": 0.7263157894736842,
-          "ndcg_at_10": 0.8721897348899746,
+          "doc_recall_any": 0.972027972027972,
+          "doc_recall_all": 0.7237762237762237,
+          "ndcg_at_10": 0.8691401204323175,
           "exact_match": 0.0,
-          "token_f1": 0.021745613353773445,
-          "avg_total_sec": 143.07306119251604,
+          "token_f1": 0.021669579740648363,
+          "avg_total_sec": 146.19252400732293,
           "p50_total_sec": 55.397749572992325,
-          "p95_total_sec": 1008.8440835759975,
-          "avg_storage_bytes": 60462359.750877194,
-          "p95_storage_bytes": 411742369.0,
+          "p95_total_sec": 1010.6669201417826,
+          "avg_storage_bytes": 61727337.84615385,
+          "p95_storage_bytes": 411954949.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14796,6 +14832,24 @@
                 "9387c33f_3",
                 "133a2b6d",
                 "47db3b56_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::92a0aa75",
+              "category": "multi-session",
+              "query": "How long have I been working in my current role?",
+              "gold": "1 year and 5 months",
+              "prediction": "t have direct experience in the field, highlight the skills you",
+              "expected_doc_ids": [
+                "answer_6cb8f792_2",
+                "answer_6cb8f792_1"
+              ],
+              "retrieved_doc_ids": [
+                "44bbd8cd_3",
+                "2fd5e208",
+                "0418a4b1_4",
+                "sharegpt_hGQUdgE_27",
+                "2a0c336c"
               ]
             }
           ],
@@ -16137,20 +16191,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3138,
-      "rows_successful": 3138,
+      "rows_recorded": 3139,
+      "rows_successful": 3139,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8288718929254302,
-      "doc_recall_all": 0.7437858508604207,
-      "ndcg_at_10": 0.6677418417743378,
-      "exact_match": 0.026449968132568516,
-      "token_f1": 0.07381759999561757,
-      "avg_total_sec": 141.5215091480508,
-      "p50_total_sec": 92.80278475303203,
-      "p95_total_sec": 114.39226249791682,
-      "avg_storage_bytes": 14296764.608030593,
-      "p95_storage_bytes": 12664925.0,
+      "doc_recall_any": 0.828926409684613,
+      "doc_recall_all": 0.7438674737177445,
+      "ndcg_at_10": 0.6678476901840944,
+      "exact_match": 0.026441541892322395,
+      "token_f1": 0.07379408371654919,
+      "avg_total_sec": 141.96680951800377,
+      "p50_total_sec": 92.86037085903808,
+      "p95_total_sec": 114.96562579274178,
+      "avg_storage_bytes": 14333378.50047786,
+      "p95_storage_bytes": 12677069.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18318,20 +18372,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 292,
-          "rows_recorded": 292,
-          "rows_successful": 292,
+          "expected_total": 293,
+          "rows_recorded": 293,
+          "rows_successful": 293,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9897260273972602,
-          "doc_recall_all": 0.863013698630137,
-          "ndcg_at_10": 0.9278801494371899,
-          "exact_match": 0.0136986301369863,
-          "token_f1": 0.020669086007143064,
-          "avg_total_sec": 194.54136896098817,
+          "doc_recall_any": 0.9897610921501706,
+          "doc_recall_all": 0.863481228668942,
+          "ndcg_at_10": 0.9281262922718753,
+          "exact_match": 0.013651877133105802,
+          "token_f1": 0.020598543051487284,
+          "avg_total_sec": 199.13105497282928,
           "p50_total_sec": 99.17625564755872,
           "p95_total_sec": 1605.580383978784,
-          "avg_storage_bytes": 17500211.60958904,
+          "avg_storage_bytes": 17881534.3447099,
           "p95_storage_bytes": 133537069.0,
           "categories": {},
           "sample_errors": [],
@@ -19812,11 +19866,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0362961846870713,
-    "doc_recall_all_delta": 0.06159763855172651,
-    "ndcg_at_10_delta": 0.05180100252282527,
-    "token_f1_delta": -0.0018418570967844577,
-    "avg_storage_ratio_nova_over_stock": 0.36304408897606066,
-    "avg_latency_ratio_nova_over_stock": 1.5852561522751014
+    "doc_recall_any_delta": 0.03660870135127958,
+    "doc_recall_all_delta": 0.06190132788441116,
+    "ndcg_at_10_delta": 0.05210735250785903,
+    "token_f1_delta": -0.0018407446463305638,
+    "avg_storage_ratio_nova_over_stock": 0.36282556943968114,
+    "avg_latency_ratio_nova_over_stock": 1.5847778162109174
   }
 }
