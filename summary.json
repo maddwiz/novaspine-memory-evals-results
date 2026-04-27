@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T03:23:20Z",
+  "generated_at": "2026-04-27T03:49:57Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-27T02:58:01Z",
+    "updated_at": "2026-04-27T03:23:22Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 147,
+    "current_case_index": 148,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::4bc144e2"
+    "current_case_id": "longmemeval_m::ef66a6e5"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,9 +10466,9 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 151,
+        "rows_recorded": 152,
         "rows_successful": 150,
-        "rows_failed": 1,
+        "rows_failed": 2,
         "complete": false,
         "doc_recall_any": 0.94,
         "doc_recall_all": 0.8933333333333333,
@@ -11132,6 +11132,11 @@
             "case_id": "longmemeval_m::76d63226",
             "query": "What size is my new Samsung TV?",
             "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\n[memory] embeddings: batch rejected; splitting 7 texts into 3+4\n[memory] embeddings: batch rejected; splitting 4 texts into 2+2\n[memory] embeddings: batch rejected; splitting 2 texts into 1+1\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"in"
+          },
+          {
+            "case_id": "longmemeval_m::3fdac837",
+            "query": "What is the total number of days I spent in Japan and Chicago?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\n[memory] embeddings: batch rejected; splitting 7 texts into 3+4\n[memory] embeddings: batch rejected; splitting 4 texts into 2+2\n[memory] embeddings: batch rejected; splitting 2 texts into 1+1\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"in"
           }
         ],
         "sample_misses": [
@@ -11428,19 +11433,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 147,
-        "rows_successful": 147,
+        "rows_recorded": 148,
+        "rows_successful": 148,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9523809523809523,
-        "doc_recall_all": 0.9387755102040817,
-        "ndcg_at_10": 0.8784410254971372,
-        "exact_match": 0.04081632653061224,
-        "token_f1": 0.10578124610277571,
-        "avg_total_sec": 1453.3033386477186,
-        "p50_total_sec": 1368.1000118833035,
+        "doc_recall_any": 0.9527027027027027,
+        "doc_recall_all": 0.9324324324324325,
+        "ndcg_at_10": 0.8742898572341335,
+        "exact_match": 0.04054054054054054,
+        "token_f1": 0.10506650795343264,
+        "avg_total_sec": 1454.2601829389475,
+        "p50_total_sec": 1426.4236469874159,
         "p95_total_sec": 1683.1957828686573,
-        "avg_storage_bytes": 134125537.57142857,
+        "avg_storage_bytes": 134110000.72972973,
         "p95_storage_bytes": 140068421.0,
         "categories": {
           "single-session-assistant": {
@@ -11924,20 +11929,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 21,
-            "rows_recorded": 21,
-            "rows_successful": 21,
+            "expected_total": 22,
+            "rows_recorded": 22,
+            "rows_successful": 22,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.9047619047619048,
-            "ndcg_at_10": 0.9290684660083987,
+            "doc_recall_all": 0.8636363636363636,
+            "ndcg_at_10": 0.8988411776704074,
             "exact_match": 0.0,
-            "token_f1": 0.01684981684981685,
-            "avg_total_sec": 1616.3274612596836,
-            "p50_total_sec": 1616.371186858043,
+            "token_f1": 0.016083916083916083,
+            "avg_total_sec": 1615.354226372861,
+            "p50_total_sec": 1610.782314511016,
             "p95_total_sec": 1697.7072927127592,
-            "avg_storage_bytes": 133850602.71428572,
+            "avg_storage_bytes": 133758579.18181819,
             "p95_storage_bytes": 138307169.0,
             "categories": {},
             "sample_errors": [],
@@ -12388,9 +12393,9 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3137,
+      "rows_recorded": 3138,
       "rows_successful": 3064,
-      "rows_failed": 73,
+      "rows_failed": 74,
       "complete": false,
       "doc_recall_any": 0.7924281984334204,
       "doc_recall_all": 0.6821148825065274,
@@ -16084,20 +16089,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3133,
-      "rows_successful": 3133,
+      "rows_recorded": 3134,
+      "rows_successful": 3134,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8285987871050112,
-      "doc_recall_all": 0.7446536865624003,
-      "ndcg_at_10": 0.6678891427298226,
-      "exact_match": 0.026492180019150973,
-      "token_f1": 0.07388119380837944,
-      "avg_total_sec": 139.12880166462824,
+      "doc_recall_any": 0.8286534779834078,
+      "doc_recall_all": 0.7444160816847479,
+      "ndcg_at_10": 0.6677602910960774,
+      "exact_match": 0.026483726866624122,
+      "token_f1": 0.07385761971973605,
+      "avg_total_sec": 139.59331586120928,
       "p50_total_sec": 92.7796443272382,
-      "p95_total_sec": 113.60535525111482,
-      "avg_storage_bytes": 14106164.36865624,
-      "p95_storage_bytes": 12238185.0,
+      "p95_total_sec": 113.66123728919774,
+      "avg_storage_bytes": 14143726.56413529,
+      "p95_storage_bytes": 12254389.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18265,21 +18270,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 287,
-          "rows_recorded": 287,
-          "rows_successful": 287,
+          "expected_total": 288,
+          "rows_recorded": 288,
+          "rows_successful": 288,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9895470383275261,
-          "doc_recall_all": 0.8745644599303136,
-          "ndcg_at_10": 0.9340201683634892,
-          "exact_match": 0.013937282229965157,
-          "token_f1": 0.020437367698573683,
-          "avg_total_sec": 169.345364617789,
-          "p50_total_sec": 98.85019116057083,
-          "p95_total_sec": 1584.8333001639694,
-          "avg_storage_bytes": 15475356.853658536,
-          "p95_storage_bytes": 131712225.0,
+          "doc_recall_any": 0.9895833333333334,
+          "doc_recall_all": 0.8715277777777778,
+          "ndcg_at_10": 0.9316939459822708,
+          "exact_match": 0.013888888888888888,
+          "token_f1": 0.020366404616286967,
+          "avg_total_sec": 174.29526367727442,
+          "p50_total_sec": 98.85224213311449,
+          "p95_total_sec": 1594.9162937495857,
+          "avg_storage_bytes": 15879352.4375,
+          "p95_storage_bytes": 131826085.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19759,11 +19764,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03617058867159084,
-    "doc_recall_all_delta": 0.06253880405587287,
-    "ndcg_at_10_delta": 0.05221032278423254,
-    "token_f1_delta": -0.0019260090812561748,
-    "avg_storage_ratio_nova_over_stock": 0.3660190314964076,
-    "avg_latency_ratio_nova_over_stock": 1.5954429311161789
+    "doc_recall_any_delta": 0.036225279549987444,
+    "doc_recall_all_delta": 0.06230119917822052,
+    "ndcg_at_10_delta": 0.052081471150487335,
+    "token_f1_delta": -0.0019495831698995714,
+    "avg_storage_ratio_nova_over_stock": 0.36699367478361256,
+    "avg_latency_ratio_nova_over_stock": 1.600769692235884
   }
 }
