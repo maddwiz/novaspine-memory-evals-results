@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T16:29:34Z",
+  "generated_at": "2026-04-28T16:57:30Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-28T16:02:47Z",
+    "updated_at": "2026-04-28T16:29:35Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 227,
+    "current_case_index": 228,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::6a27ffc2"
+    "current_case_id": "longmemeval_m::2133c1b5"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 280,
-        "rows_successful": 277,
+        "rows_recorded": 282,
+        "rows_successful": 279,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9422382671480144,
-        "doc_recall_all": 0.7833935018050542,
-        "ndcg_at_10": 0.810553092511111,
-        "exact_match": 0.05776173285198556,
-        "token_f1": 0.11079533342246836,
-        "avg_total_sec": 982.409761681023,
+        "doc_recall_any": 0.9390681003584229,
+        "doc_recall_all": 0.7777777777777778,
+        "ndcg_at_10": 0.8072656799806877,
+        "exact_match": 0.05734767025089606,
+        "token_f1": 0.11000110164166214,
+        "avg_total_sec": 982.6207287988899,
         "p50_total_sec": 999.6742887571454,
         "p95_total_sec": 1052.258725526277,
-        "avg_storage_bytes": 408621169.7075812,
+        "avg_storage_bytes": 408634104.390681,
         "p95_storage_bytes": 425571393.0,
         "categories": {
           "single-session-assistant": {
@@ -11413,24 +11413,42 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.6,
-            "ndcg_at_10": 0.7859121363004111,
+            "doc_recall_any": 0.8571428571428571,
+            "doc_recall_all": 0.42857142857142855,
+            "ndcg_at_10": 0.6619255386480273,
             "exact_match": 0.0,
-            "token_f1": 0.08275862068965517,
-            "avg_total_sec": 999.9443339711986,
-            "p50_total_sec": 992.1381024071015,
+            "token_f1": 0.059113300492610835,
+            "avg_total_sec": 1003.3430027289849,
+            "p50_total_sec": 999.1419252469204,
             "p95_total_sec": 1048.7114476659335,
-            "avg_storage_bytes": 406218255.4,
+            "avg_storage_bytes": 407420341.85714287,
             "p95_storage_bytes": 426523836.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::af082822",
+                "category": "temporal-reasoning",
+                "query": "How many weeks ago did I attend the friends and family sale at Nordstrom?",
+                "gold": "2",
+                "prediction": "user: I'm thinking of stocking up on some skincare products, especially since I got a bunch of freebies from Sephora during their VIB sale in November, including a Drunk Elephant sample set and a Sunday Riley moisturizer.",
+                "expected_doc_ids": [
+                  "answer_b51b6115_1"
+                ],
+                "retrieved_doc_ids": [
+                  "407031a9_1",
+                  "0320f558_4",
+                  "f1df385d_1",
+                  "6e4930a9_2",
+                  "a76e7e3c_1"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::gpt4_59149c77",
@@ -11493,6 +11511,18 @@
                 "retrieved_doc_ids": [
                   "answer_ff201786_2",
                   "answer_ff201786_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::0bc8ad92",
+                "category": "temporal-reasoning",
+                "query": "How many months have passed since I last visited a museum with a friend?",
+                "gold": "5",
+                "prediction": "user: I was thinking about my recent visits to various museums in the past few months, and I realized that I've been trying to take advantage of the many museum events and exhibits in my area.",
+                "retrieved_doc_ids": [
+                  "answer_f4ea84fb_3",
+                  "5b6acaf5",
+                  "answer_f4ea84fb_1"
                 ]
               }
             ]
@@ -11861,19 +11891,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 227,
-        "rows_successful": 227,
+        "rows_recorded": 228,
+        "rows_successful": 228,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9515418502202643,
-        "doc_recall_all": 0.8854625550660793,
-        "ndcg_at_10": 0.8587928494174953,
-        "exact_match": 0.04405286343612335,
-        "token_f1": 0.09495213078905032,
-        "avg_total_sec": 1528.986381737624,
-        "p50_total_sec": 1595.1382696088403,
+        "doc_recall_any": 0.9473684210526315,
+        "doc_recall_all": 0.881578947368421,
+        "ndcg_at_10": 0.8550262141130327,
+        "exact_match": 0.043859649122807015,
+        "token_f1": 0.09453567407506326,
+        "avg_total_sec": 1529.6246370816514,
+        "p50_total_sec": 1595.4026857786812,
         "p95_total_sec": 1718.9774202196859,
-        "avg_storage_bytes": 134204362.63876653,
+        "avg_storage_bytes": 134227469.07017544,
         "p95_storage_bytes": 139907309.0,
         "categories": {
           "single-session-assistant": {
@@ -12588,20 +12618,20 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 30,
-            "rows_recorded": 30,
-            "rows_successful": 30,
+            "expected_total": 31,
+            "rows_recorded": 31,
+            "rows_successful": 31,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9666666666666667,
-            "doc_recall_all": 0.9,
-            "ndcg_at_10": 0.9153758671351488,
-            "exact_match": 0.13333333333333333,
-            "token_f1": 0.15838069636456734,
-            "avg_total_sec": 1619.2569625319136,
-            "p50_total_sec": 1606.5681678489782,
-            "p95_total_sec": 1702.4113654280081,
-            "avg_storage_bytes": 133835815.53333333,
+            "doc_recall_any": 0.9354838709677419,
+            "doc_recall_all": 0.8709677419354839,
+            "ndcg_at_10": 0.8858476133565957,
+            "exact_match": 0.12903225806451613,
+            "token_f1": 0.15327164164312967,
+            "avg_total_sec": 1621.0392734236534,
+            "p50_total_sec": 1606.717367039062,
+            "p95_total_sec": 1690.322718193289,
+            "avg_storage_bytes": 134017648.22580644,
             "p95_storage_bytes": 139344501.0,
             "categories": {},
             "sample_errors": [],
@@ -12618,6 +12648,20 @@
                 ],
                 "retrieved_doc_ids": [
                   "9764990c_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::2133c1b5",
+                "category": "knowledge-update",
+                "query": "How long have I been living in my current apartment in Harajuku?",
+                "gold": "3 months",
+                "prediction": "User location mood for something",
+                "expected_doc_ids": [
+                  "answer_52382508_1",
+                  "answer_52382508_2"
+                ],
+                "retrieved_doc_ids": [
+                  "e87aa998_2"
                 ]
               }
             ],
@@ -12962,6 +13006,20 @@
             "retrieved_doc_ids": [
               "9764990c_3"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::2133c1b5",
+            "category": "knowledge-update",
+            "query": "How long have I been living in my current apartment in Harajuku?",
+            "gold": "3 months",
+            "prediction": "User location mood for something",
+            "expected_doc_ids": [
+              "answer_52382508_1",
+              "answer_52382508_2"
+            ],
+            "retrieved_doc_ids": [
+              "e87aa998_2"
+            ]
           }
         ],
         "sample_successes": [
@@ -13138,20 +13196,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3266,
-      "rows_successful": 3191,
+      "rows_recorded": 3268,
+      "rows_successful": 3193,
       "rows_failed": 75,
       "complete": false,
-      "doc_recall_any": 0.7984957693513005,
-      "doc_recall_all": 0.6809777499216546,
-      "ndcg_at_10": 0.6220030602254369,
-      "exact_match": 0.0294578502036979,
-      "token_f1": 0.07720058925176593,
-      "avg_total_sec": 124.87517167048325,
-      "p50_total_sec": 51.66209901822731,
-      "p95_total_sec": 992.9580662199296,
-      "avg_storage_bytes": 53294797.1178314,
-      "p95_storage_bytes": 404716318.0,
+      "doc_recall_any": 0.7983088005010961,
+      "doc_recall_all": 0.6805512057626057,
+      "ndcg_at_10": 0.6218339127054191,
+      "exact_match": 0.02943939868462261,
+      "token_f1": 0.07715223310441124,
+      "avg_total_sec": 125.4307397900905,
+      "p50_total_sec": 51.66870555700734,
+      "p95_total_sec": 994.6741435308941,
+      "avg_storage_bytes": 53518493.1785155,
+      "p95_storage_bytes": 404879181.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15133,21 +15191,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 252,
-          "rows_recorded": 252,
-          "rows_successful": 252,
+          "expected_total": 254,
+          "rows_recorded": 254,
+          "rows_successful": 254,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9722222222222222,
-          "doc_recall_all": 0.7777777777777778,
-          "ndcg_at_10": 0.8879809431728041,
-          "exact_match": 0.09523809523809523,
-          "token_f1": 0.13464079314073452,
-          "avg_total_sec": 53.10213010805836,
+          "doc_recall_any": 0.968503937007874,
+          "doc_recall_all": 0.7716535433070866,
+          "ndcg_at_10": 0.8837602983014989,
+          "exact_match": 0.09448818897637795,
+          "token_f1": 0.13358062941521692,
+          "avg_total_sec": 60.65124463180161,
           "p50_total_sec": 16.91986333904788,
-          "p95_total_sec": 59.85712923575193,
-          "avg_storage_bytes": 23885498.503968254,
-          "p95_storage_bytes": 29034050.0,
+          "p95_total_sec": 60.198380887974054,
+          "avg_storage_bytes": 26929121.01968504,
+          "p95_storage_bytes": 29202227.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15247,6 +15305,23 @@
                 "96c743d0_2",
                 "41dc5d45_1",
                 "7285299a_8"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::af082822",
+              "category": "temporal-reasoning",
+              "query": "How many weeks ago did I attend the friends and family sale at Nordstrom?",
+              "gold": "2",
+              "prediction": "user: I'm thinking of stocking up on some skincare products, especially since I got a bunch of freebies from Sephora during their VIB sale in November, including a Drunk Elephant sample set and a Sunday Riley moisturizer.",
+              "expected_doc_ids": [
+                "answer_b51b6115_1"
+              ],
+              "retrieved_doc_ids": [
+                "407031a9_1",
+                "0320f558_4",
+                "f1df385d_1",
+                "6e4930a9_2",
+                "a76e7e3c_1"
               ]
             }
           ],
@@ -16933,20 +17008,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3213,
-      "rows_successful": 3213,
+      "rows_recorded": 3214,
+      "rows_successful": 3214,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8316215375038905,
-      "doc_recall_all": 0.7457205104263928,
-      "ndcg_at_10": 0.6717434890265256,
-      "exact_match": 0.02707749766573296,
-      "token_f1": 0.07391038615426679,
-      "avg_total_sec": 177.19727777420053,
+      "doc_recall_any": 0.8313627878033603,
+      "doc_recall_all": 0.7454884878655881,
+      "ndcg_at_10": 0.6715344835850114,
+      "exact_match": 0.027069072806471688,
+      "token_f1": 0.07388738976778444,
+      "avg_total_sec": 177.66314937420103,
       "p50_total_sec": 93.3239457369782,
-      "p95_total_sec": 1333.3288155049086,
-      "avg_storage_bytes": 17100077.5795207,
-      "p95_storage_bytes": 132696453.0,
+      "p95_total_sec": 1333.8514346359298,
+      "avg_storage_bytes": 17138152.424393278,
+      "p95_storage_bytes": 132786385.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -19376,21 +19451,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 186,
-          "rows_recorded": 186,
-          "rows_successful": 186,
+          "expected_total": 187,
+          "rows_recorded": 187,
+          "rows_successful": 187,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9731182795698925,
-          "doc_recall_all": 0.946236559139785,
-          "ndcg_at_10": 0.9525400875163075,
-          "exact_match": 0.11290322580645161,
-          "token_f1": 0.1541861937759018,
-          "avg_total_sec": 306.53825603118565,
-          "p50_total_sec": 98.93737440789118,
-          "p95_total_sec": 1633.7027392713353,
-          "avg_storage_bytes": 26650011.795698926,
-          "p95_storage_bytes": 135364469.0,
+          "doc_recall_any": 0.9679144385026738,
+          "doc_recall_all": 0.9411764705882353,
+          "ndcg_at_10": 0.947446290256862,
+          "exact_match": 0.11229946524064172,
+          "token_f1": 0.1533616686754959,
+          "avg_total_sec": 313.85360546511436,
+          "p50_total_sec": 98.98670811019838,
+          "p95_total_sec": 1634.3399311481044,
+          "avg_storage_bytes": 27253341.29946524,
+          "p95_storage_bytes": 135433993.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19462,6 +19537,20 @@
               ],
               "retrieved_doc_ids": [
                 "9764990c_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::2133c1b5",
+              "category": "knowledge-update",
+              "query": "How long have I been living in my current apartment in Harajuku?",
+              "gold": "3 months",
+              "prediction": "User location mood for something",
+              "expected_doc_ids": [
+                "answer_52382508_1",
+                "answer_52382508_2"
+              ],
+              "retrieved_doc_ids": [
+                "e87aa998_2"
               ]
             }
           ],
@@ -20672,11 +20761,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03312576815258994,
-    "doc_recall_all_delta": 0.06474276050473815,
-    "ndcg_at_10_delta": 0.04974042880108864,
-    "token_f1_delta": -0.003290203097499139,
-    "avg_storage_ratio_nova_over_stock": 0.32085829207142896,
-    "avg_latency_ratio_nova_over_stock": 1.4189952686654417
+    "doc_recall_any_delta": 0.033053987302264165,
+    "doc_recall_all_delta": 0.06493728210298233,
+    "ndcg_at_10_delta": 0.04970057087959234,
+    "token_f1_delta": -0.0032648433366267993,
+    "avg_storage_ratio_nova_over_stock": 0.32022860522674856,
+    "avg_latency_ratio_nova_over_stock": 1.4164243125052276
   }
 }
