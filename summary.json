@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T07:32:01Z",
+  "generated_at": "2026-04-28T07:59:35Z",
   "manifest": {
     "generated_at": "2026-04-22T23:44:02Z",
     "top_k": 10,
@@ -112,12 +112,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-28T07:06:03Z",
+    "updated_at": "2026-04-28T07:32:03Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 207,
+    "current_case_index": 208,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::9ea5eabc"
+    "current_case_id": "longmemeval_m::07741c44"
   },
   "benchmarks": {
     "locomo": {
@@ -10466,19 +10466,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 248,
-        "rows_successful": 245,
+        "rows_recorded": 250,
+        "rows_successful": 247,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9346938775510204,
-        "doc_recall_all": 0.8040816326530612,
-        "ndcg_at_10": 0.8146976562597875,
-        "exact_match": 0.0653061224489796,
-        "token_f1": 0.11091491812871064,
-        "avg_total_sec": 979.14228651512,
-        "p50_total_sec": 999.0006331196055,
+        "doc_recall_any": 0.9352226720647774,
+        "doc_recall_all": 0.8016194331983806,
+        "ndcg_at_10": 0.8146318743984349,
+        "exact_match": 0.06477732793522267,
+        "token_f1": 0.1127544348895732,
+        "avg_total_sec": 979.3923931945274,
+        "p50_total_sec": 999.000764999073,
         "p95_total_sec": 1056.4613778130151,
-        "avg_storage_bytes": 408597115.1020408,
+        "avg_storage_bytes": 408609177.4008097,
         "p95_storage_bytes": 425571393.0,
         "categories": {
           "single-session-assistant": {
@@ -11243,21 +11243,21 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 50,
-            "rows_recorded": 50,
-            "rows_successful": 50,
+            "expected_total": 52,
+            "rows_recorded": 52,
+            "rows_successful": 52,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.72,
-            "ndcg_at_10": 0.8489852887542745,
-            "exact_match": 0.16,
-            "token_f1": 0.19645979333500554,
-            "avg_total_sec": 1072.4119559176265,
-            "p50_total_sec": 1005.8948484137654,
-            "p95_total_sec": 1676.4040940571576,
-            "avg_storage_bytes": 408572047.48,
-            "p95_storage_bytes": 425431740.0,
+            "doc_recall_all": 0.7115384615384616,
+            "ndcg_at_10": 0.8473540698169072,
+            "exact_match": 0.15384615384615385,
+            "token_f1": 0.20190731044116833,
+            "avg_total_sec": 1070.0126676677924,
+            "p50_total_sec": 1007.990220954176,
+            "p95_total_sec": 1660.7566713448614,
+            "avg_storage_bytes": 408630307.53846157,
+            "p95_storage_bytes": 425219571.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -11776,19 +11776,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 207,
-        "rows_successful": 207,
+        "rows_recorded": 208,
+        "rows_successful": 208,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9516908212560387,
-        "doc_recall_all": 0.8840579710144928,
-        "ndcg_at_10": 0.854769514854004,
-        "exact_match": 0.033816425120772944,
-        "token_f1": 0.08611382734561833,
-        "avg_total_sec": 1521.0656766174586,
-        "p50_total_sec": 1590.5821940428577,
+        "doc_recall_any": 0.9471153846153846,
+        "doc_recall_all": 0.8798076923076923,
+        "ndcg_at_10": 0.8506600460325905,
+        "exact_match": 0.03365384615384615,
+        "token_f1": 0.08569981856030286,
+        "avg_total_sec": 1521.696628663445,
+        "p50_total_sec": 1592.928173250053,
         "p95_total_sec": 1719.1590481363237,
-        "avg_storage_bytes": 134275312.71014494,
+        "avg_storage_bytes": 134291499.90384614,
         "p95_storage_bytes": 140007989.0,
         "categories": {
           "single-session-assistant": {
@@ -12503,24 +12503,39 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.9,
-            "ndcg_at_10": 0.9452588771061834,
-            "exact_match": 0.1,
-            "token_f1": 0.10228494623655915,
-            "avg_total_sec": 1635.8395281330681,
-            "p50_total_sec": 1634.3399311481044,
+            "doc_recall_any": 0.9090909090909091,
+            "doc_recall_all": 0.8181818181818182,
+            "ndcg_at_10": 0.8593262519147121,
+            "exact_match": 0.09090909090909091,
+            "token_f1": 0.09298631476050832,
+            "avg_total_sec": 1637.3362712284804,
+            "p50_total_sec": 1647.5742761883885,
             "p95_total_sec": 1769.1577253188007,
-            "avg_storage_bytes": 134567387.8,
+            "avg_storage_bytes": 134846920.63636363,
             "p95_storage_bytes": 140836029.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::07741c44",
+                "category": "knowledge-update",
+                "query": "Where do I initially keep my old sneakers?",
+                "gold": "under my bed",
+                "prediction": "User location previous/historical: consequences of, serious danger, city where; current: need of",
+                "expected_doc_ids": [
+                  "answer_7e9ad7b4_1",
+                  "answer_7e9ad7b4_2"
+                ],
+                "retrieved_doc_ids": [
+                  "9764990c_3"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::6a1eabeb",
@@ -12821,6 +12836,20 @@
             "retrieved_doc_ids": [
               "ef785bb4_1"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::07741c44",
+            "category": "knowledge-update",
+            "query": "Where do I initially keep my old sneakers?",
+            "gold": "under my bed",
+            "prediction": "User location previous/historical: consequences of, serious danger, city where; current: need of",
+            "expected_doc_ids": [
+              "answer_7e9ad7b4_1",
+              "answer_7e9ad7b4_2"
+            ],
+            "retrieved_doc_ids": [
+              "9764990c_3"
+            ]
           }
         ],
         "sample_successes": [
@@ -12997,20 +13026,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3234,
-      "rows_successful": 3159,
+      "rows_recorded": 3236,
+      "rows_successful": 3161,
       "rows_failed": 75,
       "complete": false,
-      "doc_recall_any": 0.796454574232352,
-      "doc_recall_all": 0.6815447926559037,
-      "ndcg_at_10": 0.6204145249564544,
-      "exact_match": 0.029756251978474202,
-      "token_f1": 0.07686955615254683,
-      "avg_total_sec": 115.9351152298427,
-      "p50_total_sec": 51.58345437422395,
-      "p95_total_sec": 985.2747364509851,
-      "avg_storage_bytes": 49693550.742006965,
-      "p95_storage_bytes": 403277786.0,
+      "doc_recall_any": 0.7965833596962987,
+      "doc_recall_all": 0.6814299272382157,
+      "ndcg_at_10": 0.6205323098798498,
+      "exact_match": 0.029737424865548878,
+      "token_f1": 0.07703483655871114,
+      "avg_total_sec": 116.50081934005597,
+      "p50_total_sec": 51.585985423997045,
+      "p95_total_sec": 986.3580025057308,
+      "avg_storage_bytes": 49921575.581145205,
+      "p95_storage_bytes": 403290695.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15599,20 +15628,20 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 194,
-          "rows_recorded": 194,
-          "rows_successful": 194,
+          "expected_total": 196,
+          "rows_recorded": 196,
+          "rows_successful": 196,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9123711340206185,
-          "ndcg_at_10": 0.9506944391272639,
-          "exact_match": 0.11855670103092783,
-          "token_f1": 0.17746994245076003,
-          "avg_total_sec": 301.2751306517784,
-          "p50_total_sec": 55.74149286095053,
+          "doc_recall_all": 0.9081632653061225,
+          "ndcg_at_10": 0.949223818282932,
+          "exact_match": 0.11734693877551021,
+          "token_f1": 0.1791089760797853,
+          "avg_total_sec": 308.5073279045351,
+          "p50_total_sec": 55.8592155999504,
           "p95_total_sec": 1038.809665713925,
-          "avg_storage_bytes": 117163968.11855671,
+          "avg_storage_bytes": 120152976.69897959,
           "p95_storage_bytes": 417734950.0,
           "categories": {},
           "sample_errors": [],
@@ -16792,20 +16821,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3193,
-      "rows_successful": 3193,
+      "rows_recorded": 3194,
+      "rows_successful": 3194,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8308800501096147,
-      "doc_recall_all": 0.7447541497024741,
-      "ndcg_at_10": 0.6703110375819712,
-      "exact_match": 0.02630754776072659,
-      "token_f1": 0.07320560578925392,
-      "avg_total_sec": 168.21657998555577,
+      "doc_recall_any": 0.8306199123356293,
+      "doc_recall_all": 0.7445209768315592,
+      "ndcg_at_10": 0.6701011718845441,
+      "exact_match": 0.026299311208515967,
+      "token_f1": 0.07318268606295797,
+      "avg_total_sec": 168.68122842707018,
       "p50_total_sec": 93.16257541812956,
-      "p95_total_sec": 1301.7420548852533,
-      "avg_storage_bytes": 16371170.89727529,
-      "p95_storage_bytes": 131826085.0,
+      "p95_total_sec": 1302.4226441327482,
+      "avg_storage_bytes": 16409139.299937382,
+      "p95_storage_bytes": 131847033.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -19235,21 +19264,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 166,
-          "rows_recorded": 166,
-          "rows_successful": 166,
+          "expected_total": 167,
+          "rows_recorded": 167,
+          "rows_successful": 167,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9759036144578314,
-          "doc_recall_all": 0.9518072289156626,
-          "ndcg_at_10": 0.9588178857532563,
-          "exact_match": 0.10843373493975904,
-          "token_f1": 0.15030156996232713,
-          "avg_total_sec": 149.37832546490245,
-          "p50_total_sec": 96.41227267216891,
-          "p95_total_sec": 1562.8590616290458,
-          "avg_storage_bytes": 13780130.156626506,
-          "p95_storage_bytes": 129909329.0,
+          "doc_recall_any": 0.9700598802395209,
+          "doc_recall_all": 0.9461077844311377,
+          "ndcg_at_10": 0.953076461287668,
+          "exact_match": 0.10778443113772455,
+          "token_f1": 0.1494015605613551,
+          "avg_total_sec": 158.37787861890064,
+          "p50_total_sec": 96.89723532414064,
+          "p95_total_sec": 1567.7050506053492,
+          "avg_storage_bytes": 14521819.491017964,
+          "p95_storage_bytes": 130414469.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19307,6 +19336,20 @@
               ],
               "retrieved_doc_ids": [
                 "8bfbebd5"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::07741c44",
+              "category": "knowledge-update",
+              "query": "Where do I initially keep my old sneakers?",
+              "gold": "under my bed",
+              "prediction": "User location previous/historical: consequences of, serious danger, city where; current: need of",
+              "expected_doc_ids": [
+                "answer_7e9ad7b4_1",
+                "answer_7e9ad7b4_2"
+              ],
+              "retrieved_doc_ids": [
+                "9764990c_3"
               ]
             }
           ],
@@ -20517,11 +20560,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.034425475877262746,
-    "doc_recall_all_delta": 0.06320935704657038,
-    "ndcg_at_10_delta": 0.049896512625516753,
-    "token_f1_delta": -0.003663950363292909,
-    "avg_storage_ratio_nova_over_stock": 0.32944256654689813,
-    "avg_latency_ratio_nova_over_stock": 1.450954524451582
+    "doc_recall_any_delta": 0.034036552639330586,
+    "doc_recall_all_delta": 0.06309104959334344,
+    "ndcg_at_10_delta": 0.04956886200469435,
+    "token_f1_delta": -0.0038521504957531733,
+    "avg_storage_ratio_nova_over_stock": 0.32869834553328725,
+    "avg_latency_ratio_nova_over_stock": 1.447897357139644
   }
 }
