@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T20:32:53Z",
+  "generated_at": "2026-04-29T20:48:00Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T20:30:50Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T20:46:41Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 10,
+    "current_case_index": 15,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::f8c5f88b"
+    "current_case_id": "longmemeval_s::726462e0"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,40 +7226,58 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 10,
-        "rows_successful": 10,
+        "rows_recorded": 15,
+        "rows_successful": 15,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 1.0,
-        "doc_recall_all": 1.0,
-        "ndcg_at_10": 1.0,
-        "exact_match": 0.0,
-        "token_f1": 0.008695652173913042,
-        "avg_total_sec": 80.5563547931146,
+        "doc_recall_any": 0.9333333333333333,
+        "doc_recall_all": 0.9333333333333333,
+        "ndcg_at_10": 0.895378437204893,
+        "exact_match": 0.06666666666666667,
+        "token_f1": 0.14246376811594205,
+        "avg_total_sec": 80.59173548528925,
         "p50_total_sec": 80.8156461189501,
         "p95_total_sec": 82.88822485413402,
-        "avg_storage_bytes": 44651235.2,
-        "p95_storage_bytes": 45613700.0,
+        "avg_storage_bytes": 44691602.46666667,
+        "p95_storage_bytes": 45565891.0,
         "categories": {
           "single-session-user": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.008695652173913042,
-            "avg_total_sec": 80.5563547931146,
+            "doc_recall_any": 0.9333333333333333,
+            "doc_recall_all": 0.9333333333333333,
+            "ndcg_at_10": 0.895378437204893,
+            "exact_match": 0.06666666666666667,
+            "token_f1": 0.14246376811594205,
+            "avg_total_sec": 80.59173548528925,
             "p50_total_sec": 80.8156461189501,
             "p95_total_sec": 82.88822485413402,
-            "avg_storage_bytes": 44651235.2,
-            "p95_storage_bytes": 45613700.0,
+            "avg_storage_bytes": 44691602.46666667,
+            "p95_storage_bytes": 45565891.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::5d3d2817",
+                "category": "single-session-user",
+                "query": "What was my previous occupation?",
+                "gold": "Marketing specialist at a small startup",
+                "prediction": "you have any suggestions for managing my time effectively",
+                "expected_doc_ids": [
+                  "answer_235eb6fb"
+                ],
+                "retrieved_doc_ids": [
+                  "ultrachat_371333",
+                  "sharegpt_BKl952A_23",
+                  "72f053da_2",
+                  "e7b0637e_3",
+                  "sharegpt_ipLglky_48"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_s::e47becba",
@@ -7371,12 +7389,50 @@
                   "answer_c3567066",
                   "91880423"
                 ]
+              },
+              {
+                "case_id": "longmemeval_s::7527f7e2",
+                "category": "single-session-user",
+                "query": "How much did I spend on a designer handbag?",
+                "gold": "$800",
+                "prediction": "$800, to be exact",
+                "retrieved_doc_ids": [
+                  "answer_7cb94507"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::c960da58",
+                "category": "single-session-user",
+                "query": "How many playlists do I have on Spotify?",
+                "gold": "20",
+                "prediction": "20",
+                "retrieved_doc_ids": [
+                  "answer_e05e4612"
+                ]
               }
             ]
           }
         },
         "sample_errors": [],
-        "sample_misses": [],
+        "sample_misses": [
+          {
+            "case_id": "longmemeval_s::5d3d2817",
+            "category": "single-session-user",
+            "query": "What was my previous occupation?",
+            "gold": "Marketing specialist at a small startup",
+            "prediction": "you have any suggestions for managing my time effectively",
+            "expected_doc_ids": [
+              "answer_235eb6fb"
+            ],
+            "retrieved_doc_ids": [
+              "ultrachat_371333",
+              "sharegpt_BKl952A_23",
+              "72f053da_2",
+              "e7b0637e_3",
+              "sharegpt_ipLglky_48"
+            ]
+          }
+        ],
         "sample_successes": [
           {
             "case_id": "longmemeval_s::e47becba",
@@ -7488,42 +7544,62 @@
               "answer_c3567066",
               "91880423"
             ]
+          },
+          {
+            "case_id": "longmemeval_s::7527f7e2",
+            "category": "single-session-user",
+            "query": "How much did I spend on a designer handbag?",
+            "gold": "$800",
+            "prediction": "$800, to be exact",
+            "retrieved_doc_ids": [
+              "answer_7cb94507"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::c960da58",
+            "category": "single-session-user",
+            "query": "How many playlists do I have on Spotify?",
+            "gold": "20",
+            "prediction": "20",
+            "retrieved_doc_ids": [
+              "answer_e05e4612"
+            ]
           }
         ]
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 10,
-        "rows_successful": 10,
+        "rows_recorded": 14,
+        "rows_successful": 14,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9,
-        "doc_recall_all": 0.9,
-        "ndcg_at_10": 0.9,
+        "doc_recall_any": 0.9285714285714286,
+        "doc_recall_all": 0.9285714285714286,
+        "ndcg_at_10": 0.8758471076530654,
         "exact_match": 0.0,
-        "token_f1": 0.03985605038236617,
-        "avg_total_sec": 124.40163653912023,
+        "token_f1": 0.07489717884454727,
+        "avg_total_sec": 124.73727903694713,
         "p50_total_sec": 124.10872000269592,
         "p95_total_sec": 130.38080241996795,
-        "avg_storage_bytes": 15174018.6,
-        "p95_storage_bytes": 15803369.0,
+        "avg_storage_bytes": 15164512.42857143,
+        "p95_storage_bytes": 15511149.0,
         "categories": {
           "single-session-user": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9,
-            "doc_recall_all": 0.9,
-            "ndcg_at_10": 0.9,
+            "doc_recall_any": 0.9285714285714286,
+            "doc_recall_all": 0.9285714285714286,
+            "ndcg_at_10": 0.8758471076530654,
             "exact_match": 0.0,
-            "token_f1": 0.03985605038236617,
-            "avg_total_sec": 124.40163653912023,
+            "token_f1": 0.07489717884454727,
+            "avg_total_sec": 124.73727903694713,
             "p50_total_sec": 124.10872000269592,
             "p95_total_sec": 130.38080241996795,
-            "avg_storage_bytes": 15174018.6,
-            "p95_storage_bytes": 15803369.0,
+            "avg_storage_bytes": 15164512.42857143,
+            "p95_storage_bytes": 15511149.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -7664,6 +7740,47 @@
                   "6e015703",
                   "e82ce7cd_1",
                   "13f3da23_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::5d3d2817",
+                "category": "single-session-user",
+                "query": "What was my previous occupation?",
+                "gold": "Marketing specialist at a small startup",
+                "prediction": "wondering if you could recommend some project management tools that can help me stay on top of my tasks and deadlines",
+                "retrieved_doc_ids": [
+                  "e93efd9a_1",
+                  "answer_235eb6fb",
+                  "sharegpt_ebWP6Hz_0",
+                  "sharegpt_bTDMt3m_64",
+                  "25d1830a_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::7527f7e2",
+                "category": "single-session-user",
+                "query": "How much did I spend on a designer handbag?",
+                "gold": "$800",
+                "prediction": "$800, to be exact",
+                "retrieved_doc_ids": [
+                  "answer_7cb94507",
+                  "88fed3ed_2",
+                  "44bbd8cd_2",
+                  "eae6a7c0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::c960da58",
+                "category": "single-session-user",
+                "query": "How many playlists do I have on Spotify?",
+                "gold": "20",
+                "prediction": "1",
+                "retrieved_doc_ids": [
+                  "answer_e05e4612",
+                  "89d3053f",
+                  "ae15e8b6_2",
+                  "b65f51fb_5",
+                  "705b5399_3"
                 ]
               }
             ]
@@ -7809,6 +7926,47 @@
               "e82ce7cd_1",
               "13f3da23_3"
             ]
+          },
+          {
+            "case_id": "longmemeval_s::5d3d2817",
+            "category": "single-session-user",
+            "query": "What was my previous occupation?",
+            "gold": "Marketing specialist at a small startup",
+            "prediction": "wondering if you could recommend some project management tools that can help me stay on top of my tasks and deadlines",
+            "retrieved_doc_ids": [
+              "e93efd9a_1",
+              "answer_235eb6fb",
+              "sharegpt_ebWP6Hz_0",
+              "sharegpt_bTDMt3m_64",
+              "25d1830a_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::7527f7e2",
+            "category": "single-session-user",
+            "query": "How much did I spend on a designer handbag?",
+            "gold": "$800",
+            "prediction": "$800, to be exact",
+            "retrieved_doc_ids": [
+              "answer_7cb94507",
+              "88fed3ed_2",
+              "44bbd8cd_2",
+              "eae6a7c0"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::c960da58",
+            "category": "single-session-user",
+            "query": "How many playlists do I have on Spotify?",
+            "gold": "20",
+            "prediction": "1",
+            "retrieved_doc_ids": [
+              "answer_e05e4612",
+              "89d3053f",
+              "ae15e8b6_2",
+              "b65f51fb_5",
+              "705b5399_3"
+            ]
           }
         ]
       }
@@ -7861,19 +8019,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2496,
-      "rows_successful": 2496,
+      "rows_recorded": 2501,
+      "rows_successful": 2501,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7532051282051282,
-      "doc_recall_all": 0.640625,
-      "ndcg_at_10": 0.5543010539069396,
-      "exact_match": 0.05608974358974359,
-      "token_f1": 0.1026706457556671,
-      "avg_total_sec": 8.31324185565105,
-      "p50_total_sec": 6.368778648786247,
-      "p95_total_sec": 15.199222289957106,
-      "avg_storage_bytes": 18272793.404647436,
+      "doc_recall_any": 0.7532986805277889,
+      "doc_recall_all": 0.6409436225509796,
+      "ndcg_at_10": 0.554564616997119,
+      "exact_match": 0.056377449020391844,
+      "token_f1": 0.10328505869897844,
+      "avg_total_sec": 8.45788250941752,
+      "p50_total_sec": 6.368800083640963,
+      "p95_total_sec": 15.254246858879924,
+      "avg_storage_bytes": 18325771.30067973,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -10683,21 +10841,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 80,
-          "rows_recorded": 80,
-          "rows_successful": 80,
+          "expected_total": 85,
+          "rows_recorded": 85,
+          "rows_successful": 85,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9625,
-          "doc_recall_all": 0.9625,
-          "ndcg_at_10": 0.9625,
-          "exact_match": 0.1125,
-          "token_f1": 0.1499662561219069,
-          "avg_total_sec": 21.43155288589769,
-          "p50_total_sec": 13.034561166074127,
-          "p95_total_sec": 81.00428263517097,
-          "avg_storage_bytes": 10258775.9875,
-          "p95_storage_bytes": 44625272.0,
+          "doc_recall_any": 0.9529411764705882,
+          "doc_recall_all": 0.9529411764705882,
+          "ndcg_at_10": 0.9462432536243928,
+          "exact_match": 0.11764705882352941,
+          "token_f1": 0.1652623587029712,
+          "avg_total_sec": 24.91572606141186,
+          "p50_total_sec": 13.044412053190172,
+          "p95_total_sec": 81.8407804761082,
+          "avg_storage_bytes": 12288985.45882353,
+          "p95_storage_bytes": 44863771.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -10733,6 +10891,23 @@
                 "answer_f5b33470_abs"
               ],
               "retrieved_doc_ids": []
+            },
+            {
+              "case_id": "longmemeval_s::5d3d2817",
+              "category": "single-session-user",
+              "query": "What was my previous occupation?",
+              "gold": "Marketing specialist at a small startup",
+              "prediction": "you have any suggestions for managing my time effectively",
+              "expected_doc_ids": [
+                "answer_235eb6fb"
+              ],
+              "retrieved_doc_ids": [
+                "ultrachat_371333",
+                "sharegpt_BKl952A_23",
+                "72f053da_2",
+                "e7b0637e_3",
+                "sharegpt_ipLglky_48"
+              ]
             }
           ],
           "sample_successes": [
@@ -11240,19 +11415,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2496,
-      "rows_successful": 2496,
+      "rows_recorded": 2500,
+      "rows_successful": 2500,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7952724358974359,
-      "doc_recall_all": 0.7107371794871795,
-      "ndcg_at_10": 0.6128040837676358,
-      "exact_match": 0.05809294871794872,
-      "token_f1": 0.10530499498917954,
-      "avg_total_sec": 1.871275381988828,
-      "p50_total_sec": 0.06828541308641434,
-      "p95_total_sec": 7.7933585196733475,
-      "avg_storage_bytes": 11180212.974358974,
+      "doc_recall_any": 0.7956,
+      "doc_recall_all": 0.7112,
+      "ndcg_at_10": 0.6131283410364647,
+      "exact_match": 0.058,
+      "token_f1": 0.10539650699719687,
+      "avg_total_sec": 2.0692035578280685,
+      "p50_total_sec": 0.0683324639685452,
+      "p95_total_sec": 7.845642088912427,
+      "avg_storage_bytes": 11186549.8288,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -14009,21 +14184,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 80,
-          "rows_recorded": 80,
-          "rows_successful": 80,
+          "expected_total": 84,
+          "rows_recorded": 84,
+          "rows_successful": 84,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9875,
-          "doc_recall_all": 0.9875,
-          "ndcg_at_10": 0.9875,
-          "exact_match": 0.1125,
-          "token_f1": 0.15605296765877766,
-          "avg_total_sec": 18.801049964199773,
-          "p50_total_sec": 3.973692721221596,
-          "p95_total_sec": 124.23124803323299,
-          "avg_storage_bytes": 2545644.3,
-          "p95_storage_bytes": 15187097.0,
+          "doc_recall_any": 0.9880952380952381,
+          "doc_recall_all": 0.9880952380952381,
+          "ndcg_at_10": 0.9793078512755109,
+          "exact_match": 0.10714285714285714,
+          "token_f1": 0.15635996919883585,
+          "avg_total_sec": 23.885589741214755,
+          "p50_total_sec": 3.986836278811097,
+          "p95_total_sec": 125.72378488210961,
+          "avg_storage_bytes": 3145411.095238095,
+          "p95_storage_bytes": 15269125.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14551,11 +14726,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04206730769230771,
-    "doc_recall_all_delta": 0.07011217948717952,
-    "ndcg_at_10_delta": 0.05850302986069622,
-    "token_f1_delta": 0.0026343492335124397,
-    "avg_storage_ratio_nova_over_stock": 0.611850236949291,
-    "avg_latency_ratio_nova_over_stock": 0.2250957465789114
+    "doc_recall_any_delta": 0.04230131947221105,
+    "doc_recall_all_delta": 0.07025637744902047,
+    "ndcg_at_10_delta": 0.05856372403934573,
+    "token_f1_delta": 0.002111448298218424,
+    "avg_storage_ratio_nova_over_stock": 0.6104272308792305,
+    "avg_latency_ratio_nova_over_stock": 0.2446479429720254
   }
 }

@@ -235,7 +235,7 @@
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>75.3%</strong></div>
-          <div><span>NovaSpine</span><strong>79.5%</strong></div>
+          <div><span>NovaSpine</span><strong>79.6%</strong></div>
         </div>
         <div class="delta good">+0.042</div>
       </div>
@@ -254,7 +254,7 @@
       <div class="metric-card">
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>55.4%</strong></div>
+          <div><span>Stock</span><strong>55.5%</strong></div>
           <div><span>NovaSpine</span><strong>61.3%</strong></div>
         </div>
         <div class="delta good">+0.059</div>
@@ -267,7 +267,7 @@
           <div><span>Stock</span><strong>10.3%</strong></div>
           <div><span>NovaSpine</span><strong>10.5%</strong></div>
         </div>
-        <div class="delta good">+0.003</div>
+        <div class="delta good">+0.002</div>
       </div>
     
     </section>
@@ -275,18 +275,18 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.042, evidence-all +0.070, NDCG@10 +0.059, answer F1 +0.003.</p>
+        <p><b>Current delta:</b> evidence-any +0.042, evidence-all +0.070, NDCG@10 +0.059, answer F1 +0.002.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-29T20:32:53Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-04-29T20:30:50Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>10 / 500</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::f8c5f88b</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2496 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2496 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-29T20:48:00Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-04-29T20:46:41Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>15 / 500</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_s::726462e0</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2501 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2500 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -440,11 +440,11 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>10 / 500 failed 0</td>
-      <td>100.0%</td>
-      <td>100.0%</td>
-      <td>100.0%</td>
-      <td>0.9%</td>
+      <td>15 / 500 failed 0</td>
+      <td>93.3%</td>
+      <td>93.3%</td>
+      <td>89.5%</td>
+      <td>14.2%</td>
       <td>80.6s</td>
       <td>42.6 MB</td>
     </tr>
@@ -452,12 +452,12 @@
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>10 / 500 failed 0</td>
-      <td>90.0%</td>
-      <td>90.0%</td>
-      <td>90.0%</td>
-      <td>4.0%</td>
-      <td>124.4s</td>
+      <td>14 / 500 failed 0</td>
+      <td>92.9%</td>
+      <td>92.9%</td>
+      <td>87.6%</td>
+      <td>7.5%</td>
+      <td>124.7s</td>
       <td>14.5 MB</td>
     </tr>
     
@@ -465,11 +465,11 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>single-session-user</td><td>10</td><td>100.0%</td><td>0.9%</td><td>10</td><td>90.0%</td><td>4.0%</td></tr></table>
+<tr><td>single-session-user</td><td>15</td><td>93.3%</td><td>14.2%</td><td>14</td><td>92.9%</td><td>7.5%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
+        <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> you have any suggestions for managing my time effectively</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> ultrachat_371333, sharegpt_BKl952A_23, 72f053da_2, e7b0637e_3, sharegpt_ipLglky_48</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> a significant amount of time that can be utilized for personal development, entertainment, or relaxation</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 004edb32, 5209e813_2, 7d8b5834_1, d600c646</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7, 98c198fb</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> impressed by the lead actress&#x27;s performance - she reminded me of my friend Emily, who&#x27;s also an aspiring actress</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb</p></div>
