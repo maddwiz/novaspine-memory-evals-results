@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T06:58:41Z",
+  "generated_at": "2026-04-29T07:00:44Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T06:58:34Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T07:00:29Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 10,
+    "current_case_index": 15,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::bbf86515"
+    "current_case_id": "longmemeval_oracle::gpt4_70e84552"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,36 +4892,36 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 10,
-        "rows_successful": 10,
+        "rows_recorded": 15,
+        "rows_successful": 15,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9,
-        "ndcg_at_10": 0.9613147192765459,
-        "exact_match": 0.7,
-        "token_f1": 0.6571428571428571,
-        "avg_total_sec": 14.891954585025086,
-        "p50_total_sec": 14.776332945097238,
+        "doc_recall_all": 0.8666666666666667,
+        "ndcg_at_10": 0.9444195775182401,
+        "exact_match": 0.6666666666666666,
+        "token_f1": 0.6547619047619048,
+        "avg_total_sec": 15.303773587103933,
+        "p50_total_sec": 15.116846525110304,
         "p95_total_sec": 16.03909382596612,
-        "avg_storage_bytes": 6493313.5,
+        "avg_storage_bytes": 6693038.466666667,
         "p95_storage_bytes": 7286263.0,
         "categories": {
           "temporal-reasoning": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.9,
-            "ndcg_at_10": 0.9613147192765459,
-            "exact_match": 0.7,
-            "token_f1": 0.6571428571428571,
-            "avg_total_sec": 14.891954585025086,
-            "p50_total_sec": 14.776332945097238,
+            "doc_recall_all": 0.8666666666666667,
+            "ndcg_at_10": 0.9444195775182401,
+            "exact_match": 0.6666666666666666,
+            "token_f1": 0.6547619047619048,
+            "avg_total_sec": 15.303773587103933,
+            "p50_total_sec": 15.116846525110304,
             "p95_total_sec": 16.03909382596612,
-            "avg_storage_bytes": 6493313.5,
+            "avg_storage_bytes": 6693038.466666667,
             "p95_storage_bytes": 7286263.0,
             "categories": {},
             "sample_errors": [],
@@ -5035,6 +5035,28 @@
                 "retrieved_doc_ids": [
                   "answer_b3763b6b_2",
                   "answer_b3763b6b_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_5dcc0aab",
+                "category": "temporal-reasoning",
+                "query": "Which pair of shoes did I clean last month?",
+                "gold": "white Adidas sneakers",
+                "prediction": "** Use a soft-bristled brush or a clean cloth to remove dirt, debris from the shoes, ** Use a soft, dry cloth to wipe away dirt",
+                "retrieved_doc_ids": [
+                  "answer_099c1b6c_1",
+                  "answer_099c1b6c_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_0b2f1d21",
+                "category": "temporal-reasoning",
+                "query": "Which event happened first, the purchase of the coffee maker or the malfunction of the stand mixer?",
+                "gold": "The malfunction of the stand mixer",
+                "prediction": "purchase of the coffee maker",
+                "retrieved_doc_ids": [
+                  "answer_c4e5d969_2",
+                  "answer_c4e5d969_1"
                 ]
               }
             ]
@@ -5152,41 +5174,63 @@
               "answer_b3763b6b_2",
               "answer_b3763b6b_1"
             ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_5dcc0aab",
+            "category": "temporal-reasoning",
+            "query": "Which pair of shoes did I clean last month?",
+            "gold": "white Adidas sneakers",
+            "prediction": "** Use a soft-bristled brush or a clean cloth to remove dirt, debris from the shoes, ** Use a soft, dry cloth to wipe away dirt",
+            "retrieved_doc_ids": [
+              "answer_099c1b6c_1",
+              "answer_099c1b6c_3"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_0b2f1d21",
+            "category": "temporal-reasoning",
+            "query": "Which event happened first, the purchase of the coffee maker or the malfunction of the stand mixer?",
+            "gold": "The malfunction of the stand mixer",
+            "prediction": "purchase of the coffee maker",
+            "retrieved_doc_ids": [
+              "answer_c4e5d969_2",
+              "answer_c4e5d969_1"
+            ]
           }
         ]
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 10,
-        "rows_successful": 10,
+        "rows_recorded": 14,
+        "rows_successful": 14,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
-        "exact_match": 0.9,
-        "token_f1": 0.8571428571428571,
-        "avg_total_sec": 7.3042105282191185,
-        "p50_total_sec": 6.972657556179911,
+        "exact_match": 0.8571428571428571,
+        "token_f1": 0.8443877551020408,
+        "avg_total_sec": 8.137457299212526,
+        "p50_total_sec": 7.372557300142944,
         "p95_total_sec": 9.935251653194427,
-        "avg_storage_bytes": 1190665.4,
+        "avg_storage_bytes": 1291140.4285714286,
         "p95_storage_bytes": 1558685.0,
         "categories": {
           "temporal-reasoning": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.9,
-            "token_f1": 0.8571428571428571,
-            "avg_total_sec": 7.3042105282191185,
-            "p50_total_sec": 6.972657556179911,
+            "exact_match": 0.8571428571428571,
+            "token_f1": 0.8443877551020408,
+            "avg_total_sec": 8.137457299212526,
+            "p50_total_sec": 7.372557300142944,
             "p95_total_sec": 9.935251653194427,
-            "avg_storage_bytes": 1190665.4,
+            "avg_storage_bytes": 1291140.4285714286,
             "p95_storage_bytes": 1558685.0,
             "categories": {},
             "sample_errors": [],
@@ -5301,6 +5345,31 @@
                 "retrieved_doc_ids": [
                   "answer_b3763b6b_1",
                   "answer_b3763b6b_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_5dcc0aab",
+                "category": "temporal-reasoning",
+                "query": "Which pair of shoes did I clean last month?",
+                "gold": "white Adidas sneakers",
+                "prediction": "white Adidas sneakers",
+                "retrieved_doc_ids": [
+                  "answer_099c1b6c_1",
+                  "answer_099c1b6c_3",
+                  "answer_099c1b6c_5",
+                  "answer_099c1b6c_4",
+                  "answer_099c1b6c_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_0b2f1d21",
+                "category": "temporal-reasoning",
+                "query": "Which event happened first, the purchase of the coffee maker or the malfunction of the stand mixer?",
+                "gold": "The malfunction of the stand mixer",
+                "prediction": "purchase of the coffee maker",
+                "retrieved_doc_ids": [
+                  "answer_c4e5d969_2",
+                  "answer_c4e5d969_1"
                 ]
               }
             ]
@@ -5419,6 +5488,31 @@
               "answer_b3763b6b_1",
               "answer_b3763b6b_2"
             ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_5dcc0aab",
+            "category": "temporal-reasoning",
+            "query": "Which pair of shoes did I clean last month?",
+            "gold": "white Adidas sneakers",
+            "prediction": "white Adidas sneakers",
+            "retrieved_doc_ids": [
+              "answer_099c1b6c_1",
+              "answer_099c1b6c_3",
+              "answer_099c1b6c_5",
+              "answer_099c1b6c_4",
+              "answer_099c1b6c_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_0b2f1d21",
+            "category": "temporal-reasoning",
+            "query": "Which event happened first, the purchase of the coffee maker or the malfunction of the stand mixer?",
+            "gold": "The malfunction of the stand mixer",
+            "prediction": "purchase of the coffee maker",
+            "retrieved_doc_ids": [
+              "answer_c4e5d969_2",
+              "answer_c4e5d969_1"
+            ]
           }
         ]
       }
@@ -5515,19 +5609,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 1996,
-      "rows_successful": 1996,
+      "rows_recorded": 2001,
+      "rows_successful": 2001,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6958917835671342,
-      "doc_recall_all": 0.5861723446893787,
-      "ndcg_at_10": 0.4569747799364598,
-      "exact_match": 0.03857715430861723,
-      "token_f1": 0.08654980689474584,
-      "avg_total_sec": 6.412019657824032,
-      "p50_total_sec": 6.356310479808599,
-      "p95_total_sec": 6.458183123730123,
-      "avg_storage_bytes": 21092495.81262525,
+      "doc_recall_any": 0.6966516741629185,
+      "doc_recall_all": 0.5867066466766616,
+      "ndcg_at_10": 0.4581083494368725,
+      "exact_match": 0.0399800099950025,
+      "token_f1": 0.08795772841674798,
+      "avg_total_sec": 6.436295999486794,
+      "p50_total_sec": 6.356351743917912,
+      "p95_total_sec": 6.463356810156256,
+      "avg_storage_bytes": 21057513.285357323,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -7510,20 +7604,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 15,
+          "rows_recorded": 15,
+          "rows_successful": 15,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9,
-          "ndcg_at_10": 0.9613147192765459,
-          "exact_match": 0.7,
-          "token_f1": 0.6571428571428571,
-          "avg_total_sec": 14.891954585025086,
-          "p50_total_sec": 14.776332945097238,
+          "doc_recall_all": 0.8666666666666667,
+          "ndcg_at_10": 0.9444195775182401,
+          "exact_match": 0.6666666666666666,
+          "token_f1": 0.6547619047619048,
+          "avg_total_sec": 15.303773587103933,
+          "p50_total_sec": 15.116846525110304,
           "p95_total_sec": 16.03909382596612,
-          "avg_storage_bytes": 6493313.5,
+          "avg_storage_bytes": 6693038.466666667,
           "p95_storage_bytes": 7286263.0,
           "categories": {},
           "sample_errors": [],
@@ -7637,6 +7731,28 @@
               "retrieved_doc_ids": [
                 "answer_b3763b6b_2",
                 "answer_b3763b6b_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_5dcc0aab",
+              "category": "temporal-reasoning",
+              "query": "Which pair of shoes did I clean last month?",
+              "gold": "white Adidas sneakers",
+              "prediction": "** Use a soft-bristled brush or a clean cloth to remove dirt, debris from the shoes, ** Use a soft, dry cloth to wipe away dirt",
+              "retrieved_doc_ids": [
+                "answer_099c1b6c_1",
+                "answer_099c1b6c_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_0b2f1d21",
+              "category": "temporal-reasoning",
+              "query": "Which event happened first, the purchase of the coffee maker or the malfunction of the stand mixer?",
+              "gold": "The malfunction of the stand mixer",
+              "prediction": "purchase of the coffee maker",
+              "retrieved_doc_ids": [
+                "answer_c4e5d969_2",
+                "answer_c4e5d969_1"
               ]
             }
           ]
@@ -8023,19 +8139,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 1996,
-      "rows_successful": 1996,
+      "rows_recorded": 2000,
+      "rows_successful": 2000,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6813627254509018,
-      "doc_recall_all": 0.5711422845691383,
-      "ndcg_at_10": 0.3907368237615026,
-      "exact_match": 0.03356713426853707,
-      "token_f1": 0.0743918391760057,
-      "avg_total_sec": 0.0986326404922793,
-      "p50_total_sec": 0.06277628894895315,
-      "p95_total_sec": 0.08919389406219125,
-      "avg_storage_bytes": 13562875.711422846,
+      "doc_recall_any": 0.682,
+      "doc_recall_all": 0.572,
+      "ndcg_at_10": 0.3919553501139796,
+      "exact_match": 0.035,
+      "token_f1": 0.07586805549765369,
+      "avg_total_sec": 0.11887652366468683,
+      "p50_total_sec": 0.06279614474624395,
+      "p95_total_sec": 0.0894683632068336,
+      "avg_storage_bytes": 13538834.616,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -10027,20 +10143,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 14,
+          "rows_recorded": 14,
+          "rows_successful": 14,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.9,
-          "token_f1": 0.8571428571428571,
-          "avg_total_sec": 7.3042105282191185,
-          "p50_total_sec": 6.972657556179911,
+          "exact_match": 0.8571428571428571,
+          "token_f1": 0.8443877551020408,
+          "avg_total_sec": 8.137457299212526,
+          "p50_total_sec": 7.372557300142944,
           "p95_total_sec": 9.935251653194427,
-          "avg_storage_bytes": 1190665.4,
+          "avg_storage_bytes": 1291140.4285714286,
           "p95_storage_bytes": 1558685.0,
           "categories": {},
           "sample_errors": [],
@@ -10155,6 +10271,31 @@
               "retrieved_doc_ids": [
                 "answer_b3763b6b_1",
                 "answer_b3763b6b_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_5dcc0aab",
+              "category": "temporal-reasoning",
+              "query": "Which pair of shoes did I clean last month?",
+              "gold": "white Adidas sneakers",
+              "prediction": "white Adidas sneakers",
+              "retrieved_doc_ids": [
+                "answer_099c1b6c_1",
+                "answer_099c1b6c_3",
+                "answer_099c1b6c_5",
+                "answer_099c1b6c_4",
+                "answer_099c1b6c_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_0b2f1d21",
+              "category": "temporal-reasoning",
+              "query": "Which event happened first, the purchase of the coffee maker or the malfunction of the stand mixer?",
+              "gold": "The malfunction of the stand mixer",
+              "prediction": "purchase of the coffee maker",
+              "retrieved_doc_ids": [
+                "answer_c4e5d969_2",
+                "answer_c4e5d969_1"
               ]
             }
           ]
@@ -10542,11 +10683,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.014529058116232396,
-    "doc_recall_all_delta": -0.01503006012024044,
-    "ndcg_at_10_delta": -0.0662379561749572,
-    "token_f1_delta": -0.012157967718740142,
-    "avg_storage_ratio_nova_over_stock": 0.643019006944857,
-    "avg_latency_ratio_nova_over_stock": 0.015382460715310882
+    "doc_recall_any_delta": -0.01465167416291846,
+    "doc_recall_all_delta": -0.014706646676661661,
+    "ndcg_at_10_delta": -0.06615299932289292,
+    "token_f1_delta": -0.012089672919094296,
+    "avg_storage_ratio_nova_over_stock": 0.6429455573661893,
+    "avg_latency_ratio_nova_over_stock": 0.01846971047853697
   }
 }
