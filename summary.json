@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:42:26Z",
+  "generated_at": "2026-04-29T08:42:31Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:42:13Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T08:42:28Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 290,
     "current_case_total": 500,
@@ -5912,19 +5912,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 289,
-        "rows_successful": 289,
+        "rows_recorded": 290,
+        "rows_successful": 290,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9965397923875432,
-        "ndcg_at_10": 0.9996270271469739,
-        "exact_match": 0.17647058823529413,
-        "token_f1": 0.23208361878219774,
-        "avg_total_sec": 6.880914671111298,
-        "p50_total_sec": 6.868993814103305,
+        "doc_recall_all": 0.996551724137931,
+        "ndcg_at_10": 0.9996283132602602,
+        "exact_match": 0.17586206896551723,
+        "token_f1": 0.23128333044156948,
+        "avg_total_sec": 6.8678496049379865,
+        "p50_total_sec": 6.813198082149029,
         "p95_total_sec": 13.747387605253607,
-        "avg_storage_bytes": 1127604.3356401385,
+        "avg_storage_bytes": 1125949.924137931,
         "p95_storage_bytes": 1985641.0,
         "categories": {
           "temporal-reasoning": {
@@ -6692,9 +6692,9 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
@@ -6702,10 +6702,10 @@
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 3.856371941200147,
+            "avg_total_sec": 3.6652903261128813,
             "p50_total_sec": 3.8534978930838406,
             "p95_total_sec": 4.614607535302639,
-            "avg_storage_bytes": 750357.0,
+            "avg_storage_bytes": 724724.0,
             "p95_storage_bytes": 852877.0,
             "categories": {},
             "sample_errors": [],
@@ -6739,6 +6739,16 @@
                 "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
                 "retrieved_doc_ids": [
                   "answer_d61669c7"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::58bf7951",
+                "category": "single-session-user",
+                "query": "What play did I attend at the local community theater?",
+                "gold": "The Glass Menagerie",
+                "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
+                "retrieved_doc_ids": [
+                  "answer_355c48bb"
                 ]
               }
             ]
@@ -10195,19 +10205,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2275,
-      "rows_successful": 2275,
+      "rows_recorded": 2276,
+      "rows_successful": 2276,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7204395604395605,
-      "doc_recall_all": 0.6232967032967033,
-      "ndcg_at_10": 0.4654078729993119,
-      "exact_match": 0.04791208791208791,
-      "token_f1": 0.09098323000085008,
-      "avg_total_sec": 0.9285331802600278,
-      "p50_total_sec": 0.06510342890396714,
+      "doc_recall_any": 0.7205623901581723,
+      "doc_recall_all": 0.6234622144112478,
+      "ndcg_at_10": 0.46564275530467253,
+      "exact_match": 0.04789103690685413,
+      "token_f1": 0.09094325494373195,
+      "avg_total_sec": 0.9294837568420098,
+      "p50_total_sec": 0.06511532887816429,
       "p95_total_sec": 7.258925422094762,
-      "avg_storage_bytes": 12037569.634725275,
+      "avg_storage_bytes": 12032565.353251318,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -12963,9 +12973,9 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
@@ -12973,10 +12983,10 @@
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 3.856371941200147,
+          "avg_total_sec": 3.6652903261128813,
           "p50_total_sec": 3.8534978930838406,
           "p95_total_sec": 4.614607535302639,
-          "avg_storage_bytes": 750357.0,
+          "avg_storage_bytes": 724724.0,
           "p95_storage_bytes": 852877.0,
           "categories": {},
           "sample_errors": [],
@@ -13010,6 +13020,16 @@
               "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
               "retrieved_doc_ids": [
                 "answer_d61669c7"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::58bf7951",
+              "category": "single-session-user",
+              "query": "What play did I attend at the local community theater?",
+              "gold": "The Glass Menagerie",
+              "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
+              "retrieved_doc_ids": [
+                "answer_355c48bb"
               ]
             }
           ]
@@ -13397,11 +13417,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.011985747117557288,
-    "doc_recall_all_delta": 0.004667529307248119,
-    "ndcg_at_10_delta": -0.05196055335641009,
-    "token_f1_delta": -0.006725783954832434,
-    "avg_storage_ratio_nova_over_stock": 0.6245174725115897,
-    "avg_latency_ratio_nova_over_stock": 0.12471109395010373
+    "doc_recall_any_delta": -0.011862917398945516,
+    "doc_recall_all_delta": 0.004833040421792667,
+    "ndcg_at_10_delta": -0.05172567105104947,
+    "token_f1_delta": -0.006765759011950562,
+    "avg_storage_ratio_nova_over_stock": 0.6242578469133431,
+    "avg_latency_ratio_nova_over_stock": 0.12483876568865067
   }
 }
