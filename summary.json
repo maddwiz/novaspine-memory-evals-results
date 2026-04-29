@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:08:23Z",
+  "generated_at": "2026-04-29T03:08:24Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:08:23Z",
+    "updated_at": "2026-04-29T03:08:24Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 155,
+    "current_case_index": 160,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0154"
+    "current_case_id": "locomo::conv-26::0159"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,18 +2238,18 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 155,
-        "rows_successful": 155,
+        "rows_recorded": 160,
+        "rows_successful": 160,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6580645161290323,
-        "doc_recall_all": 0.5548387096774193,
-        "ndcg_at_10": 0.379382639536162,
-        "exact_match": 0.07096774193548387,
-        "token_f1": 0.12934929618826532,
-        "avg_total_sec": 0.0610575310104797,
-        "p50_total_sec": 0.06113452324643731,
-        "p95_total_sec": 0.08913131291046739,
+        "doc_recall_any": 0.65625,
+        "doc_recall_all": 0.55625,
+        "ndcg_at_10": 0.386276932050657,
+        "exact_match": 0.06875,
+        "token_f1": 0.12530713068238203,
+        "avg_total_sec": 0.061240175692364576,
+        "p50_total_sec": 0.061379277147352695,
+        "p95_total_sec": 0.0894683632068336,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
         "categories": {
@@ -3521,19 +3521,19 @@
             ]
           },
           "category_5": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.3333333333333333,
-            "doc_recall_all": 0.3333333333333333,
-            "ndcg_at_10": 0.3333333333333333,
+            "doc_recall_any": 0.5,
+            "doc_recall_all": 0.5,
+            "ndcg_at_10": 0.5,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 0.05709821141014496,
-            "p50_total_sec": 0.06370166502892971,
-            "p95_total_sec": 0.06816424615681171,
+            "avg_total_sec": 0.06322567979805171,
+            "p50_total_sec": 0.06235601240769029,
+            "p95_total_sec": 0.0931440400891006,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
             "categories": {},
@@ -3572,6 +3572,40 @@
                   "conv-26:D8:9",
                   "conv-26:D17:3"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0155",
+                "category": "category_5",
+                "query": "Why did Melanie choose the adoption agency?",
+                "gold": "",
+                "prediction": "Congrats, Caroline!",
+                "expected_doc_ids": [
+                  "conv-26:D2:12"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D19:3",
+                  "conv-26:D13:1",
+                  "conv-26:D8:9",
+                  "conv-26:D17:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0156",
+                "category": "category_5",
+                "query": "What is Melanie excited about in her adoption process?",
+                "gold": "",
+                "prediction": "Yeah, a buddy of mine adopted last year",
+                "expected_doc_ids": [
+                  "conv-26:D2:14"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D19:3",
+                  "conv-26:D2:10",
+                  "conv-26:D13:1",
+                  "conv-26:D17:3",
+                  "conv-26:D17:4"
+                ]
               }
             ],
             "sample_successes": [
@@ -3587,6 +3621,48 @@
                   "conv-26:D2:2",
                   "conv-26:D10:20",
                   "conv-26:D2:1"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0157",
+                "category": "category_5",
+                "query": "What does Melanie's necklace symbolize?",
+                "gold": "",
+                "prediction": "a gift from my grandma in my home country, Sweden",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D13:15",
+                  "conv-26:D14:15",
+                  "conv-26:D4:4",
+                  "conv-26:D14:29"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0158",
+                "category": "category_5",
+                "query": "What country is Melanie's grandma from?",
+                "gold": "",
+                "prediction": "Yes, Caroline!",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D3:13",
+                  "conv-26:D6:9",
+                  "conv-26:D2:10",
+                  "conv-26:D13:1"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0159",
+                "category": "category_5",
+                "query": "What was grandma's gift to Melanie?",
+                "gold": "",
+                "prediction": "Hey Caroline!",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D11:1",
+                  "conv-26:D4:8",
+                  "conv-26:D18:1",
+                  "conv-26:D18:3"
                 ]
               }
             ]
@@ -6219,18 +6295,18 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 155,
-      "rows_successful": 155,
+      "rows_recorded": 160,
+      "rows_successful": 160,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6580645161290323,
-      "doc_recall_all": 0.5548387096774193,
-      "ndcg_at_10": 0.379382639536162,
-      "exact_match": 0.07096774193548387,
-      "token_f1": 0.12934929618826532,
-      "avg_total_sec": 0.0610575310104797,
-      "p50_total_sec": 0.06113452324643731,
-      "p95_total_sec": 0.08913131291046739,
+      "doc_recall_any": 0.65625,
+      "doc_recall_all": 0.55625,
+      "ndcg_at_10": 0.386276932050657,
+      "exact_match": 0.06875,
+      "token_f1": 0.12530713068238203,
+      "avg_total_sec": 0.061240175692364576,
+      "p50_total_sec": 0.061379277147352695,
+      "p95_total_sec": 0.0894683632068336,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
       "categories": {
@@ -7502,19 +7578,19 @@
           ]
         },
         "category_5": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.3333333333333333,
-          "doc_recall_all": 0.3333333333333333,
-          "ndcg_at_10": 0.3333333333333333,
+          "doc_recall_any": 0.5,
+          "doc_recall_all": 0.5,
+          "ndcg_at_10": 0.5,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 0.05709821141014496,
-          "p50_total_sec": 0.06370166502892971,
-          "p95_total_sec": 0.06816424615681171,
+          "avg_total_sec": 0.06322567979805171,
+          "p50_total_sec": 0.06235601240769029,
+          "p95_total_sec": 0.0931440400891006,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
           "categories": {},
@@ -7553,6 +7629,40 @@
                 "conv-26:D8:9",
                 "conv-26:D17:3"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0155",
+              "category": "category_5",
+              "query": "Why did Melanie choose the adoption agency?",
+              "gold": "",
+              "prediction": "Congrats, Caroline!",
+              "expected_doc_ids": [
+                "conv-26:D2:12"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D19:3",
+                "conv-26:D13:1",
+                "conv-26:D8:9",
+                "conv-26:D17:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0156",
+              "category": "category_5",
+              "query": "What is Melanie excited about in her adoption process?",
+              "gold": "",
+              "prediction": "Yeah, a buddy of mine adopted last year",
+              "expected_doc_ids": [
+                "conv-26:D2:14"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D19:3",
+                "conv-26:D2:10",
+                "conv-26:D13:1",
+                "conv-26:D17:3",
+                "conv-26:D17:4"
+              ]
             }
           ],
           "sample_successes": [
@@ -7568,6 +7678,48 @@
                 "conv-26:D2:2",
                 "conv-26:D10:20",
                 "conv-26:D2:1"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0157",
+              "category": "category_5",
+              "query": "What does Melanie's necklace symbolize?",
+              "gold": "",
+              "prediction": "a gift from my grandma in my home country, Sweden",
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D13:15",
+                "conv-26:D14:15",
+                "conv-26:D4:4",
+                "conv-26:D14:29"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0158",
+              "category": "category_5",
+              "query": "What country is Melanie's grandma from?",
+              "gold": "",
+              "prediction": "Yes, Caroline!",
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D3:13",
+                "conv-26:D6:9",
+                "conv-26:D2:10",
+                "conv-26:D13:1"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0159",
+              "category": "category_5",
+              "query": "What was grandma's gift to Melanie?",
+              "gold": "",
+              "prediction": "Hey Caroline!",
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D11:1",
+                "conv-26:D4:8",
+                "conv-26:D18:1",
+                "conv-26:D18:3"
               ]
             }
           ]
@@ -7955,11 +8107,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.03540282055438482,
-    "doc_recall_all_delta": -0.043151240071324426,
-    "ndcg_at_10_delta": -0.08655853147233233,
-    "token_f1_delta": 0.01806607343788716,
+    "doc_recall_any_delta": -0.03721733668341709,
+    "doc_recall_all_delta": -0.04173994974874373,
+    "ndcg_at_10_delta": -0.07966423895783736,
+    "token_f1_delta": 0.014023907932003865,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.009580994465789621
+    "avg_latency_ratio_nova_over_stock": 0.009609654610695326
   }
 }
