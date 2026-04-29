@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:19:11Z",
+  "generated_at": "2026-04-29T08:19:17Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:18:57Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T08:19:12Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 205,
     "current_case_total": 500,
@@ -5615,19 +5615,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 204,
-        "rows_successful": 204,
+        "rows_recorded": 205,
+        "rows_successful": 205,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9950980392156863,
-        "ndcg_at_10": 0.9994716217915465,
-        "exact_match": 0.24019607843137256,
-        "token_f1": 0.28351877243231344,
-        "avg_total_sec": 8.56178645029728,
-        "p50_total_sec": 7.456421303097159,
+        "doc_recall_all": 0.9951219512195122,
+        "ndcg_at_10": 0.9994741992462219,
+        "exact_match": 0.23902439024390243,
+        "token_f1": 0.2821357540302046,
+        "avg_total_sec": 8.542920495885447,
+        "p50_total_sec": 7.452576347626746,
         "p95_total_sec": 15.293608488049358,
-        "avg_storage_bytes": 1336524.8235294118,
+        "avg_storage_bytes": 1334226.3853658536,
         "p95_storage_bytes": 2190621.0,
         "categories": {
           "temporal-reasoning": {
@@ -6111,20 +6111,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.12147147147147147,
-            "avg_total_sec": 5.199404813814908,
-            "p50_total_sec": 5.600580218713731,
+            "token_f1": 0.09717717717717718,
+            "avg_total_sec": 5.098377010226249,
+            "p50_total_sec": 4.694265795871615,
             "p95_total_sec": 6.172568239737302,
-            "avg_storage_bytes": 937061.0,
+            "avg_storage_bytes": 922717.8,
             "p95_storage_bytes": 1066265.0,
             "categories": {},
             "sample_errors": [],
@@ -6168,6 +6168,16 @@
                 "prediction": "user: I think I'll stick with the Space Needle Romance Package at The Edgewater Hotel.",
                 "retrieved_doc_ids": [
                   "answer_d586e9cd"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::35a27287",
+                "category": "single-session-preference",
+                "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+                "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_9b182436"
                 ]
               }
             ]
@@ -9338,19 +9348,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2190,
-      "rows_successful": 2190,
+      "rows_recorded": 2191,
+      "rows_successful": 2191,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7095890410958904,
-      "doc_recall_all": 0.608675799086758,
-      "ndcg_at_10": 0.4446588635038514,
-      "exact_match": 0.04885844748858448,
-      "token_f1": 0.09029795068496381,
-      "avg_total_sec": 0.8540790324205677,
-      "p50_total_sec": 0.06431046221405268,
-      "p95_total_sec": 7.372557300142944,
-      "avg_storage_bytes": 12480476.863013698,
+      "doc_recall_any": 0.7097215883158375,
+      "doc_recall_all": 0.6088544043815609,
+      "ndcg_at_10": 0.44491232819417376,
+      "exact_match": 0.048836147877681424,
+      "token_f1": 0.09025673756278901,
+      "avg_total_sec": 0.8558317420341921,
+      "p50_total_sec": 0.06435391493141651,
+      "p95_total_sec": 7.365171446930617,
+      "avg_storage_bytes": 12475175.570515746,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -11822,20 +11832,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.12147147147147147,
-          "avg_total_sec": 5.199404813814908,
-          "p50_total_sec": 5.600580218713731,
+          "token_f1": 0.09717717717717718,
+          "avg_total_sec": 5.098377010226249,
+          "p50_total_sec": 4.694265795871615,
           "p95_total_sec": 6.172568239737302,
-          "avg_storage_bytes": 937061.0,
+          "avg_storage_bytes": 922717.8,
           "p95_storage_bytes": 1066265.0,
           "categories": {},
           "sample_errors": [],
@@ -11879,6 +11889,16 @@
               "prediction": "user: I think I'll stick with the Space Needle Romance Package at The Edgewater Hotel.",
               "retrieved_doc_ids": [
                 "answer_d586e9cd"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::35a27287",
+              "category": "single-session-preference",
+              "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+              "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+              "prediction": "yes",
+              "retrieved_doc_ids": [
+                "answer_9b182436"
               ]
             }
           ]
@@ -12266,11 +12286,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.01291209993560205,
-    "doc_recall_all_delta": 0.004385520675073806,
-    "ndcg_at_10_delta": -0.05444224940606335,
-    "token_f1_delta": -0.007842954445074532,
-    "avg_storage_ratio_nova_over_stock": 0.6294624914419608,
-    "avg_latency_ratio_nova_over_stock": 0.1180897308966494
+    "doc_recall_any_delta": -0.012779552715654896,
+    "doc_recall_all_delta": 0.0045641259698767644,
+    "ndcg_at_10_delta": -0.05418878471574101,
+    "token_f1_delta": -0.007884167567249328,
+    "avg_storage_ratio_nova_over_stock": 0.6291951166597108,
+    "avg_latency_ratio_nova_over_stock": 0.11833207030407668
   }
 }
