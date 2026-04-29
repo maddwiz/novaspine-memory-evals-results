@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:42:31Z",
+  "generated_at": "2026-04-29T08:43:50Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:42:28Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T08:43:37Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 290,
+    "current_case_index": 295,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::58bf7951"
+    "current_case_id": "longmemeval_oracle::58ef2f1c"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,20 +4892,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 290,
-        "rows_successful": 290,
+        "rows_recorded": 295,
+        "rows_successful": 295,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.993103448275862,
-        "doc_recall_all": 0.8517241379310345,
-        "ndcg_at_10": 0.9483518097421203,
-        "exact_match": 0.1482758620689655,
-        "token_f1": 0.19380596473327336,
-        "avg_total_sec": 14.815264259957997,
-        "p50_total_sec": 14.5705023589544,
-        "p95_total_sec": 18.591063846834004,
-        "avg_storage_bytes": 6324808.8068965515,
-        "p95_storage_bytes": 8473727.0,
+        "doc_recall_any": 0.9932203389830508,
+        "doc_recall_all": 0.8542372881355932,
+        "ndcg_at_10": 0.9492272027973386,
+        "exact_match": 0.14576271186440679,
+        "token_f1": 0.19081588574368952,
+        "avg_total_sec": 14.78270142004683,
+        "p50_total_sec": 14.55761679681018,
+        "p95_total_sec": 18.584700143896043,
+        "avg_storage_bytes": 6306452.722033898,
+        "p95_storage_bytes": 8386917.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5687,20 +5687,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 13.072884170687757,
-            "p50_total_sec": 13.17052343301475,
+            "token_f1": 0.009661835748792268,
+            "avg_total_sec": 12.97353557874966,
+            "p50_total_sec": 12.920690276660025,
             "p95_total_sec": 13.390964324120432,
-            "avg_storage_bytes": 5256573.25,
+            "avg_storage_bytes": 5248365.777777778,
             "p95_storage_bytes": 5504399.0,
             "categories": {},
             "sample_errors": [],
@@ -5744,6 +5744,56 @@
                 "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
                 "retrieved_doc_ids": [
                   "answer_355c48bb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::1e043500",
+                "category": "single-session-user",
+                "query": "What is the name of the playlist I created on Spotify?",
+                "gold": "Summer Vibes",
+                "prediction": "powered by human curators, which means you'll get recommendations based on your listening habits and preferences",
+                "retrieved_doc_ids": [
+                  "answer_3e012175"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::c5e8278d",
+                "category": "single-session-user",
+                "query": "What was my last name before I changed it?",
+                "gold": "Johnson",
+                "prediction": "to ensure your identification documents match your new name",
+                "retrieved_doc_ids": [
+                  "answer_f6168136"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6ade9755",
+                "category": "single-session-user",
+                "query": "Where do I take yoga classes?",
+                "gold": "Serenity Yoga",
+                "prediction": "**Peloton Digital**: While known for their cycling classes, Peloton also offers a vast yoga library with classes ranging from beginner to advanced.",
+                "retrieved_doc_ids": [
+                  "answer_9398da02"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6f9b354f",
+                "category": "single-session-user",
+                "query": "What color did I repaint my bedroom walls?",
+                "gold": "a lighter shade of gray",
+                "prediction": "ideal",
+                "retrieved_doc_ids": [
+                  "answer_feb5200f"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::58ef2f1c",
+                "category": "single-session-user",
+                "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+                "gold": "February 14th",
+                "prediction": "Love is in the Air",
+                "retrieved_doc_ids": [
+                  "answer_59547700"
                 ]
               }
             ]
@@ -5912,20 +5962,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 290,
-        "rows_successful": 290,
+        "rows_recorded": 294,
+        "rows_successful": 294,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.996551724137931,
-        "ndcg_at_10": 0.9996283132602602,
-        "exact_match": 0.17586206896551723,
-        "token_f1": 0.23128333044156948,
-        "avg_total_sec": 6.8678496049379865,
-        "p50_total_sec": 6.813198082149029,
-        "p95_total_sec": 13.747387605253607,
-        "avg_storage_bytes": 1125949.924137931,
-        "p95_storage_bytes": 1985641.0,
+        "doc_recall_all": 0.9965986394557823,
+        "ndcg_at_10": 0.9996333702227056,
+        "exact_match": 0.17346938775510204,
+        "token_f1": 0.22911433748560445,
+        "avg_total_sec": 6.820293053699543,
+        "p50_total_sec": 6.747842394281179,
+        "p95_total_sec": 13.636793131008744,
+        "avg_storage_bytes": 1120086.7959183673,
+        "p95_storage_bytes": 1940297.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -6692,20 +6742,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 3.6652903261128813,
-            "p50_total_sec": 3.8534978930838406,
+            "token_f1": 0.035931174089068825,
+            "avg_total_sec": 3.518866707512643,
+            "p50_total_sec": 3.69553545396775,
             "p95_total_sec": 4.614607535302639,
-            "avg_storage_bytes": 724724.0,
+            "avg_storage_bytes": 709867.0,
             "p95_storage_bytes": 852877.0,
             "categories": {},
             "sample_errors": [],
@@ -6749,6 +6799,46 @@
                 "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
                 "retrieved_doc_ids": [
                   "answer_355c48bb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::1e043500",
+                "category": "single-session-user",
+                "query": "What is the name of the playlist I created on Spotify?",
+                "gold": "Summer Vibes",
+                "prediction": "ve been listening to this one playlist on Spotify that I created, called Summer Vibes, and it",
+                "retrieved_doc_ids": [
+                  "answer_3e012175"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::c5e8278d",
+                "category": "single-session-user",
+                "query": "What was my last name before I changed it?",
+                "gold": "Johnson",
+                "prediction": "I need to update my credit report with the three major credit bureaus (Experian, TransUnion, and Equifax) to reflect my name change",
+                "retrieved_doc_ids": [
+                  "answer_f6168136"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6ade9755",
+                "category": "single-session-user",
+                "query": "Where do I take yoga classes?",
+                "gold": "Serenity Yoga",
+                "prediction": "user: I'm trying to plan a self-care day and was thinking of doing a morning yoga practice at home, then meeting a friend for brunch.",
+                "retrieved_doc_ids": [
+                  "answer_9398da02"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6f9b354f",
+                "category": "single-session-user",
+                "query": "What color did I repaint my bedroom walls?",
+                "gold": "a lighter shade of gray",
+                "prediction": "I recently added a vase with fresh greenery to my kitchen countertop and I'd love to explore more options.",
+                "retrieved_doc_ids": [
+                  "answer_feb5200f"
                 ]
               }
             ]
@@ -6988,19 +7078,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2276,
-      "rows_successful": 2276,
+      "rows_recorded": 2281,
+      "rows_successful": 2281,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7324253075571178,
-      "doc_recall_all": 0.6186291739894552,
-      "ndcg_at_10": 0.517368426355722,
-      "exact_match": 0.04964850615114236,
-      "token_f1": 0.09770901395568252,
-      "avg_total_sec": 7.445473781438636,
-      "p50_total_sec": 6.364783271681517,
+      "doc_recall_any": 0.7330118369136344,
+      "doc_recall_all": 0.6194651468654099,
+      "ndcg_at_10": 0.5184263649213605,
+      "exact_match": 0.049539675580885574,
+      "token_f1": 0.09753295584606425,
+      "avg_total_sec": 7.45741718986424,
+      "p50_total_sec": 6.364900078158826,
       "p95_total_sec": 14.82074937177822,
-      "avg_storage_bytes": 19274992.557557117,
+      "avg_storage_bytes": 19244231.503726434,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -9762,20 +9852,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 13.072884170687757,
-          "p50_total_sec": 13.17052343301475,
+          "token_f1": 0.009661835748792268,
+          "avg_total_sec": 12.97353557874966,
+          "p50_total_sec": 12.920690276660025,
           "p95_total_sec": 13.390964324120432,
-          "avg_storage_bytes": 5256573.25,
+          "avg_storage_bytes": 5248365.777777778,
           "p95_storage_bytes": 5504399.0,
           "categories": {},
           "sample_errors": [],
@@ -9819,6 +9909,56 @@
               "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
               "retrieved_doc_ids": [
                 "answer_355c48bb"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::1e043500",
+              "category": "single-session-user",
+              "query": "What is the name of the playlist I created on Spotify?",
+              "gold": "Summer Vibes",
+              "prediction": "powered by human curators, which means you'll get recommendations based on your listening habits and preferences",
+              "retrieved_doc_ids": [
+                "answer_3e012175"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::c5e8278d",
+              "category": "single-session-user",
+              "query": "What was my last name before I changed it?",
+              "gold": "Johnson",
+              "prediction": "to ensure your identification documents match your new name",
+              "retrieved_doc_ids": [
+                "answer_f6168136"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6ade9755",
+              "category": "single-session-user",
+              "query": "Where do I take yoga classes?",
+              "gold": "Serenity Yoga",
+              "prediction": "**Peloton Digital**: While known for their cycling classes, Peloton also offers a vast yoga library with classes ranging from beginner to advanced.",
+              "retrieved_doc_ids": [
+                "answer_9398da02"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6f9b354f",
+              "category": "single-session-user",
+              "query": "What color did I repaint my bedroom walls?",
+              "gold": "a lighter shade of gray",
+              "prediction": "ideal",
+              "retrieved_doc_ids": [
+                "answer_feb5200f"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::58ef2f1c",
+              "category": "single-session-user",
+              "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+              "gold": "February 14th",
+              "prediction": "Love is in the Air",
+              "retrieved_doc_ids": [
+                "answer_59547700"
               ]
             }
           ]
@@ -10205,19 +10345,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2276,
-      "rows_successful": 2276,
+      "rows_recorded": 2280,
+      "rows_successful": 2280,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7205623901581723,
-      "doc_recall_all": 0.6234622144112478,
-      "ndcg_at_10": 0.46564275530467253,
-      "exact_match": 0.04789103690685413,
-      "token_f1": 0.09094325494373195,
-      "avg_total_sec": 0.9294837568420098,
-      "p50_total_sec": 0.06511532887816429,
+      "doc_recall_any": 0.7210526315789474,
+      "doc_recall_all": 0.6241228070175439,
+      "ndcg_at_10": 0.4665802241550152,
+      "exact_match": 0.04780701754385965,
+      "token_f1": 0.0909097796687046,
+      "avg_total_sec": 0.9337696504070456,
+      "p50_total_sec": 0.06512321392074227,
       "p95_total_sec": 7.258925422094762,
-      "avg_storage_bytes": 12032565.353251318,
+      "avg_storage_bytes": 12012674.905263158,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -12973,20 +13113,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 3.6652903261128813,
-          "p50_total_sec": 3.8534978930838406,
+          "token_f1": 0.035931174089068825,
+          "avg_total_sec": 3.518866707512643,
+          "p50_total_sec": 3.69553545396775,
           "p95_total_sec": 4.614607535302639,
-          "avg_storage_bytes": 724724.0,
+          "avg_storage_bytes": 709867.0,
           "p95_storage_bytes": 852877.0,
           "categories": {},
           "sample_errors": [],
@@ -13030,6 +13170,46 @@
               "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
               "retrieved_doc_ids": [
                 "answer_355c48bb"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::1e043500",
+              "category": "single-session-user",
+              "query": "What is the name of the playlist I created on Spotify?",
+              "gold": "Summer Vibes",
+              "prediction": "ve been listening to this one playlist on Spotify that I created, called Summer Vibes, and it",
+              "retrieved_doc_ids": [
+                "answer_3e012175"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::c5e8278d",
+              "category": "single-session-user",
+              "query": "What was my last name before I changed it?",
+              "gold": "Johnson",
+              "prediction": "I need to update my credit report with the three major credit bureaus (Experian, TransUnion, and Equifax) to reflect my name change",
+              "retrieved_doc_ids": [
+                "answer_f6168136"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6ade9755",
+              "category": "single-session-user",
+              "query": "Where do I take yoga classes?",
+              "gold": "Serenity Yoga",
+              "prediction": "user: I'm trying to plan a self-care day and was thinking of doing a morning yoga practice at home, then meeting a friend for brunch.",
+              "retrieved_doc_ids": [
+                "answer_9398da02"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6f9b354f",
+              "category": "single-session-user",
+              "query": "What color did I repaint my bedroom walls?",
+              "gold": "a lighter shade of gray",
+              "prediction": "I recently added a vase with fresh greenery to my kitchen countertop and I'd love to explore more options.",
+              "retrieved_doc_ids": [
+                "answer_feb5200f"
               ]
             }
           ]
@@ -13417,11 +13597,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.011862917398945516,
-    "doc_recall_all_delta": 0.004833040421792667,
-    "ndcg_at_10_delta": -0.05172567105104947,
-    "token_f1_delta": -0.006765759011950562,
-    "avg_storage_ratio_nova_over_stock": 0.6242578469133431,
-    "avg_latency_ratio_nova_over_stock": 0.12483876568865067
+    "doc_recall_any_delta": -0.011959205334686973,
+    "doc_recall_all_delta": 0.00465766015213398,
+    "ndcg_at_10_delta": -0.051846140766345306,
+    "token_f1_delta": -0.006623176177359649,
+    "avg_storage_ratio_nova_over_stock": 0.6242221157512595,
+    "avg_latency_ratio_nova_over_stock": 0.12521354600841966
   }
 }
