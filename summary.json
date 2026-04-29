@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:07:52Z",
+  "generated_at": "2026-04-29T03:07:54Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:07:52Z",
+    "updated_at": "2026-04-29T03:07:54Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 50,
+    "current_case_index": 55,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0049"
+    "current_case_id": "locomo::conv-26::0054"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,34 +2238,34 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 50,
-        "rows_successful": 50,
+        "rows_recorded": 55,
+        "rows_successful": 55,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7,
-        "doc_recall_all": 0.52,
-        "ndcg_at_10": 0.4234767676520822,
-        "exact_match": 0.14,
-        "token_f1": 0.21801687552213866,
-        "avg_total_sec": 0.06577112427912653,
-        "p50_total_sec": 0.062489745672792196,
-        "p95_total_sec": 0.09569810284301639,
+        "doc_recall_any": 0.6909090909090909,
+        "doc_recall_all": 0.509090909090909,
+        "ndcg_at_10": 0.4261437546395763,
+        "exact_match": 0.12727272727272726,
+        "token_f1": 0.21183352320194423,
+        "avg_total_sec": 0.06516753282736648,
+        "p50_total_sec": 0.062076272908598185,
+        "p95_total_sec": 0.09437936032190919,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
         "categories": {
           "category_2": {
-            "expected_total": 24,
-            "rows_recorded": 24,
-            "rows_successful": 24,
+            "expected_total": 26,
+            "rows_recorded": 26,
+            "rows_successful": 26,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9166666666666666,
-            "doc_recall_all": 0.9166666666666666,
-            "ndcg_at_10": 0.6358477112295284,
-            "exact_match": 0.2916666666666667,
-            "token_f1": 0.42271825396825397,
-            "avg_total_sec": 0.06949916513015826,
-            "p50_total_sec": 0.06781674455851316,
+            "doc_recall_any": 0.9230769230769231,
+            "doc_recall_all": 0.9230769230769231,
+            "ndcg_at_10": 0.663859425750334,
+            "exact_match": 0.2692307692307692,
+            "token_f1": 0.41904761904761906,
+            "avg_total_sec": 0.06856498364000939,
+            "p50_total_sec": 0.062489745672792196,
             "p95_total_sec": 0.09825592115521431,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
@@ -2479,17 +2479,17 @@
             ]
           },
           "category_3": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5714285714285714,
-            "doc_recall_all": 0.14285714285714285,
-            "ndcg_at_10": 0.30344331239095335,
+            "doc_recall_any": 0.5,
+            "doc_recall_all": 0.125,
+            "ndcg_at_10": 0.2655128983420842,
             "exact_match": 0.0,
-            "token_f1": 0.025714285714285714,
-            "avg_total_sec": 0.05618027171918324,
+            "token_f1": 0.0225,
+            "avg_total_sec": 0.05537530721630901,
             "p50_total_sec": 0.05606456799432635,
             "p95_total_sec": 0.08169557433575392,
             "avg_storage_bytes": 10934689.0,
@@ -2543,6 +2543,23 @@
                   "conv-26:D13:15",
                   "conv-26:D3:1",
                   "conv-26:D7:1"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0050",
+                "category": "category_3",
+                "query": "What would Caroline's political leaning likely be?",
+                "gold": "Liberal",
+                "prediction": "Being a mom is awesome",
+                "expected_doc_ids": [
+                  "conv-26:D12:1"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D6:7",
+                  "conv-26:D15:23",
+                  "conv-26:D14:24",
+                  "conv-26:D15:3",
+                  "conv-26:D17:23"
                 ]
               }
             ],
@@ -2606,17 +2623,17 @@
             ]
           },
           "category_1": {
-            "expected_total": 19,
-            "rows_recorded": 19,
-            "rows_successful": 19,
+            "expected_total": 21,
+            "rows_recorded": 21,
+            "rows_successful": 21,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.47368421052631576,
-            "doc_recall_all": 0.15789473684210525,
-            "ndcg_at_10": 0.19944158559782907,
+            "doc_recall_any": 0.47619047619047616,
+            "doc_recall_all": 0.14285714285714285,
+            "ndcg_at_10": 0.193021821377683,
             "exact_match": 0.0,
-            "token_f1": 0.03029503583520204,
-            "avg_total_sec": 0.06459549204201291,
+            "token_f1": 0.02740979432708756,
+            "avg_total_sec": 0.06469153681592572,
             "p50_total_sec": 0.06425130600109696,
             "p95_total_sec": 0.08389091119170189,
             "avg_storage_bytes": 10934689.0,
@@ -2802,6 +2819,25 @@
                   "conv-26:D19:7",
                   "conv-26:D3:13"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0051",
+                "category": "category_1",
+                "query": "What has Melanie painted?",
+                "gold": "Horse, sunset, sunrise",
+                "prediction": "Thanks, Caroline!",
+                "expected_doc_ids": [
+                  "conv-26:D13:8",
+                  "conv-26:D8:6",
+                  "conv-26:D1:12"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D12:6",
+                  "conv-26:D16:8",
+                  "conv-26:D13:13",
+                  "conv-26:D1:16",
+                  "conv-26:D14:30"
+                ]
               }
             ],
             "sample_successes": [
@@ -2929,6 +2965,20 @@
                   "conv-26:D5:6",
                   "conv-26:D4:5",
                   "conv-26:D16:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0052",
+                "category": "category_1",
+                "query": "What are Melanie's pets' names?",
+                "gold": "Oliver, Luna, Bailey",
+                "prediction": "Caroline, those lessons are great - self-acceptance, finding support are key, Yeah, it's normal to be both excited, nervous with a big decision, Seeing my kids' faces so happy at the beach was the best!, congrats!",
+                "retrieved_doc_ids": [
+                  "conv-26:D7:14",
+                  "conv-26:D7:17",
+                  "conv-26:D13:3",
+                  "conv-26:D13:4",
+                  "conv-26:D7:15"
                 ]
               }
             ]
@@ -5561,34 +5611,34 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 50,
-      "rows_successful": 50,
+      "rows_recorded": 55,
+      "rows_successful": 55,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7,
-      "doc_recall_all": 0.52,
-      "ndcg_at_10": 0.4234767676520822,
-      "exact_match": 0.14,
-      "token_f1": 0.21801687552213866,
-      "avg_total_sec": 0.06577112427912653,
-      "p50_total_sec": 0.062489745672792196,
-      "p95_total_sec": 0.09569810284301639,
+      "doc_recall_any": 0.6909090909090909,
+      "doc_recall_all": 0.509090909090909,
+      "ndcg_at_10": 0.4261437546395763,
+      "exact_match": 0.12727272727272726,
+      "token_f1": 0.21183352320194423,
+      "avg_total_sec": 0.06516753282736648,
+      "p50_total_sec": 0.062076272908598185,
+      "p95_total_sec": 0.09437936032190919,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
       "categories": {
         "category_2": {
-          "expected_total": 24,
-          "rows_recorded": 24,
-          "rows_successful": 24,
+          "expected_total": 26,
+          "rows_recorded": 26,
+          "rows_successful": 26,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9166666666666666,
-          "doc_recall_all": 0.9166666666666666,
-          "ndcg_at_10": 0.6358477112295284,
-          "exact_match": 0.2916666666666667,
-          "token_f1": 0.42271825396825397,
-          "avg_total_sec": 0.06949916513015826,
-          "p50_total_sec": 0.06781674455851316,
+          "doc_recall_any": 0.9230769230769231,
+          "doc_recall_all": 0.9230769230769231,
+          "ndcg_at_10": 0.663859425750334,
+          "exact_match": 0.2692307692307692,
+          "token_f1": 0.41904761904761906,
+          "avg_total_sec": 0.06856498364000939,
+          "p50_total_sec": 0.062489745672792196,
           "p95_total_sec": 0.09825592115521431,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
@@ -5802,17 +5852,17 @@
           ]
         },
         "category_3": {
-          "expected_total": 7,
-          "rows_recorded": 7,
-          "rows_successful": 7,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5714285714285714,
-          "doc_recall_all": 0.14285714285714285,
-          "ndcg_at_10": 0.30344331239095335,
+          "doc_recall_any": 0.5,
+          "doc_recall_all": 0.125,
+          "ndcg_at_10": 0.2655128983420842,
           "exact_match": 0.0,
-          "token_f1": 0.025714285714285714,
-          "avg_total_sec": 0.05618027171918324,
+          "token_f1": 0.0225,
+          "avg_total_sec": 0.05537530721630901,
           "p50_total_sec": 0.05606456799432635,
           "p95_total_sec": 0.08169557433575392,
           "avg_storage_bytes": 10934689.0,
@@ -5866,6 +5916,23 @@
                 "conv-26:D13:15",
                 "conv-26:D3:1",
                 "conv-26:D7:1"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0050",
+              "category": "category_3",
+              "query": "What would Caroline's political leaning likely be?",
+              "gold": "Liberal",
+              "prediction": "Being a mom is awesome",
+              "expected_doc_ids": [
+                "conv-26:D12:1"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D6:7",
+                "conv-26:D15:23",
+                "conv-26:D14:24",
+                "conv-26:D15:3",
+                "conv-26:D17:23"
               ]
             }
           ],
@@ -5929,17 +5996,17 @@
           ]
         },
         "category_1": {
-          "expected_total": 19,
-          "rows_recorded": 19,
-          "rows_successful": 19,
+          "expected_total": 21,
+          "rows_recorded": 21,
+          "rows_successful": 21,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.47368421052631576,
-          "doc_recall_all": 0.15789473684210525,
-          "ndcg_at_10": 0.19944158559782907,
+          "doc_recall_any": 0.47619047619047616,
+          "doc_recall_all": 0.14285714285714285,
+          "ndcg_at_10": 0.193021821377683,
           "exact_match": 0.0,
-          "token_f1": 0.03029503583520204,
-          "avg_total_sec": 0.06459549204201291,
+          "token_f1": 0.02740979432708756,
+          "avg_total_sec": 0.06469153681592572,
           "p50_total_sec": 0.06425130600109696,
           "p95_total_sec": 0.08389091119170189,
           "avg_storage_bytes": 10934689.0,
@@ -6125,6 +6192,25 @@
                 "conv-26:D19:7",
                 "conv-26:D3:13"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0051",
+              "category": "category_1",
+              "query": "What has Melanie painted?",
+              "gold": "Horse, sunset, sunrise",
+              "prediction": "Thanks, Caroline!",
+              "expected_doc_ids": [
+                "conv-26:D13:8",
+                "conv-26:D8:6",
+                "conv-26:D1:12"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D12:6",
+                "conv-26:D16:8",
+                "conv-26:D13:13",
+                "conv-26:D1:16",
+                "conv-26:D14:30"
+              ]
             }
           ],
           "sample_successes": [
@@ -6252,6 +6338,20 @@
                 "conv-26:D5:6",
                 "conv-26:D4:5",
                 "conv-26:D16:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0052",
+              "category": "category_1",
+              "query": "What are Melanie's pets' names?",
+              "gold": "Oliver, Luna, Bailey",
+              "prediction": "Caroline, those lessons are great - self-acceptance, finding support are key, Yeah, it's normal to be both excited, nervous with a big decision, Seeing my kids' faces so happy at the beach was the best!, congrats!",
+              "retrieved_doc_ids": [
+                "conv-26:D7:14",
+                "conv-26:D7:17",
+                "conv-26:D13:3",
+                "conv-26:D13:4",
+                "conv-26:D7:15"
               ]
             }
           ]
@@ -6639,11 +6739,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.006532663316582865,
-    "doc_recall_all_delta": -0.07798994974874374,
-    "ndcg_at_10_delta": -0.04246440335641216,
-    "token_f1_delta": 0.1067336527717605,
+    "doc_recall_any_delta": -0.0025582457743261733,
+    "doc_recall_all_delta": -0.08889904065783472,
+    "ndcg_at_10_delta": -0.03979741636891804,
+    "token_f1_delta": 0.10055030045156607,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.010320639686837574
+    "avg_latency_ratio_nova_over_stock": 0.010225925631696393
   }
 }
