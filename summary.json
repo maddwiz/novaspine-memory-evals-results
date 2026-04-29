@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:07:51Z",
+  "generated_at": "2026-04-29T13:07:52Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:07:51Z",
+    "updated_at": "2026-04-29T13:07:52Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 35,
+    "current_case_index": 40,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0034"
+    "current_case_id": "locomo::conv-26::0039"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,34 +2238,34 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 35,
-        "rows_successful": 35,
+        "rows_recorded": 40,
+        "rows_successful": 40,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7428571428571429,
-        "doc_recall_all": 0.5714285714285714,
-        "ndcg_at_10": 0.4918929551879906,
-        "exact_match": 0.2,
-        "token_f1": 0.2811578947368421,
-        "avg_total_sec": 0.062315221623118436,
-        "p50_total_sec": 0.061110281851142645,
-        "p95_total_sec": 0.08534226613119245,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.525,
+        "ndcg_at_10": 0.4653685553489038,
+        "exact_match": 0.175,
+        "token_f1": 0.2483941102756892,
+        "avg_total_sec": 0.06384157256688923,
+        "p50_total_sec": 0.06282488536089659,
+        "p95_total_sec": 0.09087628312408924,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
         "categories": {
           "category_2": {
-            "expected_total": 18,
-            "rows_recorded": 18,
-            "rows_successful": 18,
+            "expected_total": 20,
+            "rows_recorded": 20,
+            "rows_successful": 20,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9444444444444444,
-            "doc_recall_all": 0.9444444444444444,
-            "ndcg_at_10": 0.7194301283356355,
-            "exact_match": 0.3888888888888889,
-            "token_f1": 0.5305555555555556,
-            "avg_total_sec": 0.06860540064776109,
-            "p50_total_sec": 0.06759489700198174,
+            "doc_recall_any": 0.9,
+            "doc_recall_all": 0.9,
+            "ndcg_at_10": 0.6974871155020719,
+            "exact_match": 0.35,
+            "token_f1": 0.4822619047619048,
+            "avg_total_sec": 0.06940674202051014,
+            "p50_total_sec": 0.06786323478445411,
             "p95_total_sec": 0.09087628312408924,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -2287,6 +2287,23 @@
                   "conv-26:D14:7",
                   "conv-26:D16:8",
                   "conv-26:D17:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0035",
+                "category": "category_2",
+                "query": "When did Melanie go camping in July?",
+                "gold": "two weekends before 17 July 2023",
+                "prediction": "2022",
+                "expected_doc_ids": [
+                  "conv-26:D9:1"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D10:12",
+                  "conv-26:D10:14",
+                  "conv-26:D2:7",
+                  "conv-26:D10:10",
+                  "conv-26:D10:13"
                 ]
               }
             ],
@@ -2556,19 +2573,19 @@
             ]
           },
           "category_1": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.4166666666666667,
-            "doc_recall_all": 0.16666666666666666,
-            "ndcg_at_10": 0.19235248419079845,
+            "doc_recall_any": 0.4,
+            "doc_recall_all": 0.13333333333333333,
+            "ndcg_at_10": 0.1804479061777374,
             "exact_match": 0.0,
-            "token_f1": 0.01754385964912281,
-            "avg_total_sec": 0.0525047645981734,
-            "p50_total_sec": 0.05624670069664717,
-            "p95_total_sec": 0.061110281851142645,
+            "token_f1": 0.014035087719298246,
+            "avg_total_sec": 0.056629979486266774,
+            "p50_total_sec": 0.057944518979638815,
+            "p95_total_sec": 0.07133085560053587,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
             "categories": {},
@@ -2697,6 +2714,43 @@
                   "conv-26:D18:8",
                   "conv-26:D19:4"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0037",
+                "category": "category_1",
+                "query": "What did Melanie paint recently?",
+                "gold": "sunset",
+                "prediction": "Thanks, Caroline!",
+                "expected_doc_ids": [],
+                "retrieved_doc_ids": [
+                  "conv-26:D17:13",
+                  "conv-26:D12:6",
+                  "conv-26:D1:16",
+                  "conv-26:D14:30",
+                  "conv-26:D13:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0038",
+                "category": "category_1",
+                "query": "What activities has Melanie done with her family?",
+                "gold": "Pottery, painting, camping, museum, swimming, hiking",
+                "prediction": "Absolutely, Caroline!",
+                "expected_doc_ids": [
+                  "conv-26:D8:4",
+                  "conv-26:D8:6",
+                  "conv-26:D9:1",
+                  "conv-26:D6:4",
+                  "conv-26:D1:18",
+                  "conv-26:D3:14"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D3:23",
+                  "conv-26:D3:22",
+                  "conv-26:D8:32",
+                  "conv-26:D10:12",
+                  "conv-26:D10:24"
+                ]
               }
             ],
             "sample_successes": [
@@ -2768,6 +2822,20 @@
                   "conv-26:D5:1",
                   "conv-26:D3:1",
                   "conv-26:D5:2"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0039",
+                "category": "category_1",
+                "query": "In what ways is Caroline participating in the LGBTQ community?",
+                "gold": "Joining activist group, going to pride parades, participating in an art show, mentoring program",
+                "prediction": "That pic is cool!",
+                "retrieved_doc_ids": [
+                  "conv-26:D11:8",
+                  "conv-26:D16:5",
+                  "conv-26:D3:2",
+                  "conv-26:D10:3",
+                  "conv-26:D14:34"
                 ]
               }
             ]
@@ -2929,6 +2997,60 @@
               "conv-26:D8:9",
               "conv-26:D18:8",
               "conv-26:D19:4"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0035",
+            "category": "category_2",
+            "query": "When did Melanie go camping in July?",
+            "gold": "two weekends before 17 July 2023",
+            "prediction": "2022",
+            "expected_doc_ids": [
+              "conv-26:D9:1"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D10:12",
+              "conv-26:D10:14",
+              "conv-26:D2:7",
+              "conv-26:D10:10",
+              "conv-26:D10:13"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0037",
+            "category": "category_1",
+            "query": "What did Melanie paint recently?",
+            "gold": "sunset",
+            "prediction": "Thanks, Caroline!",
+            "expected_doc_ids": [],
+            "retrieved_doc_ids": [
+              "conv-26:D17:13",
+              "conv-26:D12:6",
+              "conv-26:D1:16",
+              "conv-26:D14:30",
+              "conv-26:D13:13"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0038",
+            "category": "category_1",
+            "query": "What activities has Melanie done with her family?",
+            "gold": "Pottery, painting, camping, museum, swimming, hiking",
+            "prediction": "Absolutely, Caroline!",
+            "expected_doc_ids": [
+              "conv-26:D8:4",
+              "conv-26:D8:6",
+              "conv-26:D9:1",
+              "conv-26:D6:4",
+              "conv-26:D1:18",
+              "conv-26:D3:14"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D3:23",
+              "conv-26:D3:22",
+              "conv-26:D8:32",
+              "conv-26:D10:12",
+              "conv-26:D10:24"
             ]
           }
         ],
@@ -5350,34 +5472,34 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 35,
-      "rows_successful": 35,
+      "rows_recorded": 40,
+      "rows_successful": 40,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7428571428571429,
-      "doc_recall_all": 0.5714285714285714,
-      "ndcg_at_10": 0.4918929551879906,
-      "exact_match": 0.2,
-      "token_f1": 0.2811578947368421,
-      "avg_total_sec": 0.062315221623118436,
-      "p50_total_sec": 0.061110281851142645,
-      "p95_total_sec": 0.08534226613119245,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.525,
+      "ndcg_at_10": 0.4653685553489038,
+      "exact_match": 0.175,
+      "token_f1": 0.2483941102756892,
+      "avg_total_sec": 0.06384157256688923,
+      "p50_total_sec": 0.06282488536089659,
+      "p95_total_sec": 0.09087628312408924,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
       "categories": {
         "category_2": {
-          "expected_total": 18,
-          "rows_recorded": 18,
-          "rows_successful": 18,
+          "expected_total": 20,
+          "rows_recorded": 20,
+          "rows_successful": 20,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9444444444444444,
-          "doc_recall_all": 0.9444444444444444,
-          "ndcg_at_10": 0.7194301283356355,
-          "exact_match": 0.3888888888888889,
-          "token_f1": 0.5305555555555556,
-          "avg_total_sec": 0.06860540064776109,
-          "p50_total_sec": 0.06759489700198174,
+          "doc_recall_any": 0.9,
+          "doc_recall_all": 0.9,
+          "ndcg_at_10": 0.6974871155020719,
+          "exact_match": 0.35,
+          "token_f1": 0.4822619047619048,
+          "avg_total_sec": 0.06940674202051014,
+          "p50_total_sec": 0.06786323478445411,
           "p95_total_sec": 0.09087628312408924,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -5399,6 +5521,23 @@
                 "conv-26:D14:7",
                 "conv-26:D16:8",
                 "conv-26:D17:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0035",
+              "category": "category_2",
+              "query": "When did Melanie go camping in July?",
+              "gold": "two weekends before 17 July 2023",
+              "prediction": "2022",
+              "expected_doc_ids": [
+                "conv-26:D9:1"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D10:12",
+                "conv-26:D10:14",
+                "conv-26:D2:7",
+                "conv-26:D10:10",
+                "conv-26:D10:13"
               ]
             }
           ],
@@ -5668,19 +5807,19 @@
           ]
         },
         "category_1": {
-          "expected_total": 12,
-          "rows_recorded": 12,
-          "rows_successful": 12,
+          "expected_total": 15,
+          "rows_recorded": 15,
+          "rows_successful": 15,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.4166666666666667,
-          "doc_recall_all": 0.16666666666666666,
-          "ndcg_at_10": 0.19235248419079845,
+          "doc_recall_any": 0.4,
+          "doc_recall_all": 0.13333333333333333,
+          "ndcg_at_10": 0.1804479061777374,
           "exact_match": 0.0,
-          "token_f1": 0.01754385964912281,
-          "avg_total_sec": 0.0525047645981734,
-          "p50_total_sec": 0.05624670069664717,
-          "p95_total_sec": 0.061110281851142645,
+          "token_f1": 0.014035087719298246,
+          "avg_total_sec": 0.056629979486266774,
+          "p50_total_sec": 0.057944518979638815,
+          "p95_total_sec": 0.07133085560053587,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
           "categories": {},
@@ -5809,6 +5948,43 @@
                 "conv-26:D18:8",
                 "conv-26:D19:4"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0037",
+              "category": "category_1",
+              "query": "What did Melanie paint recently?",
+              "gold": "sunset",
+              "prediction": "Thanks, Caroline!",
+              "expected_doc_ids": [],
+              "retrieved_doc_ids": [
+                "conv-26:D17:13",
+                "conv-26:D12:6",
+                "conv-26:D1:16",
+                "conv-26:D14:30",
+                "conv-26:D13:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0038",
+              "category": "category_1",
+              "query": "What activities has Melanie done with her family?",
+              "gold": "Pottery, painting, camping, museum, swimming, hiking",
+              "prediction": "Absolutely, Caroline!",
+              "expected_doc_ids": [
+                "conv-26:D8:4",
+                "conv-26:D8:6",
+                "conv-26:D9:1",
+                "conv-26:D6:4",
+                "conv-26:D1:18",
+                "conv-26:D3:14"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D3:23",
+                "conv-26:D3:22",
+                "conv-26:D8:32",
+                "conv-26:D10:12",
+                "conv-26:D10:24"
+              ]
             }
           ],
           "sample_successes": [
@@ -5880,6 +6056,20 @@
                 "conv-26:D5:1",
                 "conv-26:D3:1",
                 "conv-26:D5:2"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0039",
+              "category": "category_1",
+              "query": "In what ways is Caroline participating in the LGBTQ community?",
+              "gold": "Joining activist group, going to pride parades, participating in an art show, mentoring program",
+              "prediction": "That pic is cool!",
+              "retrieved_doc_ids": [
+                "conv-26:D11:8",
+                "conv-26:D16:5",
+                "conv-26:D3:2",
+                "conv-26:D10:3",
+                "conv-26:D14:34"
               ]
             }
           ]
@@ -6041,6 +6231,60 @@
             "conv-26:D8:9",
             "conv-26:D18:8",
             "conv-26:D19:4"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0035",
+          "category": "category_2",
+          "query": "When did Melanie go camping in July?",
+          "gold": "two weekends before 17 July 2023",
+          "prediction": "2022",
+          "expected_doc_ids": [
+            "conv-26:D9:1"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D10:12",
+            "conv-26:D10:14",
+            "conv-26:D2:7",
+            "conv-26:D10:10",
+            "conv-26:D10:13"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0037",
+          "category": "category_1",
+          "query": "What did Melanie paint recently?",
+          "gold": "sunset",
+          "prediction": "Thanks, Caroline!",
+          "expected_doc_ids": [],
+          "retrieved_doc_ids": [
+            "conv-26:D17:13",
+            "conv-26:D12:6",
+            "conv-26:D1:16",
+            "conv-26:D14:30",
+            "conv-26:D13:13"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0038",
+          "category": "category_1",
+          "query": "What activities has Melanie done with her family?",
+          "gold": "Pottery, painting, camping, museum, swimming, hiking",
+          "prediction": "Absolutely, Caroline!",
+          "expected_doc_ids": [
+            "conv-26:D8:4",
+            "conv-26:D8:6",
+            "conv-26:D9:1",
+            "conv-26:D6:4",
+            "conv-26:D1:18",
+            "conv-26:D3:14"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D3:23",
+            "conv-26:D3:22",
+            "conv-26:D8:32",
+            "conv-26:D10:12",
+            "conv-26:D10:24"
           ]
         }
       ],
@@ -6217,11 +6461,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04938980617372579,
-    "doc_recall_all_delta": -0.026561378320172357,
-    "ndcg_at_10_delta": 0.02595178417949623,
-    "token_f1_delta": 0.16987467198646394,
+    "doc_recall_any_delta": 0.006532663316582865,
+    "doc_recall_all_delta": -0.07298994974874373,
+    "ndcg_at_10_delta": -0.0005726156595905474,
+    "token_f1_delta": 0.13711088752531103,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009799812510546109
+    "avg_latency_ratio_nova_over_stock": 0.010039849417815962
   }
 }
