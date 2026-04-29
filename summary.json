@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T17:25:31Z",
+  "generated_at": "2026-04-29T17:27:40Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T17:25:25Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T17:27:23Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 70,
+    "current_case_index": 75,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::dd2973ad"
+    "current_case_id": "longmemeval_oracle::36b9f61e"
   },
   "benchmarks": {
     "locomo": {
@@ -4897,20 +4897,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 70,
-        "rows_successful": 70,
+        "rows_recorded": 75,
+        "rows_successful": 75,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.8,
-        "ndcg_at_10": 0.9298306663426396,
-        "exact_match": 0.2857142857142857,
-        "token_f1": 0.34105185010040234,
-        "avg_total_sec": 15.498076043597289,
-        "p50_total_sec": 15.026311975903809,
-        "p95_total_sec": 20.24704658286646,
-        "avg_storage_bytes": 6785527.657142857,
-        "p95_storage_bytes": 9002235.0,
+        "doc_recall_all": 0.7733333333333333,
+        "ndcg_at_10": 0.9239803591662363,
+        "exact_match": 0.26666666666666666,
+        "token_f1": 0.3249817267603755,
+        "avg_total_sec": 15.575034039355815,
+        "p50_total_sec": 15.064450729638338,
+        "p95_total_sec": 18.127994744107127,
+        "avg_storage_bytes": 6838602.706666667,
+        "p95_storage_bytes": 8229466.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5067,21 +5067,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.7,
-            "ndcg_at_10": 0.9362593737706126,
-            "exact_match": 0.1,
-            "token_f1": 0.2264957264957265,
-            "avg_total_sec": 17.226667277980596,
+            "doc_recall_all": 0.6,
+            "ndcg_at_10": 0.9048649354126059,
+            "exact_match": 0.06666666666666667,
+            "token_f1": 0.18433048433048432,
+            "avg_total_sec": 17.03526017864545,
             "p50_total_sec": 16.95625683804974,
-            "p95_total_sec": 20.45957968197763,
-            "avg_storage_bytes": 7643004.9,
-            "p95_storage_bytes": 9346301.0,
+            "p95_total_sec": 20.39241152908653,
+            "avg_storage_bytes": 7622554.4,
+            "p95_storage_bytes": 9277121.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5202,6 +5202,29 @@
                 "retrieved_doc_ids": [
                   "answer_f9de4602_2",
                   "answer_f9de4602_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::c4a1ceb8",
+                "category": "multi-session",
+                "query": "How many different types of citrus fruits have I used in my cocktail recipes?",
+                "gold": "3",
+                "prediction": "4",
+                "retrieved_doc_ids": [
+                  "answer_56d02cab_1",
+                  "answer_56d02cab_4",
+                  "answer_56d02cab_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_a56e767c",
+                "category": "multi-session",
+                "query": "How many movie festivals that I attended?",
+                "gold": "I attended four movie festivals.",
+                "prediction": "1",
+                "retrieved_doc_ids": [
+                  "answer_cf9e3940_3",
+                  "answer_cf9e3940_1"
                 ]
               }
             ]
@@ -5346,20 +5369,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 70,
-        "rows_successful": 70,
+        "rows_recorded": 74,
+        "rows_successful": 74,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9857142857142858,
-        "ndcg_at_10": 0.9984601549353641,
-        "exact_match": 0.35714285714285715,
-        "token_f1": 0.4133898743086583,
-        "avg_total_sec": 8.327927625046245,
-        "p50_total_sec": 7.43079583812505,
-        "p95_total_sec": 16.55778768705204,
-        "avg_storage_bytes": 1309272.2571428572,
-        "p95_storage_bytes": 2260325.0,
+        "doc_recall_all": 0.9864864864864865,
+        "ndcg_at_10": 0.9985433898037228,
+        "exact_match": 0.33783783783783783,
+        "token_f1": 0.39780123245413623,
+        "avg_total_sec": 8.469204467268208,
+        "p50_total_sec": 7.530906147323549,
+        "p95_total_sec": 12.98091041808948,
+        "avg_storage_bytes": 1327690.027027027,
+        "p95_storage_bytes": 1882989.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5520,21 +5543,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1,
-            "token_f1": 0.23618948101706722,
-            "avg_total_sec": 11.333180807577445,
-            "p50_total_sec": 10.427978093735874,
-            "p95_total_sec": 17.371714614331722,
-            "avg_storage_bytes": 1681407.4,
-            "p95_storage_bytes": 2420069.0,
+            "exact_match": 0.07142857142857142,
+            "token_f1": 0.20442105786933373,
+            "avg_total_sec": 11.221286064313192,
+            "p50_total_sec": 10.93251237180084,
+            "p95_total_sec": 16.55778768705204,
+            "avg_storage_bytes": 1672434.142857143,
+            "p95_storage_bytes": 2260325.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5658,6 +5681,31 @@
                 "retrieved_doc_ids": [
                   "answer_f9de4602_2",
                   "answer_f9de4602_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::c4a1ceb8",
+                "category": "multi-session",
+                "query": "How many different types of citrus fruits have I used in my cocktail recipes?",
+                "gold": "3",
+                "prediction": "7",
+                "retrieved_doc_ids": [
+                  "answer_56d02cab_3",
+                  "answer_56d02cab_4",
+                  "answer_56d02cab_1",
+                  "answer_56d02cab_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_a56e767c",
+                "category": "multi-session",
+                "query": "How many movie festivals that I attended?",
+                "gold": "I attended four movie festivals.",
+                "prediction": "1",
+                "retrieved_doc_ids": [
+                  "answer_cf9e3940_3",
+                  "answer_cf9e3940_1",
+                  "answer_cf9e3940_2"
                 ]
               }
             ]
@@ -5897,19 +5945,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2056,
-      "rows_successful": 2056,
+      "rows_recorded": 2061,
+      "rows_successful": 2061,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7047665369649806,
-      "doc_recall_all": 0.5919260700389105,
-      "ndcg_at_10": 0.4706209436791795,
-      "exact_match": 0.04377431906614786,
-      "token_f1": 0.09243950170112465,
-      "avg_total_sec": 6.676698236942295,
-      "p50_total_sec": 6.355379451997578,
-      "p95_total_sec": 6.720646851230413,
-      "avg_storage_bytes": 20677250.313715953,
+      "doc_recall_any": 0.705482775351771,
+      "doc_recall_all": 0.591460456089277,
+      "ndcg_at_10": 0.4715220963114391,
+      "exact_match": 0.043668122270742356,
+      "token_f1": 0.09245784352135482,
+      "avg_total_sec": 6.700899468730341,
+      "p50_total_sec": 6.355464403983206,
+      "p95_total_sec": 6.742847720626742,
+      "avg_storage_bytes": 20645480.30664726,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -8046,21 +8094,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 15,
+          "rows_recorded": 15,
+          "rows_successful": 15,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.7,
-          "ndcg_at_10": 0.9362593737706126,
-          "exact_match": 0.1,
-          "token_f1": 0.2264957264957265,
-          "avg_total_sec": 17.226667277980596,
+          "doc_recall_all": 0.6,
+          "ndcg_at_10": 0.9048649354126059,
+          "exact_match": 0.06666666666666667,
+          "token_f1": 0.18433048433048432,
+          "avg_total_sec": 17.03526017864545,
           "p50_total_sec": 16.95625683804974,
-          "p95_total_sec": 20.45957968197763,
-          "avg_storage_bytes": 7643004.9,
-          "p95_storage_bytes": 9346301.0,
+          "p95_total_sec": 20.39241152908653,
+          "avg_storage_bytes": 7622554.4,
+          "p95_storage_bytes": 9277121.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -8181,6 +8229,29 @@
               "retrieved_doc_ids": [
                 "answer_f9de4602_2",
                 "answer_f9de4602_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::c4a1ceb8",
+              "category": "multi-session",
+              "query": "How many different types of citrus fruits have I used in my cocktail recipes?",
+              "gold": "3",
+              "prediction": "4",
+              "retrieved_doc_ids": [
+                "answer_56d02cab_1",
+                "answer_56d02cab_4",
+                "answer_56d02cab_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_a56e767c",
+              "category": "multi-session",
+              "query": "How many movie festivals that I attended?",
+              "gold": "I attended four movie festivals.",
+              "prediction": "1",
+              "retrieved_doc_ids": [
+                "answer_cf9e3940_3",
+                "answer_cf9e3940_1"
               ]
             }
           ]
@@ -8567,19 +8638,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2056,
-      "rows_successful": 2056,
+      "rows_recorded": 2060,
+      "rows_successful": 2060,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7519455252918288,
-      "doc_recall_all": 0.6502918287937743,
-      "ndcg_at_10": 0.5307250474897451,
-      "exact_match": 0.045233463035019454,
-      "token_f1": 0.09355559026141236,
-      "avg_total_sec": 0.34527512252193077,
-      "p50_total_sec": 0.06325470097362995,
-      "p95_total_sec": 0.11024842318147421,
-      "avg_storage_bytes": 13277507.5,
+      "doc_recall_any": 0.7524271844660194,
+      "doc_recall_all": 0.6509708737864077,
+      "ndcg_at_10": 0.531636260989765,
+      "exact_match": 0.04514563106796116,
+      "token_f1": 0.09361664736770088,
+      "avg_total_sec": 0.3658504120047087,
+      "p50_total_sec": 0.06341482512652874,
+      "p95_total_sec": 0.11238300614058971,
+      "avg_storage_bytes": 13254929.817475729,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -10730,21 +10801,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 14,
+          "rows_recorded": 14,
+          "rows_successful": 14,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.1,
-          "token_f1": 0.23618948101706722,
-          "avg_total_sec": 11.333180807577445,
-          "p50_total_sec": 10.427978093735874,
-          "p95_total_sec": 17.371714614331722,
-          "avg_storage_bytes": 1681407.4,
-          "p95_storage_bytes": 2420069.0,
+          "exact_match": 0.07142857142857142,
+          "token_f1": 0.20442105786933373,
+          "avg_total_sec": 11.221286064313192,
+          "p50_total_sec": 10.93251237180084,
+          "p95_total_sec": 16.55778768705204,
+          "avg_storage_bytes": 1672434.142857143,
+          "p95_storage_bytes": 2260325.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -10868,6 +10939,31 @@
               "retrieved_doc_ids": [
                 "answer_f9de4602_2",
                 "answer_f9de4602_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::c4a1ceb8",
+              "category": "multi-session",
+              "query": "How many different types of citrus fruits have I used in my cocktail recipes?",
+              "gold": "3",
+              "prediction": "7",
+              "retrieved_doc_ids": [
+                "answer_56d02cab_3",
+                "answer_56d02cab_4",
+                "answer_56d02cab_1",
+                "answer_56d02cab_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_a56e767c",
+              "category": "multi-session",
+              "query": "How many movie festivals that I attended?",
+              "gold": "I attended four movie festivals.",
+              "prediction": "1",
+              "retrieved_doc_ids": [
+                "answer_cf9e3940_3",
+                "answer_cf9e3940_1",
+                "answer_cf9e3940_2"
               ]
             }
           ]
@@ -11259,11 +11355,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04717898832684819,
-    "doc_recall_all_delta": 0.05836575875486383,
-    "ndcg_at_10_delta": 0.060104103810565634,
-    "token_f1_delta": 0.0011160885602877063,
-    "avg_storage_ratio_nova_over_stock": 0.6421311972604287,
-    "avg_latency_ratio_nova_over_stock": 0.05171345330713272
+    "doc_recall_any_delta": 0.046944409114248464,
+    "doc_recall_all_delta": 0.059510417697130724,
+    "ndcg_at_10_delta": 0.06011416467832592,
+    "token_f1_delta": 0.0011588038463460626,
+    "avg_storage_ratio_nova_over_stock": 0.6420257422254312,
+    "avg_latency_ratio_nova_over_stock": 0.05459720948089802
   }
 }
