@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:07:45Z",
+  "generated_at": "2026-04-29T03:07:46Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:07:45Z",
+    "updated_at": "2026-04-29T03:07:46Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 25,
+    "current_case_index": 30,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0024"
+    "current_case_id": "locomo::conv-26::0029"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,35 +2238,35 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 25,
-        "rows_successful": 25,
+        "rows_recorded": 30,
+        "rows_successful": 30,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.72,
-        "doc_recall_all": 0.56,
-        "ndcg_at_10": 0.44348869593826473,
-        "exact_match": 0.2,
-        "token_f1": 0.2825099415204678,
-        "avg_total_sec": 0.06443826016038656,
-        "p50_total_sec": 0.06572571117430925,
+        "doc_recall_any": 0.7333333333333333,
+        "doc_recall_all": 0.6,
+        "ndcg_at_10": 0.4783025635199844,
+        "exact_match": 0.23333333333333334,
+        "token_f1": 0.3270916179337232,
+        "avg_total_sec": 0.06389543066422144,
+        "p50_total_sec": 0.062489745672792196,
         "p95_total_sec": 0.08389091119170189,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
         "categories": {
           "category_2": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 16,
+            "rows_recorded": 16,
+            "rows_successful": 16,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9166666666666666,
-            "doc_recall_all": 0.9166666666666666,
-            "ndcg_at_10": 0.6182580574929099,
-            "exact_match": 0.4166666666666667,
-            "token_f1": 0.5458333333333333,
-            "avg_total_sec": 0.06508111402702828,
-            "p50_total_sec": 0.06572571117430925,
-            "p95_total_sec": 0.07443810068070889,
+            "doc_recall_any": 0.9375,
+            "doc_recall_all": 0.9375,
+            "ndcg_at_10": 0.6675597623161146,
+            "exact_match": 0.4375,
+            "token_f1": 0.58125,
+            "avg_total_sec": 0.06416508095571771,
+            "p50_total_sec": 0.062489745672792196,
+            "p95_total_sec": 0.08066267427057028,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
             "categories": {},
@@ -2444,28 +2444,61 @@
                   "conv-26:D4:5",
                   "conv-26:D4:8"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0025",
+                "category": "category_2",
+                "query": "When did Caroline go to the LGBTQ conference?",
+                "gold": "10 July 2023",
+                "prediction": "10 July 2023",
+                "retrieved_doc_ids": [
+                  "conv-26:D7:1",
+                  "conv-26:D5:13",
+                  "conv-26:D3:1",
+                  "conv-26:D16:5",
+                  "conv-26:D11:6"
+                ]
               }
             ]
           },
           "category_3": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.3333333333333333,
-            "ndcg_at_10": 0.6399069297160626,
+            "doc_recall_any": 0.75,
+            "doc_recall_all": 0.25,
+            "ndcg_at_10": 0.4799301972870469,
             "exact_match": 0.0,
-            "token_f1": 0.02666666666666666,
-            "avg_total_sec": 0.06370607033992808,
+            "token_f1": 0.019999999999999997,
+            "avg_total_sec": 0.06283917499240488,
             "p50_total_sec": 0.06809583306312561,
             "p95_total_sec": 0.08169557433575392,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0027",
+                "category": "category_3",
+                "query": "Would Caroline pursue writing as a career option?",
+                "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+                "prediction": "I struggled with mental health, and support I got was really helpful",
+                "expected_doc_ids": [
+                  "conv-26:D7:5",
+                  "conv-26:D7:9"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:7",
+                  "conv-26:D4:11",
+                  "conv-26:D6:7",
+                  "conv-26:D12:6",
+                  "conv-26:D16:7"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "locomo::conv-26::0002",
@@ -2820,6 +2853,24 @@
               "conv-26:D13:13",
               "conv-26:D7:6",
               "conv-26:D2:3"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0027",
+            "category": "category_3",
+            "query": "Would Caroline pursue writing as a career option?",
+            "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+            "prediction": "I struggled with mental health, and support I got was really helpful",
+            "expected_doc_ids": [
+              "conv-26:D7:5",
+              "conv-26:D7:9"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D7:7",
+              "conv-26:D4:11",
+              "conv-26:D6:7",
+              "conv-26:D12:6",
+              "conv-26:D16:7"
             ]
           }
         ],
@@ -5241,35 +5292,35 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 25,
-      "rows_successful": 25,
+      "rows_recorded": 30,
+      "rows_successful": 30,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.72,
-      "doc_recall_all": 0.56,
-      "ndcg_at_10": 0.44348869593826473,
-      "exact_match": 0.2,
-      "token_f1": 0.2825099415204678,
-      "avg_total_sec": 0.06443826016038656,
-      "p50_total_sec": 0.06572571117430925,
+      "doc_recall_any": 0.7333333333333333,
+      "doc_recall_all": 0.6,
+      "ndcg_at_10": 0.4783025635199844,
+      "exact_match": 0.23333333333333334,
+      "token_f1": 0.3270916179337232,
+      "avg_total_sec": 0.06389543066422144,
+      "p50_total_sec": 0.062489745672792196,
       "p95_total_sec": 0.08389091119170189,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
       "categories": {
         "category_2": {
-          "expected_total": 12,
-          "rows_recorded": 12,
-          "rows_successful": 12,
+          "expected_total": 16,
+          "rows_recorded": 16,
+          "rows_successful": 16,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9166666666666666,
-          "doc_recall_all": 0.9166666666666666,
-          "ndcg_at_10": 0.6182580574929099,
-          "exact_match": 0.4166666666666667,
-          "token_f1": 0.5458333333333333,
-          "avg_total_sec": 0.06508111402702828,
-          "p50_total_sec": 0.06572571117430925,
-          "p95_total_sec": 0.07443810068070889,
+          "doc_recall_any": 0.9375,
+          "doc_recall_all": 0.9375,
+          "ndcg_at_10": 0.6675597623161146,
+          "exact_match": 0.4375,
+          "token_f1": 0.58125,
+          "avg_total_sec": 0.06416508095571771,
+          "p50_total_sec": 0.062489745672792196,
+          "p95_total_sec": 0.08066267427057028,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
           "categories": {},
@@ -5447,28 +5498,61 @@
                 "conv-26:D4:5",
                 "conv-26:D4:8"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0025",
+              "category": "category_2",
+              "query": "When did Caroline go to the LGBTQ conference?",
+              "gold": "10 July 2023",
+              "prediction": "10 July 2023",
+              "retrieved_doc_ids": [
+                "conv-26:D7:1",
+                "conv-26:D5:13",
+                "conv-26:D3:1",
+                "conv-26:D16:5",
+                "conv-26:D11:6"
+              ]
             }
           ]
         },
         "category_3": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 0.3333333333333333,
-          "ndcg_at_10": 0.6399069297160626,
+          "doc_recall_any": 0.75,
+          "doc_recall_all": 0.25,
+          "ndcg_at_10": 0.4799301972870469,
           "exact_match": 0.0,
-          "token_f1": 0.02666666666666666,
-          "avg_total_sec": 0.06370607033992808,
+          "token_f1": 0.019999999999999997,
+          "avg_total_sec": 0.06283917499240488,
           "p50_total_sec": 0.06809583306312561,
           "p95_total_sec": 0.08169557433575392,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0027",
+              "category": "category_3",
+              "query": "Would Caroline pursue writing as a career option?",
+              "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+              "prediction": "I struggled with mental health, and support I got was really helpful",
+              "expected_doc_ids": [
+                "conv-26:D7:5",
+                "conv-26:D7:9"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:7",
+                "conv-26:D4:11",
+                "conv-26:D6:7",
+                "conv-26:D12:6",
+                "conv-26:D16:7"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "locomo::conv-26::0002",
@@ -5824,6 +5908,24 @@
             "conv-26:D7:6",
             "conv-26:D2:3"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0027",
+          "category": "category_3",
+          "query": "Would Caroline pursue writing as a career option?",
+          "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+          "prediction": "I struggled with mental health, and support I got was really helpful",
+          "expected_doc_ids": [
+            "conv-26:D7:5",
+            "conv-26:D7:9"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D7:7",
+            "conv-26:D4:11",
+            "conv-26:D6:7",
+            "conv-26:D12:6",
+            "conv-26:D16:7"
+          ]
         }
       ],
       "sample_successes": [
@@ -5999,11 +6101,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.026532663316582883,
-    "doc_recall_all_delta": -0.0379899497487437,
-    "ndcg_at_10_delta": -0.022452475070229627,
-    "token_f1_delta": 0.17122671877008966,
+    "doc_recall_any_delta": 0.03986599664991619,
+    "doc_recall_all_delta": 0.0020100502512562235,
+    "ndcg_at_10_delta": 0.012361392511490044,
+    "token_f1_delta": 0.21580839518334505,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.01011148999581739
+    "avg_latency_ratio_nova_over_stock": 0.010026310554189908
   }
 }
