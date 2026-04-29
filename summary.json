@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T17:50:11Z",
+  "generated_at": "2026-04-29T17:51:59Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T17:50:03Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T17:51:45Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 120,
+    "current_case_index": 125,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::60bf93ed_abs"
+    "current_case_id": "longmemeval_oracle::830ce83f"
   },
   "benchmarks": {
     "locomo": {
@@ -4897,19 +4897,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 120,
-        "rows_successful": 120,
+        "rows_recorded": 125,
+        "rows_successful": 125,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9916666666666667,
-        "doc_recall_all": 0.6916666666666667,
-        "ndcg_at_10": 0.9008346444010856,
-        "exact_match": 0.20833333333333334,
-        "token_f1": 0.24266913478079025,
-        "avg_total_sec": 16.255387491860894,
-        "p50_total_sec": 15.571030816063285,
+        "doc_recall_any": 0.992,
+        "doc_recall_all": 0.696,
+        "ndcg_at_10": 0.9005554884332242,
+        "exact_match": 0.2,
+        "token_f1": 0.23589971274795463,
+        "avg_total_sec": 16.20631464791298,
+        "p50_total_sec": 15.53705174010247,
         "p95_total_sec": 20.420598925556988,
-        "avg_storage_bytes": 7217553.758333334,
+        "avg_storage_bytes": 7195357.992,
         "p95_storage_bytes": 9420435.0,
         "categories": {
           "temporal-reasoning": {
@@ -5067,20 +5067,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 60,
-            "rows_recorded": 60,
-            "rows_successful": 60,
+            "expected_total": 62,
+            "rows_recorded": 62,
+            "rows_successful": 62,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9833333333333333,
-            "doc_recall_all": 0.5666666666666667,
-            "ndcg_at_10": 0.8729100736975273,
-            "exact_match": 0.1,
-            "token_f1": 0.1251937321937322,
-            "avg_total_sec": 17.30079747918838,
-            "p50_total_sec": 17.273614147678018,
+            "doc_recall_any": 0.9838709677419355,
+            "doc_recall_all": 0.5645161290322581,
+            "ndcg_at_10": 0.8684497281915224,
+            "exact_match": 0.0967741935483871,
+            "token_f1": 0.1255411896158925,
+            "avg_total_sec": 17.25942828481446,
+            "p50_total_sec": 17.257117094937712,
             "p95_total_sec": 20.615637773647904,
-            "avg_storage_bytes": 7792492.733333333,
+            "avg_storage_bytes": 7775306.129032258,
             "p95_storage_bytes": 9712964.0,
             "categories": {},
             "sample_errors": [],
@@ -5241,6 +5241,61 @@
                 ]
               }
             ]
+          },
+          "knowledge-update": {
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.03174603174603175,
+            "avg_total_sec": 14.368709019540498,
+            "p50_total_sec": 14.305863198824227,
+            "p95_total_sec": 14.930979029741138,
+            "avg_storage_bytes": 6264627.333333333,
+            "p95_storage_bytes": 6608339.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::6a1eabeb",
+                "category": "knowledge-update",
+                "query": "What was my personal best time in the charity 5K run?",
+                "gold": "25 minutes and 50 seconds (or 25:50)",
+                "prediction": "50, I'll provide you with tailored tips to help you achieve it",
+                "retrieved_doc_ids": [
+                  "answer_a25d4a91_2",
+                  "answer_a25d4a91_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6aeb4375",
+                "category": "knowledge-update",
+                "query": "How many Korean restaurants have I tried in my city?",
+                "gold": "four",
+                "prediction": "3",
+                "retrieved_doc_ids": [
+                  "answer_3f9693b7_1",
+                  "answer_3f9693b7_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::830ce83f",
+                "category": "knowledge-update",
+                "query": "Where did Rachel move to after her recent relocation?",
+                "gold": "the suburbs",
+                "prediction": "s a great idea to ask Rachel about her neighborhood, as it",
+                "retrieved_doc_ids": [
+                  "answer_0b1a0942_1",
+                  "answer_0b1a0942_2"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [],
@@ -5395,19 +5450,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 120,
-        "rows_successful": 120,
+        "rows_recorded": 124,
+        "rows_successful": 124,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9916666666666667,
-        "ndcg_at_10": 0.9991017570456291,
-        "exact_match": 0.24166666666666667,
-        "token_f1": 0.28793058572144503,
-        "avg_total_sec": 9.728964314935729,
-        "p50_total_sec": 8.294353230390698,
+        "doc_recall_all": 0.9919354838709677,
+        "ndcg_at_10": 0.9991307326248023,
+        "exact_match": 0.23387096774193547,
+        "token_f1": 0.2808354847672162,
+        "avg_total_sec": 9.668916422385543,
+        "p50_total_sec": 8.27621355606243,
         "p95_total_sec": 17.371714614331722,
-        "avg_storage_bytes": 1482677.4333333333,
+        "avg_storage_bytes": 1474841.7419354839,
         "p95_storage_bytes": 2420069.0,
         "categories": {
           "temporal-reasoning": {
@@ -5569,20 +5624,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 60,
-            "rows_recorded": 60,
-            "rows_successful": 60,
+            "expected_total": 62,
+            "rows_recorded": 62,
+            "rows_successful": 62,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.08333333333333333,
-            "token_f1": 0.13293789825229987,
-            "avg_total_sec": 11.63087653524708,
-            "p50_total_sec": 11.471179413143545,
+            "exact_match": 0.08064516129032258,
+            "token_f1": 0.1330355438661193,
+            "avg_total_sec": 11.545091513574365,
+            "p50_total_sec": 11.061063612811267,
             "p95_total_sec": 18.383126929868013,
-            "avg_storage_bytes": 1718105.1333333333,
+            "avg_storage_bytes": 1707340.0967741935,
             "p95_storage_bytes": 2498397.0,
             "categories": {},
             "sample_errors": [],
@@ -5732,6 +5787,50 @@
                   "answer_cf9e3940_3",
                   "answer_cf9e3940_1",
                   "answer_cf9e3940_2"
+                ]
+              }
+            ]
+          },
+          "knowledge-update": {
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 6.763418428367004,
+            "p50_total_sec": 6.0205979738384485,
+            "p95_total_sec": 7.506238882895559,
+            "avg_storage_bytes": 1095153.0,
+            "p95_storage_bytes": 1189541.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::6a1eabeb",
+                "category": "knowledge-update",
+                "query": "What was my personal best time in the charity 5K run?",
+                "gold": "25 minutes and 50 seconds (or 25:50)",
+                "prediction": "wondering if you could give me some tips on how to improve my endurance",
+                "retrieved_doc_ids": [
+                  "answer_a25d4a91_2",
+                  "answer_a25d4a91_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6aeb4375",
+                "category": "knowledge-update",
+                "query": "How many Korean restaurants have I tried in my city?",
+                "gold": "four",
+                "prediction": "1",
+                "retrieved_doc_ids": [
+                  "answer_3f9693b7_1",
+                  "answer_3f9693b7_2"
                 ]
               }
             ]
@@ -5971,19 +6070,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2106,
-      "rows_successful": 2106,
+      "rows_recorded": 2111,
+      "rows_successful": 2111,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7113010446343779,
-      "doc_recall_all": 0.5906932573599241,
-      "ndcg_at_10": 0.47987116376473815,
-      "exact_match": 0.04510921177587844,
-      "token_f1": 0.0927361263837507,
-      "avg_total_sec": 6.92928430727676,
-      "p50_total_sec": 6.356827468145639,
-      "p95_total_sec": 14.414148540236056,
-      "avg_storage_bytes": 20372054.20702754,
+      "doc_recall_any": 0.7119848413074372,
+      "doc_recall_all": 0.591189009947892,
+      "ndcg_at_10": 0.48085170517032744,
+      "exact_match": 0.045002368545712934,
+      "token_f1": 0.09269040742964399,
+      "avg_total_sec": 6.9484678271391145,
+      "p50_total_sec": 6.356975069735199,
+      "p95_total_sec": 14.436482027638704,
+      "avg_storage_bytes": 20339582.87920417,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -8120,20 +8219,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 60,
-          "rows_recorded": 60,
-          "rows_successful": 60,
+          "expected_total": 62,
+          "rows_recorded": 62,
+          "rows_successful": 62,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9833333333333333,
-          "doc_recall_all": 0.5666666666666667,
-          "ndcg_at_10": 0.8729100736975273,
-          "exact_match": 0.1,
-          "token_f1": 0.1251937321937322,
-          "avg_total_sec": 17.30079747918838,
-          "p50_total_sec": 17.273614147678018,
+          "doc_recall_any": 0.9838709677419355,
+          "doc_recall_all": 0.5645161290322581,
+          "ndcg_at_10": 0.8684497281915224,
+          "exact_match": 0.0967741935483871,
+          "token_f1": 0.1255411896158925,
+          "avg_total_sec": 17.25942828481446,
+          "p50_total_sec": 17.257117094937712,
           "p95_total_sec": 20.615637773647904,
-          "avg_storage_bytes": 7792492.733333333,
+          "avg_storage_bytes": 7775306.129032258,
           "p95_storage_bytes": 9712964.0,
           "categories": {},
           "sample_errors": [],
@@ -8291,6 +8390,61 @@
               "retrieved_doc_ids": [
                 "answer_cf9e3940_3",
                 "answer_cf9e3940_1"
+              ]
+            }
+          ]
+        },
+        "knowledge-update": {
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.03174603174603175,
+          "avg_total_sec": 14.368709019540498,
+          "p50_total_sec": 14.305863198824227,
+          "p95_total_sec": 14.930979029741138,
+          "avg_storage_bytes": 6264627.333333333,
+          "p95_storage_bytes": 6608339.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::6a1eabeb",
+              "category": "knowledge-update",
+              "query": "What was my personal best time in the charity 5K run?",
+              "gold": "25 minutes and 50 seconds (or 25:50)",
+              "prediction": "50, I'll provide you with tailored tips to help you achieve it",
+              "retrieved_doc_ids": [
+                "answer_a25d4a91_2",
+                "answer_a25d4a91_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6aeb4375",
+              "category": "knowledge-update",
+              "query": "How many Korean restaurants have I tried in my city?",
+              "gold": "four",
+              "prediction": "3",
+              "retrieved_doc_ids": [
+                "answer_3f9693b7_1",
+                "answer_3f9693b7_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::830ce83f",
+              "category": "knowledge-update",
+              "query": "Where did Rachel move to after her recent relocation?",
+              "gold": "the suburbs",
+              "prediction": "s a great idea to ask Rachel about her neighborhood, as it",
+              "retrieved_doc_ids": [
+                "answer_0b1a0942_1",
+                "answer_0b1a0942_2"
               ]
             }
           ]
@@ -8677,19 +8831,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2106,
-      "rows_successful": 2106,
+      "rows_recorded": 2110,
+      "rows_successful": 2110,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7578347578347578,
-      "doc_recall_all": 0.6585944919278253,
-      "ndcg_at_10": 0.54186642812864,
-      "exact_match": 0.046058879392212725,
-      "token_f1": 0.09400031940286378,
-      "avg_total_sec": 0.6146279372954131,
-      "p50_total_sec": 0.06393833411857486,
-      "p95_total_sec": 6.656012414954603,
-      "avg_storage_bytes": 13003242.000949668,
+      "doc_recall_any": 0.7582938388625592,
+      "doc_recall_all": 0.6592417061611374,
+      "ndcg_at_10": 0.5427349277909554,
+      "exact_match": 0.04597156398104266,
+      "token_f1": 0.09395099643933297,
+      "avg_total_sec": 0.6283774192074216,
+      "p50_total_sec": 0.06395923113450408,
+      "p95_total_sec": 6.728865043260157,
+      "avg_storage_bytes": 12980941.581990521,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -10840,20 +10994,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 60,
-          "rows_recorded": 60,
-          "rows_successful": 60,
+          "expected_total": 62,
+          "rows_recorded": 62,
+          "rows_successful": 62,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.08333333333333333,
-          "token_f1": 0.13293789825229987,
-          "avg_total_sec": 11.63087653524708,
-          "p50_total_sec": 11.471179413143545,
+          "exact_match": 0.08064516129032258,
+          "token_f1": 0.1330355438661193,
+          "avg_total_sec": 11.545091513574365,
+          "p50_total_sec": 11.061063612811267,
           "p95_total_sec": 18.383126929868013,
-          "avg_storage_bytes": 1718105.1333333333,
+          "avg_storage_bytes": 1707340.0967741935,
           "p95_storage_bytes": 2498397.0,
           "categories": {},
           "sample_errors": [],
@@ -11003,6 +11157,50 @@
                 "answer_cf9e3940_3",
                 "answer_cf9e3940_1",
                 "answer_cf9e3940_2"
+              ]
+            }
+          ]
+        },
+        "knowledge-update": {
+          "expected_total": 2,
+          "rows_recorded": 2,
+          "rows_successful": 2,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 6.763418428367004,
+          "p50_total_sec": 6.0205979738384485,
+          "p95_total_sec": 7.506238882895559,
+          "avg_storage_bytes": 1095153.0,
+          "p95_storage_bytes": 1189541.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::6a1eabeb",
+              "category": "knowledge-update",
+              "query": "What was my personal best time in the charity 5K run?",
+              "gold": "25 minutes and 50 seconds (or 25:50)",
+              "prediction": "wondering if you could give me some tips on how to improve my endurance",
+              "retrieved_doc_ids": [
+                "answer_a25d4a91_2",
+                "answer_a25d4a91_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6aeb4375",
+              "category": "knowledge-update",
+              "query": "How many Korean restaurants have I tried in my city?",
+              "gold": "four",
+              "prediction": "1",
+              "retrieved_doc_ids": [
+                "answer_3f9693b7_1",
+                "answer_3f9693b7_2"
               ]
             }
           ]
@@ -11394,11 +11592,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04653371320037991,
-    "doc_recall_all_delta": 0.0679012345679012,
-    "ndcg_at_10_delta": 0.0619952643639019,
-    "token_f1_delta": 0.001264193019113083,
-    "avg_storage_ratio_nova_over_stock": 0.6382882093679131,
-    "avg_latency_ratio_nova_over_stock": 0.08870006050263576
+    "doc_recall_any_delta": 0.04630899755512197,
+    "doc_recall_all_delta": 0.06805269621324539,
+    "ndcg_at_10_delta": 0.06188322262062801,
+    "token_f1_delta": 0.0012605890096889782,
+    "avg_storage_ratio_nova_over_stock": 0.6382108059483681,
+    "avg_latency_ratio_nova_over_stock": 0.09043395390752537
   }
 }
