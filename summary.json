@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T20:15:54Z",
+  "generated_at": "2026-04-29T20:30:49Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T20:13:50Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T20:29:28Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 5,
+    "current_case_index": 10,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::1e043500"
+    "current_case_id": "longmemeval_s::f8c5f88b"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,37 +7226,37 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 10,
+        "rows_successful": 10,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.0,
-        "avg_total_sec": 80.56171101173386,
-        "p50_total_sec": 81.00428263517097,
+        "token_f1": 0.008695652173913042,
+        "avg_total_sec": 80.5563547931146,
+        "p50_total_sec": 80.8156461189501,
         "p95_total_sec": 82.88822485413402,
-        "avg_storage_bytes": 44711702.2,
-        "p95_storage_bytes": 45556854.0,
+        "avg_storage_bytes": 44651235.2,
+        "p95_storage_bytes": 45613700.0,
         "categories": {
           "single-session-user": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 80.56171101173386,
-            "p50_total_sec": 81.00428263517097,
+            "token_f1": 0.008695652173913042,
+            "avg_total_sec": 80.5563547931146,
+            "p50_total_sec": 80.8156461189501,
             "p95_total_sec": 82.88822485413402,
-            "avg_storage_bytes": 44711702.2,
-            "p95_storage_bytes": 45556854.0,
+            "avg_storage_bytes": 44651235.2,
+            "p95_storage_bytes": 45613700.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -7315,6 +7315,61 @@
                 "retrieved_doc_ids": [
                   "answer_3e012175",
                   "8020d945_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::c5e8278d",
+                "category": "single-session-user",
+                "query": "What was my last name before I changed it?",
+                "gold": "Johnson",
+                "prediction": "to ensure your identification documents match your new name",
+                "retrieved_doc_ids": [
+                  "answer_f6168136"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6ade9755",
+                "category": "single-session-user",
+                "query": "Where do I take yoga classes?",
+                "gold": "Serenity Yoga",
+                "prediction": "**Peloton Digital**: While known for their cycling classes, Peloton also offers a vast yoga library with classes ranging from beginner to advanced.",
+                "retrieved_doc_ids": [
+                  "answer_9398da02"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6f9b354f",
+                "category": "single-session-user",
+                "query": "What color did I repaint my bedroom walls?",
+                "gold": "a lighter shade of gray",
+                "prediction": "ideal",
+                "retrieved_doc_ids": [
+                  "answer_feb5200f",
+                  "0c0f2449_2",
+                  "8bc305e4_1",
+                  "de877349"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::58ef2f1c",
+                "category": "single-session-user",
+                "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+                "gold": "February 14th",
+                "prediction": "Love is in the Air",
+                "retrieved_doc_ids": [
+                  "answer_59547700",
+                  "e6ab6a7b_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::f8c5f88b",
+                "category": "single-session-user",
+                "query": "Where did I buy my new tennis racket from?",
+                "gold": "the sports store downtown",
+                "prediction": "ll consider getting a tennis ball machine, but for now, I think I",
+                "retrieved_doc_ids": [
+                  "answer_c3567066",
+                  "91880423"
                 ]
               }
             ]
@@ -7378,41 +7433,96 @@
               "answer_3e012175",
               "8020d945_2"
             ]
+          },
+          {
+            "case_id": "longmemeval_s::c5e8278d",
+            "category": "single-session-user",
+            "query": "What was my last name before I changed it?",
+            "gold": "Johnson",
+            "prediction": "to ensure your identification documents match your new name",
+            "retrieved_doc_ids": [
+              "answer_f6168136"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::6ade9755",
+            "category": "single-session-user",
+            "query": "Where do I take yoga classes?",
+            "gold": "Serenity Yoga",
+            "prediction": "**Peloton Digital**: While known for their cycling classes, Peloton also offers a vast yoga library with classes ranging from beginner to advanced.",
+            "retrieved_doc_ids": [
+              "answer_9398da02"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::6f9b354f",
+            "category": "single-session-user",
+            "query": "What color did I repaint my bedroom walls?",
+            "gold": "a lighter shade of gray",
+            "prediction": "ideal",
+            "retrieved_doc_ids": [
+              "answer_feb5200f",
+              "0c0f2449_2",
+              "8bc305e4_1",
+              "de877349"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::58ef2f1c",
+            "category": "single-session-user",
+            "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+            "gold": "February 14th",
+            "prediction": "Love is in the Air",
+            "retrieved_doc_ids": [
+              "answer_59547700",
+              "e6ab6a7b_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::f8c5f88b",
+            "category": "single-session-user",
+            "query": "Where did I buy my new tennis racket from?",
+            "gold": "the sports store downtown",
+            "prediction": "ll consider getting a tennis ball machine, but for now, I think I",
+            "retrieved_doc_ids": [
+              "answer_c3567066",
+              "91880423"
+            ]
           }
         ]
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 9,
+        "rows_successful": 9,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 0.0,
-        "token_f1": 0.042105263157894736,
-        "avg_total_sec": 126.11494986396283,
+        "token_f1": 0.0442845004248513,
+        "avg_total_sec": 124.62853530323547,
         "p50_total_sec": 124.23124803323299,
         "p95_total_sec": 130.38080241996795,
-        "avg_storage_bytes": 15356241.0,
+        "avg_storage_bytes": 15182597.888888888,
         "p95_storage_bytes": 15803369.0,
         "categories": {
           "single-session-user": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.042105263157894736,
-            "avg_total_sec": 126.11494986396283,
+            "token_f1": 0.0442845004248513,
+            "avg_total_sec": 124.62853530323547,
             "p50_total_sec": 124.23124803323299,
             "p95_total_sec": 130.38080241996795,
-            "avg_storage_bytes": 15356241.0,
+            "avg_storage_bytes": 15182597.888888888,
             "p95_storage_bytes": 15803369.0,
             "categories": {},
             "sample_errors": [],
@@ -7486,6 +7596,60 @@
                   "3548cae3",
                   "8020d945_2",
                   "2d0d0004"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::c5e8278d",
+                "category": "single-session-user",
+                "query": "What was my last name before I changed it?",
+                "gold": "Johnson",
+                "prediction": "I need to update my credit report with the three major credit bureaus (Experian, TransUnion, and Equifax) to reflect my name change",
+                "retrieved_doc_ids": [
+                  "answer_f6168136",
+                  "0fe848c5_3",
+                  "d777e7da_1",
+                  "aaf71ce2_2",
+                  "ultrachat_474903"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6ade9755",
+                "category": "single-session-user",
+                "query": "Where do I take yoga classes?",
+                "gold": "Serenity Yoga",
+                "prediction": "user: I'm trying to plan a self-care day and was thinking of doing a morning yoga practice at home, then meeting a friend for brunch.",
+                "retrieved_doc_ids": [
+                  "answer_9398da02",
+                  "ec8fa65d_2",
+                  "de5634fc_2",
+                  "ultrachat_270925"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6f9b354f",
+                "category": "single-session-user",
+                "query": "What color did I repaint my bedroom walls?",
+                "gold": "a lighter shade of gray",
+                "prediction": "the length of the Great Wall of China, and how long did it take to build",
+                "retrieved_doc_ids": [
+                  "answer_feb5200f",
+                  "de877349",
+                  "0c0f2449_2",
+                  "ultrachat_549317"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::58ef2f1c",
+                "category": "single-session-user",
+                "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+                "gold": "February 14th",
+                "prediction": "Love is in the Air",
+                "retrieved_doc_ids": [
+                  "answer_59547700",
+                  "e6ab6a7b_2",
+                  "6e015703",
+                  "e82ce7cd_1",
+                  "13f3da23_3"
                 ]
               }
             ]
@@ -7563,6 +7727,60 @@
               "8020d945_2",
               "2d0d0004"
             ]
+          },
+          {
+            "case_id": "longmemeval_s::c5e8278d",
+            "category": "single-session-user",
+            "query": "What was my last name before I changed it?",
+            "gold": "Johnson",
+            "prediction": "I need to update my credit report with the three major credit bureaus (Experian, TransUnion, and Equifax) to reflect my name change",
+            "retrieved_doc_ids": [
+              "answer_f6168136",
+              "0fe848c5_3",
+              "d777e7da_1",
+              "aaf71ce2_2",
+              "ultrachat_474903"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::6ade9755",
+            "category": "single-session-user",
+            "query": "Where do I take yoga classes?",
+            "gold": "Serenity Yoga",
+            "prediction": "user: I'm trying to plan a self-care day and was thinking of doing a morning yoga practice at home, then meeting a friend for brunch.",
+            "retrieved_doc_ids": [
+              "answer_9398da02",
+              "ec8fa65d_2",
+              "de5634fc_2",
+              "ultrachat_270925"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::6f9b354f",
+            "category": "single-session-user",
+            "query": "What color did I repaint my bedroom walls?",
+            "gold": "a lighter shade of gray",
+            "prediction": "the length of the Great Wall of China, and how long did it take to build",
+            "retrieved_doc_ids": [
+              "answer_feb5200f",
+              "de877349",
+              "0c0f2449_2",
+              "ultrachat_549317"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::58ef2f1c",
+            "category": "single-session-user",
+            "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+            "gold": "February 14th",
+            "prediction": "Love is in the Air",
+            "retrieved_doc_ids": [
+              "answer_59547700",
+              "e6ab6a7b_2",
+              "6e015703",
+              "e82ce7cd_1",
+              "13f3da23_3"
+            ]
           }
         ]
       }
@@ -7615,19 +7833,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2491,
-      "rows_successful": 2491,
+      "rows_recorded": 2496,
+      "rows_successful": 2496,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7527097551184263,
-      "doc_recall_all": 0.6399036531513448,
-      "ndcg_at_10": 0.5534064353880856,
-      "exact_match": 0.056202328382175835,
-      "token_f1": 0.10284182066816779,
-      "avg_total_sec": 8.168244351197329,
-      "p50_total_sec": 6.3685032916255295,
-      "p95_total_sec": 15.167515454348177,
-      "avg_storage_bytes": 18219967.28101164,
+      "doc_recall_any": 0.7532051282051282,
+      "doc_recall_all": 0.640625,
+      "ndcg_at_10": 0.5543010539069396,
+      "exact_match": 0.05608974358974359,
+      "token_f1": 0.1026706457556671,
+      "avg_total_sec": 8.31324185565105,
+      "p50_total_sec": 6.368778648786247,
+      "p95_total_sec": 15.199222289957106,
+      "avg_storage_bytes": 18272793.404647436,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -10437,21 +10655,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 75,
-          "rows_recorded": 75,
-          "rows_successful": 75,
+          "expected_total": 80,
+          "rows_recorded": 80,
+          "rows_successful": 80,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.96,
-          "doc_recall_all": 0.96,
-          "ndcg_at_10": 0.96,
-          "exact_match": 0.12,
-          "token_f1": 0.15880458624017899,
-          "avg_total_sec": 17.49025650665785,
-          "p50_total_sec": 12.946761732921004,
-          "p95_total_sec": 77.04847022937611,
-          "avg_storage_bytes": 7969976.506666667,
-          "p95_storage_bytes": 44058704.0,
+          "doc_recall_any": 0.9625,
+          "doc_recall_all": 0.9625,
+          "ndcg_at_10": 0.9625,
+          "exact_match": 0.1125,
+          "token_f1": 0.1499662561219069,
+          "avg_total_sec": 21.43155288589769,
+          "p50_total_sec": 13.034561166074127,
+          "p95_total_sec": 81.00428263517097,
+          "avg_storage_bytes": 10258775.9875,
+          "p95_storage_bytes": 44625272.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -10994,19 +11212,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2491,
-      "rows_successful": 2491,
+      "rows_recorded": 2495,
+      "rows_successful": 2495,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7952629466077881,
-      "doc_recall_all": 0.7105580088317944,
-      "ndcg_at_10": 0.6124283392549253,
-      "exact_match": 0.05820955439582497,
-      "token_f1": 0.1054408804917535,
-      "avg_total_sec": 1.6287682606875657,
-      "p50_total_sec": 0.06820044200867414,
-      "p95_total_sec": 7.756049253977835,
-      "avg_storage_bytes": 11172562.26535528,
+      "doc_recall_any": 0.7955911823647295,
+      "doc_recall_all": 0.7110220440881764,
+      "ndcg_at_10": 0.6130496966268614,
+      "exact_match": 0.05811623246492986,
+      "token_f1": 0.10534720139999684,
+      "avg_total_sec": 1.8229834892913952,
+      "p50_total_sec": 0.0682677710428834,
+      "p95_total_sec": 7.790409792680293,
+      "avg_storage_bytes": 11178643.197995992,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -13763,21 +13981,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 75,
-          "rows_recorded": 75,
-          "rows_successful": 75,
+          "expected_total": 79,
+          "rows_recorded": 79,
+          "rows_successful": 79,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.12,
-          "token_f1": 0.163949376328907,
-          "avg_total_sec": 11.875231747527918,
-          "p50_total_sec": 3.909095576032996,
-          "p95_total_sec": 123.55704949097708,
-          "avg_storage_bytes": 1715900.84,
-          "p95_storage_bytes": 15178833.0,
+          "exact_match": 0.11392405063291139,
+          "token_f1": 0.15802832167977485,
+          "avg_total_sec": 17.490182904732897,
+          "p50_total_sec": 3.9668098450638354,
+          "p95_total_sec": 124.23124803323299,
+          "avg_storage_bytes": 2386768.8481012657,
+          "p95_storage_bytes": 15187097.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -14291,11 +14509,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.042553191489361764,
-    "doc_recall_all_delta": 0.07065435568044964,
-    "ndcg_at_10_delta": 0.0590219038668397,
-    "token_f1_delta": 0.0025990598235857143,
-    "avg_storage_ratio_nova_over_stock": 0.613204299054863,
-    "avg_latency_ratio_nova_over_stock": 0.19940248977111164
+    "doc_recall_any_delta": 0.04238605415960128,
+    "doc_recall_all_delta": 0.07039704408817637,
+    "ndcg_at_10_delta": 0.05874864271992175,
+    "token_f1_delta": 0.0026765556443297395,
+    "avg_storage_ratio_nova_over_stock": 0.611764329101037,
+    "avg_latency_ratio_nova_over_stock": 0.21928671400943242
   }
 }
