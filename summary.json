@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:54:39Z",
+  "generated_at": "2026-04-29T02:55:12Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,29 +117,29 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:54:39Z",
+    "updated_at": "2026-04-29T02:55:12Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 90,
+    "current_case_index": 95,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0089"
+    "current_case_id": "locomo::conv-26::0094"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 90,
-        "rows_successful": 90,
+        "rows_recorded": 95,
+        "rows_successful": 95,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6888888888888889,
-        "doc_recall_all": 0.4777777777777778,
-        "ndcg_at_10": 0.39278196691738193,
-        "exact_match": 0.13333333333333333,
-        "token_f1": 0.19738696517832335,
-        "avg_total_sec": 6.375432733280791,
-        "p50_total_sec": 6.357380193192512,
-        "p95_total_sec": 6.469191602896899,
+        "doc_recall_any": 0.6947368421052632,
+        "doc_recall_all": 0.49473684210526314,
+        "ndcg_at_10": 0.4142144949743618,
+        "exact_match": 0.12631578947368421,
+        "token_f1": 0.1909455459584116,
+        "avg_total_sec": 6.373354665660544,
+        "p50_total_sec": 6.355942205991596,
+        "p95_total_sec": 6.459623791277409,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
         "categories": {
@@ -1076,19 +1076,19 @@
             ]
           },
           "category_4": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.375,
-            "doc_recall_all": 0.375,
-            "ndcg_at_10": 0.21098535036231536,
+            "doc_recall_any": 0.5384615384615384,
+            "doc_recall_all": 0.5384615384615384,
+            "ndcg_at_10": 0.43752944637680946,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 6.340323148353491,
-            "p50_total_sec": 6.344608685001731,
-            "p95_total_sec": 6.413856601342559,
+            "token_f1": 0.02884615384615384,
+            "avg_total_sec": 6.338640956100649,
+            "p50_total_sec": 6.3337129219435155,
+            "p95_total_sec": 6.395585244055837,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
@@ -1178,6 +1178,23 @@
                   "conv-26:D8:9",
                   "conv-26:D17:3"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0090",
+                "category": "category_4",
+                "query": "How long have Mel and her husband been married?",
+                "gold": "Mel and her husband have been married for 5 years.",
+                "prediction": "How long have you been married?",
+                "expected_doc_ids": [
+                  "conv-26:D3:16"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D3:15",
+                  "conv-26:D8:16",
+                  "conv-26:D3:17",
+                  "conv-26:D10:21",
+                  "conv-26:D12:11"
+                ]
               }
             ],
             "sample_successes": [
@@ -1218,6 +1235,62 @@
                   "conv-26:D13:1",
                   "conv-26:D2:8",
                   "conv-26:D8:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0091",
+                "category": "category_4",
+                "query": "What does Caroline's necklace symbolize?",
+                "gold": "love, faith, and strength",
+                "prediction": "Thanks, Melanie!",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D4:4",
+                  "conv-26:D17:23",
+                  "conv-26:D4:2",
+                  "conv-26:D8:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0092",
+                "category": "category_4",
+                "query": "What country is Caroline's grandma from?",
+                "gold": "Sweden",
+                "prediction": "Thanks, Melanie!",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D18:12",
+                  "conv-26:D10:24",
+                  "conv-26:D8:32",
+                  "conv-26:D17:5"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0093",
+                "category": "category_4",
+                "query": "What was grandma's gift to Caroline?",
+                "gold": "necklace",
+                "prediction": "Thanks, Melanie!",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D4:5",
+                  "conv-26:D17:5",
+                  "conv-26:D8:5",
+                  "conv-26:D4:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0094",
+                "category": "category_4",
+                "query": "What is Melanie's hand-painted bowl a reminder of?",
+                "gold": "art and self-expression",
+                "prediction": "Thanks, Caroline!",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:5",
+                  "conv-26:D5:8",
+                  "conv-26:D16:9",
+                  "conv-26:D16:8",
+                  "conv-26:D12:6"
                 ]
               }
             ]
@@ -1760,18 +1833,18 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 90,
-      "rows_successful": 90,
+      "rows_recorded": 95,
+      "rows_successful": 95,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6888888888888889,
-      "doc_recall_all": 0.4777777777777778,
-      "ndcg_at_10": 0.39278196691738193,
-      "exact_match": 0.13333333333333333,
-      "token_f1": 0.19738696517832335,
-      "avg_total_sec": 6.375432733280791,
-      "p50_total_sec": 6.357380193192512,
-      "p95_total_sec": 6.469191602896899,
+      "doc_recall_any": 0.6947368421052632,
+      "doc_recall_all": 0.49473684210526314,
+      "ndcg_at_10": 0.4142144949743618,
+      "exact_match": 0.12631578947368421,
+      "token_f1": 0.1909455459584116,
+      "avg_total_sec": 6.373354665660544,
+      "p50_total_sec": 6.355942205991596,
+      "p95_total_sec": 6.459623791277409,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
       "categories": {
@@ -2708,19 +2781,19 @@
           ]
         },
         "category_4": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 13,
+          "rows_recorded": 13,
+          "rows_successful": 13,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.375,
-          "doc_recall_all": 0.375,
-          "ndcg_at_10": 0.21098535036231536,
+          "doc_recall_any": 0.5384615384615384,
+          "doc_recall_all": 0.5384615384615384,
+          "ndcg_at_10": 0.43752944637680946,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 6.340323148353491,
-          "p50_total_sec": 6.344608685001731,
-          "p95_total_sec": 6.413856601342559,
+          "token_f1": 0.02884615384615384,
+          "avg_total_sec": 6.338640956100649,
+          "p50_total_sec": 6.3337129219435155,
+          "p95_total_sec": 6.395585244055837,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
@@ -2810,6 +2883,23 @@
                 "conv-26:D8:9",
                 "conv-26:D17:3"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0090",
+              "category": "category_4",
+              "query": "How long have Mel and her husband been married?",
+              "gold": "Mel and her husband have been married for 5 years.",
+              "prediction": "How long have you been married?",
+              "expected_doc_ids": [
+                "conv-26:D3:16"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D3:15",
+                "conv-26:D8:16",
+                "conv-26:D3:17",
+                "conv-26:D10:21",
+                "conv-26:D12:11"
+              ]
             }
           ],
           "sample_successes": [
@@ -2850,6 +2940,62 @@
                 "conv-26:D13:1",
                 "conv-26:D2:8",
                 "conv-26:D8:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0091",
+              "category": "category_4",
+              "query": "What does Caroline's necklace symbolize?",
+              "gold": "love, faith, and strength",
+              "prediction": "Thanks, Melanie!",
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D4:4",
+                "conv-26:D17:23",
+                "conv-26:D4:2",
+                "conv-26:D8:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0092",
+              "category": "category_4",
+              "query": "What country is Caroline's grandma from?",
+              "gold": "Sweden",
+              "prediction": "Thanks, Melanie!",
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D18:12",
+                "conv-26:D10:24",
+                "conv-26:D8:32",
+                "conv-26:D17:5"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0093",
+              "category": "category_4",
+              "query": "What was grandma's gift to Caroline?",
+              "gold": "necklace",
+              "prediction": "Thanks, Melanie!",
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D4:5",
+                "conv-26:D17:5",
+                "conv-26:D8:5",
+                "conv-26:D4:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0094",
+              "category": "category_4",
+              "query": "What is Melanie's hand-painted bowl a reminder of?",
+              "gold": "art and self-expression",
+              "prediction": "Thanks, Caroline!",
+              "retrieved_doc_ids": [
+                "conv-26:D4:5",
+                "conv-26:D5:8",
+                "conv-26:D16:9",
+                "conv-26:D16:8",
+                "conv-26:D12:6"
               ]
             }
           ]
@@ -3257,10 +3403,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.6888888888888889,
-    "doc_recall_all_delta": -0.4777777777777778,
-    "ndcg_at_10_delta": -0.39278196691738193,
-    "token_f1_delta": -0.19738696517832335,
+    "doc_recall_any_delta": -0.6947368421052632,
+    "doc_recall_all_delta": -0.49473684210526314,
+    "ndcg_at_10_delta": -0.4142144949743618,
+    "token_f1_delta": -0.1909455459584116,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
