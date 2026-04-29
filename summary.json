@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:27:01Z",
+  "generated_at": "2026-04-29T08:28:15Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:26:55Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T08:28:02Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 230,
+    "current_case_index": 235,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::0a34ad58"
+    "current_case_id": "longmemeval_oracle::4c36ccef"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,20 +4892,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 230,
-        "rows_successful": 230,
+        "rows_recorded": 235,
+        "rows_successful": 235,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.991304347826087,
-        "doc_recall_all": 0.8130434782608695,
-        "ndcg_at_10": 0.934878368805282,
-        "exact_match": 0.1782608695652174,
-        "token_f1": 0.22339788987703568,
-        "avg_total_sec": 15.349667009284072,
-        "p50_total_sec": 14.820734622888267,
-        "p95_total_sec": 19.072029653936625,
-        "avg_storage_bytes": 6720921.1,
-        "p95_storage_bytes": 8666902.0,
+        "doc_recall_any": 0.9914893617021276,
+        "doc_recall_all": 0.8170212765957446,
+        "ndcg_at_10": 0.9362639354264461,
+        "exact_match": 0.17872340425531916,
+        "token_f1": 0.2214816227165314,
+        "avg_total_sec": 15.29459152106156,
+        "p50_total_sec": 14.800465690903366,
+        "p95_total_sec": 18.79056058684364,
+        "avg_storage_bytes": 6680171.4553191485,
+        "p95_storage_bytes": 8523411.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5543,6 +5543,78 @@
                 ]
               }
             ]
+          },
+          "single-session-assistant": {
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.2,
+            "token_f1": 0.13333333333333333,
+            "avg_total_sec": 12.761119062826037,
+            "p50_total_sec": 12.69995066523552,
+            "p95_total_sec": 13.043641705065966,
+            "avg_storage_bytes": 4805687.8,
+            "p95_storage_bytes": 5049007.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::7161e7e2",
+                "category": "single-session-assistant",
+                "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+                "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+                "prediction": "8 am - 4 pm (Day Shift)",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_5Lzox6N_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::c4f10528",
+                "category": "single-session-assistant",
+                "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+                "gold": "Miss Bee Providore",
+                "prediction": "Also known as Ciwalk, this shopping center is famous for its denim street, where you can find a wide range of denim products, from jeans to jackets",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_234453"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::89527b6b",
+                "category": "single-session-assistant",
+                "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+                "gold": "The Plesiosaur had a blue scaly body.",
+                "prediction": "a dinosaur that lived in the oceans",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_YkWn1Ne_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::e9327a54",
+                "category": "single-session-assistant",
+                "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+                "gold": "The Sugar Factory at Icon Park.",
+                "prediction": "you have any more recommendations for other fun and unique things to do in Orlando",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_480665"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::4c36ccef",
+                "category": "single-session-assistant",
+                "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+                "gold": "Roscioli",
+                "prediction": "00 pm?",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_448704"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [],
@@ -5708,20 +5780,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 230,
-        "rows_successful": 230,
+        "rows_recorded": 234,
+        "rows_successful": 234,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9956521739130435,
-        "ndcg_at_10": 0.9995313515020673,
-        "exact_match": 0.21304347826086956,
-        "token_f1": 0.26813433083477567,
-        "avg_total_sec": 8.121112580020386,
-        "p50_total_sec": 7.252347989007831,
-        "p95_total_sec": 15.132123879622668,
-        "avg_storage_bytes": 1281862.391304348,
-        "p95_storage_bytes": 2125157.0,
+        "doc_recall_all": 0.9957264957264957,
+        "ndcg_at_10": 0.9995393625875021,
+        "exact_match": 0.21367521367521367,
+        "token_f1": 0.266399840848996,
+        "avg_total_sec": 8.018369699521866,
+        "p50_total_sec": 7.206647274084389,
+        "p95_total_sec": 14.02828250080347,
+        "avg_storage_bytes": 1269095.2905982905,
+        "p95_storage_bytes": 2018373.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -6344,6 +6416,68 @@
                 ]
               }
             ]
+          },
+          "single-session-assistant": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.25,
+            "token_f1": 0.16666666666666666,
+            "avg_total_sec": 2.110654070856981,
+            "p50_total_sec": 2.559684857260436,
+            "p95_total_sec": 2.6284404192119837,
+            "avg_storage_bytes": 534987.0,
+            "p95_storage_bytes": 606757.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::7161e7e2",
+                "category": "single-session-assistant",
+                "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+                "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+                "prediction": "8 am - 4 pm (Day Shift)",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_5Lzox6N_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::c4f10528",
+                "category": "single-session-assistant",
+                "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+                "gold": "Miss Bee Providore",
+                "prediction": "a great option",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_234453"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::89527b6b",
+                "category": "single-session-assistant",
+                "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+                "gold": "The Plesiosaur had a blue scaly body.",
+                "prediction": "just the beginning of our journey through the amazing world of dinosaurs",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_YkWn1Ne_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::e9327a54",
+                "category": "single-session-assistant",
+                "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+                "gold": "The Sugar Factory at Icon Park.",
+                "prediction": "consider sharing the desserts with family members so everyone can try a variety of treats",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_480665"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [],
@@ -6580,19 +6714,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2216,
-      "rows_successful": 2216,
+      "rows_recorded": 2221,
+      "rows_successful": 2221,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7251805054151624,
-      "doc_recall_all": 0.6083032490974729,
-      "ndcg_at_10": 0.5043007844700466,
-      "exact_match": 0.050090252707581225,
-      "token_f1": 0.09817847502806966,
-      "avg_total_sec": 7.301396707266179,
-      "p50_total_sec": 6.363465698901564,
+      "doc_recall_any": 0.7257991895542548,
+      "doc_recall_all": 0.6091850517784781,
+      "ndcg_at_10": 0.5054167214703391,
+      "exact_match": 0.05042773525438991,
+      "token_f1": 0.0982576169873341,
+      "avg_total_sec": 7.313687842690673,
+      "p50_total_sec": 6.363525691907853,
       "p95_total_sec": 14.844156510662287,
-      "avg_storage_bytes": 19666742.039711192,
+      "avg_storage_bytes": 19633286.26699685,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -9210,6 +9344,78 @@
               ]
             }
           ]
+        },
+        "single-session-assistant": {
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.2,
+          "token_f1": 0.13333333333333333,
+          "avg_total_sec": 12.761119062826037,
+          "p50_total_sec": 12.69995066523552,
+          "p95_total_sec": 13.043641705065966,
+          "avg_storage_bytes": 4805687.8,
+          "p95_storage_bytes": 5049007.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::7161e7e2",
+              "category": "single-session-assistant",
+              "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+              "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+              "prediction": "8 am - 4 pm (Day Shift)",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_5Lzox6N_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::c4f10528",
+              "category": "single-session-assistant",
+              "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+              "gold": "Miss Bee Providore",
+              "prediction": "Also known as Ciwalk, this shopping center is famous for its denim street, where you can find a wide range of denim products, from jeans to jackets",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_234453"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::89527b6b",
+              "category": "single-session-assistant",
+              "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+              "gold": "The Plesiosaur had a blue scaly body.",
+              "prediction": "a dinosaur that lived in the oceans",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_YkWn1Ne_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::e9327a54",
+              "category": "single-session-assistant",
+              "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+              "gold": "The Sugar Factory at Icon Park.",
+              "prediction": "you have any more recommendations for other fun and unique things to do in Orlando",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_480665"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::4c36ccef",
+              "category": "single-session-assistant",
+              "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+              "gold": "Roscioli",
+              "prediction": "00 pm?",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_448704"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -9593,19 +9799,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2216,
-      "rows_successful": 2216,
+      "rows_recorded": 2220,
+      "rows_successful": 2220,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7129963898916968,
-      "doc_recall_all": 0.6132671480144405,
-      "ndcg_at_10": 0.45117459885985317,
-      "exact_match": 0.04828519855595668,
-      "token_f1": 0.09096822135193014,
-      "avg_total_sec": 0.8987746112568082,
-      "p50_total_sec": 0.06456080079078674,
+      "doc_recall_any": 0.7135135135135136,
+      "doc_recall_all": 0.6139639639639639,
+      "ndcg_at_10": 0.4521634734565021,
+      "exact_match": 0.04864864864864865,
+      "token_f1": 0.09110461494709182,
+      "avg_total_sec": 0.9009581778506824,
+      "p50_total_sec": 0.06459356984123588,
       "p95_total_sec": 7.3192922212183475,
-      "avg_storage_bytes": 12344053.075812275,
+      "avg_storage_bytes": 12322775.47927928,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -12217,6 +12423,68 @@
               ]
             }
           ]
+        },
+        "single-session-assistant": {
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.25,
+          "token_f1": 0.16666666666666666,
+          "avg_total_sec": 2.110654070856981,
+          "p50_total_sec": 2.559684857260436,
+          "p95_total_sec": 2.6284404192119837,
+          "avg_storage_bytes": 534987.0,
+          "p95_storage_bytes": 606757.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::7161e7e2",
+              "category": "single-session-assistant",
+              "query": "I'm checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?",
+              "gold": "Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.",
+              "prediction": "8 am - 4 pm (Day Shift)",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_5Lzox6N_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::c4f10528",
+              "category": "single-session-assistant",
+              "query": "I'm planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?",
+              "gold": "Miss Bee Providore",
+              "prediction": "a great option",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_234453"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::89527b6b",
+              "category": "single-session-assistant",
+              "query": "I'm going back to our previous conversation about the children's book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?",
+              "gold": "The Plesiosaur had a blue scaly body.",
+              "prediction": "just the beginning of our journey through the amazing world of dinosaurs",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_YkWn1Ne_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::e9327a54",
+              "category": "single-session-assistant",
+              "query": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+              "gold": "The Sugar Factory at Icon Park.",
+              "prediction": "consider sharing the desserts with family members so everyone can try a variety of treats",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_480665"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -12601,11 +12869,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.012184115523465655,
-    "doc_recall_all_delta": 0.00496389891696758,
-    "ndcg_at_10_delta": -0.05312618561019339,
-    "token_f1_delta": -0.007210253676139519,
-    "avg_storage_ratio_nova_over_stock": 0.6276613101899183,
-    "avg_latency_ratio_nova_over_stock": 0.12309625778344145
+    "doc_recall_any_delta": -0.012285676040741267,
+    "doc_recall_all_delta": 0.004778912185485762,
+    "ndcg_at_10_delta": -0.05325324801383702,
+    "token_f1_delta": -0.007153002040242273,
+    "avg_storage_ratio_nova_over_stock": 0.6276471147875846,
+    "avg_latency_ratio_nova_over_stock": 0.12318794529234707
   }
 }
