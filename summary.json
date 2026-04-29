@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:08:41Z",
+  "generated_at": "2026-04-29T13:08:42Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:08:41Z",
+    "updated_at": "2026-04-29T13:08:42Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 190,
+    "current_case_index": 195,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0189"
+    "current_case_id": "locomo::conv-26::0194"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,18 +2238,18 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 190,
-        "rows_successful": 190,
+        "rows_recorded": 195,
+        "rows_successful": 195,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7105263157894737,
-        "doc_recall_all": 0.6210526315789474,
-        "ndcg_at_10": 0.49786017135576655,
-        "exact_match": 0.06842105263157895,
-        "token_f1": 0.11874902330000868,
-        "avg_total_sec": 0.05894937949549211,
-        "p50_total_sec": 0.059424322098493576,
-        "p95_total_sec": 0.08669486595317721,
+        "doc_recall_any": 0.7076923076923077,
+        "doc_recall_all": 0.6153846153846154,
+        "ndcg_at_10": 0.49733479674271897,
+        "exact_match": 0.06666666666666667,
+        "token_f1": 0.1157041765487264,
+        "avg_total_sec": 0.05930826417051065,
+        "p50_total_sec": 0.059846165124326944,
+        "p95_total_sec": 0.08885137597098947,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
         "categories": {
@@ -3516,19 +3516,19 @@
             ]
           },
           "category_5": {
-            "expected_total": 38,
-            "rows_recorded": 38,
-            "rows_successful": 38,
+            "expected_total": 43,
+            "rows_recorded": 43,
+            "rows_successful": 43,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7368421052631579,
-            "doc_recall_all": 0.7368421052631579,
-            "ndcg_at_10": 0.5014832353268392,
+            "doc_recall_any": 0.7209302325581395,
+            "doc_recall_all": 0.6976744186046512,
+            "ndcg_at_10": 0.49867943603847514,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 0.05692201432477879,
-            "p50_total_sec": 0.059846165124326944,
-            "p95_total_sec": 0.08605412906035781,
+            "avg_total_sec": 0.058785254731341156,
+            "p50_total_sec": 0.06078988220542669,
+            "p95_total_sec": 0.09110054420307279,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
             "categories": {},
@@ -3702,6 +3702,40 @@
                   "conv-26:D5:10",
                   "conv-26:D16:8",
                   "conv-26:D5:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0190",
+                "category": "category_5",
+                "query": "What was the poetry reading that Melanie attended about?",
+                "gold": "",
+                "prediction": "I feel the same way!",
+                "expected_doc_ids": [
+                  "conv-26:D17:18"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D17:17",
+                  "conv-26:D17:19",
+                  "conv-26:D7:9",
+                  "conv-26:D14:10",
+                  "conv-26:D6:10"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0194",
+                "category": "category_5",
+                "query": "How did Caroline's children handle the accident?",
+                "gold": "",
+                "prediction": "The kids look so cute, Mel!",
+                "expected_doc_ids": [
+                  "conv-26:D18:7"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D18:6",
+                  "conv-26:D18:5",
+                  "conv-26:D18:2",
+                  "conv-26:D18:3",
+                  "conv-26:D18:1"
                 ]
               }
             ],
@@ -6508,18 +6542,18 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 190,
-      "rows_successful": 190,
+      "rows_recorded": 195,
+      "rows_successful": 195,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7105263157894737,
-      "doc_recall_all": 0.6210526315789474,
-      "ndcg_at_10": 0.49786017135576655,
-      "exact_match": 0.06842105263157895,
-      "token_f1": 0.11874902330000868,
-      "avg_total_sec": 0.05894937949549211,
-      "p50_total_sec": 0.059424322098493576,
-      "p95_total_sec": 0.08669486595317721,
+      "doc_recall_any": 0.7076923076923077,
+      "doc_recall_all": 0.6153846153846154,
+      "ndcg_at_10": 0.49733479674271897,
+      "exact_match": 0.06666666666666667,
+      "token_f1": 0.1157041765487264,
+      "avg_total_sec": 0.05930826417051065,
+      "p50_total_sec": 0.059846165124326944,
+      "p95_total_sec": 0.08885137597098947,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
       "categories": {
@@ -7786,19 +7820,19 @@
           ]
         },
         "category_5": {
-          "expected_total": 38,
-          "rows_recorded": 38,
-          "rows_successful": 38,
+          "expected_total": 43,
+          "rows_recorded": 43,
+          "rows_successful": 43,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.7368421052631579,
-          "doc_recall_all": 0.7368421052631579,
-          "ndcg_at_10": 0.5014832353268392,
+          "doc_recall_any": 0.7209302325581395,
+          "doc_recall_all": 0.6976744186046512,
+          "ndcg_at_10": 0.49867943603847514,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 0.05692201432477879,
-          "p50_total_sec": 0.059846165124326944,
-          "p95_total_sec": 0.08605412906035781,
+          "avg_total_sec": 0.058785254731341156,
+          "p50_total_sec": 0.06078988220542669,
+          "p95_total_sec": 0.09110054420307279,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
           "categories": {},
@@ -7972,6 +8006,40 @@
                 "conv-26:D5:10",
                 "conv-26:D16:8",
                 "conv-26:D5:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0190",
+              "category": "category_5",
+              "query": "What was the poetry reading that Melanie attended about?",
+              "gold": "",
+              "prediction": "I feel the same way!",
+              "expected_doc_ids": [
+                "conv-26:D17:18"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D17:17",
+                "conv-26:D17:19",
+                "conv-26:D7:9",
+                "conv-26:D14:10",
+                "conv-26:D6:10"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0194",
+              "category": "category_5",
+              "query": "How did Caroline's children handle the accident?",
+              "gold": "",
+              "prediction": "The kids look so cute, Mel!",
+              "expected_doc_ids": [
+                "conv-26:D18:7"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D18:6",
+                "conv-26:D18:5",
+                "conv-26:D18:2",
+                "conv-26:D18:3",
+                "conv-26:D18:1"
               ]
             }
           ],
@@ -8533,11 +8601,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.017058979106056582,
-    "doc_recall_all_delta": 0.023062681830203657,
-    "ndcg_at_10_delta": 0.031919000347272186,
-    "token_f1_delta": 0.007465800549630516,
+    "doc_recall_any_delta": 0.014224971008890641,
+    "doc_recall_all_delta": 0.017394665635871664,
+    "ndcg_at_10_delta": 0.031393625734224606,
+    "token_f1_delta": 0.00442095379834824,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009270493655029135
+    "avg_latency_ratio_nova_over_stock": 0.00932693255449034
   }
 }
