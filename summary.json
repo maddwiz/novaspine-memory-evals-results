@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T17:52:06Z",
+  "generated_at": "2026-04-29T17:53:50Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T17:52:00Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T17:53:35Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 125,
+    "current_case_index": 130,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::830ce83f"
+    "current_case_id": "longmemeval_oracle::89941a93"
   },
   "benchmarks": {
     "locomo": {
@@ -4897,19 +4897,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 125,
-        "rows_successful": 125,
+        "rows_recorded": 130,
+        "rows_successful": 130,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.992,
-        "doc_recall_all": 0.696,
-        "ndcg_at_10": 0.9005554884332242,
-        "exact_match": 0.2,
-        "token_f1": 0.23589971274795463,
-        "avg_total_sec": 16.20631464791298,
-        "p50_total_sec": 15.53705174010247,
+        "doc_recall_any": 0.9923076923076923,
+        "doc_recall_all": 0.7,
+        "ndcg_at_10": 0.9014044865147577,
+        "exact_match": 0.2076923076923077,
+        "token_f1": 0.24221126225764866,
+        "avg_total_sec": 16.1522892125524,
+        "p50_total_sec": 15.414054776076227,
         "p95_total_sec": 20.420598925556988,
-        "avg_storage_bytes": 7195357.992,
+        "avg_storage_bytes": 7165225.138461539,
         "p95_storage_bytes": 9420435.0,
         "categories": {
           "temporal-reasoning": {
@@ -5243,21 +5243,21 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.03174603174603175,
-            "avg_total_sec": 14.368709019540498,
-            "p50_total_sec": 14.305863198824227,
-            "p95_total_sec": 14.930979029741138,
-            "avg_storage_bytes": 6264627.333333333,
-            "p95_storage_bytes": 6608339.0,
+            "doc_recall_all": 0.875,
+            "ndcg_at_10": 0.9516433990956823,
+            "exact_match": 0.25,
+            "token_f1": 0.2619047619047619,
+            "avg_total_sec": 14.6392992126639,
+            "p50_total_sec": 14.63641757890582,
+            "p95_total_sec": 15.395709862932563,
+            "avg_storage_bytes": 6356675.125,
+            "p95_storage_bytes": 6827015.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5293,6 +5293,60 @@
                 "retrieved_doc_ids": [
                   "answer_0b1a0942_1",
                   "answer_0b1a0942_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::852ce960",
+                "category": "knowledge-update",
+                "query": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+                "gold": "$400,000",
+                "prediction": "$300,000",
+                "retrieved_doc_ids": [
+                  "answer_3a6f1e82_1",
+                  "answer_3a6f1e82_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::945e3d21",
+                "category": "knowledge-update",
+                "query": "How often do I attend yoga classes to help with my anxiety?",
+                "gold": "Three times a week.",
+                "prediction": "an excellent way to reduce stress and improve focus",
+                "retrieved_doc_ids": [
+                  "answer_6a4f8626_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::d7c942c3",
+                "category": "knowledge-update",
+                "query": "Is my mom using the same grocery list method as me?",
+                "gold": "Yes.",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_eecb10d9_2",
+                  "answer_eecb10d9_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::71315a70",
+                "category": "knowledge-update",
+                "query": "How many hours have I spent on my abstract ocean sculpture?",
+                "gold": "10-12 hours",
+                "prediction": "10",
+                "retrieved_doc_ids": [
+                  "answer_c44b9df4_2",
+                  "answer_c44b9df4_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::89941a93",
+                "category": "knowledge-update",
+                "query": "How many bikes do I currently own?",
+                "gold": "4",
+                "prediction": "3",
+                "retrieved_doc_ids": [
+                  "answer_e1403127_1",
+                  "answer_e1403127_2"
                 ]
               }
             ]
@@ -5450,19 +5504,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 125,
-        "rows_successful": 125,
+        "rows_recorded": 129,
+        "rows_successful": 129,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.992,
-        "ndcg_at_10": 0.9991376867638039,
-        "exact_match": 0.232,
-        "token_f1": 0.27858880088907845,
-        "avg_total_sec": 9.640311338998377,
-        "p50_total_sec": 8.129875145386904,
+        "doc_recall_all": 0.9922480620155039,
+        "ndcg_at_10": 0.9991644251587247,
+        "exact_match": 0.24031007751937986,
+        "token_f1": 0.28515611296645943,
+        "avg_total_sec": 9.558991351843515,
+        "p50_total_sec": 8.096344339195639,
         "p95_total_sec": 17.371714614331722,
-        "avg_storage_bytes": 1471344.04,
+        "avg_storage_bytes": 1460919.2015503875,
         "p95_storage_bytes": 2420069.0,
         "categories": {
           "temporal-reasoning": {
@@ -5792,21 +5846,21 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 6.540039285241316,
-            "p50_total_sec": 6.09328099898994,
-            "p95_total_sec": 7.506238882895559,
-            "avg_storage_bytes": 1075978.3333333333,
-            "p95_storage_bytes": 1189541.0,
+            "exact_match": 0.2857142857142857,
+            "token_f1": 0.2802197802197802,
+            "avg_total_sec": 6.8130121241057555,
+            "p50_total_sec": 6.55181154794991,
+            "p95_total_sec": 8.346209140960127,
+            "avg_storage_bytes": 1109786.7142857143,
+            "p95_storage_bytes": 1328877.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5842,6 +5896,50 @@
                 "retrieved_doc_ids": [
                   "answer_0b1a0942_1",
                   "answer_0b1a0942_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::852ce960",
+                "category": "knowledge-update",
+                "query": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+                "gold": "$400,000",
+                "prediction": "m really looking forward to finally owning a home, it",
+                "retrieved_doc_ids": [
+                  "answer_3a6f1e82_1",
+                  "answer_3a6f1e82_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::945e3d21",
+                "category": "knowledge-update",
+                "query": "How often do I attend yoga classes to help with my anxiety?",
+                "gold": "Three times a week.",
+                "prediction": "three times a week - it really helps me clear my head",
+                "retrieved_doc_ids": [
+                  "answer_6a4f8626_1",
+                  "answer_6a4f8626_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::d7c942c3",
+                "category": "knowledge-update",
+                "query": "Is my mom using the same grocery list method as me?",
+                "gold": "Yes.",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_eecb10d9_2",
+                  "answer_eecb10d9_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::71315a70",
+                "category": "knowledge-update",
+                "query": "How many hours have I spent on my abstract ocean sculpture?",
+                "gold": "10-12 hours",
+                "prediction": "10",
+                "retrieved_doc_ids": [
+                  "answer_c44b9df4_2",
+                  "answer_c44b9df4_1"
                 ]
               }
             ]
@@ -6081,19 +6179,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2111,
-      "rows_successful": 2111,
+      "rows_recorded": 2116,
+      "rows_successful": 2116,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7119848413074372,
-      "doc_recall_all": 0.591189009947892,
-      "ndcg_at_10": 0.48085170517032744,
-      "exact_match": 0.045002368545712934,
-      "token_f1": 0.09269040742964399,
-      "avg_total_sec": 6.9484678271391145,
-      "p50_total_sec": 6.356975069735199,
-      "p95_total_sec": 14.436482027638704,
-      "avg_storage_bytes": 20339582.87920417,
+      "doc_recall_any": 0.7126654064272212,
+      "doc_recall_all": 0.5916824196597353,
+      "ndcg_at_10": 0.48189560340610904,
+      "exact_match": 0.045841209829867675,
+      "token_f1": 0.09341656431189908,
+      "avg_total_sec": 6.967024503654707,
+      "p50_total_sec": 6.357019623275846,
+      "p95_total_sec": 14.557117378804833,
+      "avg_storage_bytes": 20306672.484404538,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -8406,21 +8504,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 1.0,
-          "ndcg_at_10": 1.0,
-          "exact_match": 0.0,
-          "token_f1": 0.03174603174603175,
-          "avg_total_sec": 14.368709019540498,
-          "p50_total_sec": 14.305863198824227,
-          "p95_total_sec": 14.930979029741138,
-          "avg_storage_bytes": 6264627.333333333,
-          "p95_storage_bytes": 6608339.0,
+          "doc_recall_all": 0.875,
+          "ndcg_at_10": 0.9516433990956823,
+          "exact_match": 0.25,
+          "token_f1": 0.2619047619047619,
+          "avg_total_sec": 14.6392992126639,
+          "p50_total_sec": 14.63641757890582,
+          "p95_total_sec": 15.395709862932563,
+          "avg_storage_bytes": 6356675.125,
+          "p95_storage_bytes": 6827015.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -8456,6 +8554,60 @@
               "retrieved_doc_ids": [
                 "answer_0b1a0942_1",
                 "answer_0b1a0942_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::852ce960",
+              "category": "knowledge-update",
+              "query": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+              "gold": "$400,000",
+              "prediction": "$300,000",
+              "retrieved_doc_ids": [
+                "answer_3a6f1e82_1",
+                "answer_3a6f1e82_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::945e3d21",
+              "category": "knowledge-update",
+              "query": "How often do I attend yoga classes to help with my anxiety?",
+              "gold": "Three times a week.",
+              "prediction": "an excellent way to reduce stress and improve focus",
+              "retrieved_doc_ids": [
+                "answer_6a4f8626_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::d7c942c3",
+              "category": "knowledge-update",
+              "query": "Is my mom using the same grocery list method as me?",
+              "gold": "Yes.",
+              "prediction": "yes",
+              "retrieved_doc_ids": [
+                "answer_eecb10d9_2",
+                "answer_eecb10d9_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::71315a70",
+              "category": "knowledge-update",
+              "query": "How many hours have I spent on my abstract ocean sculpture?",
+              "gold": "10-12 hours",
+              "prediction": "10",
+              "retrieved_doc_ids": [
+                "answer_c44b9df4_2",
+                "answer_c44b9df4_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::89941a93",
+              "category": "knowledge-update",
+              "query": "How many bikes do I currently own?",
+              "gold": "4",
+              "prediction": "3",
+              "retrieved_doc_ids": [
+                "answer_e1403127_1",
+                "answer_e1403127_2"
               ]
             }
           ]
@@ -8842,19 +8994,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2111,
-      "rows_successful": 2111,
+      "rows_recorded": 2115,
+      "rows_successful": 2115,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7584083372809095,
-      "doc_recall_all": 0.659403126480341,
-      "ndcg_at_10": 0.5429515384362463,
-      "exact_match": 0.04594978683088584,
-      "token_f1": 0.09390649099336454,
-      "avg_total_sec": 0.6309661939965181,
-      "p50_total_sec": 0.06402117013931274,
-      "p95_total_sec": 6.728654770646244,
-      "avg_storage_bytes": 12975283.925627664,
+      "doc_recall_any": 0.7588652482269503,
+      "doc_recall_all": 0.660047281323877,
+      "ndcg_at_10": 0.5438159326897948,
+      "exact_match": 0.04680851063829787,
+      "token_f1": 0.09465633141774515,
+      "avg_total_sec": 0.6430452021464141,
+      "p50_total_sec": 0.06402481906116009,
+      "p95_total_sec": 6.728865043260157,
+      "avg_storage_bytes": 12952891.224113476,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -11173,21 +11325,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 7,
+          "rows_recorded": 7,
+          "rows_successful": 7,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 6.540039285241316,
-          "p50_total_sec": 6.09328099898994,
-          "p95_total_sec": 7.506238882895559,
-          "avg_storage_bytes": 1075978.3333333333,
-          "p95_storage_bytes": 1189541.0,
+          "exact_match": 0.2857142857142857,
+          "token_f1": 0.2802197802197802,
+          "avg_total_sec": 6.8130121241057555,
+          "p50_total_sec": 6.55181154794991,
+          "p95_total_sec": 8.346209140960127,
+          "avg_storage_bytes": 1109786.7142857143,
+          "p95_storage_bytes": 1328877.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -11223,6 +11375,50 @@
               "retrieved_doc_ids": [
                 "answer_0b1a0942_1",
                 "answer_0b1a0942_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::852ce960",
+              "category": "knowledge-update",
+              "query": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+              "gold": "$400,000",
+              "prediction": "m really looking forward to finally owning a home, it",
+              "retrieved_doc_ids": [
+                "answer_3a6f1e82_1",
+                "answer_3a6f1e82_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::945e3d21",
+              "category": "knowledge-update",
+              "query": "How often do I attend yoga classes to help with my anxiety?",
+              "gold": "Three times a week.",
+              "prediction": "three times a week - it really helps me clear my head",
+              "retrieved_doc_ids": [
+                "answer_6a4f8626_1",
+                "answer_6a4f8626_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::d7c942c3",
+              "category": "knowledge-update",
+              "query": "Is my mom using the same grocery list method as me?",
+              "gold": "Yes.",
+              "prediction": "yes",
+              "retrieved_doc_ids": [
+                "answer_eecb10d9_2",
+                "answer_eecb10d9_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::71315a70",
+              "category": "knowledge-update",
+              "query": "How many hours have I spent on my abstract ocean sculpture?",
+              "gold": "10-12 hours",
+              "prediction": "10",
+              "retrieved_doc_ids": [
+                "answer_c44b9df4_2",
+                "answer_c44b9df4_1"
               ]
             }
           ]
@@ -11614,11 +11810,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.046423495973472284,
-    "doc_recall_all_delta": 0.06821411653244902,
-    "ndcg_at_10_delta": 0.06209983326591889,
-    "token_f1_delta": 0.0012160835637205492,
-    "avg_storage_ratio_nova_over_stock": 0.6379326460472305,
-    "avg_latency_ratio_nova_over_stock": 0.090806521623675
+    "doc_recall_any_delta": 0.046199841799729136,
+    "doc_recall_all_delta": 0.06836486166414169,
+    "ndcg_at_10_delta": 0.06192032928368574,
+    "token_f1_delta": 0.0012397671058460707,
+    "avg_storage_ratio_nova_over_stock": 0.637863797432162,
+    "avg_latency_ratio_nova_over_stock": 0.09229839823429509
   }
 }
