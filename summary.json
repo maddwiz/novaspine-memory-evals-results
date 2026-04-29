@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:07:54Z",
+  "generated_at": "2026-04-29T03:07:55Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:07:54Z",
+    "updated_at": "2026-04-29T03:07:55Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 55,
+    "current_case_index": 60,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0054"
+    "current_case_id": "locomo::conv-26::0059"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,34 +2238,34 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 55,
-        "rows_successful": 55,
+        "rows_recorded": 60,
+        "rows_successful": 60,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6909090909090909,
-        "doc_recall_all": 0.509090909090909,
-        "ndcg_at_10": 0.4261437546395763,
-        "exact_match": 0.12727272727272726,
-        "token_f1": 0.21183352320194423,
-        "avg_total_sec": 0.06516753282736648,
-        "p50_total_sec": 0.062076272908598185,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.5,
+        "ndcg_at_10": 0.41431052710025223,
+        "exact_match": 0.13333333333333333,
+        "token_f1": 0.21918072960178223,
+        "avg_total_sec": 0.06551850112931182,
+        "p50_total_sec": 0.06425130600109696,
         "p95_total_sec": 0.09437936032190919,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
         "categories": {
           "category_2": {
-            "expected_total": 26,
-            "rows_recorded": 26,
-            "rows_successful": 26,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9230769230769231,
-            "doc_recall_all": 0.9230769230769231,
-            "ndcg_at_10": 0.663859425750334,
-            "exact_match": 0.2692307692307692,
-            "token_f1": 0.41904761904761906,
-            "avg_total_sec": 0.06856498364000939,
-            "p50_total_sec": 0.062489745672792196,
+            "doc_recall_any": 0.9285714285714286,
+            "doc_recall_all": 0.9285714285714286,
+            "ndcg_at_10": 0.6455646409390862,
+            "exact_match": 0.2857142857142857,
+            "token_f1": 0.44268707482993197,
+            "avg_total_sec": 0.06869506478376154,
+            "p50_total_sec": 0.06572571117430925,
             "p95_total_sec": 0.09825592115521431,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
@@ -2479,17 +2479,17 @@
             ]
           },
           "category_3": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5,
-            "doc_recall_all": 0.125,
-            "ndcg_at_10": 0.2655128983420842,
+            "doc_recall_any": 0.5555555555555556,
+            "doc_recall_all": 0.1111111111111111,
+            "ndcg_at_10": 0.26027895817275976,
             "exact_match": 0.0,
-            "token_f1": 0.0225,
-            "avg_total_sec": 0.05537530721630901,
+            "token_f1": 0.02,
+            "avg_total_sec": 0.056453908741888076,
             "p50_total_sec": 0.05606456799432635,
             "p95_total_sec": 0.08169557433575392,
             "avg_storage_bytes": 10934689.0,
@@ -2619,21 +2619,35 @@
                   "conv-26:D15:3",
                   "conv-26:D15:2"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0059",
+                "category": "category_3",
+                "query": "Would Caroline be considered religious?",
+                "gold": "Somewhat, but not extremely religious",
+                "prediction": "Thanks, Melanie",
+                "retrieved_doc_ids": [
+                  "conv-26:D13:15",
+                  "conv-26:D14:24",
+                  "conv-26:D6:7",
+                  "conv-26:D4:3",
+                  "conv-26:D16:5"
+                ]
               }
             ]
           },
           "category_1": {
-            "expected_total": 21,
-            "rows_recorded": 21,
-            "rows_successful": 21,
+            "expected_total": 23,
+            "rows_recorded": 23,
+            "rows_successful": 23,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.47619047619047616,
-            "doc_recall_all": 0.14285714285714285,
-            "ndcg_at_10": 0.193021821377683,
+            "doc_recall_any": 0.4782608695652174,
+            "doc_recall_all": 0.13043478260869565,
+            "ndcg_at_10": 0.193057002441995,
             "exact_match": 0.0,
-            "token_f1": 0.02740979432708756,
-            "avg_total_sec": 0.06469153681592572,
+            "token_f1": 0.025026333950819078,
+            "avg_total_sec": 0.06519839457114754,
             "p50_total_sec": 0.06425130600109696,
             "p95_total_sec": 0.08389091119170189,
             "avg_storage_bytes": 10934689.0,
@@ -2838,6 +2852,24 @@
                   "conv-26:D1:16",
                   "conv-26:D14:30"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0055",
+                "category": "category_1",
+                "query": "What subject have Caroline and Melanie both painted?",
+                "gold": "Sunsets",
+                "prediction": "Thanks, Caroline!",
+                "expected_doc_ids": [
+                  "conv-26:D14:5",
+                  "conv-26:D8:6"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D12:6",
+                  "conv-26:D16:8",
+                  "conv-26:D13:13",
+                  "conv-26:D13:11",
+                  "conv-26:D17:13"
+                ]
               }
             ],
             "sample_successes": [
@@ -2979,6 +3011,20 @@
                   "conv-26:D13:3",
                   "conv-26:D13:4",
                   "conv-26:D7:15"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0056",
+                "category": "category_1",
+                "query": "What symbols are important to Caroline?",
+                "gold": "Rainbow flag, transgender symbol",
+                "prediction": "That pic is cool!",
+                "retrieved_doc_ids": [
+                  "conv-26:D11:8",
+                  "conv-26:D14:15",
+                  "conv-26:D4:3",
+                  "conv-26:D16:5",
+                  "conv-26:D4:5"
                 ]
               }
             ]
@@ -5611,34 +5657,34 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 55,
-      "rows_successful": 55,
+      "rows_recorded": 60,
+      "rows_successful": 60,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6909090909090909,
-      "doc_recall_all": 0.509090909090909,
-      "ndcg_at_10": 0.4261437546395763,
-      "exact_match": 0.12727272727272726,
-      "token_f1": 0.21183352320194423,
-      "avg_total_sec": 0.06516753282736648,
-      "p50_total_sec": 0.062076272908598185,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.5,
+      "ndcg_at_10": 0.41431052710025223,
+      "exact_match": 0.13333333333333333,
+      "token_f1": 0.21918072960178223,
+      "avg_total_sec": 0.06551850112931182,
+      "p50_total_sec": 0.06425130600109696,
       "p95_total_sec": 0.09437936032190919,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
       "categories": {
         "category_2": {
-          "expected_total": 26,
-          "rows_recorded": 26,
-          "rows_successful": 26,
+          "expected_total": 28,
+          "rows_recorded": 28,
+          "rows_successful": 28,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9230769230769231,
-          "doc_recall_all": 0.9230769230769231,
-          "ndcg_at_10": 0.663859425750334,
-          "exact_match": 0.2692307692307692,
-          "token_f1": 0.41904761904761906,
-          "avg_total_sec": 0.06856498364000939,
-          "p50_total_sec": 0.062489745672792196,
+          "doc_recall_any": 0.9285714285714286,
+          "doc_recall_all": 0.9285714285714286,
+          "ndcg_at_10": 0.6455646409390862,
+          "exact_match": 0.2857142857142857,
+          "token_f1": 0.44268707482993197,
+          "avg_total_sec": 0.06869506478376154,
+          "p50_total_sec": 0.06572571117430925,
           "p95_total_sec": 0.09825592115521431,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
@@ -5852,17 +5898,17 @@
           ]
         },
         "category_3": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5,
-          "doc_recall_all": 0.125,
-          "ndcg_at_10": 0.2655128983420842,
+          "doc_recall_any": 0.5555555555555556,
+          "doc_recall_all": 0.1111111111111111,
+          "ndcg_at_10": 0.26027895817275976,
           "exact_match": 0.0,
-          "token_f1": 0.0225,
-          "avg_total_sec": 0.05537530721630901,
+          "token_f1": 0.02,
+          "avg_total_sec": 0.056453908741888076,
           "p50_total_sec": 0.05606456799432635,
           "p95_total_sec": 0.08169557433575392,
           "avg_storage_bytes": 10934689.0,
@@ -5992,21 +6038,35 @@
                 "conv-26:D15:3",
                 "conv-26:D15:2"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0059",
+              "category": "category_3",
+              "query": "Would Caroline be considered religious?",
+              "gold": "Somewhat, but not extremely religious",
+              "prediction": "Thanks, Melanie",
+              "retrieved_doc_ids": [
+                "conv-26:D13:15",
+                "conv-26:D14:24",
+                "conv-26:D6:7",
+                "conv-26:D4:3",
+                "conv-26:D16:5"
+              ]
             }
           ]
         },
         "category_1": {
-          "expected_total": 21,
-          "rows_recorded": 21,
-          "rows_successful": 21,
+          "expected_total": 23,
+          "rows_recorded": 23,
+          "rows_successful": 23,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.47619047619047616,
-          "doc_recall_all": 0.14285714285714285,
-          "ndcg_at_10": 0.193021821377683,
+          "doc_recall_any": 0.4782608695652174,
+          "doc_recall_all": 0.13043478260869565,
+          "ndcg_at_10": 0.193057002441995,
           "exact_match": 0.0,
-          "token_f1": 0.02740979432708756,
-          "avg_total_sec": 0.06469153681592572,
+          "token_f1": 0.025026333950819078,
+          "avg_total_sec": 0.06519839457114754,
           "p50_total_sec": 0.06425130600109696,
           "p95_total_sec": 0.08389091119170189,
           "avg_storage_bytes": 10934689.0,
@@ -6211,6 +6271,24 @@
                 "conv-26:D1:16",
                 "conv-26:D14:30"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0055",
+              "category": "category_1",
+              "query": "What subject have Caroline and Melanie both painted?",
+              "gold": "Sunsets",
+              "prediction": "Thanks, Caroline!",
+              "expected_doc_ids": [
+                "conv-26:D14:5",
+                "conv-26:D8:6"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D12:6",
+                "conv-26:D16:8",
+                "conv-26:D13:13",
+                "conv-26:D13:11",
+                "conv-26:D17:13"
+              ]
             }
           ],
           "sample_successes": [
@@ -6352,6 +6430,20 @@
                 "conv-26:D13:3",
                 "conv-26:D13:4",
                 "conv-26:D7:15"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0056",
+              "category": "category_1",
+              "query": "What symbols are important to Caroline?",
+              "gold": "Rainbow flag, transgender symbol",
+              "prediction": "That pic is cool!",
+              "retrieved_doc_ids": [
+                "conv-26:D11:8",
+                "conv-26:D14:15",
+                "conv-26:D4:3",
+                "conv-26:D16:5",
+                "conv-26:D4:5"
               ]
             }
           ]
@@ -6739,11 +6831,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.0025582457743261733,
-    "doc_recall_all_delta": -0.08889904065783472,
-    "ndcg_at_10_delta": -0.03979741636891804,
-    "token_f1_delta": 0.10055030045156607,
+    "doc_recall_any_delta": 0.006532663316582865,
+    "doc_recall_all_delta": -0.09798994974874375,
+    "ndcg_at_10_delta": -0.051630643908242124,
+    "token_f1_delta": 0.10789750685140406,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.010225925631696393
+    "avg_latency_ratio_nova_over_stock": 0.010280998696442964
   }
 }
