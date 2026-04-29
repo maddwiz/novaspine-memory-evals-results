@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:43:55Z",
+  "generated_at": "2026-04-29T08:45:17Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:43:52Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T08:45:04Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 295,
+    "current_case_index": 300,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::58ef2f1c"
+    "current_case_id": "longmemeval_oracle::3b6f954b"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,19 +4892,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 295,
-        "rows_successful": 295,
+        "rows_recorded": 300,
+        "rows_successful": 300,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9932203389830508,
-        "doc_recall_all": 0.8542372881355932,
-        "ndcg_at_10": 0.9492272027973386,
-        "exact_match": 0.14576271186440679,
-        "token_f1": 0.19081588574368952,
-        "avg_total_sec": 14.78270142004683,
-        "p50_total_sec": 14.55761679681018,
+        "doc_recall_any": 0.99,
+        "doc_recall_all": 0.8533333333333334,
+        "ndcg_at_10": 0.9467400827507163,
+        "exact_match": 0.14666666666666667,
+        "token_f1": 0.1931356209812947,
+        "avg_total_sec": 14.751978013825914,
+        "p50_total_sec": 14.536562542896718,
         "p95_total_sec": 18.584700143896043,
-        "avg_storage_bytes": 6306452.722033898,
+        "avg_storage_bytes": 6290806.14,
         "p95_storage_bytes": 8386917.0,
         "categories": {
           "temporal-reasoning": {
@@ -5687,24 +5687,36 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.009661835748792268,
-            "avg_total_sec": 12.97353557874966,
-            "p50_total_sec": 12.920690276660025,
-            "p95_total_sec": 13.390964324120432,
-            "avg_storage_bytes": 5248365.777777778,
+            "doc_recall_any": 0.9285714285714286,
+            "doc_recall_all": 0.9285714285714286,
+            "ndcg_at_10": 0.9285714285714286,
+            "exact_match": 0.07142857142857142,
+            "token_f1": 0.12406832298136647,
+            "avg_total_sec": 12.96130753162184,
+            "p50_total_sec": 12.91338622989133,
+            "p95_total_sec": 13.311024055816233,
+            "avg_storage_bytes": 5290970.071428572,
             "p95_storage_bytes": 5504399.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_oracle::5d3d2817",
+                "category": "single-session-user",
+                "query": "What was my previous occupation?",
+                "gold": "Marketing specialist at a small startup",
+                "prediction": "",
+                "expected_doc_ids": [
+                  "answer_235eb6fb"
+                ],
+                "retrieved_doc_ids": []
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_oracle::e47becba",
@@ -5795,6 +5807,36 @@
                 "retrieved_doc_ids": [
                   "answer_59547700"
                 ]
+              },
+              {
+                "case_id": "longmemeval_oracle::f8c5f88b",
+                "category": "single-session-user",
+                "query": "Where did I buy my new tennis racket from?",
+                "gold": "the sports store downtown",
+                "prediction": "ll consider getting a tennis ball machine, but for now, I think I",
+                "retrieved_doc_ids": [
+                  "answer_c3567066"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::7527f7e2",
+                "category": "single-session-user",
+                "query": "How much did I spend on a designer handbag?",
+                "gold": "$800",
+                "prediction": "$800, to be exact",
+                "retrieved_doc_ids": [
+                  "answer_7cb94507"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::c960da58",
+                "category": "single-session-user",
+                "query": "How many playlists do I have on Spotify?",
+                "gold": "20",
+                "prediction": "20",
+                "retrieved_doc_ids": [
+                  "answer_e05e4612"
+                ]
               }
             ]
           }
@@ -5821,6 +5863,17 @@
             "prediction": "",
             "expected_doc_ids": [
               "answer_b0fac439"
+            ],
+            "retrieved_doc_ids": []
+          },
+          {
+            "case_id": "longmemeval_oracle::5d3d2817",
+            "category": "single-session-user",
+            "query": "What was my previous occupation?",
+            "gold": "Marketing specialist at a small startup",
+            "prediction": "",
+            "expected_doc_ids": [
+              "answer_235eb6fb"
             ],
             "retrieved_doc_ids": []
           }
@@ -5962,19 +6015,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 295,
-        "rows_successful": 295,
+        "rows_recorded": 299,
+        "rows_successful": 299,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9966101694915255,
-        "ndcg_at_10": 0.99963461303551,
-        "exact_match": 0.17288135593220338,
-        "token_f1": 0.2283376787144668,
-        "avg_total_sec": 6.808885956819217,
-        "p50_total_sec": 6.747842394281179,
+        "doc_recall_all": 0.9966555183946488,
+        "ndcg_at_10": 0.9996395011554363,
+        "exact_match": 0.17391304347826086,
+        "token_f1": 0.23092083446983944,
+        "avg_total_sec": 6.769575111691008,
+        "p50_total_sec": 6.71284107118845,
         "p95_total_sec": 13.636793131008744,
-        "avg_storage_bytes": 1118708.4305084746,
+        "avg_storage_bytes": 1114041.4548494983,
         "p95_storage_bytes": 1940297.0,
         "categories": {
           "temporal-reasoning": {
@@ -6742,21 +6795,21 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.03193882141250562,
-            "avg_total_sec": 3.5117925704560347,
-            "p50_total_sec": 3.486354658845812,
-            "p95_total_sec": 4.614607535302639,
-            "avg_storage_bytes": 710267.2222222222,
-            "p95_storage_bytes": 852877.0,
+            "exact_match": 0.07692307692307693,
+            "token_f1": 0.15178182141744895,
+            "avg_total_sec": 3.6221334052343783,
+            "p50_total_sec": 3.69553545396775,
+            "p95_total_sec": 4.290294161066413,
+            "avg_storage_bytes": 728601.0,
+            "p95_storage_bytes": 828301.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -6849,6 +6902,36 @@
                 "prediction": "Love is in the Air",
                 "retrieved_doc_ids": [
                   "answer_59547700"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::f8c5f88b",
+                "category": "single-session-user",
+                "query": "Where did I buy my new tennis racket from?",
+                "gold": "the sports store downtown",
+                "prediction": "By the way, I'm really happy with my new tennis racket, which I got from a sports store downtown.",
+                "retrieved_doc_ids": [
+                  "answer_c3567066"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::5d3d2817",
+                "category": "single-session-user",
+                "query": "What was my previous occupation?",
+                "gold": "Marketing specialist at a small startup",
+                "prediction": "responsible for managing a team of interns, and I had to manually assign tasks and track their progress",
+                "retrieved_doc_ids": [
+                  "answer_235eb6fb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::7527f7e2",
+                "category": "single-session-user",
+                "query": "How much did I spend on a designer handbag?",
+                "gold": "$800",
+                "prediction": "$800, to be exact",
+                "retrieved_doc_ids": [
+                  "answer_7cb94507"
                 ]
               }
             ]
@@ -7088,19 +7171,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2281,
-      "rows_successful": 2281,
+      "rows_recorded": 2286,
+      "rows_successful": 2286,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7330118369136344,
-      "doc_recall_all": 0.6194651468654099,
-      "ndcg_at_10": 0.5184263649213605,
-      "exact_match": 0.049539675580885574,
-      "token_f1": 0.09753295584606425,
-      "avg_total_sec": 7.45741718986424,
-      "p50_total_sec": 6.364900078158826,
+      "doc_recall_any": 0.7331583552055994,
+      "doc_recall_all": 0.6198600174978127,
+      "ndcg_at_10": 0.519042230264927,
+      "exact_match": 0.049868766404199474,
+      "token_f1": 0.09804141394788825,
+      "avg_total_sec": 7.469407303287091,
+      "p50_total_sec": 6.365106747020036,
       "p95_total_sec": 14.82074937177822,
-      "avg_storage_bytes": 19244231.503726434,
+      "avg_storage_bytes": 19213880.29265092,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -9862,24 +9945,36 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 9,
-          "rows_recorded": 9,
-          "rows_successful": 9,
+          "expected_total": 14,
+          "rows_recorded": 14,
+          "rows_successful": 14,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 1.0,
-          "ndcg_at_10": 1.0,
-          "exact_match": 0.0,
-          "token_f1": 0.009661835748792268,
-          "avg_total_sec": 12.97353557874966,
-          "p50_total_sec": 12.920690276660025,
-          "p95_total_sec": 13.390964324120432,
-          "avg_storage_bytes": 5248365.777777778,
+          "doc_recall_any": 0.9285714285714286,
+          "doc_recall_all": 0.9285714285714286,
+          "ndcg_at_10": 0.9285714285714286,
+          "exact_match": 0.07142857142857142,
+          "token_f1": 0.12406832298136647,
+          "avg_total_sec": 12.96130753162184,
+          "p50_total_sec": 12.91338622989133,
+          "p95_total_sec": 13.311024055816233,
+          "avg_storage_bytes": 5290970.071428572,
           "p95_storage_bytes": 5504399.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "longmemeval_oracle::5d3d2817",
+              "category": "single-session-user",
+              "query": "What was my previous occupation?",
+              "gold": "Marketing specialist at a small startup",
+              "prediction": "",
+              "expected_doc_ids": [
+                "answer_235eb6fb"
+              ],
+              "retrieved_doc_ids": []
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::e47becba",
@@ -9969,6 +10064,36 @@
               "prediction": "Love is in the Air",
               "retrieved_doc_ids": [
                 "answer_59547700"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::f8c5f88b",
+              "category": "single-session-user",
+              "query": "Where did I buy my new tennis racket from?",
+              "gold": "the sports store downtown",
+              "prediction": "ll consider getting a tennis ball machine, but for now, I think I",
+              "retrieved_doc_ids": [
+                "answer_c3567066"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::7527f7e2",
+              "category": "single-session-user",
+              "query": "How much did I spend on a designer handbag?",
+              "gold": "$800",
+              "prediction": "$800, to be exact",
+              "retrieved_doc_ids": [
+                "answer_7cb94507"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::c960da58",
+              "category": "single-session-user",
+              "query": "How many playlists do I have on Spotify?",
+              "gold": "20",
+              "prediction": "20",
+              "retrieved_doc_ids": [
+                "answer_e05e4612"
               ]
             }
           ]
@@ -10355,19 +10480,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2281,
-      "rows_successful": 2281,
+      "rows_recorded": 2285,
+      "rows_successful": 2285,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7211749232792635,
-      "doc_recall_all": 0.6242875931608943,
-      "ndcg_at_10": 0.466814077629739,
-      "exact_match": 0.04778605874616396,
-      "token_f1": 0.09086992443868763,
-      "avg_total_sec": 0.9348750558536024,
-      "p50_total_sec": 0.06512321392074227,
+      "doc_recall_any": 0.7216630196936543,
+      "doc_recall_all": 0.624945295404814,
+      "ndcg_at_10": 0.46774744467108736,
+      "exact_match": 0.04814004376367615,
+      "token_f1": 0.09144858290168963,
+      "avg_total_sec": 0.9400138308691509,
+      "p50_total_sec": 0.0651521380059421,
       "p95_total_sec": 7.258925422094762,
-      "avg_storage_bytes": 12007721.285839545,
+      "avg_storage_bytes": 11988048.866958424,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -13123,21 +13248,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 9,
-          "rows_recorded": 9,
-          "rows_successful": 9,
+          "expected_total": 13,
+          "rows_recorded": 13,
+          "rows_successful": 13,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.0,
-          "token_f1": 0.03193882141250562,
-          "avg_total_sec": 3.5117925704560347,
-          "p50_total_sec": 3.486354658845812,
-          "p95_total_sec": 4.614607535302639,
-          "avg_storage_bytes": 710267.2222222222,
-          "p95_storage_bytes": 852877.0,
+          "exact_match": 0.07692307692307693,
+          "token_f1": 0.15178182141744895,
+          "avg_total_sec": 3.6221334052343783,
+          "p50_total_sec": 3.69553545396775,
+          "p95_total_sec": 4.290294161066413,
+          "avg_storage_bytes": 728601.0,
+          "p95_storage_bytes": 828301.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -13230,6 +13355,36 @@
               "prediction": "Love is in the Air",
               "retrieved_doc_ids": [
                 "answer_59547700"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::f8c5f88b",
+              "category": "single-session-user",
+              "query": "Where did I buy my new tennis racket from?",
+              "gold": "the sports store downtown",
+              "prediction": "By the way, I'm really happy with my new tennis racket, which I got from a sports store downtown.",
+              "retrieved_doc_ids": [
+                "answer_c3567066"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::5d3d2817",
+              "category": "single-session-user",
+              "query": "What was my previous occupation?",
+              "gold": "Marketing specialist at a small startup",
+              "prediction": "responsible for managing a team of interns, and I had to manually assign tasks and track their progress",
+              "retrieved_doc_ids": [
+                "answer_235eb6fb"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::7527f7e2",
+              "category": "single-session-user",
+              "query": "How much did I spend on a designer handbag?",
+              "gold": "$800",
+              "prediction": "$800, to be exact",
+              "retrieved_doc_ids": [
+                "answer_7cb94507"
               ]
             }
           ]
@@ -13617,11 +13772,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.011836913634370894,
-    "doc_recall_all_delta": 0.0048224462954844505,
-    "ndcg_at_10_delta": -0.05161228729162154,
-    "token_f1_delta": -0.006663031407376618,
-    "avg_storage_ratio_nova_over_stock": 0.6239647077366732,
-    "avg_latency_ratio_nova_over_stock": 0.12536177500224063
+    "doc_recall_any_delta": -0.011495335511945037,
+    "doc_recall_all_delta": 0.0050852779070013066,
+    "ndcg_at_10_delta": -0.051294785593839654,
+    "token_f1_delta": -0.006592831046198622,
+    "avg_storage_ratio_nova_over_stock": 0.6239264887865316,
+    "avg_latency_ratio_nova_over_stock": 0.12584851685025603
   }
 }
