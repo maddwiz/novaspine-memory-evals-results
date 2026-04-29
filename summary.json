@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:57:24Z",
+  "generated_at": "2026-04-29T02:57:56Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,28 +117,28 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:57:24Z",
+    "updated_at": "2026-04-29T02:57:56Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 115,
+    "current_case_index": 120,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0114"
+    "current_case_id": "locomo::conv-26::0119"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 115,
-        "rows_successful": 115,
+        "rows_recorded": 120,
+        "rows_successful": 120,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7130434782608696,
-        "doc_recall_all": 0.5478260869565217,
-        "ndcg_at_10": 0.4471523260196264,
-        "exact_match": 0.11304347826086956,
-        "token_f1": 0.17963467469523056,
-        "avg_total_sec": 6.36911908649313,
-        "p50_total_sec": 6.354877830948681,
+        "doc_recall_any": 0.7166666666666667,
+        "doc_recall_all": 0.5583333333333333,
+        "ndcg_at_10": 0.45352097910214195,
+        "exact_match": 0.10833333333333334,
+        "token_f1": 0.17214989658292928,
+        "avg_total_sec": 6.368442892376334,
+        "p50_total_sec": 6.355942205991596,
         "p95_total_sec": 6.440837082918733,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
@@ -1076,18 +1076,18 @@
             ]
           },
           "category_4": {
-            "expected_total": 33,
-            "rows_recorded": 33,
-            "rows_successful": 33,
+            "expected_total": 38,
+            "rows_recorded": 38,
+            "rows_successful": 38,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.696969696969697,
-            "doc_recall_all": 0.696969696969697,
-            "ndcg_at_10": 0.5381825234118539,
-            "exact_match": 0.030303030303030304,
-            "token_f1": 0.08767153708795188,
-            "avg_total_sec": 6.344919216311113,
-            "p50_total_sec": 6.344608685001731,
+            "doc_recall_any": 0.7105263157894737,
+            "doc_recall_all": 0.7105263157894737,
+            "ndcg_at_10": 0.5463164019102942,
+            "exact_match": 0.02631578947368421,
+            "token_f1": 0.07613580852374768,
+            "avg_total_sec": 6.345968059913599,
+            "p50_total_sec": 6.34521124092862,
             "p95_total_sec": 6.413856601342559,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
@@ -1262,6 +1262,23 @@
                   "conv-26:D7:21",
                   "conv-26:D4:15",
                   "conv-26:D7:8"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0116",
+                "category": "category_4",
+                "query": "What inspired Caroline's painting for the art show?",
+                "gold": "visiting an LGBTQ center and wanting to capture unity and strength",
+                "prediction": "Wow Mel, that's stunning!",
+                "expected_doc_ids": [
+                  "conv-26:D9:16"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D12:6",
+                  "conv-26:D17:13",
+                  "conv-26:D13:13",
+                  "conv-26:D13:11",
+                  "conv-26:D9:17"
                 ]
               }
             ],
@@ -1971,17 +1988,17 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 115,
-      "rows_successful": 115,
+      "rows_recorded": 120,
+      "rows_successful": 120,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7130434782608696,
-      "doc_recall_all": 0.5478260869565217,
-      "ndcg_at_10": 0.4471523260196264,
-      "exact_match": 0.11304347826086956,
-      "token_f1": 0.17963467469523056,
-      "avg_total_sec": 6.36911908649313,
-      "p50_total_sec": 6.354877830948681,
+      "doc_recall_any": 0.7166666666666667,
+      "doc_recall_all": 0.5583333333333333,
+      "ndcg_at_10": 0.45352097910214195,
+      "exact_match": 0.10833333333333334,
+      "token_f1": 0.17214989658292928,
+      "avg_total_sec": 6.368442892376334,
+      "p50_total_sec": 6.355942205991596,
       "p95_total_sec": 6.440837082918733,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
@@ -2919,18 +2936,18 @@
           ]
         },
         "category_4": {
-          "expected_total": 33,
-          "rows_recorded": 33,
-          "rows_successful": 33,
+          "expected_total": 38,
+          "rows_recorded": 38,
+          "rows_successful": 38,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.696969696969697,
-          "doc_recall_all": 0.696969696969697,
-          "ndcg_at_10": 0.5381825234118539,
-          "exact_match": 0.030303030303030304,
-          "token_f1": 0.08767153708795188,
-          "avg_total_sec": 6.344919216311113,
-          "p50_total_sec": 6.344608685001731,
+          "doc_recall_any": 0.7105263157894737,
+          "doc_recall_all": 0.7105263157894737,
+          "ndcg_at_10": 0.5463164019102942,
+          "exact_match": 0.02631578947368421,
+          "token_f1": 0.07613580852374768,
+          "avg_total_sec": 6.345968059913599,
+          "p50_total_sec": 6.34521124092862,
           "p95_total_sec": 6.413856601342559,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
@@ -3105,6 +3122,23 @@
                 "conv-26:D7:21",
                 "conv-26:D4:15",
                 "conv-26:D7:8"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0116",
+              "category": "category_4",
+              "query": "What inspired Caroline's painting for the art show?",
+              "gold": "visiting an LGBTQ center and wanting to capture unity and strength",
+              "prediction": "Wow Mel, that's stunning!",
+              "expected_doc_ids": [
+                "conv-26:D9:16"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D12:6",
+                "conv-26:D17:13",
+                "conv-26:D13:13",
+                "conv-26:D13:11",
+                "conv-26:D9:17"
               ]
             }
           ],
@@ -3679,10 +3713,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.7130434782608696,
-    "doc_recall_all_delta": -0.5478260869565217,
-    "ndcg_at_10_delta": -0.4471523260196264,
-    "token_f1_delta": -0.17963467469523056,
+    "doc_recall_any_delta": -0.7166666666666667,
+    "doc_recall_all_delta": -0.5583333333333333,
+    "ndcg_at_10_delta": -0.45352097910214195,
+    "token_f1_delta": -0.17214989658292928,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
