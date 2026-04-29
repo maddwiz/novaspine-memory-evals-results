@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:07:57Z",
+  "generated_at": "2026-04-29T13:07:59Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:07:57Z",
+    "updated_at": "2026-04-29T13:07:59Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 55,
+    "current_case_index": 60,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0054"
+    "current_case_id": "locomo::conv-26::0059"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,35 +2238,35 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 55,
-        "rows_successful": 55,
+        "rows_recorded": 60,
+        "rows_successful": 60,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7090909090909091,
-        "doc_recall_all": 0.5272727272727272,
-        "ndcg_at_10": 0.4663966070640942,
-        "exact_match": 0.12727272727272726,
-        "token_f1": 0.20588537173655141,
-        "avg_total_sec": 0.06313069619407707,
-        "p50_total_sec": 0.06282488536089659,
-        "p95_total_sec": 0.08669486595317721,
+        "doc_recall_any": 0.7166666666666667,
+        "doc_recall_all": 0.5166666666666667,
+        "ndcg_at_10": 0.469196889808753,
+        "exact_match": 0.13333333333333333,
+        "token_f1": 0.21706159075850545,
+        "avg_total_sec": 0.06341329296895613,
+        "p50_total_sec": 0.06292352499440312,
+        "p95_total_sec": 0.09087628312408924,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
         "categories": {
           "category_2": {
-            "expected_total": 26,
-            "rows_recorded": 26,
-            "rows_successful": 26,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9230769230769231,
-            "doc_recall_all": 0.9230769230769231,
-            "ndcg_at_10": 0.7338720024466497,
-            "exact_match": 0.2692307692307692,
-            "token_f1": 0.41904761904761906,
-            "avg_total_sec": 0.06859534232017513,
-            "p50_total_sec": 0.06709364615380764,
-            "p95_total_sec": 0.09087628312408924,
+            "doc_recall_any": 0.9285714285714286,
+            "doc_recall_all": 0.9285714285714286,
+            "ndcg_at_10": 0.7350240022718891,
+            "exact_match": 0.2857142857142857,
+            "token_f1": 0.44268707482993197,
+            "avg_total_sec": 0.06961953648299511,
+            "p50_total_sec": 0.06786323478445411,
+            "p95_total_sec": 0.09303456824272871,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
             "categories": {},
@@ -2479,18 +2479,18 @@
             ]
           },
           "category_3": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5,
-            "doc_recall_all": 0.125,
-            "ndcg_at_10": 0.24478516390608143,
+            "doc_recall_any": 0.5555555555555556,
+            "doc_recall_all": 0.1111111111111111,
+            "ndcg_at_10": 0.26057045760924363,
             "exact_match": 0.0,
-            "token_f1": 0.009999999999999998,
-            "avg_total_sec": 0.06319958489621058,
-            "p50_total_sec": 0.06696706870570779,
+            "token_f1": 0.008888888888888887,
+            "avg_total_sec": 0.06341958692711261,
+            "p50_total_sec": 0.0651796031743288,
             "p95_total_sec": 0.08174402033910155,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -2619,21 +2619,35 @@
                   "conv-26:D13:11",
                   "conv-26:D12:6"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0059",
+                "category": "category_3",
+                "query": "Would Caroline be considered religious?",
+                "gold": "Somewhat, but not extremely religious",
+                "prediction": "Hey Mel!",
+                "retrieved_doc_ids": [
+                  "conv-26:D14:24",
+                  "conv-26:D12:1",
+                  "conv-26:D13:15",
+                  "conv-26:D17:5",
+                  "conv-26:D11:12"
+                ]
               }
             ]
           },
           "category_1": {
-            "expected_total": 21,
-            "rows_recorded": 21,
-            "rows_successful": 21,
+            "expected_total": 23,
+            "rows_recorded": 23,
+            "rows_successful": 23,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5238095238095238,
-            "doc_recall_all": 0.19047619047619047,
-            "ndcg_at_10": 0.21966000065064928,
+            "doc_recall_any": 0.5217391304347826,
+            "doc_recall_all": 0.17391304347826086,
+            "ndcg_at_10": 0.22721770462735189,
             "exact_match": 0.0,
-            "token_f1": 0.016593207155820588,
-            "avg_total_sec": 0.05633870053238103,
+            "token_f1": 0.023845971750966623,
+            "avg_total_sec": 0.05585540322910832,
             "p50_total_sec": 0.05624670069664717,
             "p95_total_sec": 0.08669486595317721,
             "avg_storage_bytes": 10963457.0,
@@ -2819,6 +2833,24 @@
                   "conv-26:D1:7",
                   "conv-26:D19:7"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0055",
+                "category": "category_1",
+                "query": "What subject have Caroline and Melanie both painted?",
+                "gold": "Sunsets",
+                "prediction": "Wow Mel, that's stunning!",
+                "expected_doc_ids": [
+                  "conv-26:D14:5",
+                  "conv-26:D8:6"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D17:13",
+                  "conv-26:D12:6",
+                  "conv-26:D13:13",
+                  "conv-26:D13:11",
+                  "conv-26:D14:30"
+                ]
               }
             ],
             "sample_successes": [
@@ -2974,6 +3006,20 @@
                   "conv-26:D13:4",
                   "conv-26:D13:3",
                   "conv-26:D7:15"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0056",
+                "category": "category_1",
+                "query": "What symbols are important to Caroline?",
+                "gold": "Rainbow flag, transgender symbol",
+                "prediction": "The rainbow flag mural is important to me as it reflects the courage and strength of the trans community",
+                "retrieved_doc_ids": [
+                  "conv-26:D14:15",
+                  "conv-26:D11:8",
+                  "conv-26:D14:21",
+                  "conv-26:D16:9",
+                  "conv-26:D14:13"
                 ]
               }
             ]
@@ -5610,35 +5656,35 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 55,
-      "rows_successful": 55,
+      "rows_recorded": 60,
+      "rows_successful": 60,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7090909090909091,
-      "doc_recall_all": 0.5272727272727272,
-      "ndcg_at_10": 0.4663966070640942,
-      "exact_match": 0.12727272727272726,
-      "token_f1": 0.20588537173655141,
-      "avg_total_sec": 0.06313069619407707,
-      "p50_total_sec": 0.06282488536089659,
-      "p95_total_sec": 0.08669486595317721,
+      "doc_recall_any": 0.7166666666666667,
+      "doc_recall_all": 0.5166666666666667,
+      "ndcg_at_10": 0.469196889808753,
+      "exact_match": 0.13333333333333333,
+      "token_f1": 0.21706159075850545,
+      "avg_total_sec": 0.06341329296895613,
+      "p50_total_sec": 0.06292352499440312,
+      "p95_total_sec": 0.09087628312408924,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
       "categories": {
         "category_2": {
-          "expected_total": 26,
-          "rows_recorded": 26,
-          "rows_successful": 26,
+          "expected_total": 28,
+          "rows_recorded": 28,
+          "rows_successful": 28,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9230769230769231,
-          "doc_recall_all": 0.9230769230769231,
-          "ndcg_at_10": 0.7338720024466497,
-          "exact_match": 0.2692307692307692,
-          "token_f1": 0.41904761904761906,
-          "avg_total_sec": 0.06859534232017513,
-          "p50_total_sec": 0.06709364615380764,
-          "p95_total_sec": 0.09087628312408924,
+          "doc_recall_any": 0.9285714285714286,
+          "doc_recall_all": 0.9285714285714286,
+          "ndcg_at_10": 0.7350240022718891,
+          "exact_match": 0.2857142857142857,
+          "token_f1": 0.44268707482993197,
+          "avg_total_sec": 0.06961953648299511,
+          "p50_total_sec": 0.06786323478445411,
+          "p95_total_sec": 0.09303456824272871,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
           "categories": {},
@@ -5851,18 +5897,18 @@
           ]
         },
         "category_3": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5,
-          "doc_recall_all": 0.125,
-          "ndcg_at_10": 0.24478516390608143,
+          "doc_recall_any": 0.5555555555555556,
+          "doc_recall_all": 0.1111111111111111,
+          "ndcg_at_10": 0.26057045760924363,
           "exact_match": 0.0,
-          "token_f1": 0.009999999999999998,
-          "avg_total_sec": 0.06319958489621058,
-          "p50_total_sec": 0.06696706870570779,
+          "token_f1": 0.008888888888888887,
+          "avg_total_sec": 0.06341958692711261,
+          "p50_total_sec": 0.0651796031743288,
           "p95_total_sec": 0.08174402033910155,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -5991,21 +6037,35 @@
                 "conv-26:D13:11",
                 "conv-26:D12:6"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0059",
+              "category": "category_3",
+              "query": "Would Caroline be considered religious?",
+              "gold": "Somewhat, but not extremely religious",
+              "prediction": "Hey Mel!",
+              "retrieved_doc_ids": [
+                "conv-26:D14:24",
+                "conv-26:D12:1",
+                "conv-26:D13:15",
+                "conv-26:D17:5",
+                "conv-26:D11:12"
+              ]
             }
           ]
         },
         "category_1": {
-          "expected_total": 21,
-          "rows_recorded": 21,
-          "rows_successful": 21,
+          "expected_total": 23,
+          "rows_recorded": 23,
+          "rows_successful": 23,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5238095238095238,
-          "doc_recall_all": 0.19047619047619047,
-          "ndcg_at_10": 0.21966000065064928,
+          "doc_recall_any": 0.5217391304347826,
+          "doc_recall_all": 0.17391304347826086,
+          "ndcg_at_10": 0.22721770462735189,
           "exact_match": 0.0,
-          "token_f1": 0.016593207155820588,
-          "avg_total_sec": 0.05633870053238103,
+          "token_f1": 0.023845971750966623,
+          "avg_total_sec": 0.05585540322910832,
           "p50_total_sec": 0.05624670069664717,
           "p95_total_sec": 0.08669486595317721,
           "avg_storage_bytes": 10963457.0,
@@ -6191,6 +6251,24 @@
                 "conv-26:D1:7",
                 "conv-26:D19:7"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0055",
+              "category": "category_1",
+              "query": "What subject have Caroline and Melanie both painted?",
+              "gold": "Sunsets",
+              "prediction": "Wow Mel, that's stunning!",
+              "expected_doc_ids": [
+                "conv-26:D14:5",
+                "conv-26:D8:6"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D17:13",
+                "conv-26:D12:6",
+                "conv-26:D13:13",
+                "conv-26:D13:11",
+                "conv-26:D14:30"
+              ]
             }
           ],
           "sample_successes": [
@@ -6346,6 +6424,20 @@
                 "conv-26:D13:4",
                 "conv-26:D13:3",
                 "conv-26:D7:15"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0056",
+              "category": "category_1",
+              "query": "What symbols are important to Caroline?",
+              "gold": "Rainbow flag, transgender symbol",
+              "prediction": "The rainbow flag mural is important to me as it reflects the courage and strength of the trans community",
+              "retrieved_doc_ids": [
+                "conv-26:D14:15",
+                "conv-26:D11:8",
+                "conv-26:D14:21",
+                "conv-26:D16:9",
+                "conv-26:D14:13"
               ]
             }
           ]
@@ -6737,11 +6829,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.015623572407492015,
-    "doc_recall_all_delta": -0.07071722247601653,
-    "ndcg_at_10_delta": 0.0004554360555998338,
-    "token_f1_delta": 0.09460214898617325,
+    "doc_recall_any_delta": 0.023199329983249584,
+    "doc_recall_all_delta": -0.08132328308207704,
+    "ndcg_at_10_delta": 0.0032557188002586557,
+    "token_f1_delta": 0.10577836800812729,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009928055621849558
+    "avg_latency_ratio_nova_over_stock": 0.009972497338299658
   }
 }
