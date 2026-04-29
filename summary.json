@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:08:26Z",
+  "generated_at": "2026-04-29T03:08:27Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:08:26Z",
+    "updated_at": "2026-04-29T03:08:27Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 165,
+    "current_case_index": 170,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0164"
+    "current_case_id": "locomo::conv-26::0169"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,17 +2238,17 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 165,
-        "rows_successful": 165,
+        "rows_recorded": 170,
+        "rows_successful": 170,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6606060606060606,
-        "doc_recall_all": 0.5636363636363636,
-        "ndcg_at_10": 0.3926754307199066,
-        "exact_match": 0.06666666666666667,
-        "token_f1": 0.12150994490412804,
-        "avg_total_sec": 0.06120692873655847,
-        "p50_total_sec": 0.06101528322324157,
+        "doc_recall_any": 0.6647058823529411,
+        "doc_recall_all": 0.5705882352941176,
+        "ndcg_at_10": 0.39085440985959263,
+        "exact_match": 0.06470588235294118,
+        "token_f1": 0.11793612299518309,
+        "avg_total_sec": 0.06095862039638793,
+        "p50_total_sec": 0.060651801992207766,
         "p95_total_sec": 0.0894683632068336,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
@@ -3521,18 +3521,18 @@
             ]
           },
           "category_5": {
-            "expected_total": 13,
-            "rows_recorded": 13,
-            "rows_successful": 13,
+            "expected_total": 18,
+            "rows_recorded": 18,
+            "rows_successful": 18,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6153846153846154,
-            "doc_recall_all": 0.6153846153846154,
-            "ndcg_at_10": 0.53747207235996,
+            "doc_recall_any": 0.6666666666666666,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.4800522526680903,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 0.06204004377986376,
-            "p50_total_sec": 0.06041209911927581,
+            "avg_total_sec": 0.059463488610668316,
+            "p50_total_sec": 0.05935684684664011,
             "p95_total_sec": 0.07298866892233491,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
@@ -3622,6 +3622,23 @@
                   "conv-26:D4:14",
                   "conv-26:D4:11",
                   "conv-26:D7:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0168",
+                "category": "category_5",
+                "query": "What are the new shoes that Caroline got used for?",
+                "gold": "",
+                "prediction": "Yep, Melanie!, Yeah totally!, those bowls are amazing!, Thanks, That pic is cool!, Art's allowed me to explore my transition, my changing body",
+                "expected_doc_ids": [
+                  "conv-26:D7:19"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D4:5",
+                  "conv-26:D15:23",
+                  "conv-26:D16:9",
+                  "conv-26:D4:3",
+                  "conv-26:D11:8"
                 ]
               }
             ],
@@ -3736,6 +3753,62 @@
                   "conv-26:D7:7",
                   "conv-26:D4:11",
                   "conv-26:D6:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0165",
+                "category": "category_5",
+                "query": "What motivated Melanie to pursue counseling?",
+                "gold": "",
+                "prediction": "Woah, Caroline, it sounds like you're doing some impressive work",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:14",
+                  "conv-26:D4:15",
+                  "conv-26:D7:7",
+                  "conv-26:D3:10",
+                  "conv-26:D4:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0166",
+                "category": "category_5",
+                "query": "What kind of place does Melanie want to create for people?",
+                "gold": "",
+                "prediction": "Thanks, Caroline!",
+                "retrieved_doc_ids": [
+                  "conv-26:D12:6",
+                  "conv-26:D14:24",
+                  "conv-26:D15:4",
+                  "conv-26:D13:15",
+                  "conv-26:D16:8"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0167",
+                "category": "category_5",
+                "query": "Did Caroline make the black and white bowl in the photo?",
+                "gold": "No",
+                "prediction": "Yep, Melanie!",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:5",
+                  "conv-26:D16:9",
+                  "conv-26:D5:4",
+                  "conv-26:D16:8",
+                  "conv-26:D5:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0169",
+                "category": "category_5",
+                "query": "What is Caroline's reason for getting into running?",
+                "gold": "",
+                "prediction": "Thanks, Mel!",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D7:7",
+                  "conv-26:D10:20",
+                  "conv-26:D3:10",
+                  "conv-26:D16:7"
                 ]
               }
             ]
@@ -6368,17 +6441,17 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 165,
-      "rows_successful": 165,
+      "rows_recorded": 170,
+      "rows_successful": 170,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6606060606060606,
-      "doc_recall_all": 0.5636363636363636,
-      "ndcg_at_10": 0.3926754307199066,
-      "exact_match": 0.06666666666666667,
-      "token_f1": 0.12150994490412804,
-      "avg_total_sec": 0.06120692873655847,
-      "p50_total_sec": 0.06101528322324157,
+      "doc_recall_any": 0.6647058823529411,
+      "doc_recall_all": 0.5705882352941176,
+      "ndcg_at_10": 0.39085440985959263,
+      "exact_match": 0.06470588235294118,
+      "token_f1": 0.11793612299518309,
+      "avg_total_sec": 0.06095862039638793,
+      "p50_total_sec": 0.060651801992207766,
       "p95_total_sec": 0.0894683632068336,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
@@ -7651,18 +7724,18 @@
           ]
         },
         "category_5": {
-          "expected_total": 13,
-          "rows_recorded": 13,
-          "rows_successful": 13,
+          "expected_total": 18,
+          "rows_recorded": 18,
+          "rows_successful": 18,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6153846153846154,
-          "doc_recall_all": 0.6153846153846154,
-          "ndcg_at_10": 0.53747207235996,
+          "doc_recall_any": 0.6666666666666666,
+          "doc_recall_all": 0.6666666666666666,
+          "ndcg_at_10": 0.4800522526680903,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 0.06204004377986376,
-          "p50_total_sec": 0.06041209911927581,
+          "avg_total_sec": 0.059463488610668316,
+          "p50_total_sec": 0.05935684684664011,
           "p95_total_sec": 0.07298866892233491,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
@@ -7752,6 +7825,23 @@
                 "conv-26:D4:14",
                 "conv-26:D4:11",
                 "conv-26:D7:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0168",
+              "category": "category_5",
+              "query": "What are the new shoes that Caroline got used for?",
+              "gold": "",
+              "prediction": "Yep, Melanie!, Yeah totally!, those bowls are amazing!, Thanks, That pic is cool!, Art's allowed me to explore my transition, my changing body",
+              "expected_doc_ids": [
+                "conv-26:D7:19"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D4:5",
+                "conv-26:D15:23",
+                "conv-26:D16:9",
+                "conv-26:D4:3",
+                "conv-26:D11:8"
               ]
             }
           ],
@@ -7866,6 +7956,62 @@
                 "conv-26:D7:7",
                 "conv-26:D4:11",
                 "conv-26:D6:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0165",
+              "category": "category_5",
+              "query": "What motivated Melanie to pursue counseling?",
+              "gold": "",
+              "prediction": "Woah, Caroline, it sounds like you're doing some impressive work",
+              "retrieved_doc_ids": [
+                "conv-26:D4:14",
+                "conv-26:D4:15",
+                "conv-26:D7:7",
+                "conv-26:D3:10",
+                "conv-26:D4:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0166",
+              "category": "category_5",
+              "query": "What kind of place does Melanie want to create for people?",
+              "gold": "",
+              "prediction": "Thanks, Caroline!",
+              "retrieved_doc_ids": [
+                "conv-26:D12:6",
+                "conv-26:D14:24",
+                "conv-26:D15:4",
+                "conv-26:D13:15",
+                "conv-26:D16:8"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0167",
+              "category": "category_5",
+              "query": "Did Caroline make the black and white bowl in the photo?",
+              "gold": "No",
+              "prediction": "Yep, Melanie!",
+              "retrieved_doc_ids": [
+                "conv-26:D4:5",
+                "conv-26:D16:9",
+                "conv-26:D5:4",
+                "conv-26:D16:8",
+                "conv-26:D5:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0169",
+              "category": "category_5",
+              "query": "What is Caroline's reason for getting into running?",
+              "gold": "",
+              "prediction": "Thanks, Mel!",
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D7:7",
+                "conv-26:D10:20",
+                "conv-26:D3:10",
+                "conv-26:D16:7"
               ]
             }
           ]
@@ -8253,11 +8399,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.03286127607735645,
-    "doc_recall_all_delta": -0.03435358611238015,
-    "ndcg_at_10_delta": -0.07326574028858773,
-    "token_f1_delta": 0.010226722153749881,
+    "doc_recall_any_delta": -0.028761454330475944,
+    "doc_recall_all_delta": -0.027401714454626136,
+    "ndcg_at_10_delta": -0.07508676114890173,
+    "token_f1_delta": 0.00665290024480493,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.009604437581865124
+    "avg_latency_ratio_nova_over_stock": 0.009565473660566455
   }
 }
