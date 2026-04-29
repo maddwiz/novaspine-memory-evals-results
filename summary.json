@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:06:15Z",
+  "generated_at": "2026-04-29T13:07:41Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,28 +117,28 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:06:15Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T13:07:41Z",
+    "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 195,
+    "current_case_index": 5,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0194"
+    "current_case_id": "locomo::conv-26::0004"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 195,
-        "rows_successful": 195,
+        "rows_recorded": 199,
+        "rows_successful": 199,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6871794871794872,
-        "doc_recall_all": 0.5897435897435898,
-        "ndcg_at_10": 0.4611960420737051,
-        "exact_match": 0.06666666666666667,
-        "token_f1": 0.1135659555247449,
-        "avg_total_sec": 6.35856240433999,
-        "p50_total_sec": 6.349641810171306,
+        "doc_recall_any": 0.6934673366834171,
+        "doc_recall_all": 0.5979899497487438,
+        "ndcg_at_10": 0.46594117100849436,
+        "exact_match": 0.06532663316582915,
+        "token_f1": 0.11128322275037816,
+        "avg_total_sec": 6.358817738202405,
+        "p50_total_sec": 6.351641634013504,
         "p95_total_sec": 6.436645928770304,
         "avg_storage_bytes": 16115440.0,
         "p95_storage_bytes": 16115440.0,
@@ -1468,17 +1468,17 @@
             ]
           },
           "category_5": {
-            "expected_total": 43,
-            "rows_recorded": 43,
-            "rows_successful": 43,
+            "expected_total": 47,
+            "rows_recorded": 47,
+            "rows_successful": 47,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6046511627906976,
-            "doc_recall_all": 0.6046511627906976,
-            "ndcg_at_10": 0.45882932909208457,
+            "doc_recall_any": 0.6382978723404256,
+            "doc_recall_all": 0.6382978723404256,
+            "ndcg_at_10": 0.47912182930377717,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 6.379054662360009,
+            "avg_total_sec": 6.378391734839595,
             "p50_total_sec": 6.369023321662098,
             "p95_total_sec": 6.442736650817096,
             "avg_storage_bytes": 16115440.0,
@@ -2238,24 +2238,252 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 0,
-        "rows_successful": 0,
+        "rows_recorded": 5,
+        "rows_successful": 5,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.0,
-        "doc_recall_all": 0.0,
-        "ndcg_at_10": 0.0,
-        "exact_match": 0.0,
-        "token_f1": 0.0,
-        "avg_total_sec": 0.0,
-        "p50_total_sec": 0.0,
-        "p95_total_sec": 0.0,
-        "avg_storage_bytes": 0.0,
-        "p95_storage_bytes": 0.0,
-        "categories": {},
+        "doc_recall_any": 0.4,
+        "doc_recall_all": 0.2,
+        "ndcg_at_10": 0.2773705614469083,
+        "exact_match": 0.4,
+        "token_f1": 0.4,
+        "avg_total_sec": 0.06076123686507344,
+        "p50_total_sec": 0.061110281851142645,
+        "p95_total_sec": 0.08174402033910155,
+        "avg_storage_bytes": 10963457.0,
+        "p95_storage_bytes": 10963457.0,
+        "categories": {
+          "category_2": {
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.5,
+            "doc_recall_all": 0.5,
+            "ndcg_at_10": 0.5,
+            "exact_match": 1.0,
+            "token_f1": 1.0,
+            "avg_total_sec": 0.06019205250777304,
+            "p50_total_sec": 0.05028282618150115,
+            "p95_total_sec": 0.07010127883404493,
+            "avg_storage_bytes": 10963457.0,
+            "p95_storage_bytes": 10963457.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0001",
+                "category": "category_2",
+                "query": "When did Melanie paint a sunrise?",
+                "gold": "2022",
+                "prediction": "2022",
+                "expected_doc_ids": [
+                  "conv-26:D1:12"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D1:14",
+                  "conv-26:D14:30",
+                  "conv-26:D14:7",
+                  "conv-26:D16:8",
+                  "conv-26:D17:13"
+                ]
+              }
+            ],
+            "sample_successes": [
+              {
+                "case_id": "locomo::conv-26::0000",
+                "category": "category_2",
+                "query": "When did Caroline go to the LGBTQ support group?",
+                "gold": "7 May 2023",
+                "prediction": "7 May 2023",
+                "retrieved_doc_ids": [
+                  "conv-26:D1:3",
+                  "conv-26:D10:5",
+                  "conv-26:D16:5",
+                  "conv-26:D4:15",
+                  "conv-26:D4:13"
+                ]
+              }
+            ]
+          },
+          "category_3": {
+            "expected_total": 1,
+            "rows_recorded": 1,
+            "rows_successful": 1,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 0.0,
+            "ndcg_at_10": 0.38685280723454163,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 0.08174402033910155,
+            "p50_total_sec": 0.08174402033910155,
+            "p95_total_sec": 0.08174402033910155,
+            "avg_storage_bytes": 10963457.0,
+            "p95_storage_bytes": 10963457.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "locomo::conv-26::0002",
+                "category": "category_3",
+                "query": "What fields would Caroline be likely to pursue in her educaton?",
+                "gold": "Psychology, counseling certification",
+                "prediction": "Gonna continue my edu and check out career options, which is pretty exciting!",
+                "retrieved_doc_ids": [
+                  "conv-26:D14:24",
+                  "conv-26:D1:9",
+                  "conv-26:D6:7",
+                  "conv-26:D16:8",
+                  "conv-26:D11:14"
+                ]
+              }
+            ]
+          },
+          "category_1": {
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.0,
+            "doc_recall_all": 0.0,
+            "ndcg_at_10": 0.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 0.05083902948535979,
+            "p50_total_sec": 0.04056777711957693,
+            "p95_total_sec": 0.061110281851142645,
+            "avg_storage_bytes": 10963457.0,
+            "p95_storage_bytes": 10963457.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0003",
+                "category": "category_1",
+                "query": "What did Caroline research?",
+                "gold": "Adoption agencies",
+                "prediction": "I've got lots of kids' books- classics, stories from different cultures, educational books, all of that",
+                "expected_doc_ids": [
+                  "conv-26:D2:8"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D6:9",
+                  "conv-26:D8:5",
+                  "conv-26:D6:7",
+                  "conv-26:D7:7",
+                  "conv-26:D16:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0004",
+                "category": "category_1",
+                "query": "What is Caroline's identity?",
+                "gold": "Transgender woman",
+                "prediction": "Thanks, Melanie",
+                "expected_doc_ids": [
+                  "conv-26:D1:5"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D11:12",
+                  "conv-26:D16:9",
+                  "conv-26:D13:13",
+                  "conv-26:D11:8",
+                  "conv-26:D16:14"
+                ]
+              }
+            ],
+            "sample_successes": []
+          }
+        },
         "sample_errors": [],
-        "sample_misses": [],
-        "sample_successes": []
+        "sample_misses": [
+          {
+            "case_id": "locomo::conv-26::0001",
+            "category": "category_2",
+            "query": "When did Melanie paint a sunrise?",
+            "gold": "2022",
+            "prediction": "2022",
+            "expected_doc_ids": [
+              "conv-26:D1:12"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D1:14",
+              "conv-26:D14:30",
+              "conv-26:D14:7",
+              "conv-26:D16:8",
+              "conv-26:D17:13"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0003",
+            "category": "category_1",
+            "query": "What did Caroline research?",
+            "gold": "Adoption agencies",
+            "prediction": "I've got lots of kids' books- classics, stories from different cultures, educational books, all of that",
+            "expected_doc_ids": [
+              "conv-26:D2:8"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D6:9",
+              "conv-26:D8:5",
+              "conv-26:D6:7",
+              "conv-26:D7:7",
+              "conv-26:D16:7"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0004",
+            "category": "category_1",
+            "query": "What is Caroline's identity?",
+            "gold": "Transgender woman",
+            "prediction": "Thanks, Melanie",
+            "expected_doc_ids": [
+              "conv-26:D1:5"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D11:12",
+              "conv-26:D16:9",
+              "conv-26:D13:13",
+              "conv-26:D11:8",
+              "conv-26:D16:14"
+            ]
+          }
+        ],
+        "sample_successes": [
+          {
+            "case_id": "locomo::conv-26::0000",
+            "category": "category_2",
+            "query": "When did Caroline go to the LGBTQ support group?",
+            "gold": "7 May 2023",
+            "prediction": "7 May 2023",
+            "retrieved_doc_ids": [
+              "conv-26:D1:3",
+              "conv-26:D10:5",
+              "conv-26:D16:5",
+              "conv-26:D4:15",
+              "conv-26:D4:13"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0002",
+            "category": "category_3",
+            "query": "What fields would Caroline be likely to pursue in her educaton?",
+            "gold": "Psychology, counseling certification",
+            "prediction": "Gonna continue my edu and check out career options, which is pretty exciting!",
+            "retrieved_doc_ids": [
+              "conv-26:D14:24",
+              "conv-26:D1:9",
+              "conv-26:D6:7",
+              "conv-26:D16:8",
+              "conv-26:D11:14"
+            ]
+          }
+        ]
       }
     },
     "longmemeval_oracle": {
@@ -2394,17 +2622,17 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 195,
-      "rows_successful": 195,
+      "rows_recorded": 199,
+      "rows_successful": 199,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6871794871794872,
-      "doc_recall_all": 0.5897435897435898,
-      "ndcg_at_10": 0.4611960420737051,
-      "exact_match": 0.06666666666666667,
-      "token_f1": 0.1135659555247449,
-      "avg_total_sec": 6.35856240433999,
-      "p50_total_sec": 6.349641810171306,
+      "doc_recall_any": 0.6934673366834171,
+      "doc_recall_all": 0.5979899497487438,
+      "ndcg_at_10": 0.46594117100849436,
+      "exact_match": 0.06532663316582915,
+      "token_f1": 0.11128322275037816,
+      "avg_total_sec": 6.358817738202405,
+      "p50_total_sec": 6.351641634013504,
       "p95_total_sec": 6.436645928770304,
       "avg_storage_bytes": 16115440.0,
       "p95_storage_bytes": 16115440.0,
@@ -3734,17 +3962,17 @@
           ]
         },
         "category_5": {
-          "expected_total": 43,
-          "rows_recorded": 43,
-          "rows_successful": 43,
+          "expected_total": 47,
+          "rows_recorded": 47,
+          "rows_successful": 47,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6046511627906976,
-          "doc_recall_all": 0.6046511627906976,
-          "ndcg_at_10": 0.45882932909208457,
+          "doc_recall_any": 0.6382978723404256,
+          "doc_recall_all": 0.6382978723404256,
+          "ndcg_at_10": 0.47912182930377717,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 6.379054662360009,
+          "avg_total_sec": 6.378391734839595,
           "p50_total_sec": 6.369023321662098,
           "p95_total_sec": 6.442736650817096,
           "avg_storage_bytes": 16115440.0,
@@ -4504,32 +4732,260 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 0,
-      "rows_successful": 0,
+      "rows_recorded": 5,
+      "rows_successful": 5,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.0,
-      "doc_recall_all": 0.0,
-      "ndcg_at_10": 0.0,
-      "exact_match": 0.0,
-      "token_f1": 0.0,
-      "avg_total_sec": 0.0,
-      "p50_total_sec": 0.0,
-      "p95_total_sec": 0.0,
-      "avg_storage_bytes": 0.0,
-      "p95_storage_bytes": 0.0,
-      "categories": {},
+      "doc_recall_any": 0.4,
+      "doc_recall_all": 0.2,
+      "ndcg_at_10": 0.2773705614469083,
+      "exact_match": 0.4,
+      "token_f1": 0.4,
+      "avg_total_sec": 0.06076123686507344,
+      "p50_total_sec": 0.061110281851142645,
+      "p95_total_sec": 0.08174402033910155,
+      "avg_storage_bytes": 10963457.0,
+      "p95_storage_bytes": 10963457.0,
+      "categories": {
+        "category_2": {
+          "expected_total": 2,
+          "rows_recorded": 2,
+          "rows_successful": 2,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 0.5,
+          "doc_recall_all": 0.5,
+          "ndcg_at_10": 0.5,
+          "exact_match": 1.0,
+          "token_f1": 1.0,
+          "avg_total_sec": 0.06019205250777304,
+          "p50_total_sec": 0.05028282618150115,
+          "p95_total_sec": 0.07010127883404493,
+          "avg_storage_bytes": 10963457.0,
+          "p95_storage_bytes": 10963457.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0001",
+              "category": "category_2",
+              "query": "When did Melanie paint a sunrise?",
+              "gold": "2022",
+              "prediction": "2022",
+              "expected_doc_ids": [
+                "conv-26:D1:12"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D1:14",
+                "conv-26:D14:30",
+                "conv-26:D14:7",
+                "conv-26:D16:8",
+                "conv-26:D17:13"
+              ]
+            }
+          ],
+          "sample_successes": [
+            {
+              "case_id": "locomo::conv-26::0000",
+              "category": "category_2",
+              "query": "When did Caroline go to the LGBTQ support group?",
+              "gold": "7 May 2023",
+              "prediction": "7 May 2023",
+              "retrieved_doc_ids": [
+                "conv-26:D1:3",
+                "conv-26:D10:5",
+                "conv-26:D16:5",
+                "conv-26:D4:15",
+                "conv-26:D4:13"
+              ]
+            }
+          ]
+        },
+        "category_3": {
+          "expected_total": 1,
+          "rows_recorded": 1,
+          "rows_successful": 1,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 0.0,
+          "ndcg_at_10": 0.38685280723454163,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 0.08174402033910155,
+          "p50_total_sec": 0.08174402033910155,
+          "p95_total_sec": 0.08174402033910155,
+          "avg_storage_bytes": 10963457.0,
+          "p95_storage_bytes": 10963457.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "locomo::conv-26::0002",
+              "category": "category_3",
+              "query": "What fields would Caroline be likely to pursue in her educaton?",
+              "gold": "Psychology, counseling certification",
+              "prediction": "Gonna continue my edu and check out career options, which is pretty exciting!",
+              "retrieved_doc_ids": [
+                "conv-26:D14:24",
+                "conv-26:D1:9",
+                "conv-26:D6:7",
+                "conv-26:D16:8",
+                "conv-26:D11:14"
+              ]
+            }
+          ]
+        },
+        "category_1": {
+          "expected_total": 2,
+          "rows_recorded": 2,
+          "rows_successful": 2,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 0.0,
+          "doc_recall_all": 0.0,
+          "ndcg_at_10": 0.0,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 0.05083902948535979,
+          "p50_total_sec": 0.04056777711957693,
+          "p95_total_sec": 0.061110281851142645,
+          "avg_storage_bytes": 10963457.0,
+          "p95_storage_bytes": 10963457.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0003",
+              "category": "category_1",
+              "query": "What did Caroline research?",
+              "gold": "Adoption agencies",
+              "prediction": "I've got lots of kids' books- classics, stories from different cultures, educational books, all of that",
+              "expected_doc_ids": [
+                "conv-26:D2:8"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D6:9",
+                "conv-26:D8:5",
+                "conv-26:D6:7",
+                "conv-26:D7:7",
+                "conv-26:D16:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0004",
+              "category": "category_1",
+              "query": "What is Caroline's identity?",
+              "gold": "Transgender woman",
+              "prediction": "Thanks, Melanie",
+              "expected_doc_ids": [
+                "conv-26:D1:5"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D11:12",
+                "conv-26:D16:9",
+                "conv-26:D13:13",
+                "conv-26:D11:8",
+                "conv-26:D16:14"
+              ]
+            }
+          ],
+          "sample_successes": []
+        }
+      },
       "sample_errors": [],
-      "sample_misses": [],
-      "sample_successes": []
+      "sample_misses": [
+        {
+          "case_id": "locomo::conv-26::0001",
+          "category": "category_2",
+          "query": "When did Melanie paint a sunrise?",
+          "gold": "2022",
+          "prediction": "2022",
+          "expected_doc_ids": [
+            "conv-26:D1:12"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D1:14",
+            "conv-26:D14:30",
+            "conv-26:D14:7",
+            "conv-26:D16:8",
+            "conv-26:D17:13"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0003",
+          "category": "category_1",
+          "query": "What did Caroline research?",
+          "gold": "Adoption agencies",
+          "prediction": "I've got lots of kids' books- classics, stories from different cultures, educational books, all of that",
+          "expected_doc_ids": [
+            "conv-26:D2:8"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D6:9",
+            "conv-26:D8:5",
+            "conv-26:D6:7",
+            "conv-26:D7:7",
+            "conv-26:D16:7"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0004",
+          "category": "category_1",
+          "query": "What is Caroline's identity?",
+          "gold": "Transgender woman",
+          "prediction": "Thanks, Melanie",
+          "expected_doc_ids": [
+            "conv-26:D1:5"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D11:12",
+            "conv-26:D16:9",
+            "conv-26:D13:13",
+            "conv-26:D11:8",
+            "conv-26:D16:14"
+          ]
+        }
+      ],
+      "sample_successes": [
+        {
+          "case_id": "locomo::conv-26::0000",
+          "category": "category_2",
+          "query": "When did Caroline go to the LGBTQ support group?",
+          "gold": "7 May 2023",
+          "prediction": "7 May 2023",
+          "retrieved_doc_ids": [
+            "conv-26:D1:3",
+            "conv-26:D10:5",
+            "conv-26:D16:5",
+            "conv-26:D4:15",
+            "conv-26:D4:13"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0002",
+          "category": "category_3",
+          "query": "What fields would Caroline be likely to pursue in her educaton?",
+          "gold": "Psychology, counseling certification",
+          "prediction": "Gonna continue my edu and check out career options, which is pretty exciting!",
+          "retrieved_doc_ids": [
+            "conv-26:D14:24",
+            "conv-26:D1:9",
+            "conv-26:D6:7",
+            "conv-26:D16:8",
+            "conv-26:D11:14"
+          ]
+        }
+      ]
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.6871794871794872,
-    "doc_recall_all_delta": -0.5897435897435898,
-    "ndcg_at_10_delta": -0.4611960420737051,
-    "token_f1_delta": -0.1135659555247449,
-    "avg_storage_ratio_nova_over_stock": 0.0,
-    "avg_latency_ratio_nova_over_stock": 0.0
+    "doc_recall_any_delta": -0.29346733668341707,
+    "doc_recall_all_delta": -0.39798994974874374,
+    "ndcg_at_10_delta": -0.18857060956158606,
+    "token_f1_delta": 0.28871677724962186,
+    "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
+    "avg_latency_ratio_nova_over_stock": 0.009555429856093065
   }
 }
