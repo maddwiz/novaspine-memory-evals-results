@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:08:14Z",
+  "generated_at": "2026-04-29T13:08:15Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:08:14Z",
+    "updated_at": "2026-04-29T13:08:15Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 105,
+    "current_case_index": 110,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0104"
+    "current_case_id": "locomo::conv-26::0109"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,17 +2238,17 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 105,
-        "rows_successful": 105,
+        "rows_recorded": 110,
+        "rows_successful": 110,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7142857142857143,
-        "doc_recall_all": 0.5619047619047619,
-        "ndcg_at_10": 0.47731506634572995,
-        "exact_match": 0.12380952380952381,
-        "token_f1": 0.1982581622278278,
-        "avg_total_sec": 0.06095256141963459,
-        "p50_total_sec": 0.060632328037172556,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.5545454545454546,
+        "ndcg_at_10": 0.4679480832128151,
+        "exact_match": 0.11818181818181818,
+        "token_f1": 0.1917257664240835,
+        "avg_total_sec": 0.06047925298440863,
+        "p50_total_sec": 0.06037347810342908,
         "p95_total_sec": 0.08885137597098947,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
@@ -3121,18 +3121,18 @@
             ]
           },
           "category_4": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6086956521739131,
-            "doc_recall_all": 0.6086956521739131,
-            "ndcg_at_10": 0.4326716494838546,
-            "exact_match": 0.043478260869565216,
-            "token_f1": 0.07596989966555184,
-            "avg_total_sec": 0.054810426623115076,
-            "p50_total_sec": 0.05469462927430868,
+            "doc_recall_any": 0.5714285714285714,
+            "doc_recall_all": 0.5714285714285714,
+            "ndcg_at_10": 0.4038448259013099,
+            "exact_match": 0.03571428571428571,
+            "token_f1": 0.0721441058941059,
+            "avg_total_sec": 0.05404781041267727,
+            "p50_total_sec": 0.055887516122311354,
             "p95_total_sec": 0.0844082459807396,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -3290,6 +3290,57 @@
                   "conv-26:D10:20",
                   "conv-26:D4:3",
                   "conv-26:D7:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0105",
+                "category": "category_4",
+                "query": "What did Caroline take away from the book \"Becoming Nicole\"?",
+                "gold": "Lessons on self-acceptance and finding support",
+                "prediction": "I loved \"Becoming Nicole\" by Amy Ellis Nutt",
+                "expected_doc_ids": [
+                  "conv-26:D7:13"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:11",
+                  "conv-26:D6:9",
+                  "conv-26:D13:1",
+                  "conv-26:D15:23",
+                  "conv-26:D7:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0106",
+                "category": "category_4",
+                "query": "What are the new shoes that Melanie got used for?",
+                "gold": "Running",
+                "prediction": "Luna, Oliver!, Yeah, that pic was from a show I went to, That's gorgeous, Caroline!, I'll never forget the day my youngest took her first steps, Thanks, That's a gorgeous song",
+                "expected_doc_ids": [
+                  "conv-26:D7:19"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:18",
+                  "conv-26:D4:5",
+                  "conv-26:D4:3",
+                  "conv-26:D15:14",
+                  "conv-26:D4:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0108",
+                "category": "category_4",
+                "query": "What does Melanie say running has been great for?",
+                "gold": "Her mental health",
+                "prediction": "a great way to destress and clear my mind",
+                "expected_doc_ids": [
+                  "conv-26:D7:24"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:22",
+                  "conv-26:D7:23",
+                  "conv-26:D7:21",
+                  "conv-26:D2:2",
+                  "conv-26:D7:20"
                 ]
               }
             ],
@@ -6096,17 +6147,17 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 105,
-      "rows_successful": 105,
+      "rows_recorded": 110,
+      "rows_successful": 110,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7142857142857143,
-      "doc_recall_all": 0.5619047619047619,
-      "ndcg_at_10": 0.47731506634572995,
-      "exact_match": 0.12380952380952381,
-      "token_f1": 0.1982581622278278,
-      "avg_total_sec": 0.06095256141963459,
-      "p50_total_sec": 0.060632328037172556,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.5545454545454546,
+      "ndcg_at_10": 0.4679480832128151,
+      "exact_match": 0.11818181818181818,
+      "token_f1": 0.1917257664240835,
+      "avg_total_sec": 0.06047925298440863,
+      "p50_total_sec": 0.06037347810342908,
       "p95_total_sec": 0.08885137597098947,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
@@ -6979,18 +7030,18 @@
           ]
         },
         "category_4": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 28,
+          "rows_recorded": 28,
+          "rows_successful": 28,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6086956521739131,
-          "doc_recall_all": 0.6086956521739131,
-          "ndcg_at_10": 0.4326716494838546,
-          "exact_match": 0.043478260869565216,
-          "token_f1": 0.07596989966555184,
-          "avg_total_sec": 0.054810426623115076,
-          "p50_total_sec": 0.05469462927430868,
+          "doc_recall_any": 0.5714285714285714,
+          "doc_recall_all": 0.5714285714285714,
+          "ndcg_at_10": 0.4038448259013099,
+          "exact_match": 0.03571428571428571,
+          "token_f1": 0.0721441058941059,
+          "avg_total_sec": 0.05404781041267727,
+          "p50_total_sec": 0.055887516122311354,
           "p95_total_sec": 0.0844082459807396,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -7148,6 +7199,57 @@
                 "conv-26:D10:20",
                 "conv-26:D4:3",
                 "conv-26:D7:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0105",
+              "category": "category_4",
+              "query": "What did Caroline take away from the book \"Becoming Nicole\"?",
+              "gold": "Lessons on self-acceptance and finding support",
+              "prediction": "I loved \"Becoming Nicole\" by Amy Ellis Nutt",
+              "expected_doc_ids": [
+                "conv-26:D7:13"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:11",
+                "conv-26:D6:9",
+                "conv-26:D13:1",
+                "conv-26:D15:23",
+                "conv-26:D7:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0106",
+              "category": "category_4",
+              "query": "What are the new shoes that Melanie got used for?",
+              "gold": "Running",
+              "prediction": "Luna, Oliver!, Yeah, that pic was from a show I went to, That's gorgeous, Caroline!, I'll never forget the day my youngest took her first steps, Thanks, That's a gorgeous song",
+              "expected_doc_ids": [
+                "conv-26:D7:19"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:18",
+                "conv-26:D4:5",
+                "conv-26:D4:3",
+                "conv-26:D15:14",
+                "conv-26:D4:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0108",
+              "category": "category_4",
+              "query": "What does Melanie say running has been great for?",
+              "gold": "Her mental health",
+              "prediction": "a great way to destress and clear my mind",
+              "expected_doc_ids": [
+                "conv-26:D7:24"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:22",
+                "conv-26:D7:23",
+                "conv-26:D7:21",
+                "conv-26:D2:2",
+                "conv-26:D7:20"
               ]
             }
           ],
@@ -7709,11 +7811,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.02081837760229721,
-    "doc_recall_all_delta": -0.03608518784398185,
-    "ndcg_at_10_delta": 0.011373895337235596,
-    "token_f1_delta": 0.08697493947744964,
+    "doc_recall_any_delta": 0.006532663316582865,
+    "doc_recall_all_delta": -0.04344449520328919,
+    "ndcg_at_10_delta": 0.0020069122043207543,
+    "token_f1_delta": 0.08044254367370535,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009585517926303305
+    "avg_latency_ratio_nova_over_stock": 0.0095110845245748
   }
 }
