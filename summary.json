@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:08:39Z",
+  "generated_at": "2026-04-29T13:08:41Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:08:39Z",
+    "updated_at": "2026-04-29T13:08:41Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 185,
+    "current_case_index": 190,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0184"
+    "current_case_id": "locomo::conv-26::0189"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,18 +2238,18 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 185,
-        "rows_successful": 185,
+        "rows_recorded": 190,
+        "rows_successful": 190,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7081081081081081,
-        "doc_recall_all": 0.6162162162162163,
-        "ndcg_at_10": 0.4969524074314791,
-        "exact_match": 0.07027027027027027,
-        "token_f1": 0.12195845636217108,
-        "avg_total_sec": 0.058852927562956875,
+        "doc_recall_any": 0.7105263157894737,
+        "doc_recall_all": 0.6210526315789474,
+        "ndcg_at_10": 0.49786017135576655,
+        "exact_match": 0.06842105263157895,
+        "token_f1": 0.11874902330000868,
+        "avg_total_sec": 0.05894937949549211,
         "p50_total_sec": 0.059424322098493576,
-        "p95_total_sec": 0.08614398259669542,
+        "p95_total_sec": 0.08669486595317721,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
         "categories": {
@@ -3516,19 +3516,19 @@
             ]
           },
           "category_5": {
-            "expected_total": 33,
-            "rows_recorded": 33,
-            "rows_successful": 33,
+            "expected_total": 38,
+            "rows_recorded": 38,
+            "rows_successful": 38,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7272727272727273,
-            "doc_recall_all": 0.7272727272727273,
-            "ndcg_at_10": 0.4969432048378148,
+            "doc_recall_any": 0.7368421052631579,
+            "doc_recall_all": 0.7368421052631579,
+            "ndcg_at_10": 0.5014832353268392,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 0.056074122404397436,
+            "avg_total_sec": 0.05692201432477879,
             "p50_total_sec": 0.059846165124326944,
-            "p95_total_sec": 0.07822721777483821,
+            "p95_total_sec": 0.08605412906035781,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
             "categories": {},
@@ -3685,6 +3685,23 @@
                   "conv-26:D16:5",
                   "conv-26:D8:4",
                   "conv-26:D4:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0189",
+                "category": "category_5",
+                "query": "What does Caroline do to keep herself busy during her pottery break?",
+                "gold": "",
+                "prediction": "Oh man, sorry to hear that, Melanie",
+                "expected_doc_ids": [
+                  "conv-26:D17:10"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D17:9",
+                  "conv-26:D5:4",
+                  "conv-26:D5:10",
+                  "conv-26:D16:8",
+                  "conv-26:D5:6"
                 ]
               }
             ],
@@ -6491,18 +6508,18 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 185,
-      "rows_successful": 185,
+      "rows_recorded": 190,
+      "rows_successful": 190,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7081081081081081,
-      "doc_recall_all": 0.6162162162162163,
-      "ndcg_at_10": 0.4969524074314791,
-      "exact_match": 0.07027027027027027,
-      "token_f1": 0.12195845636217108,
-      "avg_total_sec": 0.058852927562956875,
+      "doc_recall_any": 0.7105263157894737,
+      "doc_recall_all": 0.6210526315789474,
+      "ndcg_at_10": 0.49786017135576655,
+      "exact_match": 0.06842105263157895,
+      "token_f1": 0.11874902330000868,
+      "avg_total_sec": 0.05894937949549211,
       "p50_total_sec": 0.059424322098493576,
-      "p95_total_sec": 0.08614398259669542,
+      "p95_total_sec": 0.08669486595317721,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
       "categories": {
@@ -7769,19 +7786,19 @@
           ]
         },
         "category_5": {
-          "expected_total": 33,
-          "rows_recorded": 33,
-          "rows_successful": 33,
+          "expected_total": 38,
+          "rows_recorded": 38,
+          "rows_successful": 38,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.7272727272727273,
-          "doc_recall_all": 0.7272727272727273,
-          "ndcg_at_10": 0.4969432048378148,
+          "doc_recall_any": 0.7368421052631579,
+          "doc_recall_all": 0.7368421052631579,
+          "ndcg_at_10": 0.5014832353268392,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 0.056074122404397436,
+          "avg_total_sec": 0.05692201432477879,
           "p50_total_sec": 0.059846165124326944,
-          "p95_total_sec": 0.07822721777483821,
+          "p95_total_sec": 0.08605412906035781,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
           "categories": {},
@@ -7938,6 +7955,23 @@
                 "conv-26:D16:5",
                 "conv-26:D8:4",
                 "conv-26:D4:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0189",
+              "category": "category_5",
+              "query": "What does Caroline do to keep herself busy during her pottery break?",
+              "gold": "",
+              "prediction": "Oh man, sorry to hear that, Melanie",
+              "expected_doc_ids": [
+                "conv-26:D17:10"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D17:9",
+                "conv-26:D5:4",
+                "conv-26:D5:10",
+                "conv-26:D16:8",
+                "conv-26:D5:6"
               ]
             }
           ],
@@ -8499,11 +8533,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.014640771424691001,
-    "doc_recall_all_delta": 0.018226266467472496,
-    "ndcg_at_10_delta": 0.031011236422984756,
-    "token_f1_delta": 0.010675233611792914,
+    "doc_recall_any_delta": 0.017058979106056582,
+    "doc_recall_all_delta": 0.023062681830203657,
+    "ndcg_at_10_delta": 0.031919000347272186,
+    "token_f1_delta": 0.007465800549630516,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009255325437208427
+    "avg_latency_ratio_nova_over_stock": 0.009270493655029135
   }
 }
