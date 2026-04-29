@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T17:00:42Z",
+  "generated_at": "2026-04-29T17:00:52Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T17:00:27Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T17:00:44Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 10,
     "current_case_total": 500,
@@ -5162,36 +5162,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 9,
-        "rows_successful": 9,
+        "rows_recorded": 10,
+        "rows_successful": 10,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
-        "exact_match": 1.0,
-        "token_f1": 0.9523809523809523,
-        "avg_total_sec": 7.259764180415207,
+        "exact_match": 0.9,
+        "token_f1": 0.8571428571428571,
+        "avg_total_sec": 7.306529513886199,
         "p50_total_sec": 6.961248277686536,
         "p95_total_sec": 9.858838545158505,
-        "avg_storage_bytes": 1188522.7777777778,
+        "avg_storage_bytes": 1189846.2,
         "p95_storage_bytes": 1554589.0,
         "categories": {
           "temporal-reasoning": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 1.0,
-            "token_f1": 0.9523809523809523,
-            "avg_total_sec": 7.259764180415207,
+            "exact_match": 0.9,
+            "token_f1": 0.8571428571428571,
+            "avg_total_sec": 7.306529513886199,
             "p50_total_sec": 6.961248277686536,
             "p95_total_sec": 9.858838545158505,
-            "avg_storage_bytes": 1188522.7777777778,
+            "avg_storage_bytes": 1189846.2,
             "p95_storage_bytes": 1554589.0,
             "categories": {},
             "sample_errors": [],
@@ -5295,6 +5295,17 @@
                 "retrieved_doc_ids": [
                   "answer_1cc3cd0c_1",
                   "answer_1cc3cd0c_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::bbf86515",
+                "category": "temporal-reasoning",
+                "query": "How many days before the 'Rack Fest' did I participate in the 'Turbocharged Tuesdays' event?",
+                "gold": "4 days.",
+                "prediction": "Rack Fest did",
+                "retrieved_doc_ids": [
+                  "answer_b3763b6b_1",
+                  "answer_b3763b6b_2"
                 ]
               }
             ]
@@ -5401,6 +5412,17 @@
             "retrieved_doc_ids": [
               "answer_1cc3cd0c_1",
               "answer_1cc3cd0c_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::bbf86515",
+            "category": "temporal-reasoning",
+            "query": "How many days before the 'Rack Fest' did I participate in the 'Turbocharged Tuesdays' event?",
+            "gold": "4 days.",
+            "prediction": "Rack Fest did",
+            "retrieved_doc_ids": [
+              "answer_b3763b6b_1",
+              "answer_b3763b6b_2"
             ]
           }
         ]
@@ -8006,19 +8028,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 1995,
-      "rows_successful": 1995,
+      "rows_recorded": 1996,
+      "rows_successful": 1996,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7443609022556391,
-      "doc_recall_all": 0.6401002506265664,
-      "ndcg_at_10": 0.516430319194707,
-      "exact_match": 0.03859649122807018,
-      "token_f1": 0.08620773481066983,
-      "avg_total_sec": 0.09637523597773902,
-      "p50_total_sec": 0.06268516415730119,
-      "p95_total_sec": 0.09557010512799025,
-      "avg_storage_bytes": 13642908.805513784,
+      "doc_recall_any": 0.7444889779559118,
+      "doc_recall_all": 0.6402805611222445,
+      "ndcg_at_10": 0.516672588573868,
+      "exact_match": 0.03857715430861723,
+      "token_f1": 0.08616454456276869,
+      "avg_total_sec": 0.10019840345226176,
+      "p50_total_sec": 0.06269786087796092,
+      "p95_total_sec": 0.09558453783392906,
+      "avg_storage_bytes": 13636675.763527054,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -10011,20 +10033,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 9,
-          "rows_recorded": 9,
-          "rows_successful": 9,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 1.0,
-          "token_f1": 0.9523809523809523,
-          "avg_total_sec": 7.259764180415207,
+          "exact_match": 0.9,
+          "token_f1": 0.8571428571428571,
+          "avg_total_sec": 7.306529513886199,
           "p50_total_sec": 6.961248277686536,
           "p95_total_sec": 9.858838545158505,
-          "avg_storage_bytes": 1188522.7777777778,
+          "avg_storage_bytes": 1189846.2,
           "p95_storage_bytes": 1554589.0,
           "categories": {},
           "sample_errors": [],
@@ -10128,6 +10150,17 @@
               "retrieved_doc_ids": [
                 "answer_1cc3cd0c_1",
                 "answer_1cc3cd0c_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::bbf86515",
+              "category": "temporal-reasoning",
+              "query": "How many days before the 'Rack Fest' did I participate in the 'Turbocharged Tuesdays' event?",
+              "gold": "4 days.",
+              "prediction": "Rack Fest did",
+              "retrieved_doc_ids": [
+                "answer_b3763b6b_1",
+                "answer_b3763b6b_2"
               ]
             }
           ]
@@ -10519,11 +10552,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.0484691186885049,
-    "doc_recall_all_delta": 0.05392790593718766,
-    "ndcg_at_10_delta": 0.05945553925824726,
-    "token_f1_delta": -0.00034207208407600886,
-    "avg_storage_ratio_nova_over_stock": 0.6467866164330871,
-    "avg_latency_ratio_nova_over_stock": 0.015037723952279097
+    "doc_recall_any_delta": 0.04859719438877763,
+    "doc_recall_all_delta": 0.054108216432865786,
+    "ndcg_at_10_delta": 0.0596978086374082,
+    "token_f1_delta": -0.00038526233197715143,
+    "avg_storage_ratio_nova_over_stock": 0.6464911187357739,
+    "avg_latency_ratio_nova_over_stock": 0.015634264510877415
   }
 }
