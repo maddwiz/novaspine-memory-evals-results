@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:08:31Z",
+  "generated_at": "2026-04-29T13:08:33Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:08:31Z",
+    "updated_at": "2026-04-29T13:08:33Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 160,
+    "current_case_index": 165,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0159"
+    "current_case_id": "locomo::conv-26::0164"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,16 +2238,16 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 160,
-        "rows_successful": 160,
+        "rows_recorded": 165,
+        "rows_successful": 165,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7,
-        "doc_recall_all": 0.59375,
-        "ndcg_at_10": 0.49266334025933534,
-        "exact_match": 0.08125,
-        "token_f1": 0.14101446516876032,
-        "avg_total_sec": 0.05902990632748697,
+        "doc_recall_any": 0.703030303030303,
+        "doc_recall_all": 0.6,
+        "ndcg_at_10": 0.49471008749792506,
+        "exact_match": 0.07878787878787878,
+        "token_f1": 0.13674129955758574,
+        "avg_total_sec": 0.05889441676889405,
         "p50_total_sec": 0.059424322098493576,
         "p95_total_sec": 0.08614398259669542,
         "avg_storage_bytes": 10963457.0,
@@ -3516,19 +3516,19 @@
             ]
           },
           "category_5": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.625,
-            "doc_recall_all": 0.625,
-            "ndcg_at_10": 0.41113310328973596,
+            "doc_recall_any": 0.6923076923076923,
+            "doc_recall_all": 0.6923076923076923,
+            "ndcg_at_10": 0.46846883246014376,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 0.0509299315745011,
-            "p50_total_sec": 0.062434612307697535,
-            "p95_total_sec": 0.08605412906035781,
+            "avg_total_sec": 0.05232563131273939,
+            "p50_total_sec": 0.062397316098213196,
+            "p95_total_sec": 0.07547532999888062,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
             "categories": {},
@@ -3583,6 +3583,23 @@
                   "conv-26:D2:10",
                   "conv-26:D17:4",
                   "conv-26:D17:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0163",
+                "category": "category_5",
+                "query": "What kind of counseling and mental health services is Melanie interested in pursuing?",
+                "gold": "",
+                "prediction": "Sounds great!",
+                "expected_doc_ids": [
+                  "conv-26:D4:13"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:7",
+                  "conv-26:D4:11",
+                  "conv-26:D1:11",
+                  "conv-26:D4:12",
+                  "conv-26:D4:15"
                 ]
               }
             ],
@@ -3655,6 +3672,62 @@
                   "conv-26:D11:1",
                   "conv-26:D18:1",
                   "conv-26:D8:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0160",
+                "category": "category_5",
+                "query": "What was grandpa's gift to Caroline?",
+                "gold": "",
+                "prediction": "Thanks, Melanie!",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D19:11",
+                  "conv-26:D11:2",
+                  "conv-26:D11:1",
+                  "conv-26:D8:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0161",
+                "category": "category_5",
+                "query": "What is Caroline's hand-painted bowl a reminder of?",
+                "gold": "",
+                "prediction": "Yep, Melanie!",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:5",
+                  "conv-26:D5:7",
+                  "conv-26:D12:5",
+                  "conv-26:D5:8",
+                  "conv-26:D16:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0162",
+                "category": "category_5",
+                "query": "What did Caroline and her family do while camping?",
+                "gold": "",
+                "prediction": "Wow, that's awesome!",
+                "retrieved_doc_ids": [
+                  "conv-26:D10:12",
+                  "conv-26:D18:20",
+                  "conv-26:D4:8",
+                  "conv-26:D8:32",
+                  "conv-26:D18:19"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0164",
+                "category": "category_5",
+                "query": "What kind of counseling workshop did Melanie attend recently?",
+                "gold": "",
+                "prediction": "Woah, Caroline, it sounds like you're doing some impressive work",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:14",
+                  "conv-26:D4:11",
+                  "conv-26:D1:12",
+                  "conv-26:D4:12",
+                  "conv-26:D4:15"
                 ]
               }
             ]
@@ -6291,16 +6364,16 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 160,
-      "rows_successful": 160,
+      "rows_recorded": 165,
+      "rows_successful": 165,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7,
-      "doc_recall_all": 0.59375,
-      "ndcg_at_10": 0.49266334025933534,
-      "exact_match": 0.08125,
-      "token_f1": 0.14101446516876032,
-      "avg_total_sec": 0.05902990632748697,
+      "doc_recall_any": 0.703030303030303,
+      "doc_recall_all": 0.6,
+      "ndcg_at_10": 0.49471008749792506,
+      "exact_match": 0.07878787878787878,
+      "token_f1": 0.13674129955758574,
+      "avg_total_sec": 0.05889441676889405,
       "p50_total_sec": 0.059424322098493576,
       "p95_total_sec": 0.08614398259669542,
       "avg_storage_bytes": 10963457.0,
@@ -7569,19 +7642,19 @@
           ]
         },
         "category_5": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 13,
+          "rows_recorded": 13,
+          "rows_successful": 13,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.625,
-          "doc_recall_all": 0.625,
-          "ndcg_at_10": 0.41113310328973596,
+          "doc_recall_any": 0.6923076923076923,
+          "doc_recall_all": 0.6923076923076923,
+          "ndcg_at_10": 0.46846883246014376,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 0.0509299315745011,
-          "p50_total_sec": 0.062434612307697535,
-          "p95_total_sec": 0.08605412906035781,
+          "avg_total_sec": 0.05232563131273939,
+          "p50_total_sec": 0.062397316098213196,
+          "p95_total_sec": 0.07547532999888062,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
           "categories": {},
@@ -7636,6 +7709,23 @@
                 "conv-26:D2:10",
                 "conv-26:D17:4",
                 "conv-26:D17:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0163",
+              "category": "category_5",
+              "query": "What kind of counseling and mental health services is Melanie interested in pursuing?",
+              "gold": "",
+              "prediction": "Sounds great!",
+              "expected_doc_ids": [
+                "conv-26:D4:13"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:7",
+                "conv-26:D4:11",
+                "conv-26:D1:11",
+                "conv-26:D4:12",
+                "conv-26:D4:15"
               ]
             }
           ],
@@ -7708,6 +7798,62 @@
                 "conv-26:D11:1",
                 "conv-26:D18:1",
                 "conv-26:D8:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0160",
+              "category": "category_5",
+              "query": "What was grandpa's gift to Caroline?",
+              "gold": "",
+              "prediction": "Thanks, Melanie!",
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D19:11",
+                "conv-26:D11:2",
+                "conv-26:D11:1",
+                "conv-26:D8:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0161",
+              "category": "category_5",
+              "query": "What is Caroline's hand-painted bowl a reminder of?",
+              "gold": "",
+              "prediction": "Yep, Melanie!",
+              "retrieved_doc_ids": [
+                "conv-26:D4:5",
+                "conv-26:D5:7",
+                "conv-26:D12:5",
+                "conv-26:D5:8",
+                "conv-26:D16:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0162",
+              "category": "category_5",
+              "query": "What did Caroline and her family do while camping?",
+              "gold": "",
+              "prediction": "Wow, that's awesome!",
+              "retrieved_doc_ids": [
+                "conv-26:D10:12",
+                "conv-26:D18:20",
+                "conv-26:D4:8",
+                "conv-26:D8:32",
+                "conv-26:D18:19"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0164",
+              "category": "category_5",
+              "query": "What kind of counseling workshop did Melanie attend recently?",
+              "gold": "",
+              "prediction": "Woah, Caroline, it sounds like you're doing some impressive work",
+              "retrieved_doc_ids": [
+                "conv-26:D4:14",
+                "conv-26:D4:11",
+                "conv-26:D1:12",
+                "conv-26:D4:12",
+                "conv-26:D4:15"
               ]
             }
           ]
@@ -8099,11 +8245,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.006532663316582865,
-    "doc_recall_all_delta": -0.004239949748743754,
-    "ndcg_at_10_delta": 0.026722169250840977,
-    "token_f1_delta": 0.029731242418382153,
+    "doc_recall_any_delta": 0.009562966346885915,
+    "doc_recall_all_delta": 0.0020100502512562235,
+    "ndcg_at_10_delta": 0.028768916489430696,
+    "token_f1_delta": 0.025458076807207575,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009283157460678268
+    "avg_latency_ratio_nova_over_stock": 0.009261850110134326
   }
 }
