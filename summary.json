@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:07:54Z",
+  "generated_at": "2026-04-29T13:07:56Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:07:54Z",
+    "updated_at": "2026-04-29T13:07:56Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 45,
+    "current_case_index": 50,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0044"
+    "current_case_id": "locomo::conv-26::0049"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,34 +2238,34 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 45,
-        "rows_successful": 45,
+        "rows_recorded": 50,
+        "rows_successful": 50,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7111111111111111,
-        "doc_recall_all": 0.5333333333333333,
-        "ndcg_at_10": 0.4754493105770572,
-        "exact_match": 0.15555555555555556,
-        "token_f1": 0.22635032024505708,
-        "avg_total_sec": 0.06429433080678185,
-        "p50_total_sec": 0.06282488536089659,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.52,
+        "ndcg_at_10": 0.460075448660845,
+        "exact_match": 0.14,
+        "token_f1": 0.20871528822055135,
+        "avg_total_sec": 0.064879359183833,
+        "p50_total_sec": 0.06292352499440312,
         "p95_total_sec": 0.09087628312408924,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
         "categories": {
           "category_2": {
-            "expected_total": 22,
-            "rows_recorded": 22,
-            "rows_successful": 22,
+            "expected_total": 24,
+            "rows_recorded": 24,
+            "rows_successful": 24,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9090909090909091,
-            "doc_recall_all": 0.9090909090909091,
-            "ndcg_at_10": 0.7249882868200653,
-            "exact_match": 0.3181818181818182,
-            "token_f1": 0.4497835497835498,
-            "avg_total_sec": 0.06939593962901695,
-            "p50_total_sec": 0.06759489700198174,
+            "doc_recall_any": 0.9166666666666666,
+            "doc_recall_all": 0.9166666666666666,
+            "ndcg_at_10": 0.7116946693172039,
+            "exact_match": 0.2916666666666667,
+            "token_f1": 0.42271825396825397,
+            "avg_total_sec": 0.06972749228589237,
+            "p50_total_sec": 0.06786323478445411,
             "p95_total_sec": 0.09087628312408924,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -2479,18 +2479,18 @@
             ]
           },
           "category_3": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6666666666666666,
-            "doc_recall_all": 0.16666666666666666,
-            "ndcg_at_10": 0.3263802185414419,
+            "doc_recall_any": 0.5714285714285714,
+            "doc_recall_all": 0.14285714285714285,
+            "ndcg_at_10": 0.27975447303552164,
             "exact_match": 0.0,
-            "token_f1": 0.01333333333333333,
-            "avg_total_sec": 0.06350846185038488,
-            "p50_total_sec": 0.06497240113094449,
+            "token_f1": 0.011428571428571427,
+            "avg_total_sec": 0.06475892343691417,
+            "p50_total_sec": 0.06696706870570779,
             "p95_total_sec": 0.08174402033910155,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -2528,6 +2528,21 @@
                   "conv-26:D8:34",
                   "conv-26:D10:10",
                   "conv-26:D16:19"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0046",
+                "category": "category_3",
+                "query": "Would Melanie be considered an ally to the transgender community?",
+                "gold": "Yes, she is supportive",
+                "prediction": "Wow, Caroline, you're doing an awesome job of inspiring others with your journey",
+                "expected_doc_ids": [],
+                "retrieved_doc_ids": [
+                  "conv-26:D3:3",
+                  "conv-26:D3:4",
+                  "conv-26:D9:6",
+                  "conv-26:D14:12",
+                  "conv-26:D5:13"
                 ]
               }
             ],
@@ -2591,19 +2606,19 @@
             ]
           },
           "category_1": {
-            "expected_total": 17,
-            "rows_recorded": 17,
-            "rows_successful": 17,
+            "expected_total": 19,
+            "rows_recorded": 19,
+            "rows_successful": 19,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.47058823529411764,
-            "doc_recall_all": 0.17647058823529413,
-            "ndcg_at_10": 0.20512913851044026,
+            "doc_recall_any": 0.47368421052631576,
+            "doc_recall_all": 0.15789473684210525,
+            "ndcg_at_10": 0.20867468727266855,
             "exact_match": 0.0,
-            "token_f1": 0.01238390092879257,
-            "avg_total_sec": 0.05796961431555888,
+            "token_f1": 0.0110803324099723,
+            "avg_total_sec": 0.058799772645886005,
             "p50_total_sec": 0.057944518979638815,
-            "p95_total_sec": 0.08119596913456917,
+            "p95_total_sec": 0.08669486595317721,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
             "categories": {},
@@ -2769,6 +2784,24 @@
                   "conv-26:D10:12",
                   "conv-26:D10:24"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0047",
+                "category": "category_1",
+                "query": "Who supports Caroline when she has a negative experience?",
+                "gold": "Her mentors, family, and friends",
+                "prediction": "Thanks, Melanie",
+                "expected_doc_ids": [
+                  "conv-26:D12:1",
+                  "conv-26:D3:11"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D19:9",
+                  "conv-26:D3:13",
+                  "conv-26:D14:13",
+                  "conv-26:D1:7",
+                  "conv-26:D19:7"
+                ]
               }
             ],
             "sample_successes": [
@@ -2882,6 +2915,20 @@
                   "conv-26:D13:11",
                   "conv-26:D16:7",
                   "conv-26:D11:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0048",
+                "category": "category_1",
+                "query": "What types of pottery have Melanie and her kids made?",
+                "gold": "bowls, cup",
+                "prediction": "I'm a big fan of pottery - the creativity and skill is awesome",
+                "retrieved_doc_ids": [
+                  "conv-26:D8:5",
+                  "conv-26:D5:6",
+                  "conv-26:D14:4",
+                  "conv-26:D5:10",
+                  "conv-26:D8:4"
                 ]
               }
             ]
@@ -5518,34 +5565,34 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 45,
-      "rows_successful": 45,
+      "rows_recorded": 50,
+      "rows_successful": 50,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7111111111111111,
-      "doc_recall_all": 0.5333333333333333,
-      "ndcg_at_10": 0.4754493105770572,
-      "exact_match": 0.15555555555555556,
-      "token_f1": 0.22635032024505708,
-      "avg_total_sec": 0.06429433080678185,
-      "p50_total_sec": 0.06282488536089659,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.52,
+      "ndcg_at_10": 0.460075448660845,
+      "exact_match": 0.14,
+      "token_f1": 0.20871528822055135,
+      "avg_total_sec": 0.064879359183833,
+      "p50_total_sec": 0.06292352499440312,
       "p95_total_sec": 0.09087628312408924,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
       "categories": {
         "category_2": {
-          "expected_total": 22,
-          "rows_recorded": 22,
-          "rows_successful": 22,
+          "expected_total": 24,
+          "rows_recorded": 24,
+          "rows_successful": 24,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9090909090909091,
-          "doc_recall_all": 0.9090909090909091,
-          "ndcg_at_10": 0.7249882868200653,
-          "exact_match": 0.3181818181818182,
-          "token_f1": 0.4497835497835498,
-          "avg_total_sec": 0.06939593962901695,
-          "p50_total_sec": 0.06759489700198174,
+          "doc_recall_any": 0.9166666666666666,
+          "doc_recall_all": 0.9166666666666666,
+          "ndcg_at_10": 0.7116946693172039,
+          "exact_match": 0.2916666666666667,
+          "token_f1": 0.42271825396825397,
+          "avg_total_sec": 0.06972749228589237,
+          "p50_total_sec": 0.06786323478445411,
           "p95_total_sec": 0.09087628312408924,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -5759,18 +5806,18 @@
           ]
         },
         "category_3": {
-          "expected_total": 6,
-          "rows_recorded": 6,
-          "rows_successful": 6,
+          "expected_total": 7,
+          "rows_recorded": 7,
+          "rows_successful": 7,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6666666666666666,
-          "doc_recall_all": 0.16666666666666666,
-          "ndcg_at_10": 0.3263802185414419,
+          "doc_recall_any": 0.5714285714285714,
+          "doc_recall_all": 0.14285714285714285,
+          "ndcg_at_10": 0.27975447303552164,
           "exact_match": 0.0,
-          "token_f1": 0.01333333333333333,
-          "avg_total_sec": 0.06350846185038488,
-          "p50_total_sec": 0.06497240113094449,
+          "token_f1": 0.011428571428571427,
+          "avg_total_sec": 0.06475892343691417,
+          "p50_total_sec": 0.06696706870570779,
           "p95_total_sec": 0.08174402033910155,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -5808,6 +5855,21 @@
                 "conv-26:D8:34",
                 "conv-26:D10:10",
                 "conv-26:D16:19"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0046",
+              "category": "category_3",
+              "query": "Would Melanie be considered an ally to the transgender community?",
+              "gold": "Yes, she is supportive",
+              "prediction": "Wow, Caroline, you're doing an awesome job of inspiring others with your journey",
+              "expected_doc_ids": [],
+              "retrieved_doc_ids": [
+                "conv-26:D3:3",
+                "conv-26:D3:4",
+                "conv-26:D9:6",
+                "conv-26:D14:12",
+                "conv-26:D5:13"
               ]
             }
           ],
@@ -5871,19 +5933,19 @@
           ]
         },
         "category_1": {
-          "expected_total": 17,
-          "rows_recorded": 17,
-          "rows_successful": 17,
+          "expected_total": 19,
+          "rows_recorded": 19,
+          "rows_successful": 19,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.47058823529411764,
-          "doc_recall_all": 0.17647058823529413,
-          "ndcg_at_10": 0.20512913851044026,
+          "doc_recall_any": 0.47368421052631576,
+          "doc_recall_all": 0.15789473684210525,
+          "ndcg_at_10": 0.20867468727266855,
           "exact_match": 0.0,
-          "token_f1": 0.01238390092879257,
-          "avg_total_sec": 0.05796961431555888,
+          "token_f1": 0.0110803324099723,
+          "avg_total_sec": 0.058799772645886005,
           "p50_total_sec": 0.057944518979638815,
-          "p95_total_sec": 0.08119596913456917,
+          "p95_total_sec": 0.08669486595317721,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
           "categories": {},
@@ -6049,6 +6111,24 @@
                 "conv-26:D10:12",
                 "conv-26:D10:24"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0047",
+              "category": "category_1",
+              "query": "Who supports Caroline when she has a negative experience?",
+              "gold": "Her mentors, family, and friends",
+              "prediction": "Thanks, Melanie",
+              "expected_doc_ids": [
+                "conv-26:D12:1",
+                "conv-26:D3:11"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D19:9",
+                "conv-26:D3:13",
+                "conv-26:D14:13",
+                "conv-26:D1:7",
+                "conv-26:D19:7"
+              ]
             }
           ],
           "sample_successes": [
@@ -6162,6 +6242,20 @@
                 "conv-26:D13:11",
                 "conv-26:D16:7",
                 "conv-26:D11:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0048",
+              "category": "category_1",
+              "query": "What types of pottery have Melanie and her kids made?",
+              "gold": "bowls, cup",
+              "prediction": "I'm a big fan of pottery - the creativity and skill is awesome",
+              "retrieved_doc_ids": [
+                "conv-26:D8:5",
+                "conv-26:D5:6",
+                "conv-26:D14:4",
+                "conv-26:D5:10",
+                "conv-26:D8:4"
               ]
             }
           ]
@@ -6553,11 +6647,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.017643774427694048,
-    "doc_recall_all_delta": -0.06465661641541043,
-    "ndcg_at_10_delta": 0.009508139568562834,
-    "token_f1_delta": 0.11506709749467892,
+    "doc_recall_any_delta": 0.006532663316582865,
+    "doc_recall_all_delta": -0.07798994974874374,
+    "ndcg_at_10_delta": -0.005865722347649371,
+    "token_f1_delta": 0.09743206547017319,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.01011105105600297
+    "avg_latency_ratio_nova_over_stock": 0.010203053752280367
   }
 }
