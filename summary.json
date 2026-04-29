@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T18:30:27Z",
+  "generated_at": "2026-04-29T18:30:30Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T18:30:14Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T18:30:28Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 235,
     "current_case_total": 500,
@@ -5785,19 +5785,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 234,
-        "rows_successful": 234,
+        "rows_recorded": 235,
+        "rows_successful": 235,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9957264957264957,
-        "ndcg_at_10": 0.9995393625875021,
-        "exact_match": 0.21367521367521367,
-        "token_f1": 0.26638712208627724,
-        "avg_total_sec": 8.024080238603533,
+        "doc_recall_all": 0.9957446808510638,
+        "ndcg_at_10": 0.9995413227467043,
+        "exact_match": 0.2127659574468085,
+        "token_f1": 0.2652535598646335,
+        "avg_total_sec": 7.996485998194189,
         "p50_total_sec": 7.266798584256321,
         "p95_total_sec": 14.694629408884794,
-        "avg_storage_bytes": 1269252.829059829,
+        "avg_storage_bytes": 1265892.455319149,
         "p95_storage_bytes": 2010181.0,
         "categories": {
           "temporal-reasoning": {
@@ -6423,20 +6423,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.25,
-            "token_f1": 0.16666666666666666,
-            "avg_total_sec": 2.0763098787283525,
-            "p50_total_sec": 2.4417537711560726,
+            "exact_match": 0.2,
+            "token_f1": 0.13333333333333333,
+            "avg_total_sec": 1.9689346514642239,
+            "p50_total_sec": 2.237134377937764,
             "p95_total_sec": 2.646067983005196,
-            "avg_storage_bytes": 534987.0,
+            "avg_storage_bytes": 523902.6,
             "p95_storage_bytes": 606757.0,
             "categories": {},
             "sample_errors": [],
@@ -6480,6 +6480,16 @@
                 "prediction": "consider sharing the desserts with family members so everyone can try a variety of treats",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_480665"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::4c36ccef",
+                "category": "single-session-assistant",
+                "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+                "gold": "Roscioli",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_448704"
                 ]
               }
             ]
@@ -9804,19 +9814,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2220,
-      "rows_successful": 2220,
+      "rows_recorded": 2221,
+      "rows_successful": 2221,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7702702702702703,
-      "doc_recall_all": 0.6761261261261261,
-      "ndcg_at_10": 0.5653922061436558,
-      "exact_match": 0.05315315315315315,
-      "token_f1": 0.10168810312794893,
-      "avg_total_sec": 0.9029574297230086,
+      "doc_recall_any": 0.770373705538046,
+      "doc_recall_all": 0.6762719495722648,
+      "ndcg_at_10": 0.5655878872755137,
+      "exact_match": 0.05312922107158938,
+      "token_f1": 0.10164231829988592,
+      "avg_total_sec": 0.9032440016782922,
       "p50_total_sec": 0.06511554587632418,
       "p95_total_sec": 7.390687526669353,
-      "avg_storage_bytes": 12389149.335135136,
+      "avg_storage_bytes": 12383787.072940117,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -12431,20 +12441,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.25,
-          "token_f1": 0.16666666666666666,
-          "avg_total_sec": 2.0763098787283525,
-          "p50_total_sec": 2.4417537711560726,
+          "exact_match": 0.2,
+          "token_f1": 0.13333333333333333,
+          "avg_total_sec": 1.9689346514642239,
+          "p50_total_sec": 2.237134377937764,
           "p95_total_sec": 2.646067983005196,
-          "avg_storage_bytes": 534987.0,
+          "avg_storage_bytes": 523902.6,
           "p95_storage_bytes": 606757.0,
           "categories": {},
           "sample_errors": [],
@@ -12488,6 +12498,16 @@
               "prediction": "consider sharing the desserts with family members so everyone can try a variety of treats",
               "retrieved_doc_ids": [
                 "answer_ultrachat_480665"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::4c36ccef",
+              "category": "single-session-assistant",
+              "query": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+              "gold": "Roscioli",
+              "prediction": "yes",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_448704"
               ]
             }
           ]
@@ -12879,11 +12899,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.044471080716015465,
-    "doc_recall_all_delta": 0.06694107434764796,
-    "ndcg_at_10_delta": 0.059975484673316704,
-    "token_f1_delta": 0.0034304861406148357,
-    "avg_storage_ratio_nova_over_stock": 0.6310022161837147,
-    "avg_latency_ratio_nova_over_stock": 0.12353688504080071
+    "doc_recall_any_delta": 0.04457451598379114,
+    "doc_recall_all_delta": 0.06708689779378663,
+    "ndcg_at_10_delta": 0.060171165805174565,
+    "token_f1_delta": 0.0033847013125518216,
+    "avg_storage_ratio_nova_over_stock": 0.6307291062842949,
+    "avg_latency_ratio_nova_over_stock": 0.1235760919906861
   }
 }
