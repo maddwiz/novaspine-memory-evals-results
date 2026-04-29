@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:53:51Z",
+  "generated_at": "2026-04-29T03:54:24Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,30 +117,30 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:53:51Z",
+    "updated_at": "2026-04-29T03:54:24Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 555,
+    "current_case_index": 560,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-42::0057"
+    "current_case_id": "locomo::conv-42::0062"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 555,
-        "rows_successful": 555,
+        "rows_recorded": 560,
+        "rows_successful": 560,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6936936936936937,
-        "doc_recall_all": 0.6054054054054054,
-        "ndcg_at_10": 0.4660913477011294,
-        "exact_match": 0.06306306306306306,
-        "token_f1": 0.109247970562776,
-        "avg_total_sec": 6.365049735883771,
-        "p50_total_sec": 6.3501537456177175,
+        "doc_recall_any": 0.6892857142857143,
+        "doc_recall_all": 0.6,
+        "ndcg_at_10": 0.4630247235123076,
+        "exact_match": 0.0625,
+        "token_f1": 0.10842135177798932,
+        "avg_total_sec": 6.365103421289573,
+        "p50_total_sec": 6.350951098836958,
         "p95_total_sec": 6.448870284948498,
-        "avg_storage_bytes": 18801580.39099099,
+        "avg_storage_bytes": 18829226.45892857,
         "p95_storage_bytes": 22890095.0,
         "categories": {
           "category_2": {
@@ -537,20 +537,20 @@
             ]
           },
           "category_3": {
-            "expected_total": 25,
-            "rows_recorded": 25,
-            "rows_successful": 25,
+            "expected_total": 26,
+            "rows_recorded": 26,
+            "rows_successful": 26,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.64,
-            "doc_recall_all": 0.32,
-            "ndcg_at_10": 0.327490221917745,
+            "doc_recall_any": 0.6153846153846154,
+            "doc_recall_all": 0.3076923076923077,
+            "ndcg_at_10": 0.3148944441516779,
             "exact_match": 0.0,
-            "token_f1": 0.023806060606060605,
-            "avg_total_sec": 6.360820546988398,
-            "p50_total_sec": 6.36511798389256,
+            "token_f1": 0.026095571095571094,
+            "avg_total_sec": 6.360693271486805,
+            "p50_total_sec": 6.363587229046971,
             "p95_total_sec": 6.422098994720727,
-            "avg_storage_bytes": 19210660.56,
+            "avg_storage_bytes": 19314017.46153846,
             "p95_storage_bytes": 22890095.0,
             "categories": {},
             "sample_errors": [],
@@ -706,6 +706,23 @@
                   "conv-42:D1:14",
                   "conv-42:D24:5",
                   "conv-42:D22:2"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-42::0060",
+                "category": "category_3",
+                "query": "What Console does Nate own?",
+                "gold": "A Nintendo Switch; since the game \"Xenoblade 2\" is made for this console.",
+                "prediction": "I've been doing great - I just won another regional video game tournament last week!",
+                "expected_doc_ids": [
+                  "conv-42:D27:23"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-42:D14:8",
+                  "conv-42:D27:20",
+                  "conv-42:D9:10",
+                  "conv-42:D28:13",
+                  "conv-42:D17:1"
                 ]
               }
             ],
@@ -881,20 +898,20 @@
             ]
           },
           "category_1": {
-            "expected_total": 93,
-            "rows_recorded": 93,
-            "rows_successful": 93,
+            "expected_total": 97,
+            "rows_recorded": 97,
+            "rows_successful": 97,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6559139784946236,
-            "doc_recall_all": 0.26881720430107525,
-            "ndcg_at_10": 0.33037667789308717,
-            "exact_match": 0.043010752688172046,
-            "token_f1": 0.0344805197624793,
-            "avg_total_sec": 6.368500374813354,
-            "p50_total_sec": 6.34429899090901,
+            "doc_recall_any": 0.6391752577319587,
+            "doc_recall_all": 0.25773195876288657,
+            "ndcg_at_10": 0.3230740024414697,
+            "exact_match": 0.041237113402061855,
+            "token_f1": 0.03305864265887191,
+            "avg_total_sec": 6.368745731756322,
+            "p50_total_sec": 6.344897871371359,
             "p95_total_sec": 6.497369277756661,
-            "avg_storage_bytes": 19384200.65591398,
+            "avg_storage_bytes": 19487860.01030928,
             "p95_storage_bytes": 22890095.0,
             "categories": {},
             "sample_errors": [],
@@ -4888,19 +4905,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 555,
-      "rows_successful": 555,
+      "rows_recorded": 560,
+      "rows_successful": 560,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6936936936936937,
-      "doc_recall_all": 0.6054054054054054,
-      "ndcg_at_10": 0.4660913477011294,
-      "exact_match": 0.06306306306306306,
-      "token_f1": 0.109247970562776,
-      "avg_total_sec": 6.365049735883771,
-      "p50_total_sec": 6.3501537456177175,
+      "doc_recall_any": 0.6892857142857143,
+      "doc_recall_all": 0.6,
+      "ndcg_at_10": 0.4630247235123076,
+      "exact_match": 0.0625,
+      "token_f1": 0.10842135177798932,
+      "avg_total_sec": 6.365103421289573,
+      "p50_total_sec": 6.350951098836958,
       "p95_total_sec": 6.448870284948498,
-      "avg_storage_bytes": 18801580.39099099,
+      "avg_storage_bytes": 18829226.45892857,
       "p95_storage_bytes": 22890095.0,
       "categories": {
         "category_2": {
@@ -5297,20 +5314,20 @@
           ]
         },
         "category_3": {
-          "expected_total": 25,
-          "rows_recorded": 25,
-          "rows_successful": 25,
+          "expected_total": 26,
+          "rows_recorded": 26,
+          "rows_successful": 26,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.64,
-          "doc_recall_all": 0.32,
-          "ndcg_at_10": 0.327490221917745,
+          "doc_recall_any": 0.6153846153846154,
+          "doc_recall_all": 0.3076923076923077,
+          "ndcg_at_10": 0.3148944441516779,
           "exact_match": 0.0,
-          "token_f1": 0.023806060606060605,
-          "avg_total_sec": 6.360820546988398,
-          "p50_total_sec": 6.36511798389256,
+          "token_f1": 0.026095571095571094,
+          "avg_total_sec": 6.360693271486805,
+          "p50_total_sec": 6.363587229046971,
           "p95_total_sec": 6.422098994720727,
-          "avg_storage_bytes": 19210660.56,
+          "avg_storage_bytes": 19314017.46153846,
           "p95_storage_bytes": 22890095.0,
           "categories": {},
           "sample_errors": [],
@@ -5466,6 +5483,23 @@
                 "conv-42:D1:14",
                 "conv-42:D24:5",
                 "conv-42:D22:2"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-42::0060",
+              "category": "category_3",
+              "query": "What Console does Nate own?",
+              "gold": "A Nintendo Switch; since the game \"Xenoblade 2\" is made for this console.",
+              "prediction": "I've been doing great - I just won another regional video game tournament last week!",
+              "expected_doc_ids": [
+                "conv-42:D27:23"
+              ],
+              "retrieved_doc_ids": [
+                "conv-42:D14:8",
+                "conv-42:D27:20",
+                "conv-42:D9:10",
+                "conv-42:D28:13",
+                "conv-42:D17:1"
               ]
             }
           ],
@@ -5641,20 +5675,20 @@
           ]
         },
         "category_1": {
-          "expected_total": 93,
-          "rows_recorded": 93,
-          "rows_successful": 93,
+          "expected_total": 97,
+          "rows_recorded": 97,
+          "rows_successful": 97,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6559139784946236,
-          "doc_recall_all": 0.26881720430107525,
-          "ndcg_at_10": 0.33037667789308717,
-          "exact_match": 0.043010752688172046,
-          "token_f1": 0.0344805197624793,
-          "avg_total_sec": 6.368500374813354,
-          "p50_total_sec": 6.34429899090901,
+          "doc_recall_any": 0.6391752577319587,
+          "doc_recall_all": 0.25773195876288657,
+          "ndcg_at_10": 0.3230740024414697,
+          "exact_match": 0.041237113402061855,
+          "token_f1": 0.03305864265887191,
+          "avg_total_sec": 6.368745731756322,
+          "p50_total_sec": 6.344897871371359,
           "p95_total_sec": 6.497369277756661,
-          "avg_storage_bytes": 19384200.65591398,
+          "avg_storage_bytes": 19487860.01030928,
           "p95_storage_bytes": 22890095.0,
           "categories": {},
           "sample_errors": [],
@@ -9513,11 +9547,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.011601138361701735,
-    "doc_recall_all_delta": -0.0037957474577192674,
-    "ndcg_at_10_delta": -0.05776676685899823,
-    "token_f1_delta": -0.012414868945195792,
-    "avg_storage_ratio_nova_over_stock": 0.6473166346323994,
-    "avg_latency_ratio_nova_over_stock": 0.0102001593230972
+    "doc_recall_any_delta": -0.007193158953722301,
+    "doc_recall_all_delta": 0.0016096579476861939,
+    "ndcg_at_10_delta": -0.05470014267017642,
+    "token_f1_delta": -0.011588250160409111,
+    "avg_storage_ratio_nova_over_stock": 0.6463662100519098,
+    "avg_latency_ratio_nova_over_stock": 0.010200073291550456
   }
 }
