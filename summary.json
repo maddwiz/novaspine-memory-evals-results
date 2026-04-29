@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:56:52Z",
+  "generated_at": "2026-04-29T08:58:14Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:56:48Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T08:58:01Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 340,
+    "current_case_index": 345,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::311778f1"
+    "current_case_id": "longmemeval_oracle::faba32e5"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,19 +4892,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 340,
-        "rows_successful": 340,
+        "rows_recorded": 345,
+        "rows_successful": 345,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9911764705882353,
-        "doc_recall_all": 0.8705882352941177,
-        "ndcg_at_10": 0.953005955368279,
-        "exact_match": 0.15294117647058825,
-        "token_f1": 0.19508204511599567,
-        "avg_total_sec": 14.542536262285841,
-        "p50_total_sec": 14.347440910991281,
+        "doc_recall_any": 0.9884057971014493,
+        "doc_recall_all": 0.8695652173913043,
+        "ndcg_at_10": 0.950788477754246,
+        "exact_match": 0.15072463768115943,
+        "token_f1": 0.19365672406775697,
+        "avg_total_sec": 14.52044770165576,
+        "p50_total_sec": 14.269348608795553,
         "p95_total_sec": 18.517239619977772,
-        "avg_storage_bytes": 6182222.35,
+        "avg_storage_bytes": 6170943.269565217,
         "p95_storage_bytes": 8329599.0,
         "categories": {
           "temporal-reasoning": {
@@ -5687,20 +5687,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 54,
-            "rows_recorded": 54,
-            "rows_successful": 54,
+            "expected_total": 59,
+            "rows_recorded": 59,
+            "rows_successful": 59,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9814814814814815,
-            "doc_recall_all": 0.9814814814814815,
-            "ndcg_at_10": 0.9814814814814815,
-            "exact_match": 0.16666666666666666,
-            "token_f1": 0.18748454753313434,
-            "avg_total_sec": 12.969022786520698,
-            "p50_total_sec": 12.90791762759909,
+            "doc_recall_any": 0.9661016949152542,
+            "doc_recall_all": 0.9661016949152542,
+            "ndcg_at_10": 0.9661016949152542,
+            "exact_match": 0.15254237288135594,
+            "token_f1": 0.17979389882587926,
+            "avg_total_sec": 12.973209463833374,
+            "p50_total_sec": 12.920690276660025,
             "p95_total_sec": 13.390964324120432,
-            "avg_storage_bytes": 5347913.666666667,
+            "avg_storage_bytes": 5352663.847457627,
             "p95_storage_bytes": 5628179.0,
             "categories": {},
             "sample_errors": [],
@@ -5713,6 +5713,17 @@
                 "prediction": "",
                 "expected_doc_ids": [
                   "answer_235eb6fb"
+                ],
+                "retrieved_doc_ids": []
+              },
+              {
+                "case_id": "longmemeval_oracle::1faac195",
+                "category": "single-session-user",
+                "query": "Where does my sister Emily live?",
+                "gold": "Denver",
+                "prediction": "",
+                "expected_doc_ids": [
+                  "answer_d01949bf"
                 ],
                 "retrieved_doc_ids": []
               }
@@ -5876,6 +5887,17 @@
               "answer_235eb6fb"
             ],
             "retrieved_doc_ids": []
+          },
+          {
+            "case_id": "longmemeval_oracle::1faac195",
+            "category": "single-session-user",
+            "query": "Where does my sister Emily live?",
+            "gold": "Denver",
+            "prediction": "",
+            "expected_doc_ids": [
+              "answer_d01949bf"
+            ],
+            "retrieved_doc_ids": []
           }
         ],
         "sample_successes": [
@@ -6015,19 +6037,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 340,
-        "rows_successful": 340,
+        "rows_recorded": 344,
+        "rows_successful": 344,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9970588235294118,
-        "ndcg_at_10": 0.9996829730749278,
-        "exact_match": 0.17352941176470588,
-        "token_f1": 0.227785080863542,
-        "avg_total_sec": 6.399137597339338,
-        "p50_total_sec": 6.3187979171052575,
+        "doc_recall_all": 0.997093023255814,
+        "ndcg_at_10": 0.9996866594345217,
+        "exact_match": 0.17151162790697674,
+        "token_f1": 0.22610563604548592,
+        "avg_total_sec": 6.370581681633011,
+        "p50_total_sec": 6.275369679089636,
         "p95_total_sec": 13.391300882212818,
-        "avg_storage_bytes": 1069355.905882353,
+        "avg_storage_bytes": 1065873.8255813953,
         "p95_storage_bytes": 1932069.0,
         "categories": {
           "temporal-reasoning": {
@@ -6795,20 +6817,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 54,
-            "rows_recorded": 54,
-            "rows_successful": 54,
+            "expected_total": 58,
+            "rows_recorded": 58,
+            "rows_successful": 58,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.14814814814814814,
-            "token_f1": 0.1921252160286874,
-            "avg_total_sec": 3.679473314218706,
-            "p50_total_sec": 3.7674422007985413,
+            "exact_match": 0.13793103448275862,
+            "token_f1": 0.1846236719240001,
+            "avg_total_sec": 3.697670247486054,
+            "p50_total_sec": 3.770129048731178,
             "p95_total_sec": 4.40636015497148,
-            "avg_storage_bytes": 739896.7777777778,
+            "avg_storage_bytes": 741965.7586206896,
             "p95_storage_bytes": 832433.0,
             "categories": {},
             "sample_errors": [],
@@ -7171,19 +7193,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2326,
-      "rows_successful": 2326,
+      "rows_recorded": 2331,
+      "rows_successful": 2331,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7377472055030094,
-      "doc_recall_all": 0.6263972484952709,
-      "ndcg_at_10": 0.5273132151270951,
-      "exact_match": 0.052450558899398106,
-      "token_f1": 0.09996125594579651,
-      "avg_total_sec": 7.564030103329193,
-      "p50_total_sec": 6.365950908977538,
+      "doc_recall_any": 0.7378807378807379,
+      "doc_recall_all": 0.6267696267696268,
+      "ndcg_at_10": 0.5278981288655612,
+      "exact_match": 0.05233805233805234,
+      "token_f1": 0.09995433538990146,
+      "avg_total_sec": 7.57572979332379,
+      "p50_total_sec": 6.366111378185451,
       "p95_total_sec": 14.811834367923439,
-      "avg_storage_bytes": 18975771.326741185,
+      "avg_storage_bytes": 18946659.774774775,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -9945,20 +9967,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 54,
-          "rows_recorded": 54,
-          "rows_successful": 54,
+          "expected_total": 59,
+          "rows_recorded": 59,
+          "rows_successful": 59,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9814814814814815,
-          "doc_recall_all": 0.9814814814814815,
-          "ndcg_at_10": 0.9814814814814815,
-          "exact_match": 0.16666666666666666,
-          "token_f1": 0.18748454753313434,
-          "avg_total_sec": 12.969022786520698,
-          "p50_total_sec": 12.90791762759909,
+          "doc_recall_any": 0.9661016949152542,
+          "doc_recall_all": 0.9661016949152542,
+          "ndcg_at_10": 0.9661016949152542,
+          "exact_match": 0.15254237288135594,
+          "token_f1": 0.17979389882587926,
+          "avg_total_sec": 12.973209463833374,
+          "p50_total_sec": 12.920690276660025,
           "p95_total_sec": 13.390964324120432,
-          "avg_storage_bytes": 5347913.666666667,
+          "avg_storage_bytes": 5352663.847457627,
           "p95_storage_bytes": 5628179.0,
           "categories": {},
           "sample_errors": [],
@@ -9971,6 +9993,17 @@
               "prediction": "",
               "expected_doc_ids": [
                 "answer_235eb6fb"
+              ],
+              "retrieved_doc_ids": []
+            },
+            {
+              "case_id": "longmemeval_oracle::1faac195",
+              "category": "single-session-user",
+              "query": "Where does my sister Emily live?",
+              "gold": "Denver",
+              "prediction": "",
+              "expected_doc_ids": [
+                "answer_d01949bf"
               ],
               "retrieved_doc_ids": []
             }
@@ -10480,19 +10513,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2326,
-      "rows_successful": 2326,
+      "rows_recorded": 2330,
+      "rows_successful": 2330,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7265692175408427,
-      "doc_recall_all": 0.6315563198624248,
-      "ndcg_at_10": 0.47712936847525134,
-      "exact_match": 0.05030094582975064,
-      "token_f1": 0.09344867150364707,
-      "avg_total_sec": 0.9886222821305989,
-      "p50_total_sec": 0.06544610112905502,
+      "doc_recall_any": 0.7270386266094421,
+      "doc_recall_all": 0.6321888412017167,
+      "ndcg_at_10": 0.47802700046070157,
+      "exact_match": 0.05021459227467811,
+      "token_f1": 0.09343133958091242,
+      "avg_total_sec": 0.9936947397519974,
+      "p50_total_sec": 0.0654770010150969,
       "p95_total_sec": 7.235303686931729,
-      "avg_storage_bytes": 11789842.766122097,
+      "avg_storage_bytes": 11770924.404291846,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -13248,20 +13281,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 54,
-          "rows_recorded": 54,
-          "rows_successful": 54,
+          "expected_total": 58,
+          "rows_recorded": 58,
+          "rows_successful": 58,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.14814814814814814,
-          "token_f1": 0.1921252160286874,
-          "avg_total_sec": 3.679473314218706,
-          "p50_total_sec": 3.7674422007985413,
+          "exact_match": 0.13793103448275862,
+          "token_f1": 0.1846236719240001,
+          "avg_total_sec": 3.697670247486054,
+          "p50_total_sec": 3.770129048731178,
           "p95_total_sec": 4.40636015497148,
-          "avg_storage_bytes": 739896.7777777778,
+          "avg_storage_bytes": 741965.7586206896,
           "p95_storage_bytes": 832433.0,
           "categories": {},
           "sample_errors": [],
@@ -13772,11 +13805,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.011177987962166736,
-    "doc_recall_all_delta": 0.005159071367153878,
-    "ndcg_at_10_delta": -0.05018384665184372,
-    "token_f1_delta": -0.006512584442149444,
-    "avg_storage_ratio_nova_over_stock": 0.6213103311119439,
-    "avg_latency_ratio_nova_over_stock": 0.13070046901260637
+    "doc_recall_any_delta": -0.010842111271295862,
+    "doc_recall_all_delta": 0.005419214432089925,
+    "ndcg_at_10_delta": -0.04987112840485963,
+    "token_f1_delta": -0.006522995808989046,
+    "avg_storage_ratio_nova_over_stock": 0.621266468296614,
+    "avg_latency_ratio_nova_over_stock": 0.13116818667789654
   }
 }
