@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:55:45Z",
+  "generated_at": "2026-04-29T02:56:18Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,28 +117,28 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:55:45Z",
+    "updated_at": "2026-04-29T02:56:18Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 100,
+    "current_case_index": 105,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0099"
+    "current_case_id": "locomo::conv-26::0104"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 100,
-        "rows_successful": 100,
+        "rows_recorded": 105,
+        "rows_successful": 105,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7,
-        "doc_recall_all": 0.51,
-        "ndcg_at_10": 0.4178233677179981,
-        "exact_match": 0.12,
-        "token_f1": 0.1873747392487263,
-        "avg_total_sec": 6.372841348806396,
-        "p50_total_sec": 6.355942205991596,
+        "doc_recall_any": 0.7047619047619048,
+        "doc_recall_all": 0.5238095238095238,
+        "ndcg_at_10": 0.4266678031676744,
+        "exact_match": 0.12380952380952381,
+        "token_f1": 0.19189665910583933,
+        "avg_total_sec": 6.370998881562125,
+        "p50_total_sec": 6.354877830948681,
         "p95_total_sec": 6.459623791277409,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
@@ -1076,18 +1076,18 @@
             ]
           },
           "category_4": {
-            "expected_total": 18,
-            "rows_recorded": 18,
-            "rows_successful": 18,
+            "expected_total": 23,
+            "rows_recorded": 23,
+            "rows_successful": 23,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6111111111111112,
-            "doc_recall_all": 0.6111111111111112,
-            "ndcg_at_10": 0.4511023640074423,
-            "exact_match": 0.0,
-            "token_f1": 0.0540359477124183,
-            "avg_total_sec": 6.345431892899796,
-            "p50_total_sec": 6.34521124092862,
+            "doc_recall_any": 0.6521739130434783,
+            "doc_recall_all": 0.6521739130434783,
+            "ndcg_at_10": 0.4842445701278244,
+            "exact_match": 0.043478260869565216,
+            "token_f1": 0.10366618869843601,
+            "avg_total_sec": 6.342979206764341,
+            "p50_total_sec": 6.344608685001731,
             "p95_total_sec": 6.405486697331071,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
@@ -1211,6 +1211,23 @@
                   "conv-26:D12:7",
                   "conv-26:D16:5",
                   "conv-26:D17:21"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0100",
+                "category": "category_4",
+                "query": "What kind of place does Caroline want to create for people?",
+                "gold": "a safe and inviting place for people to grow",
+                "prediction": "Finding a community where I'm accepted, loved and supported has really meant a lot to me",
+                "expected_doc_ids": [
+                  "conv-26:D4:15"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D14:24",
+                  "conv-26:D12:6",
+                  "conv-26:D14:13",
+                  "conv-26:D19:4",
+                  "conv-26:D13:15"
                 ]
               }
             ],
@@ -1364,6 +1381,20 @@
                   "conv-26:D4:15",
                   "conv-26:D4:11",
                   "conv-26:D6:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0101",
+                "category": "category_4",
+                "query": "Did Melanie make the black and white bowl in the photo?",
+                "gold": "Yes",
+                "prediction": "Thanks, Caroline!",
+                "retrieved_doc_ids": [
+                  "conv-26:D5:8",
+                  "conv-26:D5:7",
+                  "conv-26:D4:5",
+                  "conv-26:D12:5",
+                  "conv-26:D16:9"
                 ]
               }
             ]
@@ -1906,17 +1937,17 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 100,
-      "rows_successful": 100,
+      "rows_recorded": 105,
+      "rows_successful": 105,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7,
-      "doc_recall_all": 0.51,
-      "ndcg_at_10": 0.4178233677179981,
-      "exact_match": 0.12,
-      "token_f1": 0.1873747392487263,
-      "avg_total_sec": 6.372841348806396,
-      "p50_total_sec": 6.355942205991596,
+      "doc_recall_any": 0.7047619047619048,
+      "doc_recall_all": 0.5238095238095238,
+      "ndcg_at_10": 0.4266678031676744,
+      "exact_match": 0.12380952380952381,
+      "token_f1": 0.19189665910583933,
+      "avg_total_sec": 6.370998881562125,
+      "p50_total_sec": 6.354877830948681,
       "p95_total_sec": 6.459623791277409,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
@@ -2854,18 +2885,18 @@
           ]
         },
         "category_4": {
-          "expected_total": 18,
-          "rows_recorded": 18,
-          "rows_successful": 18,
+          "expected_total": 23,
+          "rows_recorded": 23,
+          "rows_successful": 23,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6111111111111112,
-          "doc_recall_all": 0.6111111111111112,
-          "ndcg_at_10": 0.4511023640074423,
-          "exact_match": 0.0,
-          "token_f1": 0.0540359477124183,
-          "avg_total_sec": 6.345431892899796,
-          "p50_total_sec": 6.34521124092862,
+          "doc_recall_any": 0.6521739130434783,
+          "doc_recall_all": 0.6521739130434783,
+          "ndcg_at_10": 0.4842445701278244,
+          "exact_match": 0.043478260869565216,
+          "token_f1": 0.10366618869843601,
+          "avg_total_sec": 6.342979206764341,
+          "p50_total_sec": 6.344608685001731,
           "p95_total_sec": 6.405486697331071,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
@@ -2989,6 +3020,23 @@
                 "conv-26:D12:7",
                 "conv-26:D16:5",
                 "conv-26:D17:21"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0100",
+              "category": "category_4",
+              "query": "What kind of place does Caroline want to create for people?",
+              "gold": "a safe and inviting place for people to grow",
+              "prediction": "Finding a community where I'm accepted, loved and supported has really meant a lot to me",
+              "expected_doc_ids": [
+                "conv-26:D4:15"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D14:24",
+                "conv-26:D12:6",
+                "conv-26:D14:13",
+                "conv-26:D19:4",
+                "conv-26:D13:15"
               ]
             }
           ],
@@ -3142,6 +3190,20 @@
                 "conv-26:D4:15",
                 "conv-26:D4:11",
                 "conv-26:D6:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0101",
+              "category": "category_4",
+              "query": "Did Melanie make the black and white bowl in the photo?",
+              "gold": "Yes",
+              "prediction": "Thanks, Caroline!",
+              "retrieved_doc_ids": [
+                "conv-26:D5:8",
+                "conv-26:D5:7",
+                "conv-26:D4:5",
+                "conv-26:D12:5",
+                "conv-26:D16:9"
               ]
             }
           ]
@@ -3549,10 +3611,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.7,
-    "doc_recall_all_delta": -0.51,
-    "ndcg_at_10_delta": -0.4178233677179981,
-    "token_f1_delta": -0.1873747392487263,
+    "doc_recall_any_delta": -0.7047619047619048,
+    "doc_recall_all_delta": -0.5238095238095238,
+    "ndcg_at_10_delta": -0.4266678031676744,
+    "token_f1_delta": -0.19189665910583933,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
