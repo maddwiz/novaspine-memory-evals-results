@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T18:31:42Z",
+  "generated_at": "2026-04-29T18:31:47Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T18:31:29Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T18:31:43Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 240,
     "current_case_total": 500,
@@ -5835,19 +5835,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 239,
-        "rows_successful": 239,
+        "rows_recorded": 240,
+        "rows_successful": 240,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.99581589958159,
-        "ndcg_at_10": 0.999548999353454,
-        "exact_match": 0.20920502092050208,
-        "token_f1": 0.2617638941220628,
-        "avg_total_sec": 7.886067559297691,
+        "doc_recall_all": 0.9958333333333333,
+        "ndcg_at_10": 0.9995508785228145,
+        "exact_match": 0.20833333333333334,
+        "token_f1": 0.2606732112298875,
+        "avg_total_sec": 7.868254060230296,
         "p50_total_sec": 7.19846417568624,
         "p95_total_sec": 14.694629408884794,
-        "avg_storage_bytes": 1252063.1757322175,
+        "avg_storage_bytes": 1249751.0666666667,
         "p95_storage_bytes": 2010181.0,
         "categories": {
           "temporal-reasoning": {
@@ -6473,21 +6473,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1111111111111111,
-            "token_f1": 0.09929453262786596,
-            "avg_total_sec": 1.7156233726483252,
+            "exact_match": 0.1,
+            "token_f1": 0.08936507936507936,
+            "avg_total_sec": 1.9051438136957586,
             "p50_total_sec": 1.5394337424077094,
-            "p95_total_sec": 2.828846064861864,
-            "avg_storage_bytes": 486431.6666666667,
-            "p95_storage_bytes": 639597.0,
+            "p95_total_sec": 3.6108277831226587,
+            "avg_storage_bytes": 507504.2,
+            "p95_storage_bytes": 697157.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -6580,6 +6580,16 @@
                 "prediction": "This phrase is straightforward, describes behaviors that cause problems or difficulties in an individual's life, This term implies a strong preoccupation with sexual thoughts or behaviors that may interfere with other areas of life, This te",
                 "retrieved_doc_ids": [
                   "answer_sharegpt_cGdjmYo_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "you have any suggestions on how Netflix could improve its service or offerings to make it even better for its subscribers",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0"
                 ]
               }
             ]
@@ -9954,19 +9964,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2225,
-      "rows_successful": 2225,
+      "rows_recorded": 2226,
+      "rows_successful": 2226,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7707865168539326,
-      "doc_recall_all": 0.6768539325842696,
-      "ndcg_at_10": 0.5663688528714229,
-      "exact_match": 0.05303370786516854,
-      "token_f1": 0.10156160587462056,
-      "avg_total_sec": 0.9041352201456183,
+      "doc_recall_any": 0.77088948787062,
+      "doc_recall_all": 0.6769991015274034,
+      "ndcg_at_10": 0.5665636557227834,
+      "exact_match": 0.053009883198562445,
+      "token_f1": 0.10151598071474875,
+      "avg_total_sec": 0.9053511646932271,
       "p50_total_sec": 0.06512547796592116,
       "p95_total_sec": 7.390687526669353,
-      "avg_storage_bytes": 12362314.364494381,
+      "avg_storage_bytes": 12357073.952380951,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -12581,21 +12591,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 9,
-          "rows_recorded": 9,
-          "rows_successful": 9,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.1111111111111111,
-          "token_f1": 0.09929453262786596,
-          "avg_total_sec": 1.7156233726483252,
+          "exact_match": 0.1,
+          "token_f1": 0.08936507936507936,
+          "avg_total_sec": 1.9051438136957586,
           "p50_total_sec": 1.5394337424077094,
-          "p95_total_sec": 2.828846064861864,
-          "avg_storage_bytes": 486431.6666666667,
-          "p95_storage_bytes": 639597.0,
+          "p95_total_sec": 3.6108277831226587,
+          "avg_storage_bytes": 507504.2,
+          "p95_storage_bytes": 697157.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -12688,6 +12698,16 @@
               "prediction": "This phrase is straightforward, describes behaviors that cause problems or difficulties in an individual's life, This term implies a strong preoccupation with sexual thoughts or behaviors that may interfere with other areas of life, This te",
               "retrieved_doc_ids": [
                 "answer_sharegpt_cGdjmYo_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::f523d9fe",
+              "category": "single-session-assistant",
+              "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+              "gold": "Doc Martin",
+              "prediction": "you have any suggestions on how Netflix could improve its service or offerings to make it even better for its subscribers",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_m2xJfjo_0"
               ]
             }
           ]
@@ -13079,11 +13099,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04437142251431003,
-    "doc_recall_all_delta": 0.06679103950250864,
-    "ndcg_at_10_delta": 0.059841207594862555,
-    "token_f1_delta": 0.0034257311289145886,
-    "avg_storage_ratio_nova_over_stock": 0.6307116576946493,
-    "avg_latency_ratio_nova_over_stock": 0.1234867342884277
+    "doc_recall_any_delta": 0.04447439353099736,
+    "doc_recall_all_delta": 0.06693620844564241,
+    "ndcg_at_10_delta": 0.06003601044622309,
+    "token_f1_delta": 0.003380105969042785,
+    "avg_storage_ratio_nova_over_stock": 0.630444297642671,
+    "avg_latency_ratio_nova_over_stock": 0.12365280792201079
   }
 }
