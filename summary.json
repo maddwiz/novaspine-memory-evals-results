@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T16:59:01Z",
+  "generated_at": "2026-04-29T17:00:42Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T16:58:53Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T17:00:27Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 5,
+    "current_case_index": 10,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::0bb5a684"
+    "current_case_id": "longmemeval_oracle::bbf86515"
   },
   "benchmarks": {
     "locomo": {
@@ -4897,36 +4897,36 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 10,
+        "rows_successful": 10,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 1.0,
-        "ndcg_at_10": 1.0,
-        "exact_match": 1.0,
-        "token_f1": 0.9142857142857143,
-        "avg_total_sec": 15.12832130091265,
-        "p50_total_sec": 15.064450729638338,
+        "doc_recall_all": 0.9,
+        "ndcg_at_10": 0.9613147192765459,
+        "exact_match": 0.7,
+        "token_f1": 0.6571428571428571,
+        "avg_total_sec": 14.973375974735244,
+        "p50_total_sec": 14.961265992373228,
         "p95_total_sec": 16.220668675843626,
-        "avg_storage_bytes": 6664932.0,
+        "avg_storage_bytes": 6492494.1,
         "p95_storage_bytes": 7286263.0,
         "categories": {
           "temporal-reasoning": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
-            "exact_match": 1.0,
-            "token_f1": 0.9142857142857143,
-            "avg_total_sec": 15.12832130091265,
-            "p50_total_sec": 15.064450729638338,
+            "doc_recall_all": 0.9,
+            "ndcg_at_10": 0.9613147192765459,
+            "exact_match": 0.7,
+            "token_f1": 0.6571428571428571,
+            "avg_total_sec": 14.973375974735244,
+            "p50_total_sec": 14.961265992373228,
             "p95_total_sec": 16.220668675843626,
-            "avg_storage_bytes": 6664932.0,
+            "avg_storage_bytes": 6492494.1,
             "p95_storage_bytes": 7286263.0,
             "categories": {},
             "sample_errors": [],
@@ -4987,6 +4987,60 @@
                   "answer_e936197f_1",
                   "answer_e936197f_2"
                 ]
+              },
+              {
+                "case_id": "longmemeval_oracle::08f4fc43",
+                "category": "temporal-reasoning",
+                "query": "How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral?",
+                "gold": "30 days. 31 days (including the last day) is also acceptable.",
+                "prediction": "30 days",
+                "retrieved_doc_ids": [
+                  "answer_6ea1541e_1",
+                  "answer_6ea1541e_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::2c63a862",
+                "category": "temporal-reasoning",
+                "query": "How many days did it take for me to find a house I loved after starting to work with Rachel?",
+                "gold": "14 days. 15 days (including the last day) is also acceptable.",
+                "prediction": "s great that you",
+                "retrieved_doc_ids": [
+                  "answer_d39b7977_1",
+                  "answer_d39b7977_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_385a5000",
+                "category": "temporal-reasoning",
+                "query": "Which seeds were started first, the tomatoes or the marigolds?",
+                "gold": "Tomatoes",
+                "prediction": "By the way, I just started some marigold seeds that arrived on March 3rd, and they're already germinating - excited to see them grow!",
+                "retrieved_doc_ids": [
+                  "answer_7a4a93f1_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::2a1811e2",
+                "category": "temporal-reasoning",
+                "query": "How many days had passed between the Hindu festival of Holi and the Sunday mass at St. Mary's Church?",
+                "gold": "21 days. 22 days (including the last day) is also acceptable.",
+                "prediction": "21 days",
+                "retrieved_doc_ids": [
+                  "answer_1cc3cd0c_1",
+                  "answer_1cc3cd0c_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::bbf86515",
+                "category": "temporal-reasoning",
+                "query": "How many days before the 'Rack Fest' did I participate in the 'Turbocharged Tuesdays' event?",
+                "gold": "4 days.",
+                "prediction": "Rack Fest did",
+                "retrieved_doc_ids": [
+                  "answer_b3763b6b_2",
+                  "answer_b3763b6b_1"
+                ]
               }
             ]
           }
@@ -5049,41 +5103,95 @@
               "answer_e936197f_1",
               "answer_e936197f_2"
             ]
+          },
+          {
+            "case_id": "longmemeval_oracle::08f4fc43",
+            "category": "temporal-reasoning",
+            "query": "How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral?",
+            "gold": "30 days. 31 days (including the last day) is also acceptable.",
+            "prediction": "30 days",
+            "retrieved_doc_ids": [
+              "answer_6ea1541e_1",
+              "answer_6ea1541e_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::2c63a862",
+            "category": "temporal-reasoning",
+            "query": "How many days did it take for me to find a house I loved after starting to work with Rachel?",
+            "gold": "14 days. 15 days (including the last day) is also acceptable.",
+            "prediction": "s great that you",
+            "retrieved_doc_ids": [
+              "answer_d39b7977_1",
+              "answer_d39b7977_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_385a5000",
+            "category": "temporal-reasoning",
+            "query": "Which seeds were started first, the tomatoes or the marigolds?",
+            "gold": "Tomatoes",
+            "prediction": "By the way, I just started some marigold seeds that arrived on March 3rd, and they're already germinating - excited to see them grow!",
+            "retrieved_doc_ids": [
+              "answer_7a4a93f1_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::2a1811e2",
+            "category": "temporal-reasoning",
+            "query": "How many days had passed between the Hindu festival of Holi and the Sunday mass at St. Mary's Church?",
+            "gold": "21 days. 22 days (including the last day) is also acceptable.",
+            "prediction": "21 days",
+            "retrieved_doc_ids": [
+              "answer_1cc3cd0c_1",
+              "answer_1cc3cd0c_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::bbf86515",
+            "category": "temporal-reasoning",
+            "query": "How many days before the 'Rack Fest' did I participate in the 'Turbocharged Tuesdays' event?",
+            "gold": "4 days.",
+            "prediction": "Rack Fest did",
+            "retrieved_doc_ids": [
+              "answer_b3763b6b_2",
+              "answer_b3763b6b_1"
+            ]
           }
         ]
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 9,
+        "rows_successful": 9,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 1.0,
-        "token_f1": 0.9142857142857143,
-        "avg_total_sec": 7.949260551296175,
-        "p50_total_sec": 7.734029197599739,
+        "token_f1": 0.9523809523809523,
+        "avg_total_sec": 7.259764180415207,
+        "p50_total_sec": 6.961248277686536,
         "p95_total_sec": 9.858838545158505,
-        "avg_storage_bytes": 1284604.2,
+        "avg_storage_bytes": 1188522.7777777778,
         "p95_storage_bytes": 1554589.0,
         "categories": {
           "temporal-reasoning": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 1.0,
-            "token_f1": 0.9142857142857143,
-            "avg_total_sec": 7.949260551296175,
-            "p50_total_sec": 7.734029197599739,
+            "token_f1": 0.9523809523809523,
+            "avg_total_sec": 7.259764180415207,
+            "p50_total_sec": 6.961248277686536,
             "p95_total_sec": 9.858838545158505,
-            "avg_storage_bytes": 1284604.2,
+            "avg_storage_bytes": 1188522.7777777778,
             "p95_storage_bytes": 1554589.0,
             "categories": {},
             "sample_errors": [],
@@ -5144,6 +5252,50 @@
                   "answer_e936197f_1",
                   "answer_e936197f_2"
                 ]
+              },
+              {
+                "case_id": "longmemeval_oracle::08f4fc43",
+                "category": "temporal-reasoning",
+                "query": "How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral?",
+                "gold": "30 days. 31 days (including the last day) is also acceptable.",
+                "prediction": "30 days",
+                "retrieved_doc_ids": [
+                  "answer_6ea1541e_1",
+                  "answer_6ea1541e_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::2c63a862",
+                "category": "temporal-reasoning",
+                "query": "How many days did it take for me to find a house I loved after starting to work with Rachel?",
+                "gold": "14 days. 15 days (including the last day) is also acceptable.",
+                "prediction": "14 days",
+                "retrieved_doc_ids": [
+                  "answer_d39b7977_1",
+                  "answer_d39b7977_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_385a5000",
+                "category": "temporal-reasoning",
+                "query": "Which seeds were started first, the tomatoes or the marigolds?",
+                "gold": "Tomatoes",
+                "prediction": "tomatoes",
+                "retrieved_doc_ids": [
+                  "answer_7a4a93f1_2",
+                  "answer_7a4a93f1_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::2a1811e2",
+                "category": "temporal-reasoning",
+                "query": "How many days had passed between the Hindu festival of Holi and the Sunday mass at St. Mary's Church?",
+                "gold": "21 days. 22 days (including the last day) is also acceptable.",
+                "prediction": "21 days",
+                "retrieved_doc_ids": [
+                  "answer_1cc3cd0c_1",
+                  "answer_1cc3cd0c_2"
+                ]
               }
             ]
           }
@@ -5205,6 +5357,50 @@
             "retrieved_doc_ids": [
               "answer_e936197f_1",
               "answer_e936197f_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::08f4fc43",
+            "category": "temporal-reasoning",
+            "query": "How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral?",
+            "gold": "30 days. 31 days (including the last day) is also acceptable.",
+            "prediction": "30 days",
+            "retrieved_doc_ids": [
+              "answer_6ea1541e_1",
+              "answer_6ea1541e_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::2c63a862",
+            "category": "temporal-reasoning",
+            "query": "How many days did it take for me to find a house I loved after starting to work with Rachel?",
+            "gold": "14 days. 15 days (including the last day) is also acceptable.",
+            "prediction": "14 days",
+            "retrieved_doc_ids": [
+              "answer_d39b7977_1",
+              "answer_d39b7977_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_385a5000",
+            "category": "temporal-reasoning",
+            "query": "Which seeds were started first, the tomatoes or the marigolds?",
+            "gold": "Tomatoes",
+            "prediction": "tomatoes",
+            "retrieved_doc_ids": [
+              "answer_7a4a93f1_2",
+              "answer_7a4a93f1_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::2a1811e2",
+            "category": "temporal-reasoning",
+            "query": "How many days had passed between the Hindu festival of Holi and the Sunday mass at St. Mary's Church?",
+            "gold": "21 days. 22 days (including the last day) is also acceptable.",
+            "prediction": "21 days",
+            "retrieved_doc_ids": [
+              "answer_1cc3cd0c_1",
+              "answer_1cc3cd0c_2"
             ]
           }
         ]
@@ -5302,19 +5498,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 1991,
-      "rows_successful": 1991,
+      "rows_recorded": 1996,
+      "rows_successful": 1996,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.695128076343546,
-      "doc_recall_all": 0.585635359116022,
-      "ndcg_at_10": 0.45580538099468015,
-      "exact_match": 0.03766951280763436,
-      "token_f1": 0.08576263915716359,
-      "avg_total_sec": 6.3877789345083436,
-      "p50_total_sec": 6.352815552148968,
-      "p95_total_sec": 6.447400962002575,
-      "avg_storage_bytes": 21130469.2963335,
+      "doc_recall_any": 0.6958917835671342,
+      "doc_recall_all": 0.5861723446893787,
+      "ndcg_at_10": 0.4569747799364598,
+      "exact_match": 0.03857715430861723,
+      "token_f1": 0.08654980689474584,
+      "avg_total_sec": 6.408897801527505,
+      "p50_total_sec": 6.353092764038593,
+      "p95_total_sec": 6.453864962793887,
+      "avg_storage_bytes": 21093369.06312625,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -7297,20 +7493,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 1.0,
-          "ndcg_at_10": 1.0,
-          "exact_match": 1.0,
-          "token_f1": 0.9142857142857143,
-          "avg_total_sec": 15.12832130091265,
-          "p50_total_sec": 15.064450729638338,
+          "doc_recall_all": 0.9,
+          "ndcg_at_10": 0.9613147192765459,
+          "exact_match": 0.7,
+          "token_f1": 0.6571428571428571,
+          "avg_total_sec": 14.973375974735244,
+          "p50_total_sec": 14.961265992373228,
           "p95_total_sec": 16.220668675843626,
-          "avg_storage_bytes": 6664932.0,
+          "avg_storage_bytes": 6492494.1,
           "p95_storage_bytes": 7286263.0,
           "categories": {},
           "sample_errors": [],
@@ -7370,6 +7566,60 @@
               "retrieved_doc_ids": [
                 "answer_e936197f_1",
                 "answer_e936197f_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::08f4fc43",
+              "category": "temporal-reasoning",
+              "query": "How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral?",
+              "gold": "30 days. 31 days (including the last day) is also acceptable.",
+              "prediction": "30 days",
+              "retrieved_doc_ids": [
+                "answer_6ea1541e_1",
+                "answer_6ea1541e_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::2c63a862",
+              "category": "temporal-reasoning",
+              "query": "How many days did it take for me to find a house I loved after starting to work with Rachel?",
+              "gold": "14 days. 15 days (including the last day) is also acceptable.",
+              "prediction": "s great that you",
+              "retrieved_doc_ids": [
+                "answer_d39b7977_1",
+                "answer_d39b7977_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_385a5000",
+              "category": "temporal-reasoning",
+              "query": "Which seeds were started first, the tomatoes or the marigolds?",
+              "gold": "Tomatoes",
+              "prediction": "By the way, I just started some marigold seeds that arrived on March 3rd, and they're already germinating - excited to see them grow!",
+              "retrieved_doc_ids": [
+                "answer_7a4a93f1_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::2a1811e2",
+              "category": "temporal-reasoning",
+              "query": "How many days had passed between the Hindu festival of Holi and the Sunday mass at St. Mary's Church?",
+              "gold": "21 days. 22 days (including the last day) is also acceptable.",
+              "prediction": "21 days",
+              "retrieved_doc_ids": [
+                "answer_1cc3cd0c_1",
+                "answer_1cc3cd0c_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::bbf86515",
+              "category": "temporal-reasoning",
+              "query": "How many days before the 'Rack Fest' did I participate in the 'Turbocharged Tuesdays' event?",
+              "gold": "4 days.",
+              "prediction": "Rack Fest did",
+              "retrieved_doc_ids": [
+                "answer_b3763b6b_2",
+                "answer_b3763b6b_1"
               ]
             }
           ]
@@ -7756,19 +8006,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 1991,
-      "rows_successful": 1991,
+      "rows_recorded": 1995,
+      "rows_successful": 1995,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7438473129080864,
-      "doc_recall_all": 0.6393771973882472,
-      "ndcg_at_10": 0.5154588080328683,
-      "exact_match": 0.03666499246609744,
-      "token_f1": 0.08437188897402627,
-      "avg_total_sec": 0.08371522898459736,
-      "p50_total_sec": 0.06262173410505056,
-      "p95_total_sec": 0.09531880402937531,
-      "avg_storage_bytes": 13668171.463083878,
+      "doc_recall_any": 0.7443609022556391,
+      "doc_recall_all": 0.6401002506265664,
+      "ndcg_at_10": 0.516430319194707,
+      "exact_match": 0.03859649122807018,
+      "token_f1": 0.08620773481066983,
+      "avg_total_sec": 0.09637523597773902,
+      "p50_total_sec": 0.06268516415730119,
+      "p95_total_sec": 0.09557010512799025,
+      "avg_storage_bytes": 13642908.805513784,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -9761,20 +10011,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 1.0,
-          "token_f1": 0.9142857142857143,
-          "avg_total_sec": 7.949260551296175,
-          "p50_total_sec": 7.734029197599739,
+          "token_f1": 0.9523809523809523,
+          "avg_total_sec": 7.259764180415207,
+          "p50_total_sec": 6.961248277686536,
           "p95_total_sec": 9.858838545158505,
-          "avg_storage_bytes": 1284604.2,
+          "avg_storage_bytes": 1188522.7777777778,
           "p95_storage_bytes": 1554589.0,
           "categories": {},
           "sample_errors": [],
@@ -9834,6 +10084,50 @@
               "retrieved_doc_ids": [
                 "answer_e936197f_1",
                 "answer_e936197f_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::08f4fc43",
+              "category": "temporal-reasoning",
+              "query": "How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral?",
+              "gold": "30 days. 31 days (including the last day) is also acceptable.",
+              "prediction": "30 days",
+              "retrieved_doc_ids": [
+                "answer_6ea1541e_1",
+                "answer_6ea1541e_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::2c63a862",
+              "category": "temporal-reasoning",
+              "query": "How many days did it take for me to find a house I loved after starting to work with Rachel?",
+              "gold": "14 days. 15 days (including the last day) is also acceptable.",
+              "prediction": "14 days",
+              "retrieved_doc_ids": [
+                "answer_d39b7977_1",
+                "answer_d39b7977_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_385a5000",
+              "category": "temporal-reasoning",
+              "query": "Which seeds were started first, the tomatoes or the marigolds?",
+              "gold": "Tomatoes",
+              "prediction": "tomatoes",
+              "retrieved_doc_ids": [
+                "answer_7a4a93f1_2",
+                "answer_7a4a93f1_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::2a1811e2",
+              "category": "temporal-reasoning",
+              "query": "How many days had passed between the Hindu festival of Holi and the Sunday mass at St. Mary's Church?",
+              "gold": "21 days. 22 days (including the last day) is also acceptable.",
+              "prediction": "21 days",
+              "retrieved_doc_ids": [
+                "answer_1cc3cd0c_1",
+                "answer_1cc3cd0c_2"
               ]
             }
           ]
@@ -10225,11 +10519,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04871923656454036,
-    "doc_recall_all_delta": 0.05374183827222512,
-    "ndcg_at_10_delta": 0.0596534270381881,
-    "token_f1_delta": -0.001390750183137321,
-    "avg_storage_ratio_nova_over_stock": 0.6468465641440128,
-    "avg_latency_ratio_nova_over_stock": 0.013105530082192925
+    "doc_recall_any_delta": 0.0484691186885049,
+    "doc_recall_all_delta": 0.05392790593718766,
+    "ndcg_at_10_delta": 0.05945553925824726,
+    "token_f1_delta": -0.00034207208407600886,
+    "avg_storage_ratio_nova_over_stock": 0.6467866164330871,
+    "avg_latency_ratio_nova_over_stock": 0.015037723952279097
   }
 }
