@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:07:43Z",
+  "generated_at": "2026-04-29T03:07:45Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:07:43Z",
+    "updated_at": "2026-04-29T03:07:45Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 20,
+    "current_case_index": 25,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0019"
+    "current_case_id": "locomo::conv-26::0024"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,35 +2238,35 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 20,
-        "rows_successful": 20,
+        "rows_recorded": 25,
+        "rows_successful": 25,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7,
-        "doc_recall_all": 0.5,
-        "ndcg_at_10": 0.40658061244345783,
+        "doc_recall_any": 0.72,
+        "doc_recall_all": 0.56,
+        "ndcg_at_10": 0.44348869593826473,
         "exact_match": 0.2,
-        "token_f1": 0.2866374269005848,
-        "avg_total_sec": 0.06429603951983154,
-        "p50_total_sec": 0.0666316500864923,
+        "token_f1": 0.2825099415204678,
+        "avg_total_sec": 0.06443826016038656,
+        "p50_total_sec": 0.06572571117430925,
         "p95_total_sec": 0.08389091119170189,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
         "categories": {
           "category_2": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9,
-            "doc_recall_all": 0.9,
-            "ndcg_at_10": 0.5919096689914919,
-            "exact_match": 0.4,
-            "token_f1": 0.53,
-            "avg_total_sec": 0.06622336804866791,
+            "doc_recall_any": 0.9166666666666666,
+            "doc_recall_all": 0.9166666666666666,
+            "ndcg_at_10": 0.6182580574929099,
+            "exact_match": 0.4166666666666667,
+            "token_f1": 0.5458333333333333,
+            "avg_total_sec": 0.06508111402702828,
             "p50_total_sec": 0.06572571117430925,
-            "p95_total_sec": 0.08579703094437718,
+            "p95_total_sec": 0.07443810068070889,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
             "categories": {},
@@ -2416,23 +2416,51 @@
                   "conv-26:D9:6",
                   "conv-26:D1:5"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0020",
+                "category": "category_2",
+                "query": "When did Melanie go to the museum?",
+                "gold": "5 July 2023",
+                "prediction": "5 July 2023",
+                "retrieved_doc_ids": [
+                  "conv-26:D6:4",
+                  "conv-26:D16:8",
+                  "conv-26:D10:10",
+                  "conv-26:D4:5",
+                  "conv-26:D6:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0021",
+                "category": "category_2",
+                "query": "When did Caroline have a picnic?",
+                "gold": "The week before 6 July 2023",
+                "prediction": "29 June 2023",
+                "retrieved_doc_ids": [
+                  "conv-26:D10:10",
+                  "conv-26:D3:22",
+                  "conv-26:D6:11",
+                  "conv-26:D4:5",
+                  "conv-26:D4:8"
+                ]
               }
             ]
           },
           "category_3": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.0,
-            "ndcg_at_10": 0.4598603945740938,
+            "doc_recall_all": 0.3333333333333333,
+            "ndcg_at_10": 0.6399069297160626,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 0.05471131834201515,
-            "p50_total_sec": 0.041326803620904684,
-            "p95_total_sec": 0.06809583306312561,
+            "token_f1": 0.02666666666666666,
+            "avg_total_sec": 0.06370607033992808,
+            "p50_total_sec": 0.06809583306312561,
+            "p95_total_sec": 0.08169557433575392,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
             "categories": {},
@@ -2466,22 +2494,36 @@
                   "conv-26:D4:14",
                   "conv-26:D19:9"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0022",
+                "category": "category_3",
+                "query": "Would Caroline likely have Dr. Seuss books on her bookshelf?",
+                "gold": "Yes, since she collects classic children's books",
+                "prediction": "I've got lots of kids' books- classics, stories from different cultures, educational books, all of that",
+                "retrieved_doc_ids": [
+                  "conv-26:D6:9",
+                  "conv-26:D4:5",
+                  "conv-26:D6:7",
+                  "conv-26:D7:9",
+                  "conv-26:D7:10"
+                ]
               }
             ]
           },
           "category_1": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.375,
-            "doc_recall_all": 0.125,
-            "ndcg_at_10": 0.16159934622575634,
+            "doc_recall_any": 0.4,
+            "doc_recall_all": 0.2,
+            "ndcg_at_10": 0.1748399919393511,
             "exact_match": 0.0,
-            "token_f1": 0.05409356725146199,
-            "avg_total_sec": 0.06428305915324017,
-            "p50_total_sec": 0.0666316500864923,
+            "token_f1": 0.04327485380116959,
+            "avg_total_sec": 0.06388649246655405,
+            "p50_total_sec": 0.06425130600109696,
             "p95_total_sec": 0.08389091119170189,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
@@ -2575,6 +2617,24 @@
                   "conv-26:D10:9",
                   "conv-26:D8:33"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0024",
+                "category": "category_1",
+                "query": "What does Melanie do to destress?",
+                "gold": "Running, pottery",
+                "prediction": "Wow, Caroline!",
+                "expected_doc_ids": [
+                  "conv-26:D7:22",
+                  "conv-26:D5:4"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D4:15",
+                  "conv-26:D7:7",
+                  "conv-26:D13:13",
+                  "conv-26:D7:6",
+                  "conv-26:D2:3"
+                ]
               }
             ],
             "sample_successes": [
@@ -2618,6 +2678,20 @@
                   "conv-26:D18:20",
                   "conv-26:D18:21",
                   "conv-26:D10:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0023",
+                "category": "category_1",
+                "query": "What books has Melanie read?",
+                "gold": "\"Nothing is Impossible\", \"Charlotte's Web\"",
+                "prediction": "Wow, Caroline!",
+                "retrieved_doc_ids": [
+                  "conv-26:D6:7",
+                  "conv-26:D6:9",
+                  "conv-26:D7:9",
+                  "conv-26:D7:10",
+                  "conv-26:D7:8"
                 ]
               }
             ]
@@ -2728,6 +2802,24 @@
               "conv-26:D8:3",
               "conv-26:D10:9",
               "conv-26:D8:33"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0024",
+            "category": "category_1",
+            "query": "What does Melanie do to destress?",
+            "gold": "Running, pottery",
+            "prediction": "Wow, Caroline!",
+            "expected_doc_ids": [
+              "conv-26:D7:22",
+              "conv-26:D5:4"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D4:15",
+              "conv-26:D7:7",
+              "conv-26:D13:13",
+              "conv-26:D7:6",
+              "conv-26:D2:3"
             ]
           }
         ],
@@ -5149,35 +5241,35 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 20,
-      "rows_successful": 20,
+      "rows_recorded": 25,
+      "rows_successful": 25,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7,
-      "doc_recall_all": 0.5,
-      "ndcg_at_10": 0.40658061244345783,
+      "doc_recall_any": 0.72,
+      "doc_recall_all": 0.56,
+      "ndcg_at_10": 0.44348869593826473,
       "exact_match": 0.2,
-      "token_f1": 0.2866374269005848,
-      "avg_total_sec": 0.06429603951983154,
-      "p50_total_sec": 0.0666316500864923,
+      "token_f1": 0.2825099415204678,
+      "avg_total_sec": 0.06443826016038656,
+      "p50_total_sec": 0.06572571117430925,
       "p95_total_sec": 0.08389091119170189,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
       "categories": {
         "category_2": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 12,
+          "rows_recorded": 12,
+          "rows_successful": 12,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9,
-          "doc_recall_all": 0.9,
-          "ndcg_at_10": 0.5919096689914919,
-          "exact_match": 0.4,
-          "token_f1": 0.53,
-          "avg_total_sec": 0.06622336804866791,
+          "doc_recall_any": 0.9166666666666666,
+          "doc_recall_all": 0.9166666666666666,
+          "ndcg_at_10": 0.6182580574929099,
+          "exact_match": 0.4166666666666667,
+          "token_f1": 0.5458333333333333,
+          "avg_total_sec": 0.06508111402702828,
           "p50_total_sec": 0.06572571117430925,
-          "p95_total_sec": 0.08579703094437718,
+          "p95_total_sec": 0.07443810068070889,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
           "categories": {},
@@ -5327,23 +5419,51 @@
                 "conv-26:D9:6",
                 "conv-26:D1:5"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0020",
+              "category": "category_2",
+              "query": "When did Melanie go to the museum?",
+              "gold": "5 July 2023",
+              "prediction": "5 July 2023",
+              "retrieved_doc_ids": [
+                "conv-26:D6:4",
+                "conv-26:D16:8",
+                "conv-26:D10:10",
+                "conv-26:D4:5",
+                "conv-26:D6:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0021",
+              "category": "category_2",
+              "query": "When did Caroline have a picnic?",
+              "gold": "The week before 6 July 2023",
+              "prediction": "29 June 2023",
+              "retrieved_doc_ids": [
+                "conv-26:D10:10",
+                "conv-26:D3:22",
+                "conv-26:D6:11",
+                "conv-26:D4:5",
+                "conv-26:D4:8"
+              ]
             }
           ]
         },
         "category_3": {
-          "expected_total": 2,
-          "rows_recorded": 2,
-          "rows_successful": 2,
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.0,
-          "ndcg_at_10": 0.4598603945740938,
+          "doc_recall_all": 0.3333333333333333,
+          "ndcg_at_10": 0.6399069297160626,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 0.05471131834201515,
-          "p50_total_sec": 0.041326803620904684,
-          "p95_total_sec": 0.06809583306312561,
+          "token_f1": 0.02666666666666666,
+          "avg_total_sec": 0.06370607033992808,
+          "p50_total_sec": 0.06809583306312561,
+          "p95_total_sec": 0.08169557433575392,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
           "categories": {},
@@ -5377,22 +5497,36 @@
                 "conv-26:D4:14",
                 "conv-26:D19:9"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0022",
+              "category": "category_3",
+              "query": "Would Caroline likely have Dr. Seuss books on her bookshelf?",
+              "gold": "Yes, since she collects classic children's books",
+              "prediction": "I've got lots of kids' books- classics, stories from different cultures, educational books, all of that",
+              "retrieved_doc_ids": [
+                "conv-26:D6:9",
+                "conv-26:D4:5",
+                "conv-26:D6:7",
+                "conv-26:D7:9",
+                "conv-26:D7:10"
+              ]
             }
           ]
         },
         "category_1": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.375,
-          "doc_recall_all": 0.125,
-          "ndcg_at_10": 0.16159934622575634,
+          "doc_recall_any": 0.4,
+          "doc_recall_all": 0.2,
+          "ndcg_at_10": 0.1748399919393511,
           "exact_match": 0.0,
-          "token_f1": 0.05409356725146199,
-          "avg_total_sec": 0.06428305915324017,
-          "p50_total_sec": 0.0666316500864923,
+          "token_f1": 0.04327485380116959,
+          "avg_total_sec": 0.06388649246655405,
+          "p50_total_sec": 0.06425130600109696,
           "p95_total_sec": 0.08389091119170189,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
@@ -5486,6 +5620,24 @@
                 "conv-26:D10:9",
                 "conv-26:D8:33"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0024",
+              "category": "category_1",
+              "query": "What does Melanie do to destress?",
+              "gold": "Running, pottery",
+              "prediction": "Wow, Caroline!",
+              "expected_doc_ids": [
+                "conv-26:D7:22",
+                "conv-26:D5:4"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D4:15",
+                "conv-26:D7:7",
+                "conv-26:D13:13",
+                "conv-26:D7:6",
+                "conv-26:D2:3"
+              ]
             }
           ],
           "sample_successes": [
@@ -5529,6 +5681,20 @@
                 "conv-26:D18:20",
                 "conv-26:D18:21",
                 "conv-26:D10:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0023",
+              "category": "category_1",
+              "query": "What books has Melanie read?",
+              "gold": "\"Nothing is Impossible\", \"Charlotte's Web\"",
+              "prediction": "Wow, Caroline!",
+              "retrieved_doc_ids": [
+                "conv-26:D6:7",
+                "conv-26:D6:9",
+                "conv-26:D7:9",
+                "conv-26:D7:10",
+                "conv-26:D7:8"
               ]
             }
           ]
@@ -5639,6 +5805,24 @@
             "conv-26:D8:3",
             "conv-26:D10:9",
             "conv-26:D8:33"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0024",
+          "category": "category_1",
+          "query": "What does Melanie do to destress?",
+          "gold": "Running, pottery",
+          "prediction": "Wow, Caroline!",
+          "expected_doc_ids": [
+            "conv-26:D7:22",
+            "conv-26:D5:4"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D4:15",
+            "conv-26:D7:7",
+            "conv-26:D13:13",
+            "conv-26:D7:6",
+            "conv-26:D2:3"
           ]
         }
       ],
@@ -5815,11 +5999,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.006532663316582865,
-    "doc_recall_all_delta": -0.09798994974874375,
-    "ndcg_at_10_delta": -0.059360558565036525,
-    "token_f1_delta": 0.17535420415020664,
+    "doc_recall_any_delta": 0.026532663316582883,
+    "doc_recall_all_delta": -0.0379899497487437,
+    "ndcg_at_10_delta": -0.022452475070229627,
+    "token_f1_delta": 0.17122671877008966,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.010089173089982384
+    "avg_latency_ratio_nova_over_stock": 0.01011148999581739
   }
 }
