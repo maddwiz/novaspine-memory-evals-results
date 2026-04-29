@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:07:47Z",
+  "generated_at": "2026-04-29T13:07:49Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:07:47Z",
+    "updated_at": "2026-04-29T13:07:49Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 25,
+    "current_case_index": 30,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0024"
+    "current_case_id": "locomo::conv-26::0029"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,35 +2238,35 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 25,
-        "rows_successful": 25,
+        "rows_recorded": 30,
+        "rows_successful": 30,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.72,
-        "doc_recall_all": 0.56,
-        "ndcg_at_10": 0.461497216798459,
-        "exact_match": 0.2,
-        "token_f1": 0.27362105263157893,
-        "avg_total_sec": 0.05995715033262968,
-        "p50_total_sec": 0.06037347810342908,
-        "p95_total_sec": 0.08534226613119245,
+        "doc_recall_any": 0.7666666666666667,
+        "doc_recall_all": 0.6,
+        "ndcg_at_10": 0.5240668705580348,
+        "exact_match": 0.23333333333333334,
+        "token_f1": 0.3196842105263158,
+        "avg_total_sec": 0.06204808414913714,
+        "p50_total_sec": 0.06059269467368722,
+        "p95_total_sec": 0.09087628312408924,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
         "categories": {
           "category_2": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 16,
+            "rows_recorded": 16,
+            "rows_successful": 16,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9166666666666666,
-            "doc_recall_all": 0.9166666666666666,
-            "ndcg_at_10": 0.651567713039165,
-            "exact_match": 0.4166666666666667,
-            "token_f1": 0.5458333333333333,
-            "avg_total_sec": 0.06394893388884763,
-            "p50_total_sec": 0.06292352499440312,
-            "p95_total_sec": 0.08534226613119245,
+            "doc_recall_any": 0.9375,
+            "doc_recall_all": 0.9375,
+            "ndcg_at_10": 0.7386757847793738,
+            "exact_match": 0.4375,
+            "token_f1": 0.58125,
+            "avg_total_sec": 0.06769932148745283,
+            "p50_total_sec": 0.06759489700198174,
+            "p95_total_sec": 0.09087628312408924,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
             "categories": {},
@@ -2444,21 +2444,35 @@
                   "conv-26:D4:8",
                   "conv-26:D8:19"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0025",
+                "category": "category_2",
+                "query": "When did Caroline go to the LGBTQ conference?",
+                "gold": "10 July 2023",
+                "prediction": "10 July 2023",
+                "retrieved_doc_ids": [
+                  "conv-26:D7:1",
+                  "conv-26:D5:13",
+                  "conv-26:D11:6",
+                  "conv-26:D3:1",
+                  "conv-26:D16:5"
+                ]
               }
             ]
           },
           "category_3": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.3333333333333333,
-            "ndcg_at_10": 0.5912352048230277,
+            "doc_recall_all": 0.25,
+            "ndcg_at_10": 0.48957032781216286,
             "exact_match": 0.0,
-            "token_f1": 0.02666666666666666,
-            "avg_total_sec": 0.07241910137236118,
+            "token_f1": 0.019999999999999997,
+            "avg_total_sec": 0.06599228328559548,
             "p50_total_sec": 0.06854621507227421,
             "p95_total_sec": 0.08174402033910155,
             "avg_storage_bytes": 10963457.0,
@@ -2507,6 +2521,20 @@
                   "conv-26:D7:10",
                   "conv-26:D6:8",
                   "conv-26:D7:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0027",
+                "category": "category_3",
+                "query": "Would Caroline pursue writing as a career option?",
+                "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+                "prediction": "I struggled with mental health, and support I got was really helpful",
+                "retrieved_doc_ids": [
+                  "conv-26:D7:7",
+                  "conv-26:D4:11",
+                  "conv-26:D6:10",
+                  "conv-26:D13:11",
+                  "conv-26:D12:6"
                 ]
               }
             ]
@@ -5241,35 +5269,35 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 25,
-      "rows_successful": 25,
+      "rows_recorded": 30,
+      "rows_successful": 30,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.72,
-      "doc_recall_all": 0.56,
-      "ndcg_at_10": 0.461497216798459,
-      "exact_match": 0.2,
-      "token_f1": 0.27362105263157893,
-      "avg_total_sec": 0.05995715033262968,
-      "p50_total_sec": 0.06037347810342908,
-      "p95_total_sec": 0.08534226613119245,
+      "doc_recall_any": 0.7666666666666667,
+      "doc_recall_all": 0.6,
+      "ndcg_at_10": 0.5240668705580348,
+      "exact_match": 0.23333333333333334,
+      "token_f1": 0.3196842105263158,
+      "avg_total_sec": 0.06204808414913714,
+      "p50_total_sec": 0.06059269467368722,
+      "p95_total_sec": 0.09087628312408924,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
       "categories": {
         "category_2": {
-          "expected_total": 12,
-          "rows_recorded": 12,
-          "rows_successful": 12,
+          "expected_total": 16,
+          "rows_recorded": 16,
+          "rows_successful": 16,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9166666666666666,
-          "doc_recall_all": 0.9166666666666666,
-          "ndcg_at_10": 0.651567713039165,
-          "exact_match": 0.4166666666666667,
-          "token_f1": 0.5458333333333333,
-          "avg_total_sec": 0.06394893388884763,
-          "p50_total_sec": 0.06292352499440312,
-          "p95_total_sec": 0.08534226613119245,
+          "doc_recall_any": 0.9375,
+          "doc_recall_all": 0.9375,
+          "ndcg_at_10": 0.7386757847793738,
+          "exact_match": 0.4375,
+          "token_f1": 0.58125,
+          "avg_total_sec": 0.06769932148745283,
+          "p50_total_sec": 0.06759489700198174,
+          "p95_total_sec": 0.09087628312408924,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
           "categories": {},
@@ -5447,21 +5475,35 @@
                 "conv-26:D4:8",
                 "conv-26:D8:19"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0025",
+              "category": "category_2",
+              "query": "When did Caroline go to the LGBTQ conference?",
+              "gold": "10 July 2023",
+              "prediction": "10 July 2023",
+              "retrieved_doc_ids": [
+                "conv-26:D7:1",
+                "conv-26:D5:13",
+                "conv-26:D11:6",
+                "conv-26:D3:1",
+                "conv-26:D16:5"
+              ]
             }
           ]
         },
         "category_3": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.3333333333333333,
-          "ndcg_at_10": 0.5912352048230277,
+          "doc_recall_all": 0.25,
+          "ndcg_at_10": 0.48957032781216286,
           "exact_match": 0.0,
-          "token_f1": 0.02666666666666666,
-          "avg_total_sec": 0.07241910137236118,
+          "token_f1": 0.019999999999999997,
+          "avg_total_sec": 0.06599228328559548,
           "p50_total_sec": 0.06854621507227421,
           "p95_total_sec": 0.08174402033910155,
           "avg_storage_bytes": 10963457.0,
@@ -5510,6 +5552,20 @@
                 "conv-26:D7:10",
                 "conv-26:D6:8",
                 "conv-26:D7:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0027",
+              "category": "category_3",
+              "query": "Would Caroline pursue writing as a career option?",
+              "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+              "prediction": "I struggled with mental health, and support I got was really helpful",
+              "retrieved_doc_ids": [
+                "conv-26:D7:7",
+                "conv-26:D4:11",
+                "conv-26:D6:10",
+                "conv-26:D13:11",
+                "conv-26:D12:6"
               ]
             }
           ]
@@ -5999,11 +6055,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.026532663316582883,
-    "doc_recall_all_delta": -0.0379899497487437,
-    "ndcg_at_10_delta": -0.00444395421003535,
-    "token_f1_delta": 0.16233782988120077,
+    "doc_recall_any_delta": 0.07319932998324963,
+    "doc_recall_all_delta": 0.0020100502512562235,
+    "ndcg_at_10_delta": 0.058125699549540444,
+    "token_f1_delta": 0.20840098777593763,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009428977649794876
+    "avg_latency_ratio_nova_over_stock": 0.009757801953713131
   }
 }
