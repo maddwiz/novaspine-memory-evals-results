@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:57:56Z",
+  "generated_at": "2026-04-29T02:58:29Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,28 +117,28 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:57:56Z",
+    "updated_at": "2026-04-29T02:58:29Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 120,
+    "current_case_index": 125,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0119"
+    "current_case_id": "locomo::conv-26::0124"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 120,
-        "rows_successful": 120,
+        "rows_recorded": 125,
+        "rows_successful": 125,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7166666666666667,
-        "doc_recall_all": 0.5583333333333333,
-        "ndcg_at_10": 0.45352097910214195,
-        "exact_match": 0.10833333333333334,
-        "token_f1": 0.17214989658292928,
-        "avg_total_sec": 6.368442892376334,
-        "p50_total_sec": 6.355942205991596,
+        "doc_recall_any": 0.72,
+        "doc_recall_all": 0.568,
+        "ndcg_at_10": 0.4522364515204756,
+        "exact_match": 0.104,
+        "token_f1": 0.16686390071961213,
+        "avg_total_sec": 6.367972850035876,
+        "p50_total_sec": 6.355254838708788,
         "p95_total_sec": 6.440837082918733,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
@@ -1076,18 +1076,18 @@
             ]
           },
           "category_4": {
-            "expected_total": 38,
-            "rows_recorded": 38,
-            "rows_successful": 38,
+            "expected_total": 43,
+            "rows_recorded": 43,
+            "rows_successful": 43,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7105263157894737,
-            "doc_recall_all": 0.7105263157894737,
-            "ndcg_at_10": 0.5463164019102942,
-            "exact_match": 0.02631578947368421,
-            "token_f1": 0.07613580852374768,
-            "avg_total_sec": 6.345968059913599,
-            "p50_total_sec": 6.34521124092862,
+            "doc_recall_any": 0.7209302325581395,
+            "doc_recall_all": 0.7209302325581395,
+            "ndcg_at_10": 0.5317921446603162,
+            "exact_match": 0.023255813953488372,
+            "token_f1": 0.0719339703233119,
+            "avg_total_sec": 6.347215010373052,
+            "p50_total_sec": 6.345960399135947,
             "p95_total_sec": 6.413856601342559,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
@@ -1279,6 +1279,23 @@
                   "conv-26:D13:13",
                   "conv-26:D13:11",
                   "conv-26:D9:17"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0121",
+                "category": "category_4",
+                "query": "Who performed at the concert at Melanie's daughter's birthday?",
+                "gold": "Matt Patterson",
+                "prediction": "Hey Caroline!",
+                "expected_doc_ids": [
+                  "conv-26:D11:3"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D11:1",
+                  "conv-26:D15:28",
+                  "conv-26:D15:14",
+                  "conv-26:D11:2",
+                  "conv-26:D15:24"
                 ]
               }
             ],
@@ -1988,17 +2005,17 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 120,
-      "rows_successful": 120,
+      "rows_recorded": 125,
+      "rows_successful": 125,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7166666666666667,
-      "doc_recall_all": 0.5583333333333333,
-      "ndcg_at_10": 0.45352097910214195,
-      "exact_match": 0.10833333333333334,
-      "token_f1": 0.17214989658292928,
-      "avg_total_sec": 6.368442892376334,
-      "p50_total_sec": 6.355942205991596,
+      "doc_recall_any": 0.72,
+      "doc_recall_all": 0.568,
+      "ndcg_at_10": 0.4522364515204756,
+      "exact_match": 0.104,
+      "token_f1": 0.16686390071961213,
+      "avg_total_sec": 6.367972850035876,
+      "p50_total_sec": 6.355254838708788,
       "p95_total_sec": 6.440837082918733,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
@@ -2936,18 +2953,18 @@
           ]
         },
         "category_4": {
-          "expected_total": 38,
-          "rows_recorded": 38,
-          "rows_successful": 38,
+          "expected_total": 43,
+          "rows_recorded": 43,
+          "rows_successful": 43,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.7105263157894737,
-          "doc_recall_all": 0.7105263157894737,
-          "ndcg_at_10": 0.5463164019102942,
-          "exact_match": 0.02631578947368421,
-          "token_f1": 0.07613580852374768,
-          "avg_total_sec": 6.345968059913599,
-          "p50_total_sec": 6.34521124092862,
+          "doc_recall_any": 0.7209302325581395,
+          "doc_recall_all": 0.7209302325581395,
+          "ndcg_at_10": 0.5317921446603162,
+          "exact_match": 0.023255813953488372,
+          "token_f1": 0.0719339703233119,
+          "avg_total_sec": 6.347215010373052,
+          "p50_total_sec": 6.345960399135947,
           "p95_total_sec": 6.413856601342559,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
@@ -3139,6 +3156,23 @@
                 "conv-26:D13:13",
                 "conv-26:D13:11",
                 "conv-26:D9:17"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0121",
+              "category": "category_4",
+              "query": "Who performed at the concert at Melanie's daughter's birthday?",
+              "gold": "Matt Patterson",
+              "prediction": "Hey Caroline!",
+              "expected_doc_ids": [
+                "conv-26:D11:3"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D11:1",
+                "conv-26:D15:28",
+                "conv-26:D15:14",
+                "conv-26:D11:2",
+                "conv-26:D15:24"
               ]
             }
           ],
@@ -3713,10 +3747,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.7166666666666667,
-    "doc_recall_all_delta": -0.5583333333333333,
-    "ndcg_at_10_delta": -0.45352097910214195,
-    "token_f1_delta": -0.17214989658292928,
+    "doc_recall_any_delta": -0.72,
+    "doc_recall_all_delta": -0.568,
+    "ndcg_at_10_delta": -0.4522364515204756,
+    "token_f1_delta": -0.16686390071961213,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
