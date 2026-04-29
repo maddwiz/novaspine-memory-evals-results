@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:04:01Z",
+  "generated_at": "2026-04-29T03:04:33Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,28 +117,28 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:04:01Z",
+    "updated_at": "2026-04-29T03:04:33Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 175,
+    "current_case_index": 180,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0174"
+    "current_case_id": "locomo::conv-26::0179"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 175,
-        "rows_successful": 175,
+        "rows_recorded": 180,
+        "rows_successful": 180,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6971428571428572,
-        "doc_recall_all": 0.5885714285714285,
-        "ndcg_at_10": 0.4687087847281467,
-        "exact_match": 0.07428571428571429,
-        "token_f1": 0.12654492187043004,
-        "avg_total_sec": 6.373205846383104,
-        "p50_total_sec": 6.360975551884621,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.5944444444444444,
+        "ndcg_at_10": 0.4653970108524825,
+        "exact_match": 0.07222222222222222,
+        "token_f1": 0.12302978515180697,
+        "avg_total_sec": 6.3712644381603845,
+        "p50_total_sec": 6.35777156567201,
         "p95_total_sec": 6.453628138639033,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
@@ -1468,18 +1468,18 @@
             ]
           },
           "category_5": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6086956521739131,
-            "doc_recall_all": 0.6086956521739131,
-            "ndcg_at_10": 0.5139334901744701,
+            "doc_recall_any": 0.6428571428571429,
+            "doc_recall_all": 0.6428571428571429,
+            "ndcg_at_10": 0.4845676750012136,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 6.372711282365186,
-            "p50_total_sec": 6.369099609088153,
+            "avg_total_sec": 6.3603191159366235,
+            "p50_total_sec": 6.363076848909259,
             "p95_total_sec": 6.450843384955078,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
@@ -1638,6 +1638,17 @@
                   "conv-26:D12:8",
                   "conv-26:D11:15"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0179",
+                "category": "category_5",
+                "query": "Where did Oscar hide his bone once?",
+                "gold": "",
+                "prediction": "",
+                "expected_doc_ids": [
+                  "conv-26:D13:6"
+                ],
+                "retrieved_doc_ids": []
               }
             ],
             "sample_successes": [
@@ -2349,17 +2360,17 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 175,
-      "rows_successful": 175,
+      "rows_recorded": 180,
+      "rows_successful": 180,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6971428571428572,
-      "doc_recall_all": 0.5885714285714285,
-      "ndcg_at_10": 0.4687087847281467,
-      "exact_match": 0.07428571428571429,
-      "token_f1": 0.12654492187043004,
-      "avg_total_sec": 6.373205846383104,
-      "p50_total_sec": 6.360975551884621,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.5944444444444444,
+      "ndcg_at_10": 0.4653970108524825,
+      "exact_match": 0.07222222222222222,
+      "token_f1": 0.12302978515180697,
+      "avg_total_sec": 6.3712644381603845,
+      "p50_total_sec": 6.35777156567201,
       "p95_total_sec": 6.453628138639033,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
@@ -3689,18 +3700,18 @@
           ]
         },
         "category_5": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 28,
+          "rows_recorded": 28,
+          "rows_successful": 28,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6086956521739131,
-          "doc_recall_all": 0.6086956521739131,
-          "ndcg_at_10": 0.5139334901744701,
+          "doc_recall_any": 0.6428571428571429,
+          "doc_recall_all": 0.6428571428571429,
+          "ndcg_at_10": 0.4845676750012136,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 6.372711282365186,
-          "p50_total_sec": 6.369099609088153,
+          "avg_total_sec": 6.3603191159366235,
+          "p50_total_sec": 6.363076848909259,
           "p95_total_sec": 6.450843384955078,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
@@ -3859,6 +3870,17 @@
                 "conv-26:D12:8",
                 "conv-26:D11:15"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0179",
+              "category": "category_5",
+              "query": "Where did Oscar hide his bone once?",
+              "gold": "",
+              "prediction": "",
+              "expected_doc_ids": [
+                "conv-26:D13:6"
+              ],
+              "retrieved_doc_ids": []
             }
           ],
           "sample_successes": [
@@ -4435,10 +4457,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.6971428571428572,
-    "doc_recall_all_delta": -0.5885714285714285,
-    "ndcg_at_10_delta": -0.4687087847281467,
-    "token_f1_delta": -0.12654492187043004,
+    "doc_recall_any_delta": -0.7,
+    "doc_recall_all_delta": -0.5944444444444444,
+    "ndcg_at_10_delta": -0.4653970108524825,
+    "token_f1_delta": -0.12302978515180697,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
