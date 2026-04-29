@@ -234,17 +234,17 @@
       <div class="metric-card">
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>75.2%</strong></div>
+          <div><span>Stock</span><strong>75.3%</strong></div>
           <div><span>NovaSpine</span><strong>79.5%</strong></div>
         </div>
-        <div class="delta good">+0.043</div>
+        <div class="delta good">+0.042</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>63.9%</strong></div>
+          <div><span>Stock</span><strong>64.0%</strong></div>
           <div><span>NovaSpine</span><strong>71.0%</strong></div>
         </div>
         <div class="delta good">+0.071</div>
@@ -265,7 +265,7 @@
         <div class="metric-label">Answer F1</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>10.3%</strong></div>
-          <div><span>NovaSpine</span><strong>10.6%</strong></div>
+          <div><span>NovaSpine</span><strong>10.5%</strong></div>
         </div>
         <div class="delta good">+0.003</div>
       </div>
@@ -275,18 +275,18 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.043, evidence-all +0.071, NDCG@10 +0.059, answer F1 +0.003.</p>
+        <p><b>Current delta:</b> evidence-any +0.042, evidence-all +0.071, NDCG@10 +0.059, answer F1 +0.003.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-29T19:58:37Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-04-29T19:58:31Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>500 / 500</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_oracle::09ba9854_abs</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2486 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2486 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-29T20:13:49Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-04-29T20:12:32Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>5 / 500</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_s::1e043500</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2491 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2490 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -440,35 +440,43 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>0 / 500 failed 0</td>
+      <td>5 / 500 failed 0</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
       <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0s</td>
-      <td>0.0 B</td>
+      <td>80.6s</td>
+      <td>42.6 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>0 / 500 failed 0</td>
+      <td>4 / 500 failed 0</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
       <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0s</td>
-      <td>0.0 B</td>
+      <td>126.8s</td>
+      <td>14.7 MB</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
-        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr></table>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
+<tr><td>single-session-user</td><td>5</td><td>100.0%</td><td>0.0%</td><td>4</td><td>100.0%</td><td>0.0%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> a significant amount of time that can be utilized for personal development, entertainment, or relaxation</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 004edb32, 5209e813_2, 7d8b5834_1, d600c646</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7, 98c198fb</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> impressed by the lead actress&#x27;s performance - she reminded me of my friend Emily, who&#x27;s also an aspiring actress</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What is the name of the playlist I created on Spotify?</p><p><b>Gold:</b> Summer Vibes</p><p><b>Pred:</b> powered by human curators, which means you&#x27;ll get recommendations based on your listening habits and preferences</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_3e012175, 8020d945_2</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9, sharegpt_8dJs7Ai_0, d414cac5_4, 0586f435_3, ultrachat_458322</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> have features to export notes or quotes in a format that can be easily shared or posted on social media</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 7d8b5834_1, 004edb32, 5dce60dd, 5209e813_2</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7, 07d1915d_1, 98c198fb, 6e0b1800_2, ultrachat_254165</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> impressed by the lead actress&#x27;s performance - she reminded me of my friend Emily, who&#x27;s also an aspiring actress</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb, 793382f9_2, ultrachat_155546, 987b36db_2, ultrachat_71618</p></div></div></div>
       </details>
     </section>
     
