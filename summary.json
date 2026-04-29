@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:08:11Z",
+  "generated_at": "2026-04-29T13:08:12Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:08:11Z",
+    "updated_at": "2026-04-29T13:08:12Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 95,
+    "current_case_index": 100,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0094"
+    "current_case_id": "locomo::conv-26::0099"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,17 +2238,17 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 95,
-        "rows_successful": 95,
+        "rows_recorded": 100,
+        "rows_successful": 100,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7157894736842105,
-        "doc_recall_all": 0.5473684210526316,
-        "ndcg_at_10": 0.47787726928326696,
-        "exact_match": 0.12631578947368421,
-        "token_f1": 0.20678736149067603,
-        "avg_total_sec": 0.06143362154497912,
-        "p50_total_sec": 0.060632328037172556,
+        "doc_recall_any": 0.72,
+        "doc_recall_all": 0.56,
+        "ndcg_at_10": 0.4768740540822825,
+        "exact_match": 0.12,
+        "token_f1": 0.20124799341614225,
+        "avg_total_sec": 0.06145318012218923,
+        "p50_total_sec": 0.06066373595967889,
         "p95_total_sec": 0.08885137597098947,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
@@ -3121,19 +3121,19 @@
             ]
           },
           "category_4": {
-            "expected_total": 13,
-            "rows_recorded": 13,
-            "rows_successful": 13,
+            "expected_total": 18,
+            "rows_recorded": 18,
+            "rows_successful": 18,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5384615384615384,
-            "doc_recall_all": 0.5384615384615384,
-            "ndcg_at_10": 0.4024389656721057,
+            "doc_recall_any": 0.6111111111111112,
+            "doc_recall_all": 0.6111111111111112,
+            "ndcg_at_10": 0.4178206322252923,
             "exact_match": 0.0,
-            "token_f1": 0.044230769230769226,
-            "avg_total_sec": 0.053601146926387,
+            "token_f1": 0.05861111111111111,
+            "avg_total_sec": 0.055885493082718715,
             "p50_total_sec": 0.05469462927430868,
-            "p95_total_sec": 0.06209680065512657,
+            "p95_total_sec": 0.0844082459807396,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
             "categories": {},
@@ -3240,6 +3240,23 @@
                   "conv-26:D3:14",
                   "conv-26:D12:11"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0097",
+                "category": "category_4",
+                "query": "What workshop did Caroline attend recently?",
+                "gold": "LGBTQ+ counseling workshop",
+                "prediction": "Painting's great for expressing myself",
+                "expected_doc_ids": [
+                  "conv-26:D4:13"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D8:2",
+                  "conv-26:D13:11",
+                  "conv-26:D11:8",
+                  "conv-26:D5:4",
+                  "conv-26:D11:14"
+                ]
               }
             ],
             "sample_successes": [
@@ -3339,6 +3356,62 @@
                   "conv-26:D5:7",
                   "conv-26:D5:8",
                   "conv-26:D16:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0095",
+                "category": "category_4",
+                "query": "What did Melanie and her family do while camping?",
+                "gold": "explored nature, roasted marshmallows, and went on a hike",
+                "prediction": "We always look forward to our family camping trip",
+                "retrieved_doc_ids": [
+                  "conv-26:D10:12",
+                  "conv-26:D18:20",
+                  "conv-26:D4:8",
+                  "conv-26:D18:19",
+                  "conv-26:D16:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0096",
+                "category": "category_4",
+                "query": "What kind of counseling and mental health services is Caroline interested in pursuing?",
+                "gold": "working with trans people, helping them accept themselves and supporting their mental health",
+                "prediction": "I struggled with mental health, and support I got was really helpful",
+                "retrieved_doc_ids": [
+                  "conv-26:D7:7",
+                  "conv-26:D4:11",
+                  "conv-26:D1:11",
+                  "conv-26:D4:15",
+                  "conv-26:D6:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0098",
+                "category": "category_4",
+                "query": "What was discussed in the LGBTQ+ counseling workshop?",
+                "gold": "therapeutic methods and how to best work with trans people",
+                "prediction": "really enlightening",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:13",
+                  "conv-26:D3:2",
+                  "conv-26:D9:11",
+                  "conv-26:D1:3",
+                  "conv-26:D3:1"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0099",
+                "category": "category_4",
+                "query": "What motivated Caroline to pursue counseling?",
+                "gold": "her own journey and the support she received, and how counseling improved her life",
+                "prediction": "I struggled with mental health, and support I got was really helpful",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:14",
+                  "conv-26:D7:7",
+                  "conv-26:D4:15",
+                  "conv-26:D4:11",
+                  "conv-26:D5:3"
                 ]
               }
             ]
@@ -5975,17 +6048,17 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 95,
-      "rows_successful": 95,
+      "rows_recorded": 100,
+      "rows_successful": 100,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7157894736842105,
-      "doc_recall_all": 0.5473684210526316,
-      "ndcg_at_10": 0.47787726928326696,
-      "exact_match": 0.12631578947368421,
-      "token_f1": 0.20678736149067603,
-      "avg_total_sec": 0.06143362154497912,
-      "p50_total_sec": 0.060632328037172556,
+      "doc_recall_any": 0.72,
+      "doc_recall_all": 0.56,
+      "ndcg_at_10": 0.4768740540822825,
+      "exact_match": 0.12,
+      "token_f1": 0.20124799341614225,
+      "avg_total_sec": 0.06145318012218923,
+      "p50_total_sec": 0.06066373595967889,
       "p95_total_sec": 0.08885137597098947,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
@@ -6858,19 +6931,19 @@
           ]
         },
         "category_4": {
-          "expected_total": 13,
-          "rows_recorded": 13,
-          "rows_successful": 13,
+          "expected_total": 18,
+          "rows_recorded": 18,
+          "rows_successful": 18,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5384615384615384,
-          "doc_recall_all": 0.5384615384615384,
-          "ndcg_at_10": 0.4024389656721057,
+          "doc_recall_any": 0.6111111111111112,
+          "doc_recall_all": 0.6111111111111112,
+          "ndcg_at_10": 0.4178206322252923,
           "exact_match": 0.0,
-          "token_f1": 0.044230769230769226,
-          "avg_total_sec": 0.053601146926387,
+          "token_f1": 0.05861111111111111,
+          "avg_total_sec": 0.055885493082718715,
           "p50_total_sec": 0.05469462927430868,
-          "p95_total_sec": 0.06209680065512657,
+          "p95_total_sec": 0.0844082459807396,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
           "categories": {},
@@ -6977,6 +7050,23 @@
                 "conv-26:D3:14",
                 "conv-26:D12:11"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0097",
+              "category": "category_4",
+              "query": "What workshop did Caroline attend recently?",
+              "gold": "LGBTQ+ counseling workshop",
+              "prediction": "Painting's great for expressing myself",
+              "expected_doc_ids": [
+                "conv-26:D4:13"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D8:2",
+                "conv-26:D13:11",
+                "conv-26:D11:8",
+                "conv-26:D5:4",
+                "conv-26:D11:14"
+              ]
             }
           ],
           "sample_successes": [
@@ -7076,6 +7166,62 @@
                 "conv-26:D5:7",
                 "conv-26:D5:8",
                 "conv-26:D16:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0095",
+              "category": "category_4",
+              "query": "What did Melanie and her family do while camping?",
+              "gold": "explored nature, roasted marshmallows, and went on a hike",
+              "prediction": "We always look forward to our family camping trip",
+              "retrieved_doc_ids": [
+                "conv-26:D10:12",
+                "conv-26:D18:20",
+                "conv-26:D4:8",
+                "conv-26:D18:19",
+                "conv-26:D16:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0096",
+              "category": "category_4",
+              "query": "What kind of counseling and mental health services is Caroline interested in pursuing?",
+              "gold": "working with trans people, helping them accept themselves and supporting their mental health",
+              "prediction": "I struggled with mental health, and support I got was really helpful",
+              "retrieved_doc_ids": [
+                "conv-26:D7:7",
+                "conv-26:D4:11",
+                "conv-26:D1:11",
+                "conv-26:D4:15",
+                "conv-26:D6:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0098",
+              "category": "category_4",
+              "query": "What was discussed in the LGBTQ+ counseling workshop?",
+              "gold": "therapeutic methods and how to best work with trans people",
+              "prediction": "really enlightening",
+              "retrieved_doc_ids": [
+                "conv-26:D4:13",
+                "conv-26:D3:2",
+                "conv-26:D9:11",
+                "conv-26:D1:3",
+                "conv-26:D3:1"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0099",
+              "category": "category_4",
+              "query": "What motivated Caroline to pursue counseling?",
+              "gold": "her own journey and the support she received, and how counseling improved her life",
+              "prediction": "I struggled with mental health, and support I got was really helpful",
+              "retrieved_doc_ids": [
+                "conv-26:D4:14",
+                "conv-26:D7:7",
+                "conv-26:D4:15",
+                "conv-26:D4:11",
+                "conv-26:D5:3"
               ]
             }
           ]
@@ -7467,11 +7613,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.02232213700079344,
-    "doc_recall_all_delta": -0.05062152869611214,
-    "ndcg_at_10_delta": 0.0119360982747726,
-    "token_f1_delta": 0.09550413874029787,
+    "doc_recall_any_delta": 0.026532663316582883,
+    "doc_recall_all_delta": -0.0379899497487437,
+    "ndcg_at_10_delta": 0.010932883073788147,
+    "token_f1_delta": 0.08996477066576408,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009661170373841536
+    "avg_latency_ratio_nova_over_stock": 0.009664246193595356
   }
 }
