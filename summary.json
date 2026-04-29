@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T07:21:01Z",
+  "generated_at": "2026-04-29T07:23:13Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T07:20:54Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T07:22:59Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 65,
+    "current_case_index": 70,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::e831120c"
+    "current_case_id": "longmemeval_oracle::dd2973ad"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,19 +4892,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 65,
-        "rows_successful": 65,
+        "rows_recorded": 70,
+        "rows_successful": 70,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.8153846153846154,
-        "ndcg_at_10": 0.9306294391271887,
-        "exact_match": 0.3076923076923077,
-        "token_f1": 0.36491974389510784,
-        "avg_total_sec": 15.363453940058557,
-        "p50_total_sec": 14.92515490623191,
+        "doc_recall_all": 0.8,
+        "ndcg_at_10": 0.9298306663426396,
+        "exact_match": 0.2857142857142857,
+        "token_f1": 0.34105185010040234,
+        "avg_total_sec": 15.47519156921522,
+        "p50_total_sec": 14.97308028396219,
         "p95_total_sec": 19.390542021021247,
-        "avg_storage_bytes": 6735577.076923077,
+        "avg_storage_bytes": 6784708.257142857,
         "p95_storage_bytes": 9002235.0,
         "categories": {
           "temporal-reasoning": {
@@ -5062,20 +5062,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.8,
-            "ndcg_at_10": 0.9530721273977243,
-            "exact_match": 0.2,
-            "token_f1": 0.4222222222222222,
-            "avg_total_sec": 17.8259730855003,
-            "p50_total_sec": 18.79056058684364,
+            "doc_recall_all": 0.7,
+            "ndcg_at_10": 0.9362593737706126,
+            "exact_match": 0.1,
+            "token_f1": 0.2264957264957265,
+            "avg_total_sec": 17.376876916876064,
+            "p50_total_sec": 17.045036717318,
             "p95_total_sec": 20.611448406707495,
-            "avg_storage_bytes": 7855222.2,
+            "avg_storage_bytes": 7639317.9,
             "p95_storage_bytes": 9342205.0,
             "categories": {},
             "sample_errors": [],
@@ -5139,6 +5139,64 @@
                 "retrieved_doc_ids": [
                   "answer_86c505e7_2",
                   "answer_86c505e7_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::3a704032",
+                "category": "multi-session",
+                "query": "How many plants did I acquire in the last month?",
+                "gold": "3",
+                "prediction": "2 months",
+                "retrieved_doc_ids": [
+                  "answer_c2204106_2",
+                  "answer_c2204106_1",
+                  "answer_c2204106_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_d84a3211",
+                "category": "multi-session",
+                "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+                "gold": "$185",
+                "prediction": "you think I should consider getting some kind of bike insurance to protect my investment, especially since I'll be taking it on longer trips",
+                "retrieved_doc_ids": [
+                  "answer_2880eb6c_2",
+                  "answer_2880eb6c_4",
+                  "answer_2880eb6c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::aae3761f",
+                "category": "multi-session",
+                "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+                "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+                "prediction": "4",
+                "retrieved_doc_ids": [
+                  "answer_526354c8_2",
+                  "answer_526354c8_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_f2262a51",
+                "category": "multi-session",
+                "query": "How many different doctors did I visit?",
+                "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+                "prediction": "3",
+                "retrieved_doc_ids": [
+                  "answer_55a6940c_2",
+                  "answer_55a6940c_3",
+                  "answer_55a6940c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::dd2973ad",
+                "category": "multi-session",
+                "query": "What time did I go to bed on the day before I had a doctor's appointment?",
+                "gold": "2 AM",
+                "prediction": "pretty exhausted after my doctor's appointment, so I spent the rest of the day researching healthy recipes and making a meal plan for the week",
+                "retrieved_doc_ids": [
+                  "answer_f9de4602_2",
+                  "answer_f9de4602_1"
                 ]
               }
             ]
@@ -5283,19 +5341,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 65,
-        "rows_successful": 65,
+        "rows_recorded": 69,
+        "rows_successful": 69,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9846153846153847,
-        "ndcg_at_10": 0.9983417053150075,
-        "exact_match": 0.38461538461538464,
-        "token_f1": 0.44137667220034943,
-        "avg_total_sec": 8.1737793086025,
-        "p50_total_sec": 7.441897752694786,
+        "doc_recall_all": 0.9855072463768116,
+        "ndcg_at_10": 0.9984378383402245,
+        "exact_match": 0.36231884057971014,
+        "token_f1": 0.4167891189893347,
+        "avg_total_sec": 8.374612203077076,
+        "p50_total_sec": 7.456421303097159,
         "p95_total_sec": 16.262434255797416,
-        "avg_storage_bytes": 1288125.9846153846,
+        "avg_storage_bytes": 1312019.7826086956,
         "p95_storage_bytes": 2268517.0,
         "categories": {
           "temporal-reasoning": {
@@ -5457,20 +5515,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.2,
-            "token_f1": 0.4222222222222222,
-            "avg_total_sec": 12.244175670668483,
+            "exact_match": 0.1111111111111111,
+            "token_f1": 0.24223073648361007,
+            "avg_total_sec": 11.97482947849979,
             "p50_total_sec": 12.03451415989548,
             "p95_total_sec": 16.771190017927438,
-            "avg_storage_bytes": 1784375.4,
+            "avg_storage_bytes": 1747005.888888889,
             "p95_storage_bytes": 2407781.0,
             "categories": {},
             "sample_errors": [],
@@ -5535,6 +5593,55 @@
                 "retrieved_doc_ids": [
                   "answer_86c505e7_2",
                   "answer_86c505e7_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::3a704032",
+                "category": "multi-session",
+                "query": "How many plants did I acquire in the last month?",
+                "gold": "3",
+                "prediction": "1 months",
+                "retrieved_doc_ids": [
+                  "answer_c2204106_1",
+                  "answer_c2204106_2",
+                  "answer_c2204106_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_d84a3211",
+                "category": "multi-session",
+                "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+                "gold": "$185",
+                "prediction": "you have any tips on how to stay motivated to keep riding and reach my goal",
+                "retrieved_doc_ids": [
+                  "answer_2880eb6c_1",
+                  "answer_2880eb6c_3",
+                  "answer_2880eb6c_4",
+                  "answer_2880eb6c_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::aae3761f",
+                "category": "multi-session",
+                "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+                "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+                "prediction": "4",
+                "retrieved_doc_ids": [
+                  "answer_526354c8_2",
+                  "answer_526354c8_1",
+                  "answer_526354c8_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_f2262a51",
+                "category": "multi-session",
+                "query": "How many different doctors did I visit?",
+                "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+                "prediction": "user: I was thinking, could you help me find some information on how to manage chronic sinusitis?",
+                "retrieved_doc_ids": [
+                  "answer_55a6940c_2",
+                  "answer_55a6940c_3",
+                  "answer_55a6940c_1"
                 ]
               }
             ]
@@ -5774,19 +5881,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2051,
-      "rows_successful": 2051,
+      "rows_recorded": 2056,
+      "rows_successful": 2056,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7040468064358849,
-      "doc_recall_all": 0.5919063871282302,
-      "ndcg_at_10": 0.46952678064538056,
-      "exact_match": 0.04388103364212579,
-      "token_f1": 0.0925898436585403,
-      "avg_total_sec": 6.654361870926535,
-      "p50_total_sec": 6.357681245077401,
-      "p95_total_sec": 6.717336832080036,
-      "avg_storage_bytes": 20708679.18917601,
+      "doc_recall_any": 0.7047665369649806,
+      "doc_recall_all": 0.5919260700389105,
+      "ndcg_at_10": 0.4706209436791795,
+      "exact_match": 0.04377431906614786,
+      "token_f1": 0.09243950170112465,
+      "avg_total_sec": 6.679345866250769,
+      "p50_total_sec": 6.357882658019662,
+      "p95_total_sec": 6.7403459078632295,
+      "avg_storage_bytes": 20676370.663910504,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -7923,20 +8030,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.8,
-          "ndcg_at_10": 0.9530721273977243,
-          "exact_match": 0.2,
-          "token_f1": 0.4222222222222222,
-          "avg_total_sec": 17.8259730855003,
-          "p50_total_sec": 18.79056058684364,
+          "doc_recall_all": 0.7,
+          "ndcg_at_10": 0.9362593737706126,
+          "exact_match": 0.1,
+          "token_f1": 0.2264957264957265,
+          "avg_total_sec": 17.376876916876064,
+          "p50_total_sec": 17.045036717318,
           "p95_total_sec": 20.611448406707495,
-          "avg_storage_bytes": 7855222.2,
+          "avg_storage_bytes": 7639317.9,
           "p95_storage_bytes": 9342205.0,
           "categories": {},
           "sample_errors": [],
@@ -8000,6 +8107,64 @@
               "retrieved_doc_ids": [
                 "answer_86c505e7_2",
                 "answer_86c505e7_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::3a704032",
+              "category": "multi-session",
+              "query": "How many plants did I acquire in the last month?",
+              "gold": "3",
+              "prediction": "2 months",
+              "retrieved_doc_ids": [
+                "answer_c2204106_2",
+                "answer_c2204106_1",
+                "answer_c2204106_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_d84a3211",
+              "category": "multi-session",
+              "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+              "gold": "$185",
+              "prediction": "you think I should consider getting some kind of bike insurance to protect my investment, especially since I'll be taking it on longer trips",
+              "retrieved_doc_ids": [
+                "answer_2880eb6c_2",
+                "answer_2880eb6c_4",
+                "answer_2880eb6c_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::aae3761f",
+              "category": "multi-session",
+              "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+              "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+              "prediction": "4",
+              "retrieved_doc_ids": [
+                "answer_526354c8_2",
+                "answer_526354c8_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_f2262a51",
+              "category": "multi-session",
+              "query": "How many different doctors did I visit?",
+              "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+              "prediction": "3",
+              "retrieved_doc_ids": [
+                "answer_55a6940c_2",
+                "answer_55a6940c_3",
+                "answer_55a6940c_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::dd2973ad",
+              "category": "multi-session",
+              "query": "What time did I go to bed on the day before I had a doctor's appointment?",
+              "gold": "2 AM",
+              "prediction": "pretty exhausted after my doctor's appointment, so I spent the rest of the day researching healthy recipes and making a meal plan for the week",
+              "retrieved_doc_ids": [
+                "answer_f9de4602_2",
+                "answer_f9de4602_1"
               ]
             }
           ]
@@ -8386,19 +8551,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2051,
-      "rows_successful": 2051,
+      "rows_recorded": 2055,
+      "rows_successful": 2055,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6899073622623111,
-      "doc_recall_all": 0.5821550463188688,
-      "ndcg_at_10": 0.4070223847261992,
-      "exact_match": 0.040468064358849344,
-      "token_f1": 0.08220583428420355,
-      "avg_total_sec": 0.3194170161870116,
-      "p50_total_sec": 0.0630872962065041,
-      "p95_total_sec": 0.09569810284301639,
-      "avg_storage_bytes": 13234188.910287665,
+      "doc_recall_any": 0.6905109489051094,
+      "doc_recall_all": 0.5829683698296837,
+      "ndcg_at_10": 0.4081765990624986,
+      "exact_match": 0.040389294403892946,
+      "token_f1": 0.08207938279033718,
+      "avg_total_sec": 0.34144860688696665,
+      "p50_total_sec": 0.06312483781948686,
+      "p95_total_sec": 0.09636996500194073,
+      "avg_storage_bytes": 13211738.506569343,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -10548,20 +10713,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.2,
-          "token_f1": 0.4222222222222222,
-          "avg_total_sec": 12.244175670668483,
+          "exact_match": 0.1111111111111111,
+          "token_f1": 0.24223073648361007,
+          "avg_total_sec": 11.97482947849979,
           "p50_total_sec": 12.03451415989548,
           "p95_total_sec": 16.771190017927438,
-          "avg_storage_bytes": 1784375.4,
+          "avg_storage_bytes": 1747005.888888889,
           "p95_storage_bytes": 2407781.0,
           "categories": {},
           "sample_errors": [],
@@ -10626,6 +10791,55 @@
               "retrieved_doc_ids": [
                 "answer_86c505e7_2",
                 "answer_86c505e7_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::3a704032",
+              "category": "multi-session",
+              "query": "How many plants did I acquire in the last month?",
+              "gold": "3",
+              "prediction": "1 months",
+              "retrieved_doc_ids": [
+                "answer_c2204106_1",
+                "answer_c2204106_2",
+                "answer_c2204106_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_d84a3211",
+              "category": "multi-session",
+              "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+              "gold": "$185",
+              "prediction": "you have any tips on how to stay motivated to keep riding and reach my goal",
+              "retrieved_doc_ids": [
+                "answer_2880eb6c_1",
+                "answer_2880eb6c_3",
+                "answer_2880eb6c_4",
+                "answer_2880eb6c_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::aae3761f",
+              "category": "multi-session",
+              "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+              "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+              "prediction": "4",
+              "retrieved_doc_ids": [
+                "answer_526354c8_2",
+                "answer_526354c8_1",
+                "answer_526354c8_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_f2262a51",
+              "category": "multi-session",
+              "query": "How many different doctors did I visit?",
+              "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+              "prediction": "user: I was thinking, could you help me find some information on how to manage chronic sinusitis?",
+              "retrieved_doc_ids": [
+                "answer_55a6940c_2",
+                "answer_55a6940c_3",
+                "answer_55a6940c_1"
               ]
             }
           ]
@@ -11013,11 +11227,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.014139444173573823,
-    "doc_recall_all_delta": -0.009751340809361353,
-    "ndcg_at_10_delta": -0.06250439591918133,
-    "token_f1_delta": -0.010384009374336742,
-    "avg_storage_ratio_nova_over_stock": 0.6390648476125361,
-    "avg_latency_ratio_nova_over_stock": 0.04800114907825668
+    "doc_recall_any_delta": -0.01425558805987115,
+    "doc_recall_all_delta": -0.008957700209226815,
+    "ndcg_at_10_delta": -0.062444344616680914,
+    "token_f1_delta": -0.010360118910787475,
+    "avg_storage_ratio_nova_over_stock": 0.6389776388382186,
+    "avg_latency_ratio_nova_over_stock": 0.05112006680358171
   }
 }
