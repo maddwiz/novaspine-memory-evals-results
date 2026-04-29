@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:45:51Z",
+  "generated_at": "2026-04-29T02:46:24Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,45 +117,45 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:45:51Z",
+    "updated_at": "2026-04-29T02:46:24Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 10,
+    "current_case_index": 15,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0009"
+    "current_case_id": "locomo::conv-26::0014"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 10,
-        "rows_successful": 10,
+        "rows_recorded": 15,
+        "rows_successful": 15,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.5,
-        "doc_recall_all": 0.3,
-        "ndcg_at_10": 0.35,
-        "exact_match": 0.2,
-        "token_f1": 0.3,
-        "avg_total_sec": 6.379982551978901,
-        "p50_total_sec": 6.383192888926715,
-        "p95_total_sec": 6.469191602896899,
+        "doc_recall_any": 0.5333333333333333,
+        "doc_recall_all": 0.26666666666666666,
+        "ndcg_at_10": 0.35158037429793887,
+        "exact_match": 0.13333333333333333,
+        "token_f1": 0.21403508771929827,
+        "avg_total_sec": 6.368350002604227,
+        "p50_total_sec": 6.363303407095373,
+        "p95_total_sec": 6.415752103086561,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
         "categories": {
           "category_2": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 0.5,
             "doc_recall_all": 0.5,
-            "ndcg_at_10": 0.4166666666666667,
-            "exact_match": 0.3333333333333333,
-            "token_f1": 0.5,
-            "avg_total_sec": 6.367596882550667,
-            "p50_total_sec": 6.363303407095373,
+            "ndcg_at_10": 0.4375,
+            "exact_match": 0.25,
+            "token_f1": 0.375,
+            "avg_total_sec": 6.365381428913679,
+            "p50_total_sec": 6.373975900001824,
             "p95_total_sec": 6.415752103086561,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
@@ -212,6 +212,23 @@
                   "conv-26:D4:15",
                   "conv-26:D6:11"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0012",
+                "category": "category_2",
+                "query": "How long ago was Caroline's 18th birthday?",
+                "gold": "10 years ago",
+                "prediction": "Since I was 17 or so",
+                "expected_doc_ids": [
+                  "conv-26:D4:5"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D11:1",
+                  "conv-26:D16:7",
+                  "conv-26:D17:5",
+                  "conv-26:D10:20",
+                  "conv-26:D18:12"
+                ]
               }
             ],
             "sample_successes": [
@@ -256,22 +273,36 @@
                   "conv-26:D3:7",
                   "conv-26:D11:2"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0010",
+                "category": "category_2",
+                "query": "How long has Caroline had her current group of friends for?",
+                "gold": "4 years",
+                "prediction": "Yeah, I'm really lucky to have them",
+                "retrieved_doc_ids": [
+                  "conv-26:D3:13",
+                  "conv-26:D16:15",
+                  "conv-26:D12:14",
+                  "conv-26:D17:5",
+                  "conv-26:D8:23"
+                ]
               }
             ]
           },
           "category_3": {
-            "expected_total": 1,
-            "rows_recorded": 1,
-            "rows_successful": 1,
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 0.0,
-            "ndcg_at_10": 0.6131471927654584,
+            "ndcg_at_10": 0.5,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 6.393631457816809,
-            "p50_total_sec": 6.393631457816809,
+            "avg_total_sec": 6.3721347854007035,
+            "p50_total_sec": 6.350638112984598,
             "p95_total_sec": 6.393631457816809,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
@@ -292,22 +323,36 @@
                   "conv-26:D13:11",
                   "conv-26:D7:7"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0014",
+                "category": "category_3",
+                "query": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+                "gold": "Likely no",
+                "prediction": "I struggled with mental health, and support I got was really helpful",
+                "retrieved_doc_ids": [
+                  "conv-26:D7:7",
+                  "conv-26:D4:15",
+                  "conv-26:D4:11",
+                  "conv-26:D4:14",
+                  "conv-26:D6:3"
+                ]
               }
             ]
           },
           "category_1": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.3333333333333333,
+            "doc_recall_any": 0.4,
             "doc_recall_all": 0.0,
-            "ndcg_at_10": 0.1289509357448472,
+            "ndcg_at_10": 0.15474112289381664,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 6.4002042555560665,
-            "p50_total_sec": 6.383192888926715,
+            "token_f1": 0.04210526315789474,
+            "avg_total_sec": 6.371585807390511,
+            "p50_total_sec": 6.354877830948681,
             "p95_total_sec": 6.469191602896899,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
@@ -347,6 +392,24 @@
                   "conv-26:D11:8",
                   "conv-26:D16:13"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0013",
+                "category": "category_1",
+                "query": "What career path has Caroline decided to persue?",
+                "gold": "counseling or mental health for Transgender people",
+                "prediction": "I struggled with mental health, and support I got was really helpful",
+                "expected_doc_ids": [
+                  "conv-26:D4:13",
+                  "conv-26:D1:11"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:7",
+                  "conv-26:D4:11",
+                  "conv-26:D11:14",
+                  "conv-26:D6:3",
+                  "conv-26:D13:11"
+                ]
               }
             ],
             "sample_successes": [
@@ -362,6 +425,20 @@
                   "conv-26:D17:5",
                   "conv-26:D8:16",
                   "conv-26:D4:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0011",
+                "category": "category_1",
+                "query": "Where did Caroline move from 4 years ago?",
+                "gold": "Sweden",
+                "prediction": "That's awesome, Melanie!",
+                "retrieved_doc_ids": [
+                  "conv-26:D8:29",
+                  "conv-26:D3:13",
+                  "conv-26:D11:14",
+                  "conv-26:D16:15",
+                  "conv-26:D4:15"
                 ]
               }
             ]
@@ -453,6 +530,41 @@
               "conv-26:D4:15",
               "conv-26:D6:11"
             ]
+          },
+          {
+            "case_id": "locomo::conv-26::0012",
+            "category": "category_2",
+            "query": "How long ago was Caroline's 18th birthday?",
+            "gold": "10 years ago",
+            "prediction": "Since I was 17 or so",
+            "expected_doc_ids": [
+              "conv-26:D4:5"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D11:1",
+              "conv-26:D16:7",
+              "conv-26:D17:5",
+              "conv-26:D10:20",
+              "conv-26:D18:12"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0013",
+            "category": "category_1",
+            "query": "What career path has Caroline decided to persue?",
+            "gold": "counseling or mental health for Transgender people",
+            "prediction": "I struggled with mental health, and support I got was really helpful",
+            "expected_doc_ids": [
+              "conv-26:D4:13",
+              "conv-26:D1:11"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D7:7",
+              "conv-26:D4:11",
+              "conv-26:D11:14",
+              "conv-26:D6:3",
+              "conv-26:D13:11"
+            ]
           }
         ],
         "sample_successes": [
@@ -524,6 +636,48 @@
               "conv-26:D15:5",
               "conv-26:D3:7",
               "conv-26:D11:2"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0010",
+            "category": "category_2",
+            "query": "How long has Caroline had her current group of friends for?",
+            "gold": "4 years",
+            "prediction": "Yeah, I'm really lucky to have them",
+            "retrieved_doc_ids": [
+              "conv-26:D3:13",
+              "conv-26:D16:15",
+              "conv-26:D12:14",
+              "conv-26:D17:5",
+              "conv-26:D8:23"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0011",
+            "category": "category_1",
+            "query": "Where did Caroline move from 4 years ago?",
+            "gold": "Sweden",
+            "prediction": "That's awesome, Melanie!",
+            "retrieved_doc_ids": [
+              "conv-26:D8:29",
+              "conv-26:D3:13",
+              "conv-26:D11:14",
+              "conv-26:D16:15",
+              "conv-26:D4:15"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0014",
+            "category": "category_3",
+            "query": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+            "gold": "Likely no",
+            "prediction": "I struggled with mental health, and support I got was really helpful",
+            "retrieved_doc_ids": [
+              "conv-26:D7:7",
+              "conv-26:D4:15",
+              "conv-26:D4:11",
+              "conv-26:D4:14",
+              "conv-26:D6:3"
             ]
           }
         ]
@@ -686,34 +840,34 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 10,
-      "rows_successful": 10,
+      "rows_recorded": 15,
+      "rows_successful": 15,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.5,
-      "doc_recall_all": 0.3,
-      "ndcg_at_10": 0.35,
-      "exact_match": 0.2,
-      "token_f1": 0.3,
-      "avg_total_sec": 6.379982551978901,
-      "p50_total_sec": 6.383192888926715,
-      "p95_total_sec": 6.469191602896899,
+      "doc_recall_any": 0.5333333333333333,
+      "doc_recall_all": 0.26666666666666666,
+      "ndcg_at_10": 0.35158037429793887,
+      "exact_match": 0.13333333333333333,
+      "token_f1": 0.21403508771929827,
+      "avg_total_sec": 6.368350002604227,
+      "p50_total_sec": 6.363303407095373,
+      "p95_total_sec": 6.415752103086561,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
       "categories": {
         "category_2": {
-          "expected_total": 6,
-          "rows_recorded": 6,
-          "rows_successful": 6,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 0.5,
           "doc_recall_all": 0.5,
-          "ndcg_at_10": 0.4166666666666667,
-          "exact_match": 0.3333333333333333,
-          "token_f1": 0.5,
-          "avg_total_sec": 6.367596882550667,
-          "p50_total_sec": 6.363303407095373,
+          "ndcg_at_10": 0.4375,
+          "exact_match": 0.25,
+          "token_f1": 0.375,
+          "avg_total_sec": 6.365381428913679,
+          "p50_total_sec": 6.373975900001824,
           "p95_total_sec": 6.415752103086561,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
@@ -770,6 +924,23 @@
                 "conv-26:D4:15",
                 "conv-26:D6:11"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0012",
+              "category": "category_2",
+              "query": "How long ago was Caroline's 18th birthday?",
+              "gold": "10 years ago",
+              "prediction": "Since I was 17 or so",
+              "expected_doc_ids": [
+                "conv-26:D4:5"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D11:1",
+                "conv-26:D16:7",
+                "conv-26:D17:5",
+                "conv-26:D10:20",
+                "conv-26:D18:12"
+              ]
             }
           ],
           "sample_successes": [
@@ -814,22 +985,36 @@
                 "conv-26:D3:7",
                 "conv-26:D11:2"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0010",
+              "category": "category_2",
+              "query": "How long has Caroline had her current group of friends for?",
+              "gold": "4 years",
+              "prediction": "Yeah, I'm really lucky to have them",
+              "retrieved_doc_ids": [
+                "conv-26:D3:13",
+                "conv-26:D16:15",
+                "conv-26:D12:14",
+                "conv-26:D17:5",
+                "conv-26:D8:23"
+              ]
             }
           ]
         },
         "category_3": {
-          "expected_total": 1,
-          "rows_recorded": 1,
-          "rows_successful": 1,
+          "expected_total": 2,
+          "rows_recorded": 2,
+          "rows_successful": 2,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 0.0,
-          "ndcg_at_10": 0.6131471927654584,
+          "ndcg_at_10": 0.5,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 6.393631457816809,
-          "p50_total_sec": 6.393631457816809,
+          "avg_total_sec": 6.3721347854007035,
+          "p50_total_sec": 6.350638112984598,
           "p95_total_sec": 6.393631457816809,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
@@ -850,22 +1035,36 @@
                 "conv-26:D13:11",
                 "conv-26:D7:7"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0014",
+              "category": "category_3",
+              "query": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+              "gold": "Likely no",
+              "prediction": "I struggled with mental health, and support I got was really helpful",
+              "retrieved_doc_ids": [
+                "conv-26:D7:7",
+                "conv-26:D4:15",
+                "conv-26:D4:11",
+                "conv-26:D4:14",
+                "conv-26:D6:3"
+              ]
             }
           ]
         },
         "category_1": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.3333333333333333,
+          "doc_recall_any": 0.4,
           "doc_recall_all": 0.0,
-          "ndcg_at_10": 0.1289509357448472,
+          "ndcg_at_10": 0.15474112289381664,
           "exact_match": 0.0,
-          "token_f1": 0.0,
-          "avg_total_sec": 6.4002042555560665,
-          "p50_total_sec": 6.383192888926715,
+          "token_f1": 0.04210526315789474,
+          "avg_total_sec": 6.371585807390511,
+          "p50_total_sec": 6.354877830948681,
           "p95_total_sec": 6.469191602896899,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
@@ -905,6 +1104,24 @@
                 "conv-26:D11:8",
                 "conv-26:D16:13"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0013",
+              "category": "category_1",
+              "query": "What career path has Caroline decided to persue?",
+              "gold": "counseling or mental health for Transgender people",
+              "prediction": "I struggled with mental health, and support I got was really helpful",
+              "expected_doc_ids": [
+                "conv-26:D4:13",
+                "conv-26:D1:11"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:7",
+                "conv-26:D4:11",
+                "conv-26:D11:14",
+                "conv-26:D6:3",
+                "conv-26:D13:11"
+              ]
             }
           ],
           "sample_successes": [
@@ -920,6 +1137,20 @@
                 "conv-26:D17:5",
                 "conv-26:D8:16",
                 "conv-26:D4:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0011",
+              "category": "category_1",
+              "query": "Where did Caroline move from 4 years ago?",
+              "gold": "Sweden",
+              "prediction": "That's awesome, Melanie!",
+              "retrieved_doc_ids": [
+                "conv-26:D8:29",
+                "conv-26:D3:13",
+                "conv-26:D11:14",
+                "conv-26:D16:15",
+                "conv-26:D4:15"
               ]
             }
           ]
@@ -1011,6 +1242,41 @@
             "conv-26:D4:15",
             "conv-26:D6:11"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0012",
+          "category": "category_2",
+          "query": "How long ago was Caroline's 18th birthday?",
+          "gold": "10 years ago",
+          "prediction": "Since I was 17 or so",
+          "expected_doc_ids": [
+            "conv-26:D4:5"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D11:1",
+            "conv-26:D16:7",
+            "conv-26:D17:5",
+            "conv-26:D10:20",
+            "conv-26:D18:12"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0013",
+          "category": "category_1",
+          "query": "What career path has Caroline decided to persue?",
+          "gold": "counseling or mental health for Transgender people",
+          "prediction": "I struggled with mental health, and support I got was really helpful",
+          "expected_doc_ids": [
+            "conv-26:D4:13",
+            "conv-26:D1:11"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D7:7",
+            "conv-26:D4:11",
+            "conv-26:D11:14",
+            "conv-26:D6:3",
+            "conv-26:D13:11"
+          ]
         }
       ],
       "sample_successes": [
@@ -1083,6 +1349,48 @@
             "conv-26:D3:7",
             "conv-26:D11:2"
           ]
+        },
+        {
+          "case_id": "locomo::conv-26::0010",
+          "category": "category_2",
+          "query": "How long has Caroline had her current group of friends for?",
+          "gold": "4 years",
+          "prediction": "Yeah, I'm really lucky to have them",
+          "retrieved_doc_ids": [
+            "conv-26:D3:13",
+            "conv-26:D16:15",
+            "conv-26:D12:14",
+            "conv-26:D17:5",
+            "conv-26:D8:23"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0011",
+          "category": "category_1",
+          "query": "Where did Caroline move from 4 years ago?",
+          "gold": "Sweden",
+          "prediction": "That's awesome, Melanie!",
+          "retrieved_doc_ids": [
+            "conv-26:D8:29",
+            "conv-26:D3:13",
+            "conv-26:D11:14",
+            "conv-26:D16:15",
+            "conv-26:D4:15"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0014",
+          "category": "category_3",
+          "query": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+          "gold": "Likely no",
+          "prediction": "I struggled with mental health, and support I got was really helpful",
+          "retrieved_doc_ids": [
+            "conv-26:D7:7",
+            "conv-26:D4:15",
+            "conv-26:D4:11",
+            "conv-26:D4:14",
+            "conv-26:D6:3"
+          ]
         }
       ]
     },
@@ -1109,10 +1417,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.5,
-    "doc_recall_all_delta": -0.3,
-    "ndcg_at_10_delta": -0.35,
-    "token_f1_delta": -0.3,
+    "doc_recall_any_delta": -0.5333333333333333,
+    "doc_recall_all_delta": -0.26666666666666666,
+    "ndcg_at_10_delta": -0.35158037429793887,
+    "token_f1_delta": -0.21403508771929827,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
