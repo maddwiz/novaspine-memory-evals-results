@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:20:51Z",
+  "generated_at": "2026-04-29T08:22:25Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:20:48Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T08:22:11Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 210,
+    "current_case_index": 215,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::54026fce"
+    "current_case_id": "longmemeval_oracle::38146c39"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,20 +4892,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 210,
-        "rows_successful": 210,
+        "rows_recorded": 215,
+        "rows_successful": 215,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9952380952380953,
-        "doc_recall_all": 0.8,
-        "ndcg_at_10": 0.933438213453404,
-        "exact_match": 0.19523809523809524,
-        "token_f1": 0.2351953021717627,
-        "avg_total_sec": 15.54470856091052,
-        "p50_total_sec": 14.870425862725824,
-        "p95_total_sec": 19.390542021021247,
-        "avg_storage_bytes": 6827650.547619048,
-        "p95_storage_bytes": 9002235.0,
+        "doc_recall_any": 0.9953488372093023,
+        "doc_recall_all": 0.8046511627906977,
+        "ndcg_at_10": 0.9349861619777435,
+        "exact_match": 0.19069767441860466,
+        "token_f1": 0.23237554015568662,
+        "avg_total_sec": 15.50385549024917,
+        "p50_total_sec": 14.861414323095232,
+        "p95_total_sec": 19.072029653936625,
+        "avg_storage_bytes": 6804318.28372093,
+        "p95_storage_bytes": 8666902.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5391,20 +5391,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.18259860954964408,
-            "avg_total_sec": 13.607501983363182,
-            "p50_total_sec": 13.583419607952237,
+            "token_f1": 0.1597142515265935,
+            "avg_total_sec": 13.667676829732955,
+            "p50_total_sec": 13.637726556044072,
             "p95_total_sec": 14.269348608795553,
-            "avg_storage_bytes": 5726404.6,
+            "avg_storage_bytes": 5759057.466666667,
             "p95_storage_bytes": 6217694.0,
             "categories": {},
             "sample_errors": [],
@@ -5508,6 +5508,26 @@
                 "prediction": "we think we can stay connected and build our team",
                 "retrieved_doc_ids": [
                   "answer_f7b22c66"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::06f04340",
+                "category": "single-session-preference",
+                "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+                "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+                "prediction": "**Minty Yogurt Sauce**: Mix mint leaves with yogurt, cucumber, garlic, and dill for a refreshing sauce to serve with grilled meats or as a dip.",
+                "retrieved_doc_ids": [
+                  "answer_92d5f7cd"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6b7dfb22",
+                "category": "single-session-preference",
+                "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+                "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+                "prediction": "you have any suggestions for how to stay motivated and focused while working on a project",
+                "retrieved_doc_ids": [
+                  "answer_f6502d0f"
                 ]
               }
             ]
@@ -5665,20 +5685,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 210,
-        "rows_successful": 210,
+        "rows_recorded": 214,
+        "rows_successful": 214,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9952380952380953,
-        "ndcg_at_10": 0.999486718311788,
-        "exact_match": 0.23333333333333334,
-        "token_f1": 0.27689530838751014,
-        "avg_total_sec": 8.454963791093213,
-        "p50_total_sec": 7.434377897065133,
-        "p95_total_sec": 15.293608488049358,
-        "avg_storage_bytes": 1323100.3523809523,
-        "p95_storage_bytes": 2190621.0,
+        "doc_recall_all": 0.9953271028037384,
+        "ndcg_at_10": 0.999496312362035,
+        "exact_match": 0.22897196261682243,
+        "token_f1": 0.27483023029109727,
+        "avg_total_sec": 8.404274478659174,
+        "p50_total_sec": 7.3841510261408985,
+        "p95_total_sec": 15.132123879622668,
+        "avg_storage_bytes": 1316536.4392523365,
+        "p95_storage_bytes": 2125157.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -6161,20 +6181,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.07960710710710711,
-            "avg_total_sec": 4.973557952418924,
-            "p50_total_sec": 4.694265795871615,
+            "token_f1": 0.10440897085633927,
+            "avg_total_sec": 5.193422987691259,
+            "p50_total_sec": 5.074453168082982,
             "p95_total_sec": 6.172568239737302,
-            "avg_storage_bytes": 894825.4,
+            "avg_storage_bytes": 916855.5714285715,
             "p95_storage_bytes": 1066265.0,
             "categories": {},
             "sample_errors": [],
@@ -6278,6 +6298,26 @@
                 "prediction": "you have any ideas",
                 "retrieved_doc_ids": [
                   "answer_f7b22c66"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::06f04340",
+                "category": "single-session-preference",
+                "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+                "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+                "prediction": "you have any suggestions for companion plants that could help my cherry tomatoes grow better",
+                "retrieved_doc_ids": [
+                  "answer_92d5f7cd"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6b7dfb22",
+                "category": "single-session-preference",
+                "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+                "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+                "prediction": "you have any suggestions for how to stay motivated and focused while working on a project",
+                "retrieved_doc_ids": [
+                  "answer_f6502d0f"
                 ]
               }
             ]
@@ -6517,19 +6557,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2196,
-      "rows_successful": 2196,
+      "rows_recorded": 2201,
+      "rows_successful": 2201,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7231329690346083,
-      "doc_recall_all": 0.605191256830601,
-      "ndcg_at_10": 0.5002415930717774,
-      "exact_match": 0.050546448087431695,
-      "token_f1": 0.09816621104123603,
-      "avg_total_sec": 7.246748856538126,
-      "p50_total_sec": 6.36257804883644,
-      "p95_total_sec": 14.844156510662287,
-      "avg_storage_bytes": 19794852.059198543,
+      "doc_recall_any": 0.7237619263970922,
+      "doc_recall_all": 0.6060881417537483,
+      "ndcg_at_10": 0.5013768915881978,
+      "exact_match": 0.050431621990004546,
+      "token_f1": 0.09820205684868549,
+      "avg_total_sec": 7.261608642239931,
+      "p50_total_sec": 6.362917495891452,
+      "p95_total_sec": 14.85345368925482,
+      "avg_storage_bytes": 19763115.373920944,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -8995,20 +9035,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 15,
+          "rows_recorded": 15,
+          "rows_successful": 15,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.18259860954964408,
-          "avg_total_sec": 13.607501983363182,
-          "p50_total_sec": 13.583419607952237,
+          "token_f1": 0.1597142515265935,
+          "avg_total_sec": 13.667676829732955,
+          "p50_total_sec": 13.637726556044072,
           "p95_total_sec": 14.269348608795553,
-          "avg_storage_bytes": 5726404.6,
+          "avg_storage_bytes": 5759057.466666667,
           "p95_storage_bytes": 6217694.0,
           "categories": {},
           "sample_errors": [],
@@ -9112,6 +9152,26 @@
               "prediction": "we think we can stay connected and build our team",
               "retrieved_doc_ids": [
                 "answer_f7b22c66"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::06f04340",
+              "category": "single-session-preference",
+              "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+              "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+              "prediction": "**Minty Yogurt Sauce**: Mix mint leaves with yogurt, cucumber, garlic, and dill for a refreshing sauce to serve with grilled meats or as a dip.",
+              "retrieved_doc_ids": [
+                "answer_92d5f7cd"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6b7dfb22",
+              "category": "single-session-preference",
+              "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+              "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+              "prediction": "you have any suggestions for how to stay motivated and focused while working on a project",
+              "retrieved_doc_ids": [
+                "answer_f6502d0f"
               ]
             }
           ]
@@ -9498,19 +9558,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2196,
-      "rows_successful": 2196,
+      "rows_recorded": 2200,
+      "rows_successful": 2200,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7103825136612022,
-      "doc_recall_all": 0.6097449908925319,
-      "ndcg_at_10": 0.4461761890134038,
-      "exact_match": 0.048724954462659384,
-      "token_f1": 0.09019248505703822,
-      "avg_total_sec": 0.8649230606876015,
-      "p50_total_sec": 0.0643933080136776,
+      "doc_recall_any": 0.7109090909090909,
+      "doc_recall_all": 0.6104545454545455,
+      "ndcg_at_10": 0.44718314139701576,
+      "exact_match": 0.04863636363636364,
+      "token_f1": 0.09033106895735164,
+      "avg_total_sec": 0.8737924470788461,
+      "p50_total_sec": 0.06440568482503295,
       "p95_total_sec": 7.365171446930617,
-      "avg_storage_bytes": 12448745.14571949,
+      "avg_storage_bytes": 12427878.210909091,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -11982,20 +12042,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 14,
+          "rows_recorded": 14,
+          "rows_successful": 14,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.07960710710710711,
-          "avg_total_sec": 4.973557952418924,
-          "p50_total_sec": 4.694265795871615,
+          "token_f1": 0.10440897085633927,
+          "avg_total_sec": 5.193422987691259,
+          "p50_total_sec": 5.074453168082982,
           "p95_total_sec": 6.172568239737302,
-          "avg_storage_bytes": 894825.4,
+          "avg_storage_bytes": 916855.5714285715,
           "p95_storage_bytes": 1066265.0,
           "categories": {},
           "sample_errors": [],
@@ -12099,6 +12159,26 @@
               "prediction": "you have any ideas",
               "retrieved_doc_ids": [
                 "answer_f7b22c66"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::06f04340",
+              "category": "single-session-preference",
+              "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+              "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+              "prediction": "you have any suggestions for companion plants that could help my cherry tomatoes grow better",
+              "retrieved_doc_ids": [
+                "answer_92d5f7cd"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6b7dfb22",
+              "category": "single-session-preference",
+              "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+              "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+              "prediction": "you have any suggestions for how to stay motivated and focused while working on a project",
+              "retrieved_doc_ids": [
+                "answer_f6502d0f"
               ]
             }
           ]
@@ -12486,11 +12566,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.012750455373406133,
-    "doc_recall_all_delta": 0.004553734061930825,
-    "ndcg_at_10_delta": -0.05406540405837362,
-    "token_f1_delta": -0.007973725984197808,
-    "avg_storage_ratio_nova_over_stock": 0.6288880113117408,
-    "avg_latency_ratio_nova_over_stock": 0.11935325451595509
+    "doc_recall_any_delta": -0.012852835488001313,
+    "doc_recall_all_delta": 0.004366403700797217,
+    "ndcg_at_10_delta": -0.054193750191182,
+    "token_f1_delta": -0.00787098789133385,
+    "avg_storage_ratio_nova_over_stock": 0.628842061374023,
+    "avg_latency_ratio_nova_over_stock": 0.12033042403250668
   }
 }
