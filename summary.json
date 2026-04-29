@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T07:23:13Z",
+  "generated_at": "2026-04-29T07:23:21Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T07:22:59Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T07:23:15Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 70,
     "current_case_total": 500,
@@ -5341,19 +5341,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 69,
-        "rows_successful": 69,
+        "rows_recorded": 70,
+        "rows_successful": 70,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9855072463768116,
-        "ndcg_at_10": 0.9984378383402245,
-        "exact_match": 0.36231884057971014,
-        "token_f1": 0.4167891189893347,
-        "avg_total_sec": 8.374612203077076,
-        "p50_total_sec": 7.456421303097159,
+        "doc_recall_all": 0.9857142857142858,
+        "ndcg_at_10": 0.9984601549353641,
+        "exact_match": 0.35714285714285715,
+        "token_f1": 0.41343239131546106,
+        "avg_total_sec": 8.349272883364133,
+        "p50_total_sec": 7.452576347626746,
         "p95_total_sec": 16.262434255797416,
-        "avg_storage_bytes": 1312019.7826086956,
+        "avg_storage_bytes": 1308862.657142857,
         "p95_storage_bytes": 2268517.0,
         "categories": {
           "temporal-reasoning": {
@@ -5515,20 +5515,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1111111111111111,
-            "token_f1": 0.24223073648361007,
-            "avg_total_sec": 11.97482947849979,
-            "p50_total_sec": 12.03451415989548,
+            "exact_match": 0.1,
+            "token_f1": 0.23618948101706722,
+            "avg_total_sec": 11.437432512966916,
+            "p50_total_sec": 10.555995222646743,
             "p95_total_sec": 16.771190017927438,
-            "avg_storage_bytes": 1747005.888888889,
+            "avg_storage_bytes": 1681407.4,
             "p95_storage_bytes": 2407781.0,
             "categories": {},
             "sample_errors": [],
@@ -5642,6 +5642,17 @@
                   "answer_55a6940c_2",
                   "answer_55a6940c_3",
                   "answer_55a6940c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::dd2973ad",
+                "category": "multi-session",
+                "query": "What time did I go to bed on the day before I had a doctor's appointment?",
+                "gold": "2 AM",
+                "prediction": "s appointment at 10 AM last Thursday, and that",
+                "retrieved_doc_ids": [
+                  "answer_f9de4602_2",
+                  "answer_f9de4602_1"
                 ]
               }
             ]
@@ -8551,19 +8562,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2055,
-      "rows_successful": 2055,
+      "rows_recorded": 2056,
+      "rows_successful": 2056,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6905109489051094,
-      "doc_recall_all": 0.5829683698296837,
-      "ndcg_at_10": 0.4081765990624986,
-      "exact_match": 0.040389294403892946,
-      "token_f1": 0.08207938279033718,
-      "avg_total_sec": 0.34144860688696665,
-      "p50_total_sec": 0.06312483781948686,
-      "p95_total_sec": 0.09636996500194073,
-      "avg_storage_bytes": 13211738.506569343,
+      "doc_recall_any": 0.6906614785992218,
+      "doc_recall_all": 0.583171206225681,
+      "ndcg_at_10": 0.40846445091120365,
+      "exact_match": 0.04036964980544747,
+      "token_f1": 0.08212789387935848,
+      "avg_total_sec": 0.34449306759527604,
+      "p50_total_sec": 0.06313476478680968,
+      "p95_total_sec": 0.0964950080960989,
+      "avg_storage_bytes": 13205843.215953307,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -10713,20 +10724,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 9,
-          "rows_recorded": 9,
-          "rows_successful": 9,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.1111111111111111,
-          "token_f1": 0.24223073648361007,
-          "avg_total_sec": 11.97482947849979,
-          "p50_total_sec": 12.03451415989548,
+          "exact_match": 0.1,
+          "token_f1": 0.23618948101706722,
+          "avg_total_sec": 11.437432512966916,
+          "p50_total_sec": 10.555995222646743,
           "p95_total_sec": 16.771190017927438,
-          "avg_storage_bytes": 1747005.888888889,
+          "avg_storage_bytes": 1681407.4,
           "p95_storage_bytes": 2407781.0,
           "categories": {},
           "sample_errors": [],
@@ -10840,6 +10851,17 @@
                 "answer_55a6940c_2",
                 "answer_55a6940c_3",
                 "answer_55a6940c_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::dd2973ad",
+              "category": "multi-session",
+              "query": "What time did I go to bed on the day before I had a doctor's appointment?",
+              "gold": "2 AM",
+              "prediction": "s appointment at 10 AM last Thursday, and that",
+              "retrieved_doc_ids": [
+                "answer_f9de4602_2",
+                "answer_f9de4602_1"
               ]
             }
           ]
@@ -11227,11 +11249,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.01425558805987115,
-    "doc_recall_all_delta": -0.008957700209226815,
-    "ndcg_at_10_delta": -0.062444344616680914,
-    "token_f1_delta": -0.010360118910787475,
-    "avg_storage_ratio_nova_over_stock": 0.6389776388382186,
-    "avg_latency_ratio_nova_over_stock": 0.05112006680358171
+    "doc_recall_any_delta": -0.014105058365758816,
+    "doc_recall_all_delta": -0.008754863813229541,
+    "ndcg_at_10_delta": -0.06215649276797586,
+    "token_f1_delta": -0.01031160782176617,
+    "avg_storage_ratio_nova_over_stock": 0.6386925167192614,
+    "avg_latency_ratio_nova_over_stock": 0.0515758690287206
   }
 }
