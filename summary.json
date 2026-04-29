@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T14:18:10Z",
+  "generated_at": "2026-04-29T14:18:12Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T14:18:10Z",
+    "updated_at": "2026-04-29T14:18:12Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 500,
+    "current_case_index": 505,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-42::0002"
+    "current_case_id": "locomo::conv-42::0007"
   },
   "benchmarks": {
     "locomo": {
@@ -2504,36 +2504,36 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 500,
-        "rows_successful": 500,
+        "rows_recorded": 505,
+        "rows_successful": 505,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.728,
-        "doc_recall_all": 0.652,
-        "ndcg_at_10": 0.5293373025602197,
-        "exact_match": 0.062,
-        "token_f1": 0.10014915279377026,
-        "avg_total_sec": 0.06349307818897068,
-        "p50_total_sec": 0.06279678177088499,
+        "doc_recall_any": 0.7247524752475247,
+        "doc_recall_all": 0.6495049504950495,
+        "ndcg_at_10": 0.5280567352081383,
+        "exact_match": 0.061386138613861385,
+        "token_f1": 0.10059714955221637,
+        "avg_total_sec": 0.06343689844713057,
+        "p50_total_sec": 0.06269786087796092,
         "p95_total_sec": 0.09215050097554922,
-        "avg_storage_bytes": 12209648.696,
+        "avg_storage_bytes": 12227841.174257426,
         "p95_storage_bytes": 14670881.0,
         "categories": {
           "category_2": {
-            "expected_total": 91,
-            "rows_recorded": 91,
-            "rows_successful": 91,
+            "expected_total": 94,
+            "rows_recorded": 94,
+            "rows_successful": 94,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9010989010989011,
-            "doc_recall_all": 0.8901098901098901,
-            "ndcg_at_10": 0.7395100011625562,
-            "exact_match": 0.3076923076923077,
-            "token_f1": 0.4209314495028781,
-            "avg_total_sec": 0.07597340484262331,
-            "p50_total_sec": 0.07199789537116885,
-            "p95_total_sec": 0.10931909503415227,
-            "avg_storage_bytes": 11820646.274725275,
+            "doc_recall_any": 0.8936170212765957,
+            "doc_recall_all": 0.8829787234042553,
+            "ndcg_at_10": 0.7371852138914108,
+            "exact_match": 0.2978723404255319,
+            "token_f1": 0.41357649442755823,
+            "avg_total_sec": 0.07535372294505384,
+            "p50_total_sec": 0.07010127883404493,
+            "p95_total_sec": 0.10930451983585954,
+            "avg_storage_bytes": 11891702.957446808,
             "p95_storage_bytes": 14670881.0,
             "categories": {},
             "sample_errors": [],
@@ -2689,6 +2689,23 @@
                   "conv-41:D14:15",
                   "conv-41:D20:9",
                   "conv-41:D11:1"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-42::0006",
+                "category": "category_2",
+                "query": "How long has Nate had his first two turtles?",
+                "gold": "three years",
+                "prediction": "It really is, I'm not sure I'll ever understand why watching my turtles slowly walk around makes me so happy",
+                "expected_doc_ids": [
+                  "conv-42:D2:12"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-42:D24:9",
+                  "conv-42:D2:14",
+                  "conv-42:D5:6",
+                  "conv-42:D25:27",
+                  "conv-42:D28:31"
                 ]
               }
             ],
@@ -2864,20 +2881,20 @@
             ]
           },
           "category_3": {
-            "expected_total": 22,
-            "rows_recorded": 22,
-            "rows_successful": 22,
+            "expected_total": 23,
+            "rows_recorded": 23,
+            "rows_successful": 23,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5,
-            "doc_recall_all": 0.18181818181818182,
-            "ndcg_at_10": 0.21438966401870407,
+            "doc_recall_any": 0.4782608695652174,
+            "doc_recall_all": 0.17391304347826086,
+            "ndcg_at_10": 0.2050683742787604,
             "exact_match": 0.0,
-            "token_f1": 0.033545848091302635,
-            "avg_total_sec": 0.06090020445514132,
+            "token_f1": 0.03595206725641508,
+            "avg_total_sec": 0.060764348964490324,
             "p50_total_sec": 0.06066373595967889,
             "p95_total_sec": 0.08469782397150993,
-            "avg_storage_bytes": 12451776.272727273,
+            "avg_storage_bytes": 12521137.695652174,
             "p95_storage_bytes": 14670881.0,
             "categories": {},
             "sample_errors": [],
@@ -3071,6 +3088,23 @@
                   "conv-42:D20:1",
                   "conv-42:D13:1"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-42::0004",
+                "category": "category_3",
+                "query": "What pets wouldn't cause any discomfort to Joanna?",
+                "gold": "Hairless cats or pigs,since they don't have fur, which is one of the main causes of Joanna's allergy.",
+                "prediction": "Unfortunately, allergies make it so I don't really want to get any, and I'm too lazy to research alternative pets for my allergies",
+                "expected_doc_ids": [
+                  "conv-42:D2:23"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-42:D12:8",
+                  "conv-42:D5:5",
+                  "conv-42:D5:14",
+                  "conv-42:D12:9",
+                  "conv-42:D12:7"
+                ]
               }
             ],
             "sample_successes": [
@@ -3231,20 +3265,20 @@
             ]
           },
           "category_1": {
-            "expected_total": 75,
-            "rows_recorded": 75,
-            "rows_successful": 75,
+            "expected_total": 76,
+            "rows_recorded": 76,
+            "rows_successful": 76,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.68,
-            "doc_recall_all": 0.3333333333333333,
-            "ndcg_at_10": 0.36452322947323995,
-            "exact_match": 0.013333333333333334,
-            "token_f1": 0.04429015764768941,
-            "avg_total_sec": 0.059940515079845984,
-            "p50_total_sec": 0.05983163509517908,
+            "doc_recall_any": 0.6710526315789473,
+            "doc_recall_all": 0.32894736842105265,
+            "ndcg_at_10": 0.35972687119069735,
+            "exact_match": 0.013157894736842105,
+            "token_f1": 0.04458458539793911,
+            "avg_total_sec": 0.059962994841809725,
+            "p50_total_sec": 0.06005776394158602,
             "p95_total_sec": 0.08669486595317721,
-            "avg_storage_bytes": 12394933.8,
+            "avg_storage_bytes": 12416672.684210526,
             "p95_storage_bytes": 14670881.0,
             "categories": {},
             "sample_errors": [],
@@ -7324,36 +7358,36 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 500,
-      "rows_successful": 500,
+      "rows_recorded": 505,
+      "rows_successful": 505,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.728,
-      "doc_recall_all": 0.652,
-      "ndcg_at_10": 0.5293373025602197,
-      "exact_match": 0.062,
-      "token_f1": 0.10014915279377026,
-      "avg_total_sec": 0.06349307818897068,
-      "p50_total_sec": 0.06279678177088499,
+      "doc_recall_any": 0.7247524752475247,
+      "doc_recall_all": 0.6495049504950495,
+      "ndcg_at_10": 0.5280567352081383,
+      "exact_match": 0.061386138613861385,
+      "token_f1": 0.10059714955221637,
+      "avg_total_sec": 0.06343689844713057,
+      "p50_total_sec": 0.06269786087796092,
       "p95_total_sec": 0.09215050097554922,
-      "avg_storage_bytes": 12209648.696,
+      "avg_storage_bytes": 12227841.174257426,
       "p95_storage_bytes": 14670881.0,
       "categories": {
         "category_2": {
-          "expected_total": 91,
-          "rows_recorded": 91,
-          "rows_successful": 91,
+          "expected_total": 94,
+          "rows_recorded": 94,
+          "rows_successful": 94,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9010989010989011,
-          "doc_recall_all": 0.8901098901098901,
-          "ndcg_at_10": 0.7395100011625562,
-          "exact_match": 0.3076923076923077,
-          "token_f1": 0.4209314495028781,
-          "avg_total_sec": 0.07597340484262331,
-          "p50_total_sec": 0.07199789537116885,
-          "p95_total_sec": 0.10931909503415227,
-          "avg_storage_bytes": 11820646.274725275,
+          "doc_recall_any": 0.8936170212765957,
+          "doc_recall_all": 0.8829787234042553,
+          "ndcg_at_10": 0.7371852138914108,
+          "exact_match": 0.2978723404255319,
+          "token_f1": 0.41357649442755823,
+          "avg_total_sec": 0.07535372294505384,
+          "p50_total_sec": 0.07010127883404493,
+          "p95_total_sec": 0.10930451983585954,
+          "avg_storage_bytes": 11891702.957446808,
           "p95_storage_bytes": 14670881.0,
           "categories": {},
           "sample_errors": [],
@@ -7509,6 +7543,23 @@
                 "conv-41:D14:15",
                 "conv-41:D20:9",
                 "conv-41:D11:1"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-42::0006",
+              "category": "category_2",
+              "query": "How long has Nate had his first two turtles?",
+              "gold": "three years",
+              "prediction": "It really is, I'm not sure I'll ever understand why watching my turtles slowly walk around makes me so happy",
+              "expected_doc_ids": [
+                "conv-42:D2:12"
+              ],
+              "retrieved_doc_ids": [
+                "conv-42:D24:9",
+                "conv-42:D2:14",
+                "conv-42:D5:6",
+                "conv-42:D25:27",
+                "conv-42:D28:31"
               ]
             }
           ],
@@ -7684,20 +7735,20 @@
           ]
         },
         "category_3": {
-          "expected_total": 22,
-          "rows_recorded": 22,
-          "rows_successful": 22,
+          "expected_total": 23,
+          "rows_recorded": 23,
+          "rows_successful": 23,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5,
-          "doc_recall_all": 0.18181818181818182,
-          "ndcg_at_10": 0.21438966401870407,
+          "doc_recall_any": 0.4782608695652174,
+          "doc_recall_all": 0.17391304347826086,
+          "ndcg_at_10": 0.2050683742787604,
           "exact_match": 0.0,
-          "token_f1": 0.033545848091302635,
-          "avg_total_sec": 0.06090020445514132,
+          "token_f1": 0.03595206725641508,
+          "avg_total_sec": 0.060764348964490324,
           "p50_total_sec": 0.06066373595967889,
           "p95_total_sec": 0.08469782397150993,
-          "avg_storage_bytes": 12451776.272727273,
+          "avg_storage_bytes": 12521137.695652174,
           "p95_storage_bytes": 14670881.0,
           "categories": {},
           "sample_errors": [],
@@ -7891,6 +7942,23 @@
                 "conv-42:D20:1",
                 "conv-42:D13:1"
               ]
+            },
+            {
+              "case_id": "locomo::conv-42::0004",
+              "category": "category_3",
+              "query": "What pets wouldn't cause any discomfort to Joanna?",
+              "gold": "Hairless cats or pigs,since they don't have fur, which is one of the main causes of Joanna's allergy.",
+              "prediction": "Unfortunately, allergies make it so I don't really want to get any, and I'm too lazy to research alternative pets for my allergies",
+              "expected_doc_ids": [
+                "conv-42:D2:23"
+              ],
+              "retrieved_doc_ids": [
+                "conv-42:D12:8",
+                "conv-42:D5:5",
+                "conv-42:D5:14",
+                "conv-42:D12:9",
+                "conv-42:D12:7"
+              ]
             }
           ],
           "sample_successes": [
@@ -8051,20 +8119,20 @@
           ]
         },
         "category_1": {
-          "expected_total": 75,
-          "rows_recorded": 75,
-          "rows_successful": 75,
+          "expected_total": 76,
+          "rows_recorded": 76,
+          "rows_successful": 76,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.68,
-          "doc_recall_all": 0.3333333333333333,
-          "ndcg_at_10": 0.36452322947323995,
-          "exact_match": 0.013333333333333334,
-          "token_f1": 0.04429015764768941,
-          "avg_total_sec": 0.059940515079845984,
-          "p50_total_sec": 0.05983163509517908,
+          "doc_recall_any": 0.6710526315789473,
+          "doc_recall_all": 0.32894736842105265,
+          "ndcg_at_10": 0.35972687119069735,
+          "exact_match": 0.013157894736842105,
+          "token_f1": 0.04458458539793911,
+          "avg_total_sec": 0.059962994841809725,
+          "p50_total_sec": 0.06005776394158602,
           "p95_total_sec": 0.08669486595317721,
-          "avg_storage_bytes": 12394933.8,
+          "avg_storage_bytes": 12416672.684210526,
           "p95_storage_bytes": 14670881.0,
           "categories": {},
           "sample_errors": [],
@@ -9633,11 +9701,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.05164597093791279,
-    "doc_recall_all_delta": 0.058869220607661865,
-    "ndcg_at_10_delta": 0.0788687771083178,
-    "token_f1_delta": 0.007995889950940097,
-    "avg_storage_ratio_nova_over_stock": 0.6216862352074771,
-    "avg_latency_ratio_nova_over_stock": 0.009976940552837424
+    "doc_recall_any_delta": 0.04839844618543754,
+    "doc_recall_all_delta": 0.05637417110271137,
+    "ndcg_at_10_delta": 0.07758820975623643,
+    "token_f1_delta": 0.0084438867093862,
+    "avg_storage_ratio_nova_over_stock": 0.6226125528762777,
+    "avg_latency_ratio_nova_over_stock": 0.009968112788290486
   }
 }
