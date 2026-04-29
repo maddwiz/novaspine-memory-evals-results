@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:48:02Z",
+  "generated_at": "2026-04-29T02:48:35Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,45 +117,45 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:48:02Z",
+    "updated_at": "2026-04-29T02:48:35Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 30,
+    "current_case_index": 35,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0029"
+    "current_case_id": "locomo::conv-26::0034"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 30,
-        "rows_successful": 30,
+        "rows_recorded": 35,
+        "rows_successful": 35,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7,
-        "doc_recall_all": 0.43333333333333335,
-        "ndcg_at_10": 0.42838997519944033,
-        "exact_match": 0.23333333333333334,
-        "token_f1": 0.29468421052631577,
-        "avg_total_sec": 6.3577845569700004,
+        "doc_recall_any": 0.6857142857142857,
+        "doc_recall_all": 0.42857142857142855,
+        "ndcg_at_10": 0.4050805438443062,
+        "exact_match": 0.2,
+        "token_f1": 0.25972932330827064,
+        "avg_total_sec": 6.35418855802023,
         "p50_total_sec": 6.350638112984598,
-        "p95_total_sec": 6.426942922640592,
+        "p95_total_sec": 6.415752103086561,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
         "categories": {
           "category_2": {
-            "expected_total": 16,
-            "rows_recorded": 16,
-            "rows_successful": 16,
+            "expected_total": 18,
+            "rows_recorded": 18,
+            "rows_successful": 18,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6875,
-            "doc_recall_all": 0.6875,
-            "ndcg_at_10": 0.5468122779888996,
-            "exact_match": 0.4375,
-            "token_f1": 0.534375,
-            "avg_total_sec": 6.348739286419004,
-            "p50_total_sec": 6.345354083925486,
+            "doc_recall_any": 0.7222222222222222,
+            "doc_recall_all": 0.7222222222222222,
+            "ndcg_at_10": 0.5488847889663251,
+            "exact_match": 0.3888888888888889,
+            "token_f1": 0.48888888888888893,
+            "avg_total_sec": 6.347226719501325,
+            "p50_total_sec": 6.3434942360036075,
             "p95_total_sec": 6.415752103086561,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
@@ -402,28 +402,58 @@
                   "conv-26:D5:10",
                   "conv-26:D16:8"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0031",
+                "category": "category_2",
+                "query": "When did Melanie go camping in June?",
+                "gold": "The week before 27 June 2023",
+                "prediction": "2022",
+                "retrieved_doc_ids": [
+                  "conv-26:D10:12",
+                  "conv-26:D4:8",
+                  "conv-26:D18:19",
+                  "conv-26:D18:20",
+                  "conv-26:D18:21"
+                ]
               }
             ]
           },
           "category_3": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.25,
-            "ndcg_at_10": 0.5483566009043177,
+            "doc_recall_any": 0.8,
+            "doc_recall_all": 0.2,
+            "ndcg_at_10": 0.43868528072345414,
             "exact_match": 0.0,
-            "token_f1": 0.019999999999999997,
-            "avg_total_sec": 6.377911058370955,
-            "p50_total_sec": 6.385957250837237,
+            "token_f1": 0.015999999999999997,
+            "avg_total_sec": 6.372284572944045,
+            "p50_total_sec": 6.381417411845177,
             "p95_total_sec": 6.393631457816809,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0030",
+                "category": "category_3",
+                "query": "Would Melanie be considered a member of the LGBTQ community?",
+                "gold": "Likely no, she does not refer to herself as part of it",
+                "prediction": "Hey Caroline!",
+                "expected_doc_ids": [],
+                "retrieved_doc_ids": [
+                  "conv-26:D13:15",
+                  "conv-26:D10:5",
+                  "conv-26:D16:5",
+                  "conv-26:D3:2",
+                  "conv-26:D10:3"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "locomo::conv-26::0002",
@@ -484,19 +514,19 @@
             ]
           },
           "category_1": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6,
-            "doc_recall_all": 0.1,
-            "ndcg_at_10": 0.19092764045435442,
+            "doc_recall_any": 0.5833333333333334,
+            "doc_recall_all": 0.08333333333333333,
+            "ndcg_at_10": 0.1753722024616329,
             "exact_match": 0.0,
-            "token_f1": 0.02105263157894737,
-            "avg_total_sec": 6.364206389291212,
-            "p50_total_sec": 6.348228274844587,
-            "p95_total_sec": 6.469191602896899,
+            "token_f1": 0.01754385964912281,
+            "avg_total_sec": 6.357091309580331,
+            "p50_total_sec": 6.354877830948681,
+            "p95_total_sec": 6.39895828301087,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
@@ -570,6 +600,24 @@
                   "conv-26:D2:3",
                   "conv-26:D7:6",
                   "conv-26:D4:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0034",
+                "category": "category_1",
+                "query": "What events has Caroline participated in to help children?",
+                "gold": "Mentoring program, school speech",
+                "prediction": "I'm definitely carrying on volunteering at the youth center",
+                "expected_doc_ids": [
+                  "conv-26:D9:2",
+                  "conv-26:D3:3"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D15:9",
+                  "conv-26:D15:4",
+                  "conv-26:D11:2",
+                  "conv-26:D19:6",
+                  "conv-26:D15:3"
                 ]
               }
             ],
@@ -656,6 +704,20 @@
                   "conv-26:D7:10",
                   "conv-26:D6:10",
                   "conv-26:D7:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0032",
+                "category": "category_1",
+                "query": "What LGBTQ+ events has Caroline participated in?",
+                "gold": "Pride parade, school speech, support group",
+                "prediction": "I'm inspired seeing my work make a difference for the LGBTQ+ community",
+                "retrieved_doc_ids": [
+                  "conv-26:D16:5",
+                  "conv-26:D14:35",
+                  "conv-26:D5:1",
+                  "conv-26:D11:4",
+                  "conv-26:D13:15"
                 ]
               }
             ]
@@ -816,6 +878,39 @@
               "conv-26:D2:3",
               "conv-26:D7:6",
               "conv-26:D4:11"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0030",
+            "category": "category_3",
+            "query": "Would Melanie be considered a member of the LGBTQ community?",
+            "gold": "Likely no, she does not refer to herself as part of it",
+            "prediction": "Hey Caroline!",
+            "expected_doc_ids": [],
+            "retrieved_doc_ids": [
+              "conv-26:D13:15",
+              "conv-26:D10:5",
+              "conv-26:D16:5",
+              "conv-26:D3:2",
+              "conv-26:D10:3"
+            ]
+          },
+          {
+            "case_id": "locomo::conv-26::0034",
+            "category": "category_1",
+            "query": "What events has Caroline participated in to help children?",
+            "gold": "Mentoring program, school speech",
+            "prediction": "I'm definitely carrying on volunteering at the youth center",
+            "expected_doc_ids": [
+              "conv-26:D9:2",
+              "conv-26:D3:3"
+            ],
+            "retrieved_doc_ids": [
+              "conv-26:D15:9",
+              "conv-26:D15:4",
+              "conv-26:D11:2",
+              "conv-26:D19:6",
+              "conv-26:D15:3"
             ]
           }
         ],
@@ -1148,34 +1243,34 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 30,
-      "rows_successful": 30,
+      "rows_recorded": 35,
+      "rows_successful": 35,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7,
-      "doc_recall_all": 0.43333333333333335,
-      "ndcg_at_10": 0.42838997519944033,
-      "exact_match": 0.23333333333333334,
-      "token_f1": 0.29468421052631577,
-      "avg_total_sec": 6.3577845569700004,
+      "doc_recall_any": 0.6857142857142857,
+      "doc_recall_all": 0.42857142857142855,
+      "ndcg_at_10": 0.4050805438443062,
+      "exact_match": 0.2,
+      "token_f1": 0.25972932330827064,
+      "avg_total_sec": 6.35418855802023,
       "p50_total_sec": 6.350638112984598,
-      "p95_total_sec": 6.426942922640592,
+      "p95_total_sec": 6.415752103086561,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
       "categories": {
         "category_2": {
-          "expected_total": 16,
-          "rows_recorded": 16,
-          "rows_successful": 16,
+          "expected_total": 18,
+          "rows_recorded": 18,
+          "rows_successful": 18,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6875,
-          "doc_recall_all": 0.6875,
-          "ndcg_at_10": 0.5468122779888996,
-          "exact_match": 0.4375,
-          "token_f1": 0.534375,
-          "avg_total_sec": 6.348739286419004,
-          "p50_total_sec": 6.345354083925486,
+          "doc_recall_any": 0.7222222222222222,
+          "doc_recall_all": 0.7222222222222222,
+          "ndcg_at_10": 0.5488847889663251,
+          "exact_match": 0.3888888888888889,
+          "token_f1": 0.48888888888888893,
+          "avg_total_sec": 6.347226719501325,
+          "p50_total_sec": 6.3434942360036075,
           "p95_total_sec": 6.415752103086561,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
@@ -1422,28 +1517,58 @@
                 "conv-26:D5:10",
                 "conv-26:D16:8"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0031",
+              "category": "category_2",
+              "query": "When did Melanie go camping in June?",
+              "gold": "The week before 27 June 2023",
+              "prediction": "2022",
+              "retrieved_doc_ids": [
+                "conv-26:D10:12",
+                "conv-26:D4:8",
+                "conv-26:D18:19",
+                "conv-26:D18:20",
+                "conv-26:D18:21"
+              ]
             }
           ]
         },
         "category_3": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 0.25,
-          "ndcg_at_10": 0.5483566009043177,
+          "doc_recall_any": 0.8,
+          "doc_recall_all": 0.2,
+          "ndcg_at_10": 0.43868528072345414,
           "exact_match": 0.0,
-          "token_f1": 0.019999999999999997,
-          "avg_total_sec": 6.377911058370955,
-          "p50_total_sec": 6.385957250837237,
+          "token_f1": 0.015999999999999997,
+          "avg_total_sec": 6.372284572944045,
+          "p50_total_sec": 6.381417411845177,
           "p95_total_sec": 6.393631457816809,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0030",
+              "category": "category_3",
+              "query": "Would Melanie be considered a member of the LGBTQ community?",
+              "gold": "Likely no, she does not refer to herself as part of it",
+              "prediction": "Hey Caroline!",
+              "expected_doc_ids": [],
+              "retrieved_doc_ids": [
+                "conv-26:D13:15",
+                "conv-26:D10:5",
+                "conv-26:D16:5",
+                "conv-26:D3:2",
+                "conv-26:D10:3"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "locomo::conv-26::0002",
@@ -1504,19 +1629,19 @@
           ]
         },
         "category_1": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 12,
+          "rows_recorded": 12,
+          "rows_successful": 12,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6,
-          "doc_recall_all": 0.1,
-          "ndcg_at_10": 0.19092764045435442,
+          "doc_recall_any": 0.5833333333333334,
+          "doc_recall_all": 0.08333333333333333,
+          "ndcg_at_10": 0.1753722024616329,
           "exact_match": 0.0,
-          "token_f1": 0.02105263157894737,
-          "avg_total_sec": 6.364206389291212,
-          "p50_total_sec": 6.348228274844587,
-          "p95_total_sec": 6.469191602896899,
+          "token_f1": 0.01754385964912281,
+          "avg_total_sec": 6.357091309580331,
+          "p50_total_sec": 6.354877830948681,
+          "p95_total_sec": 6.39895828301087,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
@@ -1590,6 +1715,24 @@
                 "conv-26:D2:3",
                 "conv-26:D7:6",
                 "conv-26:D4:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0034",
+              "category": "category_1",
+              "query": "What events has Caroline participated in to help children?",
+              "gold": "Mentoring program, school speech",
+              "prediction": "I'm definitely carrying on volunteering at the youth center",
+              "expected_doc_ids": [
+                "conv-26:D9:2",
+                "conv-26:D3:3"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D15:9",
+                "conv-26:D15:4",
+                "conv-26:D11:2",
+                "conv-26:D19:6",
+                "conv-26:D15:3"
               ]
             }
           ],
@@ -1676,6 +1819,20 @@
                 "conv-26:D7:10",
                 "conv-26:D6:10",
                 "conv-26:D7:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0032",
+              "category": "category_1",
+              "query": "What LGBTQ+ events has Caroline participated in?",
+              "gold": "Pride parade, school speech, support group",
+              "prediction": "I'm inspired seeing my work make a difference for the LGBTQ+ community",
+              "retrieved_doc_ids": [
+                "conv-26:D16:5",
+                "conv-26:D14:35",
+                "conv-26:D5:1",
+                "conv-26:D11:4",
+                "conv-26:D13:15"
               ]
             }
           ]
@@ -1836,6 +1993,39 @@
             "conv-26:D2:3",
             "conv-26:D7:6",
             "conv-26:D4:11"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0030",
+          "category": "category_3",
+          "query": "Would Melanie be considered a member of the LGBTQ community?",
+          "gold": "Likely no, she does not refer to herself as part of it",
+          "prediction": "Hey Caroline!",
+          "expected_doc_ids": [],
+          "retrieved_doc_ids": [
+            "conv-26:D13:15",
+            "conv-26:D10:5",
+            "conv-26:D16:5",
+            "conv-26:D3:2",
+            "conv-26:D10:3"
+          ]
+        },
+        {
+          "case_id": "locomo::conv-26::0034",
+          "category": "category_1",
+          "query": "What events has Caroline participated in to help children?",
+          "gold": "Mentoring program, school speech",
+          "prediction": "I'm definitely carrying on volunteering at the youth center",
+          "expected_doc_ids": [
+            "conv-26:D9:2",
+            "conv-26:D3:3"
+          ],
+          "retrieved_doc_ids": [
+            "conv-26:D15:9",
+            "conv-26:D15:4",
+            "conv-26:D11:2",
+            "conv-26:D19:6",
+            "conv-26:D15:3"
           ]
         }
       ],
@@ -2033,10 +2223,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.7,
-    "doc_recall_all_delta": -0.43333333333333335,
-    "ndcg_at_10_delta": -0.42838997519944033,
-    "token_f1_delta": -0.29468421052631577,
+    "doc_recall_any_delta": -0.6857142857142857,
+    "doc_recall_all_delta": -0.42857142857142855,
+    "ndcg_at_10_delta": -0.4050805438443062,
+    "token_f1_delta": -0.25972932330827064,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
