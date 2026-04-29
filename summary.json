@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T16:58:52Z",
+  "generated_at": "2026-04-29T16:59:01Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T16:58:36Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T16:58:53Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 5,
     "current_case_total": 500,
@@ -5054,36 +5054,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 4,
-        "rows_successful": 4,
+        "rows_recorded": 5,
+        "rows_successful": 5,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
         "exact_match": 1.0,
-        "token_f1": 0.8928571428571429,
-        "avg_total_sec": 7.867522300104611,
+        "token_f1": 0.9142857142857143,
+        "avg_total_sec": 7.949260551296175,
         "p50_total_sec": 7.734029197599739,
         "p95_total_sec": 9.858838545158505,
-        "avg_storage_bytes": 1280704.0,
+        "avg_storage_bytes": 1284604.2,
         "p95_storage_bytes": 1554589.0,
         "categories": {
           "temporal-reasoning": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 1.0,
-            "token_f1": 0.8928571428571429,
-            "avg_total_sec": 7.867522300104611,
+            "token_f1": 0.9142857142857143,
+            "avg_total_sec": 7.949260551296175,
             "p50_total_sec": 7.734029197599739,
             "p95_total_sec": 9.858838545158505,
-            "avg_storage_bytes": 1280704.0,
+            "avg_storage_bytes": 1284604.2,
             "p95_storage_bytes": 1554589.0,
             "categories": {},
             "sample_errors": [],
@@ -5132,6 +5132,17 @@
                 "retrieved_doc_ids": [
                   "answer_5328c3c2_2",
                   "answer_5328c3c2_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::0bb5a684",
+                "category": "temporal-reasoning",
+                "query": "How many days before the team meeting I was preparing for did I attend the workshop on 'Effective Communication in the Workplace'?",
+                "gold": "7 days. 8 days (including the last day) is also acceptable.",
+                "prediction": "7 days",
+                "retrieved_doc_ids": [
+                  "answer_e936197f_1",
+                  "answer_e936197f_2"
                 ]
               }
             ]
@@ -5183,6 +5194,17 @@
             "retrieved_doc_ids": [
               "answer_5328c3c2_2",
               "answer_5328c3c2_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::0bb5a684",
+            "category": "temporal-reasoning",
+            "query": "How many days before the team meeting I was preparing for did I attend the workshop on 'Effective Communication in the Workplace'?",
+            "gold": "7 days. 8 days (including the last day) is also acceptable.",
+            "prediction": "7 days",
+            "retrieved_doc_ids": [
+              "answer_e936197f_1",
+              "answer_e936197f_2"
             ]
           }
         ]
@@ -7734,19 +7756,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 1990,
-      "rows_successful": 1990,
+      "rows_recorded": 1991,
+      "rows_successful": 1991,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7437185929648241,
-      "doc_recall_all": 0.6391959798994975,
-      "ndcg_at_10": 0.5152153199967038,
-      "exact_match": 0.036180904522613064,
-      "token_f1": 0.08391177434537,
-      "avg_total_sec": 0.0795983956544075,
-      "p50_total_sec": 0.06259234482422471,
+      "doc_recall_any": 0.7438473129080864,
+      "doc_recall_all": 0.6393771973882472,
+      "ndcg_at_10": 0.5154588080328683,
+      "exact_match": 0.03666499246609744,
+      "token_f1": 0.08437188897402627,
+      "avg_total_sec": 0.08371522898459736,
+      "p50_total_sec": 0.06262173410505056,
       "p95_total_sec": 0.09531880402937531,
-      "avg_storage_bytes": 13674386.52160804,
+      "avg_storage_bytes": 13668171.463083878,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -9739,20 +9761,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 4,
-          "rows_recorded": 4,
-          "rows_successful": 4,
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 1.0,
-          "token_f1": 0.8928571428571429,
-          "avg_total_sec": 7.867522300104611,
+          "token_f1": 0.9142857142857143,
+          "avg_total_sec": 7.949260551296175,
           "p50_total_sec": 7.734029197599739,
           "p95_total_sec": 9.858838545158505,
-          "avg_storage_bytes": 1280704.0,
+          "avg_storage_bytes": 1284604.2,
           "p95_storage_bytes": 1554589.0,
           "categories": {},
           "sample_errors": [],
@@ -9801,6 +9823,17 @@
               "retrieved_doc_ids": [
                 "answer_5328c3c2_2",
                 "answer_5328c3c2_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::0bb5a684",
+              "category": "temporal-reasoning",
+              "query": "How many days before the team meeting I was preparing for did I attend the workshop on 'Effective Communication in the Workplace'?",
+              "gold": "7 days. 8 days (including the last day) is also acceptable.",
+              "prediction": "7 days",
+              "retrieved_doc_ids": [
+                "answer_e936197f_1",
+                "answer_e936197f_2"
               ]
             }
           ]
@@ -10192,11 +10225,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04859051662127811,
-    "doc_recall_all_delta": 0.053560620783475454,
-    "ndcg_at_10_delta": 0.059409939002023626,
-    "token_f1_delta": -0.0018508648117935844,
-    "avg_storage_ratio_nova_over_stock": 0.6471406919476598,
-    "avg_latency_ratio_nova_over_stock": 0.012461044201826947
+    "doc_recall_any_delta": 0.04871923656454036,
+    "doc_recall_all_delta": 0.05374183827222512,
+    "ndcg_at_10_delta": 0.0596534270381881,
+    "token_f1_delta": -0.001390750183137321,
+    "avg_storage_ratio_nova_over_stock": 0.6468465641440128,
+    "avg_latency_ratio_nova_over_stock": 0.013105530082192925
   }
 }
