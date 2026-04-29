@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T07:18:27Z",
+  "generated_at": "2026-04-29T07:20:53Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T07:18:21Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T07:20:38Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 60,
+    "current_case_index": 65,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::gpt4_fe651585_abs"
+    "current_case_id": "longmemeval_oracle::e831120c"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,20 +4892,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 60,
-        "rows_successful": 60,
+        "rows_recorded": 65,
+        "rows_successful": 65,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.8166666666666667,
-        "ndcg_at_10": 0.9287592151046441,
-        "exact_match": 0.31666666666666665,
-        "token_f1": 0.3601445373678483,
-        "avg_total_sec": 15.158244011271744,
-        "p50_total_sec": 14.870425862725824,
-        "p95_total_sec": 16.50621551880613,
-        "avg_storage_bytes": 6642273.316666666,
-        "p95_storage_bytes": 7388136.0,
+        "doc_recall_all": 0.8153846153846154,
+        "ndcg_at_10": 0.9306294391271887,
+        "exact_match": 0.3076923076923077,
+        "token_f1": 0.36491974389510784,
+        "avg_total_sec": 15.363453940058557,
+        "p50_total_sec": 14.92515490623191,
+        "p95_total_sec": 19.390542021021247,
+        "avg_storage_bytes": 6735577.076923077,
+        "p95_storage_bytes": 9002235.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5060,6 +5060,88 @@
                 ]
               }
             ]
+          },
+          "multi-session": {
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 0.8,
+            "ndcg_at_10": 0.9530721273977243,
+            "exact_match": 0.2,
+            "token_f1": 0.4222222222222222,
+            "avg_total_sec": 17.8259730855003,
+            "p50_total_sec": 18.79056058684364,
+            "p95_total_sec": 20.611448406707495,
+            "avg_storage_bytes": 7855222.2,
+            "p95_storage_bytes": 9342205.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::0a995998",
+                "category": "multi-session",
+                "query": "How many items of clothing do I need to pick up or return from a store?",
+                "gold": "3",
+                "prediction": "2",
+                "retrieved_doc_ids": [
+                  "answer_afa9873b_2",
+                  "answer_afa9873b_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6d550036",
+                "category": "multi-session",
+                "query": "How many projects have I led or am currently leading?",
+                "gold": "2",
+                "prediction": "2",
+                "retrieved_doc_ids": [
+                  "answer_ec904b3c_4",
+                  "answer_ec904b3c_2",
+                  "answer_ec904b3c_1",
+                  "answer_ec904b3c_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_59c863d7",
+                "category": "multi-session",
+                "query": "How many model kits have I worked on or bought?",
+                "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+                "prediction": "15",
+                "retrieved_doc_ids": [
+                  "answer_593bdffd_1",
+                  "answer_593bdffd_2",
+                  "answer_593bdffd_4",
+                  "answer_593bdffd_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::b5ef892d",
+                "category": "multi-session",
+                "query": "How many days did I spend on camping trips in the United States this year?",
+                "gold": "8 days.",
+                "prediction": "3 days",
+                "retrieved_doc_ids": [
+                  "answer_a8b4290f_1",
+                  "answer_a8b4290f_3",
+                  "answer_a8b4290f_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::e831120c",
+                "category": "multi-session",
+                "query": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+                "gold": "3.5 weeks",
+                "prediction": "22 weeks",
+                "retrieved_doc_ids": [
+                  "answer_86c505e7_2",
+                  "answer_86c505e7_1"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [],
@@ -5201,20 +5283,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 60,
-        "rows_successful": 60,
+        "rows_recorded": 64,
+        "rows_successful": 64,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9833333333333333,
-        "ndcg_at_10": 0.9982035140912582,
-        "exact_match": 0.4,
-        "token_f1": 0.44297287636519334,
-        "avg_total_sec": 7.834579611763669,
-        "p50_total_sec": 7.42128642462194,
-        "p95_total_sec": 10.97443378297612,
-        "avg_storage_bytes": 1246771.8666666667,
-        "p95_storage_bytes": 1657169.0,
+        "doc_recall_all": 0.984375,
+        "ndcg_at_10": 0.9983157944605545,
+        "exact_match": 0.390625,
+        "token_f1": 0.4404606827034799,
+        "avg_total_sec": 8.198769653958152,
+        "p50_total_sec": 7.452576347626746,
+        "p95_total_sec": 16.262434255797416,
+        "avg_storage_bytes": 1291973.75,
+        "p95_storage_bytes": 2268517.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5370,6 +5452,78 @@
                 "retrieved_doc_ids": [
                   "answer_c4e5d969_2",
                   "answer_c4e5d969_1"
+                ]
+              }
+            ]
+          },
+          "multi-session": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.25,
+            "token_f1": 0.4027777777777778,
+            "avg_total_sec": 13.661620286875404,
+            "p50_total_sec": 16.262434255797416,
+            "p95_total_sec": 16.771190017927438,
+            "avg_storage_bytes": 1970002.0,
+            "p95_storage_bytes": 2407781.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::0a995998",
+                "category": "multi-session",
+                "query": "How many items of clothing do I need to pick up or return from a store?",
+                "gold": "3",
+                "prediction": "2",
+                "retrieved_doc_ids": [
+                  "answer_afa9873b_1",
+                  "answer_afa9873b_2",
+                  "answer_afa9873b_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6d550036",
+                "category": "multi-session",
+                "query": "How many projects have I led or am currently leading?",
+                "gold": "2",
+                "prediction": "2",
+                "retrieved_doc_ids": [
+                  "answer_ec904b3c_2",
+                  "answer_ec904b3c_1",
+                  "answer_ec904b3c_4",
+                  "answer_ec904b3c_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_59c863d7",
+                "category": "multi-session",
+                "query": "How many model kits have I worked on or bought?",
+                "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+                "prediction": "15",
+                "retrieved_doc_ids": [
+                  "answer_593bdffd_1",
+                  "answer_593bdffd_2",
+                  "answer_593bdffd_4",
+                  "answer_593bdffd_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::b5ef892d",
+                "category": "multi-session",
+                "query": "How many days did I spend on camping trips in the United States this year?",
+                "gold": "8 days.",
+                "prediction": "3 days",
+                "retrieved_doc_ids": [
+                  "answer_a8b4290f_2",
+                  "answer_a8b4290f_1",
+                  "answer_a8b4290f_3"
                 ]
               }
             ]
@@ -5609,19 +5763,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2046,
-      "rows_successful": 2046,
+      "rows_recorded": 2051,
+      "rows_successful": 2051,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7033235581622679,
-      "doc_recall_all": 0.5913978494623656,
-      "ndcg_at_10": 0.4683450960247737,
-      "exact_match": 0.04349951124144673,
-      "token_f1": 0.0917842904362439,
-      "avg_total_sec": 6.627060768251623,
-      "p50_total_sec": 6.357620536349714,
-      "p95_total_sec": 6.679142551030964,
-      "avg_storage_bytes": 20740090.374389052,
+      "doc_recall_any": 0.7040468064358849,
+      "doc_recall_all": 0.5919063871282302,
+      "ndcg_at_10": 0.46952678064538056,
+      "exact_match": 0.04388103364212579,
+      "token_f1": 0.0925898436585403,
+      "avg_total_sec": 6.654361870926535,
+      "p50_total_sec": 6.357681245077401,
+      "p95_total_sec": 6.717336832080036,
+      "avg_storage_bytes": 20708679.18917601,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -7756,6 +7910,88 @@
               ]
             }
           ]
+        },
+        "multi-session": {
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 0.8,
+          "ndcg_at_10": 0.9530721273977243,
+          "exact_match": 0.2,
+          "token_f1": 0.4222222222222222,
+          "avg_total_sec": 17.8259730855003,
+          "p50_total_sec": 18.79056058684364,
+          "p95_total_sec": 20.611448406707495,
+          "avg_storage_bytes": 7855222.2,
+          "p95_storage_bytes": 9342205.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::0a995998",
+              "category": "multi-session",
+              "query": "How many items of clothing do I need to pick up or return from a store?",
+              "gold": "3",
+              "prediction": "2",
+              "retrieved_doc_ids": [
+                "answer_afa9873b_2",
+                "answer_afa9873b_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6d550036",
+              "category": "multi-session",
+              "query": "How many projects have I led or am currently leading?",
+              "gold": "2",
+              "prediction": "2",
+              "retrieved_doc_ids": [
+                "answer_ec904b3c_4",
+                "answer_ec904b3c_2",
+                "answer_ec904b3c_1",
+                "answer_ec904b3c_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_59c863d7",
+              "category": "multi-session",
+              "query": "How many model kits have I worked on or bought?",
+              "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+              "prediction": "15",
+              "retrieved_doc_ids": [
+                "answer_593bdffd_1",
+                "answer_593bdffd_2",
+                "answer_593bdffd_4",
+                "answer_593bdffd_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::b5ef892d",
+              "category": "multi-session",
+              "query": "How many days did I spend on camping trips in the United States this year?",
+              "gold": "8 days.",
+              "prediction": "3 days",
+              "retrieved_doc_ids": [
+                "answer_a8b4290f_1",
+                "answer_a8b4290f_3",
+                "answer_a8b4290f_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::e831120c",
+              "category": "multi-session",
+              "query": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+              "gold": "3.5 weeks",
+              "prediction": "22 weeks",
+              "retrieved_doc_ids": [
+                "answer_86c505e7_2",
+                "answer_86c505e7_1"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -8139,19 +8375,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2046,
-      "rows_successful": 2046,
+      "rows_recorded": 2050,
+      "rows_successful": 2050,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6891495601173021,
-      "doc_recall_all": 0.5811339198435973,
-      "ndcg_at_10": 0.4055732703193718,
-      "exact_match": 0.04007820136852395,
-      "token_f1": 0.08137490469491221,
-      "avg_total_sec": 0.29027537724644104,
-      "p50_total_sec": 0.06305622728541493,
-      "p95_total_sec": 0.0945271197706461,
-      "avg_storage_bytes": 13262169.88172043,
+      "doc_recall_any": 0.6897560975609756,
+      "doc_recall_all": 0.5819512195121951,
+      "ndcg_at_10": 0.40673312735289496,
+      "exact_match": 0.04048780487804878,
+      "token_f1": 0.08200203225214707,
+      "avg_total_sec": 0.3163658063384,
+      "p50_total_sec": 0.06307808682322502,
+      "p95_total_sec": 0.09531424893066287,
+      "avg_storage_bytes": 13240136.383414634,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -10299,6 +10535,78 @@
               ]
             }
           ]
+        },
+        "multi-session": {
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.25,
+          "token_f1": 0.4027777777777778,
+          "avg_total_sec": 13.661620286875404,
+          "p50_total_sec": 16.262434255797416,
+          "p95_total_sec": 16.771190017927438,
+          "avg_storage_bytes": 1970002.0,
+          "p95_storage_bytes": 2407781.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::0a995998",
+              "category": "multi-session",
+              "query": "How many items of clothing do I need to pick up or return from a store?",
+              "gold": "3",
+              "prediction": "2",
+              "retrieved_doc_ids": [
+                "answer_afa9873b_1",
+                "answer_afa9873b_2",
+                "answer_afa9873b_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6d550036",
+              "category": "multi-session",
+              "query": "How many projects have I led or am currently leading?",
+              "gold": "2",
+              "prediction": "2",
+              "retrieved_doc_ids": [
+                "answer_ec904b3c_2",
+                "answer_ec904b3c_1",
+                "answer_ec904b3c_4",
+                "answer_ec904b3c_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_59c863d7",
+              "category": "multi-session",
+              "query": "How many model kits have I worked on or bought?",
+              "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+              "prediction": "15",
+              "retrieved_doc_ids": [
+                "answer_593bdffd_1",
+                "answer_593bdffd_2",
+                "answer_593bdffd_4",
+                "answer_593bdffd_3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::b5ef892d",
+              "category": "multi-session",
+              "query": "How many days did I spend on camping trips in the United States this year?",
+              "gold": "8 days.",
+              "prediction": "3 days",
+              "retrieved_doc_ids": [
+                "answer_a8b4290f_2",
+                "answer_a8b4290f_1",
+                "answer_a8b4290f_3"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -10683,11 +10991,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.014173998044965774,
-    "doc_recall_all_delta": -0.01026392961876832,
-    "ndcg_at_10_delta": -0.0627718257054019,
-    "token_f1_delta": -0.010409385741331698,
-    "avg_storage_ratio_nova_over_stock": 0.63944609894744,
-    "avg_latency_ratio_nova_over_stock": 0.04380152640776563
+    "doc_recall_any_delta": -0.014290708874909352,
+    "doc_recall_all_delta": -0.009955167616035099,
+    "ndcg_at_10_delta": -0.0627936532924856,
+    "token_f1_delta": -0.010587811406393227,
+    "avg_storage_ratio_nova_over_stock": 0.6393520447375983,
+    "avg_latency_ratio_nova_over_stock": 0.04754262128734368
   }
 }
