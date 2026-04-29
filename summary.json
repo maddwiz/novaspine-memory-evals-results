@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T14:18:12Z",
+  "generated_at": "2026-04-29T14:18:13Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T14:18:12Z",
+    "updated_at": "2026-04-29T14:18:13Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 505,
+    "current_case_index": 510,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-42::0007"
+    "current_case_id": "locomo::conv-42::0012"
   },
   "benchmarks": {
     "locomo": {
@@ -2504,36 +2504,36 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 505,
-        "rows_successful": 505,
+        "rows_recorded": 510,
+        "rows_successful": 510,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7247524752475247,
-        "doc_recall_all": 0.6495049504950495,
-        "ndcg_at_10": 0.5280567352081383,
-        "exact_match": 0.061386138613861385,
-        "token_f1": 0.10059714955221637,
-        "avg_total_sec": 0.06343689844713057,
+        "doc_recall_any": 0.7235294117647059,
+        "doc_recall_all": 0.6470588235294118,
+        "ndcg_at_10": 0.5269294452291043,
+        "exact_match": 0.060784313725490195,
+        "token_f1": 0.10051588036354457,
+        "avg_total_sec": 0.06340612090631005,
         "p50_total_sec": 0.06269786087796092,
         "p95_total_sec": 0.09215050097554922,
-        "avg_storage_bytes": 12227841.174257426,
+        "avg_storage_bytes": 12245676.937254902,
         "p95_storage_bytes": 14670881.0,
         "categories": {
           "category_2": {
-            "expected_total": 94,
-            "rows_recorded": 94,
-            "rows_successful": 94,
+            "expected_total": 96,
+            "rows_recorded": 96,
+            "rows_successful": 96,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8936170212765957,
-            "doc_recall_all": 0.8829787234042553,
-            "ndcg_at_10": 0.7371852138914108,
-            "exact_match": 0.2978723404255319,
-            "token_f1": 0.41357649442755823,
-            "avg_total_sec": 0.07535372294505384,
-            "p50_total_sec": 0.07010127883404493,
+            "doc_recall_any": 0.875,
+            "doc_recall_all": 0.8645833333333334,
+            "ndcg_at_10": 0.7218271886020063,
+            "exact_match": 0.2916666666666667,
+            "token_f1": 0.4049603174603174,
+            "avg_total_sec": 0.07502867432291775,
+            "p50_total_sec": 0.0705584199167788,
             "p95_total_sec": 0.10930451983585954,
-            "avg_storage_bytes": 11891702.957446808,
+            "avg_storage_bytes": 11936606.833333334,
             "p95_storage_bytes": 14670881.0,
             "categories": {},
             "sample_errors": [],
@@ -2706,6 +2706,40 @@
                   "conv-42:D5:6",
                   "conv-42:D25:27",
                   "conv-42:D28:31"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-42::0008",
+                "category": "category_2",
+                "query": "When did Nate get his first two turtles?",
+                "gold": "2019",
+                "prediction": "10 November 2022",
+                "expected_doc_ids": [
+                  "conv-42:D2:12"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-42:D29:6",
+                  "conv-42:D28:25",
+                  "conv-42:D28:26",
+                  "conv-42:D28:31",
+                  "conv-42:D2:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-42::0009",
+                "category": "category_2",
+                "query": "What major achievement did Joanna accomplish in January 2022?",
+                "gold": "finished her screenplay and printed it",
+                "prediction": "Yeah, that's me in that photo!",
+                "expected_doc_ids": [
+                  "conv-42:D2:3"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-42:D9:7",
+                  "conv-42:D26:4",
+                  "conv-42:D13:20",
+                  "conv-42:D5:15",
+                  "conv-42:D2:25"
                 ]
               }
             ],
@@ -2881,20 +2915,20 @@
             ]
           },
           "category_3": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 24,
+            "rows_recorded": 24,
+            "rows_successful": 24,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.4782608695652174,
-            "doc_recall_all": 0.17391304347826086,
-            "ndcg_at_10": 0.2050683742787604,
+            "doc_recall_any": 0.5,
+            "doc_recall_all": 0.20833333333333334,
+            "ndcg_at_10": 0.21414010178408915,
             "exact_match": 0.0,
-            "token_f1": 0.03595206725641508,
-            "avg_total_sec": 0.060764348964490324,
-            "p50_total_sec": 0.06066373595967889,
+            "token_f1": 0.03445406445406445,
+            "avg_total_sec": 0.06104208996597057,
+            "p50_total_sec": 0.06478651612997055,
             "p95_total_sec": 0.08469782397150993,
-            "avg_storage_bytes": 12521137.695652174,
+            "avg_storage_bytes": 12584719.0,
             "p95_storage_bytes": 14670881.0,
             "categories": {},
             "sample_errors": [],
@@ -3261,24 +3295,38 @@
                   "conv-41:D9:5",
                   "conv-41:D7:7"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-42::0012",
+                "category": "category_3",
+                "query": "What underlying condition might Joanna have based on her allergies?",
+                "gold": "asthma",
+                "prediction": "Unfortunately, allergies make it so I don't really want to get any, and I'm too lazy to research alternative pets for my allergies",
+                "retrieved_doc_ids": [
+                  "conv-42:D12:8",
+                  "conv-42:D24:6",
+                  "conv-42:D2:22",
+                  "conv-42:D24:4",
+                  "conv-42:D25:20"
+                ]
               }
             ]
           },
           "category_1": {
-            "expected_total": 76,
-            "rows_recorded": 76,
-            "rows_successful": 76,
+            "expected_total": 78,
+            "rows_recorded": 78,
+            "rows_successful": 78,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6710526315789473,
-            "doc_recall_all": 0.32894736842105265,
-            "ndcg_at_10": 0.35972687119069735,
-            "exact_match": 0.013157894736842105,
-            "token_f1": 0.04458458539793911,
-            "avg_total_sec": 0.059962994841809725,
-            "p50_total_sec": 0.06005776394158602,
+            "doc_recall_any": 0.6794871794871795,
+            "doc_recall_all": 0.3333333333333333,
+            "ndcg_at_10": 0.37156177131820084,
+            "exact_match": 0.01282051282051282,
+            "token_f1": 0.04935855066386967,
+            "avg_total_sec": 0.059894136451662354,
+            "p50_total_sec": 0.05983163509517908,
             "p95_total_sec": 0.08669486595317721,
-            "avg_storage_bytes": 12416672.684210526,
+            "avg_storage_bytes": 12458478.23076923,
             "p95_storage_bytes": 14670881.0,
             "categories": {},
             "sample_errors": [],
@@ -7358,36 +7406,36 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 505,
-      "rows_successful": 505,
+      "rows_recorded": 510,
+      "rows_successful": 510,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7247524752475247,
-      "doc_recall_all": 0.6495049504950495,
-      "ndcg_at_10": 0.5280567352081383,
-      "exact_match": 0.061386138613861385,
-      "token_f1": 0.10059714955221637,
-      "avg_total_sec": 0.06343689844713057,
+      "doc_recall_any": 0.7235294117647059,
+      "doc_recall_all": 0.6470588235294118,
+      "ndcg_at_10": 0.5269294452291043,
+      "exact_match": 0.060784313725490195,
+      "token_f1": 0.10051588036354457,
+      "avg_total_sec": 0.06340612090631005,
       "p50_total_sec": 0.06269786087796092,
       "p95_total_sec": 0.09215050097554922,
-      "avg_storage_bytes": 12227841.174257426,
+      "avg_storage_bytes": 12245676.937254902,
       "p95_storage_bytes": 14670881.0,
       "categories": {
         "category_2": {
-          "expected_total": 94,
-          "rows_recorded": 94,
-          "rows_successful": 94,
+          "expected_total": 96,
+          "rows_recorded": 96,
+          "rows_successful": 96,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.8936170212765957,
-          "doc_recall_all": 0.8829787234042553,
-          "ndcg_at_10": 0.7371852138914108,
-          "exact_match": 0.2978723404255319,
-          "token_f1": 0.41357649442755823,
-          "avg_total_sec": 0.07535372294505384,
-          "p50_total_sec": 0.07010127883404493,
+          "doc_recall_any": 0.875,
+          "doc_recall_all": 0.8645833333333334,
+          "ndcg_at_10": 0.7218271886020063,
+          "exact_match": 0.2916666666666667,
+          "token_f1": 0.4049603174603174,
+          "avg_total_sec": 0.07502867432291775,
+          "p50_total_sec": 0.0705584199167788,
           "p95_total_sec": 0.10930451983585954,
-          "avg_storage_bytes": 11891702.957446808,
+          "avg_storage_bytes": 11936606.833333334,
           "p95_storage_bytes": 14670881.0,
           "categories": {},
           "sample_errors": [],
@@ -7560,6 +7608,40 @@
                 "conv-42:D5:6",
                 "conv-42:D25:27",
                 "conv-42:D28:31"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-42::0008",
+              "category": "category_2",
+              "query": "When did Nate get his first two turtles?",
+              "gold": "2019",
+              "prediction": "10 November 2022",
+              "expected_doc_ids": [
+                "conv-42:D2:12"
+              ],
+              "retrieved_doc_ids": [
+                "conv-42:D29:6",
+                "conv-42:D28:25",
+                "conv-42:D28:26",
+                "conv-42:D28:31",
+                "conv-42:D2:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-42::0009",
+              "category": "category_2",
+              "query": "What major achievement did Joanna accomplish in January 2022?",
+              "gold": "finished her screenplay and printed it",
+              "prediction": "Yeah, that's me in that photo!",
+              "expected_doc_ids": [
+                "conv-42:D2:3"
+              ],
+              "retrieved_doc_ids": [
+                "conv-42:D9:7",
+                "conv-42:D26:4",
+                "conv-42:D13:20",
+                "conv-42:D5:15",
+                "conv-42:D2:25"
               ]
             }
           ],
@@ -7735,20 +7817,20 @@
           ]
         },
         "category_3": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 24,
+          "rows_recorded": 24,
+          "rows_successful": 24,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.4782608695652174,
-          "doc_recall_all": 0.17391304347826086,
-          "ndcg_at_10": 0.2050683742787604,
+          "doc_recall_any": 0.5,
+          "doc_recall_all": 0.20833333333333334,
+          "ndcg_at_10": 0.21414010178408915,
           "exact_match": 0.0,
-          "token_f1": 0.03595206725641508,
-          "avg_total_sec": 0.060764348964490324,
-          "p50_total_sec": 0.06066373595967889,
+          "token_f1": 0.03445406445406445,
+          "avg_total_sec": 0.06104208996597057,
+          "p50_total_sec": 0.06478651612997055,
           "p95_total_sec": 0.08469782397150993,
-          "avg_storage_bytes": 12521137.695652174,
+          "avg_storage_bytes": 12584719.0,
           "p95_storage_bytes": 14670881.0,
           "categories": {},
           "sample_errors": [],
@@ -8115,24 +8197,38 @@
                 "conv-41:D9:5",
                 "conv-41:D7:7"
               ]
+            },
+            {
+              "case_id": "locomo::conv-42::0012",
+              "category": "category_3",
+              "query": "What underlying condition might Joanna have based on her allergies?",
+              "gold": "asthma",
+              "prediction": "Unfortunately, allergies make it so I don't really want to get any, and I'm too lazy to research alternative pets for my allergies",
+              "retrieved_doc_ids": [
+                "conv-42:D12:8",
+                "conv-42:D24:6",
+                "conv-42:D2:22",
+                "conv-42:D24:4",
+                "conv-42:D25:20"
+              ]
             }
           ]
         },
         "category_1": {
-          "expected_total": 76,
-          "rows_recorded": 76,
-          "rows_successful": 76,
+          "expected_total": 78,
+          "rows_recorded": 78,
+          "rows_successful": 78,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6710526315789473,
-          "doc_recall_all": 0.32894736842105265,
-          "ndcg_at_10": 0.35972687119069735,
-          "exact_match": 0.013157894736842105,
-          "token_f1": 0.04458458539793911,
-          "avg_total_sec": 0.059962994841809725,
-          "p50_total_sec": 0.06005776394158602,
+          "doc_recall_any": 0.6794871794871795,
+          "doc_recall_all": 0.3333333333333333,
+          "ndcg_at_10": 0.37156177131820084,
+          "exact_match": 0.01282051282051282,
+          "token_f1": 0.04935855066386967,
+          "avg_total_sec": 0.059894136451662354,
+          "p50_total_sec": 0.05983163509517908,
           "p95_total_sec": 0.08669486595317721,
-          "avg_storage_bytes": 12416672.684210526,
+          "avg_storage_bytes": 12458478.23076923,
           "p95_storage_bytes": 14670881.0,
           "categories": {},
           "sample_errors": [],
@@ -9701,11 +9797,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04839844618543754,
-    "doc_recall_all_delta": 0.05637417110271137,
-    "ndcg_at_10_delta": 0.07758820975623643,
-    "token_f1_delta": 0.0084438867093862,
-    "avg_storage_ratio_nova_over_stock": 0.6226125528762777,
-    "avg_latency_ratio_nova_over_stock": 0.009968112788290486
+    "doc_recall_any_delta": 0.04717538270261867,
+    "doc_recall_all_delta": 0.05392804413707364,
+    "ndcg_at_10_delta": 0.07646091977720243,
+    "token_f1_delta": 0.008362617520714405,
+    "avg_storage_ratio_nova_over_stock": 0.6235207074535332,
+    "avg_latency_ratio_nova_over_stock": 0.00996327658088194
   }
 }
