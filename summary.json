@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:08:06Z",
+  "generated_at": "2026-04-29T13:08:07Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:08:06Z",
+    "updated_at": "2026-04-29T13:08:07Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 80,
+    "current_case_index": 85,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0079"
+    "current_case_id": "locomo::conv-26::0084"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,34 +2238,34 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 80,
-        "rows_successful": 80,
+        "rows_recorded": 85,
+        "rows_successful": 85,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7375,
-        "doc_recall_all": 0.55,
-        "ndcg_at_10": 0.48727572914241774,
-        "exact_match": 0.1375,
-        "token_f1": 0.2235997644974505,
-        "avg_total_sec": 0.06298730275593697,
-        "p50_total_sec": 0.06315112672746181,
+        "doc_recall_any": 0.7411764705882353,
+        "doc_recall_all": 0.5529411764705883,
+        "ndcg_at_10": 0.49019569444909394,
+        "exact_match": 0.1411764705882353,
+        "token_f1": 0.22435058048957912,
+        "avg_total_sec": 0.06205406799802885,
+        "p50_total_sec": 0.06274843635037541,
         "p95_total_sec": 0.08885137597098947,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
         "categories": {
           "category_2": {
-            "expected_total": 36,
-            "rows_recorded": 36,
-            "rows_successful": 36,
+            "expected_total": 37,
+            "rows_recorded": 37,
+            "rows_successful": 37,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9166666666666666,
-            "doc_recall_all": 0.9166666666666666,
-            "ndcg_at_10": 0.7490979130790955,
-            "exact_match": 0.2777777777777778,
-            "token_f1": 0.44570105820105815,
-            "avg_total_sec": 0.06945117976930407,
-            "p50_total_sec": 0.06786323478445411,
+            "doc_recall_any": 0.918918918918919,
+            "doc_recall_all": 0.918918918918919,
+            "ndcg_at_10": 0.7558790505634443,
+            "exact_match": 0.2972972972972973,
+            "token_f1": 0.4606821106821107,
+            "avg_total_sec": 0.06885326964579322,
+            "p50_total_sec": 0.06759489700198174,
             "p95_total_sec": 0.09087628312408924,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -2496,18 +2496,18 @@
             ]
           },
           "category_3": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5833333333333334,
-            "doc_recall_all": 0.25,
-            "ndcg_at_10": 0.2994450222425442,
+            "doc_recall_any": 0.6153846153846154,
+            "doc_recall_all": 0.23076923076923078,
+            "ndcg_at_10": 0.2906089202838537,
             "exact_match": 0.0,
-            "token_f1": 0.01857142857142857,
-            "avg_total_sec": 0.06028278036198268,
-            "p50_total_sec": 0.06497240113094449,
+            "token_f1": 0.031128871128871125,
+            "avg_total_sec": 0.05972767503072436,
+            "p50_total_sec": 0.06066373595967889,
             "p95_total_sec": 0.07226169295608997,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -2696,6 +2696,20 @@
                   "conv-26:D2:7",
                   "conv-26:D8:32",
                   "conv-26:D18:17"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0081",
+                "category": "category_3",
+                "query": "Would Caroline want to move back to her home country soon?",
+                "gold": "No; she's in the process of adopting children.",
+                "prediction": "That's awesome, Melanie!",
+                "retrieved_doc_ids": [
+                  "conv-26:D8:29",
+                  "conv-26:D3:13",
+                  "conv-26:D17:5",
+                  "conv-26:D2:10",
+                  "conv-26:D4:3"
                 ]
               }
             ]
@@ -3102,6 +3116,74 @@
                   "conv-26:D14:21",
                   "conv-26:D16:9",
                   "conv-26:D14:13"
+                ]
+              }
+            ]
+          },
+          "category_4": {
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.6666666666666666,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.5,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 0.04507221436748902,
+            "p50_total_sec": 0.049805752001702785,
+            "p95_total_sec": 0.052404118701815605,
+            "avg_storage_bytes": 10963457.0,
+            "p95_storage_bytes": 10963457.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "locomo::conv-26::0084",
+                "category": "category_4",
+                "query": "How does Melanie prioritize self-care?",
+                "gold": "by carving out some me-time each day for activities like running, reading, or playing the violin",
+                "prediction": "even if it's not always easy",
+                "expected_doc_ids": [
+                  "conv-26:D2:5"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:4",
+                  "conv-26:D2:3",
+                  "conv-26:D7:25",
+                  "conv-26:D4:15",
+                  "conv-26:D7:7"
+                ]
+              }
+            ],
+            "sample_successes": [
+              {
+                "case_id": "locomo::conv-26::0082",
+                "category": "category_4",
+                "query": "What did the charity race raise awareness for?",
+                "gold": "mental health",
+                "prediction": "super rewarding - I'm really proud of you for taking part",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:2",
+                  "conv-26:D2:1",
+                  "conv-26:D15:4",
+                  "conv-26:D11:2",
+                  "conv-26:D14:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0083",
+                "category": "category_4",
+                "query": "What did Melanie realize after the charity race?",
+                "gold": "self-care is important",
+                "prediction": "Hey Caroline, since we last chatted, I've had a lot of things happening to me",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:2",
+                  "conv-26:D2:1",
+                  "conv-26:D2:3",
+                  "conv-26:D15:4",
+                  "conv-26:D7:7"
                 ]
               }
             ]
@@ -5738,34 +5820,34 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 80,
-      "rows_successful": 80,
+      "rows_recorded": 85,
+      "rows_successful": 85,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7375,
-      "doc_recall_all": 0.55,
-      "ndcg_at_10": 0.48727572914241774,
-      "exact_match": 0.1375,
-      "token_f1": 0.2235997644974505,
-      "avg_total_sec": 0.06298730275593697,
-      "p50_total_sec": 0.06315112672746181,
+      "doc_recall_any": 0.7411764705882353,
+      "doc_recall_all": 0.5529411764705883,
+      "ndcg_at_10": 0.49019569444909394,
+      "exact_match": 0.1411764705882353,
+      "token_f1": 0.22435058048957912,
+      "avg_total_sec": 0.06205406799802885,
+      "p50_total_sec": 0.06274843635037541,
       "p95_total_sec": 0.08885137597098947,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
       "categories": {
         "category_2": {
-          "expected_total": 36,
-          "rows_recorded": 36,
-          "rows_successful": 36,
+          "expected_total": 37,
+          "rows_recorded": 37,
+          "rows_successful": 37,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9166666666666666,
-          "doc_recall_all": 0.9166666666666666,
-          "ndcg_at_10": 0.7490979130790955,
-          "exact_match": 0.2777777777777778,
-          "token_f1": 0.44570105820105815,
-          "avg_total_sec": 0.06945117976930407,
-          "p50_total_sec": 0.06786323478445411,
+          "doc_recall_any": 0.918918918918919,
+          "doc_recall_all": 0.918918918918919,
+          "ndcg_at_10": 0.7558790505634443,
+          "exact_match": 0.2972972972972973,
+          "token_f1": 0.4606821106821107,
+          "avg_total_sec": 0.06885326964579322,
+          "p50_total_sec": 0.06759489700198174,
           "p95_total_sec": 0.09087628312408924,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -5996,18 +6078,18 @@
           ]
         },
         "category_3": {
-          "expected_total": 12,
-          "rows_recorded": 12,
-          "rows_successful": 12,
+          "expected_total": 13,
+          "rows_recorded": 13,
+          "rows_successful": 13,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5833333333333334,
-          "doc_recall_all": 0.25,
-          "ndcg_at_10": 0.2994450222425442,
+          "doc_recall_any": 0.6153846153846154,
+          "doc_recall_all": 0.23076923076923078,
+          "ndcg_at_10": 0.2906089202838537,
           "exact_match": 0.0,
-          "token_f1": 0.01857142857142857,
-          "avg_total_sec": 0.06028278036198268,
-          "p50_total_sec": 0.06497240113094449,
+          "token_f1": 0.031128871128871125,
+          "avg_total_sec": 0.05972767503072436,
+          "p50_total_sec": 0.06066373595967889,
           "p95_total_sec": 0.07226169295608997,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -6196,6 +6278,20 @@
                 "conv-26:D2:7",
                 "conv-26:D8:32",
                 "conv-26:D18:17"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0081",
+              "category": "category_3",
+              "query": "Would Caroline want to move back to her home country soon?",
+              "gold": "No; she's in the process of adopting children.",
+              "prediction": "That's awesome, Melanie!",
+              "retrieved_doc_ids": [
+                "conv-26:D8:29",
+                "conv-26:D3:13",
+                "conv-26:D17:5",
+                "conv-26:D2:10",
+                "conv-26:D4:3"
               ]
             }
           ]
@@ -6605,6 +6701,74 @@
               ]
             }
           ]
+        },
+        "category_4": {
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 0.6666666666666666,
+          "doc_recall_all": 0.6666666666666666,
+          "ndcg_at_10": 0.5,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 0.04507221436748902,
+          "p50_total_sec": 0.049805752001702785,
+          "p95_total_sec": 0.052404118701815605,
+          "avg_storage_bytes": 10963457.0,
+          "p95_storage_bytes": 10963457.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [
+            {
+              "case_id": "locomo::conv-26::0084",
+              "category": "category_4",
+              "query": "How does Melanie prioritize self-care?",
+              "gold": "by carving out some me-time each day for activities like running, reading, or playing the violin",
+              "prediction": "even if it's not always easy",
+              "expected_doc_ids": [
+                "conv-26:D2:5"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:4",
+                "conv-26:D2:3",
+                "conv-26:D7:25",
+                "conv-26:D4:15",
+                "conv-26:D7:7"
+              ]
+            }
+          ],
+          "sample_successes": [
+            {
+              "case_id": "locomo::conv-26::0082",
+              "category": "category_4",
+              "query": "What did the charity race raise awareness for?",
+              "gold": "mental health",
+              "prediction": "super rewarding - I'm really proud of you for taking part",
+              "retrieved_doc_ids": [
+                "conv-26:D2:2",
+                "conv-26:D2:1",
+                "conv-26:D15:4",
+                "conv-26:D11:2",
+                "conv-26:D14:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0083",
+              "category": "category_4",
+              "query": "What did Melanie realize after the charity race?",
+              "gold": "self-care is important",
+              "prediction": "Hey Caroline, since we last chatted, I've had a lot of things happening to me",
+              "retrieved_doc_ids": [
+                "conv-26:D2:2",
+                "conv-26:D2:1",
+                "conv-26:D2:3",
+                "conv-26:D15:4",
+                "conv-26:D7:7"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -6993,11 +7157,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.044032663316582954,
-    "doc_recall_all_delta": -0.04798994974874371,
-    "ndcg_at_10_delta": 0.021334558133923376,
-    "token_f1_delta": 0.11231654174707234,
+    "doc_recall_any_delta": 0.047709133904818235,
+    "doc_recall_all_delta": -0.045048773278155485,
+    "ndcg_at_10_delta": 0.024254523440599585,
+    "token_f1_delta": 0.11306735773920096,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009905505291891423
+    "avg_latency_ratio_nova_over_stock": 0.009758742985385696
   }
 }
