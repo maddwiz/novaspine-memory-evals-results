@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:56:18Z",
+  "generated_at": "2026-04-29T02:56:51Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,28 +117,28 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:56:18Z",
+    "updated_at": "2026-04-29T02:56:51Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 105,
+    "current_case_index": 110,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0104"
+    "current_case_id": "locomo::conv-26::0109"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 105,
-        "rows_successful": 105,
+        "rows_recorded": 110,
+        "rows_successful": 110,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7047619047619048,
-        "doc_recall_all": 0.5238095238095238,
-        "ndcg_at_10": 0.4266678031676744,
-        "exact_match": 0.12380952380952381,
-        "token_f1": 0.19189665910583933,
-        "avg_total_sec": 6.370998881562125,
-        "p50_total_sec": 6.354877830948681,
+        "doc_recall_any": 0.7,
+        "doc_recall_all": 0.5272727272727272,
+        "ndcg_at_10": 0.4220228862932458,
+        "exact_match": 0.11818181818181818,
+        "token_f1": 0.18565342253491277,
+        "avg_total_sec": 6.371665770793333,
+        "p50_total_sec": 6.355254838708788,
         "p95_total_sec": 6.459623791277409,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
@@ -1076,19 +1076,19 @@
             ]
           },
           "category_4": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6521739130434783,
-            "doc_recall_all": 0.6521739130434783,
-            "ndcg_at_10": 0.4842445701278244,
-            "exact_match": 0.043478260869565216,
-            "token_f1": 0.10366618869843601,
-            "avg_total_sec": 6.342979206764341,
-            "p50_total_sec": 6.344608685001731,
-            "p95_total_sec": 6.405486697331071,
+            "doc_recall_any": 0.6428571428571429,
+            "doc_recall_all": 0.6428571428571429,
+            "ndcg_at_10": 0.4557151168782565,
+            "exact_match": 0.03571428571428571,
+            "token_f1": 0.09489462902826075,
+            "avg_total_sec": 6.350602642100837,
+            "p50_total_sec": 6.346937394235283,
+            "p95_total_sec": 6.417446245905012,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
@@ -1228,6 +1228,40 @@
                   "conv-26:D14:13",
                   "conv-26:D19:4",
                   "conv-26:D13:15"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0106",
+                "category": "category_4",
+                "query": "What are the new shoes that Melanie got used for?",
+                "gold": "Running",
+                "prediction": "Luna, Oliver!, I'll never forget the day my youngest took her first steps, Thanks, Caroline!, That's a gorgeous song, Oliver's hilarious!, Yeah, it's tough",
+                "expected_doc_ids": [
+                  "conv-26:D7:19"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D7:18",
+                  "conv-26:D10:20",
+                  "conv-26:D4:5",
+                  "conv-26:D12:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0108",
+                "category": "category_4",
+                "query": "What does Melanie say running has been great for?",
+                "gold": "Her mental health",
+                "prediction": "I've been running farther to de-stress, which has been great for my headspace",
+                "expected_doc_ids": [
+                  "conv-26:D7:24"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D7:23",
+                  "conv-26:D7:22",
+                  "conv-26:D7:21",
+                  "conv-26:D4:15",
+                  "conv-26:D7:8"
                 ]
               }
             ],
@@ -1937,17 +1971,17 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 105,
-      "rows_successful": 105,
+      "rows_recorded": 110,
+      "rows_successful": 110,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7047619047619048,
-      "doc_recall_all": 0.5238095238095238,
-      "ndcg_at_10": 0.4266678031676744,
-      "exact_match": 0.12380952380952381,
-      "token_f1": 0.19189665910583933,
-      "avg_total_sec": 6.370998881562125,
-      "p50_total_sec": 6.354877830948681,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.5272727272727272,
+      "ndcg_at_10": 0.4220228862932458,
+      "exact_match": 0.11818181818181818,
+      "token_f1": 0.18565342253491277,
+      "avg_total_sec": 6.371665770793333,
+      "p50_total_sec": 6.355254838708788,
       "p95_total_sec": 6.459623791277409,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
@@ -2885,19 +2919,19 @@
           ]
         },
         "category_4": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 28,
+          "rows_recorded": 28,
+          "rows_successful": 28,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6521739130434783,
-          "doc_recall_all": 0.6521739130434783,
-          "ndcg_at_10": 0.4842445701278244,
-          "exact_match": 0.043478260869565216,
-          "token_f1": 0.10366618869843601,
-          "avg_total_sec": 6.342979206764341,
-          "p50_total_sec": 6.344608685001731,
-          "p95_total_sec": 6.405486697331071,
+          "doc_recall_any": 0.6428571428571429,
+          "doc_recall_all": 0.6428571428571429,
+          "ndcg_at_10": 0.4557151168782565,
+          "exact_match": 0.03571428571428571,
+          "token_f1": 0.09489462902826075,
+          "avg_total_sec": 6.350602642100837,
+          "p50_total_sec": 6.346937394235283,
+          "p95_total_sec": 6.417446245905012,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
@@ -3037,6 +3071,40 @@
                 "conv-26:D14:13",
                 "conv-26:D19:4",
                 "conv-26:D13:15"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0106",
+              "category": "category_4",
+              "query": "What are the new shoes that Melanie got used for?",
+              "gold": "Running",
+              "prediction": "Luna, Oliver!, I'll never forget the day my youngest took her first steps, Thanks, Caroline!, That's a gorgeous song, Oliver's hilarious!, Yeah, it's tough",
+              "expected_doc_ids": [
+                "conv-26:D7:19"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D7:18",
+                "conv-26:D10:20",
+                "conv-26:D4:5",
+                "conv-26:D12:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0108",
+              "category": "category_4",
+              "query": "What does Melanie say running has been great for?",
+              "gold": "Her mental health",
+              "prediction": "I've been running farther to de-stress, which has been great for my headspace",
+              "expected_doc_ids": [
+                "conv-26:D7:24"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D7:23",
+                "conv-26:D7:22",
+                "conv-26:D7:21",
+                "conv-26:D4:15",
+                "conv-26:D7:8"
               ]
             }
           ],
@@ -3611,10 +3679,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.7047619047619048,
-    "doc_recall_all_delta": -0.5238095238095238,
-    "ndcg_at_10_delta": -0.4266678031676744,
-    "token_f1_delta": -0.19189665910583933,
+    "doc_recall_any_delta": -0.7,
+    "doc_recall_all_delta": -0.5272727272727272,
+    "ndcg_at_10_delta": -0.4220228862932458,
+    "token_f1_delta": -0.18565342253491277,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
