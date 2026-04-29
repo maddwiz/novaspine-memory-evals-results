@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:08:27Z",
+  "generated_at": "2026-04-29T03:08:29Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:08:27Z",
+    "updated_at": "2026-04-29T03:08:29Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 170,
+    "current_case_index": 175,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0169"
+    "current_case_id": "locomo::conv-26::0174"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,18 +2238,18 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 170,
-        "rows_successful": 170,
+        "rows_recorded": 175,
+        "rows_successful": 175,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6647058823529411,
-        "doc_recall_all": 0.5705882352941176,
-        "ndcg_at_10": 0.39085440985959263,
-        "exact_match": 0.06470588235294118,
-        "token_f1": 0.11793612299518309,
-        "avg_total_sec": 0.06095862039638793,
-        "p50_total_sec": 0.060651801992207766,
-        "p95_total_sec": 0.0894683632068336,
+        "doc_recall_any": 0.6571428571428571,
+        "doc_recall_all": 0.5657142857142857,
+        "ndcg_at_10": 0.3911157124350328,
+        "exact_match": 0.06285714285714286,
+        "token_f1": 0.11456651948103501,
+        "avg_total_sec": 0.06132352209516934,
+        "p50_total_sec": 0.06101528322324157,
+        "p95_total_sec": 0.08925668010488153,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
         "categories": {
@@ -3521,19 +3521,19 @@
             ]
           },
           "category_5": {
-            "expected_total": 18,
-            "rows_recorded": 18,
-            "rows_successful": 18,
+            "expected_total": 23,
+            "rows_recorded": 23,
+            "rows_successful": 23,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6666666666666666,
-            "doc_recall_all": 0.6666666666666666,
-            "ndcg_at_10": 0.4800522526680903,
+            "doc_recall_any": 0.6086956521739131,
+            "doc_recall_all": 0.6086956521739131,
+            "ndcg_at_10": 0.4626495890445924,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 0.059463488610668316,
-            "p50_total_sec": 0.05935684684664011,
-            "p95_total_sec": 0.07298866892233491,
+            "avg_total_sec": 0.0625649432287268,
+            "p50_total_sec": 0.06041209911927581,
+            "p95_total_sec": 0.08925668010488153,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
             "categories": {},
@@ -3639,6 +3639,57 @@
                   "conv-26:D16:9",
                   "conv-26:D4:3",
                   "conv-26:D11:8"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0170",
+                "category": "category_5",
+                "query": "What does Caroline say running has been great for?",
+                "gold": "",
+                "prediction": "Yeah totally!",
+                "expected_doc_ids": [
+                  "conv-26:D7:24"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D15:23",
+                  "conv-26:D3:10",
+                  "conv-26:D4:15",
+                  "conv-26:D7:21",
+                  "conv-26:D7:23"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0172",
+                "category": "category_5",
+                "query": "What inspired Melanie's painting for the art show?",
+                "gold": "",
+                "prediction": "Wow, Caroline, that painting is awesome!",
+                "expected_doc_ids": [
+                  "conv-26:D9:16"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D9:15",
+                  "conv-26:D13:11",
+                  "conv-26:D16:5",
+                  "conv-26:D11:8",
+                  "conv-26:D8:5"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0173",
+                "category": "category_5",
+                "query": "What inspired Caroline's sculpture for the art show?",
+                "gold": "",
+                "prediction": "I'm inspired seeing my work make a difference for the LGBTQ+ community",
+                "expected_doc_ids": [
+                  "conv-26:D9:16"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D16:5",
+                  "conv-26:D8:5",
+                  "conv-26:D16:7",
+                  "conv-26:D11:8",
+                  "conv-26:D12:7"
                 ]
               }
             ],
@@ -6441,18 +6492,18 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 170,
-      "rows_successful": 170,
+      "rows_recorded": 175,
+      "rows_successful": 175,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6647058823529411,
-      "doc_recall_all": 0.5705882352941176,
-      "ndcg_at_10": 0.39085440985959263,
-      "exact_match": 0.06470588235294118,
-      "token_f1": 0.11793612299518309,
-      "avg_total_sec": 0.06095862039638793,
-      "p50_total_sec": 0.060651801992207766,
-      "p95_total_sec": 0.0894683632068336,
+      "doc_recall_any": 0.6571428571428571,
+      "doc_recall_all": 0.5657142857142857,
+      "ndcg_at_10": 0.3911157124350328,
+      "exact_match": 0.06285714285714286,
+      "token_f1": 0.11456651948103501,
+      "avg_total_sec": 0.06132352209516934,
+      "p50_total_sec": 0.06101528322324157,
+      "p95_total_sec": 0.08925668010488153,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
       "categories": {
@@ -7724,19 +7775,19 @@
           ]
         },
         "category_5": {
-          "expected_total": 18,
-          "rows_recorded": 18,
-          "rows_successful": 18,
+          "expected_total": 23,
+          "rows_recorded": 23,
+          "rows_successful": 23,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6666666666666666,
-          "doc_recall_all": 0.6666666666666666,
-          "ndcg_at_10": 0.4800522526680903,
+          "doc_recall_any": 0.6086956521739131,
+          "doc_recall_all": 0.6086956521739131,
+          "ndcg_at_10": 0.4626495890445924,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 0.059463488610668316,
-          "p50_total_sec": 0.05935684684664011,
-          "p95_total_sec": 0.07298866892233491,
+          "avg_total_sec": 0.0625649432287268,
+          "p50_total_sec": 0.06041209911927581,
+          "p95_total_sec": 0.08925668010488153,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
           "categories": {},
@@ -7842,6 +7893,57 @@
                 "conv-26:D16:9",
                 "conv-26:D4:3",
                 "conv-26:D11:8"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0170",
+              "category": "category_5",
+              "query": "What does Caroline say running has been great for?",
+              "gold": "",
+              "prediction": "Yeah totally!",
+              "expected_doc_ids": [
+                "conv-26:D7:24"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D15:23",
+                "conv-26:D3:10",
+                "conv-26:D4:15",
+                "conv-26:D7:21",
+                "conv-26:D7:23"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0172",
+              "category": "category_5",
+              "query": "What inspired Melanie's painting for the art show?",
+              "gold": "",
+              "prediction": "Wow, Caroline, that painting is awesome!",
+              "expected_doc_ids": [
+                "conv-26:D9:16"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D9:15",
+                "conv-26:D13:11",
+                "conv-26:D16:5",
+                "conv-26:D11:8",
+                "conv-26:D8:5"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0173",
+              "category": "category_5",
+              "query": "What inspired Caroline's sculpture for the art show?",
+              "gold": "",
+              "prediction": "I'm inspired seeing my work make a difference for the LGBTQ+ community",
+              "expected_doc_ids": [
+                "conv-26:D9:16"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D16:5",
+                "conv-26:D8:5",
+                "conv-26:D16:7",
+                "conv-26:D11:8",
+                "conv-26:D12:7"
               ]
             }
           ],
@@ -8399,11 +8501,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.028761454330475944,
-    "doc_recall_all_delta": -0.027401714454626136,
-    "ndcg_at_10_delta": -0.07508676114890173,
-    "token_f1_delta": 0.00665290024480493,
+    "doc_recall_any_delta": -0.03632447954055995,
+    "doc_recall_all_delta": -0.03227566403445803,
+    "ndcg_at_10_delta": -0.07482545857346157,
+    "token_f1_delta": 0.0032832967306568456,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.009565473660566455
+    "avg_latency_ratio_nova_over_stock": 0.009622733118961226
   }
 }
