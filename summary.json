@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:41:06Z",
+  "generated_at": "2026-04-29T08:42:26Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:41:03Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T08:42:13Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 285,
+    "current_case_index": 290,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::65240037"
+    "current_case_id": "longmemeval_oracle::58bf7951"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,19 +4892,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 285,
-        "rows_successful": 285,
+        "rows_recorded": 290,
+        "rows_successful": 290,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9929824561403509,
-        "doc_recall_all": 0.8491228070175438,
-        "ndcg_at_10": 0.9474457011411048,
-        "exact_match": 0.15087719298245614,
-        "token_f1": 0.19627039686309689,
-        "avg_total_sec": 14.846895440079663,
-        "p50_total_sec": 14.618484842125326,
+        "doc_recall_any": 0.993103448275862,
+        "doc_recall_all": 0.8517241379310345,
+        "ndcg_at_10": 0.9483518097421203,
+        "exact_match": 0.1482758620689655,
+        "token_f1": 0.19380596473327336,
+        "avg_total_sec": 14.815264259957997,
+        "p50_total_sec": 14.5705023589544,
         "p95_total_sec": 18.591063846834004,
-        "avg_storage_bytes": 6345188.105263158,
+        "avg_storage_bytes": 6324808.8068965515,
         "p95_storage_bytes": 8473727.0,
         "categories": {
           "temporal-reasoning": {
@@ -5545,20 +5545,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 55,
-            "rows_recorded": 55,
-            "rows_successful": 55,
+            "expected_total": 56,
+            "rows_recorded": 56,
+            "rows_successful": 56,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.03636363636363636,
-            "token_f1": 0.08282815335026188,
-            "avg_total_sec": 12.744396150679412,
-            "p50_total_sec": 12.701774623710662,
+            "exact_match": 0.03571428571428571,
+            "token_f1": 0.08611098394519767,
+            "avg_total_sec": 12.744851545888066,
+            "p50_total_sec": 12.703519252128899,
             "p95_total_sec": 12.973809581249952,
-            "avg_storage_bytes": 4773941.036363636,
+            "avg_storage_bytes": 4774221.571428572,
             "p95_storage_bytes": 5140457.0,
             "categories": {},
             "sample_errors": [],
@@ -5682,6 +5682,68 @@
                 "prediction": "you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_187684"
+                ]
+              }
+            ]
+          },
+          "single-session-user": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 13.072884170687757,
+            "p50_total_sec": 13.17052343301475,
+            "p95_total_sec": 13.390964324120432,
+            "avg_storage_bytes": 5256573.25,
+            "p95_storage_bytes": 5504399.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::e47becba",
+                "category": "single-session-user",
+                "query": "What degree did I graduate with?",
+                "gold": "Business Administration",
+                "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+                "retrieved_doc_ids": [
+                  "answer_280352e9"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::118b2229",
+                "category": "single-session-user",
+                "query": "How long is my daily commute to work?",
+                "gold": "45 minutes each way",
+                "prediction": "a significant amount of time that can be utilized for personal development, entertainment, or relaxation",
+                "retrieved_doc_ids": [
+                  "answer_40a90d51"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::51a45a95",
+                "category": "single-session-user",
+                "query": "Where did I redeem a $5 coupon on coffee creamer?",
+                "gold": "Target",
+                "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+                "retrieved_doc_ids": [
+                  "answer_d61669c7"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::58bf7951",
+                "category": "single-session-user",
+                "query": "What play did I attend at the local community theater?",
+                "gold": "The Glass Menagerie",
+                "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
+                "retrieved_doc_ids": [
+                  "answer_355c48bb"
                 ]
               }
             ]
@@ -5850,19 +5912,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 285,
-        "rows_successful": 285,
+        "rows_recorded": 289,
+        "rows_successful": 289,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9964912280701754,
-        "ndcg_at_10": 0.9996217924402647,
-        "exact_match": 0.17894736842105263,
-        "token_f1": 0.23400425770913252,
-        "avg_total_sec": 6.929072035883406,
-        "p50_total_sec": 6.896791683044285,
+        "doc_recall_all": 0.9965397923875432,
+        "ndcg_at_10": 0.9996270271469739,
+        "exact_match": 0.17647058823529413,
+        "token_f1": 0.23208361878219774,
+        "avg_total_sec": 6.880914671111298,
+        "p50_total_sec": 6.868993814103305,
         "p95_total_sec": 13.747387605253607,
-        "avg_storage_bytes": 1133618.7263157894,
+        "avg_storage_bytes": 1127604.3356401385,
         "p95_storage_bytes": 1985641.0,
         "categories": {
           "temporal-reasoning": {
@@ -6488,20 +6550,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 55,
-            "rows_recorded": 55,
-            "rows_successful": 55,
+            "expected_total": 56,
+            "rows_recorded": 56,
+            "rows_successful": 56,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.03636363636363636,
-            "token_f1": 0.09127849736553405,
-            "avg_total_sec": 1.9441752149469473,
-            "p50_total_sec": 1.6496156631037593,
+            "exact_match": 0.03571428571428571,
+            "token_f1": 0.09645124528672776,
+            "avg_total_sec": 1.9492737629084982,
+            "p50_total_sec": 1.6611188151873648,
             "p95_total_sec": 3.3963639098219573,
-            "avg_storage_bytes": 513690.67272727273,
+            "avg_storage_bytes": 514254.14285714284,
             "p95_storage_bytes": 684797.0,
             "categories": {},
             "sample_errors": [],
@@ -6625,6 +6687,58 @@
                 "prediction": "you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_187684"
+                ]
+              }
+            ]
+          },
+          "single-session-user": {
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 3.856371941200147,
+            "p50_total_sec": 3.8534978930838406,
+            "p95_total_sec": 4.614607535302639,
+            "avg_storage_bytes": 750357.0,
+            "p95_storage_bytes": 852877.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::e47becba",
+                "category": "single-session-user",
+                "query": "What degree did I graduate with?",
+                "gold": "Business Administration",
+                "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+                "retrieved_doc_ids": [
+                  "answer_280352e9"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::118b2229",
+                "category": "single-session-user",
+                "query": "How long is my daily commute to work?",
+                "gold": "45 minutes each way",
+                "prediction": "have features to export notes or quotes in a format that can be easily shared or posted on social media",
+                "retrieved_doc_ids": [
+                  "answer_40a90d51"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::51a45a95",
+                "category": "single-session-user",
+                "query": "Where did I redeem a $5 coupon on coffee creamer?",
+                "gold": "Target",
+                "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+                "retrieved_doc_ids": [
+                  "answer_d61669c7"
                 ]
               }
             ]
@@ -6864,19 +6978,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2271,
-      "rows_successful": 2271,
+      "rows_recorded": 2276,
+      "rows_successful": 2276,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7318361955085865,
-      "doc_recall_all": 0.6177895200352268,
-      "ndcg_at_10": 0.5163058293199574,
-      "exact_match": 0.04975781594011449,
-      "token_f1": 0.09780671470562165,
-      "avg_total_sec": 7.43321747758222,
-      "p50_total_sec": 6.3645588820800185,
+      "doc_recall_any": 0.7324253075571178,
+      "doc_recall_all": 0.6186291739894552,
+      "ndcg_at_10": 0.517368426355722,
+      "exact_match": 0.04964850615114236,
+      "token_f1": 0.09770901395568252,
+      "avg_total_sec": 7.445473781438636,
+      "p50_total_sec": 6.364783271681517,
       "p95_total_sec": 14.82074937177822,
-      "avg_storage_bytes": 19306062.138705418,
+      "avg_storage_bytes": 19274992.557557117,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -9496,20 +9610,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 55,
-          "rows_recorded": 55,
-          "rows_successful": 55,
+          "expected_total": 56,
+          "rows_recorded": 56,
+          "rows_successful": 56,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03636363636363636,
-          "token_f1": 0.08282815335026188,
-          "avg_total_sec": 12.744396150679412,
-          "p50_total_sec": 12.701774623710662,
+          "exact_match": 0.03571428571428571,
+          "token_f1": 0.08611098394519767,
+          "avg_total_sec": 12.744851545888066,
+          "p50_total_sec": 12.703519252128899,
           "p95_total_sec": 12.973809581249952,
-          "avg_storage_bytes": 4773941.036363636,
+          "avg_storage_bytes": 4774221.571428572,
           "p95_storage_bytes": 5140457.0,
           "categories": {},
           "sample_errors": [],
@@ -9633,6 +9747,68 @@
               "prediction": "you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation",
               "retrieved_doc_ids": [
                 "answer_ultrachat_187684"
+              ]
+            }
+          ]
+        },
+        "single-session-user": {
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 13.072884170687757,
+          "p50_total_sec": 13.17052343301475,
+          "p95_total_sec": 13.390964324120432,
+          "avg_storage_bytes": 5256573.25,
+          "p95_storage_bytes": 5504399.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::e47becba",
+              "category": "single-session-user",
+              "query": "What degree did I graduate with?",
+              "gold": "Business Administration",
+              "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+              "retrieved_doc_ids": [
+                "answer_280352e9"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::118b2229",
+              "category": "single-session-user",
+              "query": "How long is my daily commute to work?",
+              "gold": "45 minutes each way",
+              "prediction": "a significant amount of time that can be utilized for personal development, entertainment, or relaxation",
+              "retrieved_doc_ids": [
+                "answer_40a90d51"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::51a45a95",
+              "category": "single-session-user",
+              "query": "Where did I redeem a $5 coupon on coffee creamer?",
+              "gold": "Target",
+              "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+              "retrieved_doc_ids": [
+                "answer_d61669c7"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::58bf7951",
+              "category": "single-session-user",
+              "query": "What play did I attend at the local community theater?",
+              "gold": "The Glass Menagerie",
+              "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
+              "retrieved_doc_ids": [
+                "answer_355c48bb"
               ]
             }
           ]
@@ -10019,19 +10195,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2271,
-      "rows_successful": 2271,
+      "rows_recorded": 2275,
+      "rows_successful": 2275,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7199471598414795,
-      "doc_recall_all": 0.6226332012329371,
-      "ndcg_at_10": 0.46446627524149475,
-      "exact_match": 0.0479964773227653,
-      "token_f1": 0.0909757357423961,
-      "avg_total_sec": 0.9240925474976526,
-      "p50_total_sec": 0.06508272094652057,
+      "doc_recall_any": 0.7204395604395605,
+      "doc_recall_all": 0.6232967032967033,
+      "ndcg_at_10": 0.4654078729993119,
+      "exact_match": 0.04791208791208791,
+      "token_f1": 0.09098323000085008,
+      "avg_total_sec": 0.9285331802600278,
+      "p50_total_sec": 0.06510342890396714,
       "p95_total_sec": 7.258925422094762,
-      "avg_storage_bytes": 12057540.55614267,
+      "avg_storage_bytes": 12037569.634725275,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -12645,20 +12821,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 55,
-          "rows_recorded": 55,
-          "rows_successful": 55,
+          "expected_total": 56,
+          "rows_recorded": 56,
+          "rows_successful": 56,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03636363636363636,
-          "token_f1": 0.09127849736553405,
-          "avg_total_sec": 1.9441752149469473,
-          "p50_total_sec": 1.6496156631037593,
+          "exact_match": 0.03571428571428571,
+          "token_f1": 0.09645124528672776,
+          "avg_total_sec": 1.9492737629084982,
+          "p50_total_sec": 1.6611188151873648,
           "p95_total_sec": 3.3963639098219573,
-          "avg_storage_bytes": 513690.67272727273,
+          "avg_storage_bytes": 514254.14285714284,
           "p95_storage_bytes": 684797.0,
           "categories": {},
           "sample_errors": [],
@@ -12782,6 +12958,58 @@
               "prediction": "you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation",
               "retrieved_doc_ids": [
                 "answer_ultrachat_187684"
+              ]
+            }
+          ]
+        },
+        "single-session-user": {
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 0.0,
+          "token_f1": 0.0,
+          "avg_total_sec": 3.856371941200147,
+          "p50_total_sec": 3.8534978930838406,
+          "p95_total_sec": 4.614607535302639,
+          "avg_storage_bytes": 750357.0,
+          "p95_storage_bytes": 852877.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::e47becba",
+              "category": "single-session-user",
+              "query": "What degree did I graduate with?",
+              "gold": "Business Administration",
+              "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+              "retrieved_doc_ids": [
+                "answer_280352e9"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::118b2229",
+              "category": "single-session-user",
+              "query": "How long is my daily commute to work?",
+              "gold": "45 minutes each way",
+              "prediction": "have features to export notes or quotes in a format that can be easily shared or posted on social media",
+              "retrieved_doc_ids": [
+                "answer_40a90d51"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::51a45a95",
+              "category": "single-session-user",
+              "query": "Where did I redeem a $5 coupon on coffee creamer?",
+              "gold": "Target",
+              "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+              "retrieved_doc_ids": [
+                "answer_d61669c7"
               ]
             }
           ]
@@ -13169,11 +13397,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.011889035667106973,
-    "doc_recall_all_delta": 0.004843681197710281,
-    "ndcg_at_10_delta": -0.051839554078462635,
-    "token_f1_delta": -0.006830978963225542,
-    "avg_storage_ratio_nova_over_stock": 0.624546863545483,
-    "avg_latency_ratio_nova_over_stock": 0.1243193207093181
+    "doc_recall_any_delta": -0.011985747117557288,
+    "doc_recall_all_delta": 0.004667529307248119,
+    "ndcg_at_10_delta": -0.05196055335641009,
+    "token_f1_delta": -0.006725783954832434,
+    "avg_storage_ratio_nova_over_stock": 0.6245174725115897,
+    "avg_latency_ratio_nova_over_stock": 0.12471109395010373
   }
 }
