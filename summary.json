@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:07:59Z",
+  "generated_at": "2026-04-29T13:08:01Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:07:59Z",
+    "updated_at": "2026-04-29T13:08:01Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 60,
+    "current_case_index": 65,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0059"
+    "current_case_id": "locomo::conv-26::0064"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,34 +2238,34 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 60,
-        "rows_successful": 60,
+        "rows_recorded": 65,
+        "rows_successful": 65,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7166666666666667,
-        "doc_recall_all": 0.5166666666666667,
-        "ndcg_at_10": 0.469196889808753,
-        "exact_match": 0.13333333333333333,
-        "token_f1": 0.21706159075850545,
-        "avg_total_sec": 0.06341329296895613,
-        "p50_total_sec": 0.06292352499440312,
+        "doc_recall_any": 0.7230769230769231,
+        "doc_recall_all": 0.5384615384615384,
+        "ndcg_at_10": 0.47794312045792847,
+        "exact_match": 0.13846153846153847,
+        "token_f1": 0.22190300685400505,
+        "avg_total_sec": 0.0626885038585617,
+        "p50_total_sec": 0.06282488536089659,
         "p95_total_sec": 0.09087628312408924,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
         "categories": {
           "category_2": {
-            "expected_total": 28,
-            "rows_recorded": 28,
-            "rows_successful": 28,
+            "expected_total": 30,
+            "rows_recorded": 30,
+            "rows_successful": 30,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9285714285714286,
-            "doc_recall_all": 0.9285714285714286,
-            "ndcg_at_10": 0.7350240022718891,
-            "exact_match": 0.2857142857142857,
-            "token_f1": 0.44268707482993197,
-            "avg_total_sec": 0.06961953648299511,
-            "p50_total_sec": 0.06786323478445411,
+            "doc_recall_any": 0.9333333333333333,
+            "doc_recall_all": 0.9333333333333333,
+            "ndcg_at_10": 0.7526890687870965,
+            "exact_match": 0.3,
+            "token_f1": 0.4598412698412699,
+            "avg_total_sec": 0.06874322979710996,
+            "p50_total_sec": 0.06709364615380764,
             "p95_total_sec": 0.09303456824272871,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -2479,18 +2479,18 @@
             ]
           },
           "category_3": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5555555555555556,
-            "doc_recall_all": 0.1111111111111111,
-            "ndcg_at_10": 0.26057045760924363,
+            "doc_recall_any": 0.6,
+            "doc_recall_all": 0.2,
+            "ndcg_at_10": 0.2775810676556586,
             "exact_match": 0.0,
-            "token_f1": 0.008888888888888887,
-            "avg_total_sec": 0.06341958692711261,
-            "p50_total_sec": 0.0651796031743288,
+            "token_f1": 0.007999999999999998,
+            "avg_total_sec": 0.06228199354372919,
+            "p50_total_sec": 0.06497240113094449,
             "p95_total_sec": 0.08174402033910155,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -2633,21 +2633,35 @@
                   "conv-26:D17:5",
                   "conv-26:D11:12"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0064",
+                "category": "category_3",
+                "query": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+                "gold": "Yes; it's classical music",
+                "prediction": "Summer Sounds\"- The playing an awesome pop song that got everyone dancing and singing",
+                "retrieved_doc_ids": [
+                  "conv-26:D15:16",
+                  "conv-26:D15:22",
+                  "conv-26:D15:24",
+                  "conv-26:D15:28",
+                  "conv-26:D17:12"
+                ]
               }
             ]
           },
           "category_1": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 25,
+            "rows_recorded": 25,
+            "rows_successful": 25,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5217391304347826,
-            "doc_recall_all": 0.17391304347826086,
-            "ndcg_at_10": 0.22721770462735189,
+            "doc_recall_any": 0.52,
+            "doc_recall_all": 0.2,
+            "ndcg_at_10": 0.22839280358383485,
             "exact_match": 0.0,
-            "token_f1": 0.023845971750966623,
-            "avg_total_sec": 0.05585540322910832,
+            "token_f1": 0.021938294010889293,
+            "avg_total_sec": 0.05558543685823679,
             "p50_total_sec": 0.05624670069664717,
             "p95_total_sec": 0.08669486595317721,
             "avg_storage_bytes": 10963457.0,
@@ -2850,6 +2864,24 @@
                   "conv-26:D13:13",
                   "conv-26:D13:11",
                   "conv-26:D14:30"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0061",
+                "category": "category_1",
+                "query": "What musical artists/bands has Melanie seen?",
+                "gold": "Summer Sounds, Matt Patterson",
+                "prediction": "I'm a fan of both classical like Bach and Mozart, as well as modern music like Ed Sheeran's \"Perfect",
+                "expected_doc_ids": [
+                  "conv-26:D15:16",
+                  "conv-26:D11:3"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D15:28",
+                  "conv-26:D15:14",
+                  "conv-26:D15:24",
+                  "conv-26:D15:22",
+                  "conv-26:D15:17"
                 ]
               }
             ],
@@ -5656,34 +5688,34 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 60,
-      "rows_successful": 60,
+      "rows_recorded": 65,
+      "rows_successful": 65,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7166666666666667,
-      "doc_recall_all": 0.5166666666666667,
-      "ndcg_at_10": 0.469196889808753,
-      "exact_match": 0.13333333333333333,
-      "token_f1": 0.21706159075850545,
-      "avg_total_sec": 0.06341329296895613,
-      "p50_total_sec": 0.06292352499440312,
+      "doc_recall_any": 0.7230769230769231,
+      "doc_recall_all": 0.5384615384615384,
+      "ndcg_at_10": 0.47794312045792847,
+      "exact_match": 0.13846153846153847,
+      "token_f1": 0.22190300685400505,
+      "avg_total_sec": 0.0626885038585617,
+      "p50_total_sec": 0.06282488536089659,
       "p95_total_sec": 0.09087628312408924,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
       "categories": {
         "category_2": {
-          "expected_total": 28,
-          "rows_recorded": 28,
-          "rows_successful": 28,
+          "expected_total": 30,
+          "rows_recorded": 30,
+          "rows_successful": 30,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9285714285714286,
-          "doc_recall_all": 0.9285714285714286,
-          "ndcg_at_10": 0.7350240022718891,
-          "exact_match": 0.2857142857142857,
-          "token_f1": 0.44268707482993197,
-          "avg_total_sec": 0.06961953648299511,
-          "p50_total_sec": 0.06786323478445411,
+          "doc_recall_any": 0.9333333333333333,
+          "doc_recall_all": 0.9333333333333333,
+          "ndcg_at_10": 0.7526890687870965,
+          "exact_match": 0.3,
+          "token_f1": 0.4598412698412699,
+          "avg_total_sec": 0.06874322979710996,
+          "p50_total_sec": 0.06709364615380764,
           "p95_total_sec": 0.09303456824272871,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -5897,18 +5929,18 @@
           ]
         },
         "category_3": {
-          "expected_total": 9,
-          "rows_recorded": 9,
-          "rows_successful": 9,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5555555555555556,
-          "doc_recall_all": 0.1111111111111111,
-          "ndcg_at_10": 0.26057045760924363,
+          "doc_recall_any": 0.6,
+          "doc_recall_all": 0.2,
+          "ndcg_at_10": 0.2775810676556586,
           "exact_match": 0.0,
-          "token_f1": 0.008888888888888887,
-          "avg_total_sec": 0.06341958692711261,
-          "p50_total_sec": 0.0651796031743288,
+          "token_f1": 0.007999999999999998,
+          "avg_total_sec": 0.06228199354372919,
+          "p50_total_sec": 0.06497240113094449,
           "p95_total_sec": 0.08174402033910155,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -6051,21 +6083,35 @@
                 "conv-26:D17:5",
                 "conv-26:D11:12"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0064",
+              "category": "category_3",
+              "query": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+              "gold": "Yes; it's classical music",
+              "prediction": "Summer Sounds\"- The playing an awesome pop song that got everyone dancing and singing",
+              "retrieved_doc_ids": [
+                "conv-26:D15:16",
+                "conv-26:D15:22",
+                "conv-26:D15:24",
+                "conv-26:D15:28",
+                "conv-26:D17:12"
+              ]
             }
           ]
         },
         "category_1": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 25,
+          "rows_recorded": 25,
+          "rows_successful": 25,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5217391304347826,
-          "doc_recall_all": 0.17391304347826086,
-          "ndcg_at_10": 0.22721770462735189,
+          "doc_recall_any": 0.52,
+          "doc_recall_all": 0.2,
+          "ndcg_at_10": 0.22839280358383485,
           "exact_match": 0.0,
-          "token_f1": 0.023845971750966623,
-          "avg_total_sec": 0.05585540322910832,
+          "token_f1": 0.021938294010889293,
+          "avg_total_sec": 0.05558543685823679,
           "p50_total_sec": 0.05624670069664717,
           "p95_total_sec": 0.08669486595317721,
           "avg_storage_bytes": 10963457.0,
@@ -6268,6 +6314,24 @@
                 "conv-26:D13:13",
                 "conv-26:D13:11",
                 "conv-26:D14:30"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0061",
+              "category": "category_1",
+              "query": "What musical artists/bands has Melanie seen?",
+              "gold": "Summer Sounds, Matt Patterson",
+              "prediction": "I'm a fan of both classical like Bach and Mozart, as well as modern music like Ed Sheeran's \"Perfect",
+              "expected_doc_ids": [
+                "conv-26:D15:16",
+                "conv-26:D11:3"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D15:28",
+                "conv-26:D15:14",
+                "conv-26:D15:24",
+                "conv-26:D15:22",
+                "conv-26:D15:17"
               ]
             }
           ],
@@ -6829,11 +6893,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.023199329983249584,
-    "doc_recall_all_delta": -0.08132328308207704,
-    "ndcg_at_10_delta": 0.0032557188002586557,
-    "token_f1_delta": 0.10577836800812729,
+    "doc_recall_any_delta": 0.02960958639350597,
+    "doc_recall_all_delta": -0.05952841128720532,
+    "ndcg_at_10_delta": 0.012001949449434113,
+    "token_f1_delta": 0.11061978410362688,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009972497338299658
+    "avg_latency_ratio_nova_over_stock": 0.009858515598260145
   }
 }
