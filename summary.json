@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T18:30:30Z",
+  "generated_at": "2026-04-29T18:31:42Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T18:30:28Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T18:31:29Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 235,
+    "current_case_index": 240,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::4c36ccef"
+    "current_case_id": "longmemeval_oracle::f523d9fe"
   },
   "benchmarks": {
     "locomo": {
@@ -4897,19 +4897,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 235,
-        "rows_successful": 235,
+        "rows_recorded": 240,
+        "rows_successful": 240,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9914893617021276,
-        "doc_recall_all": 0.8170212765957446,
-        "ndcg_at_10": 0.9362639354264461,
-        "exact_match": 0.17872340425531916,
-        "token_f1": 0.2214816227165314,
-        "avg_total_sec": 15.282281894674723,
-        "p50_total_sec": 14.76284951576963,
+        "doc_recall_any": 0.9916666666666667,
+        "doc_recall_all": 0.8208333333333333,
+        "ndcg_at_10": 0.9375917701050619,
+        "exact_match": 0.175,
+        "token_f1": 0.21778529663940557,
+        "avg_total_sec": 15.232171539556779,
+        "p50_total_sec": 14.738782060798258,
         "p95_total_sec": 19.168306122068316,
-        "avg_storage_bytes": 6680241.259574468,
+        "avg_storage_bytes": 6639381.608333333,
         "p95_storage_bytes": 8519313.0,
         "categories": {
           "temporal-reasoning": {
@@ -5550,21 +5550,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.2,
-            "token_f1": 0.13333333333333333,
-            "avg_total_sec": 12.719920436386019,
-            "p50_total_sec": 12.681863856036216,
-            "p95_total_sec": 12.834105973131955,
-            "avg_storage_bytes": 4806506.6,
-            "p95_storage_bytes": 5053103.0,
+            "exact_match": 0.1,
+            "token_f1": 0.08869565217391304,
+            "avg_total_sec": 12.798452642699704,
+            "p50_total_sec": 12.748402724042535,
+            "p95_total_sec": 13.423628695774823,
+            "avg_storage_bytes": 4762742.3,
+            "p95_storage_bytes": 5097054.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5617,6 +5617,56 @@
                 "prediction": "00 pm?",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_448704"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "Refineries can enhance their operations by implementing best practices in safety, reliability, and maintenance",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "The Red Light District is one of Amsterdam's most famous attractions, known for its adult entertainment establishments and vibrant nightlife",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "user: Brainstorm ideas for work from home jobs for seniors",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "This phrase is straightforward, describes behaviors that cause problems or difficulties in an individual's life, This term implies a strong preoccupation with sexual thoughts or behaviors that may interfere with other areas of life, This te",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "always something new on Netflix",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0"
                 ]
               }
             ]
@@ -5785,19 +5835,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 235,
-        "rows_successful": 235,
+        "rows_recorded": 239,
+        "rows_successful": 239,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9957446808510638,
-        "ndcg_at_10": 0.9995413227467043,
-        "exact_match": 0.2127659574468085,
-        "token_f1": 0.2652535598646335,
-        "avg_total_sec": 7.996485998194189,
-        "p50_total_sec": 7.266798584256321,
+        "doc_recall_all": 0.99581589958159,
+        "ndcg_at_10": 0.999548999353454,
+        "exact_match": 0.20920502092050208,
+        "token_f1": 0.2617638941220628,
+        "avg_total_sec": 7.886067559297691,
+        "p50_total_sec": 7.19846417568624,
         "p95_total_sec": 14.694629408884794,
-        "avg_storage_bytes": 1265892.455319149,
+        "avg_storage_bytes": 1252063.1757322175,
         "p95_storage_bytes": 2010181.0,
         "categories": {
           "temporal-reasoning": {
@@ -6423,21 +6473,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.2,
-            "token_f1": 0.13333333333333333,
-            "avg_total_sec": 1.9689346514642239,
-            "p50_total_sec": 2.237134377937764,
-            "p95_total_sec": 2.646067983005196,
-            "avg_storage_bytes": 523902.6,
-            "p95_storage_bytes": 606757.0,
+            "exact_match": 0.1111111111111111,
+            "token_f1": 0.09929453262786596,
+            "avg_total_sec": 1.7156233726483252,
+            "p50_total_sec": 1.5394337424077094,
+            "p95_total_sec": 2.828846064861864,
+            "avg_storage_bytes": 486431.6666666667,
+            "p95_storage_bytes": 639597.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -6490,6 +6540,46 @@
                 "prediction": "yes",
                 "retrieved_doc_ids": [
                   "answer_ultrachat_448704"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "the initial step in the refining process",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "This hostel is located in the city center and offers shared dorms and private rooms at a reasonable price",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "user: Brainstorm ideas for work from home jobs for seniors",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "This phrase is straightforward, describes behaviors that cause problems or difficulties in an individual's life, This term implies a strong preoccupation with sexual thoughts or behaviors that may interfere with other areas of life, This te",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0"
                 ]
               }
             ]
@@ -6729,19 +6819,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2221,
-      "rows_successful": 2221,
+      "rows_recorded": 2226,
+      "rows_successful": 2226,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7257991895542548,
-      "doc_recall_all": 0.6091850517784781,
-      "ndcg_at_10": 0.5054167214703391,
-      "exact_match": 0.05042773525438991,
-      "token_f1": 0.0982576169873341,
-      "avg_total_sec": 7.309213191062633,
-      "p50_total_sec": 6.359130084048957,
+      "doc_recall_any": 0.7264150943396226,
+      "doc_recall_all": 0.610062893081761,
+      "ndcg_at_10": 0.5065276452765604,
+      "exact_match": 0.050314465408805034,
+      "token_f1": 0.09813587474570597,
+      "avg_total_sec": 7.321719416709422,
+      "p50_total_sec": 6.359277768991888,
       "p95_total_sec": 14.837582887150347,
-      "avg_storage_bytes": 19634082.127420083,
+      "avg_storage_bytes": 19600580.096585803,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -9361,21 +9451,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.2,
-          "token_f1": 0.13333333333333333,
-          "avg_total_sec": 12.719920436386019,
-          "p50_total_sec": 12.681863856036216,
-          "p95_total_sec": 12.834105973131955,
-          "avg_storage_bytes": 4806506.6,
-          "p95_storage_bytes": 5053103.0,
+          "exact_match": 0.1,
+          "token_f1": 0.08869565217391304,
+          "avg_total_sec": 12.798452642699704,
+          "p50_total_sec": 12.748402724042535,
+          "p95_total_sec": 13.423628695774823,
+          "avg_storage_bytes": 4762742.3,
+          "p95_storage_bytes": 5097054.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -9428,6 +9518,56 @@
               "prediction": "00 pm?",
               "retrieved_doc_ids": [
                 "answer_ultrachat_448704"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6ae235be",
+              "category": "single-session-assistant",
+              "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+              "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+              "prediction": "Refineries can enhance their operations by implementing best practices in safety, reliability, and maintenance",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_IUWQYGQ_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::7e00a6cb",
+              "category": "single-session-assistant",
+              "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+              "gold": "International Budget Hostel",
+              "prediction": "The Red Light District is one of Amsterdam's most famous attractions, known for its adult entertainment establishments and vibrant nightlife",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_370515"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::1903aded",
+              "category": "single-session-assistant",
+              "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+              "gold": "Transcriptionist.",
+              "prediction": "user: Brainstorm ideas for work from home jobs for seniors",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_hA7AkP3_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::ceb54acb",
+              "category": "single-session-assistant",
+              "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+              "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+              "prediction": "This phrase is straightforward, describes behaviors that cause problems or difficulties in an individual's life, This term implies a strong preoccupation with sexual thoughts or behaviors that may interfere with other areas of life, This te",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_cGdjmYo_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::f523d9fe",
+              "category": "single-session-assistant",
+              "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+              "gold": "Doc Martin",
+              "prediction": "always something new on Netflix",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_m2xJfjo_0"
               ]
             }
           ]
@@ -9814,19 +9954,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2221,
-      "rows_successful": 2221,
+      "rows_recorded": 2225,
+      "rows_successful": 2225,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.770373705538046,
-      "doc_recall_all": 0.6762719495722648,
-      "ndcg_at_10": 0.5655878872755137,
-      "exact_match": 0.05312922107158938,
-      "token_f1": 0.10164231829988592,
-      "avg_total_sec": 0.9032440016782922,
-      "p50_total_sec": 0.06511554587632418,
+      "doc_recall_any": 0.7707865168539326,
+      "doc_recall_all": 0.6768539325842696,
+      "ndcg_at_10": 0.5663688528714229,
+      "exact_match": 0.05303370786516854,
+      "token_f1": 0.10156160587462056,
+      "avg_total_sec": 0.9041352201456183,
+      "p50_total_sec": 0.06512547796592116,
       "p95_total_sec": 7.390687526669353,
-      "avg_storage_bytes": 12383787.072940117,
+      "avg_storage_bytes": 12362314.364494381,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -12441,21 +12581,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.2,
-          "token_f1": 0.13333333333333333,
-          "avg_total_sec": 1.9689346514642239,
-          "p50_total_sec": 2.237134377937764,
-          "p95_total_sec": 2.646067983005196,
-          "avg_storage_bytes": 523902.6,
-          "p95_storage_bytes": 606757.0,
+          "exact_match": 0.1111111111111111,
+          "token_f1": 0.09929453262786596,
+          "avg_total_sec": 1.7156233726483252,
+          "p50_total_sec": 1.5394337424077094,
+          "p95_total_sec": 2.828846064861864,
+          "avg_storage_bytes": 486431.6666666667,
+          "p95_storage_bytes": 639597.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -12508,6 +12648,46 @@
               "prediction": "yes",
               "retrieved_doc_ids": [
                 "answer_ultrachat_448704"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::6ae235be",
+              "category": "single-session-assistant",
+              "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+              "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+              "prediction": "the initial step in the refining process",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_IUWQYGQ_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::7e00a6cb",
+              "category": "single-session-assistant",
+              "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+              "gold": "International Budget Hostel",
+              "prediction": "This hostel is located in the city center and offers shared dorms and private rooms at a reasonable price",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_370515"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::1903aded",
+              "category": "single-session-assistant",
+              "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+              "gold": "Transcriptionist.",
+              "prediction": "user: Brainstorm ideas for work from home jobs for seniors",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_hA7AkP3_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::ceb54acb",
+              "category": "single-session-assistant",
+              "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+              "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+              "prediction": "This phrase is straightforward, describes behaviors that cause problems or difficulties in an individual's life, This term implies a strong preoccupation with sexual thoughts or behaviors that may interfere with other areas of life, This te",
+              "retrieved_doc_ids": [
+                "answer_sharegpt_cGdjmYo_0"
               ]
             }
           ]
@@ -12899,11 +13079,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04457451598379114,
-    "doc_recall_all_delta": 0.06708689779378663,
-    "ndcg_at_10_delta": 0.060171165805174565,
-    "token_f1_delta": 0.0033847013125518216,
-    "avg_storage_ratio_nova_over_stock": 0.6307291062842949,
-    "avg_latency_ratio_nova_over_stock": 0.1235760919906861
+    "doc_recall_any_delta": 0.04437142251431003,
+    "doc_recall_all_delta": 0.06679103950250864,
+    "ndcg_at_10_delta": 0.059841207594862555,
+    "token_f1_delta": 0.0034257311289145886,
+    "avg_storage_ratio_nova_over_stock": 0.6307116576946493,
+    "avg_latency_ratio_nova_over_stock": 0.1234867342884277
   }
 }
