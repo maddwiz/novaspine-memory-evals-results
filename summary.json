@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:54:06Z",
+  "generated_at": "2026-04-29T02:54:39Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,28 +117,28 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:54:06Z",
+    "updated_at": "2026-04-29T02:54:39Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 85,
+    "current_case_index": 90,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0084"
+    "current_case_id": "locomo::conv-26::0089"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 85,
-        "rows_successful": 85,
+        "rows_recorded": 90,
+        "rows_successful": 90,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7176470588235294,
-        "doc_recall_all": 0.49411764705882355,
-        "ndcg_at_10": 0.41234525914000464,
-        "exact_match": 0.1411764705882353,
-        "token_f1": 0.20899796312998944,
-        "avg_total_sec": 6.377634591192884,
-        "p50_total_sec": 6.363303407095373,
+        "doc_recall_any": 0.6888888888888889,
+        "doc_recall_all": 0.4777777777777778,
+        "ndcg_at_10": 0.39278196691738193,
+        "exact_match": 0.13333333333333333,
+        "token_f1": 0.19738696517832335,
+        "avg_total_sec": 6.375432733280791,
+        "p50_total_sec": 6.357380193192512,
         "p95_total_sec": 6.469191602896899,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
@@ -1076,19 +1076,19 @@
             ]
           },
           "category_4": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6666666666666666,
-            "doc_recall_all": 0.6666666666666666,
-            "ndcg_at_10": 0.46228426907818054,
+            "doc_recall_any": 0.375,
+            "doc_recall_all": 0.375,
+            "ndcg_at_10": 0.21098535036231536,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 6.34419314765061,
+            "avg_total_sec": 6.340323148353491,
             "p50_total_sec": 6.344608685001731,
-            "p95_total_sec": 6.354257836006582,
+            "p95_total_sec": 6.413856601342559,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
@@ -1109,6 +1109,74 @@
                   "conv-26:D4:15",
                   "conv-26:D2:6",
                   "conv-26:D7:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0085",
+                "category": "category_4",
+                "query": "What are Caroline's plans for the summer?",
+                "gold": "researching adoption agencies",
+                "prediction": "Right, it was so much fun!, Sounds special, those beach trips!",
+                "expected_doc_ids": [
+                  "conv-26:D2:8"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D12:17",
+                  "conv-26:D2:7",
+                  "conv-26:D10:11",
+                  "conv-26:D10:8",
+                  "conv-26:D10:10"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0087",
+                "category": "category_4",
+                "query": "Why did Caroline choose the adoption agency?",
+                "gold": "because of their inclusivity and support for LGBTQ+ individuals",
+                "prediction": "Thanks, Mel!",
+                "expected_doc_ids": [
+                  "conv-26:D2:12"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D19:3",
+                  "conv-26:D13:1",
+                  "conv-26:D17:7",
+                  "conv-26:D8:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0088",
+                "category": "category_4",
+                "query": "What is Caroline excited about in the adoption process?",
+                "gold": "creating a family for kids who need one",
+                "prediction": "Thanks, Mel!",
+                "expected_doc_ids": [
+                  "conv-26:D2:14"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D19:3",
+                  "conv-26:D13:1",
+                  "conv-26:D17:7",
+                  "conv-26:D17:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0089",
+                "category": "category_4",
+                "query": "What does Melanie think about Caroline's decision to adopt?",
+                "gold": "she thinks Caroline is doing something amazing and will be an awesome mom",
+                "prediction": "Thanks so much, Melanie!",
+                "expected_doc_ids": [
+                  "conv-26:D2:15"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D19:3",
+                  "conv-26:D2:10",
+                  "conv-26:D13:1",
+                  "conv-26:D8:9",
+                  "conv-26:D17:3"
                 ]
               }
             ],
@@ -1136,6 +1204,20 @@
                   "conv-26:D2:1",
                   "conv-26:D14:11",
                   "conv-26:D2:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0086",
+                "category": "category_4",
+                "query": "What type of individuals does the adoption agency Caroline is considering support?",
+                "gold": "LGBTQ+ individuals",
+                "prediction": "Thanks, Mel!",
+                "retrieved_doc_ids": [
+                  "conv-26:D2:10",
+                  "conv-26:D19:3",
+                  "conv-26:D13:1",
+                  "conv-26:D2:8",
+                  "conv-26:D8:9"
                 ]
               }
             ]
@@ -1678,17 +1760,17 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 85,
-      "rows_successful": 85,
+      "rows_recorded": 90,
+      "rows_successful": 90,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7176470588235294,
-      "doc_recall_all": 0.49411764705882355,
-      "ndcg_at_10": 0.41234525914000464,
-      "exact_match": 0.1411764705882353,
-      "token_f1": 0.20899796312998944,
-      "avg_total_sec": 6.377634591192884,
-      "p50_total_sec": 6.363303407095373,
+      "doc_recall_any": 0.6888888888888889,
+      "doc_recall_all": 0.4777777777777778,
+      "ndcg_at_10": 0.39278196691738193,
+      "exact_match": 0.13333333333333333,
+      "token_f1": 0.19738696517832335,
+      "avg_total_sec": 6.375432733280791,
+      "p50_total_sec": 6.357380193192512,
       "p95_total_sec": 6.469191602896899,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
@@ -2626,19 +2708,19 @@
           ]
         },
         "category_4": {
-          "expected_total": 3,
-          "rows_recorded": 3,
-          "rows_successful": 3,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6666666666666666,
-          "doc_recall_all": 0.6666666666666666,
-          "ndcg_at_10": 0.46228426907818054,
+          "doc_recall_any": 0.375,
+          "doc_recall_all": 0.375,
+          "ndcg_at_10": 0.21098535036231536,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 6.34419314765061,
+          "avg_total_sec": 6.340323148353491,
           "p50_total_sec": 6.344608685001731,
-          "p95_total_sec": 6.354257836006582,
+          "p95_total_sec": 6.413856601342559,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
@@ -2659,6 +2741,74 @@
                 "conv-26:D4:15",
                 "conv-26:D2:6",
                 "conv-26:D7:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0085",
+              "category": "category_4",
+              "query": "What are Caroline's plans for the summer?",
+              "gold": "researching adoption agencies",
+              "prediction": "Right, it was so much fun!, Sounds special, those beach trips!",
+              "expected_doc_ids": [
+                "conv-26:D2:8"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D12:17",
+                "conv-26:D2:7",
+                "conv-26:D10:11",
+                "conv-26:D10:8",
+                "conv-26:D10:10"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0087",
+              "category": "category_4",
+              "query": "Why did Caroline choose the adoption agency?",
+              "gold": "because of their inclusivity and support for LGBTQ+ individuals",
+              "prediction": "Thanks, Mel!",
+              "expected_doc_ids": [
+                "conv-26:D2:12"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D19:3",
+                "conv-26:D13:1",
+                "conv-26:D17:7",
+                "conv-26:D8:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0088",
+              "category": "category_4",
+              "query": "What is Caroline excited about in the adoption process?",
+              "gold": "creating a family for kids who need one",
+              "prediction": "Thanks, Mel!",
+              "expected_doc_ids": [
+                "conv-26:D2:14"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D19:3",
+                "conv-26:D13:1",
+                "conv-26:D17:7",
+                "conv-26:D17:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0089",
+              "category": "category_4",
+              "query": "What does Melanie think about Caroline's decision to adopt?",
+              "gold": "she thinks Caroline is doing something amazing and will be an awesome mom",
+              "prediction": "Thanks so much, Melanie!",
+              "expected_doc_ids": [
+                "conv-26:D2:15"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D19:3",
+                "conv-26:D2:10",
+                "conv-26:D13:1",
+                "conv-26:D8:9",
+                "conv-26:D17:3"
               ]
             }
           ],
@@ -2686,6 +2836,20 @@
                 "conv-26:D2:1",
                 "conv-26:D14:11",
                 "conv-26:D2:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0086",
+              "category": "category_4",
+              "query": "What type of individuals does the adoption agency Caroline is considering support?",
+              "gold": "LGBTQ+ individuals",
+              "prediction": "Thanks, Mel!",
+              "retrieved_doc_ids": [
+                "conv-26:D2:10",
+                "conv-26:D19:3",
+                "conv-26:D13:1",
+                "conv-26:D2:8",
+                "conv-26:D8:9"
               ]
             }
           ]
@@ -3093,10 +3257,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.7176470588235294,
-    "doc_recall_all_delta": -0.49411764705882355,
-    "ndcg_at_10_delta": -0.41234525914000464,
-    "token_f1_delta": -0.20899796312998944,
+    "doc_recall_any_delta": -0.6888888888888889,
+    "doc_recall_all_delta": -0.4777777777777778,
+    "ndcg_at_10_delta": -0.39278196691738193,
+    "token_f1_delta": -0.19738696517832335,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
