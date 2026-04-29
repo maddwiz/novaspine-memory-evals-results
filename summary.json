@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:20:46Z",
+  "generated_at": "2026-04-29T08:20:51Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:20:33Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T08:20:48Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 210,
     "current_case_total": 500,
@@ -5665,19 +5665,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 209,
-        "rows_successful": 209,
+        "rows_recorded": 210,
+        "rows_successful": 210,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9952153110047847,
-        "ndcg_at_10": 0.999484262418543,
-        "exact_match": 0.23444976076555024,
-        "token_f1": 0.2782201663223786,
-        "avg_total_sec": 8.477329723251778,
-        "p50_total_sec": 7.441897752694786,
+        "doc_recall_all": 0.9952380952380953,
+        "ndcg_at_10": 0.999486718311788,
+        "exact_match": 0.23333333333333334,
+        "token_f1": 0.27689530838751014,
+        "avg_total_sec": 8.454963791093213,
+        "p50_total_sec": 7.434377897065133,
         "p95_total_sec": 15.293608488049358,
-        "avg_storage_bytes": 1325958.2822966508,
+        "avg_storage_bytes": 1323100.3523809523,
         "p95_storage_bytes": 2190621.0,
         "categories": {
           "temporal-reasoning": {
@@ -6161,20 +6161,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.08845234123011901,
-            "avg_total_sec": 5.10612172824848,
-            "p50_total_sec": 5.074453168082982,
+            "token_f1": 0.07960710710710711,
+            "avg_total_sec": 4.973557952418924,
+            "p50_total_sec": 4.694265795871615,
             "p95_total_sec": 6.172568239737302,
-            "avg_storage_bytes": 913606.7777777778,
+            "avg_storage_bytes": 894825.4,
             "p95_storage_bytes": 1066265.0,
             "categories": {},
             "sample_errors": [],
@@ -6268,6 +6268,16 @@
                 "prediction": "you have any recommendations",
                 "retrieved_doc_ids": [
                   "answer_2fc6aabb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::54026fce",
+                "category": "single-session-preference",
+                "query": "I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+                "gold": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+                "prediction": "you have any ideas",
+                "retrieved_doc_ids": [
+                  "answer_f7b22c66"
                 ]
               }
             ]
@@ -9488,19 +9498,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2195,
-      "rows_successful": 2195,
+      "rows_recorded": 2196,
+      "rows_successful": 2196,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.710250569476082,
-      "doc_recall_all": 0.6095671981776766,
-      "ndcg_at_10": 0.4459238774822026,
-      "exact_match": 0.04874715261958998,
-      "token_f1": 0.09023357502745145,
-      "avg_total_sec": 0.8635947869248383,
-      "p50_total_sec": 0.06438708677887917,
+      "doc_recall_any": 0.7103825136612022,
+      "doc_recall_all": 0.6097449908925319,
+      "ndcg_at_10": 0.4461761890134038,
+      "exact_match": 0.048724954462659384,
+      "token_f1": 0.09019248505703822,
+      "avg_total_sec": 0.8649230606876015,
+      "p50_total_sec": 0.0643933080136776,
       "p95_total_sec": 7.365171446930617,
-      "avg_storage_bytes": 12454085.898405466,
+      "avg_storage_bytes": 12448745.14571949,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -11972,20 +11982,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 9,
-          "rows_recorded": 9,
-          "rows_successful": 9,
+          "expected_total": 10,
+          "rows_recorded": 10,
+          "rows_successful": 10,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.08845234123011901,
-          "avg_total_sec": 5.10612172824848,
-          "p50_total_sec": 5.074453168082982,
+          "token_f1": 0.07960710710710711,
+          "avg_total_sec": 4.973557952418924,
+          "p50_total_sec": 4.694265795871615,
           "p95_total_sec": 6.172568239737302,
-          "avg_storage_bytes": 913606.7777777778,
+          "avg_storage_bytes": 894825.4,
           "p95_storage_bytes": 1066265.0,
           "categories": {},
           "sample_errors": [],
@@ -12079,6 +12089,16 @@
               "prediction": "you have any recommendations",
               "retrieved_doc_ids": [
                 "answer_2fc6aabb"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::54026fce",
+              "category": "single-session-preference",
+              "query": "I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+              "gold": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+              "prediction": "you have any ideas",
+              "retrieved_doc_ids": [
+                "answer_f7b22c66"
               ]
             }
           ]
@@ -12466,11 +12486,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.012882399558526325,
-    "doc_recall_all_delta": 0.004375941347075529,
-    "ndcg_at_10_delta": -0.05431771558957482,
-    "token_f1_delta": -0.007932636013784578,
-    "avg_storage_ratio_nova_over_stock": 0.6291578164444088,
-    "avg_latency_ratio_nova_over_stock": 0.11916996214732763
+    "doc_recall_any_delta": -0.012750455373406133,
+    "doc_recall_all_delta": 0.004553734061930825,
+    "ndcg_at_10_delta": -0.05406540405837362,
+    "token_f1_delta": -0.007973725984197808,
+    "avg_storage_ratio_nova_over_stock": 0.6288880113117408,
+    "avg_latency_ratio_nova_over_stock": 0.11935325451595509
   }
 }
