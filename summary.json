@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:09:45Z",
+  "generated_at": "2026-04-29T03:10:18Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,47 +117,47 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:09:45Z",
+    "updated_at": "2026-04-29T03:10:18Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 205,
+    "current_case_index": 210,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-30::0005"
+    "current_case_id": "locomo::conv-30::0010"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 205,
-        "rows_successful": 205,
+        "rows_recorded": 210,
+        "rows_successful": 210,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.697560975609756,
-        "doc_recall_all": 0.5902439024390244,
-        "ndcg_at_10": 0.46222740510347415,
-        "exact_match": 0.06829268292682927,
-        "token_f1": 0.11402049489130293,
-        "avg_total_sec": 6.3724302014744865,
+        "doc_recall_any": 0.6952380952380952,
+        "doc_recall_all": 0.5857142857142857,
+        "ndcg_at_10": 0.45919700738391667,
+        "exact_match": 0.07142857142857142,
+        "token_f1": 0.11797238787008144,
+        "avg_total_sec": 6.373216434610298,
         "p50_total_sec": 6.357380193192512,
-        "p95_total_sec": 6.453628138639033,
-        "avg_storage_bytes": 16076797.570731707,
+        "p95_total_sec": 6.457744012121111,
+        "avg_storage_bytes": 16043046.2,
         "p95_storage_bytes": 16119538.0,
         "categories": {
           "category_2": {
-            "expected_total": 39,
-            "rows_recorded": 39,
-            "rows_successful": 39,
+            "expected_total": 43,
+            "rows_recorded": 43,
+            "rows_successful": 43,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8205128205128205,
-            "doc_recall_all": 0.8205128205128205,
-            "ndcg_at_10": 0.589490632583397,
-            "exact_match": 0.3076923076923077,
-            "token_f1": 0.4268009768009768,
-            "avg_total_sec": 6.3585982185382495,
+            "doc_recall_any": 0.7906976744186046,
+            "doc_recall_all": 0.7906976744186046,
+            "ndcg_at_10": 0.5593428135441241,
+            "exact_match": 0.3023255813953488,
+            "token_f1": 0.419656699889258,
+            "avg_total_sec": 6.357174662862319,
             "p50_total_sec": 6.363303407095373,
             "p95_total_sec": 6.415752103086561,
-            "avg_storage_bytes": 16044650.923076924,
+            "avg_storage_bytes": 15915775.488372093,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
             "sample_errors": [],
@@ -279,6 +279,38 @@
                   "conv-26:D19:8",
                   "conv-26:D18:2",
                   "conv-26:D18:1"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-30::0006",
+                "category": "category_2",
+                "query": "When is Jon's group performing at a festival?",
+                "gold": "February, 2023",
+                "prediction": "Jon: Yeah, they're the ones performing at the festival!",
+                "expected_doc_ids": [
+                  "conv-30:D1:24"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-30:D1:26",
+                  "conv-30:D1:27",
+                  "conv-30:D1:25"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-30::0010",
+                "category": "category_2",
+                "query": "When did Gina team up with a local artist for some cool designs?",
+                "gold": "February, 2023",
+                "prediction": "10 May 2023",
+                "expected_doc_ids": [
+                  "conv-30:D5:5"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-30:D8:10",
+                  "conv-30:D5:7",
+                  "conv-30:D3:4",
+                  "conv-30:D3:6",
+                  "conv-30:D8:8"
                 ]
               }
             ],
@@ -670,20 +702,20 @@
             ]
           },
           "category_1": {
-            "expected_total": 34,
-            "rows_recorded": 34,
-            "rows_successful": 34,
+            "expected_total": 35,
+            "rows_recorded": 35,
+            "rows_successful": 35,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6176470588235294,
-            "doc_recall_all": 0.17647058823529413,
-            "ndcg_at_10": 0.2250879057091377,
-            "exact_match": 0.029411764705882353,
-            "token_f1": 0.049961167055938734,
-            "avg_total_sec": 6.401811596238986,
-            "p50_total_sec": 6.356702503748238,
+            "doc_recall_any": 0.6285714285714286,
+            "doc_recall_all": 0.17142857142857143,
+            "ndcg_at_10": 0.23617531391074686,
+            "exact_match": 0.02857142857142857,
+            "token_f1": 0.04853370514005477,
+            "avg_total_sec": 6.409019264512296,
+            "p50_total_sec": 6.357380193192512,
             "p95_total_sec": 6.734352008905262,
-            "avg_storage_bytes": 16033638.11764706,
+            "avg_storage_bytes": 15994369.6,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
             "sample_errors": [],
@@ -4433,36 +4465,36 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 205,
-      "rows_successful": 205,
+      "rows_recorded": 210,
+      "rows_successful": 210,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.697560975609756,
-      "doc_recall_all": 0.5902439024390244,
-      "ndcg_at_10": 0.46222740510347415,
-      "exact_match": 0.06829268292682927,
-      "token_f1": 0.11402049489130293,
-      "avg_total_sec": 6.3724302014744865,
+      "doc_recall_any": 0.6952380952380952,
+      "doc_recall_all": 0.5857142857142857,
+      "ndcg_at_10": 0.45919700738391667,
+      "exact_match": 0.07142857142857142,
+      "token_f1": 0.11797238787008144,
+      "avg_total_sec": 6.373216434610298,
       "p50_total_sec": 6.357380193192512,
-      "p95_total_sec": 6.453628138639033,
-      "avg_storage_bytes": 16076797.570731707,
+      "p95_total_sec": 6.457744012121111,
+      "avg_storage_bytes": 16043046.2,
       "p95_storage_bytes": 16119538.0,
       "categories": {
         "category_2": {
-          "expected_total": 39,
-          "rows_recorded": 39,
-          "rows_successful": 39,
+          "expected_total": 43,
+          "rows_recorded": 43,
+          "rows_successful": 43,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.8205128205128205,
-          "doc_recall_all": 0.8205128205128205,
-          "ndcg_at_10": 0.589490632583397,
-          "exact_match": 0.3076923076923077,
-          "token_f1": 0.4268009768009768,
-          "avg_total_sec": 6.3585982185382495,
+          "doc_recall_any": 0.7906976744186046,
+          "doc_recall_all": 0.7906976744186046,
+          "ndcg_at_10": 0.5593428135441241,
+          "exact_match": 0.3023255813953488,
+          "token_f1": 0.419656699889258,
+          "avg_total_sec": 6.357174662862319,
           "p50_total_sec": 6.363303407095373,
           "p95_total_sec": 6.415752103086561,
-          "avg_storage_bytes": 16044650.923076924,
+          "avg_storage_bytes": 15915775.488372093,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
           "sample_errors": [],
@@ -4584,6 +4616,38 @@
                 "conv-26:D19:8",
                 "conv-26:D18:2",
                 "conv-26:D18:1"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-30::0006",
+              "category": "category_2",
+              "query": "When is Jon's group performing at a festival?",
+              "gold": "February, 2023",
+              "prediction": "Jon: Yeah, they're the ones performing at the festival!",
+              "expected_doc_ids": [
+                "conv-30:D1:24"
+              ],
+              "retrieved_doc_ids": [
+                "conv-30:D1:26",
+                "conv-30:D1:27",
+                "conv-30:D1:25"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-30::0010",
+              "category": "category_2",
+              "query": "When did Gina team up with a local artist for some cool designs?",
+              "gold": "February, 2023",
+              "prediction": "10 May 2023",
+              "expected_doc_ids": [
+                "conv-30:D5:5"
+              ],
+              "retrieved_doc_ids": [
+                "conv-30:D8:10",
+                "conv-30:D5:7",
+                "conv-30:D3:4",
+                "conv-30:D3:6",
+                "conv-30:D8:8"
               ]
             }
           ],
@@ -4975,20 +5039,20 @@
           ]
         },
         "category_1": {
-          "expected_total": 34,
-          "rows_recorded": 34,
-          "rows_successful": 34,
+          "expected_total": 35,
+          "rows_recorded": 35,
+          "rows_successful": 35,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6176470588235294,
-          "doc_recall_all": 0.17647058823529413,
-          "ndcg_at_10": 0.2250879057091377,
-          "exact_match": 0.029411764705882353,
-          "token_f1": 0.049961167055938734,
-          "avg_total_sec": 6.401811596238986,
-          "p50_total_sec": 6.356702503748238,
+          "doc_recall_any": 0.6285714285714286,
+          "doc_recall_all": 0.17142857142857143,
+          "ndcg_at_10": 0.23617531391074686,
+          "exact_match": 0.02857142857142857,
+          "token_f1": 0.04853370514005477,
+          "avg_total_sec": 6.409019264512296,
+          "p50_total_sec": 6.357380193192512,
           "p95_total_sec": 6.734352008905262,
-          "avg_storage_bytes": 16033638.11764706,
+          "avg_storage_bytes": 15994369.6,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
           "sample_errors": [],
@@ -8603,11 +8667,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.04429464395146454,
-    "doc_recall_all_delta": -0.022404706459124846,
-    "ndcg_at_10_delta": -0.07330232275562953,
-    "token_f1_delta": -0.013271043086372655,
-    "avg_storage_ratio_nova_over_stock": 0.6801534293065262,
-    "avg_latency_ratio_nova_over_stock": 0.009717376051152731
+    "doc_recall_any_delta": -0.0419717635798037,
+    "doc_recall_all_delta": -0.01787508973438623,
+    "ndcg_at_10_delta": -0.07027192503607205,
+    "token_f1_delta": -0.017222936065151156,
+    "avg_storage_ratio_nova_over_stock": 0.6815843365208286,
+    "avg_latency_ratio_nova_over_stock": 0.009716177265088749
   }
 }
