@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:45:46Z",
+  "generated_at": "2026-04-29T03:45:47Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:45:46Z",
+    "updated_at": "2026-04-29T03:45:47Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 310,
+    "current_case_index": 315,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-41::0005"
+    "current_case_id": "locomo::conv-41::0010"
   },
   "benchmarks": {
     "locomo": {
@@ -2415,36 +2415,36 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 310,
-        "rows_successful": 310,
+        "rows_recorded": 315,
+        "rows_successful": 315,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6516129032258065,
-        "doc_recall_all": 0.5709677419354838,
-        "ndcg_at_10": 0.3896277986954887,
-        "exact_match": 0.08064516129032258,
-        "token_f1": 0.1129213953216919,
-        "avg_total_sec": 0.06647446697667962,
-        "p50_total_sec": 0.06557795405387878,
-        "p95_total_sec": 0.09437936032190919,
-        "avg_storage_bytes": 10677123.012903227,
+        "doc_recall_any": 0.6476190476190476,
+        "doc_recall_all": 0.5650793650793651,
+        "ndcg_at_10": 0.38737084224879614,
+        "exact_match": 0.07936507936507936,
+        "token_f1": 0.11430359539595075,
+        "avg_total_sec": 0.06650634646149618,
+        "p50_total_sec": 0.06567795481532812,
+        "p95_total_sec": 0.09314969694241881,
+        "avg_storage_bytes": 10740126.663492063,
         "p95_storage_bytes": 10934689.0,
         "categories": {
           "category_2": {
-            "expected_total": 67,
-            "rows_recorded": 67,
-            "rows_successful": 67,
+            "expected_total": 68,
+            "rows_recorded": 68,
+            "rows_successful": 68,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9104477611940298,
-            "doc_recall_all": 0.9104477611940298,
-            "ndcg_at_10": 0.6186540163160926,
-            "exact_match": 0.373134328358209,
-            "token_f1": 0.444953802416489,
-            "avg_total_sec": 0.0737641313558083,
+            "doc_recall_any": 0.8970588235294118,
+            "doc_recall_all": 0.8970588235294118,
+            "ndcg_at_10": 0.6095561631349736,
+            "exact_match": 0.36764705882352944,
+            "token_f1": 0.45311624649859944,
+            "avg_total_sec": 0.07339719473384321,
             "p50_total_sec": 0.07215135404840112,
             "p95_total_sec": 0.10329674603417516,
-            "avg_storage_bytes": 10778881.95522388,
+            "avg_storage_bytes": 10835756.529411765,
             "p95_storage_bytes": 14646353.0,
             "categories": {},
             "sample_errors": [],
@@ -2549,6 +2549,23 @@
                   "conv-30:D4:9",
                   "conv-30:D9:9",
                   "conv-30:D18:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-41::0010",
+                "category": "category_2",
+                "query": "When did Maria meet Jean?",
+                "gold": "February 24, 2023",
+                "prediction": "24 February 2023",
+                "expected_doc_ids": [
+                  "conv-41:D7:1"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-41:D7:5",
+                  "conv-41:D20:9",
+                  "conv-41:D13:24",
+                  "conv-41:D2:20",
+                  "conv-41:D5:11"
                 ]
               }
             ],
@@ -2724,20 +2741,20 @@
             ]
           },
           "category_3": {
-            "expected_total": 13,
-            "rows_recorded": 13,
-            "rows_successful": 13,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5384615384615384,
-            "doc_recall_all": 0.23076923076923078,
-            "ndcg_at_10": 0.23965154050234064,
+            "doc_recall_any": 0.5,
+            "doc_recall_all": 0.21428571428571427,
+            "ndcg_at_10": 0.22253357332360202,
             "exact_match": 0.0,
-            "token_f1": 0.013846153846153845,
-            "avg_total_sec": 0.0552588002039836,
+            "token_f1": 0.012857142857142857,
+            "avg_total_sec": 0.055823211391855566,
             "p50_total_sec": 0.05606456799432635,
             "p95_total_sec": 0.06809583306312561,
-            "avg_storage_bytes": 10934689.0,
+            "avg_storage_bytes": 11199807.857142856,
             "p95_storage_bytes": 10934689.0,
             "categories": {},
             "sample_errors": [],
@@ -2843,6 +2860,23 @@
                   "conv-26:D10:20",
                   "conv-26:D2:10"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-41::0008",
+                "category": "category_3",
+                "query": "What might John's financial status be?",
+                "gold": "Middle-class or wealthy",
+                "prediction": "Yeah, for sure!",
+                "expected_doc_ids": [
+                  "conv-41:D5:5"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-41:D10:14",
+                  "conv-41:D22:9",
+                  "conv-41:D6:3",
+                  "conv-41:D10:13",
+                  "conv-41:D13:17"
+                ]
               }
             ],
             "sample_successes": [
@@ -2947,21 +2981,21 @@
             ]
           },
           "category_1": {
-            "expected_total": 45,
-            "rows_recorded": 45,
-            "rows_successful": 45,
+            "expected_total": 48,
+            "rows_recorded": 48,
+            "rows_successful": 48,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5333333333333333,
-            "doc_recall_all": 0.17777777777777778,
-            "ndcg_at_10": 0.23305733081903818,
+            "doc_recall_any": 0.5416666666666666,
+            "doc_recall_all": 0.1875,
+            "ndcg_at_10": 0.24426619999220864,
             "exact_match": 0.0,
-            "token_f1": 0.02314337134517441,
-            "avg_total_sec": 0.06496283357135124,
-            "p50_total_sec": 0.06512102298438549,
+            "token_f1": 0.02169691063610101,
+            "avg_total_sec": 0.06570351844614682,
+            "p50_total_sec": 0.06582401506602764,
             "p95_total_sec": 0.09110386203974485,
-            "avg_storage_bytes": 10861922.777777778,
-            "p95_storage_bytes": 10934689.0,
+            "avg_storage_bytes": 11098449.666666666,
+            "p95_storage_bytes": 14646353.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -6948,36 +6982,36 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 310,
-      "rows_successful": 310,
+      "rows_recorded": 315,
+      "rows_successful": 315,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6516129032258065,
-      "doc_recall_all": 0.5709677419354838,
-      "ndcg_at_10": 0.3896277986954887,
-      "exact_match": 0.08064516129032258,
-      "token_f1": 0.1129213953216919,
-      "avg_total_sec": 0.06647446697667962,
-      "p50_total_sec": 0.06557795405387878,
-      "p95_total_sec": 0.09437936032190919,
-      "avg_storage_bytes": 10677123.012903227,
+      "doc_recall_any": 0.6476190476190476,
+      "doc_recall_all": 0.5650793650793651,
+      "ndcg_at_10": 0.38737084224879614,
+      "exact_match": 0.07936507936507936,
+      "token_f1": 0.11430359539595075,
+      "avg_total_sec": 0.06650634646149618,
+      "p50_total_sec": 0.06567795481532812,
+      "p95_total_sec": 0.09314969694241881,
+      "avg_storage_bytes": 10740126.663492063,
       "p95_storage_bytes": 10934689.0,
       "categories": {
         "category_2": {
-          "expected_total": 67,
-          "rows_recorded": 67,
-          "rows_successful": 67,
+          "expected_total": 68,
+          "rows_recorded": 68,
+          "rows_successful": 68,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9104477611940298,
-          "doc_recall_all": 0.9104477611940298,
-          "ndcg_at_10": 0.6186540163160926,
-          "exact_match": 0.373134328358209,
-          "token_f1": 0.444953802416489,
-          "avg_total_sec": 0.0737641313558083,
+          "doc_recall_any": 0.8970588235294118,
+          "doc_recall_all": 0.8970588235294118,
+          "ndcg_at_10": 0.6095561631349736,
+          "exact_match": 0.36764705882352944,
+          "token_f1": 0.45311624649859944,
+          "avg_total_sec": 0.07339719473384321,
           "p50_total_sec": 0.07215135404840112,
           "p95_total_sec": 0.10329674603417516,
-          "avg_storage_bytes": 10778881.95522388,
+          "avg_storage_bytes": 10835756.529411765,
           "p95_storage_bytes": 14646353.0,
           "categories": {},
           "sample_errors": [],
@@ -7082,6 +7116,23 @@
                 "conv-30:D4:9",
                 "conv-30:D9:9",
                 "conv-30:D18:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-41::0010",
+              "category": "category_2",
+              "query": "When did Maria meet Jean?",
+              "gold": "February 24, 2023",
+              "prediction": "24 February 2023",
+              "expected_doc_ids": [
+                "conv-41:D7:1"
+              ],
+              "retrieved_doc_ids": [
+                "conv-41:D7:5",
+                "conv-41:D20:9",
+                "conv-41:D13:24",
+                "conv-41:D2:20",
+                "conv-41:D5:11"
               ]
             }
           ],
@@ -7257,20 +7308,20 @@
           ]
         },
         "category_3": {
-          "expected_total": 13,
-          "rows_recorded": 13,
-          "rows_successful": 13,
+          "expected_total": 14,
+          "rows_recorded": 14,
+          "rows_successful": 14,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5384615384615384,
-          "doc_recall_all": 0.23076923076923078,
-          "ndcg_at_10": 0.23965154050234064,
+          "doc_recall_any": 0.5,
+          "doc_recall_all": 0.21428571428571427,
+          "ndcg_at_10": 0.22253357332360202,
           "exact_match": 0.0,
-          "token_f1": 0.013846153846153845,
-          "avg_total_sec": 0.0552588002039836,
+          "token_f1": 0.012857142857142857,
+          "avg_total_sec": 0.055823211391855566,
           "p50_total_sec": 0.05606456799432635,
           "p95_total_sec": 0.06809583306312561,
-          "avg_storage_bytes": 10934689.0,
+          "avg_storage_bytes": 11199807.857142856,
           "p95_storage_bytes": 10934689.0,
           "categories": {},
           "sample_errors": [],
@@ -7376,6 +7427,23 @@
                 "conv-26:D10:20",
                 "conv-26:D2:10"
               ]
+            },
+            {
+              "case_id": "locomo::conv-41::0008",
+              "category": "category_3",
+              "query": "What might John's financial status be?",
+              "gold": "Middle-class or wealthy",
+              "prediction": "Yeah, for sure!",
+              "expected_doc_ids": [
+                "conv-41:D5:5"
+              ],
+              "retrieved_doc_ids": [
+                "conv-41:D10:14",
+                "conv-41:D22:9",
+                "conv-41:D6:3",
+                "conv-41:D10:13",
+                "conv-41:D13:17"
+              ]
             }
           ],
           "sample_successes": [
@@ -7480,21 +7548,21 @@
           ]
         },
         "category_1": {
-          "expected_total": 45,
-          "rows_recorded": 45,
-          "rows_successful": 45,
+          "expected_total": 48,
+          "rows_recorded": 48,
+          "rows_successful": 48,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5333333333333333,
-          "doc_recall_all": 0.17777777777777778,
-          "ndcg_at_10": 0.23305733081903818,
+          "doc_recall_any": 0.5416666666666666,
+          "doc_recall_all": 0.1875,
+          "ndcg_at_10": 0.24426619999220864,
           "exact_match": 0.0,
-          "token_f1": 0.02314337134517441,
-          "avg_total_sec": 0.06496283357135124,
-          "p50_total_sec": 0.06512102298438549,
+          "token_f1": 0.02169691063610101,
+          "avg_total_sec": 0.06570351844614682,
+          "p50_total_sec": 0.06582401506602764,
           "p95_total_sec": 0.09110386203974485,
-          "avg_storage_bytes": 10861922.777777778,
-          "p95_storage_bytes": 10934689.0,
+          "avg_storage_bytes": 11098449.666666666,
+          "p95_storage_bytes": 14646353.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -9059,11 +9127,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.04657623158304669,
-    "doc_recall_all_delta": -0.04875056792367105,
-    "ndcg_at_10_delta": -0.08446128280261839,
-    "token_f1_delta": 0.008387087513570327,
-    "avg_storage_ratio_nova_over_stock": 0.5790123197223974,
-    "avg_latency_ratio_nova_over_stock": 0.010442211031920057
+    "doc_recall_any_delta": -0.05057008718980549,
+    "doc_recall_all_delta": -0.05463894477978981,
+    "ndcg_at_10_delta": -0.08671823924931094,
+    "token_f1_delta": 0.009769287587829176,
+    "avg_storage_ratio_nova_over_stock": 0.5824289601258409,
+    "avg_latency_ratio_nova_over_stock": 0.010447218854068675
   }
 }
