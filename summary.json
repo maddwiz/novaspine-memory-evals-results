@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:53:00Z",
+  "generated_at": "2026-04-29T02:53:33Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,44 +117,44 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:53:00Z",
+    "updated_at": "2026-04-29T02:53:33Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 75,
+    "current_case_index": 80,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0074"
+    "current_case_id": "locomo::conv-26::0079"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 75,
-        "rows_successful": 75,
+        "rows_recorded": 80,
+        "rows_successful": 80,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7333333333333333,
-        "doc_recall_all": 0.48,
-        "ndcg_at_10": 0.41780874208408386,
-        "exact_match": 0.13333333333333333,
-        "token_f1": 0.2011067824564123,
-        "avg_total_sec": 6.373653026856482,
+        "doc_recall_any": 0.725,
+        "doc_recall_all": 0.4875,
+        "ndcg_at_10": 0.4171678674168495,
+        "exact_match": 0.1375,
+        "token_f1": 0.20728760855288653,
+        "avg_total_sec": 6.378732465940994,
         "p50_total_sec": 6.3654237892478704,
-        "p95_total_sec": 6.459623791277409,
+        "p95_total_sec": 6.469191602896899,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
         "categories": {
           "category_2": {
-            "expected_total": 35,
-            "rows_recorded": 35,
-            "rows_successful": 35,
+            "expected_total": 36,
+            "rows_recorded": 36,
+            "rows_successful": 36,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8,
-            "doc_recall_all": 0.8,
-            "ndcg_at_10": 0.5839774382083337,
-            "exact_match": 0.2857142857142857,
-            "token_f1": 0.4041496598639456,
-            "avg_total_sec": 6.359038634984088,
+            "doc_recall_any": 0.8055555555555556,
+            "doc_recall_all": 0.8055555555555556,
+            "ndcg_at_10": 0.5955336204803244,
+            "exact_match": 0.2777777777777778,
+            "token_f1": 0.40681216931216935,
+            "avg_total_sec": 6.358786183926794,
             "p50_total_sec": 6.363303407095373,
             "p95_total_sec": 6.415752103086561,
             "avg_storage_bytes": 16119538.0,
@@ -454,19 +454,19 @@
             ]
           },
           "category_3": {
-            "expected_total": 11,
-            "rows_recorded": 11,
-            "rows_successful": 11,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7272727272727273,
-            "doc_recall_all": 0.2727272727272727,
-            "ndcg_at_10": 0.3665553772832771,
+            "doc_recall_any": 0.75,
+            "doc_recall_all": 0.3333333333333333,
+            "ndcg_at_10": 0.39025250666026506,
             "exact_match": 0.0,
-            "token_f1": 0.029999999999999995,
-            "avg_total_sec": 6.364668810613114,
-            "p50_total_sec": 6.369504799135029,
-            "p95_total_sec": 6.437955324072391,
+            "token_f1": 0.027499999999999997,
+            "avg_total_sec": 6.367110983313371,
+            "p50_total_sec": 6.381417411845177,
+            "p95_total_sec": 6.422098994720727,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
@@ -634,21 +634,35 @@
                   "conv-26:D15:17",
                   "conv-26:D15:22"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0077",
+                "category": "category_3",
+                "query": "Would Melanie go on another roadtrip soon?",
+                "gold": "Likely no; since this one went badly",
+                "prediction": "Thanks, Caroline!",
+                "retrieved_doc_ids": [
+                  "conv-26:D18:17",
+                  "conv-26:D18:1",
+                  "conv-26:D18:19",
+                  "conv-26:D18:3",
+                  "conv-26:D10:12"
+                ]
               }
             ]
           },
           "category_1": {
-            "expected_total": 29,
-            "rows_recorded": 29,
-            "rows_successful": 29,
+            "expected_total": 32,
+            "rows_recorded": 32,
+            "rows_successful": 32,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6551724137931034,
-            "doc_recall_all": 0.1724137931034483,
-            "ndcg_at_10": 0.2367012472033986,
-            "exact_match": 0.0,
-            "token_f1": 0.020957606516994007,
-            "avg_total_sec": 6.394698892174096,
+            "doc_recall_any": 0.625,
+            "doc_recall_all": 0.1875,
+            "ndcg_at_10": 0.22659965550415942,
+            "exact_match": 0.03125,
+            "token_f1": 0.05024283090602582,
+            "avg_total_sec": 6.405530089192325,
             "p50_total_sec": 6.3654237892478704,
             "p95_total_sec": 6.734352008905262,
             "avg_storage_bytes": 16119538.0,
@@ -833,6 +847,42 @@
                   "conv-26:D15:24",
                   "conv-26:D15:22",
                   "conv-26:D15:17"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0075",
+                "category": "category_1",
+                "query": "How many children does Melanie have?",
+                "gold": "3",
+                "prediction": "2",
+                "expected_doc_ids": [
+                  "conv-26:D18:1",
+                  "conv-26:D18:7"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D2:15",
+                  "conv-26:D2:14",
+                  "conv-26:D10:10",
+                  "conv-26:D19:3",
+                  "conv-26:D2:9"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0078",
+                "category": "category_1",
+                "query": "What items has Melanie bought?",
+                "gold": "Figurines, shoes",
+                "prediction": "That's gorgeous, Caroline!, Seven years now, I've finally found my real muses: painting, pottery, Thanks, Wow, I'm a fan of both classical like Bach, Mozart, as well as modern music like Ed Sheeran's \"Perfect",
+                "expected_doc_ids": [
+                  "conv-26:D19:2",
+                  "conv-26:D7:18"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D4:5",
+                  "conv-26:D4:4",
+                  "conv-26:D16:8",
+                  "conv-26:D12:6"
                 ]
               }
             ],
@@ -1545,33 +1595,33 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 75,
-      "rows_successful": 75,
+      "rows_recorded": 80,
+      "rows_successful": 80,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7333333333333333,
-      "doc_recall_all": 0.48,
-      "ndcg_at_10": 0.41780874208408386,
-      "exact_match": 0.13333333333333333,
-      "token_f1": 0.2011067824564123,
-      "avg_total_sec": 6.373653026856482,
+      "doc_recall_any": 0.725,
+      "doc_recall_all": 0.4875,
+      "ndcg_at_10": 0.4171678674168495,
+      "exact_match": 0.1375,
+      "token_f1": 0.20728760855288653,
+      "avg_total_sec": 6.378732465940994,
       "p50_total_sec": 6.3654237892478704,
-      "p95_total_sec": 6.459623791277409,
+      "p95_total_sec": 6.469191602896899,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
       "categories": {
         "category_2": {
-          "expected_total": 35,
-          "rows_recorded": 35,
-          "rows_successful": 35,
+          "expected_total": 36,
+          "rows_recorded": 36,
+          "rows_successful": 36,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.8,
-          "doc_recall_all": 0.8,
-          "ndcg_at_10": 0.5839774382083337,
-          "exact_match": 0.2857142857142857,
-          "token_f1": 0.4041496598639456,
-          "avg_total_sec": 6.359038634984088,
+          "doc_recall_any": 0.8055555555555556,
+          "doc_recall_all": 0.8055555555555556,
+          "ndcg_at_10": 0.5955336204803244,
+          "exact_match": 0.2777777777777778,
+          "token_f1": 0.40681216931216935,
+          "avg_total_sec": 6.358786183926794,
           "p50_total_sec": 6.363303407095373,
           "p95_total_sec": 6.415752103086561,
           "avg_storage_bytes": 16119538.0,
@@ -1871,19 +1921,19 @@
           ]
         },
         "category_3": {
-          "expected_total": 11,
-          "rows_recorded": 11,
-          "rows_successful": 11,
+          "expected_total": 12,
+          "rows_recorded": 12,
+          "rows_successful": 12,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.7272727272727273,
-          "doc_recall_all": 0.2727272727272727,
-          "ndcg_at_10": 0.3665553772832771,
+          "doc_recall_any": 0.75,
+          "doc_recall_all": 0.3333333333333333,
+          "ndcg_at_10": 0.39025250666026506,
           "exact_match": 0.0,
-          "token_f1": 0.029999999999999995,
-          "avg_total_sec": 6.364668810613114,
-          "p50_total_sec": 6.369504799135029,
-          "p95_total_sec": 6.437955324072391,
+          "token_f1": 0.027499999999999997,
+          "avg_total_sec": 6.367110983313371,
+          "p50_total_sec": 6.381417411845177,
+          "p95_total_sec": 6.422098994720727,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
@@ -2051,21 +2101,35 @@
                 "conv-26:D15:17",
                 "conv-26:D15:22"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0077",
+              "category": "category_3",
+              "query": "Would Melanie go on another roadtrip soon?",
+              "gold": "Likely no; since this one went badly",
+              "prediction": "Thanks, Caroline!",
+              "retrieved_doc_ids": [
+                "conv-26:D18:17",
+                "conv-26:D18:1",
+                "conv-26:D18:19",
+                "conv-26:D18:3",
+                "conv-26:D10:12"
+              ]
             }
           ]
         },
         "category_1": {
-          "expected_total": 29,
-          "rows_recorded": 29,
-          "rows_successful": 29,
+          "expected_total": 32,
+          "rows_recorded": 32,
+          "rows_successful": 32,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6551724137931034,
-          "doc_recall_all": 0.1724137931034483,
-          "ndcg_at_10": 0.2367012472033986,
-          "exact_match": 0.0,
-          "token_f1": 0.020957606516994007,
-          "avg_total_sec": 6.394698892174096,
+          "doc_recall_any": 0.625,
+          "doc_recall_all": 0.1875,
+          "ndcg_at_10": 0.22659965550415942,
+          "exact_match": 0.03125,
+          "token_f1": 0.05024283090602582,
+          "avg_total_sec": 6.405530089192325,
           "p50_total_sec": 6.3654237892478704,
           "p95_total_sec": 6.734352008905262,
           "avg_storage_bytes": 16119538.0,
@@ -2250,6 +2314,42 @@
                 "conv-26:D15:24",
                 "conv-26:D15:22",
                 "conv-26:D15:17"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0075",
+              "category": "category_1",
+              "query": "How many children does Melanie have?",
+              "gold": "3",
+              "prediction": "2",
+              "expected_doc_ids": [
+                "conv-26:D18:1",
+                "conv-26:D18:7"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D2:15",
+                "conv-26:D2:14",
+                "conv-26:D10:10",
+                "conv-26:D19:3",
+                "conv-26:D2:9"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0078",
+              "category": "category_1",
+              "query": "What items has Melanie bought?",
+              "gold": "Figurines, shoes",
+              "prediction": "That's gorgeous, Caroline!, Seven years now, I've finally found my real muses: painting, pottery, Thanks, Wow, I'm a fan of both classical like Bach, Mozart, as well as modern music like Ed Sheeran's \"Perfect",
+              "expected_doc_ids": [
+                "conv-26:D19:2",
+                "conv-26:D7:18"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D4:5",
+                "conv-26:D4:4",
+                "conv-26:D16:8",
+                "conv-26:D12:6"
               ]
             }
           ],
@@ -2827,10 +2927,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.7333333333333333,
-    "doc_recall_all_delta": -0.48,
-    "ndcg_at_10_delta": -0.41780874208408386,
-    "token_f1_delta": -0.2011067824564123,
+    "doc_recall_any_delta": -0.725,
+    "doc_recall_all_delta": -0.4875,
+    "ndcg_at_10_delta": -0.4171678674168495,
+    "token_f1_delta": -0.20728760855288653,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
