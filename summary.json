@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T18:46:01Z",
+  "generated_at": "2026-04-29T18:46:06Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T18:45:48Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T18:46:02Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 295,
     "current_case_total": 500,
@@ -5967,19 +5967,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 294,
-        "rows_successful": 294,
+        "rows_recorded": 295,
+        "rows_successful": 295,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9965986394557823,
-        "ndcg_at_10": 0.9996333702227056,
-        "exact_match": 0.17346938775510204,
-        "token_f1": 0.22910421438874665,
-        "avg_total_sec": 6.82700161726157,
+        "doc_recall_all": 0.9966101694915255,
+        "ndcg_at_10": 0.99963461303551,
+        "exact_match": 0.17288135593220338,
+        "token_f1": 0.22832758993319158,
+        "avg_total_sec": 6.815626031327677,
         "p50_total_sec": 6.790292620193213,
         "p95_total_sec": 13.234422508161515,
-        "avg_storage_bytes": 1120226.1156462585,
+        "avg_storage_bytes": 1118847.2779661017,
         "p95_storage_bytes": 1940189.0,
         "categories": {
           "temporal-reasoning": {
@@ -6747,20 +6747,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
-            "token_f1": 0.035931174089068825,
-            "avg_total_sec": 3.4530624026665464,
-            "p50_total_sec": 3.699769439175725,
+            "token_f1": 0.03193882141250562,
+            "avg_total_sec": 3.455078109788398,
+            "p50_total_sec": 3.5333281927742064,
             "p95_total_sec": 4.484139450825751,
-            "avg_storage_bytes": 710379.0,
+            "avg_storage_bytes": 710722.3333333334,
             "p95_storage_bytes": 856973.0,
             "categories": {},
             "sample_errors": [],
@@ -6844,6 +6844,16 @@
                 "prediction": "I recently added a vase with fresh greenery to my kitchen countertop and I'd love to explore more options.",
                 "retrieved_doc_ids": [
                   "answer_feb5200f"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::58ef2f1c",
+                "category": "single-session-user",
+                "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+                "gold": "February 14th",
+                "prediction": "Love is in the Air",
+                "retrieved_doc_ids": [
+                  "answer_59547700"
                 ]
               }
             ]
@@ -10350,19 +10360,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2280,
-      "rows_successful": 2280,
+      "rows_recorded": 2281,
+      "rows_successful": 2281,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7763157894736842,
-      "doc_recall_all": 0.6846491228070175,
-      "ndcg_at_10": 0.5768292533504017,
-      "exact_match": 0.052192982456140354,
-      "token_f1": 0.10121475500269704,
-      "avg_total_sec": 0.9359952603626114,
+      "doc_recall_any": 0.7764138535729943,
+      "doc_recall_all": 0.68478737395879,
+      "ndcg_at_10": 0.5770147731867233,
+      "exact_match": 0.052170100832968,
+      "token_f1": 0.1011703820281233,
+      "avg_total_sec": 0.9371067064416998,
       "p50_total_sec": 0.06592722563073039,
       "p95_total_sec": 7.356629468034953,
-      "avg_storage_bytes": 12077303.877192982,
+      "avg_storage_bytes": 12072321.924156072,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -13119,20 +13129,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 9,
+          "rows_recorded": 9,
+          "rows_successful": 9,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
-          "token_f1": 0.035931174089068825,
-          "avg_total_sec": 3.4530624026665464,
-          "p50_total_sec": 3.699769439175725,
+          "token_f1": 0.03193882141250562,
+          "avg_total_sec": 3.455078109788398,
+          "p50_total_sec": 3.5333281927742064,
           "p95_total_sec": 4.484139450825751,
-          "avg_storage_bytes": 710379.0,
+          "avg_storage_bytes": 710722.3333333334,
           "p95_storage_bytes": 856973.0,
           "categories": {},
           "sample_errors": [],
@@ -13216,6 +13226,16 @@
               "prediction": "I recently added a vase with fresh greenery to my kitchen countertop and I'd love to explore more options.",
               "retrieved_doc_ids": [
                 "answer_feb5200f"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::58ef2f1c",
+              "category": "single-session-user",
+              "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+              "gold": "February 14th",
+              "prediction": "Love is in the Air",
+              "retrieved_doc_ids": [
+                "answer_59547700"
               ]
             }
           ]
@@ -13607,11 +13627,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04330395256004982,
-    "doc_recall_all_delta": 0.06518397594160763,
-    "ndcg_at_10_delta": 0.05840288842904118,
-    "token_f1_delta": 0.0036817991566327896,
-    "avg_storage_ratio_nova_over_stock": 0.6275554352275755,
-    "avg_latency_ratio_nova_over_stock": 0.1255744206502858
+    "doc_recall_any_delta": 0.04340201665935994,
+    "doc_recall_all_delta": 0.06532222709338009,
+    "ndcg_at_10_delta": 0.058588408265362824,
+    "token_f1_delta": 0.0036374261820590476,
+    "avg_storage_ratio_nova_over_stock": 0.627296565223297,
+    "avg_latency_ratio_nova_over_stock": 0.12572353379580695
   }
 }
