@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T07:51:49Z",
+  "generated_at": "2026-04-29T07:53:35Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T07:51:42Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T07:53:19Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 130,
+    "current_case_index": 135,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::89941a93"
+    "current_case_id": "longmemeval_oracle::184da446"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,20 +4892,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 130,
-        "rows_successful": 130,
+        "rows_recorded": 135,
+        "rows_successful": 135,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9923076923076923,
-        "doc_recall_all": 0.7,
-        "ndcg_at_10": 0.9014044865147577,
-        "exact_match": 0.2076923076923077,
-        "token_f1": 0.24221126225764866,
-        "avg_total_sec": 16.170877560045426,
-        "p50_total_sec": 15.347307481803,
-        "p95_total_sec": 20.597534557338804,
-        "avg_storage_bytes": 7164783.938461538,
-        "p95_storage_bytes": 9404053.0,
+        "doc_recall_any": 0.9925925925925926,
+        "doc_recall_all": 0.7111111111111111,
+        "ndcg_at_10": 0.9050561721993963,
+        "exact_match": 0.2074074074074074,
+        "token_f1": 0.24112577942612287,
+        "avg_total_sec": 16.133305176285408,
+        "p50_total_sec": 15.31062222039327,
+        "p95_total_sec": 20.577723916620016,
+        "avg_storage_bytes": 7145107.733333333,
+        "p95_storage_bytes": 9342205.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5238,20 +5238,20 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.875,
-            "ndcg_at_10": 0.9516433990956823,
-            "exact_match": 0.25,
-            "token_f1": 0.2619047619047619,
-            "avg_total_sec": 14.697341915569268,
+            "doc_recall_all": 0.9230769230769231,
+            "ndcg_at_10": 0.9702420917511891,
+            "exact_match": 0.23076923076923078,
+            "token_f1": 0.24305801725156564,
+            "avg_total_sec": 14.873911639782959,
             "p50_total_sec": 14.855033177416772,
             "p95_total_sec": 15.526282752864063,
-            "avg_storage_bytes": 6359235.375,
+            "avg_storage_bytes": 6464731.923076923,
             "p95_storage_bytes": 6835211.0,
             "categories": {},
             "sample_errors": [],
@@ -5342,6 +5342,50 @@
                 "retrieved_doc_ids": [
                   "answer_e1403127_1",
                   "answer_e1403127_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::ce6d2d27",
+                "category": "knowledge-update",
+                "query": "What day of the week do I take a cocktail-making class?",
+                "gold": "Friday",
+                "prediction": "you have any other ideas for tequila-based cocktails that I could try out",
+                "retrieved_doc_ids": [
+                  "answer_73540165_2",
+                  "answer_73540165_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::9ea5eabc",
+                "category": "knowledge-update",
+                "query": "Where did I go on my most recent family trip?",
+                "gold": "Paris",
+                "prediction": "Since I've been thinking about my recent family trip to Paris, I was wondering if you could help me compare and contrast my experiences traveling with family versus solo.",
+                "retrieved_doc_ids": [
+                  "answer_02e66dec_1",
+                  "answer_02e66dec_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::07741c44",
+                "category": "knowledge-update",
+                "query": "Where do I initially keep my old sneakers?",
+                "gold": "under my bed",
+                "prediction": "ll be able to keep your sneakers clean, fresh, and organized while they",
+                "retrieved_doc_ids": [
+                  "answer_7e9ad7b4_2",
+                  "answer_7e9ad7b4_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::a1eacc2a",
+                "category": "knowledge-update",
+                "query": "How many short stories have I written since I started writing regularly?",
+                "gold": "seven",
+                "prediction": "4",
+                "retrieved_doc_ids": [
+                  "answer_0eb23770_1",
+                  "answer_0eb23770_2"
                 ]
               }
             ]
@@ -5499,20 +5543,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 130,
-        "rows_successful": 130,
+        "rows_recorded": 134,
+        "rows_successful": 134,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9923076923076923,
-        "ndcg_at_10": 0.9991708526575037,
-        "exact_match": 0.23846153846153847,
-        "token_f1": 0.2829854981780728,
-        "avg_total_sec": 9.542806596681476,
-        "p50_total_sec": 8.017338761128485,
-        "p95_total_sec": 17.086593996267766,
-        "avg_storage_bytes": 1458925.923076923,
-        "p95_storage_bytes": 2407781.0,
+        "doc_recall_all": 0.9925373134328358,
+        "ndcg_at_10": 0.9991956033244439,
+        "exact_match": 0.23880597014925373,
+        "token_f1": 0.2856806143339787,
+        "avg_total_sec": 9.472711509906812,
+        "p50_total_sec": 7.947439566720277,
+        "p95_total_sec": 16.771190017927438,
+        "avg_storage_bytes": 1450086.343283582,
+        "p95_storage_bytes": 2371421.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5841,21 +5885,21 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 8,
-            "rows_recorded": 8,
-            "rows_successful": 8,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
             "exact_match": 0.25,
-            "token_f1": 0.24519230769230768,
-            "avg_total_sec": 6.914981529349461,
-            "p50_total_sec": 6.647178302984685,
-            "p95_total_sec": 8.264034742023796,
-            "avg_storage_bytes": 1125895.5,
-            "p95_storage_bytes": 1328877.0,
+            "token_f1": 0.287885501595179,
+            "avg_total_sec": 7.008194749476388,
+            "p50_total_sec": 7.086883747950196,
+            "p95_total_sec": 8.004144133068621,
+            "avg_storage_bytes": 1138197.0,
+            "p95_storage_bytes": 1275557.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5946,6 +5990,50 @@
                 "retrieved_doc_ids": [
                   "answer_e1403127_1",
                   "answer_e1403127_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::ce6d2d27",
+                "category": "knowledge-update",
+                "query": "What day of the week do I take a cocktail-making class?",
+                "gold": "Friday",
+                "prediction": "you have any other ideas for tequila-based cocktails that I could try out",
+                "retrieved_doc_ids": [
+                  "answer_73540165_2",
+                  "answer_73540165_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::9ea5eabc",
+                "category": "knowledge-update",
+                "query": "Where did I go on my most recent family trip?",
+                "gold": "Paris",
+                "prediction": "Since I've been thinking about my recent family trip to Paris, I was wondering if you could help me compare and contrast my experiences traveling with family versus solo.",
+                "retrieved_doc_ids": [
+                  "answer_02e66dec_2",
+                  "answer_02e66dec_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::07741c44",
+                "category": "knowledge-update",
+                "query": "Where do I initially keep my old sneakers?",
+                "gold": "under my bed",
+                "prediction": "ve been keeping them under my bed for storage, and they",
+                "retrieved_doc_ids": [
+                  "answer_7e9ad7b4_1",
+                  "answer_7e9ad7b4_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::a1eacc2a",
+                "category": "knowledge-update",
+                "query": "How many short stories have I written since I started writing regularly?",
+                "gold": "seven",
+                "prediction": "7",
+                "retrieved_doc_ids": [
+                  "answer_0eb23770_1",
+                  "answer_0eb23770_2"
                 ]
               }
             ]
@@ -6185,19 +6273,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2116,
-      "rows_successful": 2116,
+      "rows_recorded": 2121,
+      "rows_successful": 2121,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7126654064272212,
-      "doc_recall_all": 0.5916824196597353,
-      "ndcg_at_10": 0.48189560340610904,
-      "exact_match": 0.045841209829867675,
-      "token_f1": 0.09341656431189908,
-      "avg_total_sec": 6.9714961124633374,
-      "p50_total_sec": 6.35997473122552,
-      "p95_total_sec": 14.571112388279289,
-      "avg_storage_bytes": 20305817.778355386,
+      "doc_recall_any": 0.7133427628477134,
+      "doc_recall_all": 0.5926449787835927,
+      "ndcg_at_10": 0.4831169716206162,
+      "exact_match": 0.0462046204620462,
+      "token_f1": 0.09369823961009463,
+      "avg_total_sec": 6.9907910843776735,
+      "p50_total_sec": 6.360040172934532,
+      "p95_total_sec": 14.653112463653088,
+      "avg_storage_bytes": 20273587.011315417,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -8510,20 +8598,20 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 13,
+          "rows_recorded": 13,
+          "rows_successful": 13,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.875,
-          "ndcg_at_10": 0.9516433990956823,
-          "exact_match": 0.25,
-          "token_f1": 0.2619047619047619,
-          "avg_total_sec": 14.697341915569268,
+          "doc_recall_all": 0.9230769230769231,
+          "ndcg_at_10": 0.9702420917511891,
+          "exact_match": 0.23076923076923078,
+          "token_f1": 0.24305801725156564,
+          "avg_total_sec": 14.873911639782959,
           "p50_total_sec": 14.855033177416772,
           "p95_total_sec": 15.526282752864063,
-          "avg_storage_bytes": 6359235.375,
+          "avg_storage_bytes": 6464731.923076923,
           "p95_storage_bytes": 6835211.0,
           "categories": {},
           "sample_errors": [],
@@ -8614,6 +8702,50 @@
               "retrieved_doc_ids": [
                 "answer_e1403127_1",
                 "answer_e1403127_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::ce6d2d27",
+              "category": "knowledge-update",
+              "query": "What day of the week do I take a cocktail-making class?",
+              "gold": "Friday",
+              "prediction": "you have any other ideas for tequila-based cocktails that I could try out",
+              "retrieved_doc_ids": [
+                "answer_73540165_2",
+                "answer_73540165_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::9ea5eabc",
+              "category": "knowledge-update",
+              "query": "Where did I go on my most recent family trip?",
+              "gold": "Paris",
+              "prediction": "Since I've been thinking about my recent family trip to Paris, I was wondering if you could help me compare and contrast my experiences traveling with family versus solo.",
+              "retrieved_doc_ids": [
+                "answer_02e66dec_1",
+                "answer_02e66dec_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::07741c44",
+              "category": "knowledge-update",
+              "query": "Where do I initially keep my old sneakers?",
+              "gold": "under my bed",
+              "prediction": "ll be able to keep your sneakers clean, fresh, and organized while they",
+              "retrieved_doc_ids": [
+                "answer_7e9ad7b4_2",
+                "answer_7e9ad7b4_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::a1eacc2a",
+              "category": "knowledge-update",
+              "query": "How many short stories have I written since I started writing regularly?",
+              "gold": "seven",
+              "prediction": "4",
+              "retrieved_doc_ids": [
+                "answer_0eb23770_1",
+                "answer_0eb23770_2"
               ]
             }
           ]
@@ -9000,19 +9132,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2116,
-      "rows_successful": 2116,
+      "rows_recorded": 2120,
+      "rows_successful": 2120,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6994328922495274,
-      "doc_recall_all": 0.5949905482041588,
-      "ndcg_at_10": 0.42523767063961937,
-      "exact_match": 0.04206049149338374,
-      "token_f1": 0.08350793817912487,
-      "avg_total_sec": 0.6447984417339273,
-      "p50_total_sec": 0.06362463813275099,
-      "p95_total_sec": 6.722645520232618,
-      "avg_storage_bytes": 12877719.109640831,
+      "doc_recall_any": 0.7,
+      "doc_recall_all": 0.595754716981132,
+      "ndcg_at_10": 0.42632212786482765,
+      "exact_match": 0.04245283018867924,
+      "token_f1": 0.08405466261539242,
+      "avg_total_sec": 0.6571565978622222,
+      "p50_total_sec": 0.06364640314131975,
+      "p95_total_sec": 6.813198082149029,
+      "avg_storage_bytes": 12855615.488679245,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -11330,21 +11462,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 8,
-          "rows_recorded": 8,
-          "rows_successful": 8,
+          "expected_total": 12,
+          "rows_recorded": 12,
+          "rows_successful": 12,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
           "exact_match": 0.25,
-          "token_f1": 0.24519230769230768,
-          "avg_total_sec": 6.914981529349461,
-          "p50_total_sec": 6.647178302984685,
-          "p95_total_sec": 8.264034742023796,
-          "avg_storage_bytes": 1125895.5,
-          "p95_storage_bytes": 1328877.0,
+          "token_f1": 0.287885501595179,
+          "avg_total_sec": 7.008194749476388,
+          "p50_total_sec": 7.086883747950196,
+          "p95_total_sec": 8.004144133068621,
+          "avg_storage_bytes": 1138197.0,
+          "p95_storage_bytes": 1275557.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -11435,6 +11567,50 @@
               "retrieved_doc_ids": [
                 "answer_e1403127_1",
                 "answer_e1403127_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::ce6d2d27",
+              "category": "knowledge-update",
+              "query": "What day of the week do I take a cocktail-making class?",
+              "gold": "Friday",
+              "prediction": "you have any other ideas for tequila-based cocktails that I could try out",
+              "retrieved_doc_ids": [
+                "answer_73540165_2",
+                "answer_73540165_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::9ea5eabc",
+              "category": "knowledge-update",
+              "query": "Where did I go on my most recent family trip?",
+              "gold": "Paris",
+              "prediction": "Since I've been thinking about my recent family trip to Paris, I was wondering if you could help me compare and contrast my experiences traveling with family versus solo.",
+              "retrieved_doc_ids": [
+                "answer_02e66dec_2",
+                "answer_02e66dec_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::07741c44",
+              "category": "knowledge-update",
+              "query": "Where do I initially keep my old sneakers?",
+              "gold": "under my bed",
+              "prediction": "ve been keeping them under my bed for storage, and they",
+              "retrieved_doc_ids": [
+                "answer_7e9ad7b4_1",
+                "answer_7e9ad7b4_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::a1eacc2a",
+              "category": "knowledge-update",
+              "query": "How many short stories have I written since I started writing regularly?",
+              "gold": "seven",
+              "prediction": "7",
+              "retrieved_doc_ids": [
+                "answer_0eb23770_1",
+                "answer_0eb23770_2"
               ]
             }
           ]
@@ -11822,11 +11998,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.013232514177693777,
-    "doc_recall_all_delta": 0.0033081285444234165,
-    "ndcg_at_10_delta": -0.05665793276648967,
-    "token_f1_delta": -0.009908626132774212,
-    "avg_storage_ratio_nova_over_stock": 0.6341886473229165,
-    "avg_latency_ratio_nova_over_stock": 0.09249068368283024
+    "doc_recall_any_delta": -0.013342762847713407,
+    "doc_recall_all_delta": 0.0031097381975393468,
+    "ndcg_at_10_delta": -0.05679484375578853,
+    "token_f1_delta": -0.00964357699470221,
+    "avg_storage_ratio_nova_over_stock": 0.6341066078491223,
+    "avg_latency_ratio_nova_over_stock": 0.09400318074599177
   }
 }
