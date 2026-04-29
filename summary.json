@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:08:36Z",
+  "generated_at": "2026-04-29T13:08:38Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:08:36Z",
+    "updated_at": "2026-04-29T13:08:38Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 175,
+    "current_case_index": 180,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0174"
+    "current_case_id": "locomo::conv-26::0179"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,16 +2238,16 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 175,
-        "rows_successful": 175,
+        "rows_recorded": 180,
+        "rows_successful": 180,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7028571428571428,
-        "doc_recall_all": 0.6057142857142858,
-        "ndcg_at_10": 0.4964262232181645,
-        "exact_match": 0.07428571428571429,
-        "token_f1": 0.12892751101143798,
-        "avg_total_sec": 0.058747767116874454,
+        "doc_recall_any": 0.7055555555555556,
+        "doc_recall_all": 0.6111111111111112,
+        "ndcg_at_10": 0.4993032725732155,
+        "exact_match": 0.07222222222222222,
+        "token_f1": 0.12534619126112026,
+        "avg_total_sec": 0.058649441129010584,
         "p50_total_sec": 0.05912956828251481,
         "p95_total_sec": 0.08605412906035781,
         "avg_storage_bytes": 10963457.0,
@@ -3516,17 +3516,17 @@
             ]
           },
           "category_5": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6956521739130435,
-            "doc_recall_all": 0.6956521739130435,
-            "ndcg_at_10": 0.492935628174045,
+            "doc_recall_any": 0.7142857142857143,
+            "doc_recall_all": 0.7142857142857143,
+            "ndcg_at_10": 0.5120542660001084,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 0.054065812419614064,
+            "avg_total_sec": 0.05426978012214282,
             "p50_total_sec": 0.058585149236023426,
             "p95_total_sec": 0.07742692483589053,
             "avg_storage_bytes": 10963457.0,
@@ -3651,6 +3651,23 @@
                   "conv-26:D16:7",
                   "conv-26:D14:33",
                   "conv-26:D13:14"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0177",
+                "category": "category_5",
+                "query": "Why did Caroline choose to use colors and patterns in her pottery project?",
+                "gold": "",
+                "prediction": "Melanie, those bowls are amazing!",
+                "expected_doc_ids": [
+                  "conv-26:D12:6"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D5:10",
+                  "conv-26:D16:9",
+                  "conv-26:D5:6",
+                  "conv-26:D16:8",
+                  "conv-26:D14:4"
                 ]
               }
             ],
@@ -6457,16 +6474,16 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 175,
-      "rows_successful": 175,
+      "rows_recorded": 180,
+      "rows_successful": 180,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7028571428571428,
-      "doc_recall_all": 0.6057142857142858,
-      "ndcg_at_10": 0.4964262232181645,
-      "exact_match": 0.07428571428571429,
-      "token_f1": 0.12892751101143798,
-      "avg_total_sec": 0.058747767116874454,
+      "doc_recall_any": 0.7055555555555556,
+      "doc_recall_all": 0.6111111111111112,
+      "ndcg_at_10": 0.4993032725732155,
+      "exact_match": 0.07222222222222222,
+      "token_f1": 0.12534619126112026,
+      "avg_total_sec": 0.058649441129010584,
       "p50_total_sec": 0.05912956828251481,
       "p95_total_sec": 0.08605412906035781,
       "avg_storage_bytes": 10963457.0,
@@ -7735,17 +7752,17 @@
           ]
         },
         "category_5": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 28,
+          "rows_recorded": 28,
+          "rows_successful": 28,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6956521739130435,
-          "doc_recall_all": 0.6956521739130435,
-          "ndcg_at_10": 0.492935628174045,
+          "doc_recall_any": 0.7142857142857143,
+          "doc_recall_all": 0.7142857142857143,
+          "ndcg_at_10": 0.5120542660001084,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 0.054065812419614064,
+          "avg_total_sec": 0.05426978012214282,
           "p50_total_sec": 0.058585149236023426,
           "p95_total_sec": 0.07742692483589053,
           "avg_storage_bytes": 10963457.0,
@@ -7870,6 +7887,23 @@
                 "conv-26:D16:7",
                 "conv-26:D14:33",
                 "conv-26:D13:14"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0177",
+              "category": "category_5",
+              "query": "Why did Caroline choose to use colors and patterns in her pottery project?",
+              "gold": "",
+              "prediction": "Melanie, those bowls are amazing!",
+              "expected_doc_ids": [
+                "conv-26:D12:6"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D5:10",
+                "conv-26:D16:9",
+                "conv-26:D5:6",
+                "conv-26:D16:8",
+                "conv-26:D14:4"
               ]
             }
           ],
@@ -8431,11 +8465,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.009389806173725757,
-    "doc_recall_all_delta": 0.007724335965542006,
-    "ndcg_at_10_delta": 0.030485052209670127,
-    "token_f1_delta": 0.01764428826105982,
+    "doc_recall_any_delta": 0.012088218872138512,
+    "doc_recall_all_delta": 0.013121161362367406,
+    "ndcg_at_10_delta": 0.033362101564721136,
+    "token_f1_delta": 0.014062968510742097,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009238787701671419
+    "avg_latency_ratio_nova_over_stock": 0.009223324766278075
   }
 }
