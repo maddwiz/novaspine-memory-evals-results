@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:08:30Z",
+  "generated_at": "2026-04-29T03:08:32Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:08:30Z",
+    "updated_at": "2026-04-29T03:08:32Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 180,
+    "current_case_index": 185,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0179"
+    "current_case_id": "locomo::conv-26::0184"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,17 +2238,17 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 180,
-        "rows_successful": 180,
+        "rows_recorded": 185,
+        "rows_successful": 185,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6555555555555556,
-        "doc_recall_all": 0.5666666666666667,
-        "ndcg_at_10": 0.3886835124274263,
-        "exact_match": 0.06111111111111111,
-        "token_f1": 0.11138411616211737,
-        "avg_total_sec": 0.061613153904262516,
-        "p50_total_sec": 0.061379277147352695,
+        "doc_recall_any": 0.654054054054054,
+        "doc_recall_all": 0.5675675675675675,
+        "ndcg_at_10": 0.38692485908750096,
+        "exact_match": 0.05945945945945946,
+        "token_f1": 0.1083737346442223,
+        "avg_total_sec": 0.0617004915190911,
+        "p50_total_sec": 0.06113452324643731,
         "p95_total_sec": 0.0894683632068336,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
@@ -3521,19 +3521,19 @@
             ]
           },
           "category_5": {
-            "expected_total": 28,
-            "rows_recorded": 28,
-            "rows_successful": 28,
+            "expected_total": 33,
+            "rows_recorded": 33,
+            "rows_successful": 33,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6071428571428571,
-            "doc_recall_all": 0.6071428571428571,
-            "ndcg_at_10": 0.4342401110297009,
+            "doc_recall_any": 0.6060606060606061,
+            "doc_recall_all": 0.6060606060606061,
+            "ndcg_at_10": 0.4174784788812898,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 0.06420517965619053,
-            "p50_total_sec": 0.06235601240769029,
-            "p95_total_sec": 0.0931440400891006,
+            "avg_total_sec": 0.06430206844357378,
+            "p50_total_sec": 0.06233223620802164,
+            "p95_total_sec": 0.08925668010488153,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
             "categories": {},
@@ -3724,6 +3724,23 @@
                   "conv-26:D5:6",
                   "conv-26:D5:10",
                   "conv-26:D5:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0180",
+                "category": "category_5",
+                "query": "What activity did Melanie used to do with her dad?",
+                "gold": "",
+                "prediction": "Melanie: I'll never forget the day my youngest took her first steps.",
+                "expected_doc_ids": [
+                  "conv-26:D13:7"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D10:20",
+                  "conv-26:D11:1",
+                  "conv-26:D10:12",
+                  "conv-26:D10:10",
+                  "conv-26:D12:17"
                 ]
               }
             ],
@@ -6526,17 +6543,17 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 180,
-      "rows_successful": 180,
+      "rows_recorded": 185,
+      "rows_successful": 185,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6555555555555556,
-      "doc_recall_all": 0.5666666666666667,
-      "ndcg_at_10": 0.3886835124274263,
-      "exact_match": 0.06111111111111111,
-      "token_f1": 0.11138411616211737,
-      "avg_total_sec": 0.061613153904262516,
-      "p50_total_sec": 0.061379277147352695,
+      "doc_recall_any": 0.654054054054054,
+      "doc_recall_all": 0.5675675675675675,
+      "ndcg_at_10": 0.38692485908750096,
+      "exact_match": 0.05945945945945946,
+      "token_f1": 0.1083737346442223,
+      "avg_total_sec": 0.0617004915190911,
+      "p50_total_sec": 0.06113452324643731,
       "p95_total_sec": 0.0894683632068336,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
@@ -7809,19 +7826,19 @@
           ]
         },
         "category_5": {
-          "expected_total": 28,
-          "rows_recorded": 28,
-          "rows_successful": 28,
+          "expected_total": 33,
+          "rows_recorded": 33,
+          "rows_successful": 33,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6071428571428571,
-          "doc_recall_all": 0.6071428571428571,
-          "ndcg_at_10": 0.4342401110297009,
+          "doc_recall_any": 0.6060606060606061,
+          "doc_recall_all": 0.6060606060606061,
+          "ndcg_at_10": 0.4174784788812898,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 0.06420517965619053,
-          "p50_total_sec": 0.06235601240769029,
-          "p95_total_sec": 0.0931440400891006,
+          "avg_total_sec": 0.06430206844357378,
+          "p50_total_sec": 0.06233223620802164,
+          "p95_total_sec": 0.08925668010488153,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
           "categories": {},
@@ -8012,6 +8029,23 @@
                 "conv-26:D5:6",
                 "conv-26:D5:10",
                 "conv-26:D5:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0180",
+              "category": "category_5",
+              "query": "What activity did Melanie used to do with her dad?",
+              "gold": "",
+              "prediction": "Melanie: I'll never forget the day my youngest took her first steps.",
+              "expected_doc_ids": [
+                "conv-26:D13:7"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D10:20",
+                "conv-26:D11:1",
+                "conv-26:D10:12",
+                "conv-26:D10:10",
+                "conv-26:D12:17"
               ]
             }
           ],
@@ -8569,11 +8603,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.03791178112786153,
-    "doc_recall_all_delta": -0.0313232830820771,
-    "ndcg_at_10_delta": -0.07725765858106803,
-    "token_f1_delta": 0.00010089341173920297,
+    "doc_recall_any_delta": -0.039413282629363056,
+    "doc_recall_all_delta": -0.03042238218117621,
+    "ndcg_at_10_delta": -0.0790163119209934,
+    "token_f1_delta": -0.0029094881061558636,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.009668181415250212
+    "avg_latency_ratio_nova_over_stock": 0.009681886214485942
   }
 }
