@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:04:33Z",
+  "generated_at": "2026-04-29T03:05:06Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,27 +117,27 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:04:33Z",
+    "updated_at": "2026-04-29T03:05:06Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 180,
+    "current_case_index": 185,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0179"
+    "current_case_id": "locomo::conv-26::0184"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 180,
-        "rows_successful": 180,
+        "rows_recorded": 185,
+        "rows_successful": 185,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7,
-        "doc_recall_all": 0.5944444444444444,
-        "ndcg_at_10": 0.4653970108524825,
-        "exact_match": 0.07222222222222222,
-        "token_f1": 0.12302978515180697,
-        "avg_total_sec": 6.3712644381603845,
+        "doc_recall_any": 0.6918918918918919,
+        "doc_recall_all": 0.5891891891891892,
+        "ndcg_at_10": 0.460315214922602,
+        "exact_match": 0.07027027027027027,
+        "token_f1": 0.11970465582337975,
+        "avg_total_sec": 6.371062558959867,
         "p50_total_sec": 6.35777156567201,
         "p95_total_sec": 6.453628138639033,
         "avg_storage_bytes": 16119538.0,
@@ -1468,19 +1468,19 @@
             ]
           },
           "category_5": {
-            "expected_total": 28,
-            "rows_recorded": 28,
-            "rows_successful": 28,
+            "expected_total": 33,
+            "rows_recorded": 33,
+            "rows_successful": 33,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6428571428571429,
-            "doc_recall_all": 0.6428571428571429,
-            "ndcg_at_10": 0.4845676750012136,
+            "doc_recall_any": 0.6060606060606061,
+            "doc_recall_all": 0.6060606060606061,
+            "ndcg_at_10": 0.453174172947531,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 6.3603191159366235,
+            "avg_total_sec": 6.360845751058536,
             "p50_total_sec": 6.363076848909259,
-            "p95_total_sec": 6.450843384955078,
+            "p95_total_sec": 6.4408847582526505,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
@@ -1649,6 +1649,40 @@
                   "conv-26:D13:6"
                 ],
                 "retrieved_doc_ids": []
+              },
+              {
+                "case_id": "locomo::conv-26::0180",
+                "category": "category_5",
+                "query": "What activity did Melanie used to do with her dad?",
+                "gold": "",
+                "prediction": "Melanie: I'll never forget the day my youngest took her first steps.",
+                "expected_doc_ids": [
+                  "conv-26:D13:7"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D11:1",
+                  "conv-26:D10:12",
+                  "conv-26:D3:20",
+                  "conv-26:D10:10",
+                  "conv-26:D16:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0181",
+                "category": "category_5",
+                "query": "What did Melanie make for a local church?",
+                "gold": "",
+                "prediction": "Thanks, Caroline!",
+                "expected_doc_ids": [
+                  "conv-26:D14:17"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D4:3",
+                  "conv-26:D12:6",
+                  "conv-26:D4:5",
+                  "conv-26:D16:8",
+                  "conv-26:D14:19"
+                ]
               }
             ],
             "sample_successes": [
@@ -2360,16 +2394,16 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 180,
-      "rows_successful": 180,
+      "rows_recorded": 185,
+      "rows_successful": 185,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7,
-      "doc_recall_all": 0.5944444444444444,
-      "ndcg_at_10": 0.4653970108524825,
-      "exact_match": 0.07222222222222222,
-      "token_f1": 0.12302978515180697,
-      "avg_total_sec": 6.3712644381603845,
+      "doc_recall_any": 0.6918918918918919,
+      "doc_recall_all": 0.5891891891891892,
+      "ndcg_at_10": 0.460315214922602,
+      "exact_match": 0.07027027027027027,
+      "token_f1": 0.11970465582337975,
+      "avg_total_sec": 6.371062558959867,
       "p50_total_sec": 6.35777156567201,
       "p95_total_sec": 6.453628138639033,
       "avg_storage_bytes": 16119538.0,
@@ -3700,19 +3734,19 @@
           ]
         },
         "category_5": {
-          "expected_total": 28,
-          "rows_recorded": 28,
-          "rows_successful": 28,
+          "expected_total": 33,
+          "rows_recorded": 33,
+          "rows_successful": 33,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6428571428571429,
-          "doc_recall_all": 0.6428571428571429,
-          "ndcg_at_10": 0.4845676750012136,
+          "doc_recall_any": 0.6060606060606061,
+          "doc_recall_all": 0.6060606060606061,
+          "ndcg_at_10": 0.453174172947531,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 6.3603191159366235,
+          "avg_total_sec": 6.360845751058536,
           "p50_total_sec": 6.363076848909259,
-          "p95_total_sec": 6.450843384955078,
+          "p95_total_sec": 6.4408847582526505,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
@@ -3881,6 +3915,40 @@
                 "conv-26:D13:6"
               ],
               "retrieved_doc_ids": []
+            },
+            {
+              "case_id": "locomo::conv-26::0180",
+              "category": "category_5",
+              "query": "What activity did Melanie used to do with her dad?",
+              "gold": "",
+              "prediction": "Melanie: I'll never forget the day my youngest took her first steps.",
+              "expected_doc_ids": [
+                "conv-26:D13:7"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D11:1",
+                "conv-26:D10:12",
+                "conv-26:D3:20",
+                "conv-26:D10:10",
+                "conv-26:D16:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0181",
+              "category": "category_5",
+              "query": "What did Melanie make for a local church?",
+              "gold": "",
+              "prediction": "Thanks, Caroline!",
+              "expected_doc_ids": [
+                "conv-26:D14:17"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D4:3",
+                "conv-26:D12:6",
+                "conv-26:D4:5",
+                "conv-26:D16:8",
+                "conv-26:D14:19"
+              ]
             }
           ],
           "sample_successes": [
@@ -4457,10 +4525,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.7,
-    "doc_recall_all_delta": -0.5944444444444444,
-    "ndcg_at_10_delta": -0.4653970108524825,
-    "token_f1_delta": -0.12302978515180697,
+    "doc_recall_any_delta": -0.6918918918918919,
+    "doc_recall_all_delta": -0.5891891891891892,
+    "ndcg_at_10_delta": -0.460315214922602,
+    "token_f1_delta": -0.11970465582337975,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
