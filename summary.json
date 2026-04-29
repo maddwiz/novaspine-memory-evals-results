@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T07:51:40Z",
+  "generated_at": "2026-04-29T07:51:49Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T07:51:26Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T07:51:42Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 130,
     "current_case_total": 500,
@@ -5499,19 +5499,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 129,
-        "rows_successful": 129,
+        "rows_recorded": 130,
+        "rows_successful": 130,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9922480620155039,
-        "ndcg_at_10": 0.9991644251587247,
-        "exact_match": 0.24031007751937986,
-        "token_f1": 0.2851791842104609,
-        "avg_total_sec": 9.55795947988265,
-        "p50_total_sec": 8.070423556957394,
+        "doc_recall_all": 0.9923076923076923,
+        "ndcg_at_10": 0.9991708526575037,
+        "exact_match": 0.23846153846153847,
+        "token_f1": 0.2829854981780728,
+        "avg_total_sec": 9.542806596681476,
+        "p50_total_sec": 8.017338761128485,
         "p95_total_sec": 17.086593996267766,
-        "avg_storage_bytes": 1460538.1782945737,
+        "avg_storage_bytes": 1458925.923076923,
         "p95_storage_bytes": 2407781.0,
         "categories": {
           "temporal-reasoning": {
@@ -5841,20 +5841,20 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.2857142857142857,
-            "token_f1": 0.2802197802197802,
-            "avg_total_sec": 6.8188239387236536,
-            "p50_total_sec": 6.410806091036648,
+            "exact_match": 0.25,
+            "token_f1": 0.24519230769230768,
+            "avg_total_sec": 6.914981529349461,
+            "p50_total_sec": 6.647178302984685,
             "p95_total_sec": 8.264034742023796,
-            "avg_storage_bytes": 1108031.2857142857,
+            "avg_storage_bytes": 1125895.5,
             "p95_storage_bytes": 1328877.0,
             "categories": {},
             "sample_errors": [],
@@ -5935,6 +5935,17 @@
                 "retrieved_doc_ids": [
                   "answer_c44b9df4_2",
                   "answer_c44b9df4_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::89941a93",
+                "category": "knowledge-update",
+                "query": "How many bikes do I currently own?",
+                "gold": "4",
+                "prediction": "3",
+                "retrieved_doc_ids": [
+                  "answer_e1403127_1",
+                  "answer_e1403127_2"
                 ]
               }
             ]
@@ -8989,19 +9000,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2115,
-      "rows_successful": 2115,
+      "rows_recorded": 2116,
+      "rows_successful": 2116,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.699290780141844,
-      "doc_recall_all": 0.5947990543735224,
-      "ndcg_at_10": 0.42496591540115114,
-      "exact_match": 0.042080378250591015,
-      "token_f1": 0.0835474218378384,
-      "avg_total_sec": 0.6415155640875934,
-      "p50_total_sec": 0.06362222833558917,
-      "p95_total_sec": 6.71284107118845,
-      "avg_storage_bytes": 12883216.402364066,
+      "doc_recall_any": 0.6994328922495274,
+      "doc_recall_all": 0.5949905482041588,
+      "ndcg_at_10": 0.42523767063961937,
+      "exact_match": 0.04206049149338374,
+      "token_f1": 0.08350793817912487,
+      "avg_total_sec": 0.6447984417339273,
+      "p50_total_sec": 0.06362463813275099,
+      "p95_total_sec": 6.722645520232618,
+      "avg_storage_bytes": 12877719.109640831,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -11319,20 +11330,20 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 7,
-          "rows_recorded": 7,
-          "rows_successful": 7,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.2857142857142857,
-          "token_f1": 0.2802197802197802,
-          "avg_total_sec": 6.8188239387236536,
-          "p50_total_sec": 6.410806091036648,
+          "exact_match": 0.25,
+          "token_f1": 0.24519230769230768,
+          "avg_total_sec": 6.914981529349461,
+          "p50_total_sec": 6.647178302984685,
           "p95_total_sec": 8.264034742023796,
-          "avg_storage_bytes": 1108031.2857142857,
+          "avg_storage_bytes": 1125895.5,
           "p95_storage_bytes": 1328877.0,
           "categories": {},
           "sample_errors": [],
@@ -11413,6 +11424,17 @@
               "retrieved_doc_ids": [
                 "answer_c44b9df4_2",
                 "answer_c44b9df4_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::89941a93",
+              "category": "knowledge-update",
+              "query": "How many bikes do I currently own?",
+              "gold": "4",
+              "prediction": "3",
+              "retrieved_doc_ids": [
+                "answer_e1403127_1",
+                "answer_e1403127_2"
               ]
             }
           ]
@@ -11800,11 +11822,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.013374626285377222,
-    "doc_recall_all_delta": 0.003116634713787092,
-    "ndcg_at_10_delta": -0.0569296880049579,
-    "token_f1_delta": -0.009869142474060677,
-    "avg_storage_ratio_nova_over_stock": 0.6344593723330214,
-    "avg_latency_ratio_nova_over_stock": 0.0920197836646168
+    "doc_recall_any_delta": -0.013232514177693777,
+    "doc_recall_all_delta": 0.0033081285444234165,
+    "ndcg_at_10_delta": -0.05665793276648967,
+    "token_f1_delta": -0.009908626132774212,
+    "avg_storage_ratio_nova_over_stock": 0.6341886473229165,
+    "avg_latency_ratio_nova_over_stock": 0.09249068368283024
   }
 }
