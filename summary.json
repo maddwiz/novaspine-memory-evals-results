@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:45:55Z",
+  "generated_at": "2026-04-29T03:45:57Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:45:55Z",
+    "updated_at": "2026-04-29T03:45:57Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 340,
+    "current_case_index": 345,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-41::0035"
+    "current_case_id": "locomo::conv-41::0040"
   },
   "benchmarks": {
     "locomo": {
@@ -2415,36 +2415,36 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 340,
-        "rows_successful": 340,
+        "rows_recorded": 345,
+        "rows_successful": 345,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6588235294117647,
-        "doc_recall_all": 0.5676470588235294,
-        "ndcg_at_10": 0.3970030999240228,
-        "exact_match": 0.07647058823529412,
-        "token_f1": 0.11211549680400251,
-        "avg_total_sec": 0.0665861187461654,
-        "p50_total_sec": 0.06571400398388505,
+        "doc_recall_any": 0.6579710144927536,
+        "doc_recall_all": 0.5623188405797102,
+        "ndcg_at_10": 0.39630384655552303,
+        "exact_match": 0.07536231884057971,
+        "token_f1": 0.11062866075646348,
+        "avg_total_sec": 0.06661651022462309,
+        "p50_total_sec": 0.06572571117430925,
         "p95_total_sec": 0.0931440400891006,
-        "avg_storage_bytes": 11027349.188235294,
+        "avg_storage_bytes": 11079798.51884058,
         "p95_storage_bytes": 14646353.0,
         "categories": {
           "category_2": {
-            "expected_total": 76,
-            "rows_recorded": 76,
-            "rows_successful": 76,
+            "expected_total": 77,
+            "rows_recorded": 77,
+            "rows_successful": 77,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.881578947368421,
-            "doc_recall_all": 0.881578947368421,
-            "ndcg_at_10": 0.6097711625512181,
-            "exact_match": 0.34210526315789475,
-            "token_f1": 0.4284461152882206,
-            "avg_total_sec": 0.0736976648791154,
+            "doc_recall_any": 0.8701298701298701,
+            "doc_recall_all": 0.8701298701298701,
+            "ndcg_at_10": 0.6018520565440595,
+            "exact_match": 0.33766233766233766,
+            "token_f1": 0.4228818800247372,
+            "avg_total_sec": 0.07368967415426265,
             "p50_total_sec": 0.07252985332161188,
             "p95_total_sec": 0.10287138121202588,
-            "avg_storage_bytes": 11236871.94736842,
+            "avg_storage_bytes": 11281150.922077922,
             "p95_storage_bytes": 14646353.0,
             "categories": {},
             "sample_errors": [],
@@ -2600,6 +2600,23 @@
                   "conv-41:D20:9",
                   "conv-41:D27:14",
                   "conv-41:D21:22"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-41::0038",
+                "category": "category_2",
+                "query": "When did Maria get in a car accident?",
+                "gold": "July 2, 2023",
+                "prediction": "2022",
+                "expected_doc_ids": [
+                  "conv-41:D21:3"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-41:D20:9",
+                  "conv-41:D11:3",
+                  "conv-41:D13:24",
+                  "conv-41:D21:5",
+                  "conv-41:D5:8"
                 ]
               }
             ],
@@ -2775,20 +2792,20 @@
             ]
           },
           "category_3": {
-            "expected_total": 16,
-            "rows_recorded": 16,
-            "rows_successful": 16,
+            "expected_total": 17,
+            "rows_recorded": 17,
+            "rows_successful": 17,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5625,
-            "doc_recall_all": 0.25,
-            "ndcg_at_10": 0.24522744168037083,
+            "doc_recall_any": 0.5294117647058824,
+            "doc_recall_all": 0.23529411764705882,
+            "ndcg_at_10": 0.23080229805211372,
             "exact_match": 0.0,
-            "token_f1": 0.01125,
-            "avg_total_sec": 0.056409599870676175,
+            "token_f1": 0.013389355742296919,
+            "avg_total_sec": 0.05732291857438052,
             "p50_total_sec": 0.05676879687234759,
-            "p95_total_sec": 0.07116871699690819,
-            "avg_storage_bytes": 11630626.0,
+            "p95_total_sec": 0.07193601783365011,
+            "avg_storage_bytes": 11808021.705882354,
             "p95_storage_bytes": 14646353.0,
             "categories": {},
             "sample_errors": [],
@@ -2910,6 +2927,23 @@
                   "conv-41:D6:3",
                   "conv-41:D10:13",
                   "conv-41:D13:17"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-41::0039",
+                "category": "category_3",
+                "query": "Around which US holiday did Maria get into a car accident?",
+                "gold": "Independence Day",
+                "prediction": "A car ran a red light, hit us, but thankfully everyone is okay, For me, it was when I noticed a little girl around 8 sitting all alone, Thanks, John!, Yep, kindness is key, a little compassion can really turn someone's day around",
+                "expected_doc_ids": [
+                  "conv-41:D21:3"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-41:D21:5",
+                  "conv-41:D11:3",
+                  "conv-41:D5:10",
+                  "conv-41:D14:15",
+                  "conv-41:D20:4"
                 ]
               }
             ],
@@ -3043,20 +3077,20 @@
             ]
           },
           "category_1": {
-            "expected_total": 63,
-            "rows_recorded": 63,
-            "rows_successful": 63,
+            "expected_total": 66,
+            "rows_recorded": 66,
+            "rows_successful": 66,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6031746031746031,
-            "doc_recall_all": 0.2698412698412698,
-            "ndcg_at_10": 0.3013183803865569,
+            "doc_recall_any": 0.6212121212121212,
+            "doc_recall_all": 0.2727272727272727,
+            "ndcg_at_10": 0.3140428947248604,
             "exact_match": 0.0,
-            "token_f1": 0.022302985304273208,
-            "avg_total_sec": 0.06527790787910658,
+            "token_f1": 0.021289213244988062,
+            "avg_total_sec": 0.06531674929217181,
             "p50_total_sec": 0.06512102298438549,
             "p95_total_sec": 0.089676006231457,
-            "avg_storage_bytes": 11943188.555555556,
+            "avg_storage_bytes": 12066059.666666666,
             "p95_storage_bytes": 14646353.0,
             "categories": {},
             "sample_errors": [],
@@ -7044,36 +7078,36 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 340,
-      "rows_successful": 340,
+      "rows_recorded": 345,
+      "rows_successful": 345,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6588235294117647,
-      "doc_recall_all": 0.5676470588235294,
-      "ndcg_at_10": 0.3970030999240228,
-      "exact_match": 0.07647058823529412,
-      "token_f1": 0.11211549680400251,
-      "avg_total_sec": 0.0665861187461654,
-      "p50_total_sec": 0.06571400398388505,
+      "doc_recall_any": 0.6579710144927536,
+      "doc_recall_all": 0.5623188405797102,
+      "ndcg_at_10": 0.39630384655552303,
+      "exact_match": 0.07536231884057971,
+      "token_f1": 0.11062866075646348,
+      "avg_total_sec": 0.06661651022462309,
+      "p50_total_sec": 0.06572571117430925,
       "p95_total_sec": 0.0931440400891006,
-      "avg_storage_bytes": 11027349.188235294,
+      "avg_storage_bytes": 11079798.51884058,
       "p95_storage_bytes": 14646353.0,
       "categories": {
         "category_2": {
-          "expected_total": 76,
-          "rows_recorded": 76,
-          "rows_successful": 76,
+          "expected_total": 77,
+          "rows_recorded": 77,
+          "rows_successful": 77,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.881578947368421,
-          "doc_recall_all": 0.881578947368421,
-          "ndcg_at_10": 0.6097711625512181,
-          "exact_match": 0.34210526315789475,
-          "token_f1": 0.4284461152882206,
-          "avg_total_sec": 0.0736976648791154,
+          "doc_recall_any": 0.8701298701298701,
+          "doc_recall_all": 0.8701298701298701,
+          "ndcg_at_10": 0.6018520565440595,
+          "exact_match": 0.33766233766233766,
+          "token_f1": 0.4228818800247372,
+          "avg_total_sec": 0.07368967415426265,
           "p50_total_sec": 0.07252985332161188,
           "p95_total_sec": 0.10287138121202588,
-          "avg_storage_bytes": 11236871.94736842,
+          "avg_storage_bytes": 11281150.922077922,
           "p95_storage_bytes": 14646353.0,
           "categories": {},
           "sample_errors": [],
@@ -7229,6 +7263,23 @@
                 "conv-41:D20:9",
                 "conv-41:D27:14",
                 "conv-41:D21:22"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-41::0038",
+              "category": "category_2",
+              "query": "When did Maria get in a car accident?",
+              "gold": "July 2, 2023",
+              "prediction": "2022",
+              "expected_doc_ids": [
+                "conv-41:D21:3"
+              ],
+              "retrieved_doc_ids": [
+                "conv-41:D20:9",
+                "conv-41:D11:3",
+                "conv-41:D13:24",
+                "conv-41:D21:5",
+                "conv-41:D5:8"
               ]
             }
           ],
@@ -7404,20 +7455,20 @@
           ]
         },
         "category_3": {
-          "expected_total": 16,
-          "rows_recorded": 16,
-          "rows_successful": 16,
+          "expected_total": 17,
+          "rows_recorded": 17,
+          "rows_successful": 17,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5625,
-          "doc_recall_all": 0.25,
-          "ndcg_at_10": 0.24522744168037083,
+          "doc_recall_any": 0.5294117647058824,
+          "doc_recall_all": 0.23529411764705882,
+          "ndcg_at_10": 0.23080229805211372,
           "exact_match": 0.0,
-          "token_f1": 0.01125,
-          "avg_total_sec": 0.056409599870676175,
+          "token_f1": 0.013389355742296919,
+          "avg_total_sec": 0.05732291857438052,
           "p50_total_sec": 0.05676879687234759,
-          "p95_total_sec": 0.07116871699690819,
-          "avg_storage_bytes": 11630626.0,
+          "p95_total_sec": 0.07193601783365011,
+          "avg_storage_bytes": 11808021.705882354,
           "p95_storage_bytes": 14646353.0,
           "categories": {},
           "sample_errors": [],
@@ -7539,6 +7590,23 @@
                 "conv-41:D6:3",
                 "conv-41:D10:13",
                 "conv-41:D13:17"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-41::0039",
+              "category": "category_3",
+              "query": "Around which US holiday did Maria get into a car accident?",
+              "gold": "Independence Day",
+              "prediction": "A car ran a red light, hit us, but thankfully everyone is okay, For me, it was when I noticed a little girl around 8 sitting all alone, Thanks, John!, Yep, kindness is key, a little compassion can really turn someone's day around",
+              "expected_doc_ids": [
+                "conv-41:D21:3"
+              ],
+              "retrieved_doc_ids": [
+                "conv-41:D21:5",
+                "conv-41:D11:3",
+                "conv-41:D5:10",
+                "conv-41:D14:15",
+                "conv-41:D20:4"
               ]
             }
           ],
@@ -7672,20 +7740,20 @@
           ]
         },
         "category_1": {
-          "expected_total": 63,
-          "rows_recorded": 63,
-          "rows_successful": 63,
+          "expected_total": 66,
+          "rows_recorded": 66,
+          "rows_successful": 66,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6031746031746031,
-          "doc_recall_all": 0.2698412698412698,
-          "ndcg_at_10": 0.3013183803865569,
+          "doc_recall_any": 0.6212121212121212,
+          "doc_recall_all": 0.2727272727272727,
+          "ndcg_at_10": 0.3140428947248604,
           "exact_match": 0.0,
-          "token_f1": 0.022302985304273208,
-          "avg_total_sec": 0.06527790787910658,
+          "token_f1": 0.021289213244988062,
+          "avg_total_sec": 0.06531674929217181,
           "p50_total_sec": 0.06512102298438549,
           "p95_total_sec": 0.089676006231457,
-          "avg_storage_bytes": 11943188.555555556,
+          "avg_storage_bytes": 12066059.666666666,
           "p95_storage_bytes": 14646353.0,
           "categories": {},
           "sample_errors": [],
@@ -9251,11 +9319,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.03936560539708844,
-    "doc_recall_all_delta": -0.05207125103562549,
-    "ndcg_at_10_delta": -0.0770859815740843,
-    "token_f1_delta": 0.007581188995880936,
-    "avg_storage_ratio_nova_over_stock": 0.5980048207885984,
-    "avg_latency_ratio_nova_over_stock": 0.010459749966673258
+    "doc_recall_any_delta": -0.040218120316099504,
+    "doc_recall_all_delta": -0.057399469279444726,
+    "ndcg_at_10_delta": -0.07778523494258405,
+    "token_f1_delta": 0.006094352948341902,
+    "avg_storage_ratio_nova_over_stock": 0.6008491083878845,
+    "avg_latency_ratio_nova_over_stock": 0.010464524043789792
   }
 }
