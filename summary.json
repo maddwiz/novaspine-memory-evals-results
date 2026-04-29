@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:07:49Z",
+  "generated_at": "2026-04-29T03:07:51Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:07:49Z",
+    "updated_at": "2026-04-29T03:07:51Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 40,
+    "current_case_index": 45,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0039"
+    "current_case_id": "locomo::conv-26::0044"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,33 +2238,33 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 40,
-        "rows_successful": 40,
+        "rows_recorded": 45,
+        "rows_successful": 45,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.675,
-        "doc_recall_all": 0.525,
-        "ndcg_at_10": 0.43477059382517586,
-        "exact_match": 0.175,
-        "token_f1": 0.2539496658312448,
-        "avg_total_sec": 0.06561036608181894,
-        "p50_total_sec": 0.06572571117430925,
+        "doc_recall_any": 0.7111111111111111,
+        "doc_recall_all": 0.5333333333333333,
+        "ndcg_at_10": 0.43449658249684864,
+        "exact_match": 0.15555555555555556,
+        "token_f1": 0.23446319502459853,
+        "avg_total_sec": 0.06609817125524084,
+        "p50_total_sec": 0.06512102298438549,
         "p95_total_sec": 0.09437936032190919,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
         "categories": {
           "category_2": {
-            "expected_total": 20,
-            "rows_recorded": 20,
-            "rows_successful": 20,
+            "expected_total": 22,
+            "rows_recorded": 22,
+            "rows_successful": 22,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9,
-            "doc_recall_all": 0.9,
-            "ndcg_at_10": 0.6405942975314646,
-            "exact_match": 0.35,
-            "token_f1": 0.4822619047619048,
-            "avg_total_sec": 0.06714451282750815,
+            "doc_recall_any": 0.9090909090909091,
+            "doc_recall_all": 0.9090909090909091,
+            "ndcg_at_10": 0.6306132846488246,
+            "exact_match": 0.3181818181818182,
+            "token_f1": 0.4497835497835498,
+            "avg_total_sec": 0.06929534478959712,
             "p50_total_sec": 0.06572571117430925,
             "p95_total_sec": 0.09825592115521431,
             "avg_storage_bytes": 10934689.0,
@@ -2479,18 +2479,18 @@
             ]
           },
           "category_3": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 6,
+            "rows_recorded": 6,
+            "rows_successful": 6,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6,
-            "doc_recall_all": 0.2,
-            "ndcg_at_10": 0.38394415782963753,
+            "doc_recall_any": 0.6666666666666666,
+            "doc_recall_all": 0.16666666666666666,
+            "ndcg_at_10": 0.35401719778944557,
             "exact_match": 0.0,
-            "token_f1": 0.015999999999999997,
-            "avg_total_sec": 0.05800660913810134,
-            "p50_total_sec": 0.0602384889498353,
+            "token_f1": 0.01333333333333333,
+            "avg_total_sec": 0.05619955567332605,
+            "p50_total_sec": 0.047164288349449635,
             "p95_total_sec": 0.08169557433575392,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
@@ -2573,22 +2573,36 @@
                   "conv-26:D7:9",
                   "conv-26:D7:10"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0042",
+                "category": "category_3",
+                "query": "Would Melanie be more interested in going to a national park or a theme park?",
+                "gold": "National park; she likes the outdoors",
+                "prediction": "Seeing my kids' faces so happy at the beach was the best!",
+                "retrieved_doc_ids": [
+                  "conv-26:D10:10",
+                  "conv-26:D12:17",
+                  "conv-26:D8:34",
+                  "conv-26:D15:3",
+                  "conv-26:D15:2"
+                ]
               }
             ]
           },
           "category_1": {
-            "expected_total": 15,
-            "rows_recorded": 15,
-            "rows_successful": 15,
+            "expected_total": 17,
+            "rows_recorded": 17,
+            "rows_successful": 17,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.4,
-            "doc_recall_all": 0.13333333333333333,
-            "ndcg_at_10": 0.17728113421530373,
+            "doc_recall_any": 0.47058823529411764,
+            "doc_recall_all": 0.17647058823529413,
+            "ndcg_at_10": 0.20910298607925729,
             "exact_match": 0.0,
-            "token_f1": 0.028849902534113063,
-            "avg_total_sec": 0.06609942273547252,
-            "p50_total_sec": 0.06582401506602764,
+            "token_f1": 0.03385915769816699,
+            "avg_total_sec": 0.06545428159263204,
+            "p50_total_sec": 0.06512102298438549,
             "p95_total_sec": 0.08389091119170189,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
@@ -2840,6 +2854,34 @@
                   "conv-26:D3:1",
                   "conv-26:D3:2",
                   "conv-26:D15:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0040",
+                "category": "category_1",
+                "query": "How many times has Melanie gone to the beach in 2023?",
+                "gold": "2",
+                "prediction": "10",
+                "retrieved_doc_ids": [
+                  "conv-26:D10:10",
+                  "conv-26:D6:16",
+                  "conv-26:D10:8",
+                  "conv-26:D14:7",
+                  "conv-26:D10:11"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0043",
+                "category": "category_1",
+                "query": "What kind of art does Caroline make?",
+                "gold": "abstract art",
+                "prediction": "Art's allowed me to explore my transition and my changing body",
+                "retrieved_doc_ids": [
+                  "conv-26:D12:6",
+                  "conv-26:D11:14",
+                  "conv-26:D16:5",
+                  "conv-26:D11:8",
+                  "conv-26:D16:7"
                 ]
               }
             ]
@@ -5472,33 +5514,33 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 40,
-      "rows_successful": 40,
+      "rows_recorded": 45,
+      "rows_successful": 45,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.675,
-      "doc_recall_all": 0.525,
-      "ndcg_at_10": 0.43477059382517586,
-      "exact_match": 0.175,
-      "token_f1": 0.2539496658312448,
-      "avg_total_sec": 0.06561036608181894,
-      "p50_total_sec": 0.06572571117430925,
+      "doc_recall_any": 0.7111111111111111,
+      "doc_recall_all": 0.5333333333333333,
+      "ndcg_at_10": 0.43449658249684864,
+      "exact_match": 0.15555555555555556,
+      "token_f1": 0.23446319502459853,
+      "avg_total_sec": 0.06609817125524084,
+      "p50_total_sec": 0.06512102298438549,
       "p95_total_sec": 0.09437936032190919,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
       "categories": {
         "category_2": {
-          "expected_total": 20,
-          "rows_recorded": 20,
-          "rows_successful": 20,
+          "expected_total": 22,
+          "rows_recorded": 22,
+          "rows_successful": 22,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9,
-          "doc_recall_all": 0.9,
-          "ndcg_at_10": 0.6405942975314646,
-          "exact_match": 0.35,
-          "token_f1": 0.4822619047619048,
-          "avg_total_sec": 0.06714451282750815,
+          "doc_recall_any": 0.9090909090909091,
+          "doc_recall_all": 0.9090909090909091,
+          "ndcg_at_10": 0.6306132846488246,
+          "exact_match": 0.3181818181818182,
+          "token_f1": 0.4497835497835498,
+          "avg_total_sec": 0.06929534478959712,
           "p50_total_sec": 0.06572571117430925,
           "p95_total_sec": 0.09825592115521431,
           "avg_storage_bytes": 10934689.0,
@@ -5713,18 +5755,18 @@
           ]
         },
         "category_3": {
-          "expected_total": 5,
-          "rows_recorded": 5,
-          "rows_successful": 5,
+          "expected_total": 6,
+          "rows_recorded": 6,
+          "rows_successful": 6,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6,
-          "doc_recall_all": 0.2,
-          "ndcg_at_10": 0.38394415782963753,
+          "doc_recall_any": 0.6666666666666666,
+          "doc_recall_all": 0.16666666666666666,
+          "ndcg_at_10": 0.35401719778944557,
           "exact_match": 0.0,
-          "token_f1": 0.015999999999999997,
-          "avg_total_sec": 0.05800660913810134,
-          "p50_total_sec": 0.0602384889498353,
+          "token_f1": 0.01333333333333333,
+          "avg_total_sec": 0.05619955567332605,
+          "p50_total_sec": 0.047164288349449635,
           "p95_total_sec": 0.08169557433575392,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
@@ -5807,22 +5849,36 @@
                 "conv-26:D7:9",
                 "conv-26:D7:10"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0042",
+              "category": "category_3",
+              "query": "Would Melanie be more interested in going to a national park or a theme park?",
+              "gold": "National park; she likes the outdoors",
+              "prediction": "Seeing my kids' faces so happy at the beach was the best!",
+              "retrieved_doc_ids": [
+                "conv-26:D10:10",
+                "conv-26:D12:17",
+                "conv-26:D8:34",
+                "conv-26:D15:3",
+                "conv-26:D15:2"
+              ]
             }
           ]
         },
         "category_1": {
-          "expected_total": 15,
-          "rows_recorded": 15,
-          "rows_successful": 15,
+          "expected_total": 17,
+          "rows_recorded": 17,
+          "rows_successful": 17,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.4,
-          "doc_recall_all": 0.13333333333333333,
-          "ndcg_at_10": 0.17728113421530373,
+          "doc_recall_any": 0.47058823529411764,
+          "doc_recall_all": 0.17647058823529413,
+          "ndcg_at_10": 0.20910298607925729,
           "exact_match": 0.0,
-          "token_f1": 0.028849902534113063,
-          "avg_total_sec": 0.06609942273547252,
-          "p50_total_sec": 0.06582401506602764,
+          "token_f1": 0.03385915769816699,
+          "avg_total_sec": 0.06545428159263204,
+          "p50_total_sec": 0.06512102298438549,
           "p95_total_sec": 0.08389091119170189,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
@@ -6074,6 +6130,34 @@
                 "conv-26:D3:1",
                 "conv-26:D3:2",
                 "conv-26:D15:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0040",
+              "category": "category_1",
+              "query": "How many times has Melanie gone to the beach in 2023?",
+              "gold": "2",
+              "prediction": "10",
+              "retrieved_doc_ids": [
+                "conv-26:D10:10",
+                "conv-26:D6:16",
+                "conv-26:D10:8",
+                "conv-26:D14:7",
+                "conv-26:D10:11"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0043",
+              "category": "category_1",
+              "query": "What kind of art does Caroline make?",
+              "gold": "abstract art",
+              "prediction": "Art's allowed me to explore my transition and my changing body",
+              "retrieved_doc_ids": [
+                "conv-26:D12:6",
+                "conv-26:D11:14",
+                "conv-26:D16:5",
+                "conv-26:D11:8",
+                "conv-26:D16:7"
               ]
             }
           ]
@@ -6461,11 +6545,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.018467336683417046,
-    "doc_recall_all_delta": -0.07298994974874373,
-    "ndcg_at_10_delta": -0.031170577183318504,
-    "token_f1_delta": 0.14266644308086662,
+    "doc_recall_any_delta": 0.017643774427694048,
+    "doc_recall_all_delta": -0.06465661641541043,
+    "ndcg_at_10_delta": -0.03144458851164572,
+    "token_f1_delta": 0.12317997227422037,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.010295413914140183
+    "avg_latency_ratio_nova_over_stock": 0.010371959077195278
   }
 }
