@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T13:08:01Z",
+  "generated_at": "2026-04-29T13:08:02Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T13:08:01Z",
+    "updated_at": "2026-04-29T13:08:02Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 65,
+    "current_case_index": 70,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0064"
+    "current_case_id": "locomo::conv-26::0069"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,35 +2238,35 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 65,
-        "rows_successful": 65,
+        "rows_recorded": 70,
+        "rows_successful": 70,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7230769230769231,
-        "doc_recall_all": 0.5384615384615384,
-        "ndcg_at_10": 0.47794312045792847,
-        "exact_match": 0.13846153846153847,
-        "token_f1": 0.22190300685400505,
-        "avg_total_sec": 0.0626885038585617,
-        "p50_total_sec": 0.06282488536089659,
+        "doc_recall_any": 0.7142857142857143,
+        "doc_recall_all": 0.5428571428571428,
+        "ndcg_at_10": 0.4775333004038597,
+        "exact_match": 0.12857142857142856,
+        "token_f1": 0.21064462881341284,
+        "avg_total_sec": 0.06271316223511739,
+        "p50_total_sec": 0.06274843635037541,
         "p95_total_sec": 0.09087628312408924,
         "avg_storage_bytes": 10963457.0,
         "p95_storage_bytes": 10963457.0,
         "categories": {
           "category_2": {
-            "expected_total": 30,
-            "rows_recorded": 30,
-            "rows_successful": 30,
+            "expected_total": 32,
+            "rows_recorded": 32,
+            "rows_successful": 32,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9333333333333333,
-            "doc_recall_all": 0.9333333333333333,
-            "ndcg_at_10": 0.7526890687870965,
-            "exact_match": 0.3,
-            "token_f1": 0.4598412698412699,
-            "avg_total_sec": 0.06874322979710996,
-            "p50_total_sec": 0.06709364615380764,
-            "p95_total_sec": 0.09303456824272871,
+            "doc_recall_any": 0.90625,
+            "doc_recall_all": 0.90625,
+            "ndcg_at_10": 0.736896001987903,
+            "exact_match": 0.28125,
+            "token_f1": 0.4389136904761905,
+            "avg_total_sec": 0.06924720843380783,
+            "p50_total_sec": 0.06759489700198174,
+            "p95_total_sec": 0.09087628312408924,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
             "categories": {},
@@ -2304,6 +2304,23 @@
                   "conv-26:D2:7",
                   "conv-26:D10:10",
                   "conv-26:D10:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0068",
+                "category": "category_2",
+                "query": "How long has Melanie been practicing art?",
+                "gold": "Since 2016",
+                "prediction": "Wow, Caroline, that looks awesome!",
+                "expected_doc_ids": [
+                  "conv-26:D16:8"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D16:7",
+                  "conv-26:D12:8",
+                  "conv-26:D12:7",
+                  "conv-26:D1:16",
+                  "conv-26:D17:14"
                 ]
               }
             ],
@@ -2479,17 +2496,17 @@
             ]
           },
           "category_3": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6,
-            "doc_recall_all": 0.2,
-            "ndcg_at_10": 0.2775810676556586,
+            "doc_recall_any": 0.5454545454545454,
+            "doc_recall_all": 0.18181818181818182,
+            "ndcg_at_10": 0.25234642514150785,
             "exact_match": 0.0,
-            "token_f1": 0.007999999999999998,
-            "avg_total_sec": 0.06228199354372919,
+            "token_f1": 0.007272727272727272,
+            "avg_total_sec": 0.06213487921790643,
             "p50_total_sec": 0.06497240113094449,
             "p95_total_sec": 0.08174402033910155,
             "avg_storage_bytes": 10963457.0,
@@ -2560,6 +2577,25 @@
                   "conv-26:D10:4",
                   "conv-26:D14:24",
                   "conv-26:D14:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0069",
+                "category": "category_3",
+                "query": "What personality traits might Melanie say Caroline has?",
+                "gold": "Thoughtful, authentic, driven",
+                "prediction": "Definitely, Mel!",
+                "expected_doc_ids": [
+                  "conv-26:D16:18",
+                  "conv-26:D13:16",
+                  "conv-26:D7:4"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D12:11",
+                  "conv-26:D19:8",
+                  "conv-26:D12:6",
+                  "conv-26:D18:12",
+                  "conv-26:D6:15"
                 ]
               }
             ],
@@ -2651,18 +2687,18 @@
             ]
           },
           "category_1": {
-            "expected_total": 25,
-            "rows_recorded": 25,
-            "rows_successful": 25,
+            "expected_total": 27,
+            "rows_recorded": 27,
+            "rows_successful": 27,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.52,
-            "doc_recall_all": 0.2,
-            "ndcg_at_10": 0.22839280358383485,
+            "doc_recall_any": 0.5555555555555556,
+            "doc_recall_all": 0.25925925925925924,
+            "ndcg_at_10": 0.26188326992965544,
             "exact_match": 0.0,
-            "token_f1": 0.021938294010889293,
-            "avg_total_sec": 0.05558543685823679,
-            "p50_total_sec": 0.05624670069664717,
+            "token_f1": 0.02295873784077051,
+            "avg_total_sec": 0.05520470426590354,
+            "p50_total_sec": 0.05483778193593025,
             "p95_total_sec": 0.08669486595317721,
             "avg_storage_bytes": 10963457.0,
             "p95_storage_bytes": 10963457.0,
@@ -5688,35 +5724,35 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 65,
-      "rows_successful": 65,
+      "rows_recorded": 70,
+      "rows_successful": 70,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7230769230769231,
-      "doc_recall_all": 0.5384615384615384,
-      "ndcg_at_10": 0.47794312045792847,
-      "exact_match": 0.13846153846153847,
-      "token_f1": 0.22190300685400505,
-      "avg_total_sec": 0.0626885038585617,
-      "p50_total_sec": 0.06282488536089659,
+      "doc_recall_any": 0.7142857142857143,
+      "doc_recall_all": 0.5428571428571428,
+      "ndcg_at_10": 0.4775333004038597,
+      "exact_match": 0.12857142857142856,
+      "token_f1": 0.21064462881341284,
+      "avg_total_sec": 0.06271316223511739,
+      "p50_total_sec": 0.06274843635037541,
       "p95_total_sec": 0.09087628312408924,
       "avg_storage_bytes": 10963457.0,
       "p95_storage_bytes": 10963457.0,
       "categories": {
         "category_2": {
-          "expected_total": 30,
-          "rows_recorded": 30,
-          "rows_successful": 30,
+          "expected_total": 32,
+          "rows_recorded": 32,
+          "rows_successful": 32,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9333333333333333,
-          "doc_recall_all": 0.9333333333333333,
-          "ndcg_at_10": 0.7526890687870965,
-          "exact_match": 0.3,
-          "token_f1": 0.4598412698412699,
-          "avg_total_sec": 0.06874322979710996,
-          "p50_total_sec": 0.06709364615380764,
-          "p95_total_sec": 0.09303456824272871,
+          "doc_recall_any": 0.90625,
+          "doc_recall_all": 0.90625,
+          "ndcg_at_10": 0.736896001987903,
+          "exact_match": 0.28125,
+          "token_f1": 0.4389136904761905,
+          "avg_total_sec": 0.06924720843380783,
+          "p50_total_sec": 0.06759489700198174,
+          "p95_total_sec": 0.09087628312408924,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
           "categories": {},
@@ -5754,6 +5790,23 @@
                 "conv-26:D2:7",
                 "conv-26:D10:10",
                 "conv-26:D10:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0068",
+              "category": "category_2",
+              "query": "How long has Melanie been practicing art?",
+              "gold": "Since 2016",
+              "prediction": "Wow, Caroline, that looks awesome!",
+              "expected_doc_ids": [
+                "conv-26:D16:8"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D16:7",
+                "conv-26:D12:8",
+                "conv-26:D12:7",
+                "conv-26:D1:16",
+                "conv-26:D17:14"
               ]
             }
           ],
@@ -5929,17 +5982,17 @@
           ]
         },
         "category_3": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 11,
+          "rows_recorded": 11,
+          "rows_successful": 11,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6,
-          "doc_recall_all": 0.2,
-          "ndcg_at_10": 0.2775810676556586,
+          "doc_recall_any": 0.5454545454545454,
+          "doc_recall_all": 0.18181818181818182,
+          "ndcg_at_10": 0.25234642514150785,
           "exact_match": 0.0,
-          "token_f1": 0.007999999999999998,
-          "avg_total_sec": 0.06228199354372919,
+          "token_f1": 0.007272727272727272,
+          "avg_total_sec": 0.06213487921790643,
           "p50_total_sec": 0.06497240113094449,
           "p95_total_sec": 0.08174402033910155,
           "avg_storage_bytes": 10963457.0,
@@ -6010,6 +6063,25 @@
                 "conv-26:D10:4",
                 "conv-26:D14:24",
                 "conv-26:D14:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0069",
+              "category": "category_3",
+              "query": "What personality traits might Melanie say Caroline has?",
+              "gold": "Thoughtful, authentic, driven",
+              "prediction": "Definitely, Mel!",
+              "expected_doc_ids": [
+                "conv-26:D16:18",
+                "conv-26:D13:16",
+                "conv-26:D7:4"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D12:11",
+                "conv-26:D19:8",
+                "conv-26:D12:6",
+                "conv-26:D18:12",
+                "conv-26:D6:15"
               ]
             }
           ],
@@ -6101,18 +6173,18 @@
           ]
         },
         "category_1": {
-          "expected_total": 25,
-          "rows_recorded": 25,
-          "rows_successful": 25,
+          "expected_total": 27,
+          "rows_recorded": 27,
+          "rows_successful": 27,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.52,
-          "doc_recall_all": 0.2,
-          "ndcg_at_10": 0.22839280358383485,
+          "doc_recall_any": 0.5555555555555556,
+          "doc_recall_all": 0.25925925925925924,
+          "ndcg_at_10": 0.26188326992965544,
           "exact_match": 0.0,
-          "token_f1": 0.021938294010889293,
-          "avg_total_sec": 0.05558543685823679,
-          "p50_total_sec": 0.05624670069664717,
+          "token_f1": 0.02295873784077051,
+          "avg_total_sec": 0.05520470426590354,
+          "p50_total_sec": 0.05483778193593025,
           "p95_total_sec": 0.08669486595317721,
           "avg_storage_bytes": 10963457.0,
           "p95_storage_bytes": 10963457.0,
@@ -6893,11 +6965,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.02960958639350597,
-    "doc_recall_all_delta": -0.05952841128720532,
-    "ndcg_at_10_delta": 0.012001949449434113,
-    "token_f1_delta": 0.11061978410362688,
+    "doc_recall_any_delta": 0.02081837760229721,
+    "doc_recall_all_delta": -0.05513280689160094,
+    "ndcg_at_10_delta": 0.011592129395365358,
+    "token_f1_delta": 0.09936140606303467,
     "avg_storage_ratio_nova_over_stock": 0.6803076428567882,
-    "avg_latency_ratio_nova_over_stock": 0.009858515598260145
+    "avg_latency_ratio_nova_over_stock": 0.00986239342234174
   }
 }
