@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T19:29:20Z",
+  "generated_at": "2026-04-29T19:31:07Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T19:29:16Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T19:30:51Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 420,
+    "current_case_index": 425,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::gpt4_468eb064"
+    "current_case_id": "longmemeval_oracle::0bc8ad93"
   },
   "benchmarks": {
     "locomo": {
@@ -4897,36 +4897,36 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 420,
-        "rows_successful": 420,
+        "rows_recorded": 425,
+        "rows_successful": 425,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9833333333333333,
-        "doc_recall_all": 0.861904761904762,
-        "ndcg_at_10": 0.9464688981759625,
-        "exact_match": 0.15476190476190477,
-        "token_f1": 0.20469946288728902,
-        "avg_total_sec": 14.610957979545041,
-        "p50_total_sec": 14.305863198824227,
+        "doc_recall_any": 0.9811764705882353,
+        "doc_recall_all": 0.8588235294117647,
+        "ndcg_at_10": 0.9441936420491597,
+        "exact_match": 0.15294117647058825,
+        "token_f1": 0.20229123391214443,
+        "avg_total_sec": 14.617150534230339,
+        "p50_total_sec": 14.324693179223686,
         "p95_total_sec": 18.76079819491133,
-        "avg_storage_bytes": 6232740.104761905,
+        "avg_storage_bytes": 6238048.567058823,
         "p95_storage_bytes": 8510590.0,
         "categories": {
           "temporal-reasoning": {
-            "expected_total": 124,
-            "rows_recorded": 124,
-            "rows_successful": 124,
+            "expected_total": 129,
+            "rows_recorded": 129,
+            "rows_successful": 129,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9838709677419355,
-            "doc_recall_all": 0.8145161290322581,
-            "ndcg_at_10": 0.9291973009271614,
-            "exact_match": 0.25806451612903225,
-            "token_f1": 0.318293329952174,
-            "avg_total_sec": 15.295696731570418,
+            "doc_recall_any": 0.9767441860465116,
+            "doc_recall_all": 0.8062015503875969,
+            "ndcg_at_10": 0.9223707438136173,
+            "exact_match": 0.24806201550387597,
+            "token_f1": 0.30595637917883395,
+            "avg_total_sec": 15.289558297315569,
             "p50_total_sec": 14.953674913849682,
             "p95_total_sec": 20.24704658286646,
-            "avg_storage_bytes": 6685078.395161291,
+            "avg_storage_bytes": 6685035.023255814,
             "p95_storage_bytes": 9231658.0,
             "categories": {},
             "sample_errors": [],
@@ -4951,6 +4951,18 @@
                 "prediction": "",
                 "expected_doc_ids": [
                   "answer_9b09d95b_1"
+                ],
+                "retrieved_doc_ids": []
+              },
+              {
+                "case_id": "longmemeval_oracle::4dfccbf8",
+                "category": "temporal-reasoning",
+                "query": "What did I do with Rachel on the Wednesday two months ago?",
+                "gold": "I started taking ukulele lessons with Rachel.",
+                "prediction": "",
+                "expected_doc_ids": [
+                  "answer_4bebc783_1",
+                  "answer_4bebc783_2"
                 ],
                 "retrieved_doc_ids": []
               }
@@ -5972,6 +5984,18 @@
               "answer_9b09d95b_1"
             ],
             "retrieved_doc_ids": []
+          },
+          {
+            "case_id": "longmemeval_oracle::4dfccbf8",
+            "category": "temporal-reasoning",
+            "query": "What did I do with Rachel on the Wednesday two months ago?",
+            "gold": "I started taking ukulele lessons with Rachel.",
+            "prediction": "",
+            "expected_doc_ids": [
+              "answer_4bebc783_1",
+              "answer_4bebc783_2"
+            ],
+            "retrieved_doc_ids": []
           }
         ],
         "sample_successes": [
@@ -6111,36 +6135,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 420,
-        "rows_successful": 420,
+        "rows_recorded": 424,
+        "rows_successful": 424,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9928571428571429,
-        "ndcg_at_10": 0.9982869197394726,
-        "exact_match": 0.1761904761904762,
-        "token_f1": 0.2273132655411915,
-        "avg_total_sec": 6.56305886681879,
-        "p50_total_sec": 6.419902904890478,
+        "doc_recall_all": 0.9929245283018868,
+        "ndcg_at_10": 0.9983030808740059,
+        "exact_match": 0.17452830188679244,
+        "token_f1": 0.22556188253294127,
+        "avg_total_sec": 6.571481185466631,
+        "p50_total_sec": 6.536641268990934,
         "p95_total_sec": 14.01254465803504,
-        "avg_storage_bytes": 1090265.1904761905,
+        "avg_storage_bytes": 1091201.1603773586,
         "p95_storage_bytes": 2010181.0,
         "categories": {
           "temporal-reasoning": {
-            "expected_total": 124,
-            "rows_recorded": 124,
-            "rows_successful": 124,
+            "expected_total": 128,
+            "rows_recorded": 128,
+            "rows_successful": 128,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.9758064516129032,
-            "ndcg_at_10": 0.9941976313756329,
-            "exact_match": 0.3064516129032258,
-            "token_f1": 0.3459040433248252,
-            "avg_total_sec": 7.955856788250047,
+            "doc_recall_all": 0.9765625,
+            "ndcg_at_10": 0.9943789553951443,
+            "exact_match": 0.296875,
+            "token_f1": 0.33639662530425773,
+            "avg_total_sec": 7.940230783726292,
             "p50_total_sec": 7.391877241898328,
             "p95_total_sec": 17.024291058070958,
-            "avg_storage_bytes": 1267512.5806451612,
+            "avg_storage_bytes": 1265074.0,
             "p95_storage_bytes": 2309729.0,
             "categories": {},
             "sample_errors": [],
@@ -7267,19 +7291,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2406,
-      "rows_successful": 2406,
+      "rows_recorded": 2411,
+      "rows_successful": 2411,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.744804655029094,
-      "doc_recall_all": 0.6330008312551954,
-      "ndcg_at_10": 0.54032645502673,
-      "exact_match": 0.05610972568578554,
-      "token_f1": 0.10480289293563821,
-      "avg_total_sec": 7.805082545099944,
-      "p50_total_sec": 6.365733231883496,
-      "p95_total_sec": 15.03593183727935,
-      "avg_storage_bytes": 18559929.573150456,
+      "doc_recall_any": 0.7449191206968063,
+      "doc_recall_all": 0.6329323931978432,
+      "ndcg_at_10": 0.5407676530200336,
+      "exact_match": 0.055993363749481544,
+      "token_f1": 0.10458554973170699,
+      "avg_total_sec": 7.820288357175214,
+      "p50_total_sec": 6.365790335927159,
+      "p95_total_sec": 15.049765529111028,
+      "avg_storage_bytes": 18535300.850269597,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -9262,20 +9286,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 124,
-          "rows_recorded": 124,
-          "rows_successful": 124,
+          "expected_total": 129,
+          "rows_recorded": 129,
+          "rows_successful": 129,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9838709677419355,
-          "doc_recall_all": 0.8145161290322581,
-          "ndcg_at_10": 0.9291973009271614,
-          "exact_match": 0.25806451612903225,
-          "token_f1": 0.318293329952174,
-          "avg_total_sec": 15.295696731570418,
+          "doc_recall_any": 0.9767441860465116,
+          "doc_recall_all": 0.8062015503875969,
+          "ndcg_at_10": 0.9223707438136173,
+          "exact_match": 0.24806201550387597,
+          "token_f1": 0.30595637917883395,
+          "avg_total_sec": 15.289558297315569,
           "p50_total_sec": 14.953674913849682,
           "p95_total_sec": 20.24704658286646,
-          "avg_storage_bytes": 6685078.395161291,
+          "avg_storage_bytes": 6685035.023255814,
           "p95_storage_bytes": 9231658.0,
           "categories": {},
           "sample_errors": [],
@@ -9300,6 +9324,18 @@
               "prediction": "",
               "expected_doc_ids": [
                 "answer_9b09d95b_1"
+              ],
+              "retrieved_doc_ids": []
+            },
+            {
+              "case_id": "longmemeval_oracle::4dfccbf8",
+              "category": "temporal-reasoning",
+              "query": "What did I do with Rachel on the Wednesday two months ago?",
+              "gold": "I started taking ukulele lessons with Rachel.",
+              "prediction": "",
+              "expected_doc_ids": [
+                "answer_4bebc783_1",
+                "answer_4bebc783_2"
               ],
               "retrieved_doc_ids": []
             }
@@ -10622,19 +10658,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2406,
-      "rows_successful": 2406,
+      "rows_recorded": 2410,
+      "rows_successful": 2410,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7880299251870324,
-      "doc_recall_all": 0.700332502078138,
-      "ndcg_at_10": 0.5987360736010054,
-      "exact_match": 0.05901911886949293,
-      "token_f1": 0.10759957352583466,
-      "avg_total_sec": 1.1984270333398772,
-      "p50_total_sec": 0.06731019774451852,
-      "p95_total_sec": 7.598306755069643,
-      "avg_storage_bytes": 11498261.738154614,
+      "doc_recall_any": 0.7883817427385892,
+      "doc_recall_all": 0.7008298755186722,
+      "ndcg_at_10": 0.599402071819095,
+      "exact_match": 0.05892116182572614,
+      "token_f1": 0.10749014131528001,
+      "avg_total_sec": 1.2088127555144,
+      "p50_total_sec": 0.06733831483870745,
+      "p95_total_sec": 7.604197227861732,
+      "avg_storage_bytes": 11481151.723651452,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -12627,20 +12663,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 124,
-          "rows_recorded": 124,
-          "rows_successful": 124,
+          "expected_total": 128,
+          "rows_recorded": 128,
+          "rows_successful": 128,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9758064516129032,
-          "ndcg_at_10": 0.9941976313756329,
-          "exact_match": 0.3064516129032258,
-          "token_f1": 0.3459040433248252,
-          "avg_total_sec": 7.955856788250047,
+          "doc_recall_all": 0.9765625,
+          "ndcg_at_10": 0.9943789553951443,
+          "exact_match": 0.296875,
+          "token_f1": 0.33639662530425773,
+          "avg_total_sec": 7.940230783726292,
           "p50_total_sec": 7.391877241898328,
           "p95_total_sec": 17.024291058070958,
-          "avg_storage_bytes": 1267512.5806451612,
+          "avg_storage_bytes": 1265074.0,
           "p95_storage_bytes": 2309729.0,
           "categories": {},
           "sample_errors": [],
@@ -13919,11 +13955,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04322527015793842,
-    "doc_recall_all_delta": 0.06733167082294267,
-    "ndcg_at_10_delta": 0.0584096185742754,
-    "token_f1_delta": 0.002796680590196443,
-    "avg_storage_ratio_nova_over_stock": 0.6195207634186535,
-    "avg_latency_ratio_nova_over_stock": 0.15354444061482136
+    "doc_recall_any_delta": 0.04346262204178286,
+    "doc_recall_all_delta": 0.06789748232082893,
+    "ndcg_at_10_delta": 0.058634418799061394,
+    "token_f1_delta": 0.0029045915835730213,
+    "avg_storage_ratio_nova_over_stock": 0.6194208454665822,
+    "avg_latency_ratio_nova_over_stock": 0.1545739364463842
   }
 }
