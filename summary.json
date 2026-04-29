@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T17:51:59Z",
+  "generated_at": "2026-04-29T17:52:06Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T17:51:45Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-29T17:52:00Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_oracle",
     "current_case_index": 125,
     "current_case_total": 500,
@@ -5450,19 +5450,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 124,
-        "rows_successful": 124,
+        "rows_recorded": 125,
+        "rows_successful": 125,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9919354838709677,
-        "ndcg_at_10": 0.9991307326248023,
-        "exact_match": 0.23387096774193547,
-        "token_f1": 0.2808354847672162,
-        "avg_total_sec": 9.668916422385543,
-        "p50_total_sec": 8.27621355606243,
+        "doc_recall_all": 0.992,
+        "ndcg_at_10": 0.9991376867638039,
+        "exact_match": 0.232,
+        "token_f1": 0.27858880088907845,
+        "avg_total_sec": 9.640311338998377,
+        "p50_total_sec": 8.129875145386904,
         "p95_total_sec": 17.371714614331722,
-        "avg_storage_bytes": 1474841.7419354839,
+        "avg_storage_bytes": 1471344.04,
         "p95_storage_bytes": 2420069.0,
         "categories": {
           "temporal-reasoning": {
@@ -5792,9 +5792,9 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
@@ -5802,10 +5802,10 @@
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 6.763418428367004,
-            "p50_total_sec": 6.0205979738384485,
+            "avg_total_sec": 6.540039285241316,
+            "p50_total_sec": 6.09328099898994,
             "p95_total_sec": 7.506238882895559,
-            "avg_storage_bytes": 1095153.0,
+            "avg_storage_bytes": 1075978.3333333333,
             "p95_storage_bytes": 1189541.0,
             "categories": {},
             "sample_errors": [],
@@ -5831,6 +5831,17 @@
                 "retrieved_doc_ids": [
                   "answer_3f9693b7_1",
                   "answer_3f9693b7_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::830ce83f",
+                "category": "knowledge-update",
+                "query": "Where did Rachel move to after her recent relocation?",
+                "gold": "the suburbs",
+                "prediction": "Chicago",
+                "retrieved_doc_ids": [
+                  "answer_0b1a0942_1",
+                  "answer_0b1a0942_2"
                 ]
               }
             ]
@@ -8831,19 +8842,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2110,
-      "rows_successful": 2110,
+      "rows_recorded": 2111,
+      "rows_successful": 2111,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7582938388625592,
-      "doc_recall_all": 0.6592417061611374,
-      "ndcg_at_10": 0.5427349277909554,
-      "exact_match": 0.04597156398104266,
-      "token_f1": 0.09395099643933297,
-      "avg_total_sec": 0.6283774192074216,
-      "p50_total_sec": 0.06395923113450408,
-      "p95_total_sec": 6.728865043260157,
-      "avg_storage_bytes": 12980941.581990521,
+      "doc_recall_any": 0.7584083372809095,
+      "doc_recall_all": 0.659403126480341,
+      "ndcg_at_10": 0.5429515384362463,
+      "exact_match": 0.04594978683088584,
+      "token_f1": 0.09390649099336454,
+      "avg_total_sec": 0.6309661939965181,
+      "p50_total_sec": 0.06402117013931274,
+      "p95_total_sec": 6.728654770646244,
+      "avg_storage_bytes": 12975283.925627664,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -11162,9 +11173,9 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 2,
-          "rows_recorded": 2,
-          "rows_successful": 2,
+          "expected_total": 3,
+          "rows_recorded": 3,
+          "rows_successful": 3,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
@@ -11172,10 +11183,10 @@
           "ndcg_at_10": 1.0,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 6.763418428367004,
-          "p50_total_sec": 6.0205979738384485,
+          "avg_total_sec": 6.540039285241316,
+          "p50_total_sec": 6.09328099898994,
           "p95_total_sec": 7.506238882895559,
-          "avg_storage_bytes": 1095153.0,
+          "avg_storage_bytes": 1075978.3333333333,
           "p95_storage_bytes": 1189541.0,
           "categories": {},
           "sample_errors": [],
@@ -11201,6 +11212,17 @@
               "retrieved_doc_ids": [
                 "answer_3f9693b7_1",
                 "answer_3f9693b7_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::830ce83f",
+              "category": "knowledge-update",
+              "query": "Where did Rachel move to after her recent relocation?",
+              "gold": "the suburbs",
+              "prediction": "Chicago",
+              "retrieved_doc_ids": [
+                "answer_0b1a0942_1",
+                "answer_0b1a0942_2"
               ]
             }
           ]
@@ -11592,11 +11614,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04630899755512197,
-    "doc_recall_all_delta": 0.06805269621324539,
-    "ndcg_at_10_delta": 0.06188322262062801,
-    "token_f1_delta": 0.0012605890096889782,
-    "avg_storage_ratio_nova_over_stock": 0.6382108059483681,
-    "avg_latency_ratio_nova_over_stock": 0.09043395390752537
+    "doc_recall_any_delta": 0.046423495973472284,
+    "doc_recall_all_delta": 0.06821411653244902,
+    "ndcg_at_10_delta": 0.06209983326591889,
+    "token_f1_delta": 0.0012160835637205492,
+    "avg_storage_ratio_nova_over_stock": 0.6379326460472305,
+    "avg_latency_ratio_nova_over_stock": 0.090806521623675
   }
 }
