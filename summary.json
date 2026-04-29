@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:08:07Z",
+  "generated_at": "2026-04-29T03:08:08Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:08:07Z",
+    "updated_at": "2026-04-29T03:08:08Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 100,
+    "current_case_index": 105,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0099"
+    "current_case_id": "locomo::conv-26::0104"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,17 +2238,17 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 100,
-        "rows_successful": 100,
+        "rows_recorded": 105,
+        "rows_successful": 105,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.68,
-        "doc_recall_all": 0.53,
-        "ndcg_at_10": 0.39394269015973954,
-        "exact_match": 0.11,
-        "token_f1": 0.1794896253304367,
-        "avg_total_sec": 0.06270993899554014,
-        "p50_total_sec": 0.06199483294039965,
+        "doc_recall_any": 0.6857142857142857,
+        "doc_recall_all": 0.5428571428571428,
+        "ndcg_at_10": 0.3908042832041064,
+        "exact_match": 0.10476190476190476,
+        "token_f1": 0.17094250031470162,
+        "avg_total_sec": 0.06245979556281652,
+        "p50_total_sec": 0.06191474059596658,
         "p95_total_sec": 0.09213896561414003,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
@@ -3126,18 +3126,18 @@
             ]
           },
           "category_4": {
-            "expected_total": 18,
-            "rows_recorded": 18,
-            "rows_successful": 18,
+            "expected_total": 23,
+            "rows_recorded": 23,
+            "rows_successful": 23,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5555555555555556,
-            "doc_recall_all": 0.5555555555555556,
-            "ndcg_at_10": 0.4253777306733944,
+            "doc_recall_any": 0.6086956521739131,
+            "doc_recall_all": 0.6086956521739131,
+            "ndcg_at_10": 0.40421651619905735,
             "exact_match": 0.0,
-            "token_f1": 0.0475,
-            "avg_total_sec": 0.05804906162019405,
-            "p50_total_sec": 0.05714039923623204,
+            "token_f1": 0.03717391304347826,
+            "avg_total_sec": 0.057920336682835354,
+            "p50_total_sec": 0.05920604197308421,
             "p95_total_sec": 0.08058980107307434,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
@@ -3278,6 +3278,23 @@
                   "conv-26:D13:11",
                   "conv-26:D16:5",
                   "conv-26:D12:6"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0103",
+                "category": "category_4",
+                "query": "What was Melanie's favorite book from her childhood?",
+                "gold": "\"Charlotte's Web\"",
+                "prediction": "I'll never forget the day my youngest took her first steps",
+                "expected_doc_ids": [
+                  "conv-26:D6:10"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D10:20",
+                  "conv-26:D6:9",
+                  "conv-26:D4:3",
+                  "conv-26:D4:8",
+                  "conv-26:D7:10"
                 ]
               }
             ],
@@ -3420,6 +3437,34 @@
                   "conv-26:D4:14",
                   "conv-26:D4:11",
                   "conv-26:D6:3"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0100",
+                "category": "category_4",
+                "query": "What kind of place does Caroline want to create for people?",
+                "gold": "a safe and inviting place for people to grow",
+                "prediction": "Thanks, Melanie",
+                "retrieved_doc_ids": [
+                  "conv-26:D12:6",
+                  "conv-26:D13:15",
+                  "conv-26:D16:5",
+                  "conv-26:D6:7",
+                  "conv-26:D14:24"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0101",
+                "category": "category_4",
+                "query": "Did Melanie make the black and white bowl in the photo?",
+                "gold": "Yes",
+                "prediction": "Seven years now, and I've finally found my real muses: painting and pottery",
+                "retrieved_doc_ids": [
+                  "conv-26:D4:5",
+                  "conv-26:D16:9",
+                  "conv-26:D16:8",
+                  "conv-26:D12:6",
+                  "conv-26:D4:3"
                 ]
               }
             ]
@@ -6052,17 +6097,17 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 100,
-      "rows_successful": 100,
+      "rows_recorded": 105,
+      "rows_successful": 105,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.68,
-      "doc_recall_all": 0.53,
-      "ndcg_at_10": 0.39394269015973954,
-      "exact_match": 0.11,
-      "token_f1": 0.1794896253304367,
-      "avg_total_sec": 0.06270993899554014,
-      "p50_total_sec": 0.06199483294039965,
+      "doc_recall_any": 0.6857142857142857,
+      "doc_recall_all": 0.5428571428571428,
+      "ndcg_at_10": 0.3908042832041064,
+      "exact_match": 0.10476190476190476,
+      "token_f1": 0.17094250031470162,
+      "avg_total_sec": 0.06245979556281652,
+      "p50_total_sec": 0.06191474059596658,
       "p95_total_sec": 0.09213896561414003,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
@@ -6940,18 +6985,18 @@
           ]
         },
         "category_4": {
-          "expected_total": 18,
-          "rows_recorded": 18,
-          "rows_successful": 18,
+          "expected_total": 23,
+          "rows_recorded": 23,
+          "rows_successful": 23,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5555555555555556,
-          "doc_recall_all": 0.5555555555555556,
-          "ndcg_at_10": 0.4253777306733944,
+          "doc_recall_any": 0.6086956521739131,
+          "doc_recall_all": 0.6086956521739131,
+          "ndcg_at_10": 0.40421651619905735,
           "exact_match": 0.0,
-          "token_f1": 0.0475,
-          "avg_total_sec": 0.05804906162019405,
-          "p50_total_sec": 0.05714039923623204,
+          "token_f1": 0.03717391304347826,
+          "avg_total_sec": 0.057920336682835354,
+          "p50_total_sec": 0.05920604197308421,
           "p95_total_sec": 0.08058980107307434,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
@@ -7092,6 +7137,23 @@
                 "conv-26:D13:11",
                 "conv-26:D16:5",
                 "conv-26:D12:6"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0103",
+              "category": "category_4",
+              "query": "What was Melanie's favorite book from her childhood?",
+              "gold": "\"Charlotte's Web\"",
+              "prediction": "I'll never forget the day my youngest took her first steps",
+              "expected_doc_ids": [
+                "conv-26:D6:10"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D10:20",
+                "conv-26:D6:9",
+                "conv-26:D4:3",
+                "conv-26:D4:8",
+                "conv-26:D7:10"
               ]
             }
           ],
@@ -7234,6 +7296,34 @@
                 "conv-26:D4:14",
                 "conv-26:D4:11",
                 "conv-26:D6:3"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0100",
+              "category": "category_4",
+              "query": "What kind of place does Caroline want to create for people?",
+              "gold": "a safe and inviting place for people to grow",
+              "prediction": "Thanks, Melanie",
+              "retrieved_doc_ids": [
+                "conv-26:D12:6",
+                "conv-26:D13:15",
+                "conv-26:D16:5",
+                "conv-26:D6:7",
+                "conv-26:D14:24"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0101",
+              "category": "category_4",
+              "query": "Did Melanie make the black and white bowl in the photo?",
+              "gold": "Yes",
+              "prediction": "Seven years now, and I've finally found my real muses: painting and pottery",
+              "retrieved_doc_ids": [
+                "conv-26:D4:5",
+                "conv-26:D16:9",
+                "conv-26:D16:8",
+                "conv-26:D12:6",
+                "conv-26:D4:3"
               ]
             }
           ]
@@ -7621,11 +7711,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.013467336683417042,
-    "doc_recall_all_delta": -0.06798994974874373,
-    "ndcg_at_10_delta": -0.07199848084875482,
-    "token_f1_delta": 0.06820640258005853,
+    "doc_recall_any_delta": -0.00775305096913137,
+    "doc_recall_all_delta": -0.05513280689160094,
+    "ndcg_at_10_delta": -0.07513688780438799,
+    "token_f1_delta": 0.05965927756432346,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.009840286178017117
+    "avg_latency_ratio_nova_over_stock": 0.009801034298602483
   }
 }
