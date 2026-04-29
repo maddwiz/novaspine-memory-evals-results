@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T09:56:30Z",
+  "generated_at": "2026-04-29T10:11:45Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T09:56:23Z",
-    "current_system": "novaspine",
-    "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 500,
+    "updated_at": "2026-04-29T10:10:26Z",
+    "current_system": "stock",
+    "current_benchmark": "longmemeval_s",
+    "current_case_index": 5,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::09ba9854_abs"
+    "current_case_id": "longmemeval_s::1e043500"
   },
   "benchmarks": {
     "locomo": {
@@ -7221,45 +7221,317 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 0,
-        "rows_successful": 0,
+        "rows_recorded": 5,
+        "rows_successful": 5,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.0,
-        "doc_recall_all": 0.0,
-        "ndcg_at_10": 0.0,
+        "doc_recall_any": 1.0,
+        "doc_recall_all": 1.0,
+        "ndcg_at_10": 1.0,
         "exact_match": 0.0,
         "token_f1": 0.0,
-        "avg_total_sec": 0.0,
-        "p50_total_sec": 0.0,
-        "p95_total_sec": 0.0,
-        "avg_storage_bytes": 0.0,
-        "p95_storage_bytes": 0.0,
-        "categories": {},
+        "avg_total_sec": 81.7801359789446,
+        "p50_total_sec": 81.140921050217,
+        "p95_total_sec": 86.9601828912273,
+        "avg_storage_bytes": 44705149.0,
+        "p95_storage_bytes": 45552758.0,
+        "categories": {
+          "single-session-user": {
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 81.7801359789446,
+            "p50_total_sec": 81.140921050217,
+            "p95_total_sec": 86.9601828912273,
+            "avg_storage_bytes": 44705149.0,
+            "p95_storage_bytes": 45552758.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_s::e47becba",
+                "category": "single-session-user",
+                "query": "What degree did I graduate with?",
+                "gold": "Business Administration",
+                "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+                "retrieved_doc_ids": [
+                  "answer_280352e9"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::118b2229",
+                "category": "single-session-user",
+                "query": "How long is my daily commute to work?",
+                "gold": "45 minutes each way",
+                "prediction": "a significant amount of time that can be utilized for personal development, entertainment, or relaxation",
+                "retrieved_doc_ids": [
+                  "answer_40a90d51",
+                  "004edb32",
+                  "5209e813_2",
+                  "7d8b5834_1",
+                  "d600c646"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::51a45a95",
+                "category": "single-session-user",
+                "query": "Where did I redeem a $5 coupon on coffee creamer?",
+                "gold": "Target",
+                "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+                "retrieved_doc_ids": [
+                  "answer_d61669c7",
+                  "98c198fb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::58bf7951",
+                "category": "single-session-user",
+                "query": "What play did I attend at the local community theater?",
+                "gold": "The Glass Menagerie",
+                "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
+                "retrieved_doc_ids": [
+                  "answer_355c48bb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::1e043500",
+                "category": "single-session-user",
+                "query": "What is the name of the playlist I created on Spotify?",
+                "gold": "Summer Vibes",
+                "prediction": "powered by human curators, which means you'll get recommendations based on your listening habits and preferences",
+                "retrieved_doc_ids": [
+                  "answer_3e012175",
+                  "8020d945_2"
+                ]
+              }
+            ]
+          }
+        },
         "sample_errors": [],
         "sample_misses": [],
-        "sample_successes": []
+        "sample_successes": [
+          {
+            "case_id": "longmemeval_s::e47becba",
+            "category": "single-session-user",
+            "query": "What degree did I graduate with?",
+            "gold": "Business Administration",
+            "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+            "retrieved_doc_ids": [
+              "answer_280352e9"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::118b2229",
+            "category": "single-session-user",
+            "query": "How long is my daily commute to work?",
+            "gold": "45 minutes each way",
+            "prediction": "a significant amount of time that can be utilized for personal development, entertainment, or relaxation",
+            "retrieved_doc_ids": [
+              "answer_40a90d51",
+              "004edb32",
+              "5209e813_2",
+              "7d8b5834_1",
+              "d600c646"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::51a45a95",
+            "category": "single-session-user",
+            "query": "Where did I redeem a $5 coupon on coffee creamer?",
+            "gold": "Target",
+            "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+            "retrieved_doc_ids": [
+              "answer_d61669c7",
+              "98c198fb"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::58bf7951",
+            "category": "single-session-user",
+            "query": "What play did I attend at the local community theater?",
+            "gold": "The Glass Menagerie",
+            "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
+            "retrieved_doc_ids": [
+              "answer_355c48bb"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::1e043500",
+            "category": "single-session-user",
+            "query": "What is the name of the playlist I created on Spotify?",
+            "gold": "Summer Vibes",
+            "prediction": "powered by human curators, which means you'll get recommendations based on your listening habits and preferences",
+            "retrieved_doc_ids": [
+              "answer_3e012175",
+              "8020d945_2"
+            ]
+          }
+        ]
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 0,
-        "rows_successful": 0,
+        "rows_recorded": 4,
+        "rows_successful": 4,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.0,
-        "doc_recall_all": 0.0,
-        "ndcg_at_10": 0.0,
+        "doc_recall_any": 1.0,
+        "doc_recall_all": 1.0,
+        "ndcg_at_10": 1.0,
         "exact_match": 0.0,
         "token_f1": 0.0,
-        "avg_total_sec": 0.0,
-        "p50_total_sec": 0.0,
-        "p95_total_sec": 0.0,
-        "avg_storage_bytes": 0.0,
-        "p95_storage_bytes": 0.0,
-        "categories": {},
+        "avg_total_sec": 126.25266897620168,
+        "p50_total_sec": 127.61663505993783,
+        "p95_total_sec": 129.40882176207379,
+        "avg_storage_bytes": 15400575.0,
+        "p95_storage_bytes": 15786985.0,
+        "categories": {
+          "single-session-user": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 126.25266897620168,
+            "p50_total_sec": 127.61663505993783,
+            "p95_total_sec": 129.40882176207379,
+            "avg_storage_bytes": 15400575.0,
+            "p95_storage_bytes": 15786985.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_s::e47becba",
+                "category": "single-session-user",
+                "query": "What degree did I graduate with?",
+                "gold": "Business Administration",
+                "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+                "retrieved_doc_ids": [
+                  "answer_280352e9",
+                  "sharegpt_8dJs7Ai_0",
+                  "d414cac5_4",
+                  "0586f435_3",
+                  "ultrachat_458322"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::118b2229",
+                "category": "single-session-user",
+                "query": "How long is my daily commute to work?",
+                "gold": "45 minutes each way",
+                "prediction": "have features to export notes or quotes in a format that can be easily shared or posted on social media",
+                "retrieved_doc_ids": [
+                  "answer_40a90d51",
+                  "7d8b5834_1",
+                  "004edb32",
+                  "5dce60dd",
+                  "5209e813_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::51a45a95",
+                "category": "single-session-user",
+                "query": "Where did I redeem a $5 coupon on coffee creamer?",
+                "gold": "Target",
+                "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+                "retrieved_doc_ids": [
+                  "answer_d61669c7",
+                  "07d1915d_1",
+                  "98c198fb",
+                  "6e0b1800_2",
+                  "ultrachat_254165"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::58bf7951",
+                "category": "single-session-user",
+                "query": "What play did I attend at the local community theater?",
+                "gold": "The Glass Menagerie",
+                "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
+                "retrieved_doc_ids": [
+                  "answer_355c48bb",
+                  "793382f9_2",
+                  "ultrachat_155546",
+                  "987b36db_2",
+                  "ultrachat_71618"
+                ]
+              }
+            ]
+          }
+        },
         "sample_errors": [],
         "sample_misses": [],
-        "sample_successes": []
+        "sample_successes": [
+          {
+            "case_id": "longmemeval_s::e47becba",
+            "category": "single-session-user",
+            "query": "What degree did I graduate with?",
+            "gold": "Business Administration",
+            "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+            "retrieved_doc_ids": [
+              "answer_280352e9",
+              "sharegpt_8dJs7Ai_0",
+              "d414cac5_4",
+              "0586f435_3",
+              "ultrachat_458322"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::118b2229",
+            "category": "single-session-user",
+            "query": "How long is my daily commute to work?",
+            "gold": "45 minutes each way",
+            "prediction": "have features to export notes or quotes in a format that can be easily shared or posted on social media",
+            "retrieved_doc_ids": [
+              "answer_40a90d51",
+              "7d8b5834_1",
+              "004edb32",
+              "5dce60dd",
+              "5209e813_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::51a45a95",
+            "category": "single-session-user",
+            "query": "Where did I redeem a $5 coupon on coffee creamer?",
+            "gold": "Target",
+            "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+            "retrieved_doc_ids": [
+              "answer_d61669c7",
+              "07d1915d_1",
+              "98c198fb",
+              "6e0b1800_2",
+              "ultrachat_254165"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::58bf7951",
+            "category": "single-session-user",
+            "query": "What play did I attend at the local community theater?",
+            "gold": "The Glass Menagerie",
+            "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
+            "retrieved_doc_ids": [
+              "answer_355c48bb",
+              "793382f9_2",
+              "ultrachat_155546",
+              "987b36db_2",
+              "ultrachat_71618"
+            ]
+          }
+        ]
       }
     },
     "longmemeval_m": {
@@ -7310,19 +7582,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2486,
-      "rows_successful": 2486,
+      "rows_recorded": 2491,
+      "rows_successful": 2491,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7522123893805309,
-      "doc_recall_all": 0.6391794046661303,
-      "ndcg_at_10": 0.5525082182428485,
-      "exact_match": 0.05631536604987932,
-      "token_f1": 0.10304866262445936,
-      "avg_total_sec": 8.025820770481495,
-      "p50_total_sec": 6.370728827081621,
-      "p95_total_sec": 15.193155845627189,
-      "avg_storage_bytes": 18166013.965406276,
+      "doc_recall_any": 0.7527097551184263,
+      "doc_recall_all": 0.6399036531513448,
+      "ndcg_at_10": 0.5534064353880856,
+      "exact_match": 0.056202328382175835,
+      "token_f1": 0.10284182066816779,
+      "avg_total_sec": 8.1738623505868,
+      "p50_total_sec": 6.370766701176763,
+      "p95_total_sec": 15.256420526187867,
+      "avg_storage_bytes": 18219284.007627457,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -10132,21 +10404,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 70,
-          "rows_recorded": 70,
-          "rows_successful": 70,
+          "expected_total": 75,
+          "rows_recorded": 75,
+          "rows_successful": 75,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9571428571428572,
-          "doc_recall_all": 0.9571428571428572,
-          "ndcg_at_10": 0.9571428571428572,
-          "exact_match": 0.12857142857142856,
-          "token_f1": 0.17014777097162034,
-          "avg_total_sec": 12.975486569492412,
-          "p50_total_sec": 12.91338622989133,
-          "p95_total_sec": 13.428708690218627,
-          "avg_storage_bytes": 5345919.042857143,
-          "p95_storage_bytes": 5636968.0,
+          "doc_recall_any": 0.96,
+          "doc_recall_all": 0.96,
+          "ndcg_at_10": 0.96,
+          "exact_match": 0.12,
+          "token_f1": 0.15880458624017899,
+          "avg_total_sec": 17.562463196789224,
+          "p50_total_sec": 12.982483367901295,
+          "p95_total_sec": 79.15900275064632,
+          "avg_storage_bytes": 7969867.706666667,
+          "p95_storage_bytes": 44046416.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -10689,19 +10961,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2486,
-      "rows_successful": 2486,
+      "rows_recorded": 2490,
+      "rows_successful": 2490,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7441673370876911,
-      "doc_recall_all": 0.6544650040225262,
-      "ndcg_at_10": 0.5105354813027102,
-      "exact_match": 0.05430410297666935,
-      "token_f1": 0.09611720162013908,
-      "avg_total_sec": 1.3766198956142746,
-      "p50_total_sec": 0.06681775394827127,
-      "p95_total_sec": 7.710366411134601,
-      "avg_storage_bytes": 11104831.394207563,
+      "doc_recall_any": 0.744578313253012,
+      "doc_recall_all": 0.6550200803212851,
+      "ndcg_at_10": 0.5113217696861597,
+      "exact_match": 0.05421686746987952,
+      "token_f1": 0.09596279647697419,
+      "avg_total_sec": 1.5772239905228487,
+      "p50_total_sec": 0.06683580297976732,
+      "p95_total_sec": 7.74513804493472,
+      "avg_storage_bytes": 11111732.187148595,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -13457,21 +13729,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 70,
-          "rows_recorded": 70,
-          "rows_successful": 70,
+          "expected_total": 74,
+          "rows_recorded": 74,
+          "rows_successful": 74,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.12857142857142856,
-          "token_f1": 0.17265252726969357,
-          "avg_total_sec": 3.6975048722499717,
-          "p50_total_sec": 3.822634259238839,
-          "p95_total_sec": 4.40636015497148,
-          "avg_storage_bytes": 741064.2,
-          "p95_storage_bytes": 832433.0,
+          "exact_match": 0.12162162162162163,
+          "token_f1": 0.1633199582280885,
+          "avg_total_sec": 10.322108337328443,
+          "p50_total_sec": 3.8534978930838406,
+          "p95_total_sec": 4.614607535302639,
+          "avg_storage_bytes": 1533470.189189189,
+          "p95_storage_bytes": 852877.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -13981,11 +14253,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.008045052292839805,
-    "doc_recall_all_delta": 0.01528559935639584,
-    "ndcg_at_10_delta": -0.041972736940138256,
-    "token_f1_delta": -0.00693146100432028,
-    "avg_storage_ratio_nova_over_stock": 0.6112970856102283,
-    "avg_latency_ratio_nova_over_stock": 0.17152387711888645
+    "doc_recall_any_delta": -0.008131441865414257,
+    "doc_recall_all_delta": 0.015116427169940327,
+    "ndcg_at_10_delta": -0.04208466570192593,
+    "token_f1_delta": -0.0068790241911936,
+    "avg_storage_ratio_nova_over_stock": 0.6098885215520378,
+    "avg_latency_ratio_nova_over_stock": 0.19295945085368607
   }
 }
