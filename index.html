@@ -234,40 +234,40 @@
       <div class="metric-card">
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>75.6%</strong></div>
-          <div><span>NovaSpine</span><strong>74.8%</strong></div>
+          <div><span>Stock</span><strong>40.0%</strong></div>
+          <div><span>NovaSpine</span><strong>0.0%</strong></div>
         </div>
-        <div class="delta bad">-0.008</div>
+        <div class="delta bad">-0.400</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>64.5%</strong></div>
-          <div><span>NovaSpine</span><strong>66.0%</strong></div>
+          <div><span>Stock</span><strong>20.0%</strong></div>
+          <div><span>NovaSpine</span><strong>0.0%</strong></div>
         </div>
-        <div class="delta good">+0.015</div>
+        <div class="delta bad">-0.200</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>56.0%</strong></div>
-          <div><span>NovaSpine</span><strong>51.8%</strong></div>
+          <div><span>Stock</span><strong>32.3%</strong></div>
+          <div><span>NovaSpine</span><strong>0.0%</strong></div>
         </div>
-        <div class="delta bad">-0.041</div>
+        <div class="delta bad">-0.323</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">Answer F1</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>10.5%</strong></div>
-          <div><span>NovaSpine</span><strong>9.7%</strong></div>
+          <div><span>Stock</span><strong>40.0%</strong></div>
+          <div><span>NovaSpine</span><strong>0.0%</strong></div>
         </div>
-        <div class="delta bad">-0.008</div>
+        <div class="delta bad">-0.400</div>
       </div>
     
     </section>
@@ -275,18 +275,18 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any -0.008, evidence-all +0.015, NDCG@10 -0.041, answer F1 -0.008.</p>
+        <p><b>Current delta:</b> evidence-any -0.400, evidence-all -0.200, NDCG@10 -0.323, answer F1 -0.400.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-29T12:32:05Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-04-29T12:29:36Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>45 / 500</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::001be529</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2531 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2531 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-29T12:45:18Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-04-29T12:45:18Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>5 / 1986</strong></div>
+          <div class="pill"><span>Current</span><strong>locomo::conv-26::0004</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>5 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>0 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -312,60 +312,41 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>1986 / 1986 failed 0</td>
-      <td>69.4%</td>
-      <td>58.5%</td>
-      <td>45.4%</td>
-      <td>8.4%</td>
+      <td>5 / 1986 failed 0</td>
+      <td>40.0%</td>
+      <td>20.0%</td>
+      <td>32.3%</td>
+      <td>40.0%</td>
       <td>6.4s</td>
-      <td>20.2 MB</td>
+      <td>15.4 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>1986 / 1986 failed 0</td>
-      <td>68.0%</td>
-      <td>56.9%</td>
-      <td>38.8%</td>
-      <td>7.0%</td>
-      <td>0.1s</td>
-      <td>13.0 MB</td>
+      <td>0 / 1986 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>category_1</td><td>282</td><td>73.0%</td><td>4.4%</td><td>282</td><td>69.5%</td><td>3.2%</td></tr>
-<tr><td>category_2</td><td>321</td><td>72.9%</td><td>31.5%</td><td>321</td><td>76.3%</td><td>29.6%</td></tr>
-<tr><td>category_3</td><td>96</td><td>57.3%</td><td>2.3%</td><td>96</td><td>55.2%</td><td>3.7%</td></tr>
-<tr><td>category_4</td><td>841</td><td>71.3%</td><td>6.0%</td><td>841</td><td>67.5%</td><td>3.8%</td></tr>
-<tr><td>category_5</td><td>446</td><td>63.7%</td><td>0.0%</td><td>446</td><td>64.6%</td><td>0.0%</td></tr></table>
+<tr><td>category_1</td><td>2</td><td>0.0%</td><td>0.0%</td><td>0</td><td>0.0%</td><td>0.0%</td></tr>
+<tr><td>category_2</td><td>2</td><td>50.0%</td><td>100.0%</td><td>0</td><td>0.0%</td><td>0.0%</td></tr>
+<tr><td>category_3</td><td>1</td><td>100.0%</td><td>0.0%</td><td>0</td><td>0.0%</td><td>0.0%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
         <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> When did Melanie paint a sunrise?</p><p><b>Gold:</b> 2022</p><p><b>Pred:</b> 2022</p><p><b>Expected docs:</b> conv-26:D1:12</p><p><b>Retrieved:</b> conv-26:D1:14, conv-26:D14:7, conv-26:D17:13, conv-26:D17:16, conv-26:D12:6</p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What did Caroline research?</p><p><b>Gold:</b> Adoption agencies</p><p><b>Pred:</b> Being a mom is awesome</p><p><b>Expected docs:</b> conv-26:D2:8</p><p><b>Retrieved:</b> conv-26:D6:7, conv-26:D7:7, conv-26:D16:7, conv-26:D6:9, conv-26:D12:6</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What is Caroline&#x27;s identity?</p><p><b>Gold:</b> Transgender woman</p><p><b>Pred:</b> Thanks, Melanie</p><p><b>Expected docs:</b> conv-26:D1:5</p><p><b>Retrieved:</b> conv-26:D11:12, conv-26:D4:3, conv-26:D13:11, conv-26:D11:8, conv-26:D16:13</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> When is Melanie planning on going camping?</p><p><b>Gold:</b> June 2023</p><p><b>Pred:</b> 2022</p><p><b>Expected docs:</b> conv-26:D2:7</p><p><b>Retrieved:</b> conv-26:D10:12, conv-26:D18:19, conv-26:D18:21, conv-26:D18:20, conv-26:D4:8</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> When did Caroline meet up with her friends, family, and mentors?</p><p><b>Gold:</b> The week before 9 June 2023</p><p><b>Pred:</b> t easy and acceptance wasn</p><p><b>Expected docs:</b> conv-26:D3:11</p><p><b>Retrieved:</b> conv-26:D8:19, conv-26:D16:15, conv-26:D8:23, conv-26:D4:15, conv-26:D6:11</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How long ago was Caroline&#x27;s 18th birthday?</p><p><b>Gold:</b> 10 years ago</p><p><b>Pred:</b> Since I was 17 or so</p><p><b>Expected docs:</b> conv-26:D4:5</p><p><b>Retrieved:</b> conv-26:D11:1, conv-26:D16:7, conv-26:D17:5, conv-26:D10:20, conv-26:D18:12</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> When did Melanie paint a sunrise?</p><p><b>Gold:</b> 2022</p><p><b>Pred:</b> 2022</p><p><b>Expected docs:</b> conv-26:D1:12</p><p><b>Retrieved:</b> conv-26:D1:14, conv-26:D14:30, conv-26:D14:7, conv-26:D16:8, conv-26:D17:13</p></div>
-<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What did Caroline research?</p><p><b>Gold:</b> Adoption agencies</p><p><b>Pred:</b> I&#x27;ve got lots of kids&#x27; books- classics, stories from different cultures, educational books, all of that</p><p><b>Expected docs:</b> conv-26:D2:8</p><p><b>Retrieved:</b> conv-26:D6:9, conv-26:D8:5, conv-26:D6:7, conv-26:D7:7, conv-26:D16:7</p></div>
-<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What is Caroline&#x27;s identity?</p><p><b>Gold:</b> Transgender woman</p><p><b>Pred:</b> Thanks, Melanie</p><p><b>Expected docs:</b> conv-26:D1:5</p><p><b>Retrieved:</b> conv-26:D11:12, conv-26:D13:13, conv-26:D16:9, conv-26:D11:8, conv-26:D8:5</p></div>
-<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What is Caroline&#x27;s relationship status?</p><p><b>Gold:</b> Single</p><p><b>Pred:</b> Thanks, Melanie</p><p><b>Expected docs:</b> conv-26:D3:13, conv-26:D2:14</p><p><b>Retrieved:</b> conv-26:D16:15, conv-26:D16:14, conv-26:D11:8, conv-26:D12:11, conv-26:D3:23</p></div>
-<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What career path has Caroline decided to persue?</p><p><b>Gold:</b> counseling or mental health for Transgender people</p><p><b>Pred:</b> I struggled with mental health, and support I got was really helpful</p><p><b>Expected docs:</b> conv-26:D4:13, conv-26:D1:11</p><p><b>Retrieved:</b> conv-26:D7:7, conv-26:D4:11, conv-26:D1:9, conv-26:D11:14, conv-26:D13:11</p></div>
-<div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What do Melanie&#x27;s kids like?</p><p><b>Gold:</b> dinosaurs, nature</p><p><b>Pred:</b> Wow, Caroline!</p><p><b>Expected docs:</b> conv-26:D6:6, conv-26:D4:8</p><p><b>Retrieved:</b> conv-26:D8:5, conv-26:D11:7, conv-26:D8:3, conv-26:D10:9, conv-26:D8:33</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> 7 May 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D16:5, conv-26:D4:13, conv-26:D9:6, conv-26:D11:6</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What fields would Caroline be likely to pursue in her educaton?</p><p><b>Gold:</b> Psychology, counseling certification</p><p><b>Pred:</b> Gonna continue my edu and check out career options, which is pretty exciting!</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:9, conv-26:D6:7, conv-26:D11:14, conv-26:D13:11, conv-26:D7:7</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Melanie run a charity race?</p><p><b>Gold:</b> The sunday before 25 May 2023</p><p><b>Pred:</b> 20 May 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D2:2, conv-26:D14:11, conv-26:D2:1, conv-26:D19:4, conv-26:D10:6</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What is Caroline&#x27;s relationship status?</p><p><b>Gold:</b> Single</p><p><b>Pred:</b> Thanks, Melanie</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D16:15, conv-26:D3:13, conv-26:D17:5, conv-26:D8:16, conv-26:D4:3</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Caroline give a speech at a school?</p><p><b>Gold:</b> The week before 9 June 2023</p><p><b>Pred:</b> 2 June 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D3:1, conv-26:D15:23, conv-26:D15:5, conv-26:D3:7, conv-26:D11:2</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How long has Caroline had her current group of friends for?</p><p><b>Gold:</b> 4 years</p><p><b>Pred:</b> Yeah, I&#x27;m really lucky to have them</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D3:13, conv-26:D16:15, conv-26:D12:14, conv-26:D17:5, conv-26:D8:23</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> 7 May 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D10:5, conv-26:D16:5, conv-26:D4:15, conv-26:D4:13</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What fields would Caroline be likely to pursue in her educaton?</p><p><b>Gold:</b> Psychology, counseling certification</p><p><b>Pred:</b> Gonna continue my edu and check out career options, which is pretty exciting!</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D14:24, conv-26:D16:8, conv-26:D1:9, conv-26:D6:7, conv-26:D13:11</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> When did Melanie run a charity race?</p><p><b>Gold:</b> The sunday before 25 May 2023</p><p><b>Pred:</b> 20 May 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D2:2, conv-26:D2:1, conv-26:D15:4, conv-26:D7:23, conv-26:D7:20</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> When is Melanie planning on going camping?</p><p><b>Gold:</b> June 2023</p><p><b>Pred:</b> 2022</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D10:14, conv-26:D10:12, conv-26:D2:7, conv-26:D18:19, conv-26:D4:6</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> When did Caroline give a speech at a school?</p><p><b>Gold:</b> The week before 9 June 2023</p><p><b>Pred:</b> 2 June 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D3:1, conv-26:D6:7, conv-26:D15:3, conv-26:D3:7, conv-26:D13:15</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> When did Caroline meet up with her friends, family, and mentors?</p><p><b>Gold:</b> The week before 9 June 2023</p><p><b>Pred:</b> 2 June 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D6:11, conv-26:D16:5, conv-26:D8:19, conv-26:D19:9, conv-26:D16:15</p></div></div></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What is Caroline&#x27;s identity?</p><p><b>Gold:</b> Transgender woman</p><p><b>Pred:</b> Thanks, Melanie</p><p><b>Expected docs:</b> conv-26:D1:5</p><p><b>Retrieved:</b> conv-26:D11:12, conv-26:D4:3, conv-26:D13:11, conv-26:D11:8, conv-26:D16:13</p></div></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> 7 May 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D16:5, conv-26:D4:13, conv-26:D9:6, conv-26:D11:6</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What fields would Caroline be likely to pursue in her educaton?</p><p><b>Gold:</b> Psychology, counseling certification</p><p><b>Pred:</b> Gonna continue my edu and check out career options, which is pretty exciting!</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:9, conv-26:D6:7, conv-26:D11:14, conv-26:D13:11, conv-26:D7:7</p></div></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
       </details>
     </section>
     
@@ -378,56 +359,35 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>500 / 500 failed 0</td>
-      <td>98.2%</td>
-      <td>85.6%</td>
-      <td>94.2%</td>
-      <td>18.0%</td>
-      <td>14.6s</td>
-      <td>6.0 MB</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>500 / 500 failed 0</td>
-      <td>100.0%</td>
-      <td>99.4%</td>
-      <td>99.9%</td>
-      <td>19.8%</td>
-      <td>6.6s</td>
-      <td>1.0 MB</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
-        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>knowledge-update</td><td>78</td><td>100.0%</td><td>23.3%</td><td>78</td><td>100.0%</td><td>28.9%</td></tr>
-<tr><td>multi-session</td><td>133</td><td>98.5%</td><td>8.8%</td><td>133</td><td>100.0%</td><td>8.5%</td></tr>
-<tr><td>single-session-assistant</td><td>56</td><td>100.0%</td><td>8.6%</td><td>56</td><td>100.0%</td><td>9.6%</td></tr>
-<tr><td>single-session-preference</td><td>30</td><td>96.7%</td><td>12.7%</td><td>30</td><td>100.0%</td><td>14.4%</td></tr>
-<tr><td>single-session-user</td><td>70</td><td>95.7%</td><td>17.0%</td><td>70</td><td>100.0%</td><td>17.3%</td></tr>
-<tr><td>temporal-reasoning</td><td>133</td><td>97.7%</td><td>29.7%</td><td>133</td><td>100.0%</td><td>32.7%</td></tr></table>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many days did it take for my iPad case to arrive after I bought it?</p><p><b>Gold:</b> The information provided is not enough. You did not mention buying an iPad case.</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_e0956e0a_abs_2, answer_e0956e0a_abs_1</p><p><b>Retrieved:</b> </p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> I&#x27;ve been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?</p><p><b>Gold:</b> The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_b0fac439</p><p><b>Retrieved:</b> </p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> </p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> Where does my sister Emily live?</p><p><b>Gold:</b> Denver</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_d01949bf</p><p><b>Retrieved:</b> </p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What did my dad gave me as a birthday gift?</p><p><b>Gold:</b> You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_f5b33470_abs</p><p><b>Retrieved:</b> </p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many months passed between the completion of my undergraduate degree and the submission of my master&#x27;s thesis?</p><p><b>Gold:</b> 6 months</p><p><b>Pred:</b> </p><p><b>Expected docs:</b> answer_1e2369c9_1, answer_1e2369c9_2</p><p><b>Retrieved:</b> </p></div></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> GPS system</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_2, answer_4be1b6b4_1</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which event did I attend first, the &#x27;Effective Time Management&#x27; workshop or the &#x27;Data Analysis using Python&#x27; webinar?</p><p><b>Gold:</b> &#x27;Data Analysis using Python&#x27; webinar</p><p><b>Pred:</b> Data Analysis using Python webinar</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_1c6b85ea_1, answer_1c6b85ea_2</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which vehicle did I take care of first in February, the bike or the car?</p><p><b>Gold:</b> bike</p><p><b>Pred:</b> bike</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_b535969f_2, answer_b535969f_1</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?</p><p><b>Gold:</b> Samsung Galaxy S22</p><p><b>Pred:</b> Samsung Galaxy S22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_5328c3c2_2, answer_5328c3c2_1</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How many days before the team meeting I was preparing for did I attend the workshop on &#x27;Effective Communication in the Workplace&#x27;?</p><p><b>Gold:</b> 7 days. 8 days (including the last day) is also acceptable.</p><p><b>Pred:</b> 7 days</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_e936197f_1, answer_e936197f_2</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How many days had passed between the Sunday mass at St. Mary&#x27;s Church and the Ash Wednesday service at the cathedral?</p><p><b>Gold:</b> 30 days. 31 days (including the last day) is also acceptable.</p><p><b>Pred:</b> 30 days</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_6ea1541e_1, answer_6ea1541e_2</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> GPS system</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_2, answer_4be1b6b4_1</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which event did I attend first, the &#x27;Effective Time Management&#x27; workshop or the &#x27;Data Analysis using Python&#x27; webinar?</p><p><b>Gold:</b> &#x27;Data Analysis using Python&#x27; webinar</p><p><b>Pred:</b> Data Analysis using Python webinar</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_1c6b85ea_1, answer_1c6b85ea_2</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which vehicle did I take care of first in February, the bike or the car?</p><p><b>Gold:</b> bike</p><p><b>Pred:</b> bike</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_b535969f_2, answer_b535969f_1</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?</p><p><b>Gold:</b> Samsung Galaxy S22</p><p><b>Pred:</b> Samsung Galaxy S22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_5328c3c2_2, answer_5328c3c2_1</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> How many days before the team meeting I was preparing for did I attend the workshop on &#x27;Effective Communication in the Workplace&#x27;?</p><p><b>Gold:</b> 7 days. 8 days (including the last day) is also acceptable.</p><p><b>Pred:</b> 7 days</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_e936197f_1, answer_e936197f_2</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> How many days had passed between the Sunday mass at St. Mary&#x27;s Church and the Ash Wednesday service at the cathedral?</p><p><b>Gold:</b> 30 days. 31 days (including the last day) is also acceptable.</p><p><b>Pred:</b> 30 days</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_6ea1541e_1, answer_6ea1541e_2</p></div></div></div>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
       </details>
     </section>
     
@@ -440,46 +400,35 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>45 / 500 failed 0</td>
-      <td>97.8%</td>
-      <td>97.8%</td>
-      <td>94.9%</td>
-      <td>19.2%</td>
-      <td>81.8s</td>
-      <td>42.7 MB</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>45 / 500 failed 0</td>
-      <td>97.8%</td>
-      <td>97.8%</td>
-      <td>95.3%</td>
-      <td>13.5%</td>
-      <td>125.1s</td>
-      <td>14.4 MB</td>
+      <td>0 / 500 failed 0</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>0.0s</td>
+      <td>0.0 B</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
-        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>single-session-user</td><td>45</td><td>97.8%</td><td>19.2%</td><td>45</td><td>97.8%</td><td>13.5%</td></tr></table>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> you have any suggestions for managing my time effectively</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> ultrachat_371333, sharegpt_BKl952A_23, 72f053da_2, e7b0637e_3, sharegpt_ipLglky_48</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> a significant amount of time that can be utilized for personal development, entertainment, or relaxation</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 004edb32, 5209e813_2, 7d8b5834_1, d600c646</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7, 98c198fb</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> impressed by the lead actress&#x27;s performance - she reminded me of my friend Emily, who&#x27;s also an aspiring actress</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What is the name of the playlist I created on Spotify?</p><p><b>Gold:</b> Summer Vibes</p><p><b>Pred:</b> powered by human curators, which means you&#x27;ll get recommendations based on your listening habits and preferences</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_3e012175, 8020d945_2</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was my last name before I changed it?</p><p><b>Gold:</b> Johnson</p><p><b>Pred:</b> to ensure your identification documents match your new name</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_f6168136</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9, sharegpt_8dJs7Ai_0, d414cac5_4, 0586f435_3, ultrachat_458322</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> have features to export notes or quotes in a format that can be easily shared or posted on social media</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 7d8b5834_1, 004edb32, 5dce60dd, 5209e813_2</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Where did I redeem a $5 coupon on coffee creamer?</p><p><b>Gold:</b> Target</p><p><b>Pred:</b> user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn&#x27;t know I had it in my email inbox.</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_d61669c7, 07d1915d_1, 98c198fb, 6e0b1800_2, ultrachat_254165</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What play did I attend at the local community theater?</p><p><b>Gold:</b> The Glass Menagerie</p><p><b>Pred:</b> impressed by the lead actress&#x27;s performance - she reminded me of my friend Emily, who&#x27;s also an aspiring actress</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_355c48bb, 793382f9_2, ultrachat_155546, 987b36db_2, ultrachat_71618</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What is the name of the playlist I created on Spotify?</p><p><b>Gold:</b> Summer Vibes</p><p><b>Pred:</b> ve been listening to this one playlist on Spotify that I created, called Summer Vibes, and it</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_3e012175, 01bd9def, 3548cae3, 8020d945_2, 2d0d0004</p></div>
-<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What was my last name before I changed it?</p><p><b>Gold:</b> Johnson</p><p><b>Pred:</b> I need to update my credit report with the three major credit bureaus (Experian, TransUnion, and Equifax) to reflect my name change</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_f6168136, 0fe848c5_3, d777e7da_1, aaf71ce2_2, ultrachat_474903</p></div></div></div>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
       </details>
     </section>
     
