@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:07:58Z",
+  "generated_at": "2026-04-29T03:08:00Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:07:58Z",
+    "updated_at": "2026-04-29T03:08:00Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 70,
+    "current_case_index": 75,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0069"
+    "current_case_id": "locomo::conv-26::0074"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,34 +2238,34 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 70,
-        "rows_successful": 70,
+        "rows_recorded": 75,
+        "rows_successful": 75,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.7142857142857143,
-        "doc_recall_all": 0.5285714285714286,
-        "ndcg_at_10": 0.4110496650212484,
-        "exact_match": 0.12857142857142856,
-        "token_f1": 0.20848517904348102,
-        "avg_total_sec": 0.06418489078059793,
+        "doc_recall_any": 0.72,
+        "doc_recall_all": 0.52,
+        "ndcg_at_10": 0.4012057975629551,
+        "exact_match": 0.13333333333333333,
+        "token_f1": 0.20791950044058227,
+        "avg_total_sec": 0.06387242625157039,
         "p50_total_sec": 0.062076272908598185,
-        "p95_total_sec": 0.09437936032190919,
+        "p95_total_sec": 0.09213896561414003,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
         "categories": {
           "category_2": {
-            "expected_total": 32,
-            "rows_recorded": 32,
-            "rows_successful": 32,
+            "expected_total": 35,
+            "rows_recorded": 35,
+            "rows_successful": 35,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9375,
-            "doc_recall_all": 0.9375,
-            "ndcg_at_10": 0.6222225585127608,
-            "exact_match": 0.28125,
-            "token_f1": 0.4264136904761905,
-            "avg_total_sec": 0.06808677656226791,
-            "p50_total_sec": 0.06557795405387878,
+            "doc_recall_any": 0.9142857142857143,
+            "doc_recall_all": 0.9142857142857143,
+            "ndcg_at_10": 0.5934992853872895,
+            "exact_match": 0.2857142857142857,
+            "token_f1": 0.41843537414965987,
+            "avg_total_sec": 0.06751350877540452,
+            "p50_total_sec": 0.0635387129150331,
             "p95_total_sec": 0.09569810284301639,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
@@ -2304,6 +2304,23 @@
                   "conv-26:D10:14",
                   "conv-26:D2:7",
                   "conv-26:D10:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0072",
+                "category": "category_2",
+                "query": "When did Melanie's friend adopt a child?",
+                "gold": "2022",
+                "prediction": "2022",
+                "expected_doc_ids": [
+                  "conv-26:D17:3"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D3:22",
+                  "conv-26:D13:1",
+                  "conv-26:D10:10",
+                  "conv-26:D12:15",
+                  "conv-26:D8:9"
                 ]
               }
             ],
@@ -2670,17 +2687,17 @@
             ]
           },
           "category_1": {
-            "expected_total": 27,
-            "rows_recorded": 27,
-            "rows_successful": 27,
+            "expected_total": 29,
+            "rows_recorded": 29,
+            "rows_successful": 29,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5185185185185185,
-            "doc_recall_all": 0.18518518518518517,
-            "ndcg_at_10": 0.22979182143475838,
+            "doc_recall_any": 0.5517241379310345,
+            "doc_recall_all": 0.1724137931034483,
+            "ndcg_at_10": 0.2296546320112392,
             "exact_match": 0.0,
-            "token_f1": 0.028471275474280584,
-            "avg_total_sec": 0.06251707766205072,
+            "token_f1": 0.026507739234675025,
+            "avg_total_sec": 0.062112232894989954,
             "p50_total_sec": 0.062076272908598185,
             "p95_total_sec": 0.08389091119170189,
             "avg_storage_bytes": 10934689.0,
@@ -5704,34 +5721,34 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 70,
-      "rows_successful": 70,
+      "rows_recorded": 75,
+      "rows_successful": 75,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7142857142857143,
-      "doc_recall_all": 0.5285714285714286,
-      "ndcg_at_10": 0.4110496650212484,
-      "exact_match": 0.12857142857142856,
-      "token_f1": 0.20848517904348102,
-      "avg_total_sec": 0.06418489078059793,
+      "doc_recall_any": 0.72,
+      "doc_recall_all": 0.52,
+      "ndcg_at_10": 0.4012057975629551,
+      "exact_match": 0.13333333333333333,
+      "token_f1": 0.20791950044058227,
+      "avg_total_sec": 0.06387242625157039,
       "p50_total_sec": 0.062076272908598185,
-      "p95_total_sec": 0.09437936032190919,
+      "p95_total_sec": 0.09213896561414003,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
       "categories": {
         "category_2": {
-          "expected_total": 32,
-          "rows_recorded": 32,
-          "rows_successful": 32,
+          "expected_total": 35,
+          "rows_recorded": 35,
+          "rows_successful": 35,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9375,
-          "doc_recall_all": 0.9375,
-          "ndcg_at_10": 0.6222225585127608,
-          "exact_match": 0.28125,
-          "token_f1": 0.4264136904761905,
-          "avg_total_sec": 0.06808677656226791,
-          "p50_total_sec": 0.06557795405387878,
+          "doc_recall_any": 0.9142857142857143,
+          "doc_recall_all": 0.9142857142857143,
+          "ndcg_at_10": 0.5934992853872895,
+          "exact_match": 0.2857142857142857,
+          "token_f1": 0.41843537414965987,
+          "avg_total_sec": 0.06751350877540452,
+          "p50_total_sec": 0.0635387129150331,
           "p95_total_sec": 0.09569810284301639,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
@@ -5770,6 +5787,23 @@
                 "conv-26:D10:14",
                 "conv-26:D2:7",
                 "conv-26:D10:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0072",
+              "category": "category_2",
+              "query": "When did Melanie's friend adopt a child?",
+              "gold": "2022",
+              "prediction": "2022",
+              "expected_doc_ids": [
+                "conv-26:D17:3"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D3:22",
+                "conv-26:D13:1",
+                "conv-26:D10:10",
+                "conv-26:D12:15",
+                "conv-26:D8:9"
               ]
             }
           ],
@@ -6136,17 +6170,17 @@
           ]
         },
         "category_1": {
-          "expected_total": 27,
-          "rows_recorded": 27,
-          "rows_successful": 27,
+          "expected_total": 29,
+          "rows_recorded": 29,
+          "rows_successful": 29,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5185185185185185,
-          "doc_recall_all": 0.18518518518518517,
-          "ndcg_at_10": 0.22979182143475838,
+          "doc_recall_any": 0.5517241379310345,
+          "doc_recall_all": 0.1724137931034483,
+          "ndcg_at_10": 0.2296546320112392,
           "exact_match": 0.0,
-          "token_f1": 0.028471275474280584,
-          "avg_total_sec": 0.06251707766205072,
+          "token_f1": 0.026507739234675025,
+          "avg_total_sec": 0.062112232894989954,
           "p50_total_sec": 0.062076272908598185,
           "p95_total_sec": 0.08389091119170189,
           "avg_storage_bytes": 10934689.0,
@@ -6925,11 +6959,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.02081837760229721,
-    "doc_recall_all_delta": -0.06941852117731517,
-    "ndcg_at_10_delta": -0.05489150598724596,
-    "token_f1_delta": 0.09720195629310285,
+    "doc_recall_any_delta": 0.026532663316582883,
+    "doc_recall_all_delta": -0.07798994974874374,
+    "ndcg_at_10_delta": -0.06473537344553926,
+    "token_f1_delta": 0.09663627769020411,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.010071731908888869
+    "avg_latency_ratio_nova_over_stock": 0.010022700759515099
   }
 }
