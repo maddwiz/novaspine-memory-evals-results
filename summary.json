@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T07:45:39Z",
+  "generated_at": "2026-04-29T07:47:52Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T07:45:28Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T07:47:38Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 115,
+    "current_case_index": 120,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::gpt4_2f91af09"
+    "current_case_id": "longmemeval_oracle::60bf93ed_abs"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,20 +4892,20 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 115,
-        "rows_successful": 115,
+        "rows_recorded": 120,
+        "rows_successful": 120,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 1.0,
-        "doc_recall_all": 0.7043478260869566,
-        "ndcg_at_10": 0.9090918112326648,
-        "exact_match": 0.20869565217391303,
-        "token_f1": 0.24742286527850577,
-        "avg_total_sec": 16.246972320459623,
+        "doc_recall_any": 0.9916666666666667,
+        "doc_recall_all": 0.6916666666666667,
+        "ndcg_at_10": 0.9008346444010856,
+        "exact_match": 0.20833333333333334,
+        "token_f1": 0.24266913478079025,
+        "avg_total_sec": 16.27033133843215,
         "p50_total_sec": 15.508878916036338,
-        "p95_total_sec": 20.577723916620016,
-        "avg_storage_bytes": 7200887.252173913,
-        "p95_storage_bytes": 9342205.0,
+        "p95_total_sec": 20.597534557338804,
+        "avg_storage_bytes": 7216870.958333333,
+        "p95_storage_bytes": 9404053.0,
         "categories": {
           "temporal-reasoning": {
             "expected_total": 60,
@@ -5062,24 +5062,37 @@
             ]
           },
           "multi-session": {
-            "expected_total": 55,
-            "rows_recorded": 55,
-            "rows_successful": 55,
+            "expected_total": 60,
+            "rows_recorded": 60,
+            "rows_successful": 60,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.5818181818181818,
-            "ndcg_at_10": 0.8876364615541418,
-            "exact_match": 0.09090909090909091,
-            "token_f1": 0.12445376845376846,
-            "avg_total_sec": 17.434675930482758,
+            "doc_recall_any": 0.9833333333333333,
+            "doc_recall_all": 0.5666666666666667,
+            "ndcg_at_10": 0.8729100736975273,
+            "exact_match": 0.1,
+            "token_f1": 0.1251937321937322,
+            "avg_total_sec": 17.38241866559256,
             "p50_total_sec": 17.402482345234603,
             "p95_total_sec": 20.616407494992018,
-            "avg_storage_bytes": 7810284.2727272725,
-            "p95_storage_bytes": 9656743.0,
+            "avg_storage_bytes": 7791468.6,
+            "p95_storage_bytes": 9717571.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_oracle::60bf93ed_abs",
+                "category": "multi-session",
+                "query": "How many days did it take for my iPad case to arrive after I bought it?",
+                "gold": "The information provided is not enough. You did not mention buying an iPad case.",
+                "prediction": "",
+                "expected_doc_ids": [
+                  "answer_e0956e0a_abs_2",
+                  "answer_e0956e0a_abs_1"
+                ],
+                "retrieved_doc_ids": []
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_oracle::0a995998",
@@ -5226,7 +5239,20 @@
           }
         },
         "sample_errors": [],
-        "sample_misses": [],
+        "sample_misses": [
+          {
+            "case_id": "longmemeval_oracle::60bf93ed_abs",
+            "category": "multi-session",
+            "query": "How many days did it take for my iPad case to arrive after I bought it?",
+            "gold": "The information provided is not enough. You did not mention buying an iPad case.",
+            "prediction": "",
+            "expected_doc_ids": [
+              "answer_e0956e0a_abs_2",
+              "answer_e0956e0a_abs_1"
+            ],
+            "retrieved_doc_ids": []
+          }
+        ],
         "sample_successes": [
           {
             "case_id": "longmemeval_oracle::gpt4_2655b836",
@@ -5364,19 +5390,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 115,
-        "rows_successful": 115,
+        "rows_recorded": 119,
+        "rows_successful": 119,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.991304347826087,
-        "ndcg_at_10": 0.9990627030041347,
-        "exact_match": 0.25217391304347825,
-        "token_f1": 0.29996367780554634,
-        "avg_total_sec": 9.676220513762825,
-        "p50_total_sec": 8.199953679926693,
-        "p95_total_sec": 16.771190017927438,
-        "avg_storage_bytes": 1476334.3217391304,
+        "doc_recall_all": 0.9915966386554622,
+        "ndcg_at_10": 0.9990942087855084,
+        "exact_match": 0.24369747899159663,
+        "token_f1": 0.29037518047940836,
+        "avg_total_sec": 9.747960923396114,
+        "p50_total_sec": 8.200994677841663,
+        "p95_total_sec": 17.086593996267766,
+        "avg_storage_bytes": 1484969.87394958,
         "p95_storage_bytes": 2407781.0,
         "categories": {
           "temporal-reasoning": {
@@ -5538,20 +5564,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 55,
-            "rows_recorded": 55,
-            "rows_successful": 55,
+            "expected_total": 59,
+            "rows_recorded": 59,
+            "rows_successful": 59,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.09090909090909091,
-            "token_f1": 0.14395364301320415,
-            "avg_total_sec": 11.685283315943723,
+            "exact_match": 0.0847457627118644,
+            "token_f1": 0.13519108296844054,
+            "avg_total_sec": 11.693772426751142,
             "p50_total_sec": 11.38875529030338,
             "p95_total_sec": 17.992724243551493,
-            "avg_storage_bytes": 1726766.0909090908,
+            "avg_storage_bytes": 1727205.1355932204,
             "p95_storage_bytes": 2494301.0,
             "categories": {},
             "sample_errors": [],
@@ -5940,19 +5966,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2101,
-      "rows_successful": 2101,
+      "rows_recorded": 2106,
+      "rows_successful": 2106,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7110899571632556,
-      "doc_recall_all": 0.5911470728224655,
-      "ndcg_at_10": 0.479321309782087,
-      "exact_match": 0.0447405997144217,
-      "token_f1": 0.09263951237387544,
-      "avg_total_sec": 6.909982631137255,
-      "p50_total_sec": 6.359550737310201,
-      "p95_total_sec": 14.376721256878227,
-      "avg_storage_bytes": 20401613.77486911,
+      "doc_recall_any": 0.7113010446343779,
+      "doc_recall_all": 0.5906932573599241,
+      "ndcg_at_10": 0.47987116376473815,
+      "exact_match": 0.04510921177587844,
+      "token_f1": 0.0927361263837507,
+      "avg_total_sec": 6.93348122116732,
+      "p50_total_sec": 6.359749913215637,
+      "p95_total_sec": 14.501103996299207,
+      "avg_storage_bytes": 20371183.771130104,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -8089,24 +8115,37 @@
           ]
         },
         "multi-session": {
-          "expected_total": 55,
-          "rows_recorded": 55,
-          "rows_successful": 55,
+          "expected_total": 60,
+          "rows_recorded": 60,
+          "rows_successful": 60,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 0.5818181818181818,
-          "ndcg_at_10": 0.8876364615541418,
-          "exact_match": 0.09090909090909091,
-          "token_f1": 0.12445376845376846,
-          "avg_total_sec": 17.434675930482758,
+          "doc_recall_any": 0.9833333333333333,
+          "doc_recall_all": 0.5666666666666667,
+          "ndcg_at_10": 0.8729100736975273,
+          "exact_match": 0.1,
+          "token_f1": 0.1251937321937322,
+          "avg_total_sec": 17.38241866559256,
           "p50_total_sec": 17.402482345234603,
           "p95_total_sec": 20.616407494992018,
-          "avg_storage_bytes": 7810284.2727272725,
-          "p95_storage_bytes": 9656743.0,
+          "avg_storage_bytes": 7791468.6,
+          "p95_storage_bytes": 9717571.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "longmemeval_oracle::60bf93ed_abs",
+              "category": "multi-session",
+              "query": "How many days did it take for my iPad case to arrive after I bought it?",
+              "gold": "The information provided is not enough. You did not mention buying an iPad case.",
+              "prediction": "",
+              "expected_doc_ids": [
+                "answer_e0956e0a_abs_2",
+                "answer_e0956e0a_abs_1"
+              ],
+              "retrieved_doc_ids": []
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::0a995998",
@@ -8633,19 +8672,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2101,
-      "rows_successful": 2101,
+      "rows_recorded": 2105,
+      "rows_successful": 2105,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6972870061875297,
-      "doc_recall_all": 0.5920990004759639,
-      "ndcg_at_10": 0.42113417947331494,
-      "exact_match": 0.04140885292717753,
-      "token_f1": 0.0830130915618832,
-      "avg_total_sec": 0.5885740143851134,
-      "p50_total_sec": 0.0635387129150331,
-      "p95_total_sec": 6.534025468397886,
-      "avg_storage_bytes": 12960195.960495003,
+      "doc_recall_any": 0.6978622327790974,
+      "doc_recall_all": 0.5928741092636579,
+      "ndcg_at_10": 0.4222341620301352,
+      "exact_match": 0.04133016627078385,
+      "token_f1": 0.08288329163939591,
+      "avg_total_sec": 0.6098983349285205,
+      "p50_total_sec": 0.06354199210181832,
+      "p95_total_sec": 6.6075346218422055,
+      "avg_storage_bytes": 12938862.081235154,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -10795,20 +10834,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 55,
-          "rows_recorded": 55,
-          "rows_successful": 55,
+          "expected_total": 59,
+          "rows_recorded": 59,
+          "rows_successful": 59,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.09090909090909091,
-          "token_f1": 0.14395364301320415,
-          "avg_total_sec": 11.685283315943723,
+          "exact_match": 0.0847457627118644,
+          "token_f1": 0.13519108296844054,
+          "avg_total_sec": 11.693772426751142,
           "p50_total_sec": 11.38875529030338,
           "p95_total_sec": 17.992724243551493,
-          "avg_storage_bytes": 1726766.0909090908,
+          "avg_storage_bytes": 1727205.1355932204,
           "p95_storage_bytes": 2494301.0,
           "categories": {},
           "sample_errors": [],
@@ -11345,11 +11384,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.013802950975725925,
-    "doc_recall_all_delta": 0.0009519276534983856,
-    "ndcg_at_10_delta": -0.05818713030877204,
-    "token_f1_delta": -0.009626420811992234,
-    "avg_storage_ratio_nova_over_stock": 0.6352534708043286,
-    "avg_latency_ratio_nova_over_stock": 0.08517735076972907
+    "doc_recall_any_delta": -0.013438811855280508,
+    "doc_recall_all_delta": 0.002180851903733849,
+    "ndcg_at_10_delta": -0.057637001734602955,
+    "token_f1_delta": -0.009852834744354791,
+    "avg_storage_ratio_nova_over_stock": 0.6351551400548463,
+    "avg_latency_ratio_nova_over_stock": 0.08796422972439207
   }
 }
