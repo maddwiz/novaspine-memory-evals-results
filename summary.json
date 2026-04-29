@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T08:29:33Z",
+  "generated_at": "2026-04-29T08:30:45Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T08:29:29Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-29T08:30:32Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_oracle",
-    "current_case_index": 240,
+    "current_case_index": 245,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_oracle::f523d9fe"
+    "current_case_id": "longmemeval_oracle::18dcd5a5"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,19 +4892,19 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 240,
-        "rows_successful": 240,
+        "rows_recorded": 245,
+        "rows_successful": 245,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9916666666666667,
-        "doc_recall_all": 0.8208333333333333,
-        "ndcg_at_10": 0.9375917701050619,
-        "exact_match": 0.175,
-        "token_f1": 0.21778529663940557,
-        "avg_total_sec": 15.240389624496068,
-        "p50_total_sec": 14.78986548492685,
+        "doc_recall_any": 0.9918367346938776,
+        "doc_recall_all": 0.8244897959183674,
+        "ndcg_at_10": 0.9388654074498566,
+        "exact_match": 0.17142857142857143,
+        "token_f1": 0.21574165913295915,
+        "avg_total_sec": 15.187891447905223,
+        "p50_total_sec": 14.774071476887912,
         "p95_total_sec": 18.79056058684364,
-        "avg_storage_bytes": 6639313.25,
+        "avg_storage_bytes": 6599571.967346938,
         "p95_storage_bytes": 8523411.0,
         "categories": {
           "temporal-reasoning": {
@@ -5545,21 +5545,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1,
-            "token_f1": 0.08869565217391304,
-            "avg_total_sec": 12.727009774371982,
+            "exact_match": 0.06666666666666667,
+            "token_f1": 0.0983461210571185,
+            "avg_total_sec": 12.707332840096205,
             "p50_total_sec": 12.68607222288847,
-            "p95_total_sec": 13.043641705065966,
-            "avg_storage_bytes": 4762332.7,
-            "p95_storage_bytes": 5097056.0,
+            "p95_total_sec": 12.793899515643716,
+            "avg_storage_bytes": 4738885.266666667,
+            "p95_storage_bytes": 5049007.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -5662,6 +5662,26 @@
                 "prediction": "always something new on Netflix",
                 "retrieved_doc_ids": [
                   "answer_sharegpt_m2xJfjo_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::0e5e2d1a",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+                "gold": "38 subjects",
+                "prediction": "needed to fully understand their potential benefits and limitations as a treatment for mental health disorders",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_113156"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::fea54f57",
+                "category": "single-session-assistant",
+                "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+                "gold": "Evolution",
+                "prediction": "you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_187684"
                 ]
               }
             ]
@@ -5830,19 +5850,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 240,
-        "rows_successful": 240,
+        "rows_recorded": 244,
+        "rows_successful": 244,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
-        "doc_recall_all": 0.9958333333333333,
-        "ndcg_at_10": 0.9995508785228145,
-        "exact_match": 0.20833333333333334,
-        "token_f1": 0.2606856120235383,
-        "avg_total_sec": 7.862510493960387,
-        "p50_total_sec": 7.196021591313183,
+        "doc_recall_all": 0.9959016393442623,
+        "ndcg_at_10": 0.9995582411699815,
+        "exact_match": 0.20491803278688525,
+        "token_f1": 0.25882287778592966,
+        "avg_total_sec": 7.7640625759863795,
+        "p50_total_sec": 7.155883832834661,
         "p95_total_sec": 14.02828250080347,
-        "avg_storage_bytes": 1249597.4666666666,
+        "avg_storage_bytes": 1237293.8196721312,
         "p95_storage_bytes": 2018373.0,
         "categories": {
           "temporal-reasoning": {
@@ -6468,21 +6488,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1,
-            "token_f1": 0.08936507936507936,
-            "avg_total_sec": 1.9146625145804137,
-            "p50_total_sec": 1.5685314140282571,
-            "p95_total_sec": 3.588344429153949,
-            "avg_storage_bytes": 507504.2,
-            "p95_storage_bytes": 697157.0,
+            "exact_match": 0.07142857142857142,
+            "token_f1": 0.10584900626917434,
+            "avg_total_sec": 1.8982410811419999,
+            "p50_total_sec": 1.674680673982948,
+            "p95_total_sec": 2.93022572575137,
+            "avg_storage_bytes": 505095.85714285716,
+            "p95_storage_bytes": 639597.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -6585,6 +6605,26 @@
                 "prediction": "you have any suggestions on how Netflix could improve its service or offerings to make it even better for its subscribers",
                 "retrieved_doc_ids": [
                   "answer_sharegpt_m2xJfjo_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::0e5e2d1a",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+                "gold": "38 subjects",
+                "prediction": "needed to fully understand their potential benefits and limitations as a treatment for mental health disorders",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_113156"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::fea54f57",
+                "category": "single-session-assistant",
+                "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+                "gold": "Evolution",
+                "prediction": "you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_187684"
                 ]
               }
             ]
@@ -6824,19 +6864,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2226,
-      "rows_successful": 2226,
+      "rows_recorded": 2231,
+      "rows_successful": 2231,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7264150943396226,
-      "doc_recall_all": 0.610062893081761,
-      "ndcg_at_10": 0.5065276452765604,
-      "exact_match": 0.050314465408805034,
-      "token_f1": 0.09813587474570597,
-      "avg_total_sec": 7.325770530568541,
-      "p50_total_sec": 6.363560939207673,
-      "p95_total_sec": 14.844156510662287,
-      "avg_storage_bytes": 19599786.02291105,
+      "doc_recall_any": 0.7270282384580905,
+      "doc_recall_all": 0.6109367996414165,
+      "ndcg_at_10": 0.5076335895946317,
+      "exact_match": 0.0502017032720753,
+      "token_f1": 0.09817960218648997,
+      "avg_total_sec": 7.33774320748691,
+      "p50_total_sec": 6.363609618041664,
+      "p95_total_sec": 14.831183827016503,
+      "avg_storage_bytes": 19566375.454504706,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -9456,21 +9496,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 15,
+          "rows_recorded": 15,
+          "rows_successful": 15,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.1,
-          "token_f1": 0.08869565217391304,
-          "avg_total_sec": 12.727009774371982,
+          "exact_match": 0.06666666666666667,
+          "token_f1": 0.0983461210571185,
+          "avg_total_sec": 12.707332840096205,
           "p50_total_sec": 12.68607222288847,
-          "p95_total_sec": 13.043641705065966,
-          "avg_storage_bytes": 4762332.7,
-          "p95_storage_bytes": 5097056.0,
+          "p95_total_sec": 12.793899515643716,
+          "avg_storage_bytes": 4738885.266666667,
+          "p95_storage_bytes": 5049007.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -9573,6 +9613,26 @@
               "prediction": "always something new on Netflix",
               "retrieved_doc_ids": [
                 "answer_sharegpt_m2xJfjo_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::0e5e2d1a",
+              "category": "single-session-assistant",
+              "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+              "gold": "38 subjects",
+              "prediction": "needed to fully understand their potential benefits and limitations as a treatment for mental health disorders",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_113156"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::fea54f57",
+              "category": "single-session-assistant",
+              "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+              "gold": "Evolution",
+              "prediction": "you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_187684"
               ]
             }
           ]
@@ -9959,19 +10019,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2226,
-      "rows_successful": 2226,
+      "rows_recorded": 2230,
+      "rows_successful": 2230,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7142857142857143,
-      "doc_recall_all": 0.6150044923629829,
-      "ndcg_at_10": 0.45364012177602636,
-      "exact_match": 0.04851752021563342,
-      "token_f1": 0.09096101945621203,
-      "avg_total_sec": 0.9033383484685046,
-      "p50_total_sec": 0.06465862365439534,
+      "doc_recall_any": 0.7147982062780269,
+      "doc_recall_all": 0.615695067264574,
+      "ndcg_at_10": 0.4546201394948137,
+      "exact_match": 0.0484304932735426,
+      "token_f1": 0.09106164332002045,
+      "avg_total_sec": 0.9050492886462219,
+      "p50_total_sec": 0.06469634408131242,
       "p95_total_sec": 7.3192922212183475,
-      "avg_storage_bytes": 12290879.001796946,
+      "avg_storage_bytes": 12269727.783856502,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -12585,21 +12645,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 10,
-          "rows_recorded": 10,
-          "rows_successful": 10,
+          "expected_total": 14,
+          "rows_recorded": 14,
+          "rows_successful": 14,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.1,
-          "token_f1": 0.08936507936507936,
-          "avg_total_sec": 1.9146625145804137,
-          "p50_total_sec": 1.5685314140282571,
-          "p95_total_sec": 3.588344429153949,
-          "avg_storage_bytes": 507504.2,
-          "p95_storage_bytes": 697157.0,
+          "exact_match": 0.07142857142857142,
+          "token_f1": 0.10584900626917434,
+          "avg_total_sec": 1.8982410811419999,
+          "p50_total_sec": 1.674680673982948,
+          "p95_total_sec": 2.93022572575137,
+          "avg_storage_bytes": 505095.85714285716,
+          "p95_storage_bytes": 639597.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -12702,6 +12762,26 @@
               "prediction": "you have any suggestions on how Netflix could improve its service or offerings to make it even better for its subscribers",
               "retrieved_doc_ids": [
                 "answer_sharegpt_m2xJfjo_0"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::0e5e2d1a",
+              "category": "single-session-assistant",
+              "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+              "gold": "38 subjects",
+              "prediction": "needed to fully understand their potential benefits and limitations as a treatment for mental health disorders",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_113156"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::fea54f57",
+              "category": "single-session-assistant",
+              "query": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and development as artists?",
+              "gold": "Evolution",
+              "prediction": "you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms of style, lyrics, and instrumentation",
+              "retrieved_doc_ids": [
+                "answer_ultrachat_187684"
               ]
             }
           ]
@@ -13089,11 +13169,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.01212938005390829,
-    "doc_recall_all_delta": 0.004941599281221953,
-    "ndcg_at_10_delta": -0.052887523500533995,
-    "token_f1_delta": -0.007174855289493937,
-    "avg_storage_ratio_nova_over_stock": 0.6270925094503378,
-    "avg_latency_ratio_nova_over_stock": 0.12330967025231104
+    "doc_recall_any_delta": -0.012230032180063577,
+    "doc_recall_all_delta": 0.004758267623157564,
+    "ndcg_at_10_delta": -0.05301345009981795,
+    "token_f1_delta": -0.007117958866469515,
+    "avg_storage_ratio_nova_over_stock": 0.6270823031269024,
+    "avg_latency_ratio_nova_over_stock": 0.1233416410270087
   }
 }
