@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T03:08:29Z",
+  "generated_at": "2026-04-29T03:08:30Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T03:08:29Z",
+    "updated_at": "2026-04-29T03:08:30Z",
     "current_system": "novaspine",
     "current_benchmark": "locomo",
-    "current_case_index": 175,
+    "current_case_index": 180,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0174"
+    "current_case_id": "locomo::conv-26::0179"
   },
   "benchmarks": {
     "locomo": {
@@ -2238,18 +2238,18 @@
       },
       "novaspine": {
         "expected_total": 1986,
-        "rows_recorded": 175,
-        "rows_successful": 175,
+        "rows_recorded": 180,
+        "rows_successful": 180,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.6571428571428571,
-        "doc_recall_all": 0.5657142857142857,
-        "ndcg_at_10": 0.3911157124350328,
-        "exact_match": 0.06285714285714286,
-        "token_f1": 0.11456651948103501,
-        "avg_total_sec": 0.06132352209516934,
-        "p50_total_sec": 0.06101528322324157,
-        "p95_total_sec": 0.08925668010488153,
+        "doc_recall_any": 0.6555555555555556,
+        "doc_recall_all": 0.5666666666666667,
+        "ndcg_at_10": 0.3886835124274263,
+        "exact_match": 0.06111111111111111,
+        "token_f1": 0.11138411616211737,
+        "avg_total_sec": 0.061613153904262516,
+        "p50_total_sec": 0.061379277147352695,
+        "p95_total_sec": 0.0894683632068336,
         "avg_storage_bytes": 10934689.0,
         "p95_storage_bytes": 10934689.0,
         "categories": {
@@ -3521,19 +3521,19 @@
             ]
           },
           "category_5": {
-            "expected_total": 23,
-            "rows_recorded": 23,
-            "rows_successful": 23,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6086956521739131,
-            "doc_recall_all": 0.6086956521739131,
-            "ndcg_at_10": 0.4626495890445924,
+            "doc_recall_any": 0.6071428571428571,
+            "doc_recall_all": 0.6071428571428571,
+            "ndcg_at_10": 0.4342401110297009,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 0.0625649432287268,
-            "p50_total_sec": 0.06041209911927581,
-            "p95_total_sec": 0.08925668010488153,
+            "avg_total_sec": 0.06420517965619053,
+            "p50_total_sec": 0.06235601240769029,
+            "p95_total_sec": 0.0931440400891006,
             "avg_storage_bytes": 10934689.0,
             "p95_storage_bytes": 10934689.0,
             "categories": {},
@@ -3690,6 +3690,40 @@
                   "conv-26:D16:7",
                   "conv-26:D11:8",
                   "conv-26:D12:7"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0176",
+                "category": "category_5",
+                "query": "How did Caroline feel while watching the meteor shower?",
+                "gold": "",
+                "prediction": "Yes, I did",
+                "expected_doc_ids": [
+                  "conv-26:D10:18"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D10:14",
+                  "conv-26:D8:19",
+                  "conv-26:D16:15",
+                  "conv-26:D16:7",
+                  "conv-26:D17:13"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0177",
+                "category": "category_5",
+                "query": "Why did Caroline choose to use colors and patterns in her pottery project?",
+                "gold": "",
+                "prediction": "Melanie, those bowls are amazing!",
+                "expected_doc_ids": [
+                  "conv-26:D12:6"
+                ],
+                "retrieved_doc_ids": [
+                  "conv-26:D16:9",
+                  "conv-26:D16:8",
+                  "conv-26:D5:6",
+                  "conv-26:D5:10",
+                  "conv-26:D5:4"
                 ]
               }
             ],
@@ -6492,18 +6526,18 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 175,
-      "rows_successful": 175,
+      "rows_recorded": 180,
+      "rows_successful": 180,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6571428571428571,
-      "doc_recall_all": 0.5657142857142857,
-      "ndcg_at_10": 0.3911157124350328,
-      "exact_match": 0.06285714285714286,
-      "token_f1": 0.11456651948103501,
-      "avg_total_sec": 0.06132352209516934,
-      "p50_total_sec": 0.06101528322324157,
-      "p95_total_sec": 0.08925668010488153,
+      "doc_recall_any": 0.6555555555555556,
+      "doc_recall_all": 0.5666666666666667,
+      "ndcg_at_10": 0.3886835124274263,
+      "exact_match": 0.06111111111111111,
+      "token_f1": 0.11138411616211737,
+      "avg_total_sec": 0.061613153904262516,
+      "p50_total_sec": 0.061379277147352695,
+      "p95_total_sec": 0.0894683632068336,
       "avg_storage_bytes": 10934689.0,
       "p95_storage_bytes": 10934689.0,
       "categories": {
@@ -7775,19 +7809,19 @@
           ]
         },
         "category_5": {
-          "expected_total": 23,
-          "rows_recorded": 23,
-          "rows_successful": 23,
+          "expected_total": 28,
+          "rows_recorded": 28,
+          "rows_successful": 28,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.6086956521739131,
-          "doc_recall_all": 0.6086956521739131,
-          "ndcg_at_10": 0.4626495890445924,
+          "doc_recall_any": 0.6071428571428571,
+          "doc_recall_all": 0.6071428571428571,
+          "ndcg_at_10": 0.4342401110297009,
           "exact_match": 0.0,
           "token_f1": 0.0,
-          "avg_total_sec": 0.0625649432287268,
-          "p50_total_sec": 0.06041209911927581,
-          "p95_total_sec": 0.08925668010488153,
+          "avg_total_sec": 0.06420517965619053,
+          "p50_total_sec": 0.06235601240769029,
+          "p95_total_sec": 0.0931440400891006,
           "avg_storage_bytes": 10934689.0,
           "p95_storage_bytes": 10934689.0,
           "categories": {},
@@ -7944,6 +7978,40 @@
                 "conv-26:D16:7",
                 "conv-26:D11:8",
                 "conv-26:D12:7"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0176",
+              "category": "category_5",
+              "query": "How did Caroline feel while watching the meteor shower?",
+              "gold": "",
+              "prediction": "Yes, I did",
+              "expected_doc_ids": [
+                "conv-26:D10:18"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D10:14",
+                "conv-26:D8:19",
+                "conv-26:D16:15",
+                "conv-26:D16:7",
+                "conv-26:D17:13"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0177",
+              "category": "category_5",
+              "query": "Why did Caroline choose to use colors and patterns in her pottery project?",
+              "gold": "",
+              "prediction": "Melanie, those bowls are amazing!",
+              "expected_doc_ids": [
+                "conv-26:D12:6"
+              ],
+              "retrieved_doc_ids": [
+                "conv-26:D16:9",
+                "conv-26:D16:8",
+                "conv-26:D5:6",
+                "conv-26:D5:10",
+                "conv-26:D5:4"
               ]
             }
           ],
@@ -8501,11 +8569,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.03632447954055995,
-    "doc_recall_all_delta": -0.03227566403445803,
-    "ndcg_at_10_delta": -0.07482545857346157,
-    "token_f1_delta": 0.0032832967306568456,
+    "doc_recall_any_delta": -0.03791178112786153,
+    "doc_recall_all_delta": -0.0313232830820771,
+    "ndcg_at_10_delta": -0.07725765858106803,
+    "token_f1_delta": 0.00010089341173920297,
     "avg_storage_ratio_nova_over_stock": 0.678350024671923,
-    "avg_latency_ratio_nova_over_stock": 0.009622733118961226
+    "avg_latency_ratio_nova_over_stock": 0.009668181415250212
   }
 }
