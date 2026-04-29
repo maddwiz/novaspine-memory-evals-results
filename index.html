@@ -234,7 +234,7 @@
       <div class="metric-card">
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>69.4%</strong></div>
+          <div><span>Stock</span><strong>69.5%</strong></div>
           <div><span>NovaSpine</span><strong>68.0%</strong></div>
         </div>
         <div class="delta bad">-0.015</div>
@@ -244,8 +244,8 @@
       <div class="metric-card">
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>58.5%</strong></div>
-          <div><span>NovaSpine</span><strong>56.9%</strong></div>
+          <div><span>Stock</span><strong>58.6%</strong></div>
+          <div><span>NovaSpine</span><strong>57.0%</strong></div>
         </div>
         <div class="delta bad">-0.016</div>
       </div>
@@ -254,8 +254,8 @@
       <div class="metric-card">
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>45.4%</strong></div>
-          <div><span>NovaSpine</span><strong>38.8%</strong></div>
+          <div><span>Stock</span><strong>45.6%</strong></div>
+          <div><span>NovaSpine</span><strong>38.9%</strong></div>
         </div>
         <div class="delta bad">-0.067</div>
       </div>
@@ -264,10 +264,10 @@
       <div class="metric-card">
         <div class="metric-label">Answer F1</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>8.4%</strong></div>
-          <div><span>NovaSpine</span><strong>7.0%</strong></div>
+          <div><span>Stock</span><strong>8.6%</strong></div>
+          <div><span>NovaSpine</span><strong>7.2%</strong></div>
         </div>
-        <div class="delta bad">-0.013</div>
+        <div class="delta bad">-0.014</div>
       </div>
     
     </section>
@@ -275,18 +275,18 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any -0.015, evidence-all -0.016, NDCG@10 -0.067, answer F1 -0.013.</p>
+        <p><b>Current delta:</b> evidence-any -0.015, evidence-all -0.016, NDCG@10 -0.067, answer F1 -0.014.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-29T06:54:54Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-04-29T06:54:52Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>1986 / 1986</strong></div>
-          <div class="pill"><span>Current</span><strong>locomo::conv-50::0203</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>1986 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>1986 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-29T06:56:43Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-04-29T06:56:27Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>5 / 500</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_oracle::0bb5a684</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>1991 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>1990 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -378,35 +378,43 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>0 / 500 failed 0</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0s</td>
-      <td>0.0 B</td>
+      <td>5 / 500 failed 0</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>91.4%</td>
+      <td>15.2s</td>
+      <td>6.4 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>0 / 500 failed 0</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0s</td>
-      <td>0.0 B</td>
+      <td>4 / 500 failed 0</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>89.3%</td>
+      <td>7.9s</td>
+      <td>1.2 MB</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
-        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr></table>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
+<tr><td>temporal-reasoning</td><td>5</td><td>100.0%</td><td>91.4%</td><td>4</td><td>100.0%</td><td>89.3%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> GPS system</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_2, answer_4be1b6b4_1</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which event did I attend first, the &#x27;Effective Time Management&#x27; workshop or the &#x27;Data Analysis using Python&#x27; webinar?</p><p><b>Gold:</b> &#x27;Data Analysis using Python&#x27; webinar</p><p><b>Pred:</b> Data Analysis using Python webinar</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_1c6b85ea_1, answer_1c6b85ea_2</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which vehicle did I take care of first in February, the bike or the car?</p><p><b>Gold:</b> bike</p><p><b>Pred:</b> bike</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_b535969f_2, answer_b535969f_1</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?</p><p><b>Gold:</b> Samsung Galaxy S22</p><p><b>Pred:</b> Samsung Galaxy S22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_5328c3c2_2, answer_5328c3c2_1</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How many days before the team meeting I was preparing for did I attend the workshop on &#x27;Effective Communication in the Workplace&#x27;?</p><p><b>Gold:</b> 7 days. 8 days (including the last day) is also acceptable.</p><p><b>Pred:</b> 7 days</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_e936197f_1, answer_e936197f_2</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> What was the first issue I had with my new car after its first service?</p><p><b>Gold:</b> GPS system not functioning correctly</p><p><b>Pred:</b> GPS system</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_4be1b6b4_3, answer_4be1b6b4_2, answer_4be1b6b4_1</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which event did I attend first, the &#x27;Effective Time Management&#x27; workshop or the &#x27;Data Analysis using Python&#x27; webinar?</p><p><b>Gold:</b> &#x27;Data Analysis using Python&#x27; webinar</p><p><b>Pred:</b> Data Analysis using Python webinar</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_1c6b85ea_1, answer_1c6b85ea_2</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which vehicle did I take care of first in February, the bike or the car?</p><p><b>Gold:</b> bike</p><p><b>Pred:</b> bike</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_b535969f_2, answer_b535969f_1</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?</p><p><b>Gold:</b> Samsung Galaxy S22</p><p><b>Pred:</b> Samsung Galaxy S22</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_5328c3c2_2, answer_5328c3c2_1</p></div></div></div>
       </details>
     </section>
     

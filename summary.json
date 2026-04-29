@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T06:54:54Z",
+  "generated_at": "2026-04-29T06:56:43Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T06:54:52Z",
-    "current_system": "novaspine",
-    "current_benchmark": "locomo",
-    "current_case_index": 1986,
-    "current_case_total": 1986,
-    "current_case_id": "locomo::conv-50::0203"
+    "updated_at": "2026-04-29T06:56:27Z",
+    "current_system": "stock",
+    "current_benchmark": "longmemeval_oracle",
+    "current_case_index": 5,
+    "current_case_total": 500,
+    "current_case_id": "longmemeval_oracle::0bb5a684"
   },
   "benchmarks": {
     "locomo": {
@@ -4892,45 +4892,295 @@
     "longmemeval_oracle": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 0,
-        "rows_successful": 0,
+        "rows_recorded": 5,
+        "rows_successful": 5,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.0,
-        "doc_recall_all": 0.0,
-        "ndcg_at_10": 0.0,
-        "exact_match": 0.0,
-        "token_f1": 0.0,
-        "avg_total_sec": 0.0,
-        "p50_total_sec": 0.0,
-        "p95_total_sec": 0.0,
-        "avg_storage_bytes": 0.0,
-        "p95_storage_bytes": 0.0,
-        "categories": {},
+        "doc_recall_any": 1.0,
+        "doc_recall_all": 1.0,
+        "ndcg_at_10": 1.0,
+        "exact_match": 1.0,
+        "token_f1": 0.9142857142857143,
+        "avg_total_sec": 15.191784363798797,
+        "p50_total_sec": 15.273434876929969,
+        "p95_total_sec": 16.03909382596612,
+        "avg_storage_bytes": 6663293.6,
+        "p95_storage_bytes": 7286263.0,
+        "categories": {
+          "temporal-reasoning": {
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 1.0,
+            "token_f1": 0.9142857142857143,
+            "avg_total_sec": 15.191784363798797,
+            "p50_total_sec": 15.273434876929969,
+            "p95_total_sec": 16.03909382596612,
+            "avg_storage_bytes": 6663293.6,
+            "p95_storage_bytes": 7286263.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::gpt4_2655b836",
+                "category": "temporal-reasoning",
+                "query": "What was the first issue I had with my new car after its first service?",
+                "gold": "GPS system not functioning correctly",
+                "prediction": "GPS system",
+                "retrieved_doc_ids": [
+                  "answer_4be1b6b4_3",
+                  "answer_4be1b6b4_2",
+                  "answer_4be1b6b4_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_2487a7cb",
+                "category": "temporal-reasoning",
+                "query": "Which event did I attend first, the 'Effective Time Management' workshop or the 'Data Analysis using Python' webinar?",
+                "gold": "'Data Analysis using Python' webinar",
+                "prediction": "Data Analysis using Python webinar",
+                "retrieved_doc_ids": [
+                  "answer_1c6b85ea_1",
+                  "answer_1c6b85ea_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_76048e76",
+                "category": "temporal-reasoning",
+                "query": "Which vehicle did I take care of first in February, the bike or the car?",
+                "gold": "bike",
+                "prediction": "bike",
+                "retrieved_doc_ids": [
+                  "answer_b535969f_2",
+                  "answer_b535969f_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_2312f94c",
+                "category": "temporal-reasoning",
+                "query": "Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?",
+                "gold": "Samsung Galaxy S22",
+                "prediction": "Samsung Galaxy S22",
+                "retrieved_doc_ids": [
+                  "answer_5328c3c2_2",
+                  "answer_5328c3c2_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::0bb5a684",
+                "category": "temporal-reasoning",
+                "query": "How many days before the team meeting I was preparing for did I attend the workshop on 'Effective Communication in the Workplace'?",
+                "gold": "7 days. 8 days (including the last day) is also acceptable.",
+                "prediction": "7 days",
+                "retrieved_doc_ids": [
+                  "answer_e936197f_1",
+                  "answer_e936197f_2"
+                ]
+              }
+            ]
+          }
+        },
         "sample_errors": [],
         "sample_misses": [],
-        "sample_successes": []
+        "sample_successes": [
+          {
+            "case_id": "longmemeval_oracle::gpt4_2655b836",
+            "category": "temporal-reasoning",
+            "query": "What was the first issue I had with my new car after its first service?",
+            "gold": "GPS system not functioning correctly",
+            "prediction": "GPS system",
+            "retrieved_doc_ids": [
+              "answer_4be1b6b4_3",
+              "answer_4be1b6b4_2",
+              "answer_4be1b6b4_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_2487a7cb",
+            "category": "temporal-reasoning",
+            "query": "Which event did I attend first, the 'Effective Time Management' workshop or the 'Data Analysis using Python' webinar?",
+            "gold": "'Data Analysis using Python' webinar",
+            "prediction": "Data Analysis using Python webinar",
+            "retrieved_doc_ids": [
+              "answer_1c6b85ea_1",
+              "answer_1c6b85ea_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_76048e76",
+            "category": "temporal-reasoning",
+            "query": "Which vehicle did I take care of first in February, the bike or the car?",
+            "gold": "bike",
+            "prediction": "bike",
+            "retrieved_doc_ids": [
+              "answer_b535969f_2",
+              "answer_b535969f_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_2312f94c",
+            "category": "temporal-reasoning",
+            "query": "Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?",
+            "gold": "Samsung Galaxy S22",
+            "prediction": "Samsung Galaxy S22",
+            "retrieved_doc_ids": [
+              "answer_5328c3c2_2",
+              "answer_5328c3c2_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::0bb5a684",
+            "category": "temporal-reasoning",
+            "query": "How many days before the team meeting I was preparing for did I attend the workshop on 'Effective Communication in the Workplace'?",
+            "gold": "7 days. 8 days (including the last day) is also acceptable.",
+            "prediction": "7 days",
+            "retrieved_doc_ids": [
+              "answer_e936197f_1",
+              "answer_e936197f_2"
+            ]
+          }
+        ]
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 0,
-        "rows_successful": 0,
+        "rows_recorded": 4,
+        "rows_successful": 4,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.0,
-        "doc_recall_all": 0.0,
-        "ndcg_at_10": 0.0,
-        "exact_match": 0.0,
-        "token_f1": 0.0,
-        "avg_total_sec": 0.0,
-        "p50_total_sec": 0.0,
-        "p95_total_sec": 0.0,
-        "avg_storage_bytes": 0.0,
-        "p95_storage_bytes": 0.0,
-        "categories": {},
+        "doc_recall_any": 1.0,
+        "doc_recall_all": 1.0,
+        "ndcg_at_10": 1.0,
+        "exact_match": 1.0,
+        "token_f1": 0.8928571428571429,
+        "avg_total_sec": 7.90107527631335,
+        "p50_total_sec": 7.721902242861688,
+        "p95_total_sec": 9.935251653194427,
+        "avg_storage_bytes": 1280704.0,
+        "p95_storage_bytes": 1558685.0,
+        "categories": {
+          "temporal-reasoning": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 1.0,
+            "token_f1": 0.8928571428571429,
+            "avg_total_sec": 7.90107527631335,
+            "p50_total_sec": 7.721902242861688,
+            "p95_total_sec": 9.935251653194427,
+            "avg_storage_bytes": 1280704.0,
+            "p95_storage_bytes": 1558685.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_oracle::gpt4_2655b836",
+                "category": "temporal-reasoning",
+                "query": "What was the first issue I had with my new car after its first service?",
+                "gold": "GPS system not functioning correctly",
+                "prediction": "GPS system",
+                "retrieved_doc_ids": [
+                  "answer_4be1b6b4_3",
+                  "answer_4be1b6b4_2",
+                  "answer_4be1b6b4_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_2487a7cb",
+                "category": "temporal-reasoning",
+                "query": "Which event did I attend first, the 'Effective Time Management' workshop or the 'Data Analysis using Python' webinar?",
+                "gold": "'Data Analysis using Python' webinar",
+                "prediction": "Data Analysis using Python webinar",
+                "retrieved_doc_ids": [
+                  "answer_1c6b85ea_1",
+                  "answer_1c6b85ea_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_76048e76",
+                "category": "temporal-reasoning",
+                "query": "Which vehicle did I take care of first in February, the bike or the car?",
+                "gold": "bike",
+                "prediction": "bike",
+                "retrieved_doc_ids": [
+                  "answer_b535969f_2",
+                  "answer_b535969f_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_oracle::gpt4_2312f94c",
+                "category": "temporal-reasoning",
+                "query": "Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?",
+                "gold": "Samsung Galaxy S22",
+                "prediction": "Samsung Galaxy S22",
+                "retrieved_doc_ids": [
+                  "answer_5328c3c2_2",
+                  "answer_5328c3c2_1"
+                ]
+              }
+            ]
+          }
+        },
         "sample_errors": [],
         "sample_misses": [],
-        "sample_successes": []
+        "sample_successes": [
+          {
+            "case_id": "longmemeval_oracle::gpt4_2655b836",
+            "category": "temporal-reasoning",
+            "query": "What was the first issue I had with my new car after its first service?",
+            "gold": "GPS system not functioning correctly",
+            "prediction": "GPS system",
+            "retrieved_doc_ids": [
+              "answer_4be1b6b4_3",
+              "answer_4be1b6b4_2",
+              "answer_4be1b6b4_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_2487a7cb",
+            "category": "temporal-reasoning",
+            "query": "Which event did I attend first, the 'Effective Time Management' workshop or the 'Data Analysis using Python' webinar?",
+            "gold": "'Data Analysis using Python' webinar",
+            "prediction": "Data Analysis using Python webinar",
+            "retrieved_doc_ids": [
+              "answer_1c6b85ea_1",
+              "answer_1c6b85ea_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_76048e76",
+            "category": "temporal-reasoning",
+            "query": "Which vehicle did I take care of first in February, the bike or the car?",
+            "gold": "bike",
+            "prediction": "bike",
+            "retrieved_doc_ids": [
+              "answer_b535969f_2",
+              "answer_b535969f_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_oracle::gpt4_2312f94c",
+            "category": "temporal-reasoning",
+            "query": "Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?",
+            "gold": "Samsung Galaxy S22",
+            "prediction": "Samsung Galaxy S22",
+            "retrieved_doc_ids": [
+              "answer_5328c3c2_2",
+              "answer_5328c3c2_1"
+            ]
+          }
+        ]
       }
     },
     "longmemeval_s": {
@@ -5025,19 +5275,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 1986,
-      "rows_successful": 1986,
+      "rows_recorded": 1991,
+      "rows_successful": 1991,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6943605236656596,
-      "doc_recall_all": 0.5845921450151057,
-      "ndcg_at_10": 0.45443530390755704,
-      "exact_match": 0.035246727089627394,
-      "token_f1": 0.08367673010598396,
-      "avg_total_sec": 6.36932109323591,
-      "p50_total_sec": 6.355625402648002,
-      "p95_total_sec": 6.450003468897194,
-      "avg_storage_bytes": 21166006.29758308,
+      "doc_recall_any": 0.695128076343546,
+      "doc_recall_all": 0.585635359116022,
+      "ndcg_at_10": 0.45580538099468015,
+      "exact_match": 0.03766951280763436,
+      "token_f1": 0.08576263915716359,
+      "avg_total_sec": 6.391476952780266,
+      "p50_total_sec": 6.35613916721195,
+      "p95_total_sec": 6.454210535157472,
+      "avg_storage_bytes": 21129585.62280261,
       "p95_storage_bytes": 23582040.0,
       "categories": {
         "category_2": {
@@ -7018,6 +7268,84 @@
               ]
             }
           ]
+        },
+        "temporal-reasoning": {
+          "expected_total": 5,
+          "rows_recorded": 5,
+          "rows_successful": 5,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 1.0,
+          "token_f1": 0.9142857142857143,
+          "avg_total_sec": 15.191784363798797,
+          "p50_total_sec": 15.273434876929969,
+          "p95_total_sec": 16.03909382596612,
+          "avg_storage_bytes": 6663293.6,
+          "p95_storage_bytes": 7286263.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::gpt4_2655b836",
+              "category": "temporal-reasoning",
+              "query": "What was the first issue I had with my new car after its first service?",
+              "gold": "GPS system not functioning correctly",
+              "prediction": "GPS system",
+              "retrieved_doc_ids": [
+                "answer_4be1b6b4_3",
+                "answer_4be1b6b4_2",
+                "answer_4be1b6b4_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_2487a7cb",
+              "category": "temporal-reasoning",
+              "query": "Which event did I attend first, the 'Effective Time Management' workshop or the 'Data Analysis using Python' webinar?",
+              "gold": "'Data Analysis using Python' webinar",
+              "prediction": "Data Analysis using Python webinar",
+              "retrieved_doc_ids": [
+                "answer_1c6b85ea_1",
+                "answer_1c6b85ea_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_76048e76",
+              "category": "temporal-reasoning",
+              "query": "Which vehicle did I take care of first in February, the bike or the car?",
+              "gold": "bike",
+              "prediction": "bike",
+              "retrieved_doc_ids": [
+                "answer_b535969f_2",
+                "answer_b535969f_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_2312f94c",
+              "category": "temporal-reasoning",
+              "query": "Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?",
+              "gold": "Samsung Galaxy S22",
+              "prediction": "Samsung Galaxy S22",
+              "retrieved_doc_ids": [
+                "answer_5328c3c2_2",
+                "answer_5328c3c2_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::0bb5a684",
+              "category": "temporal-reasoning",
+              "query": "How many days before the team meeting I was preparing for did I attend the workshop on 'Effective Communication in the Workplace'?",
+              "gold": "7 days. 8 days (including the last day) is also acceptable.",
+              "prediction": "7 days",
+              "retrieved_doc_ids": [
+                "answer_e936197f_1",
+                "answer_e936197f_2"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -7401,19 +7729,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 1986,
-      "rows_successful": 1986,
+      "rows_recorded": 1990,
+      "rows_successful": 1990,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.6797583081570997,
-      "doc_recall_all": 0.5689828801611279,
-      "ndcg_at_10": 0.3876690333474115,
-      "exact_match": 0.02920443101711984,
-      "token_f1": 0.07045049467466202,
-      "avg_total_sec": 0.06235077801631334,
-      "p50_total_sec": 0.06268907291814685,
-      "p95_total_sec": 0.08847235795110464,
-      "avg_storage_bytes": 13625172.842900302,
+      "doc_recall_any": 0.6804020100502512,
+      "doc_recall_all": 0.5698492462311557,
+      "ndcg_at_10": 0.38889984936078353,
+      "exact_match": 0.031155778894472363,
+      "token_f1": 0.07210357336447606,
+      "avg_total_sec": 0.07810700816364406,
+      "p50_total_sec": 0.06273878458887339,
+      "p95_total_sec": 0.08867450105026364,
+      "avg_storage_bytes": 13600359.840201005,
       "p95_storage_bytes": 15003365.0,
       "categories": {
         "category_2": {
@@ -9403,6 +9731,73 @@
               ]
             }
           ]
+        },
+        "temporal-reasoning": {
+          "expected_total": 4,
+          "rows_recorded": 4,
+          "rows_successful": 4,
+          "rows_failed": 0,
+          "complete": true,
+          "doc_recall_any": 1.0,
+          "doc_recall_all": 1.0,
+          "ndcg_at_10": 1.0,
+          "exact_match": 1.0,
+          "token_f1": 0.8928571428571429,
+          "avg_total_sec": 7.90107527631335,
+          "p50_total_sec": 7.721902242861688,
+          "p95_total_sec": 9.935251653194427,
+          "avg_storage_bytes": 1280704.0,
+          "p95_storage_bytes": 1558685.0,
+          "categories": {},
+          "sample_errors": [],
+          "sample_misses": [],
+          "sample_successes": [
+            {
+              "case_id": "longmemeval_oracle::gpt4_2655b836",
+              "category": "temporal-reasoning",
+              "query": "What was the first issue I had with my new car after its first service?",
+              "gold": "GPS system not functioning correctly",
+              "prediction": "GPS system",
+              "retrieved_doc_ids": [
+                "answer_4be1b6b4_3",
+                "answer_4be1b6b4_2",
+                "answer_4be1b6b4_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_2487a7cb",
+              "category": "temporal-reasoning",
+              "query": "Which event did I attend first, the 'Effective Time Management' workshop or the 'Data Analysis using Python' webinar?",
+              "gold": "'Data Analysis using Python' webinar",
+              "prediction": "Data Analysis using Python webinar",
+              "retrieved_doc_ids": [
+                "answer_1c6b85ea_1",
+                "answer_1c6b85ea_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_76048e76",
+              "category": "temporal-reasoning",
+              "query": "Which vehicle did I take care of first in February, the bike or the car?",
+              "gold": "bike",
+              "prediction": "bike",
+              "retrieved_doc_ids": [
+                "answer_b535969f_2",
+                "answer_b535969f_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_oracle::gpt4_2312f94c",
+              "category": "temporal-reasoning",
+              "query": "Which device did I got first, the Samsung Galaxy S22 or the Dell XPS 13?",
+              "gold": "Samsung Galaxy S22",
+              "prediction": "Samsung Galaxy S22",
+              "retrieved_doc_ids": [
+                "answer_5328c3c2_2",
+                "answer_5328c3c2_1"
+              ]
+            }
+          ]
         }
       },
       "sample_errors": [],
@@ -9787,11 +10182,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.01460221550855989,
-    "doc_recall_all_delta": -0.015609264853977844,
-    "ndcg_at_10_delta": -0.06676627056014556,
-    "token_f1_delta": -0.01322623543132194,
-    "avg_storage_ratio_nova_over_stock": 0.6437290366135884,
-    "avg_latency_ratio_nova_over_stock": 0.009789234535927008
+    "doc_recall_any_delta": -0.01472606629329476,
+    "doc_recall_all_delta": -0.01578611288486631,
+    "ndcg_at_10_delta": -0.06690553163389662,
+    "token_f1_delta": -0.013659065792687525,
+    "avg_storage_ratio_nova_over_stock": 0.6436642953150855,
+    "avg_latency_ratio_nova_over_stock": 0.012220494377229638
   }
 }
