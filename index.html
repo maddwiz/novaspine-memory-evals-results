@@ -234,40 +234,40 @@
       <div class="metric-card">
         <div class="metric-label">Evidence Recall Any</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>40.0%</strong></div>
+          <div><span>Stock</span><strong>50.0%</strong></div>
           <div><span>NovaSpine</span><strong>0.0%</strong></div>
         </div>
-        <div class="delta bad">-0.400</div>
+        <div class="delta bad">-0.500</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>20.0%</strong></div>
+          <div><span>Stock</span><strong>30.0%</strong></div>
           <div><span>NovaSpine</span><strong>0.0%</strong></div>
         </div>
-        <div class="delta bad">-0.200</div>
+        <div class="delta bad">-0.300</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>32.3%</strong></div>
+          <div><span>Stock</span><strong>35.0%</strong></div>
           <div><span>NovaSpine</span><strong>0.0%</strong></div>
         </div>
-        <div class="delta bad">-0.323</div>
+        <div class="delta bad">-0.350</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">Answer F1</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>40.0%</strong></div>
+          <div><span>Stock</span><strong>30.0%</strong></div>
           <div><span>NovaSpine</span><strong>0.0%</strong></div>
         </div>
-        <div class="delta bad">-0.400</div>
+        <div class="delta bad">-0.300</div>
       </div>
     
     </section>
@@ -275,17 +275,17 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any -0.400, evidence-all -0.200, NDCG@10 -0.323, answer F1 -0.400.</p>
+        <p><b>Current delta:</b> evidence-any -0.500, evidence-all -0.300, NDCG@10 -0.350, answer F1 -0.300.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-29T02:45:18Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-04-29T02:45:18Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>5 / 1986</strong></div>
-          <div class="pill"><span>Current</span><strong>locomo::conv-26::0004</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>5 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-29T02:45:51Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-04-29T02:45:51Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>10 / 1986</strong></div>
+          <div class="pill"><span>Current</span><strong>locomo::conv-26::0009</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>10 / 3486</strong></div>
           <div class="pill"><span>Nova Rows</span><strong>0 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
@@ -312,11 +312,11 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>5 / 1986 failed 0</td>
-      <td>40.0%</td>
-      <td>20.0%</td>
-      <td>32.3%</td>
-      <td>40.0%</td>
+      <td>10 / 1986 failed 0</td>
+      <td>50.0%</td>
+      <td>30.0%</td>
+      <td>35.0%</td>
+      <td>30.0%</td>
       <td>6.4s</td>
       <td>15.4 MB</td>
     </tr>
@@ -337,16 +337,21 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>category_1</td><td>2</td><td>0.0%</td><td>0.0%</td><td>0</td><td>0.0%</td><td>0.0%</td></tr>
-<tr><td>category_2</td><td>2</td><td>50.0%</td><td>100.0%</td><td>0</td><td>0.0%</td><td>0.0%</td></tr>
+<tr><td>category_1</td><td>3</td><td>33.3%</td><td>0.0%</td><td>0</td><td>0.0%</td><td>0.0%</td></tr>
+<tr><td>category_2</td><td>6</td><td>50.0%</td><td>50.0%</td><td>0</td><td>0.0%</td><td>0.0%</td></tr>
 <tr><td>category_3</td><td>1</td><td>100.0%</td><td>0.0%</td><td>0</td><td>0.0%</td><td>0.0%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
         <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> When did Melanie paint a sunrise?</p><p><b>Gold:</b> 2022</p><p><b>Pred:</b> 2022</p><p><b>Expected docs:</b> conv-26:D1:12</p><p><b>Retrieved:</b> conv-26:D1:14, conv-26:D14:7, conv-26:D17:13, conv-26:D17:16, conv-26:D12:6</p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What did Caroline research?</p><p><b>Gold:</b> Adoption agencies</p><p><b>Pred:</b> Being a mom is awesome</p><p><b>Expected docs:</b> conv-26:D2:8</p><p><b>Retrieved:</b> conv-26:D6:7, conv-26:D7:7, conv-26:D16:7, conv-26:D6:9, conv-26:D12:6</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What is Caroline&#x27;s identity?</p><p><b>Gold:</b> Transgender woman</p><p><b>Pred:</b> Thanks, Melanie</p><p><b>Expected docs:</b> conv-26:D1:5</p><p><b>Retrieved:</b> conv-26:D11:12, conv-26:D4:3, conv-26:D13:11, conv-26:D11:8, conv-26:D16:13</p></div></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> 7 May 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D16:5, conv-26:D4:13, conv-26:D9:6, conv-26:D11:6</p></div>
-<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What fields would Caroline be likely to pursue in her educaton?</p><p><b>Gold:</b> Psychology, counseling certification</p><p><b>Pred:</b> Gonna continue my edu and check out career options, which is pretty exciting!</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:9, conv-26:D6:7, conv-26:D11:14, conv-26:D13:11, conv-26:D7:7</p></div></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What is Caroline&#x27;s identity?</p><p><b>Gold:</b> Transgender woman</p><p><b>Pred:</b> Thanks, Melanie</p><p><b>Expected docs:</b> conv-26:D1:5</p><p><b>Retrieved:</b> conv-26:D11:12, conv-26:D4:3, conv-26:D13:11, conv-26:D11:8, conv-26:D16:13</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> When is Melanie planning on going camping?</p><p><b>Gold:</b> June 2023</p><p><b>Pred:</b> 2022</p><p><b>Expected docs:</b> conv-26:D2:7</p><p><b>Retrieved:</b> conv-26:D10:12, conv-26:D18:19, conv-26:D18:21, conv-26:D18:20, conv-26:D4:8</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> When did Caroline meet up with her friends, family, and mentors?</p><p><b>Gold:</b> The week before 9 June 2023</p><p><b>Pred:</b> t easy and acceptance wasn</p><p><b>Expected docs:</b> conv-26:D3:11</p><p><b>Retrieved:</b> conv-26:D8:19, conv-26:D16:15, conv-26:D8:23, conv-26:D4:15, conv-26:D6:11</p></div></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Caroline go to the LGBTQ support group?</p><p><b>Gold:</b> 7 May 2023</p><p><b>Pred:</b> 7 May 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:3, conv-26:D16:5, conv-26:D4:13, conv-26:D9:6, conv-26:D11:6</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What fields would Caroline be likely to pursue in her educaton?</p><p><b>Gold:</b> Psychology, counseling certification</p><p><b>Pred:</b> Gonna continue my edu and check out career options, which is pretty exciting!</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D1:9, conv-26:D6:7, conv-26:D11:14, conv-26:D13:11, conv-26:D7:7</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Melanie run a charity race?</p><p><b>Gold:</b> The sunday before 25 May 2023</p><p><b>Pred:</b> 20 May 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D2:2, conv-26:D14:11, conv-26:D2:1, conv-26:D19:4, conv-26:D10:6</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What is Caroline&#x27;s relationship status?</p><p><b>Gold:</b> Single</p><p><b>Pred:</b> Thanks, Melanie</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D16:15, conv-26:D3:13, conv-26:D17:5, conv-26:D8:16, conv-26:D4:3</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> When did Caroline give a speech at a school?</p><p><b>Gold:</b> The week before 9 June 2023</p><p><b>Pred:</b> 2 June 2023</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> conv-26:D3:1, conv-26:D15:23, conv-26:D15:5, conv-26:D3:7, conv-26:D11:2</p></div></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
       </details>
     </section>
     
