@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:50:14Z",
+  "generated_at": "2026-04-29T02:50:47Z",
   "manifest": {
     "generated_at": "2026-04-29T02:44:10Z",
     "top_k": 10,
@@ -117,44 +117,44 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T02:50:14Z",
+    "updated_at": "2026-04-29T02:50:47Z",
     "current_system": "stock",
     "current_benchmark": "locomo",
-    "current_case_index": 50,
+    "current_case_index": 55,
     "current_case_total": 1986,
-    "current_case_id": "locomo::conv-26::0049"
+    "current_case_id": "locomo::conv-26::0054"
   },
   "benchmarks": {
     "locomo": {
       "stock": {
         "expected_total": 1986,
-        "rows_recorded": 50,
-        "rows_successful": 50,
+        "rows_recorded": 55,
+        "rows_successful": 55,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.68,
-        "doc_recall_all": 0.42,
-        "ndcg_at_10": 0.38408116990430907,
-        "exact_match": 0.14,
-        "token_f1": 0.19106822939702198,
-        "avg_total_sec": 6.357864085659385,
-        "p50_total_sec": 6.348228274844587,
+        "doc_recall_any": 0.7090909090909091,
+        "doc_recall_all": 0.45454545454545453,
+        "ndcg_at_10": 0.39768368565642565,
+        "exact_match": 0.12727272727272726,
+        "token_f1": 0.189538610746604,
+        "avg_total_sec": 6.3631571290421896,
+        "p50_total_sec": 6.348380154930055,
         "p95_total_sec": 6.426942922640592,
         "avg_storage_bytes": 16119538.0,
         "p95_storage_bytes": 16119538.0,
         "categories": {
           "category_2": {
-            "expected_total": 24,
-            "rows_recorded": 24,
-            "rows_successful": 24,
+            "expected_total": 26,
+            "rows_recorded": 26,
+            "rows_successful": 26,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.75,
-            "doc_recall_all": 0.75,
-            "ndcg_at_10": 0.5475744045223653,
-            "exact_match": 0.2916666666666667,
-            "token_f1": 0.38105158730158734,
-            "avg_total_sec": 6.346669900231063,
+            "doc_recall_any": 0.7692307692307693,
+            "doc_recall_all": 0.7692307692307693,
+            "ndcg_at_10": 0.5681813639272394,
+            "exact_match": 0.2692307692307692,
+            "token_f1": 0.3805860805860806,
+            "avg_total_sec": 6.348256161149878,
             "p50_total_sec": 6.345868854317814,
             "p95_total_sec": 6.415752103086561,
             "avg_storage_bytes": 16119538.0,
@@ -437,17 +437,17 @@
             ]
           },
           "category_3": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7142857142857143,
-            "doc_recall_all": 0.14285714285714285,
-            "ndcg_at_10": 0.34454769149077646,
+            "doc_recall_any": 0.75,
+            "doc_recall_all": 0.25,
+            "ndcg_at_10": 0.34600512844293213,
             "exact_match": 0.0,
-            "token_f1": 0.011428571428571427,
-            "avg_total_sec": 6.35796678511958,
+            "token_f1": 0.009999999999999998,
+            "avg_total_sec": 6.3494200489949435,
             "p50_total_sec": 6.369504799135029,
             "p95_total_sec": 6.393631457816809,
             "avg_storage_bytes": 16119538.0,
@@ -556,23 +556,37 @@
                   "conv-26:D8:35",
                   "conv-26:D8:34"
                 ]
+              },
+              {
+                "case_id": "locomo::conv-26::0050",
+                "category": "category_3",
+                "query": "What would Caroline's political leaning likely be?",
+                "gold": "Liberal",
+                "prediction": "Thanks, Melanie",
+                "retrieved_doc_ids": [
+                  "conv-26:D13:15",
+                  "conv-26:D11:8",
+                  "conv-26:D14:15",
+                  "conv-26:D7:3",
+                  "conv-26:D6:7"
+                ]
               }
             ]
           },
           "category_1": {
-            "expected_total": 19,
-            "rows_recorded": 19,
-            "rows_successful": 19,
+            "expected_total": 21,
+            "rows_recorded": 21,
+            "rows_successful": 21,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5789473684210527,
-            "doc_recall_all": 0.10526315789473684,
-            "ndcg_at_10": 0.19212836559175003,
+            "doc_recall_any": 0.6190476190476191,
+            "doc_recall_all": 0.14285714285714285,
+            "ndcg_at_10": 0.2062783914977014,
             "exact_match": 0.0,
-            "token_f1": 0.017272282874368584,
-            "avg_total_sec": 6.371966272715087,
+            "token_f1": 0.02139930932500592,
+            "avg_total_sec": 6.3868391197840015,
             "p50_total_sec": 6.348228274844587,
-            "p95_total_sec": 6.469191602896899,
+            "p95_total_sec": 6.734352008905262,
             "avg_storage_bytes": 16119538.0,
             "p95_storage_bytes": 16119538.0,
             "categories": {},
@@ -875,6 +889,20 @@
                   "conv-26:D5:10",
                   "conv-26:D8:4",
                   "conv-26:D14:4"
+                ]
+              },
+              {
+                "case_id": "locomo::conv-26::0051",
+                "category": "category_1",
+                "query": "What has Melanie painted?",
+                "gold": "Horse, sunset, sunrise",
+                "prediction": "Thanks, Caroline!",
+                "retrieved_doc_ids": [
+                  "conv-26:D12:6",
+                  "conv-26:D13:13",
+                  "conv-26:D1:16",
+                  "conv-26:D17:13",
+                  "conv-26:D17:16"
                 ]
               }
             ]
@@ -1417,33 +1445,33 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 50,
-      "rows_successful": 50,
+      "rows_recorded": 55,
+      "rows_successful": 55,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.68,
-      "doc_recall_all": 0.42,
-      "ndcg_at_10": 0.38408116990430907,
-      "exact_match": 0.14,
-      "token_f1": 0.19106822939702198,
-      "avg_total_sec": 6.357864085659385,
-      "p50_total_sec": 6.348228274844587,
+      "doc_recall_any": 0.7090909090909091,
+      "doc_recall_all": 0.45454545454545453,
+      "ndcg_at_10": 0.39768368565642565,
+      "exact_match": 0.12727272727272726,
+      "token_f1": 0.189538610746604,
+      "avg_total_sec": 6.3631571290421896,
+      "p50_total_sec": 6.348380154930055,
       "p95_total_sec": 6.426942922640592,
       "avg_storage_bytes": 16119538.0,
       "p95_storage_bytes": 16119538.0,
       "categories": {
         "category_2": {
-          "expected_total": 24,
-          "rows_recorded": 24,
-          "rows_successful": 24,
+          "expected_total": 26,
+          "rows_recorded": 26,
+          "rows_successful": 26,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.75,
-          "doc_recall_all": 0.75,
-          "ndcg_at_10": 0.5475744045223653,
-          "exact_match": 0.2916666666666667,
-          "token_f1": 0.38105158730158734,
-          "avg_total_sec": 6.346669900231063,
+          "doc_recall_any": 0.7692307692307693,
+          "doc_recall_all": 0.7692307692307693,
+          "ndcg_at_10": 0.5681813639272394,
+          "exact_match": 0.2692307692307692,
+          "token_f1": 0.3805860805860806,
+          "avg_total_sec": 6.348256161149878,
           "p50_total_sec": 6.345868854317814,
           "p95_total_sec": 6.415752103086561,
           "avg_storage_bytes": 16119538.0,
@@ -1726,17 +1754,17 @@
           ]
         },
         "category_3": {
-          "expected_total": 7,
-          "rows_recorded": 7,
-          "rows_successful": 7,
+          "expected_total": 8,
+          "rows_recorded": 8,
+          "rows_successful": 8,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.7142857142857143,
-          "doc_recall_all": 0.14285714285714285,
-          "ndcg_at_10": 0.34454769149077646,
+          "doc_recall_any": 0.75,
+          "doc_recall_all": 0.25,
+          "ndcg_at_10": 0.34600512844293213,
           "exact_match": 0.0,
-          "token_f1": 0.011428571428571427,
-          "avg_total_sec": 6.35796678511958,
+          "token_f1": 0.009999999999999998,
+          "avg_total_sec": 6.3494200489949435,
           "p50_total_sec": 6.369504799135029,
           "p95_total_sec": 6.393631457816809,
           "avg_storage_bytes": 16119538.0,
@@ -1845,23 +1873,37 @@
                 "conv-26:D8:35",
                 "conv-26:D8:34"
               ]
+            },
+            {
+              "case_id": "locomo::conv-26::0050",
+              "category": "category_3",
+              "query": "What would Caroline's political leaning likely be?",
+              "gold": "Liberal",
+              "prediction": "Thanks, Melanie",
+              "retrieved_doc_ids": [
+                "conv-26:D13:15",
+                "conv-26:D11:8",
+                "conv-26:D14:15",
+                "conv-26:D7:3",
+                "conv-26:D6:7"
+              ]
             }
           ]
         },
         "category_1": {
-          "expected_total": 19,
-          "rows_recorded": 19,
-          "rows_successful": 19,
+          "expected_total": 21,
+          "rows_recorded": 21,
+          "rows_successful": 21,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.5789473684210527,
-          "doc_recall_all": 0.10526315789473684,
-          "ndcg_at_10": 0.19212836559175003,
+          "doc_recall_any": 0.6190476190476191,
+          "doc_recall_all": 0.14285714285714285,
+          "ndcg_at_10": 0.2062783914977014,
           "exact_match": 0.0,
-          "token_f1": 0.017272282874368584,
-          "avg_total_sec": 6.371966272715087,
+          "token_f1": 0.02139930932500592,
+          "avg_total_sec": 6.3868391197840015,
           "p50_total_sec": 6.348228274844587,
-          "p95_total_sec": 6.469191602896899,
+          "p95_total_sec": 6.734352008905262,
           "avg_storage_bytes": 16119538.0,
           "p95_storage_bytes": 16119538.0,
           "categories": {},
@@ -2164,6 +2206,20 @@
                 "conv-26:D5:10",
                 "conv-26:D8:4",
                 "conv-26:D14:4"
+              ]
+            },
+            {
+              "case_id": "locomo::conv-26::0051",
+              "category": "category_1",
+              "query": "What has Melanie painted?",
+              "gold": "Horse, sunset, sunrise",
+              "prediction": "Thanks, Caroline!",
+              "retrieved_doc_ids": [
+                "conv-26:D12:6",
+                "conv-26:D13:13",
+                "conv-26:D1:16",
+                "conv-26:D17:13",
+                "conv-26:D17:16"
               ]
             }
           ]
@@ -2571,10 +2627,10 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": -0.68,
-    "doc_recall_all_delta": -0.42,
-    "ndcg_at_10_delta": -0.38408116990430907,
-    "token_f1_delta": -0.19106822939702198,
+    "doc_recall_any_delta": -0.7090909090909091,
+    "doc_recall_all_delta": -0.45454545454545453,
+    "ndcg_at_10_delta": -0.39768368565642565,
+    "token_f1_delta": -0.189538610746604,
     "avg_storage_ratio_nova_over_stock": 0.0,
     "avg_latency_ratio_nova_over_stock": 0.0
   }
