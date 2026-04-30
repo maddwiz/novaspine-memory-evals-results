@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T17:03:34Z",
+  "generated_at": "2026-04-30T17:18:50Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T17:01:35Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T17:17:28Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 370,
+    "current_case_index": 375,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::852ce960"
+    "current_case_id": "longmemeval_s::ce6d2d27"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,20 +7226,20 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 370,
-        "rows_successful": 370,
+        "rows_recorded": 375,
+        "rows_successful": 375,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9621621621621622,
-        "doc_recall_all": 0.7783783783783784,
-        "ndcg_at_10": 0.8625169670698092,
-        "exact_match": 0.14324324324324325,
-        "token_f1": 0.18763508282422867,
-        "avg_total_sec": 80.47290725374872,
-        "p50_total_sec": 80.22612650273368,
-        "p95_total_sec": 84.82394488807768,
-        "avg_storage_bytes": 44758384.12432432,
-        "p95_storage_bytes": 45831607.0,
+        "doc_recall_any": 0.9626666666666667,
+        "doc_recall_all": 0.776,
+        "ndcg_at_10": 0.8622868592036275,
+        "exact_match": 0.14666666666666667,
+        "token_f1": 0.18913328171990562,
+        "avg_total_sec": 80.49175384057686,
+        "p50_total_sec": 80.26864096708596,
+        "p95_total_sec": 84.68705957988277,
+        "avg_storage_bytes": 44770832.024,
+        "p95_storage_bytes": 45892689.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -8104,21 +8104,21 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.1488095238095238,
-            "avg_total_sec": 78.67386314528994,
-            "p50_total_sec": 79.13568404782563,
-            "p95_total_sec": 82.55863633006811,
-            "avg_storage_bytes": 43806094.5,
-            "p95_storage_bytes": 44769063.0,
+            "doc_recall_all": 0.7777777777777778,
+            "ndcg_at_10": 0.9140327095034352,
+            "exact_match": 0.2222222222222222,
+            "token_f1": 0.23280423280423282,
+            "avg_total_sec": 80.45860654560641,
+            "p50_total_sec": 80.63470961013809,
+            "p95_total_sec": 84.4188945600763,
+            "avg_storage_bytes": 44853806.777777776,
+            "p95_storage_bytes": 47177544.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -8166,6 +8166,62 @@
                 "retrieved_doc_ids": [
                   "answer_3a6f1e82_1",
                   "answer_3a6f1e82_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::945e3d21",
+                "category": "knowledge-update",
+                "query": "How often do I attend yoga classes to help with my anxiety?",
+                "gold": "Three times a week.",
+                "prediction": "an excellent way to reduce stress and improve focus",
+                "retrieved_doc_ids": [
+                  "answer_6a4f8626_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::d7c942c3",
+                "category": "knowledge-update",
+                "query": "Is my mom using the same grocery list method as me?",
+                "gold": "Yes.",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_eecb10d9_2",
+                  "answer_eecb10d9_1",
+                  "b2243528_1",
+                  "e5b72a5d_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::71315a70",
+                "category": "knowledge-update",
+                "query": "How many hours have I spent on my abstract ocean sculpture?",
+                "gold": "10-12 hours",
+                "prediction": "10",
+                "retrieved_doc_ids": [
+                  "answer_c44b9df4_2",
+                  "answer_c44b9df4_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::89941a93",
+                "category": "knowledge-update",
+                "query": "How many bikes do I currently own?",
+                "gold": "4",
+                "prediction": "3",
+                "retrieved_doc_ids": [
+                  "answer_e1403127_1",
+                  "answer_e1403127_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::ce6d2d27",
+                "category": "knowledge-update",
+                "query": "What day of the week do I take a cocktail-making class?",
+                "gold": "Friday",
+                "prediction": "so",
+                "retrieved_doc_ids": [
+                  "answer_73540165_2",
+                  "0e250059_1"
                 ]
               }
             ]
@@ -8503,20 +8559,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 370,
-        "rows_successful": 370,
+        "rows_recorded": 374,
+        "rows_successful": 374,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.981081081081081,
-        "doc_recall_all": 0.9324324324324325,
-        "ndcg_at_10": 0.9221842821283981,
-        "exact_match": 0.14594594594594595,
-        "token_f1": 0.18996896761411064,
-        "avg_total_sec": 124.02838514693761,
-        "p50_total_sec": 123.49121336871758,
-        "p95_total_sec": 131.5666729649529,
-        "avg_storage_bytes": 15112347.24864865,
-        "p95_storage_bytes": 15744693.0,
+        "doc_recall_any": 0.9812834224598931,
+        "doc_recall_all": 0.9331550802139037,
+        "ndcg_at_10": 0.923016535795474,
+        "exact_match": 0.1497326203208556,
+        "token_f1": 0.19318196919454386,
+        "avg_total_sec": 124.05170262166807,
+        "p50_total_sec": 123.55704949097708,
+        "p95_total_sec": 131.52389213815331,
+        "avg_storage_bytes": 15116833.181818182,
+        "p95_storage_bytes": 15736933.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -9371,21 +9427,21 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 119.16533424705267,
-            "p50_total_sec": 119.13391338009387,
-            "p95_total_sec": 125.30165722128004,
-            "avg_storage_bytes": 14625664.0,
-            "p95_storage_bytes": 15264633.0,
+            "exact_match": 0.25,
+            "token_f1": 0.24519230769230768,
+            "avg_total_sec": 122.68695164064411,
+            "p50_total_sec": 125.30165722128004,
+            "p95_total_sec": 128.5656378478743,
+            "avg_storage_bytes": 15078723.0,
+            "p95_storage_bytes": 15724753.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -9444,6 +9500,58 @@
                   "0840765f_2",
                   "a76e7e3c_1",
                   "bfe8bb0e"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::945e3d21",
+                "category": "knowledge-update",
+                "query": "How often do I attend yoga classes to help with my anxiety?",
+                "gold": "Three times a week.",
+                "prediction": "three times a week - it really helps me clear my head",
+                "retrieved_doc_ids": [
+                  "answer_6a4f8626_1",
+                  "answer_6a4f8626_2",
+                  "9bbd38a6",
+                  "9418c255",
+                  "ultrachat_518638"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::d7c942c3",
+                "category": "knowledge-update",
+                "query": "Is my mom using the same grocery list method as me?",
+                "gold": "Yes.",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_eecb10d9_2",
+                  "answer_eecb10d9_1",
+                  "b2243528_1",
+                  "e5b72a5d_3",
+                  "4f435d20_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::71315a70",
+                "category": "knowledge-update",
+                "query": "How many hours have I spent on my abstract ocean sculpture?",
+                "gold": "10-12 hours",
+                "prediction": "10",
+                "retrieved_doc_ids": [
+                  "answer_c44b9df4_2",
+                  "answer_c44b9df4_1",
+                  "a08fbe88_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::89941a93",
+                "category": "knowledge-update",
+                "query": "How many bikes do I currently own?",
+                "gold": "4",
+                "prediction": "3",
+                "retrieved_doc_ids": [
+                  "answer_e1403127_1",
+                  "answer_e1403127_2",
+                  "ultrachat_22305"
                 ]
               }
             ]
@@ -9779,20 +9887,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2856,
-      "rows_successful": 2856,
+      "rows_recorded": 2861,
+      "rows_successful": 2861,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7794117647058824,
-      "doc_recall_all": 0.6572128851540616,
-      "ndcg_at_10": 0.5926704160950808,
-      "exact_match": 0.06757703081232493,
-      "token_f1": 0.11400698737022778,
-      "avg_total_sec": 17.408705815007316,
-      "p50_total_sec": 6.381074616219848,
-      "p95_total_sec": 80.89159070886672,
-      "avg_storage_bytes": 21611688.414565828,
-      "p95_storage_bytes": 44964375.0,
+      "doc_recall_any": 0.7797972736805313,
+      "doc_recall_all": 0.6571128975882559,
+      "ndcg_at_10": 0.5931118499661242,
+      "exact_match": 0.06815798671793079,
+      "token_f1": 0.11433203632623927,
+      "avg_total_sec": 17.521389658857114,
+      "p50_total_sec": 6.381208990700543,
+      "p95_total_sec": 80.89695877116174,
+      "avg_storage_bytes": 21653772.105907027,
+      "p95_storage_bytes": 44989901.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -12299,21 +12407,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 82,
-          "rows_recorded": 82,
-          "rows_successful": 82,
+          "expected_total": 87,
+          "rows_recorded": 87,
+          "rows_successful": 87,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9512195121951219,
-          "ndcg_at_10": 0.9811291313544127,
-          "exact_match": 0.1951219512195122,
-          "token_f1": 0.2288785299701901,
-          "avg_total_sec": 17.752563181514965,
-          "p50_total_sec": 14.644105145242065,
-          "p95_total_sec": 16.267322883941233,
-          "avg_storage_bytes": 8184747.463414635,
-          "p95_storage_bytes": 7249024.0,
+          "doc_recall_all": 0.9310344827586207,
+          "ndcg_at_10": 0.9733204960527901,
+          "exact_match": 0.20689655172413793,
+          "token_f1": 0.23296597077650102,
+          "avg_total_sec": 21.43841594498305,
+          "p50_total_sec": 14.67469384893775,
+          "p95_total_sec": 80.63470961013809,
+          "avg_storage_bytes": 10340335.344827587,
+          "p95_storage_bytes": 44769063.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -13383,20 +13491,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2856,
-      "rows_successful": 2856,
+      "rows_recorded": 2860,
+      "rows_successful": 2860,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8189775910364145,
-      "doc_recall_all": 0.738795518207283,
-      "ndcg_at_10": 0.6518792638205625,
-      "exact_match": 0.06967787114845939,
-      "token_f1": 0.11650252976414195,
-      "avg_total_sec": 17.267923491743637,
-      "p50_total_sec": 0.07336810603737831,
-      "p95_total_sec": 124.52245854213834,
-      "avg_storage_bytes": 11675644.215686275,
-      "p95_storage_bytes": 15203625.0,
+      "doc_recall_any": 0.8192307692307692,
+      "doc_recall_all": 0.7391608391608392,
+      "ndcg_at_10": 0.6523661459690652,
+      "exact_match": 0.07027972027972028,
+      "token_f1": 0.11702544177200275,
+      "avg_total_sec": 17.420288030963906,
+      "p50_total_sec": 0.07344536436721683,
+      "p95_total_sec": 124.60744504397735,
+      "avg_storage_bytes": 11681037.415384615,
+      "p95_storage_bytes": 15215661.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15762,21 +15870,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 82,
-          "rows_recorded": 82,
-          "rows_successful": 82,
+          "expected_total": 86,
+          "rows_recorded": 86,
+          "rows_successful": 86,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.24390243902439024,
-          "token_f1": 0.2746996023011593,
-          "avg_total_sec": 12.422316026226504,
-          "p50_total_sec": 6.979829072020948,
-          "p95_total_sec": 9.974820221308619,
-          "avg_storage_bytes": 1789811.6829268292,
-          "p95_storage_bytes": 1488873.0,
+          "exact_match": 0.2558139534883721,
+          "token_f1": 0.2847314633748084,
+          "avg_total_sec": 17.714699887064135,
+          "p50_total_sec": 7.040886870585382,
+          "p95_total_sec": 124.60744504397735,
+          "avg_storage_bytes": 2428973.093023256,
+          "p95_storage_bytes": 15264633.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -16794,11 +16902,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03956582633053218,
-    "doc_recall_all_delta": 0.08158263305322133,
-    "ndcg_at_10_delta": 0.05920884772548174,
-    "token_f1_delta": 0.0024955423939141685,
-    "avg_storage_ratio_nova_over_stock": 0.5402467401768172,
-    "avg_latency_ratio_nova_over_stock": 0.9919131080299883
+    "doc_recall_any_delta": 0.039433495550237896,
+    "doc_recall_all_delta": 0.08204794157258333,
+    "ndcg_at_10_delta": 0.059254296002940965,
+    "token_f1_delta": 0.0026934054457634776,
+    "avg_storage_ratio_nova_over_stock": 0.5394458461211058,
+    "avg_latency_ratio_nova_over_stock": 0.9942298168203741
   }
 }
