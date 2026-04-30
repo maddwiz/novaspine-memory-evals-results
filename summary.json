@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T21:36:33Z",
+  "generated_at": "2026-04-30T21:51:44Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T21:34:32Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T21:50:23Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 450,
+    "current_case_index": 455,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::6ae235be"
+    "current_case_id": "longmemeval_s::0e5e2d1a"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,20 +7226,20 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 450,
-        "rows_successful": 450,
+        "rows_recorded": 455,
+        "rows_successful": 455,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9688888888888889,
-        "doc_recall_all": 0.7977777777777778,
-        "ndcg_at_10": 0.8765478636782328,
-        "exact_match": 0.15555555555555556,
-        "token_f1": 0.19443169408565564,
-        "avg_total_sec": 80.43264186269086,
-        "p50_total_sec": 80.22612650273368,
+        "doc_recall_any": 0.9692307692307692,
+        "doc_recall_all": 0.8,
+        "ndcg_at_10": 0.8779044805608895,
+        "exact_match": 0.15384615384615385,
+        "token_f1": 0.19257866944309793,
+        "avg_total_sec": 80.44658369148293,
+        "p50_total_sec": 80.25903691211715,
         "p95_total_sec": 84.5976999620907,
-        "avg_storage_bytes": 44745705.846666664,
-        "p95_storage_bytes": 45924848.0,
+        "avg_storage_bytes": 44751652.34725275,
+        "p95_storage_bytes": 45892689.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -8261,21 +8261,21 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.16666666666666666,
-            "token_f1": 0.12560386473429952,
-            "avg_total_sec": 80.65656765697834,
-            "p50_total_sec": 80.371736260131,
-            "p95_total_sec": 81.97884713672101,
-            "avg_storage_bytes": 44823760.5,
-            "p95_storage_bytes": 45577833.0,
+            "exact_match": 0.09090909090909091,
+            "token_f1": 0.08024140422457392,
+            "avg_total_sec": 81.1314679414288,
+            "p50_total_sec": 81.77952556079254,
+            "p95_total_sec": 85.17050484800711,
+            "avg_storage_bytes": 45034250.0,
+            "p95_storage_bytes": 45865487.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -8343,6 +8343,62 @@
                 "prediction": "Refineries can enhance their operations by implementing best practices in safety, reliability, and maintenance",
                 "retrieved_doc_ids": [
                   "answer_sharegpt_IUWQYGQ_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "The Red Light District is one of Amsterdam's most famous attractions, known for its adult entertainment establishments and vibrant nightlife",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "Yes, Answering emails, phone calls, Hire a virtual assistant, use automated email responses",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0",
+                  "sharegpt_ELyN256_27",
+                  "sharegpt_64onasJ_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "This phrase is straightforward, describes behaviors that cause problems or difficulties in an individual's life, This term implies a strong preoccupation with sexual thoughts or behaviors that may interfere with other areas of life, This te",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0",
+                  "44202c74_2",
+                  "0bbd7094_1",
+                  "c60d5c8a_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "always something new on Netflix",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::0e5e2d1a",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+                "gold": "38 subjects",
+                "prediction": "30 AM every day by pouncing on my chest",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_113156",
+                  "c756c34e"
                 ]
               }
             ]
@@ -8680,20 +8736,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 450,
-        "rows_successful": 450,
+        "rows_recorded": 454,
+        "rows_successful": 454,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9755555555555555,
-        "doc_recall_all": 0.9355555555555556,
-        "ndcg_at_10": 0.925444049587428,
-        "exact_match": 0.16444444444444445,
-        "token_f1": 0.20216331450903782,
-        "avg_total_sec": 123.99932694706858,
-        "p50_total_sec": 123.45248679677024,
-        "p95_total_sec": 131.52389213815331,
-        "avg_storage_bytes": 15107735.017777778,
-        "p95_storage_bytes": 15736933.0,
+        "doc_recall_any": 0.9757709251101322,
+        "doc_recall_all": 0.9361233480176211,
+        "ndcg_at_10": 0.9261009302078032,
+        "exact_match": 0.16299559471365638,
+        "token_f1": 0.2008654064188142,
+        "avg_total_sec": 124.01017291479157,
+        "p50_total_sec": 123.4536449816078,
+        "p95_total_sec": 131.5075493939221,
+        "avg_storage_bytes": 15109951.13215859,
+        "p95_storage_bytes": 15728993.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -9789,20 +9845,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 6,
-            "rows_recorded": 6,
-            "rows_successful": 6,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.16666666666666666,
-            "token_f1": 0.1111111111111111,
-            "avg_total_sec": 125.31407889064091,
+            "exact_match": 0.1,
+            "token_f1": 0.08860696517412935,
+            "avg_total_sec": 125.28058504783549,
             "p50_total_sec": 124.63770812097937,
             "p95_total_sec": 134.0456769298762,
-            "avg_storage_bytes": 15224577.666666666,
+            "avg_storage_bytes": 15278452.2,
             "p95_storage_bytes": 15642689.0,
             "categories": {},
             "sample_errors": [],
@@ -9890,6 +9946,62 @@
                   "cc5a6057_1",
                   "ec8fa65d_1",
                   "ca3a4e4f_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "This hostel is located in the city center and offers shared dorms and private rooms at a reasonable price",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515",
+                  "24f78a31_2",
+                  "4dd1ba8d_2",
+                  "2fa50779_5",
+                  "64c2b3c8"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "done by logisticians within the UN, help you identify which roles align with your skills, interests",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0",
+                  "sharegpt_ELyN256_27",
+                  "sharegpt_64onasJ_0",
+                  "184efb91_3",
+                  "sharegpt_emE20LI_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::ceb54acb",
+                "category": "single-session-assistant",
+                "query": "In our previous chat, you suggested 'sexual compulsions' and a few other options for alternative terms for certain behaviors. Can you remind me what the other four options were?",
+                "gold": "I suggested 'sexual fixations', 'problematic sexual behaviors', 'sexual impulsivity', and 'compulsive sexuality'.",
+                "prediction": "This phrase is straightforward, describes behaviors that cause problems or difficulties in an individual's life, This term implies a strong preoccupation with sexual thoughts or behaviors that may interfere with other areas of life, This te",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_cGdjmYo_0",
+                  "de293134_1",
+                  "c60d5c8a_1",
+                  "44202c74_2",
+                  "0bbd7094_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "you have any suggestions on how Netflix could improve its service or offerings to make it even better for its subscribers",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0",
+                  "fbfda981",
+                  "debc34d7_1",
+                  "a07f9d5c_1",
+                  "22aa7cca_4"
                 ]
               }
             ]
@@ -10281,20 +10393,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2936,
-      "rows_successful": 2936,
+      "rows_recorded": 2941,
+      "rows_successful": 2941,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7854223433242506,
-      "doc_recall_all": 0.6634877384196185,
-      "ndcg_at_10": 0.6021736952339666,
-      "exact_match": 0.07152588555858311,
-      "token_f1": 0.11705491744650919,
-      "avg_total_sec": 19.120904959804076,
-      "p50_total_sec": 6.384358383715153,
-      "p95_total_sec": 81.09308881917968,
-      "avg_storage_bytes": 22240445.3736376,
-      "p95_storage_bytes": 45103857.0,
+      "doc_recall_any": 0.7857871472288337,
+      "doc_recall_all": 0.6640598435906154,
+      "ndcg_at_10": 0.6028500405327868,
+      "exact_match": 0.07140428425705542,
+      "token_f1": 0.11689978574669006,
+      "avg_total_sec": 19.227298097041352,
+      "p50_total_sec": 6.384461350273341,
+      "p95_total_sec": 81.12820827076212,
+      "avg_storage_bytes": 22279626.59095546,
+      "p95_storage_bytes": 45126418.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13156,21 +13268,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 62,
-          "rows_recorded": 62,
-          "rows_successful": 62,
+          "expected_total": 67,
+          "rows_recorded": 67,
+          "rows_successful": 67,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.04838709677419355,
-          "token_f1": 0.08993287563446559,
-          "avg_total_sec": 19.351236885496146,
-          "p50_total_sec": 12.7660495438613,
-          "p95_total_sec": 80.371736260131,
-          "avg_storage_bytes": 8649785.209677419,
-          "p95_storage_bytes": 44554809.0,
+          "exact_match": 0.04477611940298507,
+          "token_f1": 0.08514732160300571,
+          "avg_total_sec": 24.004230273352352,
+          "p50_total_sec": 12.77905074832961,
+          "p95_total_sec": 81.80051981518045,
+          "avg_storage_bytes": 11383893.582089553,
+          "p95_storage_bytes": 45189818.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -13885,20 +13997,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2936,
-      "rows_successful": 2936,
+      "rows_recorded": 2940,
+      "rows_successful": 2940,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8225476839237057,
-      "doc_recall_all": 0.7445504087193461,
-      "ndcg_at_10": 0.6597441469340468,
-      "exact_match": 0.07459128065395096,
-      "token_f1": 0.12037336461792762,
-      "avg_total_sec": 20.17247415334938,
-      "p50_total_sec": 0.07424288196489215,
-      "p95_total_sec": 125.18675343412906,
-      "avg_storage_bytes": 11768580.434604906,
-      "p95_storage_bytes": 15260501.0,
+      "doc_recall_any": 0.8227891156462585,
+      "doc_recall_all": 0.7448979591836735,
+      "ndcg_at_10": 0.6602070800674699,
+      "exact_match": 0.07448979591836735,
+      "token_f1": 0.1202842181984048,
+      "avg_total_sec": 20.315410031077647,
+      "p50_total_sec": 0.07426039408892393,
+      "p95_total_sec": 125.23531866213307,
+      "avg_storage_bytes": 11773465.718367347,
+      "p95_storage_bytes": 15260789.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -16652,21 +16764,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 62,
-          "rows_recorded": 62,
-          "rows_successful": 62,
+          "expected_total": 66,
+          "rows_recorded": 66,
+          "rows_successful": 66,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.04838709677419355,
-          "token_f1": 0.09786994197941003,
-          "avg_total_sec": 13.904337310953245,
-          "p50_total_sec": 1.8357131467200816,
-          "p95_total_sec": 124.63770812097937,
-          "avg_storage_bytes": 1937833.8387096773,
-          "p95_storage_bytes": 15071545.0,
+          "exact_match": 0.045454545454545456,
+          "token_f1": 0.09526271799694012,
+          "avg_total_sec": 20.65136803656986,
+          "p50_total_sec": 1.9742896347306669,
+          "p95_total_sec": 126.61889116186649,
+          "avg_storage_bytes": 2751253.8484848486,
+          "p95_storage_bytes": 15416329.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -17353,11 +17465,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03712534059945505,
-    "doc_recall_all_delta": 0.08106267029972758,
-    "ndcg_at_10_delta": 0.05757045170008024,
-    "token_f1_delta": 0.003318447171418437,
-    "avg_storage_ratio_nova_over_stock": 0.5291521926334545,
-    "avg_latency_ratio_nova_over_stock": 1.0549957858038577
+    "doc_recall_any_delta": 0.03700196841742476,
+    "doc_recall_all_delta": 0.08083811559305809,
+    "ndcg_at_10_delta": 0.057357039534683074,
+    "token_f1_delta": 0.0033844324517147417,
+    "avg_storage_ratio_nova_over_stock": 0.5284408906182859,
+    "avg_latency_ratio_nova_over_stock": 1.0565920353730684
   }
 }
