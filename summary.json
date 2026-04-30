@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T23:58:46Z",
+  "generated_at": "2026-04-30T00:13:40Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-29T23:56:40Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T00:12:20Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 70,
+    "current_case_index": 75,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::f4f1d8a4_abs"
+    "current_case_id": "longmemeval_s::e831120c"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,20 +7226,20 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 70,
-        "rows_successful": 70,
+        "rows_recorded": 75,
+        "rows_successful": 75,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9714285714285714,
-        "doc_recall_all": 0.9714285714285714,
-        "ndcg_at_10": 0.9474780831255395,
-        "exact_match": 0.12857142857142856,
-        "token_f1": 0.17939079571775066,
-        "avg_total_sec": 80.64411049839109,
+        "doc_recall_any": 0.96,
+        "doc_recall_all": 0.9466666666666667,
+        "ndcg_at_10": 0.9313891612368667,
+        "exact_match": 0.12,
+        "token_f1": 0.18224622415138209,
+        "avg_total_sec": 80.60530778016275,
         "p50_total_sec": 80.3149044578895,
-        "p95_total_sec": 85.1857486879453,
-        "avg_storage_bytes": 44761278.01428571,
-        "p95_storage_bytes": 45811499.0,
+        "p95_total_sec": 84.89708804991096,
+        "avg_storage_bytes": 44760111.84,
+        "p95_storage_bytes": 45727069.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -7424,6 +7424,95 @@
                 ]
               }
             ]
+          },
+          "multi-session": {
+            "expected_total": 5,
+            "rows_recorded": 5,
+            "rows_successful": 5,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.8,
+            "doc_recall_all": 0.6,
+            "ndcg_at_10": 0.7061442547954486,
+            "exact_match": 0.0,
+            "token_f1": 0.22222222222222224,
+            "avg_total_sec": 80.06206972496584,
+            "p50_total_sec": 79.80937036359683,
+            "p95_total_sec": 82.45447566034272,
+            "avg_storage_bytes": 44743785.4,
+            "p95_storage_bytes": 45727069.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::6d550036",
+                "category": "multi-session",
+                "query": "How many projects have I led or am currently leading?",
+                "gold": "2",
+                "prediction": "14",
+                "expected_doc_ids": [
+                  "answer_ec904b3c_1",
+                  "answer_ec904b3c_4",
+                  "answer_ec904b3c_3",
+                  "answer_ec904b3c_2"
+                ],
+                "retrieved_doc_ids": [
+                  "2e4430d8_2",
+                  "sharegpt_zciCXP1_12",
+                  "a9981dc6_3"
+                ]
+              }
+            ],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_s::0a995998",
+                "category": "multi-session",
+                "query": "How many items of clothing do I need to pick up or return from a store?",
+                "gold": "3",
+                "prediction": "2",
+                "retrieved_doc_ids": [
+                  "85846900_2",
+                  "answer_afa9873b_2",
+                  "answer_afa9873b_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_59c863d7",
+                "category": "multi-session",
+                "query": "How many model kits have I worked on or bought?",
+                "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+                "prediction": "15",
+                "retrieved_doc_ids": [
+                  "answer_593bdffd_1",
+                  "answer_593bdffd_2",
+                  "answer_593bdffd_4",
+                  "answer_593bdffd_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::b5ef892d",
+                "category": "multi-session",
+                "query": "How many days did I spend on camping trips in the United States this year?",
+                "gold": "8 days.",
+                "prediction": "3 days",
+                "retrieved_doc_ids": [
+                  "answer_a8b4290f_1",
+                  "answer_a8b4290f_3",
+                  "answer_a8b4290f_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::e831120c",
+                "category": "multi-session",
+                "query": "How many weeks did it take me to watch all the Marvel Cinematic Universe movies and the main Star Wars films?",
+                "gold": "3.5 weeks",
+                "prediction": "22 weeks",
+                "retrieved_doc_ids": [
+                  "answer_86c505e7_2",
+                  "answer_86c505e7_1"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [],
@@ -7456,6 +7545,24 @@
             ],
             "retrieved_doc_ids": [
               "1dd13331_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::6d550036",
+            "category": "multi-session",
+            "query": "How many projects have I led or am currently leading?",
+            "gold": "2",
+            "prediction": "14",
+            "expected_doc_ids": [
+              "answer_ec904b3c_1",
+              "answer_ec904b3c_4",
+              "answer_ec904b3c_3",
+              "answer_ec904b3c_2"
+            ],
+            "retrieved_doc_ids": [
+              "2e4430d8_2",
+              "sharegpt_zciCXP1_12",
+              "a9981dc6_3"
             ]
           }
         ],
@@ -7595,20 +7702,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 70,
-        "rows_successful": 70,
+        "rows_recorded": 74,
+        "rows_successful": 74,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9714285714285714,
-        "doc_recall_all": 0.9714285714285714,
-        "ndcg_at_10": 0.9556112751530623,
-        "exact_match": 0.1,
-        "token_f1": 0.1350068812324163,
-        "avg_total_sec": 124.60779004450222,
+        "doc_recall_any": 0.972972972972973,
+        "doc_recall_all": 0.9594594594594594,
+        "ndcg_at_10": 0.946098335978802,
+        "exact_match": 0.10810810810810811,
+        "token_f1": 0.13596747023486827,
+        "avg_total_sec": 124.52163362932845,
         "p50_total_sec": 123.94300398696214,
-        "p95_total_sec": 131.79436697810888,
-        "avg_storage_bytes": 15162143.971428571,
-        "p95_storage_bytes": 15736933.0,
+        "p95_total_sec": 131.67567613627762,
+        "avg_storage_bytes": 15155100.18918919,
+        "p95_storage_bytes": 15687817.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -7824,6 +7931,82 @@
                   "ae15e8b6_2",
                   "b65f51fb_5",
                   "705b5399_3"
+                ]
+              }
+            ]
+          },
+          "multi-session": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 0.75,
+            "ndcg_at_10": 0.7796219004292436,
+            "exact_match": 0.25,
+            "token_f1": 0.1527777777777778,
+            "avg_total_sec": 123.01389636378735,
+            "p50_total_sec": 124.12455392302945,
+            "p95_total_sec": 126.3276227908209,
+            "avg_storage_bytes": 15031834.0,
+            "p95_storage_bytes": 15527353.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_s::0a995998",
+                "category": "multi-session",
+                "query": "How many items of clothing do I need to pick up or return from a store?",
+                "gold": "3",
+                "prediction": "2",
+                "retrieved_doc_ids": [
+                  "answer_afa9873b_1",
+                  "answer_afa9873b_2",
+                  "85846900_2",
+                  "answer_afa9873b_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6d550036",
+                "category": "multi-session",
+                "query": "How many projects have I led or am currently leading?",
+                "gold": "2",
+                "prediction": "23",
+                "retrieved_doc_ids": [
+                  "2e4430d8_2",
+                  "sharegpt_J7ZAFLd_0",
+                  "sharegpt_zciCXP1_12",
+                  "sharegpt_nVi6tIt_0",
+                  "answer_ec904b3c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_59c863d7",
+                "category": "multi-session",
+                "query": "How many model kits have I worked on or bought?",
+                "gold": "I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale not mentioned), Tamiya 1/48 scale Spitfire Mk.V, 1/16 scale German Tiger I tank, 1/72 scale B-29 bomber, and 1/24 scale '69 Camaro.",
+                "prediction": "15",
+                "retrieved_doc_ids": [
+                  "answer_593bdffd_1",
+                  "answer_593bdffd_4",
+                  "answer_593bdffd_2",
+                  "answer_593bdffd_3",
+                  "ultrachat_34319"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::b5ef892d",
+                "category": "multi-session",
+                "query": "How many days did I spend on camping trips in the United States this year?",
+                "gold": "8 days.",
+                "prediction": "3 days",
+                "retrieved_doc_ids": [
+                  "answer_a8b4290f_1",
+                  "answer_a8b4290f_2",
+                  "answer_a8b4290f_3",
+                  "f2ccf83b"
                 ]
               }
             ]
@@ -8079,19 +8262,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2556,
-      "rows_successful": 2556,
+      "rows_recorded": 2561,
+      "rows_successful": 2561,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7582159624413145,
-      "doc_recall_all": 0.6482785602503912,
-      "ndcg_at_10": 0.5633250768272727,
-      "exact_match": 0.05829420970266041,
-      "token_f1": 0.10513940961840708,
-      "avg_total_sec": 10.01149290244963,
-      "p50_total_sec": 6.37090947618708,
-      "p95_total_sec": 16.572269142139703,
-      "avg_storage_bytes": 18895019.34546166,
+      "doc_recall_any": 0.7582975400234283,
+      "doc_recall_all": 0.648184303006638,
+      "ndcg_at_10": 0.563603911614403,
+      "exact_match": 0.05818039828192113,
+      "token_f1": 0.10536799769455667,
+      "avg_total_sec": 10.148257011825882,
+      "p50_total_sec": 6.370979909319431,
+      "p95_total_sec": 16.77780729299411,
+      "avg_storage_bytes": 18945485.503319018,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -10264,21 +10447,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 133,
-          "rows_recorded": 133,
-          "rows_successful": 133,
+          "expected_total": 138,
+          "rows_recorded": 138,
+          "rows_successful": 138,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9849624060150376,
-          "doc_recall_all": 0.706766917293233,
-          "ndcg_at_10": 0.8991616711901838,
-          "exact_match": 0.08270676691729323,
-          "token_f1": 0.08817119276275005,
-          "avg_total_sec": 15.815056436138466,
-          "p50_total_sec": 15.058261724188924,
-          "p95_total_sec": 20.39241152908653,
-          "avg_storage_bytes": 7005839.37593985,
-          "p95_storage_bytes": 9277121.0,
+          "doc_recall_any": 0.9782608695652174,
+          "doc_recall_all": 0.7028985507246377,
+          "ndcg_at_10": 0.8921682865382006,
+          "exact_match": 0.07971014492753623,
+          "token_f1": 0.09302811411997731,
+          "avg_total_sec": 18.14284677269018,
+          "p50_total_sec": 15.073331606108695,
+          "p95_total_sec": 21.099550403188914,
+          "avg_storage_bytes": 8373156.260869565,
+          "p95_storage_bytes": 9721667.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -10305,6 +10488,24 @@
                 "answer_2e2085fa_2"
               ],
               "retrieved_doc_ids": []
+            },
+            {
+              "case_id": "longmemeval_s::6d550036",
+              "category": "multi-session",
+              "query": "How many projects have I led or am currently leading?",
+              "gold": "2",
+              "prediction": "14",
+              "expected_doc_ids": [
+                "answer_ec904b3c_1",
+                "answer_ec904b3c_4",
+                "answer_ec904b3c_3",
+                "answer_ec904b3c_2"
+              ],
+              "retrieved_doc_ids": [
+                "2e4430d8_2",
+                "sharegpt_zciCXP1_12",
+                "a9981dc6_3"
+              ]
             }
           ],
           "sample_successes": [
@@ -11488,19 +11689,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2556,
-      "rows_successful": 2556,
+      "rows_recorded": 2560,
+      "rows_successful": 2560,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7996870109546166,
-      "doc_recall_all": 0.7171361502347418,
-      "ndcg_at_10": 0.6210687724353416,
-      "exact_match": 0.0594679186228482,
-      "token_f1": 0.10637448696222129,
-      "avg_total_sec": 4.753220771192515,
-      "p50_total_sec": 0.06902142474427819,
-      "p95_total_sec": 10.251821723300964,
-      "avg_storage_bytes": 11273639.07511737,
+      "doc_recall_any": 0.8,
+      "doc_recall_all": 0.7171875,
+      "ndcg_at_10": 0.6213165116978321,
+      "exact_match": 0.059765625,
+      "token_f1": 0.1064469921041206,
+      "avg_total_sec": 4.938003076805944,
+      "p50_total_sec": 0.06914175022393465,
+      "p95_total_sec": 10.509710042737424,
+      "avg_storage_bytes": 11279511.2546875,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -13651,21 +13852,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 133,
-          "rows_recorded": 133,
-          "rows_successful": 133,
+          "expected_total": 137,
+          "rows_recorded": 137,
+          "rows_successful": 137,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 1.0,
-          "ndcg_at_10": 1.0,
-          "exact_match": 0.06015037593984962,
-          "token_f1": 0.08470494056815633,
-          "avg_total_sec": 8.982692366052783,
-          "p50_total_sec": 7.623534071724862,
-          "p95_total_sec": 16.55778768705204,
-          "avg_storage_bytes": 1387975.7669172932,
-          "p95_storage_bytes": 2260325.0,
+          "doc_recall_all": 0.9927007299270073,
+          "ndcg_at_10": 0.9935656029322406,
+          "exact_match": 0.06569343065693431,
+          "token_f1": 0.0866924686618679,
+          "avg_total_sec": 12.312070584964742,
+          "p50_total_sec": 7.656668402720243,
+          "p95_total_sec": 18.383126929868013,
+          "avg_storage_bytes": 1786336.591240876,
+          "p95_storage_bytes": 2498397.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -14816,11 +15017,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04147104851330208,
-    "doc_recall_all_delta": 0.06885758998435054,
-    "ndcg_at_10_delta": 0.05774369560806891,
-    "token_f1_delta": 0.0012350773438142143,
-    "avg_storage_ratio_nova_over_stock": 0.5966460721208604,
-    "avg_latency_ratio_nova_over_stock": 0.4747764212098166
+    "doc_recall_any_delta": 0.04170245997657174,
+    "doc_recall_all_delta": 0.06900319699336199,
+    "ndcg_at_10_delta": 0.057712600083429044,
+    "token_f1_delta": 0.001078994409563938,
+    "avg_storage_ratio_nova_over_stock": 0.595366703730631,
+    "avg_latency_ratio_nova_over_stock": 0.4865863242379092
   }
 }
