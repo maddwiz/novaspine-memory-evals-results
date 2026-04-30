@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T17:01:34Z",
+  "generated_at": "2026-04-30T17:03:34Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T17:00:11Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-30T17:01:35Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_s",
     "current_case_index": 370,
     "current_case_total": 500,
@@ -8503,19 +8503,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 369,
-        "rows_successful": 369,
+        "rows_recorded": 370,
+        "rows_successful": 370,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.981029810298103,
-        "doc_recall_all": 0.9322493224932249,
-        "ndcg_at_10": 0.921973399424139,
-        "exact_match": 0.14634146341463414,
-        "token_f1": 0.1904837886645554,
-        "avg_total_sec": 124.04164929806727,
-        "p50_total_sec": 123.52308814879507,
+        "doc_recall_any": 0.981081081081081,
+        "doc_recall_all": 0.9324324324324325,
+        "ndcg_at_10": 0.9221842821283981,
+        "exact_match": 0.14594594594594595,
+        "token_f1": 0.18996896761411064,
+        "avg_total_sec": 124.02838514693761,
+        "p50_total_sec": 123.49121336871758,
         "p95_total_sec": 131.5666729649529,
-        "avg_storage_bytes": 15113880.804878049,
+        "avg_storage_bytes": 15112347.24864865,
         "p95_storage_bytes": 15744693.0,
         "categories": {
           "single-session-user": {
@@ -9371,9 +9371,9 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
@@ -9381,10 +9381,10 @@
             "ndcg_at_10": 1.0,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 119.17580786937226,
-            "p50_total_sec": 117.32272393675521,
+            "avg_total_sec": 119.16533424705267,
+            "p50_total_sec": 119.13391338009387,
             "p95_total_sec": 125.30165722128004,
-            "avg_storage_bytes": 14652063.666666666,
+            "avg_storage_bytes": 14625664.0,
             "p95_storage_bytes": 15264633.0,
             "categories": {},
             "sample_errors": [],
@@ -9430,6 +9430,20 @@
                   "47c5482a",
                   "dfbda5e9",
                   "d1e7d11c_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::852ce960",
+                "category": "knowledge-update",
+                "query": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+                "gold": "$400,000",
+                "prediction": "** If you're not comfortable performing these checks yourself, consider taking your car back to the dealership or a trusted mechanic for a pre-trip inspection",
+                "retrieved_doc_ids": [
+                  "answer_3a6f1e82_1",
+                  "answer_3a6f1e82_2",
+                  "0840765f_2",
+                  "a76e7e3c_1",
+                  "bfe8bb0e"
                 ]
               }
             ]
@@ -13369,19 +13383,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2855,
-      "rows_successful": 2855,
+      "rows_recorded": 2856,
+      "rows_successful": 2856,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8189141856392295,
-      "doc_recall_all": 0.7387040280210158,
-      "ndcg_at_10": 0.6517573301126187,
-      "exact_match": 0.06970227670753065,
-      "token_f1": 0.11654333625442712,
-      "avg_total_sec": 17.23224363539045,
-      "p50_total_sec": 0.07329721422865987,
+      "doc_recall_any": 0.8189775910364145,
+      "doc_recall_all": 0.738795518207283,
+      "ndcg_at_10": 0.6518792638205625,
+      "exact_match": 0.06967787114845939,
+      "token_f1": 0.11650252976414195,
+      "avg_total_sec": 17.267923491743637,
+      "p50_total_sec": 0.07336810603737831,
       "p95_total_sec": 124.52245854213834,
-      "avg_storage_bytes": 11674638.674255691,
+      "avg_storage_bytes": 11675644.215686275,
       "p95_storage_bytes": 15203625.0,
       "categories": {
         "category_2": {
@@ -15748,21 +15762,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 81,
-          "rows_recorded": 81,
-          "rows_successful": 81,
+          "expected_total": 82,
+          "rows_recorded": 82,
+          "rows_successful": 82,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.24691358024691357,
-          "token_f1": 0.27809095541598844,
-          "avg_total_sec": 11.104888898400981,
+          "exact_match": 0.24390243902439024,
+          "token_f1": 0.2746996023011593,
+          "avg_total_sec": 12.422316026226504,
           "p50_total_sec": 6.979829072020948,
-          "p95_total_sec": 9.274837399832904,
-          "avg_storage_bytes": 1632322.1358024692,
-          "p95_storage_bytes": 1451901.0,
+          "p95_total_sec": 9.974820221308619,
+          "avg_storage_bytes": 1789811.6829268292,
+          "p95_storage_bytes": 1488873.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -16780,11 +16794,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.039502420933347104,
-    "doc_recall_all_delta": 0.08149114286695414,
-    "ndcg_at_10_delta": 0.05908691401753796,
-    "token_f1_delta": 0.0025363488841993326,
-    "avg_storage_ratio_nova_over_stock": 0.540200212510339,
-    "avg_latency_ratio_nova_over_stock": 0.9898635670283574
+    "doc_recall_any_delta": 0.03956582633053218,
+    "doc_recall_all_delta": 0.08158263305322133,
+    "ndcg_at_10_delta": 0.05920884772548174,
+    "token_f1_delta": 0.0024955423939141685,
+    "avg_storage_ratio_nova_over_stock": 0.5402467401768172,
+    "avg_latency_ratio_nova_over_stock": 0.9919131080299883
   }
 }
