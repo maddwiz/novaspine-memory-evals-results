@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T12:47:35Z",
+  "generated_at": "2026-04-30T13:02:45Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T12:45:33Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T13:01:24Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 295,
+    "current_case_index": 300,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::gpt4_e414231f"
+    "current_case_id": "longmemeval_s::eac54add"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,20 +7226,20 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 295,
-        "rows_successful": 295,
+        "rows_recorded": 300,
+        "rows_successful": 300,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9661016949152542,
-        "doc_recall_all": 0.7864406779661017,
-        "ndcg_at_10": 0.870852850682814,
-        "exact_match": 0.11186440677966102,
-        "token_f1": 0.15538123368334997,
-        "avg_total_sec": 80.5281238323046,
-        "p50_total_sec": 80.2153596621938,
+        "doc_recall_any": 0.96,
+        "doc_recall_all": 0.78,
+        "ndcg_at_10": 0.8614582510395646,
+        "exact_match": 0.11,
+        "token_f1": 0.15318370331803924,
+        "avg_total_sec": 80.53496054358159,
+        "p50_total_sec": 80.26864096708596,
         "p95_total_sec": 84.82394488807768,
-        "avg_storage_bytes": 44767528.99322034,
-        "p95_storage_bytes": 45815382.0,
+        "avg_storage_bytes": 44773249.85333333,
+        "p95_storage_bytes": 45831607.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -7832,21 +7832,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 62,
-            "rows_recorded": 62,
-            "rows_successful": 62,
+            "expected_total": 67,
+            "rows_recorded": 67,
+            "rows_successful": 67,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9516129032258065,
-            "doc_recall_all": 0.7419354838709677,
-            "ndcg_at_10": 0.8488526227609312,
-            "exact_match": 0.1935483870967742,
-            "token_f1": 0.29056385375366195,
-            "avg_total_sec": 80.66120972701408,
-            "p50_total_sec": 80.22605162393302,
+            "doc_recall_any": 0.9253731343283582,
+            "doc_recall_all": 0.7164179104477612,
+            "ndcg_at_10": 0.8084290592778658,
+            "exact_match": 0.1791044776119403,
+            "token_f1": 0.2706359103216503,
+            "avg_total_sec": 80.68189008387306,
+            "p50_total_sec": 80.39357089204714,
             "p95_total_sec": 85.12464796705171,
-            "avg_storage_bytes": 44799456.61290322,
-            "p95_storage_bytes": 45951110.0,
+            "avg_storage_bytes": 44822689.74626866,
+            "p95_storage_bytes": 46095929.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -7893,6 +7893,41 @@
                   "ad175dc4_5",
                   "ultrachat_557308",
                   "f8de4e92_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_468eb064",
+                "category": "temporal-reasoning",
+                "query": "Who did I meet with during the lunch last Tuesday?",
+                "gold": "Emma",
+                "prediction": "Try",
+                "expected_doc_ids": [
+                  "answer_9b09d95b_1"
+                ],
+                "retrieved_doc_ids": [
+                  "1e5bd28d_2",
+                  "ultrachat_59629",
+                  "25e5b797_1",
+                  "c035d5e3",
+                  "a2f0054f"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::eac54add",
+                "category": "temporal-reasoning",
+                "query": "What was the significant buisiness milestone I mentioned four weeks ago?",
+                "gold": "I signed a contract with my first client.",
+                "prediction": "in two weeks, and I need to ensure a smooth transition",
+                "expected_doc_ids": [
+                  "answer_0d4d0348_1",
+                  "answer_0d4d0348_2"
+                ],
+                "retrieved_doc_ids": [
+                  "369695b4_2",
+                  "ultrachat_75926",
+                  "ultrachat_133409",
+                  "577da76d_2",
+                  "e552e1f9_2"
                 ]
               }
             ],
@@ -8196,6 +8231,41 @@
               "ultrachat_557308",
               "f8de4e92_4"
             ]
+          },
+          {
+            "case_id": "longmemeval_s::gpt4_468eb064",
+            "category": "temporal-reasoning",
+            "query": "Who did I meet with during the lunch last Tuesday?",
+            "gold": "Emma",
+            "prediction": "Try",
+            "expected_doc_ids": [
+              "answer_9b09d95b_1"
+            ],
+            "retrieved_doc_ids": [
+              "1e5bd28d_2",
+              "ultrachat_59629",
+              "25e5b797_1",
+              "c035d5e3",
+              "a2f0054f"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::eac54add",
+            "category": "temporal-reasoning",
+            "query": "What was the significant buisiness milestone I mentioned four weeks ago?",
+            "gold": "I signed a contract with my first client.",
+            "prediction": "in two weeks, and I need to ensure a smooth transition",
+            "expected_doc_ids": [
+              "answer_0d4d0348_1",
+              "answer_0d4d0348_2"
+            ],
+            "retrieved_doc_ids": [
+              "369695b4_2",
+              "ultrachat_75926",
+              "ultrachat_133409",
+              "577da76d_2",
+              "e552e1f9_2"
+            ]
           }
         ],
         "sample_successes": [
@@ -8334,20 +8404,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 295,
-        "rows_successful": 295,
+        "rows_recorded": 299,
+        "rows_successful": 299,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9796610169491525,
-        "doc_recall_all": 0.9389830508474576,
-        "ndcg_at_10": 0.9251670712973687,
-        "exact_match": 0.10847457627118644,
-        "token_f1": 0.15298003948744754,
-        "avg_total_sec": 124.07345184664541,
+        "doc_recall_any": 0.979933110367893,
+        "doc_recall_all": 0.9364548494983278,
+        "ndcg_at_10": 0.9203319943354485,
+        "exact_match": 0.10702341137123746,
+        "token_f1": 0.15149089737613272,
+        "avg_total_sec": 124.09994069647423,
         "p50_total_sec": 123.7259039930068,
-        "p95_total_sec": 131.37229679198936,
-        "avg_storage_bytes": 15122118.681355933,
-        "p95_storage_bytes": 15695865.0,
+        "p95_total_sec": 131.5075493939221,
+        "avg_storage_bytes": 15125894.913043479,
+        "p95_storage_bytes": 15728849.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -8999,21 +9069,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 62,
-            "rows_recorded": 62,
-            "rows_successful": 62,
+            "expected_total": 66,
+            "rows_recorded": 66,
+            "rows_successful": 66,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.9032258064516129,
-            "ndcg_at_10": 0.9267147669125788,
-            "exact_match": 0.22580645161290322,
-            "token_f1": 0.34392143007528475,
-            "avg_total_sec": 124.47677134662386,
+            "doc_recall_all": 0.8939393939393939,
+            "ndcg_at_10": 0.9047166033659877,
+            "exact_match": 0.21212121212121213,
+            "token_f1": 0.32560295956567153,
+            "avg_total_sec": 124.57233025721331,
             "p50_total_sec": 123.61384803196415,
             "p95_total_sec": 134.3137383670546,
-            "avg_storage_bytes": 15149007.451612903,
-            "p95_storage_bytes": 15757089.0,
+            "avg_storage_bytes": 15164485.303030303,
+            "p95_storage_bytes": 15868437.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -9495,20 +9565,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2781,
-      "rows_successful": 2781,
+      "rows_recorded": 2786,
+      "rows_successful": 2786,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7749011147069399,
-      "doc_recall_all": 0.6548004314994607,
-      "ndcg_at_10": 0.5862772461356172,
-      "exact_match": 0.06220783890686803,
-      "token_f1": 0.10859994218662143,
-      "avg_total_sec": 15.713802464690303,
-      "p50_total_sec": 6.37808937812224,
-      "p95_total_sec": 80.32575464900583,
-      "avg_storage_bytes": 20988421.804746494,
-      "p95_storage_bytes": 44837505.0,
+      "doc_recall_any": 0.7745872218234028,
+      "doc_recall_all": 0.6543431442928931,
+      "ndcg_at_10": 0.5857763481204561,
+      "exact_match": 0.06209619526202441,
+      "token_f1": 0.10844726714997047,
+      "avg_total_sec": 15.830860117318146,
+      "p50_total_sec": 6.378139870706946,
+      "p95_total_sec": 80.39357089204714,
+      "avg_storage_bytes": 21031713.905958362,
+      "p95_storage_bytes": 44872418.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -11490,21 +11560,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 195,
-          "rows_recorded": 195,
-          "rows_successful": 195,
+          "expected_total": 200,
+          "rows_recorded": 200,
+          "rows_successful": 200,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9692307692307692,
-          "doc_recall_all": 0.7897435897435897,
-          "ndcg_at_10": 0.9005881464776121,
-          "exact_match": 0.22564102564102564,
-          "token_f1": 0.29519657357331597,
-          "avg_total_sec": 36.049245977974856,
-          "p50_total_sec": 15.53705174010247,
-          "p95_total_sec": 82.88854904705659,
-          "avg_storage_bytes": 18789732.34358974,
-          "p95_storage_bytes": 45567849.0,
+          "doc_recall_any": 0.96,
+          "doc_recall_all": 0.78,
+          "ndcg_at_10": 0.8857528646178682,
+          "exact_match": 0.22,
+          "token_f1": 0.2884048945281007,
+          "avg_total_sec": 37.17147299124859,
+          "p50_total_sec": 15.562591071240604,
+          "p95_total_sec": 82.98825227515772,
+          "avg_storage_bytes": 19447758.55,
+          "p95_storage_bytes": 45602441.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -11586,6 +11656,41 @@
                 "ad175dc4_5",
                 "ultrachat_557308",
                 "f8de4e92_4"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::gpt4_468eb064",
+              "category": "temporal-reasoning",
+              "query": "Who did I meet with during the lunch last Tuesday?",
+              "gold": "Emma",
+              "prediction": "Try",
+              "expected_doc_ids": [
+                "answer_9b09d95b_1"
+              ],
+              "retrieved_doc_ids": [
+                "1e5bd28d_2",
+                "ultrachat_59629",
+                "25e5b797_1",
+                "c035d5e3",
+                "a2f0054f"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::eac54add",
+              "category": "temporal-reasoning",
+              "query": "What was the significant buisiness milestone I mentioned four weeks ago?",
+              "gold": "I signed a contract with my first client.",
+              "prediction": "in two weeks, and I need to ensure a smooth transition",
+              "expected_doc_ids": [
+                "answer_0d4d0348_1",
+                "answer_0d4d0348_2"
+              ],
+              "retrieved_doc_ids": [
+                "369695b4_2",
+                "ultrachat_75926",
+                "ultrachat_133409",
+                "577da76d_2",
+                "e552e1f9_2"
               ]
             }
           ],
@@ -13032,20 +13137,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2781,
-      "rows_successful": 2781,
+      "rows_recorded": 2785,
+      "rows_successful": 2785,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.81445523193096,
-      "doc_recall_all": 0.7342682488313557,
-      "ndcg_at_10": 0.6449058896500334,
-      "exact_match": 0.06364617044228695,
-      "token_f1": 0.11059756153828318,
-      "avg_total_sec": 14.393511428555668,
-      "p50_total_sec": 0.07223973097279668,
-      "p95_total_sec": 123.94300398696214,
-      "avg_storage_bytes": 11583997.270406328,
-      "p95_storage_bytes": 15166221.0,
+      "doc_recall_any": 0.814721723518851,
+      "doc_recall_all": 0.7342908438061041,
+      "ndcg_at_10": 0.6447893211455361,
+      "exact_match": 0.06355475763016158,
+      "token_f1": 0.11049855845767761,
+      "avg_total_sec": 14.553884831705103,
+      "p50_total_sec": 0.0723050320520997,
+      "p95_total_sec": 124.00132165802643,
+      "avg_storage_bytes": 11589484.372351885,
+      "p95_storage_bytes": 15170065.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15037,21 +15142,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 195,
-          "rows_recorded": 195,
-          "rows_successful": 195,
+          "expected_total": 199,
+          "rows_recorded": 199,
+          "rows_successful": 199,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9538461538461539,
-          "ndcg_at_10": 0.9730093427649146,
-          "exact_match": 0.26666666666666666,
-          "token_f1": 0.3320810756261072,
-          "avg_total_sec": 44.9664369242433,
-          "p50_total_sec": 8.215324548073113,
-          "p95_total_sec": 129.32479352224618,
-          "avg_storage_bytes": 5676502.497435898,
-          "p95_storage_bytes": 15486753.0,
+          "doc_recall_all": 0.949748743718593,
+          "ndcg_at_10": 0.9647829251896164,
+          "exact_match": 0.2613065326633166,
+          "token_f1": 0.3262436000691335,
+          "avg_total_sec": 46.59632750609468,
+          "p50_total_sec": 8.294353230390698,
+          "p95_total_sec": 130.08997371373698,
+          "avg_storage_bytes": 5872037.9648241205,
+          "p95_storage_bytes": 15593609.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -16424,11 +16529,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.039554117224020136,
-    "doc_recall_all_delta": 0.07946781733189501,
-    "ndcg_at_10_delta": 0.05862864351441621,
-    "token_f1_delta": 0.0019976193516617474,
-    "avg_storage_ratio_nova_over_stock": 0.5519232164367227,
-    "avg_latency_ratio_nova_over_stock": 0.9159788956809534
+    "doc_recall_any_delta": 0.04013450169544819,
+    "doc_recall_all_delta": 0.07994769951321101,
+    "ndcg_at_10_delta": 0.05901297302508002,
+    "token_f1_delta": 0.002051291307707148,
+    "avg_storage_ratio_nova_over_stock": 0.5510480231983633,
+    "avg_latency_ratio_nova_over_stock": 0.9193363294129485
   }
 }
