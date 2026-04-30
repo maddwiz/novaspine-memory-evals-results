@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T03:22:59Z",
+  "generated_at": "2026-04-30T03:38:01Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T03:20:48Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T03:36:41Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 130,
+    "current_case_index": 135,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::60bf93ed_abs"
+    "current_case_id": "longmemeval_s::75832dbd"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,19 +7226,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 130,
-        "rows_successful": 130,
+        "rows_recorded": 135,
+        "rows_successful": 135,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9692307692307692,
-        "doc_recall_all": 0.7769230769230769,
-        "ndcg_at_10": 0.8902373809684496,
-        "exact_match": 0.12307692307692308,
-        "token_f1": 0.15386000111297685,
-        "avg_total_sec": 80.4704527644548,
-        "p50_total_sec": 80.00143082393333,
-        "p95_total_sec": 84.89708804991096,
-        "avg_storage_bytes": 44721649.29230769,
+        "doc_recall_any": 0.9629629629629629,
+        "doc_recall_all": 0.7703703703703704,
+        "ndcg_at_10": 0.8829639870512683,
+        "exact_match": 0.11851851851851852,
+        "token_f1": 0.15334346437780566,
+        "avg_total_sec": 80.47820332426647,
+        "p50_total_sec": 80.0193252293393,
+        "p95_total_sec": 84.68705957988277,
+        "avg_storage_bytes": 44741876.14814815,
         "p95_storage_bytes": 45771716.0,
         "categories": {
           "single-session-user": {
@@ -7426,21 +7426,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 60,
-            "rows_recorded": 60,
-            "rows_successful": 60,
+            "expected_total": 62,
+            "rows_recorded": 62,
+            "rows_successful": 62,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9666666666666667,
-            "doc_recall_all": 0.55,
-            "ndcg_at_10": 0.8234565617851782,
-            "exact_match": 0.11666666666666667,
-            "token_f1": 0.12407407407407407,
-            "avg_total_sec": 80.26785207486246,
+            "doc_recall_any": 0.967741935483871,
+            "doc_recall_all": 0.5483870967741935,
+            "ndcg_at_10": 0.8205914908569911,
+            "exact_match": 0.11290322580645161,
+            "token_f1": 0.12445764950009432,
+            "avg_total_sec": 80.3247320121079,
             "p50_total_sec": 80.00143082393333,
             "p95_total_sec": 84.63449156703427,
-            "avg_storage_bytes": 44675415.78333333,
-            "p95_storage_bytes": 45742923.0,
+            "avg_storage_bytes": 44715535.06451613,
+            "p95_storage_bytes": 45771716.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -7626,6 +7626,68 @@
                 ]
               }
             ]
+          },
+          "single-session-preference": {
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.6666666666666666,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.6666666666666666,
+            "exact_match": 0.0,
+            "token_f1": 0.14254590725178962,
+            "avg_total_sec": 79.77877637930214,
+            "p50_total_sec": 79.93316095741466,
+            "p95_total_sec": 80.17538720369339,
+            "avg_storage_bytes": 44833548.333333336,
+            "p95_storage_bytes": 45057462.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::75832dbd",
+                "category": "single-session-preference",
+                "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+                "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+                "prediction": "user: Hmm, most of these seem interesting, but can you recommend a Romance book for someone who wants a little more steamy, intimate scenes?",
+                "expected_doc_ids": [
+                  "answer_d87a6ef8"
+                ],
+                "retrieved_doc_ids": [
+                  "sharegpt_FYqt26U_0",
+                  "sharegpt_fK7pfNf_0",
+                  "sharegpt_xni9yYO_6",
+                  "c51583cd_1",
+                  "6172cc72_1"
+                ]
+              }
+            ],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_s::8a2466db",
+                "category": "single-session-preference",
+                "query": "Can you recommend some resources where I can learn more about video editing?",
+                "gold": "The user would prefer responses that suggest resources specifically tailored to Adobe Premiere Pro, especially those that delve into its advanced settings. They might not prefer general video editing resources or resources related to other video editing software.",
+                "prediction": "assistant: Adobe Premiere Pro is a powerful video editing software with a vast array of advanced settings that can help you take your editing skills to the next level.",
+                "retrieved_doc_ids": [
+                  "answer_edb03329"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::06878be2",
+                "category": "single-session-preference",
+                "query": "Can you suggest some accessories that would complement my current photography setup?",
+                "gold": "The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_555dfb94",
+                  "465e7ef9",
+                  "8fcfbe43_2"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [],
@@ -7693,6 +7755,23 @@
               "cdf068b1_3",
               "3e82fae8_1",
               "9a6c8d3c"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::75832dbd",
+            "category": "single-session-preference",
+            "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+            "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+            "prediction": "user: Hmm, most of these seem interesting, but can you recommend a Romance book for someone who wants a little more steamy, intimate scenes?",
+            "expected_doc_ids": [
+              "answer_d87a6ef8"
+            ],
+            "retrieved_doc_ids": [
+              "sharegpt_FYqt26U_0",
+              "sharegpt_fK7pfNf_0",
+              "sharegpt_xni9yYO_6",
+              "c51583cd_1",
+              "6172cc72_1"
             ]
           }
         ],
@@ -7832,19 +7911,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 130,
-        "rows_successful": 130,
+        "rows_recorded": 134,
+        "rows_successful": 134,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9769230769230769,
-        "doc_recall_all": 0.9307692307692308,
-        "ndcg_at_10": 0.9431025915142904,
-        "exact_match": 0.1076923076923077,
-        "token_f1": 0.1291062693815575,
-        "avg_total_sec": 124.03468200029232,
+        "doc_recall_any": 0.9776119402985075,
+        "doc_recall_all": 0.9328358208955224,
+        "ndcg_at_10": 0.9418039898053611,
+        "exact_match": 0.1044776119402985,
+        "token_f1": 0.13097940551984608,
+        "avg_total_sec": 124.0472128252193,
         "p50_total_sec": 123.82037324411795,
-        "p95_total_sec": 131.30606171581894,
-        "avg_storage_bytes": 15107470.138461538,
+        "p95_total_sec": 131.0023358501494,
+        "avg_storage_bytes": 15109295.23880597,
         "p95_storage_bytes": 15683433.0,
         "categories": {
           "single-session-user": {
@@ -8066,21 +8145,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 60,
-            "rows_recorded": 60,
-            "rows_successful": 60,
+            "expected_total": 62,
+            "rows_recorded": 62,
+            "rows_successful": 62,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9833333333333333,
-            "doc_recall_all": 0.8833333333333333,
-            "ndcg_at_10": 0.9285091272690562,
-            "exact_match": 0.11666666666666667,
-            "token_f1": 0.12222222222222222,
-            "avg_total_sec": 123.3660559487141,
+            "doc_recall_any": 0.9838709677419355,
+            "doc_recall_all": 0.8870967741935484,
+            "ndcg_at_10": 0.9302905745102024,
+            "exact_match": 0.11290322580645161,
+            "token_f1": 0.12266553480475383,
+            "avg_total_sec": 123.55231330844934,
             "p50_total_sec": 123.31112206215039,
-            "p95_total_sec": 130.48630157485604,
-            "avg_storage_bytes": 15043684.0,
-            "p95_storage_bytes": 15581141.0,
+            "p95_total_sec": 130.57680192310363,
+            "avg_storage_bytes": 15057450.35483871,
+            "p95_storage_bytes": 15617177.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -8257,6 +8336,54 @@
                   "answer_cf9e3940_1",
                   "answer_cf9e3940_2",
                   "d75245ea"
+                ]
+              }
+            ]
+          },
+          "single-session-preference": {
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 0.8154648767857288,
+            "exact_match": 0.0,
+            "token_f1": 0.24774774774774772,
+            "avg_total_sec": 119.76889517018571,
+            "p50_total_sec": 119.12126378528774,
+            "p95_total_sec": 120.41652655508369,
+            "avg_storage_bytes": 14866781.0,
+            "p95_storage_bytes": 14936161.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_s::8a2466db",
+                "category": "single-session-preference",
+                "query": "Can you recommend some resources where I can learn more about video editing?",
+                "gold": "The user would prefer responses that suggest resources specifically tailored to Adobe Premiere Pro, especially those that delve into its advanced settings. They might not prefer general video editing resources or resources related to other video editing software.",
+                "prediction": "user: I'm trying to learn more about some advanced settings for video editing with Adobe Premiere Pro, which I enjoy to use.",
+                "retrieved_doc_ids": [
+                  "answer_edb03329",
+                  "6dcf5fa0_1",
+                  "sharegpt_osTHjYi_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::06878be2",
+                "category": "single-session-preference",
+                "query": "Can you suggest some accessories that would complement my current photography setup?",
+                "gold": "The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.",
+                "prediction": "Can you give me some specific ideas for props and backdrops that would complement my eco-friendly candles?",
+                "retrieved_doc_ids": [
+                  "8fcfbe43_2",
+                  "answer_555dfb94",
+                  "dc18f65b",
+                  "sharegpt_InRLwN7_0",
+                  "3e9fce53_1"
                 ]
               }
             ]
@@ -8526,20 +8653,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2616,
-      "rows_successful": 2616,
+      "rows_recorded": 2621,
+      "rows_successful": 2621,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7629969418960245,
-      "doc_recall_all": 0.6460244648318043,
-      "ndcg_at_10": 0.56929139528961,
-      "exact_match": 0.05963302752293578,
-      "token_f1": 0.10557369091326183,
-      "avg_total_sec": 11.622877287137998,
-      "p50_total_sec": 6.372423615306616,
-      "p95_total_sec": 22.041338989976794,
-      "avg_storage_bytes": 19486312.84174312,
-      "p95_storage_bytes": 23569752.0,
+      "doc_recall_any": 0.7630675314765357,
+      "doc_recall_all": 0.6459366653948875,
+      "ndcg_at_10": 0.5695290228171088,
+      "exact_match": 0.059519267455169785,
+      "token_f1": 0.10563919991431121,
+      "avg_total_sec": 11.754614869343705,
+      "p50_total_sec": 6.372546572238207,
+      "p95_total_sec": 76.79552107909694,
+      "avg_storage_bytes": 19535495.33231591,
+      "p95_storage_bytes": 43043300.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -10711,21 +10838,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 193,
-          "rows_recorded": 193,
-          "rows_successful": 193,
+          "expected_total": 195,
+          "rows_recorded": 195,
+          "rows_successful": 195,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9792746113989638,
-          "doc_recall_all": 0.6580310880829016,
-          "ndcg_at_10": 0.8756264040176431,
-          "exact_match": 0.09326424870466321,
-          "token_f1": 0.09933271026886115,
-          "avg_total_sec": 35.85219497667442,
-          "p50_total_sec": 16.95625683804974,
-          "p95_total_sec": 82.21275843912736,
-          "avg_storage_bytes": 18716588.518134713,
-          "p95_storage_bytes": 45379534.0,
+          "doc_recall_any": 0.9794871794871794,
+          "doc_recall_all": 0.6564102564102564,
+          "ndcg_at_10": 0.8741803830842455,
+          "exact_match": 0.09230769230769231,
+          "token_f1": 0.09970842516129029,
+          "avg_total_sec": 36.32582508080567,
+          "p50_total_sec": 17.013591594994068,
+          "p95_total_sec": 82.45447566034272,
+          "avg_storage_bytes": 18995588.774358973,
+          "p95_storage_bytes": 45520037.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -11087,21 +11214,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 30,
-          "rows_recorded": 30,
-          "rows_successful": 30,
+          "expected_total": 33,
+          "rows_recorded": 33,
+          "rows_successful": 33,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9666666666666667,
-          "doc_recall_all": 0.9666666666666667,
-          "ndcg_at_10": 0.9666666666666667,
+          "doc_recall_any": 0.9393939393939394,
+          "doc_recall_all": 0.9393939393939394,
+          "ndcg_at_10": 0.9393939393939394,
           "exact_match": 0.0,
-          "token_f1": 0.12721624370481616,
-          "avg_total_sec": 13.467957027768716,
-          "p50_total_sec": 13.348174967803061,
-          "p95_total_sec": 14.324693179223686,
-          "avg_storage_bytes": 5642446.066666666,
-          "p95_storage_bytes": 6217696.0,
+          "token_f1": 0.12860984948181373,
+          "avg_total_sec": 19.496213332453575,
+          "p50_total_sec": 13.360382594633847,
+          "p95_total_sec": 79.22778097679839,
+          "avg_storage_bytes": 9205273.545454545,
+          "p95_storage_bytes": 44417150.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -11115,6 +11242,23 @@
                 "answer_b0fac439"
               ],
               "retrieved_doc_ids": []
+            },
+            {
+              "case_id": "longmemeval_s::75832dbd",
+              "category": "single-session-preference",
+              "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+              "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+              "prediction": "user: Hmm, most of these seem interesting, but can you recommend a Romance book for someone who wants a little more steamy, intimate scenes?",
+              "expected_doc_ids": [
+                "answer_d87a6ef8"
+              ],
+              "retrieved_doc_ids": [
+                "sharegpt_FYqt26U_0",
+                "sharegpt_fK7pfNf_0",
+                "sharegpt_xni9yYO_6",
+                "c51583cd_1",
+                "6172cc72_1"
+              ]
             }
           ],
           "sample_successes": [
@@ -11970,19 +12114,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2616,
-      "rows_successful": 2616,
+      "rows_recorded": 2620,
+      "rows_successful": 2620,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8038990825688074,
-      "doc_recall_all": 0.7209480122324159,
-      "ndcg_at_10": 0.6281201567205187,
-      "exact_match": 0.06077981651376147,
-      "token_f1": 0.10673796712873508,
-      "avg_total_sec": 7.473698642236588,
-      "p50_total_sec": 0.06974230892956257,
-      "p95_total_sec": 20.165389437694103,
-      "avg_storage_bytes": 11360107.995412843,
+      "doc_recall_any": 0.8041984732824428,
+      "doc_recall_all": 0.7213740458015268,
+      "ndcg_at_10": 0.6285346288999761,
+      "exact_match": 0.06068702290076336,
+      "token_f1": 0.10686791882779689,
+      "avg_total_sec": 7.652295231539045,
+      "p50_total_sec": 0.0697698020376265,
+      "p95_total_sec": 116.93895214702934,
+      "avg_storage_bytes": 11365922.503816795,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -14133,21 +14277,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 193,
-          "rows_recorded": 193,
-          "rows_successful": 193,
+          "expected_total": 195,
+          "rows_recorded": 195,
+          "rows_successful": 195,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9948186528497409,
-          "doc_recall_all": 0.9637305699481865,
-          "ndcg_at_10": 0.9777748582183595,
-          "exact_match": 0.07772020725388601,
-          "token_f1": 0.096368344191182,
-          "avg_total_sec": 44.542287262216924,
-          "p50_total_sec": 10.588476757053286,
-          "p95_total_sec": 126.83108285209164,
-          "avg_storage_bytes": 5633273.663212435,
-          "p95_storage_bytes": 15429409.0,
+          "doc_recall_any": 0.9948717948717949,
+          "doc_recall_all": 0.9641025641025641,
+          "ndcg_at_10": 0.9778359775365771,
+          "exact_match": 0.07692307692307693,
+          "token_f1": 0.096774462838254,
+          "avg_total_sec": 45.409956460558355,
+          "p50_total_sec": 10.743444094900042,
+          "p95_total_sec": 127.18197584617883,
+          "avg_storage_bytes": 5734167.687179487,
+          "p95_storage_bytes": 15490561.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14470,21 +14614,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 30,
-          "rows_recorded": 30,
-          "rows_successful": 30,
+          "expected_total": 32,
+          "rows_recorded": 32,
+          "rows_successful": 32,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
-          "ndcg_at_10": 1.0,
+          "ndcg_at_10": 0.988466554799108,
           "exact_match": 0.0,
-          "token_f1": 0.14396508005641132,
-          "avg_total_sec": 4.731405321229249,
-          "p50_total_sec": 4.508385042659938,
-          "p95_total_sec": 6.8628419251181185,
-          "avg_storage_bytes": 863774.7333333333,
-          "p95_storage_bytes": 1062169.0,
+          "token_f1": 0.15045149678711986,
+          "avg_total_sec": 11.921248436789028,
+          "p50_total_sec": 4.723969968035817,
+          "p95_total_sec": 7.120882094837725,
+          "avg_storage_bytes": 1738962.625,
+          "p95_storage_bytes": 1156557.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -15313,11 +15457,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04090214067278286,
-    "doc_recall_all_delta": 0.07492354740061158,
-    "ndcg_at_10_delta": 0.05882876143090865,
-    "token_f1_delta": 0.001164276215473256,
-    "avg_storage_ratio_nova_over_stock": 0.5829788368724886,
-    "avg_latency_ratio_nova_over_stock": 0.6430162220250801
+    "doc_recall_any_delta": 0.04113094180590704,
+    "doc_recall_all_delta": 0.07543738040663928,
+    "ndcg_at_10_delta": 0.05900560608286731,
+    "token_f1_delta": 0.0012287189134856796,
+    "avg_storage_ratio_nova_over_stock": 0.5818087696509602,
+    "avg_latency_ratio_nova_over_stock": 0.6510034838739294
   }
 }
