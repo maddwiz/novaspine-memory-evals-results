@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T21:51:44Z",
+  "generated_at": "2026-04-30T21:53:44Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T21:50:23Z",
-    "current_system": "stock",
+    "updated_at": "2026-04-30T21:51:46Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_s",
     "current_case_index": 455,
     "current_case_total": 500,
@@ -8736,19 +8736,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 454,
-        "rows_successful": 454,
+        "rows_recorded": 455,
+        "rows_successful": 455,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9757709251101322,
-        "doc_recall_all": 0.9361233480176211,
-        "ndcg_at_10": 0.9261009302078032,
-        "exact_match": 0.16299559471365638,
-        "token_f1": 0.2008654064188142,
-        "avg_total_sec": 124.01017291479157,
+        "doc_recall_any": 0.9758241758241758,
+        "doc_recall_all": 0.9362637362637363,
+        "ndcg_at_10": 0.9262633457458079,
+        "exact_match": 0.16263736263736264,
+        "token_f1": 0.2004239439871245,
+        "avg_total_sec": 123.99707910336943,
         "p50_total_sec": 123.4536449816078,
         "p95_total_sec": 131.5075493939221,
-        "avg_storage_bytes": 15109951.13215859,
+        "avg_storage_bytes": 15108839.285714285,
         "p95_storage_bytes": 15728993.0,
         "categories": {
           "single-session-user": {
@@ -9845,20 +9845,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1,
-            "token_f1": 0.08860696517412935,
-            "avg_total_sec": 125.28058504783549,
+            "exact_match": 0.09090909090909091,
+            "token_f1": 0.08055178652193577,
+            "avg_total_sec": 124.62348538146101,
             "p50_total_sec": 124.63770812097937,
             "p95_total_sec": 134.0456769298762,
-            "avg_storage_bytes": 15278452.2,
+            "avg_storage_bytes": 15217143.909090908,
             "p95_storage_bytes": 15642689.0,
             "categories": {},
             "sample_errors": [],
@@ -10002,6 +10002,20 @@
                   "debc34d7_1",
                   "a07f9d5c_1",
                   "22aa7cca_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::0e5e2d1a",
+                "category": "single-session-assistant",
+                "query": "I wanted to follow up on our previous conversation about binaural beats for anxiety and depression. Can you remind me how many subjects were in the study published in the journal Music and Medicine that found significant reductions in sympt",
+                "gold": "38 subjects",
+                "prediction": "30 AM every day by pouncing on my chest",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_113156",
+                  "f84b4266",
+                  "c756c34e",
+                  "ultrachat_180166",
+                  "ultrachat_201585"
                 ]
               }
             ]
@@ -13997,19 +14011,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2940,
-      "rows_successful": 2940,
+      "rows_recorded": 2941,
+      "rows_successful": 2941,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8227891156462585,
-      "doc_recall_all": 0.7448979591836735,
-      "ndcg_at_10": 0.6602070800674699,
-      "exact_match": 0.07448979591836735,
-      "token_f1": 0.1202842181984048,
-      "avg_total_sec": 20.315410031077647,
+      "doc_recall_any": 0.8228493709622577,
+      "doc_recall_all": 0.7449846990819449,
+      "ndcg_at_10": 0.6603226165924385,
+      "exact_match": 0.07446446786807208,
+      "token_f1": 0.12024331911027206,
+      "avg_total_sec": 20.348642631787147,
       "p50_total_sec": 0.07426039408892393,
       "p95_total_sec": 125.23531866213307,
-      "avg_storage_bytes": 11773465.718367347,
+      "avg_storage_bytes": 11774428.17851071,
       "p95_storage_bytes": 15260789.0,
       "categories": {
         "category_2": {
@@ -16764,20 +16778,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 66,
-          "rows_recorded": 66,
-          "rows_successful": 66,
+          "expected_total": 67,
+          "rows_recorded": 67,
+          "rows_successful": 67,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.045454545454545456,
-          "token_f1": 0.09526271799694012,
-          "avg_total_sec": 20.65136803656986,
-          "p50_total_sec": 1.9742896347306669,
+          "exact_match": 0.04477611940298507,
+          "token_f1": 0.0938408863850455,
+          "avg_total_sec": 22.105116106437713,
+          "p50_total_sec": 2.083431802224368,
           "p95_total_sec": 126.61889116186649,
-          "avg_storage_bytes": 2751253.8484848486,
+          "avg_storage_bytes": 2928161.417910448,
           "p95_storage_bytes": 15416329.0,
           "categories": {},
           "sample_errors": [],
@@ -17465,11 +17479,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03700196841742476,
-    "doc_recall_all_delta": 0.08083811559305809,
-    "ndcg_at_10_delta": 0.057357039534683074,
-    "token_f1_delta": 0.0033844324517147417,
-    "avg_storage_ratio_nova_over_stock": 0.5284408906182859,
-    "avg_latency_ratio_nova_over_stock": 1.0565920353730684
+    "doc_recall_any_delta": 0.03706222373342405,
+    "doc_recall_all_delta": 0.08092485549132944,
+    "ndcg_at_10_delta": 0.057472576059651725,
+    "token_f1_delta": 0.0033435333635819936,
+    "avg_storage_ratio_nova_over_stock": 0.5284840897329315,
+    "avg_latency_ratio_nova_over_stock": 1.058320442585656
   }
 }
