@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T02:31:28Z",
+  "generated_at": "2026-04-30T02:46:17Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T02:29:22Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T02:44:56Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 115,
+    "current_case_index": 120,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::gpt4_e05b82a6"
+    "current_case_id": "longmemeval_s::2b8f3739"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,19 +7226,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 115,
-        "rows_successful": 115,
+        "rows_recorded": 120,
+        "rows_successful": 120,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9739130434782609,
-        "doc_recall_all": 0.8173913043478261,
-        "ndcg_at_10": 0.9135582175834189,
-        "exact_match": 0.12173913043478261,
-        "token_f1": 0.15943594328713326,
-        "avg_total_sec": 80.40186434477243,
-        "p50_total_sec": 79.97371352789924,
+        "doc_recall_any": 0.975,
+        "doc_recall_all": 0.8,
+        "ndcg_at_10": 0.9033453166427949,
+        "exact_match": 0.125,
+        "token_f1": 0.15695944565016937,
+        "avg_total_sec": 80.40066558764083,
+        "p50_total_sec": 79.99469283875078,
         "p95_total_sec": 84.68705957988277,
-        "avg_storage_bytes": 44699876.60869565,
+        "avg_storage_bytes": 44688577.608333334,
         "p95_storage_bytes": 45727069.0,
         "categories": {
           "single-session-user": {
@@ -7426,20 +7426,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 45,
-            "rows_recorded": 45,
-            "rows_successful": 45,
+            "expected_total": 50,
+            "rows_recorded": 50,
+            "rows_successful": 50,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9777777777777777,
-            "doc_recall_all": 0.5777777777777777,
-            "ndcg_at_10": 0.8607939822956759,
-            "exact_match": 0.1111111111111111,
-            "token_f1": 0.12839506172839507,
-            "avg_total_sec": 80.02503699469898,
-            "p50_total_sec": 79.76615367690101,
+            "doc_recall_any": 0.98,
+            "doc_recall_all": 0.56,
+            "ndcg_at_10": 0.8415594435669524,
+            "exact_match": 0.12,
+            "token_f1": 0.12555555555555556,
+            "avg_total_sec": 80.05984271259047,
+            "p50_total_sec": 79.80937036359683,
             "p95_total_sec": 84.63449156703427,
-            "avg_storage_bytes": 44604363.31111111,
+            "avg_storage_bytes": 44586797.04,
             "p95_storage_bytes": 45727069.0,
             "categories": {},
             "sample_errors": [],
@@ -7798,19 +7798,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 115,
-        "rows_successful": 115,
+        "rows_recorded": 119,
+        "rows_successful": 119,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9826086956521739,
-        "doc_recall_all": 0.9478260869565217,
-        "ndcg_at_10": 0.9586298980565534,
-        "exact_match": 0.12173913043478261,
-        "token_f1": 0.14159839147480413,
-        "avg_total_sec": 123.97642105098652,
-        "p50_total_sec": 123.67279699305072,
+        "doc_recall_any": 0.9747899159663865,
+        "doc_recall_all": 0.9243697478991597,
+        "ndcg_at_10": 0.9430403623168301,
+        "exact_match": 0.11764705882352941,
+        "token_f1": 0.1368387816773317,
+        "avg_total_sec": 123.8937806013909,
+        "p50_total_sec": 123.57954212510958,
         "p95_total_sec": 131.30606171581894,
-        "avg_storage_bytes": 15093326.426086957,
+        "avg_storage_bytes": 15087087.957983194,
         "p95_storage_bytes": 15679337.0,
         "categories": {
           "single-session-user": {
@@ -8032,24 +8032,39 @@
             ]
           },
           "multi-session": {
-            "expected_total": 45,
-            "rows_recorded": 45,
-            "rows_successful": 45,
+            "expected_total": 49,
+            "rows_recorded": 49,
+            "rows_successful": 49,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.9111111111111111,
-            "ndcg_at_10": 0.9633255336842063,
-            "exact_match": 0.15555555555555556,
-            "token_f1": 0.15185185185185185,
-            "avg_total_sec": 122.99429150551765,
-            "p50_total_sec": 122.7697883322835,
+            "doc_recall_any": 0.9795918367346939,
+            "doc_recall_all": 0.8571428571428571,
+            "ndcg_at_10": 0.9250819154079267,
+            "exact_match": 0.14285714285714285,
+            "token_f1": 0.13945578231292516,
+            "avg_total_sec": 122.87376711123186,
+            "p50_total_sec": 122.3558235107921,
             "p95_total_sec": 130.48630157485604,
-            "avg_storage_bytes": 14986276.91111111,
+            "avg_storage_bytes": 14979865.081632653,
             "p95_storage_bytes": 15527353.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::edced276",
+                "category": "multi-session",
+                "query": "How many days did I spend in total traveling in Hawaii and in New York City?",
+                "gold": "15 days",
+                "prediction": "Walking tour of the Old Town - This is a great way to explore the historic center of Cartagena and learn about the city's history, architecture, and culture.",
+                "expected_doc_ids": [
+                  "answer_60e8941a_2",
+                  "answer_60e8941a_1"
+                ],
+                "retrieved_doc_ids": [
+                  "ultrachat_378743"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_s::0a995998",
@@ -8243,6 +8258,20 @@
               "ea3db78e_2",
               "793382f9_2",
               "080a4000_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::edced276",
+            "category": "multi-session",
+            "query": "How many days did I spend in total traveling in Hawaii and in New York City?",
+            "gold": "15 days",
+            "prediction": "Walking tour of the Old Town - This is a great way to explore the historic center of Cartagena and learn about the city's history, architecture, and culture.",
+            "expected_doc_ids": [
+              "answer_60e8941a_2",
+              "answer_60e8941a_1"
+            ],
+            "retrieved_doc_ids": [
+              "ultrachat_378743"
             ]
           }
         ],
@@ -8463,19 +8492,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2601,
-      "rows_successful": 2601,
+      "rows_recorded": 2606,
+      "rows_successful": 2606,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7620146097654749,
-      "doc_recall_all": 0.6470588235294118,
-      "ndcg_at_10": 0.5684715976831274,
-      "exact_match": 0.0592079969242599,
-      "token_f1": 0.1055417565407252,
-      "avg_total_sec": 11.222799893665016,
-      "p50_total_sec": 6.37200619885698,
-      "p95_total_sec": 19.79882809938863,
-      "avg_storage_bytes": 19339817.683967706,
+      "doc_recall_any": 0.7624712202609363,
+      "doc_recall_all": 0.6465848042977743,
+      "ndcg_at_10": 0.5686634184761538,
+      "exact_match": 0.05947812739831159,
+      "token_f1": 0.10553112385357875,
+      "avg_total_sec": 11.355475055368679,
+      "p50_total_sec": 6.372075334191322,
+      "p95_total_sec": 20.45957968197763,
+      "avg_storage_bytes": 19387954.45088258,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -10648,21 +10677,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 178,
-          "rows_recorded": 178,
-          "rows_successful": 178,
+          "expected_total": 183,
+          "rows_recorded": 183,
+          "rows_successful": 183,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9831460674157303,
-          "doc_recall_all": 0.6741573033707865,
-          "ndcg_at_10": 0.8894619745595498,
-          "exact_match": 0.0898876404494382,
-          "token_f1": 0.09834014840013221,
-          "avg_total_sec": 32.04791668970714,
-          "p50_total_sec": 16.46738778287545,
-          "p95_total_sec": 81.06936005037278,
-          "avg_storage_bytes": 16511084.191011235,
-          "p95_storage_bytes": 45351579.0,
+          "doc_recall_any": 0.9836065573770492,
+          "doc_recall_all": 0.6666666666666666,
+          "ndcg_at_10": 0.8834233576319237,
+          "exact_match": 0.09289617486338798,
+          "token_f1": 0.09838549953674063,
+          "avg_total_sec": 33.36827673025103,
+          "p50_total_sec": 16.73193819820881,
+          "p95_total_sec": 81.76222880603746,
+          "avg_storage_bytes": 17273860.595628414,
+          "p95_storage_bytes": 45358410.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -11890,19 +11919,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2601,
-      "rows_successful": 2601,
+      "rows_recorded": 2605,
+      "rows_successful": 2605,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8031526336024606,
-      "doc_recall_all": 0.7204921184159938,
-      "ndcg_at_10": 0.6269901696887823,
-      "exact_match": 0.06113033448673587,
-      "token_f1": 0.10716129258314917,
-      "avg_total_sec": 6.798914036492257,
-      "p50_total_sec": 0.06955603463575244,
-      "p95_total_sec": 16.00967877963558,
-      "avg_storage_bytes": 11337871.563629374,
+      "doc_recall_any": 0.8030710172744722,
+      "doc_recall_all": 0.7197696737044146,
+      "ndcg_at_10": 0.626787253819471,
+      "exact_match": 0.061036468330134354,
+      "token_f1": 0.10699674549281035,
+      "avg_total_sec": 6.975065980659665,
+      "p50_total_sec": 0.06961847003549337,
+      "p95_total_sec": 17.24526940099895,
+      "avg_storage_bytes": 11343353.115163147,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -14053,24 +14082,39 @@
           ]
         },
         "multi-session": {
-          "expected_total": 178,
-          "rows_recorded": 178,
-          "rows_successful": 178,
+          "expected_total": 182,
+          "rows_recorded": 182,
+          "rows_successful": 182,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9775280898876404,
-          "ndcg_at_10": 0.9907283652572432,
-          "exact_match": 0.08426966292134831,
-          "token_f1": 0.10168028330841644,
-          "avg_total_sec": 37.805849451872554,
-          "p50_total_sec": 9.762466377113014,
+          "doc_recall_any": 0.9945054945054945,
+          "doc_recall_all": 0.9615384615384616,
+          "ndcg_at_10": 0.9798297464559802,
+          "exact_match": 0.08241758241758242,
+          "token_f1": 0.09944555180713256,
+          "avg_total_sec": 39.64567402821638,
+          "p50_total_sec": 10.11515856999904,
           "p95_total_sec": 126.09928240207955,
-          "avg_storage_bytes": 4825748.528089887,
+          "avg_storage_bytes": 5047330.582417582,
           "p95_storage_bytes": 15260753.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "longmemeval_s::edced276",
+              "category": "multi-session",
+              "query": "How many days did I spend in total traveling in Hawaii and in New York City?",
+              "gold": "15 days",
+              "prediction": "Walking tour of the Old Town - This is a great way to explore the historic center of Cartagena and learn about the city's history, architecture, and culture.",
+              "expected_doc_ids": [
+                "answer_60e8941a_2",
+                "answer_60e8941a_1"
+              ],
+              "retrieved_doc_ids": [
+                "ultrachat_378743"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::0a995998",
@@ -15218,11 +15262,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.041138023836985727,
-    "doc_recall_all_delta": 0.07343329488658201,
-    "ndcg_at_10_delta": 0.05851857200565491,
-    "token_f1_delta": 0.0016195360424239719,
-    "avg_storage_ratio_nova_over_stock": 0.586245007522911,
-    "avg_latency_ratio_nova_over_stock": 0.6058126404205131
+    "doc_recall_any_delta": 0.04059979701353589,
+    "doc_recall_all_delta": 0.07318486940664026,
+    "ndcg_at_10_delta": 0.05812383534331722,
+    "token_f1_delta": 0.0014656216392315985,
+    "avg_storage_ratio_nova_over_stock": 0.5850721974770667,
+    "avg_latency_ratio_nova_over_stock": 0.6142469554685843
   }
 }
