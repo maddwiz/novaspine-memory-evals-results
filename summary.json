@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T22:28:05Z",
+  "generated_at": "2026-04-30T22:43:08Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T22:26:03Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T22:41:45Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 465,
+    "current_case_index": 470,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::8aef76bc"
+    "current_case_id": "longmemeval_s::3249768e"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,19 +7226,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 465,
-        "rows_successful": 465,
-        "rows_failed": 0,
+        "rows_recorded": 470,
+        "rows_successful": 469,
+        "rows_failed": 1,
         "complete": false,
-        "doc_recall_any": 0.9698924731182795,
-        "doc_recall_all": 0.8043010752688172,
-        "ndcg_at_10": 0.8805301906563543,
-        "exact_match": 0.15053763440860216,
-        "token_f1": 0.19020640785267257,
-        "avg_total_sec": 80.44879225787696,
-        "p50_total_sec": 80.25903691211715,
+        "doc_recall_any": 0.9701492537313433,
+        "doc_recall_all": 0.8059701492537313,
+        "ndcg_at_10": 0.8815491229322062,
+        "exact_match": 0.14925373134328357,
+        "token_f1": 0.1888782743837431,
+        "avg_total_sec": 80.44031589265579,
+        "p50_total_sec": 80.2416025721468,
         "p95_total_sec": 84.5976999620907,
-        "avg_storage_bytes": 44753811.02795699,
+        "avg_storage_bytes": 44750627.385927506,
         "p95_storage_bytes": 45892689.0,
         "categories": {
           "single-session-user": {
@@ -8261,20 +8261,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 21,
-            "rows_recorded": 21,
-            "rows_successful": 21,
+            "expected_total": 25,
+            "rows_recorded": 25,
+            "rows_successful": 25,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.047619047619047616,
-            "token_f1": 0.08120669054064336,
-            "avg_total_sec": 80.8542365544653,
-            "p50_total_sec": 80.371736260131,
+            "exact_match": 0.04,
+            "token_f1": 0.07373086143345077,
+            "avg_total_sec": 80.63034885546193,
+            "p50_total_sec": 80.32745323609561,
             "p95_total_sec": 83.69346130499616,
-            "avg_storage_bytes": 44947479.047619045,
+            "avg_storage_bytes": 44856767.04,
             "p95_storage_bytes": 45761483.0,
             "categories": {},
             "sample_errors": [],
@@ -8415,7 +8415,13 @@
             ]
           }
         },
-        "sample_errors": [],
+        "sample_errors": [
+          {
+            "case_id": "longmemeval_s::70b3e69b",
+            "query": "I was going through our previous conversation about the impact of the political climate in Catalonia on its literature and music. Can you remind me of the example you gave of a Spa",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\n[memory] embeddings: batch rejected; splitting 7 texts into 3+4\n[memory] embeddings: batch rejected; splitting 4 texts into 2+2\n[memory] embeddings: batch rejected; splitting 2 texts into 1+1\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"in"
+          }
+        ],
         "sample_misses": [
           {
             "case_id": "longmemeval_s::5d3d2817",
@@ -8747,19 +8753,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 465,
-        "rows_successful": 465,
+        "rows_recorded": 469,
+        "rows_successful": 469,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9763440860215054,
-        "doc_recall_all": 0.9376344086021505,
-        "ndcg_at_10": 0.9278490802458981,
-        "exact_match": 0.15913978494623657,
-        "token_f1": 0.19855831108977234,
-        "avg_total_sec": 124.0152128584082,
-        "p50_total_sec": 123.4536449816078,
-        "p95_total_sec": 131.52389213815331,
-        "avg_storage_bytes": 15110686.28172043,
+        "doc_recall_any": 0.976545842217484,
+        "doc_recall_all": 0.9381663113006397,
+        "ndcg_at_10": 0.9284644399026495,
+        "exact_match": 0.15778251599147122,
+        "token_f1": 0.19722021604138765,
+        "avg_total_sec": 124.07079243331727,
+        "p50_total_sec": 123.45701082190499,
+        "p95_total_sec": 131.5666729649529,
+        "avg_storage_bytes": 15108563.55010661,
         "p95_storage_bytes": 15728993.0,
         "categories": {
           "single-session-user": {
@@ -9856,20 +9862,20 @@
             ]
           },
           "single-session-assistant": {
-            "expected_total": 21,
-            "rows_recorded": 21,
-            "rows_successful": 21,
+            "expected_total": 25,
+            "rows_recorded": 25,
+            "rows_successful": 25,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.047619047619047616,
-            "token_f1": 0.09632332354018043,
-            "avg_total_sec": 124.72672982489513,
-            "p50_total_sec": 124.62558575812727,
-            "p95_total_sec": 134.0456769298762,
-            "avg_storage_bytes": 15206468.047619049,
+            "exact_match": 0.04,
+            "token_f1": 0.08757825844041824,
+            "avg_total_sec": 125.65555993555114,
+            "p50_total_sec": 124.16704015713185,
+            "p95_total_sec": 134.52236928092316,
+            "avg_storage_bytes": 15151320.52,
             "p95_storage_bytes": 15614197.0,
             "categories": {},
             "sample_errors": [],
@@ -10432,19 +10438,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2951,
-      "rows_successful": 2951,
-      "rows_failed": 0,
+      "rows_recorded": 2956,
+      "rows_successful": 2955,
+      "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7865130464249407,
-      "doc_recall_all": 0.6651982378854625,
-      "ndcg_at_10": 0.6041958553734076,
-      "exact_match": 0.0711623178583531,
-      "token_f1": 0.1167824313574716,
-      "avg_total_sec": 19.435098788101207,
-      "p50_total_sec": 6.385101859923452,
-      "p95_total_sec": 81.20043613482267,
-      "avg_storage_bytes": 22356117.28702135,
+      "doc_recall_any": 0.7868020304568528,
+      "doc_recall_all": 0.6656514382402707,
+      "ndcg_at_10": 0.6047316308652879,
+      "exact_match": 0.07106598984771574,
+      "token_f1": 0.11667102740114431,
+      "avg_total_sec": 19.516343917911826,
+      "p50_total_sec": 6.385450806003064,
+      "p95_total_sec": 81.25344820832834,
+      "avg_storage_bytes": 22385930.365482233,
       "p95_storage_bytes": 45145783.0,
       "categories": {
         "category_2": {
@@ -13307,20 +13313,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 77,
-          "rows_recorded": 77,
-          "rows_successful": 77,
+          "expected_total": 81,
+          "rows_recorded": 81,
+          "rows_successful": 81,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03896103896103896,
-          "token_f1": 0.08477344938031922,
-          "avg_total_sec": 31.347743488346264,
-          "p50_total_sec": 12.810225410852581,
-          "p95_total_sec": 81.94306656578556,
-          "avg_storage_bytes": 15730404.935064934,
+          "exact_match": 0.037037037037037035,
+          "token_f1": 0.08228995847860912,
+          "avg_total_sec": 33.723407436363445,
+          "p50_total_sec": 12.825167316943407,
+          "p95_total_sec": 81.97884713672101,
+          "avg_storage_bytes": 17145225.87654321,
           "p95_storage_bytes": 45281761.0,
           "categories": {},
           "sample_errors": [],
@@ -13655,7 +13661,13 @@
           ]
         }
       },
-      "sample_errors": [],
+      "sample_errors": [
+        {
+          "case_id": "longmemeval_s::70b3e69b",
+          "query": "I was going through our previous conversation about the impact of the political climate in Catalonia on its literature and music. Can you remind me of the example you gave of a Spa",
+          "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\n[memory] embeddings: batch rejected; splitting 7 texts into 3+4\n[memory] embeddings: batch rejected; splitting 4 texts into 2+2\n[memory] embeddings: batch rejected; splitting 2 texts into 1+1\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"in"
+        }
+      ],
       "sample_misses": [
         {
           "case_id": "locomo::conv-26::0001",
@@ -14036,19 +14048,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2951,
-      "rows_successful": 2951,
+      "rows_recorded": 2955,
+      "rows_successful": 2955,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8234496780752287,
-      "doc_recall_all": 0.7458488647915961,
-      "ndcg_at_10": 0.6614736751604071,
-      "exact_match": 0.07421213148085395,
-      "token_f1": 0.12022105104910627,
-      "avg_total_sec": 20.70273160529066,
-      "p50_total_sec": 0.07434331066906452,
-      "p95_total_sec": 125.35129096684977,
-      "avg_storage_bytes": 11786018.47475432,
+      "doc_recall_any": 0.823688663282572,
+      "doc_recall_all": 0.7461928934010152,
+      "ndcg_at_10": 0.6619319172244879,
+      "exact_match": 0.07411167512690356,
+      "token_f1": 0.12011471685704883,
+      "avg_total_sec": 20.85140055474745,
+      "p50_total_sec": 0.0743879429064691,
+      "p95_total_sec": 125.35703464783728,
+      "avg_storage_bytes": 11790181.963790186,
       "p95_storage_bytes": 15268765.0,
       "categories": {
         "category_2": {
@@ -16803,20 +16815,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 77,
-          "rows_recorded": 77,
-          "rows_successful": 77,
+          "expected_total": 81,
+          "rows_recorded": 81,
+          "rows_successful": 81,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.03896103896103896,
-          "token_f1": 0.0964163575376694,
-          "avg_total_sec": 35.44734761374095,
-          "p50_total_sec": 2.4210969461128116,
-          "p95_total_sec": 127.5998637387529,
-          "avg_storage_bytes": 4521221.571428572,
+          "exact_match": 0.037037037037037035,
+          "token_f1": 0.09371266909959518,
+          "avg_total_sec": 40.14288195461771,
+          "p50_total_sec": 2.5471838801167905,
+          "p95_total_sec": 128.46393513400108,
+          "avg_storage_bytes": 5031867.222222222,
           "p95_storage_bytes": 15552505.0,
           "categories": {},
           "sample_errors": [],
@@ -17504,11 +17516,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03693663165028804,
-    "doc_recall_all_delta": 0.08065062690613356,
-    "ndcg_at_10_delta": 0.05727781978699953,
-    "token_f1_delta": 0.00343861969163467,
-    "avg_storage_ratio_nova_over_stock": 0.5271943389560132,
-    "avg_latency_ratio_nova_over_stock": 1.065223893688955
+    "doc_recall_any_delta": 0.036886632825719134,
+    "doc_recall_all_delta": 0.08054145516074451,
+    "ndcg_at_10_delta": 0.05720028635919994,
+    "token_f1_delta": 0.0034436894559045222,
+    "avg_storage_ratio_nova_over_stock": 0.5266782202615059,
+    "avg_latency_ratio_nova_over_stock": 1.0684071075223434
   }
 }
