@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T17:21:00Z",
+  "generated_at": "2026-04-30T17:35:55Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T17:18:52Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T17:34:36Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 375,
+    "current_case_index": 380,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::ce6d2d27"
+    "current_case_id": "longmemeval_s::031748ae"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,20 +7226,20 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 375,
-        "rows_successful": 375,
+        "rows_recorded": 380,
+        "rows_successful": 380,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9626666666666667,
-        "doc_recall_all": 0.776,
-        "ndcg_at_10": 0.8622868592036275,
-        "exact_match": 0.14666666666666667,
-        "token_f1": 0.18913328171990562,
-        "avg_total_sec": 80.49175384057686,
+        "doc_recall_any": 0.9631578947368421,
+        "doc_recall_all": 0.7763157894736842,
+        "ndcg_at_10": 0.8624853289699865,
+        "exact_match": 0.14736842105263157,
+        "token_f1": 0.19032323712455312,
+        "avg_total_sec": 80.48746851763296,
         "p50_total_sec": 80.26864096708596,
         "p95_total_sec": 84.68705957988277,
-        "avg_storage_bytes": 44770832.024,
-        "p95_storage_bytes": 45892689.0,
+        "avg_storage_bytes": 44767909.163157895,
+        "p95_storage_bytes": 45927599.0,
         "categories": {
           "single-session-user": {
             "expected_total": 70,
@@ -8104,21 +8104,21 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.7777777777777778,
-            "ndcg_at_10": 0.9140327095034352,
-            "exact_match": 0.2222222222222222,
-            "token_f1": 0.23280423280423282,
-            "avg_total_sec": 80.45860654560641,
-            "p50_total_sec": 80.63470961013809,
-            "p95_total_sec": 84.4188945600763,
-            "avg_storage_bytes": 44853806.777777776,
-            "p95_storage_bytes": 47177544.0,
+            "doc_recall_all": 0.7857142857142857,
+            "ndcg_at_10": 0.9009390851975327,
+            "exact_match": 0.21428571428571427,
+            "token_f1": 0.24950625411454905,
+            "avg_total_sec": 80.35412895676147,
+            "p50_total_sec": 80.36146494420245,
+            "p95_total_sec": 82.89817301509902,
+            "avg_storage_bytes": 44744838.14285714,
+            "p95_storage_bytes": 46165323.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -8222,6 +8222,40 @@
                 "retrieved_doc_ids": [
                   "answer_73540165_2",
                   "0e250059_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::9ea5eabc",
+                "category": "knowledge-update",
+                "query": "Where did I go on my most recent family trip?",
+                "gold": "Paris",
+                "prediction": "Since I've been thinking about my recent family trip to Paris, I was wondering if you could help me compare and contrast my experiences traveling with family versus solo.",
+                "retrieved_doc_ids": [
+                  "answer_02e66dec_1",
+                  "answer_02e66dec_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::07741c44",
+                "category": "knowledge-update",
+                "query": "Where do I initially keep my old sneakers?",
+                "gold": "under my bed",
+                "prediction": "ll be able to keep your sneakers clean, fresh, and organized while they",
+                "retrieved_doc_ids": [
+                  "answer_7e9ad7b4_2",
+                  "answer_7e9ad7b4_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::a1eacc2a",
+                "category": "knowledge-update",
+                "query": "How many short stories have I written since I started writing regularly?",
+                "gold": "seven",
+                "prediction": "4",
+                "retrieved_doc_ids": [
+                  "answer_0eb23770_1",
+                  "answer_0eb23770_2",
+                  "521255f7_2"
                 ]
               }
             ]
@@ -8559,19 +8593,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 375,
-        "rows_successful": 375,
+        "rows_recorded": 379,
+        "rows_successful": 379,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9813333333333333,
-        "doc_recall_all": 0.9333333333333333,
-        "ndcg_at_10": 0.9232218250333528,
-        "exact_match": 0.14933333333333335,
-        "token_f1": 0.19266681727669174,
-        "avg_total_sec": 124.06241111489634,
+        "doc_recall_any": 0.978891820580475,
+        "doc_recall_all": 0.9313984168865436,
+        "ndcg_at_10": 0.9209699893556825,
+        "exact_match": 0.1503957783641161,
+        "token_f1": 0.19344214408388302,
+        "avg_total_sec": 124.05310046917079,
         "p50_total_sec": 123.57954212510958,
         "p95_total_sec": 131.52389213815331,
-        "avg_storage_bytes": 15117513.896,
+        "avg_storage_bytes": 15117447.965699209,
         "p95_storage_bytes": 15736933.0,
         "categories": {
           "single-session-user": {
@@ -9427,24 +9461,39 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
-            "exact_match": 0.2222222222222222,
-            "token_f1": 0.21794871794871795,
-            "avg_total_sec": 123.28477785638016,
+            "doc_recall_any": 0.9230769230769231,
+            "doc_recall_all": 0.9230769230769231,
+            "ndcg_at_10": 0.9107262752535673,
+            "exact_match": 0.23076923076923078,
+            "token_f1": 0.23277343004390152,
+            "avg_total_sec": 123.2526084951555,
             "p50_total_sec": 125.30165722128004,
-            "p95_total_sec": 128.5656378478743,
-            "avg_storage_bytes": 15111320.555555556,
-            "p95_storage_bytes": 15724753.0,
+            "p95_total_sec": 128.06738758226857,
+            "avg_storage_bytes": 15111304.076923076,
+            "p95_storage_bytes": 15712393.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_s::07741c44",
+                "category": "knowledge-update",
+                "query": "Where do I initially keep my old sneakers?",
+                "gold": "under my bed",
+                "prediction": "User location current: Chicago right now",
+                "expected_doc_ids": [
+                  "answer_7e9ad7b4_1",
+                  "answer_7e9ad7b4_2"
+                ],
+                "retrieved_doc_ids": [
+                  "a4b136d1_2"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_s::6a1eabeb",
@@ -9567,6 +9616,46 @@
                   "7a4d00b3_2",
                   "0e250059_1"
                 ]
+              },
+              {
+                "case_id": "longmemeval_s::9ea5eabc",
+                "category": "knowledge-update",
+                "query": "Where did I go on my most recent family trip?",
+                "gold": "Paris",
+                "prediction": "Since I've been thinking about my recent family trip to Paris, I was wondering if you could help me compare and contrast my experiences traveling with family versus solo.",
+                "retrieved_doc_ids": [
+                  "answer_02e66dec_2",
+                  "answer_02e66dec_1",
+                  "418c27fa",
+                  "9bf5da2d",
+                  "29695e1c_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::a1eacc2a",
+                "category": "knowledge-update",
+                "query": "How many short stories have I written since I started writing regularly?",
+                "gold": "seven",
+                "prediction": "4",
+                "retrieved_doc_ids": [
+                  "answer_0eb23770_1",
+                  "521255f7_2",
+                  "answer_0eb23770_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::184da446",
+                "category": "knowledge-update",
+                "query": "How many pages of 'A Short History of Nearly Everything' have I read so far?",
+                "gold": "220",
+                "prediction": "220",
+                "retrieved_doc_ids": [
+                  "answer_e2f4f947_2",
+                  "bf633415_2",
+                  "answer_e2f4f947_1",
+                  "sharegpt_jjrmfdA_19",
+                  "59115228"
+                ]
               }
             ]
           }
@@ -9681,6 +9770,20 @@
               "sharegpt_5YtukCb_0",
               "ultrachat_133409",
               "e552e1f9_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_s::07741c44",
+            "category": "knowledge-update",
+            "query": "Where do I initially keep my old sneakers?",
+            "gold": "under my bed",
+            "prediction": "User location current: Chicago right now",
+            "expected_doc_ids": [
+              "answer_7e9ad7b4_1",
+              "answer_7e9ad7b4_2"
+            ],
+            "retrieved_doc_ids": [
+              "a4b136d1_2"
             ]
           }
         ],
@@ -9901,20 +10004,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2861,
-      "rows_successful": 2861,
+      "rows_recorded": 2866,
+      "rows_successful": 2866,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7797972736805313,
-      "doc_recall_all": 0.6571128975882559,
-      "ndcg_at_10": 0.5931118499661242,
-      "exact_match": 0.06815798671793079,
-      "token_f1": 0.11433203632623927,
-      "avg_total_sec": 17.521389658857114,
-      "p50_total_sec": 6.381208990700543,
-      "p95_total_sec": 80.89695877116174,
-      "avg_storage_bytes": 21653772.105907027,
-      "p95_storage_bytes": 44989901.0,
+      "doc_recall_any": 0.7801814375436148,
+      "doc_recall_all": 0.6573621772505234,
+      "ndcg_at_10": 0.593607765373453,
+      "exact_match": 0.06838799720865317,
+      "token_f1": 0.11462030892942643,
+      "avg_total_sec": 17.630679051107606,
+      "p50_total_sec": 6.3814909951761365,
+      "p95_total_sec": 80.90760723594576,
+      "avg_storage_bytes": 21693714.399162594,
+      "p95_storage_bytes": 45006789.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -12421,20 +12524,20 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 87,
-          "rows_recorded": 87,
-          "rows_successful": 87,
+          "expected_total": 92,
+          "rows_recorded": 92,
+          "rows_successful": 92,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9310344827586207,
-          "ndcg_at_10": 0.9733204960527901,
-          "exact_match": 0.20689655172413793,
-          "token_f1": 0.23296597077650102,
-          "avg_total_sec": 21.43841594498305,
-          "p50_total_sec": 14.67469384893775,
-          "p95_total_sec": 80.63470961013809,
-          "avg_storage_bytes": 10340335.344827587,
+          "doc_recall_all": 0.9239130434782609,
+          "ndcg_at_10": 0.9681058256937749,
+          "exact_match": 0.20652173913043478,
+          "token_f1": 0.23549879260783887,
+          "avg_total_sec": 24.63013623584487,
+          "p50_total_sec": 14.705971871968359,
+          "p95_total_sec": 81.72995168110356,
+          "avg_storage_bytes": 12199485.304347826,
           "p95_storage_bytes": 44769063.0,
           "categories": {},
           "sample_errors": [],
@@ -13505,20 +13608,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2861,
-      "rows_successful": 2861,
+      "rows_recorded": 2865,
+      "rows_successful": 2865,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8192939531632296,
-      "doc_recall_all": 0.7392520097867878,
-      "ndcg_at_10": 0.6524876537824279,
-      "exact_match": 0.07025515554002097,
-      "token_f1": 0.11698453808735683,
-      "avg_total_sec": 17.45896230553619,
-      "p50_total_sec": 0.07344536436721683,
-      "p95_total_sec": 124.64144558086991,
-      "avg_storage_bytes": 11682327.54596295,
-      "p95_storage_bytes": 15215769.0,
+      "doc_recall_any": 0.819197207678883,
+      "doc_recall_all": 0.7392670157068063,
+      "ndcg_at_10": 0.6525677553402522,
+      "exact_match": 0.07050610820244328,
+      "token_f1": 0.11719276774763006,
+      "avg_total_sec": 17.606566166097256,
+      "p50_total_sec": 0.07348462985828519,
+      "p95_total_sec": 124.66722837695852,
+      "avg_storage_bytes": 11687114.89598604,
+      "p95_storage_bytes": 15215985.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15884,24 +15987,39 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 87,
-          "rows_recorded": 87,
-          "rows_successful": 87,
+          "expected_total": 91,
+          "rows_recorded": 91,
+          "rows_successful": 91,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 1.0,
-          "doc_recall_all": 1.0,
-          "ndcg_at_10": 1.0,
-          "exact_match": 0.25287356321839083,
-          "token_f1": 0.28145868793371864,
-          "avg_total_sec": 18.98312158471016,
-          "p50_total_sec": 7.063929669093341,
-          "p95_total_sec": 125.30165722128004,
-          "avg_storage_bytes": 2577744.6781609193,
-          "p95_storage_bytes": 15372101.0,
+          "doc_recall_any": 0.989010989010989,
+          "doc_recall_all": 0.989010989010989,
+          "ndcg_at_10": 0.9872466107505096,
+          "exact_match": 0.25274725274725274,
+          "token_f1": 0.2807848569150086,
+          "avg_total_sec": 23.56321414944378,
+          "p50_total_sec": 7.106143038254231,
+          "p95_total_sec": 126.1682305149734,
+          "avg_storage_bytes": 3128668.736263736,
+          "p95_storage_bytes": 15417085.0,
           "categories": {},
           "sample_errors": [],
-          "sample_misses": [],
+          "sample_misses": [
+            {
+              "case_id": "longmemeval_s::07741c44",
+              "category": "knowledge-update",
+              "query": "Where do I initially keep my old sneakers?",
+              "gold": "under my bed",
+              "prediction": "User location current: Chicago right now",
+              "expected_doc_ids": [
+                "answer_7e9ad7b4_1",
+                "answer_7e9ad7b4_2"
+              ],
+              "retrieved_doc_ids": [
+                "a4b136d1_2"
+              ]
+            }
+          ],
           "sample_successes": [
             {
               "case_id": "longmemeval_oracle::6a1eabeb",
@@ -16916,11 +17034,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.039496679482698305,
-    "doc_recall_all_delta": 0.08213911219853198,
-    "ndcg_at_10_delta": 0.059375803816303696,
-    "token_f1_delta": 0.0026525017611175594,
-    "avg_storage_ratio_nova_over_stock": 0.539505426067363,
-    "avg_latency_ratio_nova_over_stock": 0.9964370775071847
+    "doc_recall_any_delta": 0.039015770135268246,
+    "doc_recall_all_delta": 0.08190483845628294,
+    "ndcg_at_10_delta": 0.0589599899667993,
+    "token_f1_delta": 0.0025724588182036295,
+    "avg_storage_ratio_nova_over_stock": 0.5387327721267123,
+    "avg_latency_ratio_nova_over_stock": 0.998632333732555
   }
 }
