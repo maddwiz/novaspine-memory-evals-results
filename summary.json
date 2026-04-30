@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T13:04:48Z",
+  "generated_at": "2026-04-30T13:19:31Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T13:02:47Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T13:18:12Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 300,
+    "current_case_index": 305,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::eac54add"
+    "current_case_id": "longmemeval_s::gpt4_b5700ca0"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,19 +7226,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 300,
-        "rows_successful": 300,
+        "rows_recorded": 305,
+        "rows_successful": 305,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.96,
-        "doc_recall_all": 0.78,
-        "ndcg_at_10": 0.8614582510395646,
-        "exact_match": 0.11,
-        "token_f1": 0.15318370331803924,
-        "avg_total_sec": 80.53496054358159,
-        "p50_total_sec": 80.26864096708596,
+        "doc_recall_any": 0.9540983606557377,
+        "doc_recall_all": 0.7737704918032787,
+        "ndcg_at_10": 0.8535653462162804,
+        "exact_match": 0.10819672131147541,
+        "token_f1": 0.15124270176685256,
+        "avg_total_sec": 80.51137388637595,
+        "p50_total_sec": 80.2153596621938,
         "p95_total_sec": 84.82394488807768,
-        "avg_storage_bytes": 44773249.85333333,
+        "avg_storage_bytes": 44770469.5147541,
         "p95_storage_bytes": 45831607.0,
         "categories": {
           "single-session-user": {
@@ -7832,21 +7832,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 67,
-            "rows_recorded": 67,
-            "rows_successful": 67,
+            "expected_total": 72,
+            "rows_recorded": 72,
+            "rows_successful": 72,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9253731343283582,
-            "doc_recall_all": 0.7164179104477612,
-            "ndcg_at_10": 0.8084290592778658,
-            "exact_match": 0.1791044776119403,
-            "token_f1": 0.2706359103216503,
-            "avg_total_sec": 80.68189008387306,
-            "p50_total_sec": 80.39357089204714,
-            "p95_total_sec": 85.12464796705171,
-            "avg_storage_bytes": 44822689.74626866,
-            "p95_storage_bytes": 46095929.0,
+            "doc_recall_any": 0.9027777777777778,
+            "doc_recall_all": 0.6944444444444444,
+            "ndcg_at_10": 0.7786764202182384,
+            "exact_match": 0.16666666666666666,
+            "token_f1": 0.25425720881984487,
+            "avg_total_sec": 80.57177094291222,
+            "p50_total_sec": 80.35600028606132,
+            "p95_total_sec": 84.58534528082237,
+            "avg_storage_bytes": 44807478.597222224,
+            "p95_storage_bytes": 45951110.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -7928,6 +7928,38 @@
                   "ultrachat_133409",
                   "577da76d_2",
                   "e552e1f9_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::4dfccbf8",
+                "category": "temporal-reasoning",
+                "query": "What did I do with Rachel on the Wednesday two months ago?",
+                "gold": "I started taking ukulele lessons with Rachel.",
+                "prediction": "me through this recent crisis.",
+                "expected_doc_ids": [
+                  "answer_4bebc783_1",
+                  "answer_4bebc783_2"
+                ],
+                "retrieved_doc_ids": [
+                  "sharegpt_3D3oQC0_213"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::6e984302",
+                "category": "temporal-reasoning",
+                "query": "I mentioned an investment for a competition four weeks ago? What did I buy?",
+                "gold": "I got my own set of sculpting tools.",
+                "prediction": "thinking of getting a gift for my coworker Rachel, who's been helping me with a project",
+                "expected_doc_ids": [
+                  "answer_88841f27_1",
+                  "answer_88841f27_2"
+                ],
+                "retrieved_doc_ids": [
+                  "7cd7c296_1",
+                  "b7702ee4_1",
+                  "de1f4aec_1",
+                  "96c743d0_2",
+                  "41dc5d45_1"
                 ]
               }
             ],
@@ -8404,19 +8436,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 300,
-        "rows_successful": 300,
+        "rows_recorded": 304,
+        "rows_successful": 304,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9766666666666667,
-        "doc_recall_all": 0.9333333333333333,
-        "ndcg_at_10": 0.917264221020997,
-        "exact_match": 0.10666666666666667,
-        "token_f1": 0.1513780845809574,
-        "avg_total_sec": 124.0873937678306,
-        "p50_total_sec": 123.7259039930068,
+        "doc_recall_any": 0.9769736842105263,
+        "doc_recall_all": 0.9276315789473685,
+        "ndcg_at_10": 0.9107924649481753,
+        "exact_match": 0.10526315789473684,
+        "token_f1": 0.14995835005843908,
+        "avg_total_sec": 124.0492596953853,
+        "p50_total_sec": 123.66004793904722,
         "p95_total_sec": 131.5075493939221,
-        "avg_storage_bytes": 15125277.44,
+        "avg_storage_bytes": 15123547.855263159,
         "p95_storage_bytes": 15728849.0,
         "categories": {
           "single-session-user": {
@@ -9069,21 +9101,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 67,
-            "rows_recorded": 67,
-            "rows_successful": 67,
+            "expected_total": 71,
+            "rows_recorded": 71,
+            "rows_successful": 71,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9850746268656716,
-            "doc_recall_all": 0.8805970149253731,
-            "ndcg_at_10": 0.8912133704799281,
-            "exact_match": 0.208955223880597,
-            "token_f1": 0.3224991401516097,
-            "avg_total_sec": 124.5090993892457,
-            "p50_total_sec": 123.61384803196415,
-            "p95_total_sec": 134.3137383670546,
-            "avg_storage_bytes": 15161144.52238806,
-            "p95_storage_bytes": 15868437.0,
+            "doc_recall_any": 0.9859154929577465,
+            "doc_recall_all": 0.8591549295774648,
+            "ndcg_at_10": 0.8649709698605829,
+            "exact_match": 0.19718309859154928,
+            "token_f1": 0.3067796539948748,
+            "avg_total_sec": 124.32206304404806,
+            "p50_total_sec": 123.37179983314127,
+            "p95_total_sec": 132.7391795888543,
+            "avg_storage_bytes": 15151718.295774648,
+            "p95_storage_bytes": 15757089.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -9602,19 +9634,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2786,
-      "rows_successful": 2786,
+      "rows_recorded": 2791,
+      "rows_successful": 2791,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7745872218234028,
-      "doc_recall_all": 0.6543431442928931,
-      "ndcg_at_10": 0.5857763481204561,
-      "exact_match": 0.06209619526202441,
-      "token_f1": 0.10844726714997047,
-      "avg_total_sec": 15.830860117318146,
-      "p50_total_sec": 6.378139870706946,
+      "doc_recall_any": 0.7742744536008599,
+      "doc_recall_all": 0.6538874955213185,
+      "ndcg_at_10": 0.5854076894115682,
+      "exact_match": 0.06198495163024006,
+      "token_f1": 0.10831529893346327,
+      "avg_total_sec": 15.944198193879807,
+      "p50_total_sec": 6.378579627722502,
       "p95_total_sec": 80.39357089204714,
-      "avg_storage_bytes": 21031713.905958362,
+      "avg_storage_bytes": 21073942.381941956,
       "p95_storage_bytes": 44872418.0,
       "categories": {
         "category_2": {
@@ -11597,20 +11629,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 200,
-          "rows_recorded": 200,
-          "rows_successful": 200,
+          "expected_total": 205,
+          "rows_recorded": 205,
+          "rows_successful": 205,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.96,
-          "doc_recall_all": 0.78,
-          "ndcg_at_10": 0.8857528646178682,
-          "exact_match": 0.22,
-          "token_f1": 0.2884048945281007,
-          "avg_total_sec": 37.17147299124859,
-          "p50_total_sec": 15.562591071240604,
+          "doc_recall_any": 0.9512195121951219,
+          "doc_recall_all": 0.7707317073170732,
+          "ndcg_at_10": 0.8734172107691209,
+          "exact_match": 0.2146341463414634,
+          "token_f1": 0.2822189851175532,
+          "avg_total_sec": 38.194026685462944,
+          "p50_total_sec": 15.573264203034341,
           "p95_total_sec": 82.98825227515772,
-          "avg_storage_bytes": 19447758.55,
+          "avg_storage_bytes": 20061316.858536586,
           "p95_storage_bytes": 45602441.0,
           "categories": {},
           "sample_errors": [],
@@ -11728,6 +11760,38 @@
                 "ultrachat_133409",
                 "577da76d_2",
                 "e552e1f9_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::4dfccbf8",
+              "category": "temporal-reasoning",
+              "query": "What did I do with Rachel on the Wednesday two months ago?",
+              "gold": "I started taking ukulele lessons with Rachel.",
+              "prediction": "me through this recent crisis.",
+              "expected_doc_ids": [
+                "answer_4bebc783_1",
+                "answer_4bebc783_2"
+              ],
+              "retrieved_doc_ids": [
+                "sharegpt_3D3oQC0_213"
+              ]
+            },
+            {
+              "case_id": "longmemeval_s::6e984302",
+              "category": "temporal-reasoning",
+              "query": "I mentioned an investment for a competition four weeks ago? What did I buy?",
+              "gold": "I got my own set of sculpting tools.",
+              "prediction": "thinking of getting a gift for my coworker Rachel, who's been helping me with a project",
+              "expected_doc_ids": [
+                "answer_88841f27_1",
+                "answer_88841f27_2"
+              ],
+              "retrieved_doc_ids": [
+                "7cd7c296_1",
+                "b7702ee4_1",
+                "de1f4aec_1",
+                "96c743d0_2",
+                "41dc5d45_1"
               ]
             }
           ],
@@ -13174,20 +13238,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2786,
-      "rows_successful": 2786,
+      "rows_recorded": 2790,
+      "rows_successful": 2790,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8144292893036612,
-      "doc_recall_all": 0.7340272792534099,
-      "ndcg_at_10": 0.6445578820496476,
-      "exact_match": 0.06353194544149318,
-      "token_f1": 0.11050112432284842,
-      "avg_total_sec": 14.591853954918196,
-      "p50_total_sec": 0.0723050320520997,
+      "doc_recall_any": 0.8146953405017922,
+      "doc_recall_all": 0.7336917562724015,
+      "ndcg_at_10": 0.6442436926266181,
+      "exact_match": 0.06344086021505377,
+      "token_f1": 0.11040503419603367,
+      "avg_total_sec": 14.744681697293922,
+      "p50_total_sec": 0.07231935299932957,
       "p95_total_sec": 124.00132165802643,
-      "avg_storage_bytes": 11590687.232591528,
-      "p95_storage_bytes": 15170065.0,
+      "avg_storage_bytes": 11595566.288888888,
+      "p95_storage_bytes": 15170317.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15179,20 +15243,20 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 200,
-          "rows_recorded": 200,
-          "rows_successful": 200,
+          "expected_total": 204,
+          "rows_recorded": 204,
+          "rows_successful": 204,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.995,
-          "doc_recall_all": 0.945,
-          "ndcg_at_10": 0.9599590105636683,
-          "exact_match": 0.26,
-          "token_f1": 0.3252006173629055,
-          "avg_total_sec": 46.96502517908113,
-          "p50_total_sec": 8.306822896935046,
+          "doc_recall_any": 0.9950980392156863,
+          "doc_recall_all": 0.9362745098039216,
+          "ndcg_at_10": 0.9494776723072542,
+          "exact_match": 0.2549019607843137,
+          "token_f1": 0.3196766495885263,
+          "avg_total_sec": 48.42040123953027,
+          "p50_total_sec": 8.516204745974392,
           "p95_total_sec": 130.08997371373698,
-          "avg_storage_bytes": 5917381.04,
+          "avg_storage_bytes": 6095350.607843137,
           "p95_storage_bytes": 15593609.0,
           "categories": {},
           "sample_errors": [],
@@ -16585,11 +16649,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.039842067480258425,
-    "doc_recall_all_delta": 0.07968413496051685,
-    "ndcg_at_10_delta": 0.0587815339291915,
-    "token_f1_delta": 0.0020538571728779542,
-    "avg_storage_ratio_nova_over_stock": 0.5511052158857983,
-    "avg_latency_ratio_nova_over_stock": 0.9217347539414779
+    "doc_recall_any_delta": 0.04042088690093226,
+    "doc_recall_all_delta": 0.07980426075108293,
+    "ndcg_at_10_delta": 0.05883600321504989,
+    "token_f1_delta": 0.002089735262570405,
+    "avg_storage_ratio_nova_over_stock": 0.5502324187250797,
+    "avg_latency_ratio_nova_over_stock": 0.9247678383070828
   }
 }
