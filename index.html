@@ -245,9 +245,9 @@
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>64.6%</strong></div>
-          <div><span>NovaSpine</span><strong>72.0%</strong></div>
+          <div><span>NovaSpine</span><strong>72.1%</strong></div>
         </div>
-        <div class="delta good">+0.074</div>
+        <div class="delta good">+0.075</div>
       </div>
     
       
@@ -257,7 +257,7 @@
           <div><span>Stock</span><strong>56.9%</strong></div>
           <div><span>NovaSpine</span><strong>62.8%</strong></div>
         </div>
-        <div class="delta good">+0.058</div>
+        <div class="delta good">+0.059</div>
       </div>
     
       
@@ -275,18 +275,18 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.041, evidence-all +0.074, NDCG@10 +0.058, answer F1 +0.001.</p>
+        <p><b>Current delta:</b> evidence-any +0.041, evidence-all +0.075, NDCG@10 +0.059, answer F1 +0.001.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-04-30T03:05:43Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-04-30T03:03:37Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>125 / 500</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::gpt4_2f91af09</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2611 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2611 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-04-30T03:20:46Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-04-30T03:19:21Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>130 / 500</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_s::60bf93ed_abs</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2616 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2615 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -440,23 +440,23 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>125 / 500 failed 0</td>
-      <td>97.6%</td>
-      <td>79.2%</td>
-      <td>90.0%</td>
-      <td>15.5%</td>
-      <td>80.4s</td>
+      <td>130 / 500 failed 0</td>
+      <td>96.9%</td>
+      <td>77.7%</td>
+      <td>89.0%</td>
+      <td>15.4%</td>
+      <td>80.5s</td>
       <td>42.6 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>125 / 500 failed 0</td>
-      <td>97.6%</td>
-      <td>92.8%</td>
-      <td>94.4%</td>
-      <td>13.4%</td>
+      <td>129 / 500 failed 0</td>
+      <td>97.7%</td>
+      <td>93.0%</td>
+      <td>94.6%</td>
+      <td>13.0%</td>
       <td>124.0s</td>
       <td>14.4 MB</td>
     </tr>
@@ -465,14 +465,15 @@
       <details open>
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
-<tr><td>multi-session</td><td>55</td><td>98.2%</td><td>12.3%</td><td>55</td><td>98.2%</td><td>13.3%</td></tr>
+<tr><td>multi-session</td><td>60</td><td>96.7%</td><td>12.4%</td><td>59</td><td>98.3%</td><td>12.4%</td></tr>
 <tr><td>single-session-user</td><td>70</td><td>97.1%</td><td>17.9%</td><td>70</td><td>97.1%</td><td>13.5%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
         <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> you have any suggestions for managing my time effectively</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> ultrachat_371333, sharegpt_BKl952A_23, 72f053da_2, e7b0637e_3, sharegpt_ipLglky_48</p></div>
 <div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What did my dad gave me as a birthday gift?</p><p><b>Gold:</b> You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.</p><p><b>Pred:</b> ve been thinking about my sister</p><p><b>Expected docs:</b> answer_f5b33470_abs</p><p><b>Retrieved:</b> 1dd13331_1</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many projects have I led or am currently leading?</p><p><b>Gold:</b> 2</p><p><b>Pred:</b> 14</p><p><b>Expected docs:</b> answer_ec904b3c_1, answer_ec904b3c_4, answer_ec904b3c_3, answer_ec904b3c_2</p><p><b>Retrieved:</b> 2e4430d8_2, sharegpt_zciCXP1_12, a9981dc6_3</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many projects have I led or am currently leading?</p><p><b>Gold:</b> 2</p><p><b>Pred:</b> 14</p><p><b>Expected docs:</b> answer_ec904b3c_1, answer_ec904b3c_4, answer_ec904b3c_3, answer_ec904b3c_2</p><p><b>Retrieved:</b> 2e4430d8_2, sharegpt_zciCXP1_12, a9981dc6_3</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How many days did it take for my iPad case to arrive after I bought it?</p><p><b>Gold:</b> The information provided is not enough. You did not mention buying an iPad case.</p><p><b>Pred:</b> ve been using my laptop</p><p><b>Expected docs:</b> answer_e0956e0a_abs_2, answer_e0956e0a_abs_1</p><p><b>Retrieved:</b> 1e91cdf0, cdf068b1_3, 3e82fae8_1, 9a6c8d3c</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location current: marketing field</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> ad17b46e_1</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What did my dad gave me as a birthday gift?</p><p><b>Gold:</b> You did not mention this information. You mentioned receiving a birthday gift from your sister, but not your dad.</p><p><b>Pred:</b> ve been thinking about my sister</p><p><b>Expected docs:</b> answer_f5b33470_abs</p><p><b>Retrieved:</b> 1dd13331_1, 31299b8e_2, ea3db78e_2, 793382f9_2, 080a4000_2</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> How many days did I spend in total traveling in Hawaii and in New York City?</p><p><b>Gold:</b> 15 days</p><p><b>Pred:</b> Walking tour of the Old Town - This is a great way to explore the historic center of Cartagena and learn about the city&#x27;s history, architecture, and culture.</p><p><b>Expected docs:</b> answer_60e8941a_2, answer_60e8941a_1</p><p><b>Retrieved:</b> ultrachat_378743</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> What degree did I graduate with?</p><p><b>Gold:</b> Business Administration</p><p><b>Pred:</b> you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_280352e9</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> a significant amount of time that can be utilized for personal development, entertainment, or relaxation</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_40a90d51, 004edb32, 5209e813_2, 7d8b5834_1, d600c646</p></div>
