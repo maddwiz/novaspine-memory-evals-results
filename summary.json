@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T00:15:41Z",
+  "generated_at": "2026-04-30T00:30:49Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-04-30T00:13:41Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-04-30T00:29:27Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_s",
-    "current_case_index": 75,
+    "current_case_index": 80,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_s::e831120c"
+    "current_case_id": "longmemeval_s::dd2973ad"
   },
   "benchmarks": {
     "locomo": {
@@ -7226,19 +7226,19 @@
     "longmemeval_s": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 75,
-        "rows_successful": 75,
+        "rows_recorded": 80,
+        "rows_successful": 80,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.96,
-        "doc_recall_all": 0.9466666666666667,
-        "ndcg_at_10": 0.9313891612368667,
-        "exact_match": 0.12,
-        "token_f1": 0.18224622415138209,
-        "avg_total_sec": 80.60530778016275,
+        "doc_recall_any": 0.9625,
+        "doc_recall_all": 0.9375,
+        "ndcg_at_10": 0.9294047043778928,
+        "exact_match": 0.1125,
+        "token_f1": 0.1708558351419207,
+        "avg_total_sec": 80.59578823118936,
         "p50_total_sec": 80.3149044578895,
         "p95_total_sec": 84.89708804991096,
-        "avg_storage_bytes": 44760111.84,
+        "avg_storage_bytes": 44762186.5,
         "p95_storage_bytes": 45727069.0,
         "categories": {
           "single-session-user": {
@@ -7426,20 +7426,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8,
-            "doc_recall_all": 0.6,
-            "ndcg_at_10": 0.7061442547954486,
+            "doc_recall_any": 0.9,
+            "doc_recall_all": 0.7,
+            "ndcg_at_10": 0.8028910531443657,
             "exact_match": 0.0,
-            "token_f1": 0.22222222222222224,
-            "avg_total_sec": 80.06206972496584,
+            "token_f1": 0.11111111111111112,
+            "avg_total_sec": 80.25753236077726,
             "p50_total_sec": 79.80937036359683,
             "p95_total_sec": 82.45447566034272,
-            "avg_storage_bytes": 44743785.4,
+            "avg_storage_bytes": 44768545.9,
             "p95_storage_bytes": 45727069.0,
             "categories": {},
             "sample_errors": [],
@@ -7510,6 +7510,68 @@
                 "retrieved_doc_ids": [
                   "answer_86c505e7_2",
                   "answer_86c505e7_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::3a704032",
+                "category": "multi-session",
+                "query": "How many plants did I acquire in the last month?",
+                "gold": "3",
+                "prediction": "2 months",
+                "retrieved_doc_ids": [
+                  "answer_c2204106_2",
+                  "answer_c2204106_1",
+                  "answer_c2204106_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_d84a3211",
+                "category": "multi-session",
+                "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+                "gold": "$185",
+                "prediction": "you think I should consider getting some kind of bike insurance to protect my investment, especially since I'll be taking it on longer trips",
+                "retrieved_doc_ids": [
+                  "answer_2880eb6c_2",
+                  "answer_2880eb6c_4",
+                  "answer_2880eb6c_3",
+                  "answer_2880eb6c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::aae3761f",
+                "category": "multi-session",
+                "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+                "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+                "prediction": "4",
+                "retrieved_doc_ids": [
+                  "answer_526354c8_2",
+                  "answer_526354c8_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_f2262a51",
+                "category": "multi-session",
+                "query": "How many different doctors did I visit?",
+                "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+                "prediction": "7.1",
+                "retrieved_doc_ids": [
+                  "sharegpt_BWMyoNr_0",
+                  "answer_55a6940c_2",
+                  "answer_55a6940c_1",
+                  "answer_55a6940c_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::dd2973ad",
+                "category": "multi-session",
+                "query": "What time did I go to bed on the day before I had a doctor's appointment?",
+                "gold": "2 AM",
+                "prediction": "you can always work on it more tomorrow",
+                "retrieved_doc_ids": [
+                  "answer_f9de4602_2",
+                  "answer_f9de4602_1",
+                  "56266c38_1",
+                  "sharegpt_O6NO7Vo_9"
                 ]
               }
             ]
@@ -7702,19 +7764,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 75,
-        "rows_successful": 75,
+        "rows_recorded": 79,
+        "rows_successful": 79,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9733333333333334,
-        "doc_recall_all": 0.96,
-        "ndcg_at_10": 0.9468170248324179,
-        "exact_match": 0.10666666666666667,
-        "token_f1": 0.14082123729840335,
-        "avg_total_sec": 124.46450179093827,
-        "p50_total_sec": 123.94300398696214,
+        "doc_recall_any": 0.9746835443037974,
+        "doc_recall_all": 0.9620253164556962,
+        "ndcg_at_10": 0.9479084845753823,
+        "exact_match": 0.10126582278481013,
+        "token_f1": 0.13369104806810445,
+        "avg_total_sec": 124.54440462457228,
+        "p50_total_sec": 124.10872000269592,
         "p95_total_sec": 131.67567613627762,
-        "avg_storage_bytes": 15150057.32,
+        "avg_storage_bytes": 15142463.126582278,
         "p95_storage_bytes": 15687817.0,
         "categories": {
           "single-session-user": {
@@ -7936,20 +7998,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.8,
-            "ndcg_at_10": 0.8236975203433949,
-            "exact_match": 0.2,
-            "token_f1": 0.22222222222222224,
-            "avg_total_sec": 122.45846624104306,
-            "p50_total_sec": 121.33333027316257,
-            "p95_total_sec": 126.3276227908209,
-            "avg_storage_bytes": 14980844.2,
+            "doc_recall_all": 0.8888888888888888,
+            "ndcg_at_10": 0.8879978911934251,
+            "exact_match": 0.1111111111111111,
+            "token_f1": 0.1234567901234568,
+            "avg_total_sec": 124.0514069140061,
+            "p50_total_sec": 124.12455392302945,
+            "p95_total_sec": 129.72478755330667,
+            "avg_storage_bytes": 14989389.888888888,
             "p95_storage_bytes": 15527353.0,
             "categories": {},
             "sample_errors": [],
@@ -8018,6 +8080,60 @@
                 "retrieved_doc_ids": [
                   "answer_86c505e7_2",
                   "answer_86c505e7_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::3a704032",
+                "category": "multi-session",
+                "query": "How many plants did I acquire in the last month?",
+                "gold": "3",
+                "prediction": "7 months",
+                "retrieved_doc_ids": [
+                  "answer_c2204106_1",
+                  "answer_c2204106_2",
+                  "d729b790_2",
+                  "answer_c2204106_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_d84a3211",
+                "category": "multi-session",
+                "query": "How much total money have I spent on bike-related expenses since the start of the year?",
+                "gold": "$185",
+                "prediction": "a summary of the analysis of the rent roll, operating expenses, and vacancy rate for the property being appraised",
+                "retrieved_doc_ids": [
+                  "answer_2880eb6c_3",
+                  "answer_2880eb6c_1",
+                  "answer_2880eb6c_4",
+                  "answer_2880eb6c_2",
+                  "sharegpt_OHd1RQ7_37"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::aae3761f",
+                "category": "multi-session",
+                "query": "How many hours in total did I spend driving to my three road trip destinations combined?",
+                "gold": "15 hours for getting to the three destinations (or 30 hours for the round trip)",
+                "prediction": "4",
+                "retrieved_doc_ids": [
+                  "answer_526354c8_1",
+                  "answer_526354c8_2",
+                  "answer_526354c8_3",
+                  "sharegpt_ynLoh9N_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_s::gpt4_f2262a51",
+                "category": "multi-session",
+                "query": "How many different doctors did I visit?",
+                "gold": "I visited three different doctors: a primary care physician, an ENT specialist, and a dermatologist.",
+                "prediction": "7.1",
+                "retrieved_doc_ids": [
+                  "answer_55a6940c_3",
+                  "sharegpt_BWMyoNr_0",
+                  "answer_55a6940c_2",
+                  "answer_55a6940c_1",
+                  "ultrachat_109996"
                 ]
               }
             ]
@@ -8273,19 +8389,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2561,
-      "rows_successful": 2561,
+      "rows_recorded": 2566,
+      "rows_successful": 2566,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.7582975400234283,
-      "doc_recall_all": 0.648184303006638,
-      "ndcg_at_10": 0.563603911614403,
-      "exact_match": 0.05818039828192113,
-      "token_f1": 0.10536799769455667,
-      "avg_total_sec": 10.148257011825882,
-      "p50_total_sec": 6.370979909319431,
-      "p95_total_sec": 16.77780729299411,
-      "avg_storage_bytes": 18945485.503319018,
+      "doc_recall_any": 0.7587685113016368,
+      "doc_recall_all": 0.6484801247077163,
+      "ndcg_at_10": 0.5642586932587501,
+      "exact_match": 0.058067030397505846,
+      "token_f1": 0.10516268203264209,
+      "avg_total_sec": 10.285249876176549,
+      "p50_total_sec": 6.371093212161213,
+      "p95_total_sec": 17.013591594994068,
+      "avg_storage_bytes": 18995851.4832424,
       "p95_storage_bytes": 23569752.0,
       "categories": {
         "category_2": {
@@ -10458,21 +10574,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 138,
-          "rows_recorded": 138,
-          "rows_successful": 138,
+          "expected_total": 143,
+          "rows_recorded": 143,
+          "rows_successful": 143,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9782608695652174,
-          "doc_recall_all": 0.7028985507246377,
-          "ndcg_at_10": 0.8921682865382006,
-          "exact_match": 0.07971014492753623,
-          "token_f1": 0.09302811411997731,
-          "avg_total_sec": 18.14284677269018,
-          "p50_total_sec": 15.073331606108695,
-          "p95_total_sec": 21.099550403188914,
-          "avg_storage_bytes": 8373156.260869565,
-          "p95_storage_bytes": 9721667.0,
+          "doc_recall_any": 0.9790209790209791,
+          "doc_recall_all": 0.7062937062937062,
+          "ndcg_at_10": 0.8924294601380286,
+          "exact_match": 0.07692307692307693,
+          "token_f1": 0.08977538285704104,
+          "avg_total_sec": 20.321523284015303,
+          "p50_total_sec": 15.199222289957106,
+          "p95_total_sec": 79.67820883309469,
+          "avg_storage_bytes": 9646588.083916085,
+          "p95_storage_bytes": 44111318.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -11700,19 +11816,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2561,
-      "rows_successful": 2561,
+      "rows_recorded": 2565,
+      "rows_successful": 2565,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8000780944943382,
-      "doc_recall_all": 0.7172979304959001,
-      "ndcg_at_10": 0.621464377175498,
-      "exact_match": 0.059742288168684106,
-      "token_f1": 0.10660066371985503,
-      "avg_total_sec": 4.983024061840407,
-      "p50_total_sec": 0.06914175022393465,
-      "p95_total_sec": 10.567275521811098,
-      "avg_storage_bytes": 11280876.882858258,
+      "doc_recall_any": 0.8003898635477583,
+      "doc_recall_all": 0.7177387914230019,
+      "ndcg_at_10": 0.622005365834493,
+      "exact_match": 0.05964912280701754,
+      "token_f1": 0.1064344248680502,
+      "avg_total_sec": 5.171810898009404,
+      "p50_total_sec": 0.06915883207693696,
+      "p95_total_sec": 10.61305381031707,
+      "avg_storage_bytes": 11286676.797270956,
       "p95_storage_bytes": 15048721.0,
       "categories": {
         "category_2": {
@@ -13863,21 +13979,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 138,
-          "rows_recorded": 138,
-          "rows_successful": 138,
+          "expected_total": 142,
+          "rows_recorded": 142,
+          "rows_successful": 142,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9927536231884058,
-          "ndcg_at_10": 0.993612228997949,
-          "exact_match": 0.06521739130434782,
-          "token_f1": 0.0896874507730138,
-          "avg_total_sec": 13.094133448479967,
-          "p50_total_sec": 7.656668402720243,
-          "p95_total_sec": 18.471847704146057,
-          "avg_storage_bytes": 1880471.0,
-          "p95_storage_bytes": 2514925.0,
+          "doc_recall_all": 0.9929577464788732,
+          "ndcg_at_10": 0.9929012747939495,
+          "exact_match": 0.06338028169014084,
+          "token_f1": 0.08716104370898524,
+          "avg_total_sec": 16.27577990782447,
+          "p50_total_sec": 7.6576484479010105,
+          "p95_total_sec": 120.27007846813649,
+          "avg_storage_bytes": 2250037.2253521127,
+          "p95_storage_bytes": 14727157.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -15028,11 +15144,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.04178055447090989,
-    "doc_recall_all_delta": 0.06911362748926209,
-    "ndcg_at_10_delta": 0.05786046556109492,
-    "token_f1_delta": 0.0012326660252983679,
-    "avg_storage_ratio_nova_over_stock": 0.595438785713989,
-    "avg_latency_ratio_nova_over_stock": 0.49102265108516974
+    "doc_recall_any_delta": 0.04162135224612151,
+    "doc_recall_all_delta": 0.06925866671528558,
+    "ndcg_at_10_delta": 0.05774667257574284,
+    "token_f1_delta": 0.00127174283540811,
+    "avg_storage_ratio_nova_over_stock": 0.5941653527470322,
+    "avg_latency_ratio_nova_over_stock": 0.5028376520038402
   }
 }
