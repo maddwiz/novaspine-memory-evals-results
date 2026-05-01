@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T05:55:20Z",
+  "generated_at": "2026-05-01T06:17:13Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-01T05:42:24Z",
-    "current_system": "stock",
+    "updated_at": "2026-05-01T05:55:21Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 10,
     "current_case_total": 500,
@@ -10672,36 +10672,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 9,
-        "rows_successful": 9,
+        "rows_recorded": 10,
+        "rows_successful": 10,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
-        "exact_match": 0.1111111111111111,
-        "token_f1": 0.09929453262786596,
-        "avg_total_sec": 1304.1654686803101,
+        "exact_match": 0.1,
+        "token_f1": 0.08936507936507936,
+        "avg_total_sec": 1304.8890242164955,
         "p50_total_sec": 1302.922045522835,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 144425222.33333334,
+        "avg_storage_bytes": 144273831.0,
         "p95_storage_bytes": 151474241.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.1111111111111111,
-            "token_f1": 0.09929453262786596,
-            "avg_total_sec": 1304.1654686803101,
+            "exact_match": 0.1,
+            "token_f1": 0.08936507936507936,
+            "avg_total_sec": 1304.8890242164955,
             "p50_total_sec": 1302.922045522835,
             "p95_total_sec": 1364.3915228489786,
-            "avg_storage_bytes": 144425222.33333334,
+            "avg_storage_bytes": 144273831.0,
             "p95_storage_bytes": 151474241.0,
             "categories": {},
             "sample_errors": [],
@@ -10831,6 +10831,18 @@
                   "3489e0eb",
                   "ultrachat_250208",
                   "5600db68_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::f523d9fe",
+                "category": "single-session-assistant",
+                "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+                "gold": "Doc Martin",
+                "prediction": "you have any suggestions on how Netflix could improve its service or offerings to make it even better for its subscribers",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_m2xJfjo_0",
+                  "5b4d2438_2",
+                  "0dcfb511_4"
                 ]
               }
             ]
@@ -10963,6 +10975,18 @@
               "3489e0eb",
               "ultrachat_250208",
               "5600db68_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::f523d9fe",
+            "category": "single-session-assistant",
+            "query": "I wanted to check back on our previous conversation about Netflix. I mentioned that I wanted to be able to access all seasons of old shows? Do you remember what show I used as an example, the one that only had the last season available?",
+            "gold": "Doc Martin",
+            "prediction": "you have any suggestions on how Netflix could improve its service or offerings to make it even better for its subscribers",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_m2xJfjo_0",
+              "5b4d2438_2",
+              "0dcfb511_4"
             ]
           }
         ]
@@ -14582,20 +14606,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2995,
-      "rows_successful": 2995,
+      "rows_recorded": 2996,
+      "rows_successful": 2996,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8260434056761269,
-      "doc_recall_all": 0.7495826377295493,
-      "ndcg_at_10": 0.6664470168274996,
-      "exact_match": 0.07378964941569283,
-      "token_f1": 0.11960619893877518,
-      "avg_total_sec": 25.794445669149766,
-      "p50_total_sec": 0.07494702888652682,
-      "p95_total_sec": 126.08227341203019,
-      "avg_storage_bytes": 12224812.694156928,
-      "p95_storage_bytes": 15326145.0,
+      "doc_recall_any": 0.8261014686248331,
+      "doc_recall_all": 0.7496662216288384,
+      "ndcg_at_10": 0.666558349598919,
+      "exact_match": 0.07376502002670227,
+      "token_f1": 0.11956627697651258,
+      "avg_total_sec": 26.223553338833682,
+      "p50_total_sec": 0.0750062009319663,
+      "p95_total_sec": 126.08693682122976,
+      "avg_storage_bytes": 12268433.020026702,
+      "p95_storage_bytes": 15326217.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17349,21 +17373,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 121,
-          "rows_recorded": 121,
-          "rows_successful": 121,
+          "expected_total": 122,
+          "rows_recorded": 122,
+          "rows_successful": 122,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.04132231404958678,
-          "token_f1": 0.08985374963735215,
-          "avg_total_sec": 156.1161122161064,
+          "exact_match": 0.040983606557377046,
+          "token_f1": 0.0891172434927837,
+          "avg_total_sec": 165.585660673697,
           "p50_total_sec": 118.96818823413923,
-          "p95_total_sec": 1283.9806942129508,
-          "avg_storage_bytes": 18024029.429752067,
-          "p95_storage_bytes": 142856621.0,
+          "p95_total_sec": 1296.2799268709496,
+          "avg_storage_bytes": 19047695.655737706,
+          "p95_storage_bytes": 142911309.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -18050,11 +18074,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.036393989983305564,
-    "doc_recall_all_delta": 0.07946577629382301,
-    "ndcg_at_10_delta": 0.05643634263486996,
-    "token_f1_delta": 0.003296674257161014,
-    "avg_storage_ratio_nova_over_stock": 0.511244932557645,
-    "avg_latency_ratio_nova_over_stock": 1.1371633645928687
+    "doc_recall_any_delta": 0.036452052932011814,
+    "doc_recall_all_delta": 0.0795493601931122,
+    "ndcg_at_10_delta": 0.056547675406289355,
+    "token_f1_delta": 0.003256752294898413,
+    "avg_storage_ratio_nova_over_stock": 0.51306914623808,
+    "avg_latency_ratio_nova_over_stock": 1.1560808295265685
   }
 }
