@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T03:23:29Z",
+  "generated_at": "2026-05-01T05:09:21Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-01T03:01:06Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-01T05:08:20Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 5,
+    "current_case_index": 9,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::4c36ccef"
+    "current_case_id": "longmemeval_m::ceb54acb"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,36 +10393,36 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 8,
+        "rows_successful": 8,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
-        "exact_match": 0.2,
-        "token_f1": 0.13333333333333333,
-        "avg_total_sec": 788.1674597208388,
-        "p50_total_sec": 772.1035000663251,
+        "exact_match": 0.125,
+        "token_f1": 0.09420289855072464,
+        "avg_total_sec": 786.5406601370196,
+        "p50_total_sec": 782.6403962960467,
         "p95_total_sec": 841.6249107317999,
-        "avg_storage_bytes": 412092464.0,
+        "avg_storage_bytes": 413323426.375,
         "p95_storage_bytes": 430659189.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.2,
-            "token_f1": 0.13333333333333333,
-            "avg_total_sec": 788.1674597208388,
-            "p50_total_sec": 772.1035000663251,
+            "exact_match": 0.125,
+            "token_f1": 0.09420289855072464,
+            "avg_total_sec": 786.5406601370196,
+            "p50_total_sec": 782.6403962960467,
             "p95_total_sec": 841.6249107317999,
-            "avg_storage_bytes": 412092464.0,
+            "avg_storage_bytes": 413323426.375,
             "p95_storage_bytes": 430659189.0,
             "categories": {},
             "sample_errors": [],
@@ -10481,6 +10481,43 @@
                   "527a88df",
                   "d31c3ec8_1",
                   "726c8370"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "Refineries can enhance their operations by implementing best practices in safety, reliability, and maintenance",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "The Red Light District is one of Amsterdam's most famous attractions, known for its adult entertainment establishments and vibrant nightlife",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515",
+                  "05a37787",
+                  "4f3b0353_2",
+                  "9bd6beaa_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "you have any recommendations for good online shopping websites or apps that can help me stay on budget",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0",
+                  "sharegpt_0z277Yx_17",
+                  "267a912c",
+                  "cde4b9ce_4",
+                  "ultrachat_422192"
                 ]
               }
             ]
@@ -10543,41 +10580,78 @@
               "d31c3ec8_1",
               "726c8370"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::6ae235be",
+            "category": "single-session-assistant",
+            "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+            "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+            "prediction": "Refineries can enhance their operations by implementing best practices in safety, reliability, and maintenance",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_IUWQYGQ_0"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::7e00a6cb",
+            "category": "single-session-assistant",
+            "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+            "gold": "International Budget Hostel",
+            "prediction": "The Red Light District is one of Amsterdam's most famous attractions, known for its adult entertainment establishments and vibrant nightlife",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_370515",
+              "05a37787",
+              "4f3b0353_2",
+              "9bd6beaa_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::1903aded",
+            "category": "single-session-assistant",
+            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "gold": "Transcriptionist.",
+            "prediction": "you have any recommendations for good online shopping websites or apps that can help me stay on budget",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_hA7AkP3_0",
+              "sharegpt_0z277Yx_17",
+              "267a912c",
+              "cde4b9ce_4",
+              "ultrachat_422192"
+            ]
           }
         ]
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 5,
-        "rows_successful": 5,
+        "rows_recorded": 8,
+        "rows_successful": 8,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
         "ndcg_at_10": 1.0,
-        "exact_match": 0.2,
-        "token_f1": 0.13333333333333333,
-        "avg_total_sec": 1304.087563324813,
-        "p50_total_sec": 1296.2799268709496,
+        "exact_match": 0.125,
+        "token_f1": 0.09583333333333333,
+        "avg_total_sec": 1307.424633072922,
+        "p50_total_sec": 1305.076628160663,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 144668676.2,
+        "avg_storage_bytes": 144791264.5,
         "p95_storage_bytes": 151474241.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
             "ndcg_at_10": 1.0,
-            "exact_match": 0.2,
-            "token_f1": 0.13333333333333333,
-            "avg_total_sec": 1304.087563324813,
-            "p50_total_sec": 1296.2799268709496,
+            "exact_match": 0.125,
+            "token_f1": 0.09583333333333333,
+            "avg_total_sec": 1307.424633072922,
+            "p50_total_sec": 1305.076628160663,
             "p95_total_sec": 1364.3915228489786,
-            "avg_storage_bytes": 144668676.2,
+            "avg_storage_bytes": 144791264.5,
             "p95_storage_bytes": 151474241.0,
             "categories": {},
             "sample_errors": [],
@@ -10651,6 +10725,48 @@
                   "246ceaa0",
                   "d31c3ec8_1",
                   "ultrachat_259879"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6ae235be",
+                "category": "single-session-assistant",
+                "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+                "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+                "prediction": "the initial step in the refining process",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_IUWQYGQ_0",
+                  "0afa904a",
+                  "f8cbf729_1",
+                  "c870d63c",
+                  "d9bce149_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7e00a6cb",
+                "category": "single-session-assistant",
+                "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+                "gold": "International Budget Hostel",
+                "prediction": "This hostel is located in the city center and offers shared dorms and private rooms at a reasonable price",
+                "retrieved_doc_ids": [
+                  "answer_ultrachat_370515",
+                  "a68ad96e_2",
+                  "4f3b0353_2",
+                  "9bd6beaa_1",
+                  "d9b87d3c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1903aded",
+                "category": "single-session-assistant",
+                "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+                "gold": "Transcriptionist.",
+                "prediction": "you have any recommendations for good online shopping websites or apps that can help me stay on budget",
+                "retrieved_doc_ids": [
+                  "answer_sharegpt_hA7AkP3_0",
+                  "267a912c",
+                  "cf8ec9f9",
+                  "444dbbd3_2",
+                  "ultrachat_422192"
                 ]
               }
             ]
@@ -10728,6 +10844,48 @@
               "d31c3ec8_1",
               "ultrachat_259879"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::6ae235be",
+            "category": "single-session-assistant",
+            "query": "I remember you told me about the refining processes at CITGO's three refineries earlier. Can you remind me what kind of processes are used at the Lake Charles Refinery?",
+            "gold": "Atmospheric distillation, fluid catalytic cracking (FCC), alkylation, and hydrotreating.",
+            "prediction": "the initial step in the refining process",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_IUWQYGQ_0",
+              "0afa904a",
+              "f8cbf729_1",
+              "c870d63c",
+              "d9bce149_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::7e00a6cb",
+            "category": "single-session-assistant",
+            "query": "I'm planning my trip to Amsterdam again and I was wondering, what was the name of that hostel near the Red Light District that you recommended last time?",
+            "gold": "International Budget Hostel",
+            "prediction": "This hostel is located in the city center and offers shared dorms and private rooms at a reasonable price",
+            "retrieved_doc_ids": [
+              "answer_ultrachat_370515",
+              "a68ad96e_2",
+              "4f3b0353_2",
+              "9bd6beaa_1",
+              "d9b87d3c_1"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::1903aded",
+            "category": "single-session-assistant",
+            "query": "I think we discussed work from home jobs for seniors earlier. Can you remind me what was the 7th job in the list you provided?",
+            "gold": "Transcriptionist.",
+            "prediction": "you have any recommendations for good online shopping websites or apps that can help me stay on budget",
+            "retrieved_doc_ids": [
+              "answer_sharegpt_hA7AkP3_0",
+              "267a912c",
+              "cf8ec9f9",
+              "444dbbd3_2",
+              "ultrachat_422192"
+            ]
           }
         ]
       }
@@ -10736,20 +10894,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 2991,
-      "rows_successful": 2990,
+      "rows_recorded": 2994,
+      "rows_successful": 2993,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7892976588628763,
-      "doc_recall_all": 0.6695652173913044,
-      "ndcg_at_10": 0.6093585181294067,
-      "exact_match": 0.07090301003344482,
-      "token_f1": 0.11643178516442501,
-      "avg_total_sec": 21.41934055956096,
-      "p50_total_sec": 6.386808821000159,
-      "p95_total_sec": 81.61707707913592,
-      "avg_storage_bytes": 23264589.74782609,
-      "p95_storage_bytes": 45200306.0,
+      "doc_recall_any": 0.7895088539926495,
+      "doc_recall_all": 0.6698964249916471,
+      "ndcg_at_10": 0.6097500732398683,
+      "exact_match": 0.07083194119612429,
+      "token_f1": 0.11634413436798192,
+      "avg_total_sec": 22.18353366374181,
+      "p50_total_sec": 6.386834462638944,
+      "p95_total_sec": 81.68235432589427,
+      "avg_storage_bytes": 23657617.252589375,
+      "p95_storage_bytes": 45205965.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13611,21 +13769,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 116,
-          "rows_recorded": 116,
-          "rows_successful": 116,
+          "expected_total": 119,
+          "rows_recorded": 119,
+          "rows_successful": 119,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.04310344827586207,
-          "token_f1": 0.08649688196566062,
-          "avg_total_sec": 78.48817239657991,
-          "p50_total_sec": 77.45196905871853,
-          "p95_total_sec": 85.17050484800711,
-          "avg_storage_bytes": 41374675.96551724,
-          "p95_storage_bytes": 46847926.0,
+          "exact_match": 0.04201680672268908,
+          "token_f1": 0.08504701537609884,
+          "avg_total_sec": 96.26988218903557,
+          "p50_total_sec": 77.60715154791251,
+          "p95_total_sec": 769.2294253129512,
+          "avg_storage_bytes": 50803256.327731095,
+          "p95_storage_bytes": 404506500.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -14346,20 +14504,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 2991,
-      "rows_successful": 2991,
+      "rows_recorded": 2994,
+      "rows_successful": 2994,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.825810765630224,
-      "doc_recall_all": 0.7492477432296891,
-      "ndcg_at_10": 0.6660009412899904,
-      "exact_match": 0.07388833166165162,
-      "token_f1": 0.11969026469229273,
-      "avg_total_sec": 24.08469186813936,
-      "p50_total_sec": 0.07488592201843858,
-      "p95_total_sec": 125.87912129377946,
-      "avg_storage_bytes": 12048422.06586426,
-      "p95_storage_bytes": 15314325.0,
+      "doc_recall_any": 0.8259853039412157,
+      "doc_recall_all": 0.749498997995992,
+      "ndcg_at_10": 0.6663356096854915,
+      "exact_match": 0.07381429525718103,
+      "token_f1": 0.11960373470095109,
+      "avg_total_sec": 25.376176561644666,
+      "p50_total_sec": 0.07491570711135864,
+      "p95_total_sec": 125.9774134978652,
+      "avg_storage_bytes": 12181635.649298597,
+      "p95_storage_bytes": 15322229.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17113,21 +17271,21 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 117,
-          "rows_recorded": 117,
-          "rows_successful": 117,
+          "expected_total": 120,
+          "rows_recorded": 120,
+          "rows_successful": 120,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
           "ndcg_at_10": 1.0,
-          "exact_match": 0.042735042735042736,
-          "token_f1": 0.09098563742850842,
-          "avg_total_sec": 116.86323227906107,
-          "p50_total_sec": 118.2121474891901,
-          "p95_total_sec": 137.09038280835375,
-          "avg_storage_bytes": 13713025.136752136,
-          "p95_storage_bytes": 16209053.0,
+          "exact_match": 0.041666666666666664,
+          "token_f1": 0.08954432982612905,
+          "avg_total_sec": 146.76631187174547,
+          "p50_total_sec": 118.96818823413923,
+          "p95_total_sec": 1283.9806942129508,
+          "avg_storage_bytes": 16995088.966666665,
+          "p95_storage_bytes": 142856621.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -17814,11 +17972,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03651310676734776,
-    "doc_recall_all_delta": 0.07968252583838475,
-    "ndcg_at_10_delta": 0.056642423160583766,
-    "token_f1_delta": 0.0032584795278677164,
-    "avg_storage_ratio_nova_over_stock": 0.517886719536505,
-    "avg_latency_ratio_nova_over_stock": 1.1244366651329358
+    "doc_recall_any_delta": 0.03647644994856625,
+    "doc_recall_all_delta": 0.07960257300434481,
+    "ndcg_at_10_delta": 0.05658553644562325,
+    "token_f1_delta": 0.0032596003329691675,
+    "avg_storage_ratio_nova_over_stock": 0.5149138866876076,
+    "avg_latency_ratio_nova_over_stock": 1.1439194921015274
   }
 }
