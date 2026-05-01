@@ -237,14 +237,14 @@
           <div><span>Stock</span><strong>78.9%</strong></div>
           <div><span>NovaSpine</span><strong>82.6%</strong></div>
         </div>
-        <div class="delta good">+0.037</div>
+        <div class="delta good">+0.036</div>
       </div>
     
       
       <div class="metric-card">
         <div class="metric-label">Evidence Recall All</div>
         <div class="metric-grid">
-          <div><span>Stock</span><strong>66.9%</strong></div>
+          <div><span>Stock</span><strong>67.0%</strong></div>
           <div><span>NovaSpine</span><strong>74.9%</strong></div>
         </div>
         <div class="delta good">+0.080</div>
@@ -255,7 +255,7 @@
         <div class="metric-label">NDCG@10</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>60.9%</strong></div>
-          <div><span>NovaSpine</span><strong>66.5%</strong></div>
+          <div><span>NovaSpine</span><strong>66.6%</strong></div>
         </div>
         <div class="delta good">+0.057</div>
       </div>
@@ -275,18 +275,18 @@
       <div class="panel">
         <h2>Conclusion</h2>
         <p>Use this page as the separate official-dataset evidence page. The headline question is whether NovaSpine raises evidence retrieval and answer quality when OpenClaw is put through standard long-memory histories, not whether a custom demo case was favorable.</p>
-        <p><b>Current delta:</b> evidence-any +0.037, evidence-all +0.080, NDCG@10 +0.057, answer F1 +0.003.</p>
+        <p><b>Current delta:</b> evidence-any +0.036, evidence-all +0.080, NDCG@10 +0.057, answer F1 +0.003.</p>
       </div>
       <div class="panel">
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-05-01T00:29:06Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-05-01T00:26:57Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>500 / 500</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_s::778164c6</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>2986 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>2986 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-05-01T03:01:06Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-05-01T02:47:35Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>5 / 500</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_m::4c36ccef</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>2991 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>2990 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -507,35 +507,43 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>0 / 500 failed 0</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0s</td>
-      <td>0.0 B</td>
+      <td>5 / 500 failed 0</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>13.3%</td>
+      <td>788.2s</td>
+      <td>393.0 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>0 / 500 failed 0</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0%</td>
-      <td>0.0s</td>
-      <td>0.0 B</td>
+      <td>4 / 500 failed 0</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>100.0%</td>
+      <td>16.7%</td>
+      <td>1294.4s</td>
+      <td>137.1 MB</td>
     </tr>
     
     </table>
       <details open>
         <summary>Category Breakdown</summary>
-        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr></table>
+        <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
+<tr><td>single-session-assistant</td><td>5</td><td>100.0%</td><td>13.3%</td><td>4</td><td>100.0%</td><td>16.7%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
-        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="sample"><h3>Stock Success</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Success</h3><p>No rows yet.</p></div></div>
+        <div class="qa-row"><div class="sample"><h3>Stock Miss</h3><p>No rows yet.</p></div><div class="sample"><h3>NovaSpine Miss</h3><p>No rows yet.</p></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?</p><p><b>Gold:</b> Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.</p><p><b>Pred:</b> 8 am - 4 pm (Day Shift)</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_5Lzox6N_0, 06fe8cfb_2</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?</p><p><b>Gold:</b> Miss Bee Providore</p><p><b>Pred:</b> Also known as Ciwalk, this shopping center is famous for its denim street, where you can find a wide range of denim products, from jeans to jackets</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_234453</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m going back to our previous conversation about the children&#x27;s book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?</p><p><b>Gold:</b> The Plesiosaur had a blue scaly body.</p><p><b>Pred:</b> a herbivorous dinosaur with a large head and three horns</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_YkWn1Ne_0, sharegpt_YkWn1Ne_0</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?</p><p><b>Gold:</b> The Sugar Factory at Icon Park.</p><p><b>Pred:</b> you have any more recommendations for other fun and unique things to do in Orlando</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_480665</p></div>
+<div class="sample"><h3>Stock Success</h3><p><b>Q:</b> Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?</p><p><b>Gold:</b> Roscioli</p><p><b>Pred:</b> Can you give me some tips on how to plan a romantic dinner at the B&amp;B or a nearby restaurant?</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_448704, 527a88df, d31c3ec8_1, 726c8370</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?</p><p><b>Gold:</b> Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.</p><p><b>Pred:</b> 8 am - 4 pm (Day Shift)</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_5Lzox6N_0, 9b3a7f2c_3, 266ba230, c2808c05_4, c7d41f6a_1</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?</p><p><b>Gold:</b> Miss Bee Providore</p><p><b>Pred:</b> takeCommand().lower()</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_234453, 0aff275a_1, 92edd095_2, 3c00365f_2, ea83c1fe_2</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m going back to our previous conversation about the children&#x27;s book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?</p><p><b>Gold:</b> The Plesiosaur had a blue scaly body.</p><p><b>Pred:</b> #032B44</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_YkWn1Ne_0, sharegpt_YkWn1Ne_0, fe5a5209_3, sharegpt_AnlAeg9_9, bd5f30d0_2</p></div>
+<div class="sample"><h3>NovaSpine Success</h3><p><b>Q:</b> I&#x27;m planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?</p><p><b>Gold:</b> The Sugar Factory at Icon Park.</p><p><b>Pred:</b> consider sharing the desserts with family members so everyone can try a variety of treats</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_480665, eca3b71c_1, 7ae303b7_1, 3bdb004d_2, ea6ec88e_3</p></div></div></div>
       </details>
     </section>
     
