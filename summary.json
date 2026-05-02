@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T14:01:57Z",
+  "generated_at": "2026-05-02T16:29:40Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-02T13:39:44Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-02T16:17:01Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 65,
+    "current_case_index": 70,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::58ef2f1c"
+    "current_case_id": "longmemeval_m::3b6f954b"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 65,
-        "rows_successful": 65,
+        "rows_recorded": 70,
+        "rows_successful": 70,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9846153846153847,
-        "doc_recall_all": 0.9846153846153847,
-        "ndcg_at_10": 0.9349526913487255,
-        "exact_match": 0.03076923076923077,
-        "token_f1": 0.06799010735422747,
-        "avg_total_sec": 778.0012030810118,
-        "p50_total_sec": 779.2781067192554,
+        "doc_recall_any": 0.9714285714285714,
+        "doc_recall_all": 0.9714285714285714,
+        "ndcg_at_10": 0.9181703562523879,
+        "exact_match": 0.04285714285714286,
+        "token_f1": 0.08099081397178266,
+        "avg_total_sec": 776.4044732784187,
+        "p50_total_sec": 777.9613755210303,
         "p95_total_sec": 812.2371671888977,
-        "avg_storage_bytes": 407975933.4307692,
+        "avg_storage_bytes": 407248244.55714285,
         "p95_storage_bytes": 422814959.0,
         "categories": {
           "single-session-assistant": {
@@ -10570,21 +10570,21 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8888888888888888,
-            "doc_recall_all": 0.8888888888888888,
-            "ndcg_at_10": 0.5712216871217445,
-            "exact_match": 0.0,
-            "token_f1": 0.037037037037037035,
-            "avg_total_sec": 768.6368169375799,
-            "p50_total_sec": 765.4049689145759,
-            "p95_total_sec": 793.9408753989264,
-            "avg_storage_bytes": 404133308.1111111,
-            "p95_storage_bytes": 420627384.0,
+            "doc_recall_any": 0.8571428571428571,
+            "doc_recall_all": 0.8571428571428571,
+            "ndcg_at_10": 0.6172139417211214,
+            "exact_match": 0.07142857142857142,
+            "token_f1": 0.1130952380952381,
+            "avg_total_sec": 763.9975915472688,
+            "p50_total_sec": 759.3989347871393,
+            "p95_total_sec": 786.9862076956779,
+            "avg_storage_bytes": 401867229.9285714,
+            "p95_storage_bytes": 413847760.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -10601,6 +10601,23 @@
                   "4524c250_2",
                   "4d2c2c88_1",
                   "ultrachat_143028"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::5d3d2817",
+                "category": "single-session-user",
+                "query": "What was my previous occupation?",
+                "gold": "Marketing specialist at a small startup",
+                "prediction": "completed in the past before the person moved away",
+                "expected_doc_ids": [
+                  "answer_235eb6fb"
+                ],
+                "retrieved_doc_ids": [
+                  "82269cc9",
+                  "0e3d8491_2",
+                  "6cc835bd",
+                  "a15fe646",
+                  "5e523d80_2"
                 ]
               }
             ],
@@ -10704,6 +10721,56 @@
                   "1ce5d0fb_1",
                   "answer_59547700"
                 ]
+              },
+              {
+                "case_id": "longmemeval_m::f8c5f88b",
+                "category": "single-session-user",
+                "query": "Where did I buy my new tennis racket from?",
+                "gold": "the sports store downtown",
+                "prediction": "ll consider getting a tennis ball machine, but for now, I think I",
+                "retrieved_doc_ids": [
+                  "answer_c3567066"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7527f7e2",
+                "category": "single-session-user",
+                "query": "How much did I spend on a designer handbag?",
+                "gold": "$800",
+                "prediction": "stripes or polka dots, look for a handbag with a similar pattern or a subtle texture that won't compete with the scarf",
+                "retrieved_doc_ids": [
+                  "939f9816_4",
+                  "5fe4d2ee_1",
+                  "answer_7cb94507",
+                  "8d424788_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c960da58",
+                "category": "single-session-user",
+                "query": "How many playlists do I have on Spotify?",
+                "gold": "20",
+                "prediction": "20",
+                "retrieved_doc_ids": [
+                  "answer_e05e4612",
+                  "9b90460f_3",
+                  "a21c4257",
+                  "debc34d7_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::3b6f954b",
+                "category": "single-session-user",
+                "query": "Where did I attend for my study abroad program?",
+                "gold": "University of Melbourne in Australia",
+                "prediction": "It's great to hear that you have fond memories of your study abroad program at the University of Melbourne.",
+                "retrieved_doc_ids": [
+                  "answer_94030872",
+                  "b8f3481c_1",
+                  "fd88019d",
+                  "1bfd5a8b_1",
+                  "36c897bb_2"
+                ]
               }
             ]
           }
@@ -10723,6 +10790,23 @@
               "4524c250_2",
               "4d2c2c88_1",
               "ultrachat_143028"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::5d3d2817",
+            "category": "single-session-user",
+            "query": "What was my previous occupation?",
+            "gold": "Marketing specialist at a small startup",
+            "prediction": "completed in the past before the person moved away",
+            "expected_doc_ids": [
+              "answer_235eb6fb"
+            ],
+            "retrieved_doc_ids": [
+              "82269cc9",
+              "0e3d8491_2",
+              "6cc835bd",
+              "a15fe646",
+              "5e523d80_2"
             ]
           }
         ],
@@ -10870,19 +10954,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 65,
-        "rows_successful": 65,
+        "rows_recorded": 69,
+        "rows_successful": 69,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 1.0,
-        "doc_recall_all": 1.0,
-        "ndcg_at_10": 0.953144547267065,
-        "exact_match": 0.03076923076923077,
-        "token_f1": 0.07503338008503002,
-        "avg_total_sec": 1300.8171655785866,
-        "p50_total_sec": 1302.922045522835,
+        "doc_recall_any": 0.9710144927536232,
+        "doc_recall_all": 0.9710144927536232,
+        "ndcg_at_10": 0.9268752981501337,
+        "exact_match": 0.043478260869565216,
+        "token_f1": 0.07068361892068045,
+        "avg_total_sec": 1299.0776555008674,
+        "p50_total_sec": 1299.7118484880775,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 143356225.6153846,
+        "avg_storage_bytes": 143150180.36231884,
         "p95_storage_bytes": 148747161.0,
         "categories": {
           "single-session-assistant": {
@@ -11074,24 +11158,55 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.7846229235160945,
-            "exact_match": 0.0,
-            "token_f1": 0.044444444444444446,
-            "avg_total_sec": 1296.7445673990685,
-            "p50_total_sec": 1295.6769556477666,
-            "p95_total_sec": 1370.2029871949926,
-            "avg_storage_bytes": 142270385.0,
-            "p95_storage_bytes": 147230949.0,
+            "doc_recall_any": 0.8461538461538461,
+            "doc_recall_all": 0.8461538461538461,
+            "ndcg_at_10": 0.6970466393572962,
+            "exact_match": 0.07692307692307693,
+            "token_f1": 0.03076923076923077,
+            "avg_total_sec": 1288.7648902725643,
+            "p50_total_sec": 1291.2043678890914,
+            "p95_total_sec": 1332.9958950448781,
+            "avg_storage_bytes": 141510865.0,
+            "p95_storage_bytes": 145278373.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::f8c5f88b",
+                "category": "single-session-user",
+                "query": "Where did I buy my new tennis racket from?",
+                "gold": "the sports store downtown",
+                "prediction": "User location previous/historical: Chicago for the work, nearby city where, consequences of; current: the",
+                "expected_doc_ids": [
+                  "answer_c3567066"
+                ],
+                "retrieved_doc_ids": [
+                  "e55f8e0e"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::5d3d2817",
+                "category": "single-session-user",
+                "query": "What was my previous occupation?",
+                "gold": "Marketing specialist at a small startup",
+                "prediction": "within reach, and I am ready to face whatever challenges come my way",
+                "expected_doc_ids": [
+                  "answer_235eb6fb"
+                ],
+                "retrieved_doc_ids": [
+                  "sharegpt_aVExml0_162",
+                  "9b3a7f2c_3",
+                  "a15fe646",
+                  "0e3d8491_2",
+                  "sharegpt_xOzzaof_0"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::e47becba",
@@ -11212,12 +11327,70 @@
                   "cbf8c858",
                   "07c81817"
                 ]
+              },
+              {
+                "case_id": "longmemeval_m::7527f7e2",
+                "category": "single-session-user",
+                "query": "How much did I spend on a designer handbag?",
+                "gold": "$800",
+                "prediction": "budgeting, investment tracking, and bill tracking",
+                "retrieved_doc_ids": [
+                  "answer_7cb94507",
+                  "5fe4d2ee_1",
+                  "939f9816_4",
+                  "8d424788_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c960da58",
+                "category": "single-session-user",
+                "query": "How many playlists do I have on Spotify?",
+                "gold": "20",
+                "prediction": "2",
+                "retrieved_doc_ids": [
+                  "answer_e05e4612",
+                  "a21c4257",
+                  "9b90460f_3",
+                  "debc34d7_1",
+                  "ultrachat_345686"
+                ]
               }
             ]
           }
         },
         "sample_errors": [],
-        "sample_misses": [],
+        "sample_misses": [
+          {
+            "case_id": "longmemeval_m::f8c5f88b",
+            "category": "single-session-user",
+            "query": "Where did I buy my new tennis racket from?",
+            "gold": "the sports store downtown",
+            "prediction": "User location previous/historical: Chicago for the work, nearby city where, consequences of; current: the",
+            "expected_doc_ids": [
+              "answer_c3567066"
+            ],
+            "retrieved_doc_ids": [
+              "e55f8e0e"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::5d3d2817",
+            "category": "single-session-user",
+            "query": "What was my previous occupation?",
+            "gold": "Marketing specialist at a small startup",
+            "prediction": "within reach, and I am ready to face whatever challenges come my way",
+            "expected_doc_ids": [
+              "answer_235eb6fb"
+            ],
+            "retrieved_doc_ids": [
+              "sharegpt_aVExml0_162",
+              "9b3a7f2c_3",
+              "a15fe646",
+              "0e3d8491_2",
+              "sharegpt_xOzzaof_0"
+            ]
+          }
+        ],
         "sample_successes": [
           {
             "case_id": "longmemeval_m::7161e7e2",
@@ -11392,20 +11565,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3051,
-      "rows_successful": 3050,
+      "rows_recorded": 3056,
+      "rows_successful": 3055,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7931147540983606,
-      "doc_recall_all": 0.6757377049180328,
-      "ndcg_at_10": 0.6156570144736371,
-      "exact_match": 0.06983606557377049,
-      "token_f1": 0.11537171408294716,
-      "avg_total_sec": 36.28625218844225,
-      "p50_total_sec": 6.389080279041082,
-      "p95_total_sec": 82.5310798860155,
-      "avg_storage_bytes": 30825933.343934428,
-      "p95_storage_bytes": 45501694.0,
+      "doc_recall_any": 0.793126022913257,
+      "doc_recall_all": 0.6759410801963993,
+      "ndcg_at_10": 0.6157950553664789,
+      "exact_match": 0.07004909983633388,
+      "token_f1": 0.11559205497642844,
+      "avg_total_sec": 37.46360199802697,
+      "p50_total_sec": 6.389144227840006,
+      "p95_total_sec": 82.61473400890827,
+      "avg_storage_bytes": 31426526.397708673,
+      "p95_storage_bytes": 45518058.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14409,21 +14582,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 149,
-          "rows_recorded": 149,
-          "rows_successful": 149,
+          "expected_total": 154,
+          "rows_recorded": 154,
+          "rows_successful": 154,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.959731543624161,
-          "doc_recall_all": 0.959731543624161,
-          "ndcg_at_10": 0.9292916845831105,
-          "exact_match": 0.12080536912751678,
-          "token_f1": 0.16644988591670673,
-          "avg_total_sec": 90.41462933064606,
-          "p50_total_sec": 77.7065649330616,
-          "p95_total_sec": 751.5287426169962,
-          "avg_storage_bytes": 47950865.51006711,
-          "p95_storage_bytes": 393575010.0,
+          "doc_recall_any": 0.9545454545454546,
+          "doc_recall_all": 0.9545454545454546,
+          "ndcg_at_10": 0.9218471493693732,
+          "exact_match": 0.12337662337662338,
+          "token_f1": 0.1691625519583721,
+          "avg_total_sec": 112.01308246421954,
+          "p50_total_sec": 78.19173973426223,
+          "p95_total_sec": 755.2599381934851,
+          "avg_storage_bytes": 59309223.422077924,
+          "p95_storage_bytes": 395444563.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14503,6 +14676,23 @@
                 "4524c250_2",
                 "4d2c2c88_1",
                 "ultrachat_143028"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::5d3d2817",
+              "category": "single-session-user",
+              "query": "What was my previous occupation?",
+              "gold": "Marketing specialist at a small startup",
+              "prediction": "completed in the past before the person moved away",
+              "expected_doc_ids": [
+                "answer_235eb6fb"
+              ],
+              "retrieved_doc_ids": [
+                "82269cc9",
+                "0e3d8491_2",
+                "6cc835bd",
+                "a15fe646",
+                "5e523d80_2"
               ]
             }
           ],
@@ -15017,20 +15207,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3051,
-      "rows_successful": 3051,
+      "rows_recorded": 3055,
+      "rows_successful": 3055,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8292363159619797,
-      "doc_recall_all": 0.7541789577187807,
-      "ndcg_at_10": 0.6715710294889286,
-      "exact_match": 0.0727630285152409,
-      "token_f1": 0.11871651417027461,
-      "avg_total_sec": 49.18714890973087,
-      "p50_total_sec": 0.0758371320553124,
-      "p95_total_sec": 127.94653673563153,
-      "avg_storage_bytes": 14628528.902982628,
-      "p95_storage_bytes": 15441229.0,
+      "doc_recall_any": 0.8288052373158756,
+      "doc_recall_all": 0.7538461538461538,
+      "ndcg_at_10": 0.6713463865697941,
+      "exact_match": 0.07299509001636661,
+      "token_f1": 0.11856107519918424,
+      "avg_total_sec": 50.786655905250605,
+      "p50_total_sec": 0.07596411416307092,
+      "p95_total_sec": 128.03928491892293,
+      "avg_storage_bytes": 14792422.082815057,
+      "p95_storage_bytes": 15445469.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17926,21 +18116,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 149,
-          "rows_recorded": 149,
-          "rows_successful": 149,
+          "expected_total": 153,
+          "rows_recorded": 153,
+          "rows_successful": 153,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9865771812080537,
-          "doc_recall_all": 0.9865771812080537,
-          "ndcg_at_10": 0.966136883035968,
-          "exact_match": 0.10738255033557047,
-          "token_f1": 0.1472225409070315,
-          "avg_total_sec": 138.61284591578223,
-          "p50_total_sec": 118.73427731869742,
-          "p95_total_sec": 1254.791956863366,
-          "avg_storage_bytes": 16065066.449664429,
-          "p95_storage_bytes": 138811881.0,
+          "doc_recall_any": 0.9738562091503268,
+          "doc_recall_all": 0.9738562091503268,
+          "ndcg_at_10": 0.9539502978585571,
+          "exact_match": 0.1111111111111111,
+          "token_f1": 0.1433735855892006,
+          "avg_total_sec": 168.2127876366227,
+          "p50_total_sec": 119.75333361513913,
+          "p95_total_sec": 1263.4258737117052,
+          "avg_storage_bytes": 19300017.522875816,
+          "p95_storage_bytes": 139077761.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17972,6 +18162,36 @@
                 "ea3db78e_2",
                 "793382f9_2",
                 "080a4000_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::f8c5f88b",
+              "category": "single-session-user",
+              "query": "Where did I buy my new tennis racket from?",
+              "gold": "the sports store downtown",
+              "prediction": "User location previous/historical: Chicago for the work, nearby city where, consequences of; current: the",
+              "expected_doc_ids": [
+                "answer_c3567066"
+              ],
+              "retrieved_doc_ids": [
+                "e55f8e0e"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::5d3d2817",
+              "category": "single-session-user",
+              "query": "What was my previous occupation?",
+              "gold": "Marketing specialist at a small startup",
+              "prediction": "within reach, and I am ready to face whatever challenges come my way",
+              "expected_doc_ids": [
+                "answer_235eb6fb"
+              ],
+              "retrieved_doc_ids": [
+                "sharegpt_aVExml0_162",
+                "9b3a7f2c_3",
+                "a15fe646",
+                "0e3d8491_2",
+                "sharegpt_xOzzaof_0"
               ]
             }
           ],
@@ -18485,11 +18705,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.036121561863619034,
-    "doc_recall_all_delta": 0.07844125280074798,
-    "ndcg_at_10_delta": 0.055914015015291474,
-    "token_f1_delta": 0.003344800087327446,
-    "avg_storage_ratio_nova_over_stock": 0.4745526677089588,
-    "avg_latency_ratio_nova_over_stock": 1.3555312533874129
+    "doc_recall_any_delta": 0.035679214402618675,
+    "doc_recall_all_delta": 0.07790507364975452,
+    "ndcg_at_10_delta": 0.055551331203315124,
+    "token_f1_delta": 0.0029690202227558027,
+    "avg_storage_ratio_nova_over_stock": 0.4706986033268246,
+    "avg_latency_ratio_nova_over_stock": 1.355626613477404
   }
 }
