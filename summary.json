@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T08:17:27Z",
+  "generated_at": "2026-05-02T10:48:43Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-02T07:56:35Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-02T10:36:09Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 55,
+    "current_case_index": 60,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::65240037"
+    "current_case_id": "longmemeval_m::58bf7951"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,36 +10393,36 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 55,
-        "rows_successful": 55,
+        "rows_recorded": 60,
+        "rows_successful": 60,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 1.0,
-        "doc_recall_all": 1.0,
-        "ndcg_at_10": 0.9932896318831174,
-        "exact_match": 0.03636363636363636,
-        "token_f1": 0.06974588444893551,
-        "avg_total_sec": 779.4585870586674,
+        "doc_recall_any": 0.9833333333333333,
+        "doc_recall_all": 0.9833333333333333,
+        "ndcg_at_10": 0.9615422677536052,
+        "exact_match": 0.03333333333333333,
+        "token_f1": 0.06810039407819088,
+        "avg_total_sec": 778.6159577907684,
         "p50_total_sec": 781.1928436462767,
         "p95_total_sec": 812.2371671888977,
-        "avg_storage_bytes": 408666819.2909091,
+        "avg_storage_bytes": 408235279.56666666,
         "p95_storage_bytes": 422814959.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 55,
-            "rows_recorded": 55,
-            "rows_successful": 55,
+            "expected_total": 56,
+            "rows_recorded": 56,
+            "rows_successful": 56,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.9932896318831174,
-            "exact_match": 0.03636363636363636,
-            "token_f1": 0.06974588444893551,
-            "avg_total_sec": 779.4585870586674,
-            "p50_total_sec": 781.1928436462767,
+            "ndcg_at_10": 0.9934094598852046,
+            "exact_match": 0.03571428571428571,
+            "token_f1": 0.0729647079409188,
+            "avg_total_sec": 779.5061937112062,
+            "p50_total_sec": 781.5390951451845,
             "p95_total_sec": 812.2371671888977,
-            "avg_storage_bytes": 408666819.2909091,
+            "avg_storage_bytes": 408593498.21428573,
             "p95_storage_bytes": 422814959.0,
             "categories": {},
             "sample_errors": [],
@@ -10568,10 +10568,102 @@
                 ]
               }
             ]
+          },
+          "single-session-user": {
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 0.75,
+            "doc_recall_all": 0.75,
+            "ndcg_at_10": 0.5154015779112127,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 766.1526549046393,
+            "p50_total_sec": 778.7100944058038,
+            "p95_total_sec": 781.6817652387545,
+            "avg_storage_bytes": 403220218.5,
+            "p95_storage_bytes": 413847760.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::118b2229",
+                "category": "single-session-user",
+                "query": "How long is my daily commute to work?",
+                "gold": "45 minutes each way",
+                "prediction": "Take advantage of your commute time to catch up with friends and family via phone, text, or messaging apps and you can make it the best time of day",
+                "expected_doc_ids": [
+                  "answer_40a90d51"
+                ],
+                "retrieved_doc_ids": [
+                  "4524c250_2",
+                  "4d2c2c88_1",
+                  "ultrachat_143028"
+                ]
+              }
+            ],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_m::e47becba",
+                "category": "single-session-user",
+                "query": "What degree did I graduate with?",
+                "gold": "Business Administration",
+                "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+                "retrieved_doc_ids": [
+                  "sharegpt_ErOTMZ3_254",
+                  "sharegpt_rqvR1Ep_0",
+                  "11fdf15d",
+                  "answer_280352e9",
+                  "764920e5_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::51a45a95",
+                "category": "single-session-user",
+                "query": "Where did I redeem a $5 coupon on coffee creamer?",
+                "gold": "Target",
+                "prediction": "Consider categorizing your coupons by store, product, or type (e.g., percentage off, fixed amount off, buy one get on",
+                "retrieved_doc_ids": [
+                  "answer_d61669c7",
+                  "77b11254_2",
+                  "2a2c0a7e_2",
+                  "d09360d3_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::58bf7951",
+                "category": "single-session-user",
+                "query": "What play did I attend at the local community theater?",
+                "gold": "The Glass Menagerie",
+                "prediction": "**Local Community Boards**: Check community boards at coffee shops, libraries, or bookstores for posters or flyers about local theater productions.",
+                "retrieved_doc_ids": [
+                  "469755a9",
+                  "answer_355c48bb"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [],
-        "sample_misses": [],
+        "sample_misses": [
+          {
+            "case_id": "longmemeval_m::118b2229",
+            "category": "single-session-user",
+            "query": "How long is my daily commute to work?",
+            "gold": "45 minutes each way",
+            "prediction": "Take advantage of your commute time to catch up with friends and family via phone, text, or messaging apps and you can make it the best time of day",
+            "expected_doc_ids": [
+              "answer_40a90d51"
+            ],
+            "retrieved_doc_ids": [
+              "4524c250_2",
+              "4d2c2c88_1",
+              "ultrachat_143028"
+            ]
+          }
+        ],
         "sample_successes": [
           {
             "case_id": "longmemeval_m::7161e7e2",
@@ -10716,36 +10808,36 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 55,
-        "rows_successful": 55,
+        "rows_recorded": 59,
+        "rows_successful": 59,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
-        "ndcg_at_10": 0.9798688956493522,
-        "exact_match": 0.03636363636363636,
-        "token_f1": 0.07447667862862854,
-        "avg_total_sec": 1301.6362061432817,
+        "ndcg_at_10": 0.9727591400121081,
+        "exact_match": 0.03389830508474576,
+        "token_f1": 0.07588423229706696,
+        "avg_total_sec": 1301.9940556752006,
         "p50_total_sec": 1304.4299974790774,
-        "p95_total_sec": 1359.4183358708397,
-        "avg_storage_bytes": 143543594.01818183,
+        "p95_total_sec": 1364.3915228489786,
+        "avg_storage_bytes": 143487019.5084746,
         "p95_storage_bytes": 148747161.0,
         "categories": {
           "single-session-assistant": {
-            "expected_total": 55,
-            "rows_recorded": 55,
-            "rows_successful": 55,
+            "expected_total": 56,
+            "rows_recorded": 56,
+            "rows_successful": 56,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.9798688956493522,
-            "exact_match": 0.03636363636363636,
-            "token_f1": 0.07447667862862854,
-            "avg_total_sec": 1301.6362061432817,
+            "ndcg_at_10": 0.9802283796556138,
+            "exact_match": 0.03571428571428571,
+            "token_f1": 0.07994945902726698,
+            "avg_total_sec": 1301.471690286009,
             "p50_total_sec": 1304.4299974790774,
             "p95_total_sec": 1359.4183358708397,
-            "avg_storage_bytes": 143543594.01818183,
+            "avg_storage_bytes": 143530735.7142857,
             "p95_storage_bytes": 148747161.0,
             "categories": {},
             "sample_errors": [],
@@ -10915,6 +11007,69 @@
                   "7726e7e9_3",
                   "d77d4ac9_1",
                   "5c05a50c"
+                ]
+              }
+            ]
+          },
+          "single-session-user": {
+            "expected_total": 3,
+            "rows_recorded": 3,
+            "rows_successful": 3,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 0.8333333333333334,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 1311.744876273442,
+            "p50_total_sec": 1310.2396847619675,
+            "p95_total_sec": 1370.2029871949926,
+            "avg_storage_bytes": 142670983.66666666,
+            "p95_storage_bytes": 145278373.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_m::e47becba",
+                "category": "single-session-user",
+                "query": "What degree did I graduate with?",
+                "gold": "Business Administration",
+                "prediction": "you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements",
+                "retrieved_doc_ids": [
+                  "answer_280352e9",
+                  "11fdf15d",
+                  "ea80f588_2",
+                  "sharegpt_lZ1MDfW_37",
+                  "sharegpt_J3oTIxC_0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::118b2229",
+                "category": "single-session-user",
+                "query": "How long is my daily commute to work?",
+                "gold": "45 minutes each way",
+                "prediction": "Take advantage of your commute time to catch up with friends and family via phone, text, or messaging apps and you can make it the best time of day",
+                "retrieved_doc_ids": [
+                  "4d2c2c88_1",
+                  "4524c250_2",
+                  "answer_40a90d51",
+                  "ultrachat_143028",
+                  "752b10e6_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::51a45a95",
+                "category": "single-session-user",
+                "query": "Where did I redeem a $5 coupon on coffee creamer?",
+                "gold": "Target",
+                "prediction": "user: I actually redeemed a $5 coupon on coffee creamer last Sunday, which was a nice surprise since I didn't know I had it in my email inbox.",
+                "retrieved_doc_ids": [
+                  "answer_d61669c7",
+                  "77b11254_2",
+                  "2a2c0a7e_2",
+                  "353d3c6d_1"
                 ]
               }
             ]
@@ -11096,20 +11251,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3041,
-      "rows_successful": 3040,
+      "rows_recorded": 3046,
+      "rows_successful": 3045,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7927631578947368,
-      "doc_recall_all": 0.675,
-      "ndcg_at_10": 0.6156621378159531,
-      "exact_match": 0.0700657894736842,
-      "token_f1": 0.11555934033541301,
-      "avg_total_sec": 33.87276752062822,
-      "p50_total_sec": 6.3885866408236325,
-      "p95_total_sec": 82.3622475117445,
-      "avg_storage_bytes": 29597807.923355263,
-      "p95_storage_bytes": 45438174.0,
+      "doc_recall_any": 0.7927750410509031,
+      "doc_recall_all": 0.6752052545155993,
+      "ndcg_at_10": 0.615656651977715,
+      "exact_match": 0.06995073891625615,
+      "token_f1": 0.11545168953026455,
+      "avg_total_sec": 35.08044283807198,
+      "p50_total_sec": 6.388939271215349,
+      "p95_total_sec": 82.47191589511931,
+      "avg_storage_bytes": 30211749.688013136,
+      "p95_storage_bytes": 45476977.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -13971,20 +14126,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 166,
-          "rows_recorded": 166,
-          "rows_successful": 166,
+          "expected_total": 167,
+          "rows_recorded": 167,
+          "rows_successful": 167,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
-          "ndcg_at_10": 0.9977766852624786,
-          "exact_match": 0.03614457831325301,
-          "token_f1": 0.0795361161809724,
-          "avg_total_sec": 289.36152402184206,
-          "p50_total_sec": 80.32745323609561,
+          "ndcg_at_10": 0.99778999852438,
+          "exact_match": 0.03592814371257485,
+          "token_f1": 0.080556858000248,
+          "avg_total_sec": 292.31220088159654,
+          "p50_total_sec": 80.371736260131,
           "p95_total_sec": 802.4924001321197,
-          "avg_storage_bytes": 151901657.54819277,
+          "avg_storage_bytes": 153414586.77844313,
           "p95_storage_bytes": 420223658.0,
           "categories": {},
           "sample_errors": [],
@@ -14113,21 +14268,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 140,
-          "rows_recorded": 140,
-          "rows_successful": 140,
+          "expected_total": 144,
+          "rows_recorded": 144,
+          "rows_successful": 144,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9642857142857143,
-          "doc_recall_all": 0.9642857142857143,
-          "ndcg_at_10": 0.9523104701341982,
-          "exact_match": 0.12857142857142856,
-          "token_f1": 0.17476928334468547,
-          "avg_total_sec": 46.814631555914616,
-          "p50_total_sec": 76.79552107909694,
-          "p95_total_sec": 83.28286410029978,
-          "avg_storage_bytes": 25053422.77142857,
-          "p95_storage_bytes": 45631907.0,
+          "doc_recall_any": 0.9583333333333334,
+          "doc_recall_all": 0.9583333333333334,
+          "ndcg_at_10": 0.940174112016893,
+          "exact_match": 0.125,
+          "token_f1": 0.16991458102955534,
+          "avg_total_sec": 66.79624331560142,
+          "p50_total_sec": 77.04847022937611,
+          "p95_total_sec": 85.1857486879453,
+          "avg_storage_bytes": 35558055.98611111,
+          "p95_storage_bytes": 45811499.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14192,6 +14347,21 @@
               ],
               "retrieved_doc_ids": [
                 "1dd13331_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::118b2229",
+              "category": "single-session-user",
+              "query": "How long is my daily commute to work?",
+              "gold": "45 minutes each way",
+              "prediction": "Take advantage of your commute time to catch up with friends and family via phone, text, or messaging apps and you can make it the best time of day",
+              "expected_doc_ids": [
+                "answer_40a90d51"
+              ],
+              "retrieved_doc_ids": [
+                "4524c250_2",
+                "4d2c2c88_1",
+                "ultrachat_143028"
               ]
             }
           ],
@@ -14706,20 +14876,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3041,
-      "rows_successful": 3041,
+      "rows_recorded": 3045,
+      "rows_successful": 3045,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8286747780335416,
-      "doc_recall_all": 0.7533706017757317,
-      "ndcg_at_10": 0.671128446122682,
-      "exact_match": 0.07300230187438343,
-      "token_f1": 0.11885009284858779,
-      "avg_total_sec": 45.086112100908004,
-      "p50_total_sec": 0.07573256175965071,
-      "p95_total_sec": 127.5998637387529,
-      "avg_storage_bytes": 14208610.552121013,
-      "p95_storage_bytes": 15416365.0,
+      "doc_recall_any": 0.8288998357963875,
+      "doc_recall_all": 0.7536945812807881,
+      "ndcg_at_10": 0.6713962576877097,
+      "exact_match": 0.0729064039408867,
+      "token_f1": 0.1188190754461438,
+      "avg_total_sec": 46.74368632046555,
+      "p50_total_sec": 0.07574974186718464,
+      "p95_total_sec": 127.6905478509143,
+      "avg_storage_bytes": 14377412.534975369,
+      "p95_storage_bytes": 15425241.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17473,20 +17643,20 @@
           ]
         },
         "single-session-assistant": {
-          "expected_total": 167,
-          "rows_recorded": 167,
-          "rows_successful": 167,
+          "expected_total": 168,
+          "rows_recorded": 168,
+          "rows_successful": 168,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
           "doc_recall_all": 1.0,
-          "ndcg_at_10": 0.99336999557314,
-          "exact_match": 0.03592814371257485,
-          "token_f1": 0.08428066010205622,
-          "avg_total_sec": 471.512285616207,
-          "p50_total_sec": 124.62558575812727,
+          "ndcg_at_10": 0.9934094598852047,
+          "exact_match": 0.03571428571428571,
+          "token_f1": 0.08604656320235576,
+          "avg_total_sec": 476.3986608097773,
+          "p50_total_sec": 124.63770812097937,
           "p95_total_sec": 1335.8297390681691,
-          "avg_storage_bytes": 52550767.8502994,
+          "avg_storage_bytes": 53088105.71428572,
           "p95_storage_bytes": 147120249.0,
           "categories": {},
           "sample_errors": [],
@@ -17615,21 +17785,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 140,
-          "rows_recorded": 140,
-          "rows_successful": 140,
+          "expected_total": 143,
+          "rows_recorded": 143,
+          "rows_successful": 143,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9857142857142858,
-          "doc_recall_all": 0.9857142857142858,
-          "ndcg_at_10": 0.9778056375765313,
-          "exact_match": 0.11428571428571428,
-          "token_f1": 0.15382970425105494,
-          "avg_total_sec": 64.16152096328526,
-          "p50_total_sec": 116.93895214702934,
-          "p95_total_sec": 130.38080241996795,
-          "avg_storage_bytes": 7951867.4,
-          "p95_storage_bytes": 15630113.0,
+          "doc_recall_any": 0.986013986013986,
+          "doc_recall_all": 0.986013986013986,
+          "ndcg_at_10": 0.9747747500749258,
+          "exact_match": 0.11188811188811189,
+          "token_f1": 0.1506025076583755,
+          "avg_total_sec": 90.33459834741441,
+          "p50_total_sec": 117.23814463382587,
+          "p95_total_sec": 131.67567613627762,
+          "avg_storage_bytes": 10778142.566433566,
+          "p95_storage_bytes": 15687817.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18174,11 +18344,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03591162013880478,
-    "doc_recall_all_delta": 0.07837060177573163,
-    "ndcg_at_10_delta": 0.05546630830672883,
-    "token_f1_delta": 0.0032907525131747745,
-    "avg_storage_ratio_nova_over_stock": 0.48005617811004087,
-    "avg_latency_ratio_nova_over_stock": 1.3310430591020044
+    "doc_recall_any_delta": 0.03612479474548436,
+    "doc_recall_all_delta": 0.07848932676518883,
+    "ndcg_at_10_delta": 0.0557396057099947,
+    "token_f1_delta": 0.003367385915879248,
+    "avg_storage_ratio_nova_over_stock": 0.47588811252066526,
+    "avg_latency_ratio_nova_over_stock": 1.3324713868701716
   }
 }
