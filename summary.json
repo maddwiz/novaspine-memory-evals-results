@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T10:48:43Z",
+  "generated_at": "2026-05-02T11:09:41Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-02T10:36:09Z",
-    "current_system": "stock",
+    "updated_at": "2026-05-02T10:48:45Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 60,
     "current_case_total": 500,
@@ -10808,19 +10808,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 59,
-        "rows_successful": 59,
+        "rows_recorded": 60,
+        "rows_successful": 60,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
-        "ndcg_at_10": 0.9727591400121081,
-        "exact_match": 0.03389830508474576,
-        "token_f1": 0.07588423229706696,
-        "avg_total_sec": 1301.9940556752006,
+        "ndcg_at_10": 0.9670619835714305,
+        "exact_match": 0.03333333333333333,
+        "token_f1": 0.07461949509211584,
+        "avg_total_sec": 1301.2421675169996,
         "p50_total_sec": 1304.4299974790774,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 143487019.5084746,
+        "avg_storage_bytes": 143399184.46666667,
         "p95_storage_bytes": 148747161.0,
         "categories": {
           "single-session-assistant": {
@@ -11012,20 +11012,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.8333333333333334,
+            "ndcg_at_10": 0.7827324383928644,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 1311.744876273442,
+            "avg_total_sec": 1298.028848750866,
             "p50_total_sec": 1310.2396847619675,
             "p95_total_sec": 1370.2029871949926,
-            "avg_storage_bytes": 142670983.66666666,
+            "avg_storage_bytes": 141557467.0,
             "p95_storage_bytes": 145278373.0,
             "categories": {},
             "sample_errors": [],
@@ -11070,6 +11070,18 @@
                   "77b11254_2",
                   "2a2c0a7e_2",
                   "353d3c6d_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::58bf7951",
+                "category": "single-session-user",
+                "query": "What play did I attend at the local community theater?",
+                "gold": "The Glass Menagerie",
+                "prediction": "impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress",
+                "retrieved_doc_ids": [
+                  "469755a9",
+                  "answer_355c48bb",
+                  "8f84441c"
                 ]
               }
             ]
@@ -14876,20 +14888,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3045,
-      "rows_successful": 3045,
+      "rows_recorded": 3046,
+      "rows_successful": 3046,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8288998357963875,
-      "doc_recall_all": 0.7536945812807881,
-      "ndcg_at_10": 0.6713962576877097,
-      "exact_match": 0.0729064039408867,
-      "token_f1": 0.1188190754461438,
-      "avg_total_sec": 46.74368632046555,
+      "doc_recall_any": 0.8289560078791858,
+      "doc_recall_all": 0.7537754432042022,
+      "ndcg_at_10": 0.6713829725583216,
+      "exact_match": 0.07288246881155613,
+      "token_f1": 0.11878006721388965,
+      "avg_total_sec": 47.140973608667345,
       "p50_total_sec": 0.07574974186718464,
-      "p95_total_sec": 127.6905478509143,
-      "avg_storage_bytes": 14377412.534975369,
-      "p95_storage_bytes": 15425241.0,
+      "p95_total_sec": 127.70326627790928,
+      "avg_storage_bytes": 14418068.971109653,
+      "p95_storage_bytes": 15429013.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17785,21 +17797,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 143,
-          "rows_recorded": 143,
-          "rows_successful": 143,
+          "expected_total": 144,
+          "rows_recorded": 144,
+          "rows_successful": 144,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.986013986013986,
-          "doc_recall_all": 0.986013986013986,
-          "ndcg_at_10": 0.9747747500749258,
-          "exact_match": 0.11188811188811189,
-          "token_f1": 0.1506025076583755,
-          "avg_total_sec": 90.33459834741441,
-          "p50_total_sec": 117.23814463382587,
-          "p95_total_sec": 131.67567613627762,
-          "avg_storage_bytes": 10778142.566433566,
-          "p95_storage_bytes": 15687817.0,
+          "doc_recall_any": 0.9861111111111112,
+          "doc_recall_all": 0.9861111111111112,
+          "ndcg_at_10": 0.9723869375992071,
+          "exact_match": 0.1111111111111111,
+          "token_f1": 0.14955665691074788,
+          "avg_total_sec": 98.43561340182916,
+          "p50_total_sec": 117.87543472275138,
+          "p95_total_sec": 131.79436697810888,
+          "avg_storage_bytes": 11663134.055555556,
+          "p95_storage_bytes": 15736933.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18344,11 +18356,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03612479474548436,
-    "doc_recall_all_delta": 0.07848932676518883,
-    "ndcg_at_10_delta": 0.0557396057099947,
-    "token_f1_delta": 0.003367385915879248,
-    "avg_storage_ratio_nova_over_stock": 0.47588811252066526,
-    "avg_latency_ratio_nova_over_stock": 1.3324713868701716
+    "doc_recall_any_delta": 0.036180966828282646,
+    "doc_recall_all_delta": 0.07857018868860288,
+    "ndcg_at_10_delta": 0.05572632058060656,
+    "token_f1_delta": 0.0033283776836250945,
+    "avg_storage_ratio_nova_over_stock": 0.4772338285600913,
+    "avg_latency_ratio_nova_over_stock": 1.3437964231599253
   }
 }
