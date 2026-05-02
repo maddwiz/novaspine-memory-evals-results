@@ -265,7 +265,7 @@
         <div class="metric-label">Answer F1</div>
         <div class="metric-grid">
           <div><span>Stock</span><strong>11.6%</strong></div>
-          <div><span>NovaSpine</span><strong>11.9%</strong></div>
+          <div><span>NovaSpine</span><strong>11.8%</strong></div>
         </div>
         <div class="delta good">+0.003</div>
       </div>
@@ -281,12 +281,12 @@
         <h2>Status</h2>
         <div class="status-grid">
           <div class="pill"><span>Phase</span><strong>running</strong></div>
-          <div class="pill"><span>Generated</span><strong>2026-05-02T16:50:44Z</strong></div>
-          <div class="pill"><span>Status Updated</span><strong>2026-05-02T16:29:42Z</strong></div>
-          <div class="pill"><span>Case Progress</span><strong>70 / 500</strong></div>
-          <div class="pill"><span>Current</span><strong>longmemeval_m::3b6f954b</strong></div>
-          <div class="pill"><span>Stock Rows</span><strong>3056 / 3486</strong></div>
-          <div class="pill"><span>Nova Rows</span><strong>3056 / 3486</strong></div>
+          <div class="pill"><span>Generated</span><strong>2026-05-02T19:23:27Z</strong></div>
+          <div class="pill"><span>Status Updated</span><strong>2026-05-02T19:09:30Z</strong></div>
+          <div class="pill"><span>Case Progress</span><strong>75 / 500</strong></div>
+          <div class="pill"><span>Current</span><strong>longmemeval_m::af8d2e46</strong></div>
+          <div class="pill"><span>Stock Rows</span><strong>3061 / 3486</strong></div>
+          <div class="pill"><span>Nova Rows</span><strong>3060 / 3486</strong></div>
           <div class="pill"><span>Sources</span><strong><a href="https://github.com/snap-research/locomo">LoCoMo</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval Oracle</a>
 <a href="https://github.com/xiaowu0162/LongMemEval">LongMemEval-S</a>
@@ -507,24 +507,24 @@
       
     <tr>
       <td class="stock">Stock Claw3D + OpenClaw</td>
-      <td>70 / 500 failed 0</td>
-      <td>97.1%</td>
-      <td>97.1%</td>
-      <td>91.8%</td>
-      <td>8.1%</td>
-      <td>776.4s</td>
-      <td>388.4 MB</td>
+      <td>75 / 500 failed 0</td>
+      <td>96.0%</td>
+      <td>96.0%</td>
+      <td>89.6%</td>
+      <td>8.4%</td>
+      <td>777.4s</td>
+      <td>388.6 MB</td>
     </tr>
     
       
     <tr>
       <td class="nova">Claw3D + NovaSpine</td>
-      <td>70 / 500 failed 0</td>
-      <td>97.1%</td>
-      <td>97.1%</td>
-      <td>92.0%</td>
-      <td>7.3%</td>
-      <td>1298.6s</td>
+      <td>74 / 500 failed 0</td>
+      <td>97.3%</td>
+      <td>97.3%</td>
+      <td>90.4%</td>
+      <td>6.9%</td>
+      <td>1298.7s</td>
       <td>136.5 MB</td>
     </tr>
     
@@ -533,12 +533,13 @@
         <summary>Category Breakdown</summary>
         <table><tr><th>Category</th><th>Stock Rows</th><th>Stock Evidence</th><th>Stock F1</th><th>Nova Rows</th><th>Nova Evidence</th><th>Nova F1</th></tr>
 <tr><td>single-session-assistant</td><td>56</td><td>100.0%</td><td>7.3%</td><td>56</td><td>100.0%</td><td>8.0%</td></tr>
-<tr><td>single-session-user</td><td>14</td><td>85.7%</td><td>11.3%</td><td>14</td><td>85.7%</td><td>4.6%</td></tr></table>
+<tr><td>single-session-user</td><td>19</td><td>84.2%</td><td>11.8%</td><td>18</td><td>88.9%</td><td>3.6%</td></tr></table>
       </details>
       <details>
         <summary>Examples And Misses</summary>
         <div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> How long is my daily commute to work?</p><p><b>Gold:</b> 45 minutes each way</p><p><b>Pred:</b> Take advantage of your commute time to catch up with friends and family via phone, text, or messaging apps and you can make it the best time of day</p><p><b>Expected docs:</b> answer_40a90d51</p><p><b>Retrieved:</b> 4524c250_2, 4d2c2c88_1, ultrachat_143028</p></div>
-<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> completed in the past before the person moved away</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> 82269cc9, 0e3d8491_2, 6cc835bd, a15fe646, 5e523d80_2</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location previous/historical: Chicago for the work, nearby city where, consequences of; current: the</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> e55f8e0e</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> completed in the past before the person moved away</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> 82269cc9, 0e3d8491_2, 6cc835bd, a15fe646, 5e523d80_2</p></div>
+<div class="sample"><h3>Stock Miss</h3><p><b>Q:</b> What was the discount I got on my first purchase from the new clothing brand?</p><p><b>Gold:</b> 10%</p><p><b>Pred:</b> a week ago, and I&#x27;m loving the fit and style</p><p><b>Expected docs:</b> answer_f38f679b</p><p><b>Retrieved:</b> sharegpt_yyeh5GA_0, b1c6d332, a46d10a2_1, aac45fbb_2, 9b45e884</p></div></div><div class="nova-samples"><div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> Where did I buy my new tennis racket from?</p><p><b>Gold:</b> the sports store downtown</p><p><b>Pred:</b> User location previous/historical: Chicago for the work, nearby city where, consequences of; current: the</p><p><b>Expected docs:</b> answer_c3567066</p><p><b>Retrieved:</b> e55f8e0e</p></div>
 <div class="sample"><h3>NovaSpine Miss</h3><p><b>Q:</b> What was my previous occupation?</p><p><b>Gold:</b> Marketing specialist at a small startup</p><p><b>Pred:</b> within reach, and I am ready to face whatever challenges come my way</p><p><b>Expected docs:</b> answer_235eb6fb</p><p><b>Retrieved:</b> sharegpt_aVExml0_162, 9b3a7f2c_3, a15fe646, 0e3d8491_2, sharegpt_xOzzaof_0</p></div></div></div><div class="qa-row"><div class="stock-samples"><div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m checking our previous chat about the shift rotation sheet for GM social media agents. Can you remind me what was the rotation for Admon on a Sunday?</p><p><b>Gold:</b> Admon was assigned to the 8 am - 4 pm (Day Shift) on Sundays.</p><p><b>Pred:</b> 8 am - 4 pm (Day Shift)</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_5Lzox6N_0, 06fe8cfb_2</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m planning to visit Bandung again and I was wondering if you could remind me of the name of that restaurant in Cihampelas Walk that serves a great Nasi Goreng?</p><p><b>Gold:</b> Miss Bee Providore</p><p><b>Pred:</b> Also known as Ciwalk, this shopping center is famous for its denim street, where you can find a wide range of denim products, from jeans to jackets</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_ultrachat_234453</p></div>
 <div class="sample"><h3>Stock Success</h3><p><b>Q:</b> I&#x27;m going back to our previous conversation about the children&#x27;s book on dinosaurs. Can you remind me what color was the scaly body of the Plesiosaur in the image?</p><p><b>Gold:</b> The Plesiosaur had a blue scaly body.</p><p><b>Pred:</b> a herbivorous dinosaur with a large head and three horns</p><p><b>Expected docs:</b> </p><p><b>Retrieved:</b> answer_sharegpt_YkWn1Ne_0, sharegpt_YkWn1Ne_0</p></div>
