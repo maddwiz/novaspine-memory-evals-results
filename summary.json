@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T11:09:41Z",
+  "generated_at": "2026-05-02T13:39:42Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-02T10:48:45Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-02T13:26:28Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 60,
+    "current_case_index": 65,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::58bf7951"
+    "current_case_id": "longmemeval_m::58ef2f1c"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 60,
-        "rows_successful": 60,
+        "rows_recorded": 65,
+        "rows_successful": 65,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9833333333333333,
-        "doc_recall_all": 0.9833333333333333,
-        "ndcg_at_10": 0.9615422677536052,
-        "exact_match": 0.03333333333333333,
-        "token_f1": 0.06810039407819088,
-        "avg_total_sec": 778.6159577907684,
-        "p50_total_sec": 781.1928436462767,
+        "doc_recall_any": 0.9846153846153847,
+        "doc_recall_all": 0.9846153846153847,
+        "ndcg_at_10": 0.9349526913487255,
+        "exact_match": 0.03076923076923077,
+        "token_f1": 0.06799010735422747,
+        "avg_total_sec": 778.0012030810118,
+        "p50_total_sec": 779.2781067192554,
         "p95_total_sec": 812.2371671888977,
-        "avg_storage_bytes": 408235279.56666666,
+        "avg_storage_bytes": 407975933.4307692,
         "p95_storage_bytes": 422814959.0,
         "categories": {
           "single-session-assistant": {
@@ -10570,21 +10570,21 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.75,
-            "doc_recall_all": 0.75,
-            "ndcg_at_10": 0.5154015779112127,
+            "doc_recall_any": 0.8888888888888888,
+            "doc_recall_all": 0.8888888888888888,
+            "ndcg_at_10": 0.5712216871217445,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 766.1526549046393,
-            "p50_total_sec": 778.7100944058038,
-            "p95_total_sec": 781.6817652387545,
-            "avg_storage_bytes": 403220218.5,
-            "p95_storage_bytes": 413847760.0,
+            "token_f1": 0.037037037037037035,
+            "avg_total_sec": 768.6368169375799,
+            "p50_total_sec": 765.4049689145759,
+            "p95_total_sec": 793.9408753989264,
+            "avg_storage_bytes": 404133308.1111111,
+            "p95_storage_bytes": 420627384.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -10641,6 +10641,68 @@
                 "retrieved_doc_ids": [
                   "469755a9",
                   "answer_355c48bb"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1e043500",
+                "category": "single-session-user",
+                "query": "What is the name of the playlist I created on Spotify?",
+                "gold": "Summer Vibes",
+                "prediction": "you want to create custom playlists, set up notifications, or adjust",
+                "retrieved_doc_ids": [
+                  "92824321_2",
+                  "answer_3e012175",
+                  "31403c51",
+                  "6be2f065_2",
+                  "bd4110bc"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c5e8278d",
+                "category": "single-session-user",
+                "query": "What was my last name before I changed it?",
+                "gold": "Johnson",
+                "prediction": "to ensure your identification documents match your new name",
+                "retrieved_doc_ids": [
+                  "answer_f6168136"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6ade9755",
+                "category": "single-session-user",
+                "query": "Where do I take yoga classes?",
+                "gold": "Serenity Yoga",
+                "prediction": "yoga studios near me",
+                "retrieved_doc_ids": [
+                  "dbefb778_2",
+                  "b8f3481c_1",
+                  "a21f3697_3",
+                  "answer_9398da02"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6f9b354f",
+                "category": "single-session-user",
+                "query": "What color did I repaint my bedroom walls?",
+                "gold": "a lighter shade of gray",
+                "prediction": "a great way to test the color in the space without making a big investment",
+                "retrieved_doc_ids": [
+                  "8858d9dc_1",
+                  "a93750ef_2",
+                  "7dd3e067",
+                  "27bc339b",
+                  "answer_feb5200f"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::58ef2f1c",
+                "category": "single-session-user",
+                "query": "When did I volunteer at the local animal shelter's fundraising dinner?",
+                "gold": "February 14th",
+                "prediction": "* You can also try searching for local animal shelters, animal welfare organizations, or pet rescue groups in your area and reach out to them directly to inquire about volunteer opportunities.",
+                "retrieved_doc_ids": [
+                  "1ce5d0fb_1",
+                  "answer_59547700"
                 ]
               }
             ]
@@ -10808,19 +10870,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 60,
-        "rows_successful": 60,
+        "rows_recorded": 64,
+        "rows_successful": 64,
         "rows_failed": 0,
         "complete": false,
         "doc_recall_any": 1.0,
         "doc_recall_all": 1.0,
-        "ndcg_at_10": 0.9670619835714305,
-        "exact_match": 0.03333333333333333,
-        "token_f1": 0.07461949509211584,
-        "avg_total_sec": 1301.2421675169996,
-        "p50_total_sec": 1304.4299974790774,
+        "ndcg_at_10": 0.9524124308181129,
+        "exact_match": 0.03125,
+        "token_f1": 0.07620577664885861,
+        "avg_total_sec": 1300.3143729306757,
+        "p50_total_sec": 1302.922045522835,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 143399184.46666667,
+        "avg_storage_bytes": 143295683.0625,
         "p95_storage_bytes": 148747161.0,
         "categories": {
           "single-session-assistant": {
@@ -11012,20 +11074,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
             "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.7827324383928644,
+            "ndcg_at_10": 0.7577007889556063,
             "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 1298.028848750866,
-            "p50_total_sec": 1310.2396847619675,
+            "token_f1": 0.05,
+            "avg_total_sec": 1292.2131514433422,
+            "p50_total_sec": 1295.6769556477666,
             "p95_total_sec": 1370.2029871949926,
-            "avg_storage_bytes": 141557467.0,
+            "avg_storage_bytes": 141650314.5,
             "p95_storage_bytes": 145278373.0,
             "categories": {},
             "sample_errors": [],
@@ -11082,6 +11144,59 @@
                   "469755a9",
                   "answer_355c48bb",
                   "8f84441c"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1e043500",
+                "category": "single-session-user",
+                "query": "What is the name of the playlist I created on Spotify?",
+                "gold": "Summer Vibes",
+                "prediction": "you have any suggestions for kid-friendly artists or songs that might be a good fit for a family playlist",
+                "retrieved_doc_ids": [
+                  "answer_3e012175",
+                  "92824321_2",
+                  "a53c7542_1",
+                  "bd4110bc",
+                  "6be2f065_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c5e8278d",
+                "category": "single-session-user",
+                "query": "What was my last name before I changed it?",
+                "gold": "Johnson",
+                "prediction": "PrimaryDrivers",
+                "retrieved_doc_ids": [
+                  "answer_f6168136",
+                  "sharegpt_E6mafmR_0",
+                  "3e37f67d_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6ade9755",
+                "category": "single-session-user",
+                "query": "Where do I take yoga classes?",
+                "gold": "Serenity Yoga",
+                "prediction": "Beginner's Yoga,",
+                "retrieved_doc_ids": [
+                  "b8f3481c_1",
+                  "dbefb778_2",
+                  "a21f3697_3",
+                  "answer_9398da02"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6f9b354f",
+                "category": "single-session-user",
+                "query": "What color did I repaint my bedroom walls?",
+                "gold": "a lighter shade of gray",
+                "prediction": "you have any plant suggestions that would match well with that color",
+                "retrieved_doc_ids": [
+                  "a642672f_1",
+                  "7dd3e067",
+                  "answer_feb5200f",
+                  "8858d9dc_1",
+                  "27bc339b"
                 ]
               }
             ]
@@ -11263,20 +11378,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3046,
-      "rows_successful": 3045,
+      "rows_recorded": 3051,
+      "rows_successful": 3050,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7927750410509031,
-      "doc_recall_all": 0.6752052545155993,
-      "ndcg_at_10": 0.615656651977715,
-      "exact_match": 0.06995073891625615,
-      "token_f1": 0.11545168953026455,
-      "avg_total_sec": 35.08044283807198,
-      "p50_total_sec": 6.388939271215349,
-      "p95_total_sec": 82.47191589511931,
-      "avg_storage_bytes": 30211749.688013136,
-      "p95_storage_bytes": 45476977.0,
+      "doc_recall_any": 0.7931147540983606,
+      "doc_recall_all": 0.6757377049180328,
+      "ndcg_at_10": 0.6156570144736371,
+      "exact_match": 0.06983606557377049,
+      "token_f1": 0.11537171408294716,
+      "avg_total_sec": 36.28625218844225,
+      "p50_total_sec": 6.389080279041082,
+      "p95_total_sec": 82.5310798860155,
+      "avg_storage_bytes": 30825933.343934428,
+      "p95_storage_bytes": 45501694.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14280,21 +14395,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 144,
-          "rows_recorded": 144,
-          "rows_successful": 144,
+          "expected_total": 149,
+          "rows_recorded": 149,
+          "rows_successful": 149,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9583333333333334,
-          "doc_recall_all": 0.9583333333333334,
-          "ndcg_at_10": 0.940174112016893,
-          "exact_match": 0.125,
-          "token_f1": 0.16991458102955534,
-          "avg_total_sec": 66.79624331560142,
-          "p50_total_sec": 77.04847022937611,
-          "p95_total_sec": 85.1857486879453,
-          "avg_storage_bytes": 35558055.98611111,
-          "p95_storage_bytes": 45811499.0,
+          "doc_recall_any": 0.959731543624161,
+          "doc_recall_all": 0.959731543624161,
+          "ndcg_at_10": 0.9292916845831105,
+          "exact_match": 0.12080536912751678,
+          "token_f1": 0.16644988591670673,
+          "avg_total_sec": 90.41462933064606,
+          "p50_total_sec": 77.7065649330616,
+          "p95_total_sec": 751.5287426169962,
+          "avg_storage_bytes": 47950865.51006711,
+          "p95_storage_bytes": 393575010.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14888,20 +15003,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3046,
-      "rows_successful": 3046,
+      "rows_recorded": 3050,
+      "rows_successful": 3050,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8289560078791858,
-      "doc_recall_all": 0.7537754432042022,
-      "ndcg_at_10": 0.6713829725583216,
-      "exact_match": 0.07288246881155613,
-      "token_f1": 0.11878006721388965,
-      "avg_total_sec": 47.140973608667345,
-      "p50_total_sec": 0.07574974186718464,
-      "p95_total_sec": 127.70326627790928,
-      "avg_storage_bytes": 14418068.971109653,
-      "p95_storage_bytes": 15429013.0,
+      "doc_recall_any": 0.8291803278688524,
+      "doc_recall_all": 0.7540983606557377,
+      "ndcg_at_10": 0.6714633478592528,
+      "exact_match": 0.07278688524590164,
+      "token_f1": 0.11875543761754355,
+      "avg_total_sec": 48.76622800935869,
+      "p50_total_sec": 0.07581334700807929,
+      "p95_total_sec": 127.93642966868356,
+      "avg_storage_bytes": 14585052.69967213,
+      "p95_storage_bytes": 15437889.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17797,21 +17912,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 144,
-          "rows_recorded": 144,
-          "rows_successful": 144,
+          "expected_total": 148,
+          "rows_recorded": 148,
+          "rows_successful": 148,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9861111111111112,
-          "doc_recall_all": 0.9861111111111112,
-          "ndcg_at_10": 0.9723869375992071,
-          "exact_match": 0.1111111111111111,
-          "token_f1": 0.14955665691074788,
-          "avg_total_sec": 98.43561340182916,
-          "p50_total_sec": 117.87543472275138,
-          "p95_total_sec": 131.79436697810888,
-          "avg_storage_bytes": 11663134.055555556,
-          "p95_storage_bytes": 15736933.0,
+          "doc_recall_any": 0.9864864864864865,
+          "doc_recall_all": 0.9864864864864865,
+          "ndcg_at_10": 0.9659080781916164,
+          "exact_match": 0.10810810810810811,
+          "token_f1": 0.14821728780505197,
+          "avg_total_sec": 130.54269017842347,
+          "p50_total_sec": 118.73427731869742,
+          "p95_total_sec": 1249.999696277082,
+          "avg_storage_bytes": 15178810.486486487,
+          "p95_storage_bytes": 138216917.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18356,11 +18471,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.036180966828282646,
-    "doc_recall_all_delta": 0.07857018868860288,
-    "ndcg_at_10_delta": 0.05572632058060656,
-    "token_f1_delta": 0.0033283776836250945,
-    "avg_storage_ratio_nova_over_stock": 0.4772338285600913,
-    "avg_latency_ratio_nova_over_stock": 1.3437964231599253
+    "doc_recall_any_delta": 0.0360655737704918,
+    "doc_recall_all_delta": 0.0783606557377049,
+    "ndcg_at_10_delta": 0.05580633338561569,
+    "token_f1_delta": 0.003383723534596386,
+    "avg_storage_ratio_nova_over_stock": 0.4731422901925534,
+    "avg_latency_ratio_nova_over_stock": 1.3439312430532993
   }
 }
