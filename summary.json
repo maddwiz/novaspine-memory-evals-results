@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T22:38:45Z",
+  "generated_at": "2026-05-03T01:10:26Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-02T22:17:04Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-03T00:57:08Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 80,
+    "current_case_index": 85,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::75499fd8"
+    "current_case_id": "longmemeval_m::a06e4cfe"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 80,
-        "rows_successful": 80,
+        "rows_recorded": 85,
+        "rows_successful": 85,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9625,
-        "doc_recall_all": 0.9625,
-        "ndcg_at_10": 0.8979191406164,
-        "exact_match": 0.0625,
-        "token_f1": 0.09387420860212142,
-        "avg_total_sec": 777.4248990039108,
+        "doc_recall_any": 0.9529411764705882,
+        "doc_recall_all": 0.9529411764705882,
+        "ndcg_at_10": 0.8921591911683765,
+        "exact_match": 0.07058823529411765,
+        "token_f1": 0.10142409175624498,
+        "avg_total_sec": 777.6500041124247,
         "p50_total_sec": 779.1462628818117,
         "p95_total_sec": 812.3536687232554,
-        "avg_storage_bytes": 407507769.85,
+        "avg_storage_bytes": 407528491.9764706,
         "p95_storage_bytes": 423575852.0,
         "categories": {
           "single-session-assistant": {
@@ -10570,20 +10570,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 24,
-            "rows_recorded": 24,
-            "rows_successful": 24,
+            "expected_total": 29,
+            "rows_recorded": 29,
+            "rows_successful": 29,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.875,
-            "doc_recall_all": 0.875,
-            "ndcg_at_10": 0.6751083956558563,
-            "exact_match": 0.125,
-            "token_f1": 0.14266304347826086,
-            "avg_total_sec": 772.5685446868883,
-            "p50_total_sec": 772.0381150087342,
+            "doc_recall_any": 0.8620689655172413,
+            "doc_recall_all": 0.8620689655172413,
+            "ndcg_at_10": 0.6966414308876052,
+            "exact_match": 0.13793103448275862,
+            "token_f1": 0.15638014326170246,
+            "avg_total_sec": 774.0656379906396,
+            "p50_total_sec": 772.4350019739941,
             "p95_total_sec": 823.0656519401819,
-            "avg_storage_bytes": 404974403.6666667,
+            "avg_storage_bytes": 405471928.20689654,
             "p95_storage_bytes": 423575852.0,
             "categories": {},
             "sample_errors": [],
@@ -10635,6 +10635,19 @@
                   "a46d10a2_1",
                   "aac45fbb_2",
                   "9b45e884"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::95bcc1c8",
+                "category": "single-session-user",
+                "query": "How many amateur comedians did I watch perform at the open mic night?",
+                "gold": "10",
+                "prediction": "3",
+                "expected_doc_ids": [
+                  "answer_cb742a61"
+                ],
+                "retrieved_doc_ids": [
+                  "2ba7fdd0_1"
                 ]
               }
             ],
@@ -10842,6 +10855,19 @@
               "aac45fbb_2",
               "9b45e884"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::95bcc1c8",
+            "category": "single-session-user",
+            "query": "How many amateur comedians did I watch perform at the open mic night?",
+            "gold": "10",
+            "prediction": "3",
+            "expected_doc_ids": [
+              "answer_cb742a61"
+            ],
+            "retrieved_doc_ids": [
+              "2ba7fdd0_1"
+            ]
           }
         ],
         "sample_successes": [
@@ -10988,19 +11014,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 80,
-        "rows_successful": 80,
+        "rows_recorded": 84,
+        "rows_successful": 84,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.975,
-        "doc_recall_all": 0.975,
-        "ndcg_at_10": 0.9066723055601258,
-        "exact_match": 0.075,
-        "token_f1": 0.09334686769589848,
-        "avg_total_sec": 1299.0722662320127,
-        "p50_total_sec": 1301.0067802928388,
+        "doc_recall_any": 0.9761904761904762,
+        "doc_recall_all": 0.9761904761904762,
+        "ndcg_at_10": 0.9067227880759706,
+        "exact_match": 0.08333333333333333,
+        "token_f1": 0.10212929198551178,
+        "avg_total_sec": 1299.029447258572,
+        "p50_total_sec": 1299.7118484880775,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 143168269.0,
+        "avg_storage_bytes": 143154752.9047619,
         "p95_storage_bytes": 149527093.0,
         "categories": {
           "single-session-assistant": {
@@ -11192,20 +11218,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 24,
-            "rows_recorded": 24,
-            "rows_successful": 24,
+            "expected_total": 28,
+            "rows_recorded": 28,
+            "rows_successful": 28,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9166666666666666,
-            "doc_recall_all": 0.9166666666666666,
-            "ndcg_at_10": 0.7350414660039876,
-            "exact_match": 0.16666666666666666,
-            "token_f1": 0.12460748792270532,
-            "avg_total_sec": 1293.4736101060214,
+            "doc_recall_any": 0.9285714285714286,
+            "doc_recall_all": 0.9285714285714286,
+            "ndcg_at_10": 0.7597116049166842,
+            "exact_match": 0.17857142857142858,
+            "token_f1": 0.1464889579020014,
+            "avg_total_sec": 1294.144961203698,
             "p50_total_sec": 1292.92913757544,
             "p95_total_sec": 1366.9764467207715,
-            "avg_storage_bytes": 142322513.33333334,
+            "avg_storage_bytes": 142402787.2857143,
             "p95_storage_bytes": 149947793.0,
             "categories": {},
             "sample_errors": [],
@@ -11613,20 +11639,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3066,
-      "rows_successful": 3065,
+      "rows_recorded": 3071,
+      "rows_successful": 3070,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7934747145187602,
-      "doc_recall_all": 0.6766721044045677,
-      "ndcg_at_10": 0.6162530180933892,
-      "exact_match": 0.07047308319738989,
-      "token_f1": 0.11581543480036992,
-      "avg_total_sec": 39.90113634414223,
-      "p50_total_sec": 6.389312664046884,
-      "p95_total_sec": 82.88180794706568,
-      "avg_storage_bytes": 32659472.304730833,
-      "p95_storage_bytes": 45567849.0,
+      "doc_recall_any": 0.793485342019544,
+      "doc_recall_all": 0.6768729641693811,
+      "ndcg_at_10": 0.6165522802789049,
+      "exact_match": 0.07068403908794789,
+      "token_f1": 0.11598873575708303,
+      "avg_total_sec": 41.10854766255348,
+      "p50_total_sec": 6.389622213318944,
+      "p95_total_sec": 82.95407259697095,
+      "avg_storage_bytes": 33270548.15765472,
+      "p95_storage_bytes": 45600632.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14630,21 +14656,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 164,
-          "rows_recorded": 164,
-          "rows_successful": 164,
+          "expected_total": 169,
+          "rows_recorded": 169,
+          "rows_successful": 169,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9512195121951219,
-          "doc_recall_all": 0.9512195121951219,
-          "ndcg_at_10": 0.9117443128934654,
-          "exact_match": 0.12804878048780488,
-          "token_f1": 0.17007080921789164,
-          "avg_total_sec": 153.02252128239857,
-          "p50_total_sec": 78.6358357379213,
-          "p95_total_sec": 781.6817652387545,
-          "avg_storage_bytes": 80651615.09756097,
-          "p95_storage_bytes": 411850819.0,
+          "doc_recall_any": 0.9467455621301775,
+          "doc_recall_all": 0.9467455621301775,
+          "ndcg_at_10": 0.9084382681333036,
+          "exact_match": 0.1301775147928994,
+          "token_f1": 0.17161375043103752,
+          "avg_total_sec": 171.6091829559562,
+          "p50_total_sec": 78.85174596169963,
+          "p95_total_sec": 783.2132275970653,
+          "avg_storage_bytes": 90332337.90532544,
+          "p95_storage_bytes": 413760073.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14758,6 +14784,19 @@
                 "a46d10a2_1",
                 "aac45fbb_2",
                 "9b45e884"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::95bcc1c8",
+              "category": "single-session-user",
+              "query": "How many amateur comedians did I watch perform at the open mic night?",
+              "gold": "10",
+              "prediction": "3",
+              "expected_doc_ids": [
+                "answer_cb742a61"
+              ],
+              "retrieved_doc_ids": [
+                "2ba7fdd0_1"
               ]
             }
           ],
@@ -15272,20 +15311,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3066,
-      "rows_successful": 3066,
+      "rows_recorded": 3070,
+      "rows_successful": 3070,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8294194390084801,
-      "doc_recall_all": 0.7547292889758643,
-      "ndcg_at_10": 0.6717360077766378,
-      "exact_match": 0.07371167645140247,
-      "token_f1": 0.11898064724189589,
-      "avg_total_sec": 55.26505442255113,
-      "p50_total_sec": 0.07600420294329524,
-      "p95_total_sec": 128.47194036422297,
-      "avg_storage_bytes": 15253407.872798434,
-      "p95_storage_bytes": 15511149.0,
+      "doc_recall_any": 0.8296416938110749,
+      "doc_recall_all": 0.7550488599348534,
+      "ndcg_at_10": 0.6720434949826525,
+      "exact_match": 0.07394136807817589,
+      "token_f1": 0.11918754904063969,
+      "avg_total_sec": 56.88447854420222,
+      "p50_total_sec": 0.07608453929424286,
+      "p95_total_sec": 129.0397683661431,
+      "avg_storage_bytes": 15419702.365472313,
+      "p95_storage_bytes": 15519197.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18181,21 +18220,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 164,
-          "rows_recorded": 164,
-          "rows_successful": 164,
+          "expected_total": 168,
+          "rows_recorded": 168,
+          "rows_successful": 168,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.975609756097561,
-          "doc_recall_all": 0.975609756097561,
-          "ndcg_at_10": 0.9422791734439638,
-          "exact_match": 0.12195121951219512,
-          "token_f1": 0.14955328234934523,
-          "avg_total_sec": 244.06085108173443,
-          "p50_total_sec": 120.7464788062498,
-          "p95_total_sec": 1309.6800864739344,
-          "avg_storage_bytes": 27615864.36585366,
-          "p95_storage_bytes": 143656817.0,
+          "doc_recall_any": 0.9761904761904762,
+          "doc_recall_all": 0.9761904761904762,
+          "ndcg_at_10": 0.9414566321332233,
+          "exact_match": 0.125,
+          "token_f1": 0.15260624652621266,
+          "avg_total_sec": 269.158761003354,
+          "p50_total_sec": 121.1474503967911,
+          "p95_total_sec": 1310.2396847619675,
+          "avg_storage_bytes": 30360354.04761905,
+          "p95_storage_bytes": 143689261.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18770,11 +18809,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03594472448971997,
-    "doc_recall_all_delta": 0.07805718457129662,
-    "ndcg_at_10_delta": 0.05548298968324861,
-    "token_f1_delta": 0.003165212441525969,
-    "avg_storage_ratio_nova_over_stock": 0.4670439170135926,
-    "avg_latency_ratio_nova_over_stock": 1.385049637331054
+    "doc_recall_any_delta": 0.03615635179153087,
+    "doc_recall_all_delta": 0.07817589576547224,
+    "ndcg_at_10_delta": 0.05549121470374763,
+    "token_f1_delta": 0.003198813283556659,
+    "avg_storage_ratio_nova_over_stock": 0.4634640310825364,
+    "avg_latency_ratio_nova_over_stock": 1.3837627884874006
   }
 }
