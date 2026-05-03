@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T04:26:17Z",
+  "generated_at": "2026-05-03T06:56:47Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-03T04:05:02Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-03T06:43:49Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 90,
+    "current_case_index": 95,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::caf9ead2"
+    "current_case_id": "longmemeval_m::577d4d32"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,20 +10393,20 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 90,
-        "rows_successful": 90,
+        "rows_recorded": 95,
+        "rows_successful": 95,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9444444444444444,
-        "doc_recall_all": 0.9444444444444444,
-        "ndcg_at_10": 0.8829384555875941,
-        "exact_match": 0.06666666666666667,
-        "token_f1": 0.09578941999200916,
-        "avg_total_sec": 778.2503391756883,
-        "p50_total_sec": 779.1462628818117,
-        "p95_total_sec": 819.6070240470581,
-        "avg_storage_bytes": 407609252.4,
-        "p95_storage_bytes": 425308947.0,
+        "doc_recall_any": 0.9368421052631579,
+        "doc_recall_all": 0.9368421052631579,
+        "ndcg_at_10": 0.8708033737897514,
+        "exact_match": 0.07368421052631578,
+        "token_f1": 0.10428170615784327,
+        "avg_total_sec": 778.0202917819745,
+        "p50_total_sec": 778.7100944058038,
+        "p95_total_sec": 812.3536687232554,
+        "avg_storage_bytes": 407563910.2842105,
+        "p95_storage_bytes": 423575852.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -10570,20 +10570,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 34,
-            "rows_recorded": 34,
-            "rows_successful": 34,
+            "expected_total": 39,
+            "rows_recorded": 39,
+            "rows_successful": 39,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8529411764705882,
-            "doc_recall_all": 0.8529411764705882,
-            "ndcg_at_10": 0.7009862132150592,
-            "exact_match": 0.11764705882352941,
-            "token_f1": 0.13338306337027564,
-            "avg_total_sec": 776.1818728818942,
-            "p50_total_sec": 774.9733078181744,
+            "doc_recall_any": 0.8461538461538461,
+            "doc_recall_all": 0.8461538461538461,
+            "ndcg_at_10": 0.6947536091398698,
+            "exact_match": 0.1282051282051282,
+            "token_f1": 0.1492497035975297,
+            "avg_total_sec": 775.8866890117956,
+            "p50_total_sec": 775.3415860384703,
             "p95_total_sec": 823.0656519401819,
-            "avg_storage_bytes": 405988141.64705884,
+            "avg_storage_bytes": 406085527.61538464,
             "p95_storage_bytes": 423575852.0,
             "categories": {},
             "sample_errors": [],
@@ -10665,6 +10665,23 @@
                   "4056f920",
                   "ca1f6079_1",
                   "b30a47be_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::577d4d32",
+                "category": "single-session-user",
+                "query": "What time do I stop checking work emails and messages?",
+                "gold": "7 pm",
+                "prediction": "10 AM - 9:30/9:40 AM (depending on your commute time)",
+                "expected_doc_ids": [
+                  "answer_0dd4d99a"
+                ],
+                "retrieved_doc_ids": [
+                  "7e8c306b",
+                  "7b0b47f4_2",
+                  "060406af_1",
+                  "295dc1ab_1",
+                  "62ecacbf"
                 ]
               }
             ],
@@ -10902,6 +10919,23 @@
               "ca1f6079_1",
               "b30a47be_2"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::577d4d32",
+            "category": "single-session-user",
+            "query": "What time do I stop checking work emails and messages?",
+            "gold": "7 pm",
+            "prediction": "10 AM - 9:30/9:40 AM (depending on your commute time)",
+            "expected_doc_ids": [
+              "answer_0dd4d99a"
+            ],
+            "retrieved_doc_ids": [
+              "7e8c306b",
+              "7b0b47f4_2",
+              "060406af_1",
+              "295dc1ab_1",
+              "62ecacbf"
+            ]
           }
         ],
         "sample_successes": [
@@ -11048,20 +11082,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 90,
-        "rows_successful": 90,
+        "rows_recorded": 94,
+        "rows_successful": 94,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9666666666666667,
-        "doc_recall_all": 0.9666666666666667,
-        "ndcg_at_10": 0.8936285967280494,
-        "exact_match": 0.07777777777777778,
-        "token_f1": 0.095320672519811,
-        "avg_total_sec": 1299.1342124462335,
+        "doc_recall_any": 0.9574468085106383,
+        "doc_recall_all": 0.9574468085106383,
+        "ndcg_at_10": 0.8835904623308074,
+        "exact_match": 0.0851063829787234,
+        "token_f1": 0.10190277156152117,
+        "avg_total_sec": 1298.7300748361097,
         "p50_total_sec": 1299.5035858098418,
-        "p95_total_sec": 1365.8000888261013,
-        "avg_storage_bytes": 143203072.55555555,
-        "p95_storage_bytes": 149947793.0,
+        "p95_total_sec": 1364.3915228489786,
+        "avg_storage_bytes": 143177422.5319149,
+        "p95_storage_bytes": 149527093.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -11252,20 +11286,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 34,
-            "rows_recorded": 34,
-            "rows_successful": 34,
+            "expected_total": 38,
+            "rows_recorded": 38,
+            "rows_successful": 38,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9117647058823529,
-            "doc_recall_all": 0.9117647058823529,
-            "ndcg_at_10": 0.7509936601414727,
-            "exact_match": 0.14705882352941177,
-            "token_f1": 0.12063796533105997,
-            "avg_total_sec": 1295.2842489454265,
+            "doc_recall_any": 0.8947368421052632,
+            "doc_recall_all": 0.8947368421052632,
+            "ndcg_at_10": 0.7411766894310929,
+            "exact_match": 0.15789473684210525,
+            "token_f1": 0.134255021612001,
+            "avg_total_sec": 1294.6897994362578,
             "p50_total_sec": 1291.5527422558516,
             "p95_total_sec": 1366.9764467207715,
-            "avg_storage_bytes": 142663392.05882353,
+            "avg_storage_bytes": 142656750.47368422,
             "p95_storage_bytes": 149947793.0,
             "categories": {},
             "sample_errors": [],
@@ -11315,6 +11349,19 @@
                   "e9c1ef4b_1",
                   "4056f920",
                   "22db3cc3_5"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::86b68151",
+                "category": "single-session-user",
+                "query": "Where did I buy my new bookshelf from?",
+                "gold": "IKEA",
+                "prediction": "User location previous/historical: city center, process of buying, mood for travel; current: Seoul to learn more",
+                "expected_doc_ids": [
+                  "answer_dc11c1eb"
+                ],
+                "retrieved_doc_ids": [
+                  "688078f3"
                 ]
               }
             ],
@@ -11531,6 +11578,19 @@
               "4056f920",
               "22db3cc3_5"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::86b68151",
+            "category": "single-session-user",
+            "query": "Where did I buy my new bookshelf from?",
+            "gold": "IKEA",
+            "prediction": "User location previous/historical: city center, process of buying, mood for travel; current: Seoul to learn more",
+            "expected_doc_ids": [
+              "answer_dc11c1eb"
+            ],
+            "retrieved_doc_ids": [
+              "688078f3"
+            ]
           }
         ],
         "sample_successes": [
@@ -11707,20 +11767,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3076,
-      "rows_successful": 3075,
+      "rows_recorded": 3081,
+      "rows_successful": 3080,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7934959349593496,
-      "doc_recall_all": 0.6770731707317074,
-      "ndcg_at_10": 0.6167305464096942,
-      "exact_match": 0.07056910569105691,
-      "token_f1": 0.11580013618674631,
-      "avg_total_sec": 42.32374682936424,
-      "p50_total_sec": 6.390161260031164,
-      "p95_total_sec": 83.02940105786547,
-      "avg_storage_bytes": 33881461.3795122,
-      "p95_storage_bytes": 45631907.0,
+      "doc_recall_any": 0.7935064935064935,
+      "doc_recall_all": 0.6772727272727272,
+      "ndcg_at_10": 0.6167884057522572,
+      "exact_match": 0.07077922077922078,
+      "token_f1": 0.11602958865583089,
+      "avg_total_sec": 43.511337238237225,
+      "p50_total_sec": 6.390260731335729,
+      "p95_total_sec": 83.19663077173755,
+      "avg_storage_bytes": 34486763.79967532,
+      "p95_storage_bytes": 45675894.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14724,20 +14784,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 174,
-          "rows_recorded": 174,
-          "rows_successful": 174,
+          "expected_total": 179,
+          "rows_recorded": 179,
+          "rows_successful": 179,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9425287356321839,
-          "doc_recall_all": 0.9425287356321839,
-          "ndcg_at_10": 0.903201132575286,
-          "exact_match": 0.12643678160919541,
-          "token_f1": 0.16668232082095022,
-          "avg_total_sec": 189.33466721731293,
-          "p50_total_sec": 79.05203120689839,
-          "p95_total_sec": 783.2132275970653,
-          "avg_storage_bytes": 99488942.55172414,
+          "doc_recall_any": 0.9385474860335196,
+          "doc_recall_all": 0.9385474860335196,
+          "ndcg_at_10": 0.8961947294706296,
+          "exact_match": 0.12849162011173185,
+          "token_f1": 0.1692091514444672,
+          "avg_total_sec": 205.6627334597099,
+          "p50_total_sec": 79.28769246907905,
+          "p95_total_sec": 783.7515539843589,
+          "avg_storage_bytes": 108071590.86592178,
           "p95_storage_bytes": 413760073.0,
           "categories": {},
           "sample_errors": [],
@@ -14882,6 +14942,23 @@
                 "4056f920",
                 "ca1f6079_1",
                 "b30a47be_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::577d4d32",
+              "category": "single-session-user",
+              "query": "What time do I stop checking work emails and messages?",
+              "gold": "7 pm",
+              "prediction": "10 AM - 9:30/9:40 AM (depending on your commute time)",
+              "expected_doc_ids": [
+                "answer_0dd4d99a"
+              ],
+              "retrieved_doc_ids": [
+                "7e8c306b",
+                "7b0b47f4_2",
+                "060406af_1",
+                "295dc1ab_1",
+                "62ecacbf"
               ]
             }
           ],
@@ -15396,20 +15473,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3076,
-      "rows_successful": 3076,
+      "rows_recorded": 3080,
+      "rows_successful": 3080,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8296488946684005,
-      "doc_recall_all": 0.7552015604681405,
-      "ndcg_at_10": 0.6721181368998329,
-      "exact_match": 0.07379713914174252,
-      "token_f1": 0.11895506357437056,
-      "avg_total_sec": 59.31045340739329,
-      "p50_total_sec": 0.07611320586875081,
-      "p95_total_sec": 129.32479352224618,
-      "avg_storage_bytes": 15670274.235370612,
-      "p95_storage_bytes": 15532133.0,
+      "doc_recall_any": 0.8295454545454546,
+      "doc_recall_all": 0.7551948051948052,
+      "ndcg_at_10": 0.6720994541744992,
+      "exact_match": 0.07402597402597402,
+      "token_f1": 0.11912525180349476,
+      "avg_total_sec": 60.908280063498395,
+      "p50_total_sec": 0.07628952478989959,
+      "p95_total_sec": 129.56109886057675,
+      "avg_storage_bytes": 15835118.42077922,
+      "p95_storage_bytes": 15556169.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18305,21 +18382,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 174,
-          "rows_recorded": 174,
-          "rows_successful": 174,
+          "expected_total": 178,
+          "rows_recorded": 178,
+          "rows_successful": 178,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9712643678160919,
-          "doc_recall_all": 0.9712643678160919,
-          "ndcg_at_10": 0.9334860557788761,
-          "exact_match": 0.1206896551724138,
-          "token_f1": 0.1473439621632398,
-          "avg_total_sec": 304.72573217818643,
-          "p50_total_sec": 121.60005619982257,
-          "p95_total_sec": 1310.2396847619675,
-          "avg_storage_bytes": 34274809.0,
-          "p95_storage_bytes": 144157537.0,
+          "doc_recall_any": 0.9662921348314607,
+          "doc_recall_all": 0.9662921348314607,
+          "ndcg_at_10": 0.9272893452758196,
+          "exact_match": 0.12359550561797752,
+          "token_f1": 0.14965083941799848,
+          "avg_total_sec": 326.85856917661647,
+          "p50_total_sec": 122.12227034382522,
+          "p95_total_sec": 1311.0067625455558,
+          "avg_storage_bytes": 36709089.62921348,
+          "p95_storage_bytes": 144477565.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18398,6 +18475,19 @@
                 "e9c1ef4b_1",
                 "4056f920",
                 "22db3cc3_5"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::86b68151",
+              "category": "single-session-user",
+              "query": "Where did I buy my new bookshelf from?",
+              "gold": "IKEA",
+              "prediction": "User location previous/historical: city center, process of buying, mood for travel; current: Seoul to learn more",
+              "expected_doc_ids": [
+                "answer_dc11c1eb"
+              ],
+              "retrieved_doc_ids": [
+                "688078f3"
               ]
             }
           ],
@@ -18911,11 +19001,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03615295970905097,
-    "doc_recall_all_delta": 0.0781283897364331,
-    "ndcg_at_10_delta": 0.05538759049013875,
-    "token_f1_delta": 0.003154927387624254,
-    "avg_storage_ratio_nova_over_stock": 0.4625029026890286,
-    "avg_latency_ratio_nova_over_stock": 1.4013516725377362
+    "doc_recall_any_delta": 0.03603896103896109,
+    "doc_recall_all_delta": 0.07792207792207795,
+    "ndcg_at_10_delta": 0.05531104842224199,
+    "token_f1_delta": 0.0030956631476638657,
+    "avg_storage_ratio_nova_over_stock": 0.45916510208848016,
+    "avg_latency_ratio_nova_over_stock": 1.39982551512972
   }
 }
