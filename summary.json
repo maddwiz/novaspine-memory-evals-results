@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T07:18:19Z",
+  "generated_at": "2026-05-03T09:50:40Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-03T06:56:49Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-03T09:37:55Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 95,
+    "current_case_index": 100,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::577d4d32"
+    "current_case_id": "longmemeval_m::ccb36322"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,20 +10393,20 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 95,
-        "rows_successful": 95,
+        "rows_recorded": 100,
+        "rows_successful": 100,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9368421052631579,
-        "doc_recall_all": 0.9368421052631579,
-        "ndcg_at_10": 0.8708033737897514,
-        "exact_match": 0.07368421052631578,
-        "token_f1": 0.10428170615784327,
-        "avg_total_sec": 778.0202917819745,
-        "p50_total_sec": 778.7100944058038,
-        "p95_total_sec": 812.3536687232554,
-        "avg_storage_bytes": 407563910.2842105,
-        "p95_storage_bytes": 423575852.0,
+        "doc_recall_any": 0.93,
+        "doc_recall_all": 0.93,
+        "ndcg_at_10": 0.8635725026359783,
+        "exact_match": 0.08,
+        "token_f1": 0.1090676208499511,
+        "avg_total_sec": 778.2617657517176,
+        "p50_total_sec": 779.1462628818117,
+        "p95_total_sec": 815.1109431004152,
+        "avg_storage_bytes": 407747265.48,
+        "p95_storage_bytes": 425308947.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -10570,21 +10570,21 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 39,
-            "rows_recorded": 39,
-            "rows_successful": 39,
+            "expected_total": 44,
+            "rows_recorded": 44,
+            "rows_successful": 44,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8461538461538461,
-            "doc_recall_all": 0.8461538461538461,
-            "ndcg_at_10": 0.6947536091398698,
-            "exact_match": 0.1282051282051282,
-            "token_f1": 0.1492497035975297,
-            "avg_total_sec": 775.8866890117956,
-            "p50_total_sec": 775.3415860384703,
+            "doc_recall_any": 0.8409090909090909,
+            "doc_recall_all": 0.8409090909090909,
+            "ndcg_at_10": 0.6983254661369632,
+            "exact_match": 0.13636363636363635,
+            "token_f1": 0.15501678273417405,
+            "avg_total_sec": 776.6779483487321,
+            "p50_total_sec": 776.5249878913164,
             "p95_total_sec": 823.0656519401819,
-            "avg_storage_bytes": 406085527.61538464,
-            "p95_storage_bytes": 423575852.0,
+            "avg_storage_bytes": 406670242.0,
+            "p95_storage_bytes": 428947166.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -10682,6 +10682,23 @@
                   "060406af_1",
                   "295dc1ab_1",
                   "62ecacbf"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::ccb36322",
+                "category": "single-session-user",
+                "query": "What is the name of the music streaming service have I been using lately?",
+                "gold": "Spotify",
+                "prediction": "another high-fidelity streaming service that allows you to upload your own music files, including vinyl rips",
+                "expected_doc_ids": [
+                  "answer_f1fbb330"
+                ],
+                "retrieved_doc_ids": [
+                  "f11b88d8_2",
+                  "fb8ffbf3",
+                  "ultrachat_23185",
+                  "e8749244",
+                  "9c479e89_1"
                 ]
               }
             ],
@@ -10936,6 +10953,23 @@
               "295dc1ab_1",
               "62ecacbf"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::ccb36322",
+            "category": "single-session-user",
+            "query": "What is the name of the music streaming service have I been using lately?",
+            "gold": "Spotify",
+            "prediction": "another high-fidelity streaming service that allows you to upload your own music files, including vinyl rips",
+            "expected_doc_ids": [
+              "answer_f1fbb330"
+            ],
+            "retrieved_doc_ids": [
+              "f11b88d8_2",
+              "fb8ffbf3",
+              "ultrachat_23185",
+              "e8749244",
+              "9c479e89_1"
+            ]
           }
         ],
         "sample_successes": [
@@ -11082,19 +11116,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 95,
-        "rows_successful": 95,
+        "rows_recorded": 99,
+        "rows_successful": 99,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9578947368421052,
-        "doc_recall_all": 0.9578947368421052,
-        "ndcg_at_10": 0.8774582468922093,
-        "exact_match": 0.08421052631578947,
-        "token_f1": 0.10083011080824199,
-        "avg_total_sec": 1298.640880874417,
-        "p50_total_sec": 1299.5035858098418,
+        "doc_recall_any": 0.9595959595959596,
+        "doc_recall_all": 0.9595959595959596,
+        "ndcg_at_10": 0.8773589237854533,
+        "exact_match": 0.09090909090909091,
+        "token_f1": 0.10685717703821201,
+        "avg_total_sec": 1298.9476979129356,
+        "p50_total_sec": 1299.6098827137612,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 143174423.8631579,
+        "avg_storage_bytes": 143235392.5959596,
         "p95_storage_bytes": 149527093.0,
         "categories": {
           "single-session-assistant": {
@@ -11286,20 +11320,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 39,
-            "rows_recorded": 39,
-            "rows_successful": 39,
+            "expected_total": 43,
+            "rows_recorded": 43,
+            "rows_successful": 43,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8974358974358975,
-            "doc_recall_all": 0.8974358974358975,
-            "ndcg_at_10": 0.7298908767703978,
-            "exact_match": 0.15384615384615385,
-            "token_f1": 0.13081258516041125,
-            "avg_total_sec": 1294.5761288987974,
-            "p50_total_sec": 1291.5527422558516,
+            "doc_recall_any": 0.9069767441860465,
+            "doc_recall_all": 0.9069767441860465,
+            "ndcg_at_10": 0.7433893998615235,
+            "exact_match": 0.16279069767441862,
+            "token_f1": 0.14189978654083812,
+            "avg_total_sec": 1295.660638078235,
+            "p50_total_sec": 1291.6818848112598,
             "p95_total_sec": 1366.9764467207715,
-            "avg_storage_bytes": 142662796.58974358,
+            "avg_storage_bytes": 142850759.69767442,
             "p95_storage_bytes": 149947793.0,
             "categories": {},
             "sample_errors": [],
@@ -11767,20 +11801,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3081,
-      "rows_successful": 3080,
+      "rows_recorded": 3086,
+      "rows_successful": 3085,
       "rows_failed": 1,
       "complete": false,
-      "doc_recall_any": 0.7935064935064935,
-      "doc_recall_all": 0.6772727272727272,
-      "ndcg_at_10": 0.6167884057522572,
-      "exact_match": 0.07077922077922078,
-      "token_f1": 0.11602958865583089,
-      "avg_total_sec": 43.511337238237225,
-      "p50_total_sec": 6.390260731335729,
-      "p95_total_sec": 83.19663077173755,
-      "avg_storage_bytes": 34486763.79967532,
-      "p95_storage_bytes": 45675894.0,
+      "doc_recall_any": 0.7935170178282009,
+      "doc_recall_all": 0.6774716369529984,
+      "ndcg_at_10": 0.6169657113356641,
+      "exact_match": 0.07098865478119935,
+      "token_f1": 0.11616568332575662,
+      "avg_total_sec": 44.709616709774664,
+      "p50_total_sec": 6.390460870228708,
+      "p95_total_sec": 83.30615754285827,
+      "avg_storage_bytes": 35097370.3643436,
+      "p95_storage_bytes": 45699969.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14784,21 +14818,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 179,
-          "rows_recorded": 179,
-          "rows_successful": 179,
+          "expected_total": 184,
+          "rows_recorded": 184,
+          "rows_successful": 184,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9385474860335196,
-          "doc_recall_all": 0.9385474860335196,
-          "ndcg_at_10": 0.8961947294706296,
-          "exact_match": 0.12849162011173185,
-          "token_f1": 0.1692091514444672,
-          "avg_total_sec": 205.6627334597099,
-          "p50_total_sec": 79.28769246907905,
-          "p95_total_sec": 783.7515539843589,
-          "avg_storage_bytes": 108071590.86592178,
-          "p95_storage_bytes": 413760073.0,
+          "doc_recall_any": 0.9347826086956522,
+          "doc_recall_all": 0.9347826086956522,
+          "ndcg_at_10": 0.8915749257000769,
+          "exact_match": 0.13043478260869565,
+          "token_f1": 0.17004585928565016,
+          "avg_total_sec": 221.34716383245794,
+          "p50_total_sec": 79.46316008036956,
+          "p95_total_sec": 793.2452597049996,
+          "avg_storage_bytes": 116309618.67391305,
+          "p95_storage_bytes": 414036856.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14959,6 +14993,23 @@
                 "060406af_1",
                 "295dc1ab_1",
                 "62ecacbf"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::ccb36322",
+              "category": "single-session-user",
+              "query": "What is the name of the music streaming service have I been using lately?",
+              "gold": "Spotify",
+              "prediction": "another high-fidelity streaming service that allows you to upload your own music files, including vinyl rips",
+              "expected_doc_ids": [
+                "answer_f1fbb330"
+              ],
+              "retrieved_doc_ids": [
+                "f11b88d8_2",
+                "fb8ffbf3",
+                "ultrachat_23185",
+                "e8749244",
+                "9c479e89_1"
               ]
             }
           ],
@@ -15473,20 +15524,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3081,
-      "rows_successful": 3081,
+      "rows_recorded": 3085,
+      "rows_successful": 3085,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8296007789678675,
-      "doc_recall_all": 0.7552742616033755,
-      "ndcg_at_10": 0.6719790161808248,
-      "exact_match": 0.07400194741966894,
-      "token_f1": 0.11908658732708986,
-      "avg_total_sec": 61.30728959560219,
-      "p50_total_sec": 0.07628952478989959,
-      "p95_total_sec": 129.72478755330667,
-      "avg_storage_bytes": 15876357.444011685,
-      "p95_storage_bytes": 15556349.0,
+      "doc_recall_any": 0.8298217179902755,
+      "doc_recall_all": 0.7555915721231766,
+      "ndcg_at_10": 0.6722422524645449,
+      "exact_match": 0.07423014586709886,
+      "token_f1": 0.11925632919117143,
+      "avg_total_sec": 62.92145791065198,
+      "p50_total_sec": 0.0765638048760593,
+      "p95_total_sec": 130.08997371373698,
+      "avg_storage_bytes": 16043368.196110211,
+      "p95_storage_bytes": 15581141.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18382,21 +18433,21 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 179,
-          "rows_recorded": 179,
-          "rows_successful": 179,
+          "expected_total": 183,
+          "rows_recorded": 183,
+          "rows_successful": 183,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9664804469273743,
-          "doc_recall_all": 0.9664804469273743,
-          "ndcg_at_10": 0.923790689691396,
-          "exact_match": 0.12290502793296089,
-          "token_f1": 0.14881480120895937,
-          "avg_total_sec": 332.24068135146945,
-          "p50_total_sec": 122.18783458089456,
-          "p95_total_sec": 1311.0067625455558,
-          "avg_storage_bytes": 37302293.312849164,
-          "p95_storage_bytes": 144477565.0,
+          "doc_recall_any": 0.9672131147540983,
+          "doc_recall_all": 0.9672131147540983,
+          "ndcg_at_10": 0.9227242265287425,
+          "exact_match": 0.12568306010928962,
+          "token_f1": 0.15102649954318978,
+          "avg_total_sec": 353.53016596843736,
+          "p50_total_sec": 122.60599028179422,
+          "p95_total_sec": 1324.2314341301098,
+          "avg_storage_bytes": 39649421.32786885,
+          "p95_storage_bytes": 145278373.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19001,11 +19052,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.036094285461374054,
-    "doc_recall_all_delta": 0.07800153433064827,
-    "ndcg_at_10_delta": 0.055190610428567544,
-    "token_f1_delta": 0.0030569986712589703,
-    "avg_storage_ratio_nova_over_stock": 0.460360894870662,
-    "avg_latency_ratio_nova_over_stock": 1.4089957580463903
+    "doc_recall_any_delta": 0.036304700162074544,
+    "doc_recall_all_delta": 0.07811993517017823,
+    "ndcg_at_10_delta": 0.05527654112888081,
+    "token_f1_delta": 0.0030906458654148122,
+    "avg_storage_ratio_nova_over_stock": 0.4571102629503297,
+    "avg_latency_ratio_nova_over_stock": 1.407336106661271
   }
 }
