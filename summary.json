@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T09:50:40Z",
+  "generated_at": "2026-05-03T10:11:53Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-03T09:37:55Z",
-    "current_system": "stock",
+    "updated_at": "2026-05-03T09:50:42Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 100,
     "current_case_total": 500,
@@ -11116,19 +11116,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 99,
-        "rows_successful": 99,
+        "rows_recorded": 100,
+        "rows_successful": 100,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9595959595959596,
-        "doc_recall_all": 0.9595959595959596,
-        "ndcg_at_10": 0.8773589237854533,
-        "exact_match": 0.09090909090909091,
-        "token_f1": 0.10685717703821201,
-        "avg_total_sec": 1298.9476979129356,
+        "doc_recall_any": 0.95,
+        "doc_recall_all": 0.95,
+        "ndcg_at_10": 0.8685853345475988,
+        "exact_match": 0.09,
+        "token_f1": 0.10578860526782989,
+        "avg_total_sec": 1298.670850328356,
         "p50_total_sec": 1299.6098827137612,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 143235392.5959596,
+        "avg_storage_bytes": 143209970.72,
         "p95_storage_bytes": 149527093.0,
         "categories": {
           "single-session-assistant": {
@@ -11320,20 +11320,20 @@
             ]
           },
           "single-session-user": {
-            "expected_total": 43,
-            "rows_recorded": 43,
-            "rows_successful": 43,
+            "expected_total": 44,
+            "rows_recorded": 44,
+            "rows_successful": 44,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9069767441860465,
-            "doc_recall_all": 0.9069767441860465,
-            "ndcg_at_10": 0.7433893998615235,
-            "exact_match": 0.16279069767441862,
-            "token_f1": 0.14189978654083812,
-            "avg_total_sec": 1295.660638078235,
+            "doc_recall_any": 0.8863636363636364,
+            "doc_recall_all": 0.8863636363636364,
+            "ndcg_at_10": 0.7264941862283071,
+            "exact_match": 0.1590909090909091,
+            "token_f1": 0.1386747913921827,
+            "avg_total_sec": 1295.1061449277067,
             "p50_total_sec": 1291.6818848112598,
             "p95_total_sec": 1366.9764467207715,
-            "avg_storage_bytes": 142850759.69767442,
+            "avg_storage_bytes": 142801724.36363637,
             "p95_storage_bytes": 149947793.0,
             "categories": {},
             "sample_errors": [],
@@ -11396,6 +11396,23 @@
                 ],
                 "retrieved_doc_ids": [
                   "688078f3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::ccb36322",
+                "category": "single-session-user",
+                "query": "What is the name of the music streaming service have I been using lately?",
+                "gold": "Spotify",
+                "prediction": "I watched the film adaptation of Hamilton exactly three weeks ago and I'm still reeling from Leslie Odom Jr.'s performance",
+                "expected_doc_ids": [
+                  "answer_f1fbb330"
+                ],
+                "retrieved_doc_ids": [
+                  "f11b88d8_2",
+                  "ultrachat_23185",
+                  "fb8ffbf3",
+                  "e2a01f17_2",
+                  "8fcaf3a9_1"
                 ]
               }
             ],
@@ -11624,6 +11641,23 @@
             ],
             "retrieved_doc_ids": [
               "688078f3"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::ccb36322",
+            "category": "single-session-user",
+            "query": "What is the name of the music streaming service have I been using lately?",
+            "gold": "Spotify",
+            "prediction": "I watched the film adaptation of Hamilton exactly three weeks ago and I'm still reeling from Leslie Odom Jr.'s performance",
+            "expected_doc_ids": [
+              "answer_f1fbb330"
+            ],
+            "retrieved_doc_ids": [
+              "f11b88d8_2",
+              "ultrachat_23185",
+              "fb8ffbf3",
+              "e2a01f17_2",
+              "8fcaf3a9_1"
             ]
           }
         ],
@@ -15524,20 +15558,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3085,
-      "rows_successful": 3085,
+      "rows_recorded": 3086,
+      "rows_successful": 3086,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8298217179902755,
-      "doc_recall_all": 0.7555915721231766,
-      "ndcg_at_10": 0.6722422524645449,
-      "exact_match": 0.07423014586709886,
-      "token_f1": 0.11925632919117143,
-      "avg_total_sec": 62.92145791065198,
+      "doc_recall_any": 0.829552819183409,
+      "doc_recall_all": 0.755346727154893,
+      "ndcg_at_10": 0.6720244163490348,
+      "exact_match": 0.07420609202851587,
+      "token_f1": 0.11921768488488783,
+      "avg_total_sec": 63.31301380227361,
       "p50_total_sec": 0.0765638048760593,
-      "p95_total_sec": 130.08997371373698,
-      "avg_storage_bytes": 16043368.196110211,
-      "p95_storage_bytes": 15581141.0,
+      "p95_total_sec": 130.1075487593189,
+      "avg_storage_bytes": 16083760.236552171,
+      "p95_storage_bytes": 15584985.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18433,20 +18467,20 @@
           ]
         },
         "single-session-user": {
-          "expected_total": 183,
-          "rows_recorded": 183,
-          "rows_successful": 183,
+          "expected_total": 184,
+          "rows_recorded": 184,
+          "rows_successful": 184,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9672131147540983,
-          "doc_recall_all": 0.9672131147540983,
-          "ndcg_at_10": 0.9227242265287425,
-          "exact_match": 0.12568306010928962,
-          "token_f1": 0.15102649954318978,
-          "avg_total_sec": 353.53016596843736,
-          "p50_total_sec": 122.60599028179422,
+          "doc_recall_any": 0.9619565217391305,
+          "doc_recall_all": 0.9619565217391305,
+          "ndcg_at_10": 0.9177094209497819,
+          "exact_match": 0.125,
+          "token_f1": 0.15020570335002026,
+          "avg_total_sec": 358.5178440852121,
+          "p50_total_sec": 122.75257767224684,
           "p95_total_sec": 1324.2314341301098,
-          "avg_storage_bytes": 39649421.32786885,
+          "avg_storage_bytes": 40198572.32608695,
           "p95_storage_bytes": 145278373.0,
           "categories": {},
           "sample_errors": [],
@@ -18539,6 +18573,23 @@
               ],
               "retrieved_doc_ids": [
                 "688078f3"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::ccb36322",
+              "category": "single-session-user",
+              "query": "What is the name of the music streaming service have I been using lately?",
+              "gold": "Spotify",
+              "prediction": "I watched the film adaptation of Hamilton exactly three weeks ago and I'm still reeling from Leslie Odom Jr.'s performance",
+              "expected_doc_ids": [
+                "answer_f1fbb330"
+              ],
+              "retrieved_doc_ids": [
+                "f11b88d8_2",
+                "ultrachat_23185",
+                "fb8ffbf3",
+                "e2a01f17_2",
+                "8fcaf3a9_1"
               ]
             }
           ],
@@ -19052,11 +19103,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.036304700162074544,
-    "doc_recall_all_delta": 0.07811993517017823,
-    "ndcg_at_10_delta": 0.05527654112888081,
-    "token_f1_delta": 0.0030906458654148122,
-    "avg_storage_ratio_nova_over_stock": 0.4571102629503297,
-    "avg_latency_ratio_nova_over_stock": 1.407336106661271
+    "doc_recall_any_delta": 0.03603580135520801,
+    "doc_recall_all_delta": 0.07787509020189465,
+    "ndcg_at_10_delta": 0.055058705013370624,
+    "token_f1_delta": 0.003052001559131212,
+    "avg_storage_ratio_nova_over_stock": 0.45826111955362087,
+    "avg_latency_ratio_nova_over_stock": 1.4160938621607948
   }
 }
