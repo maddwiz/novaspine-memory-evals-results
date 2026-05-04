@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T20:25:04Z",
+  "generated_at": "2026-05-04T20:47:13Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-04T20:11:37Z",
-    "current_system": "stock",
+    "updated_at": "2026-05-04T20:25:06Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 160,
     "current_case_total": 500,
@@ -11428,19 +11428,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 159,
-        "rows_successful": 159,
+        "rows_recorded": 160,
+        "rows_successful": 160,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9559748427672956,
-        "doc_recall_all": 0.9119496855345912,
-        "ndcg_at_10": 0.8644720596108898,
-        "exact_match": 0.0880503144654088,
-        "token_f1": 0.08626496156291626,
-        "avg_total_sec": 1299.0528377665605,
-        "p50_total_sec": 1297.8603238826618,
+        "doc_recall_any": 0.95,
+        "doc_recall_all": 0.90625,
+        "ndcg_at_10": 0.8590691092383217,
+        "exact_match": 0.0875,
+        "token_f1": 0.08572580555314803,
+        "avg_total_sec": 1299.2265001253807,
+        "p50_total_sec": 1299.5035858098418,
         "p95_total_sec": 1361.9777506412938,
-        "avg_storage_bytes": 143198154.7861635,
+        "avg_storage_bytes": 143217082.575,
         "p95_storage_bytes": 149497413.0,
         "categories": {
           "single-session-assistant": {
@@ -11923,24 +11923,43 @@
             ]
           },
           "multi-session": {
-            "expected_total": 33,
-            "rows_recorded": 33,
-            "rows_successful": 33,
+            "expected_total": 34,
+            "rows_recorded": 34,
+            "rows_successful": 34,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.7878787878787878,
-            "ndcg_at_10": 0.8657213639116895,
-            "exact_match": 0.09090909090909091,
-            "token_f1": 0.005203064026593439,
-            "avg_total_sec": 1299.2347133682306,
+            "doc_recall_any": 0.9705882352941176,
+            "doc_recall_all": 0.7647058823529411,
+            "ndcg_at_10": 0.8402589708554633,
+            "exact_match": 0.08823529411764706,
+            "token_f1": 0.005050032731693631,
+            "avg_total_sec": 1300.0465987155708,
             "p50_total_sec": 1295.844377497211,
             "p95_total_sec": 1358.2734918240458,
-            "avg_storage_bytes": 142852912.87878788,
+            "avg_storage_bytes": 142952139.0,
             "p95_storage_bytes": 147895905.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::92a0aa75",
+                "category": "multi-session",
+                "query": "How long have I been working in my current role?",
+                "gold": "1 year and 5 months",
+                "prediction": "impacting your work",
+                "expected_doc_ids": [
+                  "answer_6cb8f792_2",
+                  "answer_6cb8f792_1"
+                ],
+                "retrieved_doc_ids": [
+                  "2fd5e208",
+                  "2a0c336c",
+                  "0418a4b1_4",
+                  "ultrachat_66687",
+                  "sharegpt_hGQUdgE_27"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::d3ab962e",
@@ -12210,6 +12229,24 @@
               "ea0a5580_1",
               "b124e4a1_1",
               "4c177c66_2"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::92a0aa75",
+            "category": "multi-session",
+            "query": "How long have I been working in my current role?",
+            "gold": "1 year and 5 months",
+            "prediction": "impacting your work",
+            "expected_doc_ids": [
+              "answer_6cb8f792_2",
+              "answer_6cb8f792_1"
+            ],
+            "retrieved_doc_ids": [
+              "2fd5e208",
+              "2a0c336c",
+              "0418a4b1_4",
+              "ultrachat_66687",
+              "sharegpt_hGQUdgE_27"
             ]
           }
         ],
@@ -16172,20 +16209,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3145,
-      "rows_successful": 3145,
+      "rows_recorded": 3146,
+      "rows_successful": 3146,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8321144674085851,
-      "doc_recall_all": 0.7570747217806041,
-      "ndcg_at_10": 0.6755039341419692,
-      "exact_match": 0.07440381558028616,
-      "token_f1": 0.11797871030730829,
-      "avg_total_sec": 86.50756017992492,
+      "doc_recall_any": 0.8318499682136046,
+      "doc_recall_all": 0.7568340750158932,
+      "ndcg_at_10": 0.6752892157903665,
+      "exact_match": 0.0743801652892562,
+      "token_f1": 0.11794120912793533,
+      "avg_total_sec": 86.90181677719062,
       "p50_total_sec": 0.07742692483589053,
-      "p95_total_sec": 1226.7823031451553,
-      "avg_storage_bytes": 18468042.489348173,
-      "p95_storage_bytes": 135628805.0,
+      "p95_total_sec": 1227.814983333461,
+      "avg_storage_bytes": 18508652.329942785,
+      "p95_storage_bytes": 135649933.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18354,21 +18391,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 299,
-          "rows_recorded": 299,
-          "rows_successful": 299,
+          "expected_total": 300,
+          "rows_recorded": 300,
+          "rows_successful": 300,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9933110367892977,
-          "doc_recall_all": 0.9498327759197325,
-          "ndcg_at_10": 0.9565489531018675,
-          "exact_match": 0.07357859531772576,
-          "token_f1": 0.07522921422118835,
-          "avg_total_sec": 202.33401484750553,
-          "p50_total_sec": 119.24634779291227,
-          "p95_total_sec": 1297.7052478995174,
-          "avg_storage_bytes": 23091057.615384616,
-          "p95_storage_bytes": 143471561.0,
+          "doc_recall_any": 0.99,
+          "doc_recall_all": 0.9466666666666667,
+          "ndcg_at_10": 0.9533604565915279,
+          "exact_match": 0.07333333333333333,
+          "token_f1": 0.07497845017378439,
+          "avg_total_sec": 206.08236418193982,
+          "p50_total_sec": 119.28651272505522,
+          "p95_total_sec": 1299.833994274959,
+          "avg_storage_bytes": 23501509.426666666,
+          "p95_storage_bytes": 143699865.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18398,6 +18435,24 @@
               ],
               "retrieved_doc_ids": [
                 "1bab001f"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::92a0aa75",
+              "category": "multi-session",
+              "query": "How long have I been working in my current role?",
+              "gold": "1 year and 5 months",
+              "prediction": "impacting your work",
+              "expected_doc_ids": [
+                "answer_6cb8f792_2",
+                "answer_6cb8f792_1"
+              ],
+              "retrieved_doc_ids": [
+                "2fd5e208",
+                "2a0c336c",
+                "0418a4b1_4",
+                "ultrachat_66687",
+                "sharegpt_hGQUdgE_27"
               ]
             }
           ],
@@ -19747,11 +19802,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03605974262334799,
-    "doc_recall_all_delta": 0.07746924930208043,
-    "ndcg_at_10_delta": 0.05563510563591467,
-    "token_f1_delta": 0.0024952532147626966,
-    "avg_storage_ratio_nova_over_stock": 0.4397761233978622,
-    "avg_latency_ratio_nova_over_stock": 1.4841048903531735
+    "doc_recall_any_delta": 0.035795243428367485,
+    "doc_recall_all_delta": 0.07722860253736952,
+    "ndcg_at_10_delta": 0.05542038728431198,
+    "token_f1_delta": 0.0024577520353897403,
+    "avg_storage_ratio_nova_over_stock": 0.44074315811628484,
+    "avg_latency_ratio_nova_over_stock": 1.4908686708000969
   }
 }
