@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T03:10:58Z",
+  "generated_at": "2026-05-04T03:32:54Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-04T02:57:42Z",
-    "current_system": "stock",
+    "updated_at": "2026-05-04T03:10:59Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 130,
     "current_case_total": 500,
@@ -11251,19 +11251,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 129,
-        "rows_successful": 129,
+        "rows_recorded": 130,
+        "rows_successful": 130,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9457364341085271,
-        "doc_recall_all": 0.937984496124031,
-        "ndcg_at_10": 0.8612454256268518,
-        "exact_match": 0.08527131782945736,
-        "token_f1": 0.10499556415214031,
-        "avg_total_sec": 1299.674244876792,
+        "doc_recall_any": 0.9461538461538461,
+        "doc_recall_all": 0.9384615384615385,
+        "ndcg_at_10": 0.8623127685066452,
+        "exact_match": 0.08461538461538462,
+        "token_f1": 0.10418790596635462,
+        "avg_total_sec": 1299.7896743629701,
         "p50_total_sec": 1299.7118484880775,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 143360572.13178295,
+        "avg_storage_bytes": 143377647.9846154,
         "p95_storage_bytes": 149527093.0,
         "categories": {
           "single-session-assistant": {
@@ -11746,20 +11746,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 4,
+            "rows_recorded": 4,
+            "rows_successful": 4,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.6666666666666666,
-            "ndcg_at_10": 0.7394691456060548,
+            "doc_recall_all": 0.75,
+            "ndcg_at_10": 0.8046018592045411,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 1327.773975124893,
+            "avg_total_sec": 1324.5005008636508,
             "p50_total_sec": 1332.8775388235226,
             "p95_total_sec": 1337.7154087647796,
-            "avg_storage_bytes": 146384439.66666666,
+            "avg_storage_bytes": 146183438.0,
             "p95_storage_bytes": 147895905.0,
             "categories": {},
             "sample_errors": [],
@@ -11804,6 +11804,18 @@
                   "ultrachat_390788",
                   "c592e82c_1",
                   "c5db849c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::a11281a2",
+                "category": "multi-session",
+                "query": "What was the approximate increase in Instagram followers I experienced in two weeks?",
+                "gold": "100",
+                "prediction": "able to grow my followers on Instagram significantly since the start of the year",
+                "retrieved_doc_ids": [
+                  "answer_c69ee1f9_2",
+                  "answer_c69ee1f9_1",
+                  "ultrachat_455890"
                 ]
               }
             ]
@@ -15839,20 +15851,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3115,
-      "rows_successful": 3115,
+      "rows_recorded": 3116,
+      "rows_successful": 3116,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8304975922953451,
-      "doc_recall_all": 0.756661316211878,
-      "ndcg_at_10": 0.6735503933560916,
-      "exact_match": 0.07415730337078652,
-      "token_f1": 0.11905982112475344,
-      "avg_total_sec": 74.85549057787703,
-      "p50_total_sec": 0.07703206920996308,
-      "p95_total_sec": 131.5666729649529,
-      "avg_storage_bytes": 17273515.513001606,
-      "p95_storage_bytes": 15728993.0,
+      "doc_recall_any": 0.8305519897304237,
+      "doc_recall_all": 0.7567394094993581,
+      "ndcg_at_10": 0.6736551589551429,
+      "exact_match": 0.07413350449293966,
+      "token_f1": 0.11902161193954011,
+      "avg_total_sec": 75.25338036847461,
+      "p50_total_sec": 0.07704492192715406,
+      "p95_total_sec": 131.67567613627762,
+      "avg_storage_bytes": 17314692.315789472,
+      "p95_storage_bytes": 15732873.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18021,21 +18033,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 269,
-          "rows_recorded": 269,
-          "rows_successful": 269,
+          "expected_total": 270,
+          "rows_recorded": 270,
+          "rows_successful": 270,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9925650557620818,
-          "doc_recall_all": 0.966542750929368,
-          "ndcg_at_10": 0.9652704067107465,
-          "exact_match": 0.07063197026022305,
-          "token_f1": 0.08298079531322579,
-          "avg_total_sec": 80.32136365660678,
+          "doc_recall_any": 0.9925925925925926,
+          "doc_recall_all": 0.9666666666666667,
+          "ndcg_at_10": 0.96539903483404,
+          "exact_match": 0.07037037037037037,
+          "token_f1": 0.08267345903428791,
+          "avg_total_sec": 84.89306259891535,
           "p50_total_sec": 114.10980389500037,
-          "p95_total_sec": 129.72478755330667,
-          "avg_storage_bytes": 9774101.936802974,
-          "p95_storage_bytes": 15572841.0,
+          "p95_total_sec": 130.48630157485604,
+          "avg_storage_bytes": 10277088.348148149,
+          "p95_storage_bytes": 15581141.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19414,11 +19426,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03569990443407345,
-    "doc_recall_all_delta": 0.0768283040089236,
-    "ndcg_at_10_delta": 0.05500369243763148,
-    "token_f1_delta": 0.00284343095930574,
-    "avg_storage_ratio_nova_over_stock": 0.44754089146975473,
-    "avg_latency_ratio_nova_over_stock": 1.4507319348632426
+    "doc_recall_any_delta": 0.03575430186915196,
+    "doc_recall_all_delta": 0.0769063972964037,
+    "ndcg_at_10_delta": 0.05510845803668285,
+    "token_f1_delta": 0.002805221774092412,
+    "avg_storage_ratio_nova_over_stock": 0.4486077445381811,
+    "avg_latency_ratio_nova_over_stock": 1.4584432119027728
   }
 }
