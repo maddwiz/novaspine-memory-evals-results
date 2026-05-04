@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T06:28:04Z",
+  "generated_at": "2026-05-04T08:59:21Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-04T06:05:46Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-04T08:46:14Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 135,
+    "current_case_index": 140,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::e6041065"
+    "current_case_id": "longmemeval_m::6456829e"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 135,
-        "rows_successful": 134,
+        "rows_recorded": 140,
+        "rows_successful": 139,
         "rows_failed": 1,
         "complete": false,
-        "doc_recall_any": 0.9328358208955224,
-        "doc_recall_all": 0.917910447761194,
-        "ndcg_at_10": 0.8462593420797736,
-        "exact_match": 0.07462686567164178,
-        "token_f1": 0.10771244776298541,
-        "avg_total_sec": 779.9676103832672,
+        "doc_recall_any": 0.935251798561151,
+        "doc_recall_all": 0.9136690647482014,
+        "ndcg_at_10": 0.8475455765175638,
+        "exact_match": 0.07913669064748201,
+        "token_f1": 0.10383789928230248,
+        "avg_total_sec": 779.9414590813903,
         "p50_total_sec": 780.5988220227882,
         "p95_total_sec": 812.3536687232554,
-        "avg_storage_bytes": 408616458.8208955,
+        "avg_storage_bytes": 408623684.08633095,
         "p95_storage_bytes": 425308947.0,
         "categories": {
           "single-session-assistant": {
@@ -10873,21 +10873,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8888888888888888,
-            "doc_recall_all": 0.6666666666666666,
-            "ndcg_at_10": 0.8029215983923241,
-            "exact_match": 0.0,
+            "doc_recall_any": 0.9285714285714286,
+            "doc_recall_all": 0.7142857142857143,
+            "ndcg_at_10": 0.8311698344844723,
+            "exact_match": 0.07142857142857142,
             "token_f1": 0.0,
-            "avg_total_sec": 792.1041300150877,
-            "p50_total_sec": 793.778280377388,
-            "p95_total_sec": 809.2124440418556,
-            "avg_storage_bytes": 415727403.1111111,
-            "p95_storage_bytes": 422483742.0,
+            "avg_total_sec": 787.5100136493731,
+            "p50_total_sec": 785.0714172329754,
+            "p95_total_sec": 808.6004711315036,
+            "avg_storage_bytes": 413259516.71428573,
+            "p95_storage_bytes": 421868617.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -11001,6 +11001,54 @@
                   "answer_4eb6d671_2",
                   "answer_4eb6d671_1",
                   "323609c6_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::51c32626",
+                "category": "multi-session",
+                "query": "When did I submit my research paper on sentiment analysis?",
+                "gold": "February 1st",
+                "prediction": "ve done some work in this area, actually - my master",
+                "retrieved_doc_ids": [
+                  "answer_58820c75_2",
+                  "answer_58820c75_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::d905b33f",
+                "category": "multi-session",
+                "query": "What percentage discount did I get on the book from my favorite author?",
+                "gold": "20%",
+                "prediction": "it's hard to resist a good sale, especially when it's on something you love!",
+                "retrieved_doc_ids": [
+                  "answer_85a77c48_1",
+                  "3bf86e91_2",
+                  "71c01ce7",
+                  "3a1ea336_6"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7405e8b1",
+                "category": "multi-session",
+                "query": "Did I receive a higher percentage discount on my first order from HelloFresh, compared to my first UberEats order?",
+                "gold": "Yes.",
+                "prediction": "UberEats are applied to the entire order, rather than a specific dish",
+                "retrieved_doc_ids": [
+                  "answer_80323f3f_2",
+                  "answer_80323f3f_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::f35224e0",
+                "category": "multi-session",
+                "query": "What is the total number of episodes I've listened to from 'How I Built This' and 'My Favorite Murder'?",
+                "gold": "27",
+                "prediction": "2",
+                "retrieved_doc_ids": [
+                  "answer_e9bb9500_2",
+                  "12dd7681_2",
+                  "77a80a64_3",
+                  "answer_e9bb9500_1"
                 ]
               }
             ]
@@ -11307,19 +11355,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 135,
-        "rows_successful": 135,
+        "rows_recorded": 139,
+        "rows_successful": 139,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9481481481481482,
-        "doc_recall_all": 0.9407407407407408,
-        "ndcg_at_10": 0.8674122955989917,
-        "exact_match": 0.08148148148148149,
-        "token_f1": 0.10032909463426741,
-        "avg_total_sec": 1300.2759640248698,
-        "p50_total_sec": 1300.389882181771,
+        "doc_recall_any": 0.9496402877697842,
+        "doc_recall_all": 0.935251798561151,
+        "ndcg_at_10": 0.8678671071063131,
+        "exact_match": 0.07913669064748201,
+        "token_f1": 0.09744192644335324,
+        "avg_total_sec": 1300.1150800715664,
+        "p50_total_sec": 1299.833994274959,
         "p95_total_sec": 1361.9777506412938,
-        "avg_storage_bytes": 143430437.65185186,
+        "avg_storage_bytes": 143407943.7913669,
         "p95_storage_bytes": 149527093.0,
         "categories": {
           "single-session-assistant": {
@@ -11802,21 +11850,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 9,
-            "rows_recorded": 9,
-            "rows_successful": 9,
+            "expected_total": 13,
+            "rows_recorded": 13,
+            "rows_successful": 13,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.8888888888888888,
-            "ndcg_at_10": 0.913156381868685,
+            "doc_recall_all": 0.8461538461538461,
+            "ndcg_at_10": 0.90394426297937,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 1318.0666088473258,
-            "p50_total_sec": 1314.680078079924,
-            "p95_total_sec": 1358.4531770544127,
-            "avg_storage_bytes": 145416510.7777778,
-            "p95_storage_bytes": 150441149.0,
+            "avg_total_sec": 1310.8723435550928,
+            "p50_total_sec": 1307.5439258664846,
+            "p95_total_sec": 1337.7154087647796,
+            "avg_storage_bytes": 144564900.07692307,
+            "p95_storage_bytes": 147895905.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -11939,6 +11987,44 @@
                   "323609c6_2",
                   "b78760f8_1",
                   "b909542d_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::51c32626",
+                "category": "multi-session",
+                "query": "When did I submit my research paper on sentiment analysis?",
+                "gold": "February 1st",
+                "prediction": "5 June 2023",
+                "retrieved_doc_ids": [
+                  "answer_58820c75_2",
+                  "answer_58820c75_1",
+                  "337cbfc8_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::d905b33f",
+                "category": "multi-session",
+                "query": "What percentage discount did I get on the book from my favorite author?",
+                "gold": "20%",
+                "prediction": "hello, thank you, and goodbye",
+                "retrieved_doc_ids": [
+                  "answer_85a77c48_1",
+                  "3bf86e91_2",
+                  "1d0b8c75",
+                  "71c01ce7",
+                  "3a1ea336_6"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::7405e8b1",
+                "category": "multi-session",
+                "query": "Did I receive a higher percentage discount on my first order from HelloFresh, compared to my first UberEats order?",
+                "gold": "Yes.",
+                "prediction": "Blue Apron or Plated",
+                "retrieved_doc_ids": [
+                  "answer_80323f3f_2",
+                  "answer_80323f3f_1",
+                  "e5976c3a"
                 ]
               }
             ]
@@ -12228,20 +12314,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3121,
-      "rows_successful": 3119,
+      "rows_recorded": 3126,
+      "rows_successful": 3124,
       "rows_failed": 2,
       "complete": false,
-      "doc_recall_any": 0.7951266431548574,
-      "doc_recall_all": 0.6797050336646361,
-      "ndcg_at_10": 0.6189101381999409,
-      "exact_match": 0.07085604360371914,
-      "token_f1": 0.11603008623764159,
-      "avg_total_sec": 52.779304509727766,
-      "p50_total_sec": 6.392145201098174,
-      "p95_total_sec": 84.73076314711943,
-      "avg_storage_bytes": 39196943.41391472,
-      "p95_storage_bytes": 45951110.0,
+      "doc_recall_any": 0.7954545454545454,
+      "doc_recall_all": 0.6798975672215108,
+      "ndcg_at_10": 0.6193312433876016,
+      "exact_match": 0.07106274007682459,
+      "token_f1": 0.11584437867324077,
+      "avg_total_sec": 53.94201465646489,
+      "p50_total_sec": 6.39221649011597,
+      "p95_total_sec": 85.0100221321918,
+      "avg_storage_bytes": 39788525.324583866,
+      "p95_storage_bytes": 46144273.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14525,21 +14611,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 275,
-          "rows_recorded": 275,
-          "rows_successful": 275,
+          "expected_total": 280,
+          "rows_recorded": 280,
+          "rows_successful": 280,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9818181818181818,
-          "doc_recall_all": 0.6945454545454546,
-          "ndcg_at_10": 0.8738533221924755,
-          "exact_match": 0.08363636363636363,
-          "token_f1": 0.08542407616584279,
-          "avg_total_sec": 72.43144605331462,
-          "p50_total_sec": 76.12125351000577,
-          "p95_total_sec": 84.82394488807768,
-          "avg_storage_bytes": 38622650.85454545,
-          "p95_storage_bytes": 45807937.0,
+          "doc_recall_any": 0.9821428571428571,
+          "doc_recall_all": 0.6964285714285714,
+          "ndcg_at_10": 0.8739990960720802,
+          "exact_match": 0.08571428571428572,
+          "token_f1": 0.08389864623430987,
+          "avg_total_sec": 85.0530381629177,
+          "p50_total_sec": 76.95270474208519,
+          "p95_total_sec": 86.14642735291272,
+          "avg_storage_bytes": 45233269.967857145,
+          "p95_storage_bytes": 46540406.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15974,20 +16060,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3121,
-      "rows_successful": 3121,
+      "rows_recorded": 3125,
+      "rows_successful": 3125,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8308234540211471,
-      "doc_recall_all": 0.7571291252803588,
-      "ndcg_at_10": 0.674177979911639,
-      "exact_match": 0.07401473886574816,
-      "token_f1": 0.11883093329176769,
-      "avg_total_sec": 77.23618414108881,
-      "p50_total_sec": 0.07706677028909326,
-      "p95_total_sec": 132.3952061450109,
-      "avg_storage_bytes": 17518934.989106055,
-      "p95_storage_bytes": 15778037.0,
+      "doc_recall_any": 0.83104,
+      "doc_recall_all": 0.75712,
+      "ndcg_at_10": 0.6744455498515646,
+      "exact_match": 0.07392,
+      "token_f1": 0.11867882969715424,
+      "avg_total_sec": 78.79451894109711,
+      "p50_total_sec": 0.07709693722426891,
+      "p95_total_sec": 133.03825622517616,
+      "avg_storage_bytes": 17679101.1856,
+      "p95_storage_bytes": 15868437.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18156,21 +18242,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 275,
-          "rows_recorded": 275,
-          "rows_successful": 275,
+          "expected_total": 279,
+          "rows_recorded": 279,
+          "rows_successful": 279,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9927272727272727,
-          "doc_recall_all": 0.9672727272727273,
-          "ndcg_at_10": 0.9660281432916029,
-          "exact_match": 0.06909090909090909,
-          "token_f1": 0.08117030523366449,
-          "avg_total_sec": 107.22081591955809,
-          "p50_total_sec": 117.06712678493932,
-          "p95_total_sec": 130.92129824496806,
-          "avg_storage_bytes": 12723013.450909091,
-          "p95_storage_bytes": 15728849.0,
+          "doc_recall_any": 0.992831541218638,
+          "doc_recall_all": 0.96415770609319,
+          "ndcg_at_10": 0.9648408866921305,
+          "exact_match": 0.06810035842293907,
+          "token_f1": 0.0800065732589883,
+          "avg_total_sec": 124.24539557157257,
+          "p50_total_sec": 117.6891039321199,
+          "p95_total_sec": 132.16058620391414,
+          "avg_storage_bytes": 14585748.397849463,
+          "p95_storage_bytes": 15991749.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19549,11 +19635,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03569681086628973,
-    "doc_recall_all_delta": 0.07742409161572272,
-    "ndcg_at_10_delta": 0.055267841711698074,
-    "token_f1_delta": 0.0028008470541261016,
-    "avg_storage_ratio_nova_over_stock": 0.4469464571282597,
-    "avg_latency_ratio_nova_over_stock": 1.4633801043523298
+    "doc_recall_any_delta": 0.03558545454545459,
+    "doc_recall_all_delta": 0.07722243277848917,
+    "ndcg_at_10_delta": 0.05511430646396298,
+    "token_f1_delta": 0.00283445102391347,
+    "avg_storage_ratio_nova_over_stock": 0.444326625361929,
+    "avg_latency_ratio_nova_over_stock": 1.4607262899412985
   }
 }
