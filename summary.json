@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T03:32:54Z",
+  "generated_at": "2026-05-04T06:05:45Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-04T03:10:59Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-04T05:52:32Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 130,
+    "current_case_index": 135,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::a11281a2"
+    "current_case_id": "longmemeval_m::e6041065"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,20 +10393,20 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 130,
-        "rows_successful": 129,
+        "rows_recorded": 135,
+        "rows_successful": 134,
         "rows_failed": 1,
         "complete": false,
-        "doc_recall_any": 0.9302325581395349,
-        "doc_recall_all": 0.9302325581395349,
-        "ndcg_at_10": 0.8462981197919284,
-        "exact_match": 0.07751937984496124,
-        "token_f1": 0.11188734883907012,
-        "avg_total_sec": 779.6474486706461,
-        "p50_total_sec": 780.5786836491898,
-        "p95_total_sec": 815.1109431004152,
-        "avg_storage_bytes": 408440808.4883721,
-        "p95_storage_bytes": 425601735.0,
+        "doc_recall_any": 0.9328358208955224,
+        "doc_recall_all": 0.917910447761194,
+        "ndcg_at_10": 0.8462593420797736,
+        "exact_match": 0.07462686567164178,
+        "token_f1": 0.10771244776298541,
+        "avg_total_sec": 779.9676103832672,
+        "p50_total_sec": 780.5988220227882,
+        "p95_total_sec": 812.3536687232554,
+        "avg_storage_bytes": 408616458.8208955,
+        "p95_storage_bytes": 425308947.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -10873,20 +10873,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.75,
-            "doc_recall_all": 0.75,
-            "ndcg_at_10": 0.75,
+            "doc_recall_any": 0.8888888888888888,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.8029215983923241,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 796.9495643228292,
-            "p50_total_sec": 798.0853028194979,
+            "avg_total_sec": 792.1041300150877,
+            "p50_total_sec": 793.778280377388,
             "p95_total_sec": 809.2124440418556,
-            "avg_storage_bytes": 418951360.25,
+            "avg_storage_bytes": 415727403.1111111,
             "p95_storage_bytes": 422483742.0,
             "categories": {},
             "sample_errors": [],
@@ -10945,6 +10945,62 @@
                   "answer_c69ee1f9_2",
                   "answer_c69ee1f9_1",
                   "e7c04d21"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::4f54b7c9",
+                "category": "multi-session",
+                "query": "How many antique items did I inherit or acquire from my family members?",
+                "gold": "5",
+                "prediction": "1",
+                "retrieved_doc_ids": [
+                  "answer_50940cb7_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::85fa3a3f",
+                "category": "multi-session",
+                "query": "What is the total cost of the new food bowl, measuring cup, dental chews, and flea and tick collar I got for Max?",
+                "gold": "$50",
+                "prediction": "$10/month",
+                "retrieved_doc_ids": [
+                  "answer_dcb18b9b_2",
+                  "answer_dcb18b9b_1",
+                  "04f56644_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::9aaed6a3",
+                "category": "multi-session",
+                "query": "How much cashback did I earn at SaveMart last Thursday?",
+                "gold": "$0.75",
+                "prediction": "you have any tips on finding the best cashback offers",
+                "retrieved_doc_ids": [
+                  "answer_353d3c6d_2",
+                  "answer_353d3c6d_1",
+                  "97d2d2c9"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1f2b8d4f",
+                "category": "multi-session",
+                "query": "What is the difference in price between my luxury boots and the similar pair found at the budget store?",
+                "gold": "$750",
+                "prediction": "another retailer that offers on-trend boots at an affordable price",
+                "retrieved_doc_ids": [
+                  "answer_d8454588_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::e6041065",
+                "category": "multi-session",
+                "query": "What percentage of packed shoes did I wear on my last trip?",
+                "gold": "40%",
+                "prediction": "laundry during your trip, you can pack fewer undergarments and socks",
+                "retrieved_doc_ids": [
+                  "answer_4eb6d671_2",
+                  "answer_4eb6d671_1",
+                  "323609c6_2"
                 ]
               }
             ]
@@ -11251,19 +11307,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 130,
-        "rows_successful": 130,
+        "rows_recorded": 134,
+        "rows_successful": 134,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9461538461538461,
-        "doc_recall_all": 0.9384615384615385,
-        "ndcg_at_10": 0.8623127685066452,
-        "exact_match": 0.08461538461538462,
-        "token_f1": 0.10418790596635462,
-        "avg_total_sec": 1299.7896743629701,
+        "doc_recall_any": 0.9477611940298507,
+        "doc_recall_all": 0.9402985074626866,
+        "ndcg_at_10": 0.8664228351183871,
+        "exact_match": 0.08208955223880597,
+        "token_f1": 0.10107781922109031,
+        "avg_total_sec": 1299.999249094291,
         "p50_total_sec": 1299.7118484880775,
-        "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 143377647.9846154,
+        "p95_total_sec": 1361.9777506412938,
+        "avg_storage_bytes": 143419214.19402984,
         "p95_storage_bytes": 149527093.0,
         "categories": {
           "single-session-assistant": {
@@ -11746,21 +11802,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 4,
-            "rows_recorded": 4,
-            "rows_successful": 4,
+            "expected_total": 8,
+            "rows_recorded": 8,
+            "rows_successful": 8,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.75,
-            "ndcg_at_10": 0.8046018592045411,
+            "doc_recall_all": 0.875,
+            "ndcg_at_10": 0.9023009296022705,
             "exact_match": 0.0,
             "token_f1": 0.0,
-            "avg_total_sec": 1324.5005008636508,
-            "p50_total_sec": 1332.8775388235226,
-            "p95_total_sec": 1337.7154087647796,
-            "avg_storage_bytes": 146183438.0,
-            "p95_storage_bytes": 147895905.0,
+            "avg_total_sec": 1315.6554643629352,
+            "p50_total_sec": 1314.680078079924,
+            "p95_total_sec": 1358.4531770544127,
+            "avg_storage_bytes": 145476777.0,
+            "p95_storage_bytes": 150441149.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -11816,6 +11872,59 @@
                   "answer_c69ee1f9_2",
                   "answer_c69ee1f9_1",
                   "ultrachat_455890"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::4f54b7c9",
+                "category": "multi-session",
+                "query": "How many antique items did I inherit or acquire from my family members?",
+                "gold": "5",
+                "prediction": "2023",
+                "retrieved_doc_ids": [
+                  "answer_50940cb7_2",
+                  "answer_50940cb7_1",
+                  "0125f748_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::85fa3a3f",
+                "category": "multi-session",
+                "query": "What is the total cost of the new food bowl, measuring cup, dental chews, and flea and tick collar I got for Max?",
+                "gold": "$50",
+                "prediction": "around $40, but that was a one-time expense",
+                "retrieved_doc_ids": [
+                  "answer_dcb18b9b_1",
+                  "answer_dcb18b9b_2",
+                  "04f56644_2",
+                  "c04c626c_1",
+                  "f5c7d070_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::9aaed6a3",
+                "category": "multi-session",
+                "query": "How much cashback did I earn at SaveMart last Thursday?",
+                "gold": "$0.75",
+                "prediction": "you have any tips on finding the best cashback offers",
+                "retrieved_doc_ids": [
+                  "answer_353d3c6d_2",
+                  "answer_353d3c6d_1",
+                  "97d2d2c9",
+                  "8f589040_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1f2b8d4f",
+                "category": "multi-session",
+                "query": "What is the difference in price between my luxury boots and the similar pair found at the budget store?",
+                "gold": "$750",
+                "prediction": "they're a great addition to your wardrobe!",
+                "retrieved_doc_ids": [
+                  "answer_d8454588_1",
+                  "answer_d8454588_2",
+                  "4cac433c_1",
+                  "e830db10_3",
+                  "9752e18d"
                 ]
               }
             ]
@@ -12105,20 +12214,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3116,
-      "rows_successful": 3114,
+      "rows_recorded": 3121,
+      "rows_successful": 3119,
       "rows_failed": 2,
       "complete": false,
-      "doc_recall_any": 0.7947976878612717,
-      "doc_recall_all": 0.6798330122029544,
-      "ndcg_at_10": 0.6185467009184601,
-      "exact_match": 0.07096981374438022,
-      "token_f1": 0.1162163901654477,
-      "avg_total_sec": 51.598430267500454,
-      "p50_total_sec": 6.391798926051706,
-      "p95_total_sec": 84.58534528082237,
-      "avg_storage_bytes": 38596507.81021195,
-      "p95_storage_bytes": 45876553.0,
+      "doc_recall_any": 0.7951266431548574,
+      "doc_recall_all": 0.6797050336646361,
+      "ndcg_at_10": 0.6189101381999409,
+      "exact_match": 0.07085604360371914,
+      "token_f1": 0.11603008623764159,
+      "avg_total_sec": 52.779304509727766,
+      "p50_total_sec": 6.392145201098174,
+      "p95_total_sec": 84.73076314711943,
+      "avg_storage_bytes": 39196943.41391472,
+      "p95_storage_bytes": 45951110.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14402,21 +14511,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 270,
-          "rows_recorded": 270,
-          "rows_successful": 270,
+          "expected_total": 275,
+          "rows_recorded": 275,
+          "rows_successful": 275,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9814814814814815,
-          "doc_recall_all": 0.6962962962962963,
-          "ndcg_at_10": 0.8743828489533327,
-          "exact_match": 0.08518518518518518,
-          "token_f1": 0.08700600350224728,
-          "avg_total_sec": 59.17595834006314,
-          "p50_total_sec": 75.43742603575811,
-          "p95_total_sec": 84.55387140903622,
-          "avg_storage_bytes": 31686991.844444446,
-          "p95_storage_bytes": 45739240.0,
+          "doc_recall_any": 0.9818181818181818,
+          "doc_recall_all": 0.6945454545454546,
+          "ndcg_at_10": 0.8738533221924755,
+          "exact_match": 0.08363636363636363,
+          "token_f1": 0.08542407616584279,
+          "avg_total_sec": 72.43144605331462,
+          "p50_total_sec": 76.12125351000577,
+          "p95_total_sec": 84.82394488807768,
+          "avg_storage_bytes": 38622650.85454545,
+          "p95_storage_bytes": 45807937.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15851,20 +15960,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3116,
-      "rows_successful": 3116,
+      "rows_recorded": 3120,
+      "rows_successful": 3120,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8305519897304237,
-      "doc_recall_all": 0.7567394094993581,
-      "ndcg_at_10": 0.6736551589551429,
-      "exact_match": 0.07413350449293966,
-      "token_f1": 0.11902161193954011,
-      "avg_total_sec": 75.25338036847461,
-      "p50_total_sec": 0.07704492192715406,
-      "p95_total_sec": 131.67567613627762,
-      "avg_storage_bytes": 17314692.315789472,
-      "p95_storage_bytes": 15732873.0,
+      "doc_recall_any": 0.8307692307692308,
+      "doc_recall_all": 0.757051282051282,
+      "ndcg_at_10": 0.6740735497769953,
+      "exact_match": 0.07403846153846154,
+      "token_f1": 0.11886902012936121,
+      "avg_total_sec": 76.83229966013324,
+      "p50_total_sec": 0.07706677028909326,
+      "p95_total_sec": 132.16058620391414,
+      "avg_storage_bytes": 17478096.705128204,
+      "p95_storage_bytes": 15757089.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18033,21 +18142,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 270,
-          "rows_recorded": 270,
-          "rows_successful": 270,
+          "expected_total": 274,
+          "rows_recorded": 274,
+          "rows_successful": 274,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9925925925925926,
-          "doc_recall_all": 0.9666666666666667,
-          "ndcg_at_10": 0.96539903483404,
-          "exact_match": 0.07037037037037037,
-          "token_f1": 0.08267345903428791,
-          "avg_total_sec": 84.89306259891535,
-          "p50_total_sec": 114.10980389500037,
-          "p95_total_sec": 130.48630157485604,
-          "avg_storage_bytes": 10277088.348148149,
-          "p95_storage_bytes": 15581141.0,
+          "doc_recall_any": 0.9927007299270073,
+          "doc_recall_all": 0.9671532846715328,
+          "ndcg_at_10": 0.9659041584131051,
+          "exact_match": 0.06934306569343066,
+          "token_f1": 0.08146654722356839,
+          "avg_total_sec": 102.73127231078841,
+          "p50_total_sec": 115.58888016594574,
+          "p95_total_sec": 130.81720998696983,
+          "avg_storage_bytes": 12240490.211678833,
+          "p95_storage_bytes": 15670893.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19426,11 +19535,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03575430186915196,
-    "doc_recall_all_delta": 0.0769063972964037,
-    "ndcg_at_10_delta": 0.05510845803668285,
-    "token_f1_delta": 0.002805221774092412,
-    "avg_storage_ratio_nova_over_stock": 0.4486077445381811,
-    "avg_latency_ratio_nova_over_stock": 1.4584432119027728
+    "doc_recall_any_delta": 0.035642587614373444,
+    "doc_recall_all_delta": 0.07734624838664594,
+    "ndcg_at_10_delta": 0.0551634115770544,
+    "token_f1_delta": 0.0028389338917196166,
+    "avg_storage_ratio_nova_over_stock": 0.44590458293040186,
+    "avg_latency_ratio_nova_over_stock": 1.4557277776552031
   }
 }
