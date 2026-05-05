@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T05:29:55Z",
+  "generated_at": "2026-05-05T08:02:51Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-05T05:08:00Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-05T07:49:17Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 175,
+    "current_case_index": 180,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::09ba9854"
+    "current_case_id": "longmemeval_m::55241a1f"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,20 +10393,20 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 175,
-        "rows_successful": 173,
+        "rows_recorded": 180,
+        "rows_successful": 178,
         "rows_failed": 2,
         "complete": false,
-        "doc_recall_any": 0.9364161849710982,
-        "doc_recall_all": 0.861271676300578,
-        "ndcg_at_10": 0.8271976899763,
-        "exact_match": 0.08670520231213873,
-        "token_f1": 0.09248632755437405,
-        "avg_total_sec": 779.10702031685,
+        "doc_recall_any": 0.9325842696629213,
+        "doc_recall_all": 0.848314606741573,
+        "ndcg_at_10": 0.8220870491653417,
+        "exact_match": 0.0898876404494382,
+        "token_f1": 0.09363371535715381,
+        "avg_total_sec": 779.4788933735906,
         "p50_total_sec": 779.8458367967978,
-        "p95_total_sec": 810.8722461787984,
-        "avg_storage_bytes": 408157292.72254336,
-        "p95_storage_bytes": 422814959.0,
+        "p95_total_sec": 812.3536687232554,
+        "avg_storage_bytes": 408361469.0730337,
+        "p95_storage_bytes": 425308947.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -10873,21 +10873,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 48,
-            "rows_recorded": 48,
-            "rows_successful": 48,
+            "expected_total": 53,
+            "rows_recorded": 53,
+            "rows_successful": 53,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9375,
-            "doc_recall_all": 0.6666666666666666,
-            "ndcg_at_10": 0.769432144015441,
-            "exact_match": 0.10416666666666667,
-            "token_f1": 0.03263888888888889,
-            "avg_total_sec": 779.1414977831882,
+            "doc_recall_any": 0.9245283018867925,
+            "doc_recall_all": 0.6415094339622641,
+            "ndcg_at_10": 0.7577176848730582,
+            "exact_match": 0.11320754716981132,
+            "token_f1": 0.04213836477987422,
+            "avg_total_sec": 780.3871773448509,
             "p50_total_sec": 779.8458367967978,
-            "p95_total_sec": 806.9832412218675,
-            "avg_storage_bytes": 408294849.7291667,
-            "p95_storage_bytes": 421868617.0,
+            "p95_total_sec": 808.6004711315036,
+            "avg_storage_bytes": 408967597.0,
+            "p95_storage_bytes": 422483742.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -10941,6 +10941,24 @@
                   "0418a4b1_4",
                   "sharegpt_hGQUdgE_27",
                   "2a0c336c"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c18a7dc8",
+                "category": "multi-session",
+                "query": "How many years older am I than when I graduated from college?",
+                "gold": "7",
+                "prediction": "3 years",
+                "expected_doc_ids": [
+                  "answer_2e2085fa_2",
+                  "answer_2e2085fa_1"
+                ],
+                "retrieved_doc_ids": [
+                  "69811d4a",
+                  "10c0752c",
+                  "sharegpt_S9DqQB9_0",
+                  "sharegpt_s25zmhi_7",
+                  "32545108_1"
                 ]
               }
             ],
@@ -11282,6 +11300,24 @@
               "sharegpt_hGQUdgE_27",
               "2a0c336c"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::c18a7dc8",
+            "category": "multi-session",
+            "query": "How many years older am I than when I graduated from college?",
+            "gold": "7",
+            "prediction": "3 years",
+            "expected_doc_ids": [
+              "answer_2e2085fa_2",
+              "answer_2e2085fa_1"
+            ],
+            "retrieved_doc_ids": [
+              "69811d4a",
+              "10c0752c",
+              "sharegpt_S9DqQB9_0",
+              "sharegpt_s25zmhi_7",
+              "32545108_1"
+            ]
           }
         ],
         "sample_successes": [
@@ -11428,19 +11464,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 175,
-        "rows_successful": 175,
+        "rows_recorded": 179,
+        "rows_successful": 179,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9542857142857143,
-        "doc_recall_all": 0.9028571428571428,
-        "ndcg_at_10": 0.862456532101349,
-        "exact_match": 0.08,
-        "token_f1": 0.07905014827044123,
-        "avg_total_sec": 1300.2386545501915,
-        "p50_total_sec": 1299.833994274959,
+        "doc_recall_any": 0.9497206703910615,
+        "doc_recall_all": 0.8994413407821229,
+        "ndcg_at_10": 0.8578724616584622,
+        "exact_match": 0.08379888268156424,
+        "token_f1": 0.08100805929605519,
+        "avg_total_sec": 1300.3015892940246,
+        "p50_total_sec": 1300.389882181771,
         "p95_total_sec": 1359.4183358708397,
-        "avg_storage_bytes": 143232641.29714286,
+        "avg_storage_bytes": 143252358.1396648,
         "p95_storage_bytes": 148847113.0,
         "categories": {
           "single-session-assistant": {
@@ -11923,21 +11959,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 49,
-            "rows_recorded": 49,
-            "rows_successful": 49,
+            "expected_total": 53,
+            "rows_recorded": 53,
+            "rows_successful": 53,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9795918367346939,
-            "doc_recall_all": 0.7959183673469388,
-            "ndcg_at_10": 0.8581151152793953,
-            "exact_match": 0.061224489795918366,
-            "token_f1": 0.0059050647285941405,
-            "avg_total_sec": 1303.4103853582044,
-            "p50_total_sec": 1300.8509553726763,
-            "p95_total_sec": 1358.2734918240458,
-            "avg_storage_bytes": 143088811.04081634,
-            "p95_storage_bytes": 147895905.0,
+            "doc_recall_any": 0.9622641509433962,
+            "doc_recall_all": 0.7924528301886793,
+            "ndcg_at_10": 0.8429607201475287,
+            "exact_match": 0.07547169811320754,
+            "token_f1": 0.01803801581825999,
+            "avg_total_sec": 1303.3835626396017,
+            "p50_total_sec": 1303.2479107044637,
+            "p95_total_sec": 1358.0144080799073,
+            "avg_storage_bytes": 143166257.0,
+            "p95_storage_bytes": 148162001.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -11957,6 +11993,24 @@
                   "0418a4b1_4",
                   "ultrachat_66687",
                   "sharegpt_hGQUdgE_27"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::c18a7dc8",
+                "category": "multi-session",
+                "query": "How many years older am I than when I graduated from college?",
+                "gold": "7",
+                "prediction": "2 years",
+                "expected_doc_ids": [
+                  "answer_2e2085fa_2",
+                  "answer_2e2085fa_1"
+                ],
+                "retrieved_doc_ids": [
+                  "cf021b36_3",
+                  "69811d4a",
+                  "sharegpt_KILkkOY_0",
+                  "sharegpt_S9DqQB9_0",
+                  "sharegpt_s25zmhi_7"
                 ]
               }
             ],
@@ -12248,6 +12302,24 @@
               "ultrachat_66687",
               "sharegpt_hGQUdgE_27"
             ]
+          },
+          {
+            "case_id": "longmemeval_m::c18a7dc8",
+            "category": "multi-session",
+            "query": "How many years older am I than when I graduated from college?",
+            "gold": "7",
+            "prediction": "2 years",
+            "expected_doc_ids": [
+              "answer_2e2085fa_2",
+              "answer_2e2085fa_1"
+            ],
+            "retrieved_doc_ids": [
+              "cf021b36_3",
+              "69811d4a",
+              "sharegpt_KILkkOY_0",
+              "sharegpt_S9DqQB9_0",
+              "sharegpt_s25zmhi_7"
+            ]
           }
         ],
         "sample_successes": [
@@ -12424,20 +12496,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3161,
-      "rows_successful": 3158,
+      "rows_recorded": 3166,
+      "rows_successful": 3163,
       "rows_failed": 3,
       "complete": false,
-      "doc_recall_any": 0.7970234325522483,
-      "doc_recall_all": 0.6795440151994934,
-      "ndcg_at_10": 0.6206735812453533,
-      "exact_match": 0.07156428119062698,
-      "token_f1": 0.11509325701135871,
-      "avg_total_sec": 61.71263631706718,
-      "p50_total_sec": 6.393541164230555,
-      "p95_total_sec": 749.2492571072653,
-      "avg_storage_bytes": 43733968.54559848,
-      "p95_storage_bytes": 393575010.0,
+      "doc_recall_any": 0.7970281378438192,
+      "doc_recall_all": 0.6791021182421751,
+      "ndcg_at_10": 0.6207124451338466,
+      "exact_match": 0.071767309516282,
+      "token_f1": 0.11512209051803272,
+      "avg_total_sec": 62.86760480397793,
+      "p50_total_sec": 6.393793277908117,
+      "p95_total_sec": 753.8014821028337,
+      "avg_storage_bytes": 44321530.98988302,
+      "p95_storage_bytes": 394478592.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14721,21 +14793,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 314,
-          "rows_recorded": 314,
-          "rows_successful": 314,
+          "expected_total": 319,
+          "rows_recorded": 319,
+          "rows_successful": 319,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9777070063694268,
-          "doc_recall_all": 0.6910828025477707,
-          "ndcg_at_10": 0.8599239239813407,
-          "exact_match": 0.08917197452229299,
-          "token_f1": 0.07980346373335488,
-          "avg_total_sec": 159.83599486662027,
-          "p50_total_sec": 78.64726922893897,
-          "p95_total_sec": 785.0714172329754,
-          "avg_storage_bytes": 84324315.74522293,
-          "p95_storage_bytes": 413459088.0,
+          "doc_recall_any": 0.9749216300940439,
+          "doc_recall_all": 0.6865203761755486,
+          "ndcg_at_10": 0.8565592680742067,
+          "exact_match": 0.09090909090909091,
+          "token_f1": 0.08064248990263354,
+          "avg_total_sec": 169.74994010596498,
+          "p50_total_sec": 78.7657472230494,
+          "p95_total_sec": 786.7813875079155,
+          "avg_storage_bytes": 89513996.85893416,
+          "p95_storage_bytes": 415269595.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14848,6 +14920,24 @@
                 "0418a4b1_4",
                 "sharegpt_hGQUdgE_27",
                 "2a0c336c"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::c18a7dc8",
+              "category": "multi-session",
+              "query": "How many years older am I than when I graduated from college?",
+              "gold": "7",
+              "prediction": "3 years",
+              "expected_doc_ids": [
+                "answer_2e2085fa_2",
+                "answer_2e2085fa_1"
+              ],
+              "retrieved_doc_ids": [
+                "69811d4a",
+                "10c0752c",
+                "sharegpt_S9DqQB9_0",
+                "sharegpt_s25zmhi_7",
+                "32545108_1"
               ]
             }
           ],
@@ -16209,20 +16299,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3161,
-      "rows_successful": 3161,
+      "rows_recorded": 3165,
+      "rows_successful": 3165,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8326478962353685,
-      "doc_recall_all": 0.7573552673204682,
-      "ndcg_at_10": 0.6763488479962347,
-      "exact_match": 0.07402720658019614,
-      "token_f1": 0.11741875703110032,
-      "avg_total_sec": 92.71073714244362,
-      "p50_total_sec": 0.07755551673471928,
-      "p95_total_sec": 1251.4299597050995,
-      "avg_storage_bytes": 19101296.819044605,
-      "p95_storage_bytes": 138551565.0,
+      "doc_recall_any": 0.8325434439178515,
+      "doc_recall_all": 0.7573459715639811,
+      "ndcg_at_10": 0.6763247981153953,
+      "exact_match": 0.07424960505529225,
+      "token_f1": 0.1174809976751895,
+      "avg_total_sec": 94.24039811836056,
+      "p50_total_sec": 0.07764558074995875,
+      "p95_total_sec": 1258.0956267863512,
+      "avg_storage_bytes": 19259291.982622433,
+      "p95_storage_bytes": 139035325.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18391,21 +18481,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 315,
-          "rows_recorded": 315,
-          "rows_successful": 315,
+          "expected_total": 319,
+          "rows_recorded": 319,
+          "rows_successful": 319,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9904761904761905,
-          "doc_recall_all": 0.9428571428571428,
-          "ndcg_at_10": 0.9507522940224221,
-          "exact_match": 0.06984126984126984,
-          "token_f1": 0.07178153051098046,
-          "avg_total_sec": 258.699154859697,
-          "p50_total_sec": 120.26939959218726,
-          "p95_total_sec": 1312.728977786377,
-          "avg_storage_bytes": 29210894.73968254,
-          "p95_storage_bytes": 144084097.0,
+          "doc_recall_any": 0.987460815047022,
+          "doc_recall_all": 0.9404388714733543,
+          "ndcg_at_10": 0.9470728844394722,
+          "exact_match": 0.07210031347962383,
+          "token_f1": 0.07297131278252512,
+          "avg_total_sec": 271.7945257622302,
+          "p50_total_sec": 120.27128049125895,
+          "p95_total_sec": 1315.0694600529969,
+          "avg_storage_bytes": 30651698.19122257,
+          "p95_storage_bytes": 144419357.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18453,6 +18543,24 @@
                 "0418a4b1_4",
                 "ultrachat_66687",
                 "sharegpt_hGQUdgE_27"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::c18a7dc8",
+              "category": "multi-session",
+              "query": "How many years older am I than when I graduated from college?",
+              "gold": "7",
+              "prediction": "2 years",
+              "expected_doc_ids": [
+                "answer_2e2085fa_2",
+                "answer_2e2085fa_1"
+              ],
+              "retrieved_doc_ids": [
+                "cf021b36_3",
+                "69811d4a",
+                "sharegpt_KILkkOY_0",
+                "sharegpt_S9DqQB9_0",
+                "sharegpt_s25zmhi_7"
               ]
             }
           ],
@@ -19802,11 +19910,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03562446368312022,
-    "doc_recall_all_delta": 0.07781125212097484,
-    "ndcg_at_10_delta": 0.055675266750881414,
-    "token_f1_delta": 0.0023255000197416054,
-    "avg_storage_ratio_nova_over_stock": 0.4367611139411911,
-    "avg_latency_ratio_nova_over_stock": 1.5022974657267014
+    "doc_recall_any_delta": 0.035515306074032305,
+    "doc_recall_all_delta": 0.07824385332180595,
+    "ndcg_at_10_delta": 0.05561235298154865,
+    "token_f1_delta": 0.002358907157156781,
+    "avg_storage_ratio_nova_over_stock": 0.434535801279487,
+    "avg_latency_ratio_nova_over_stock": 1.4990295623986858
   }
 }
