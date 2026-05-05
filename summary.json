@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T11:18:44Z",
+  "generated_at": "2026-05-05T13:50:45Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-05T10:57:40Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-05T13:37:50Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 185,
+    "current_case_index": 190,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::a346bb18"
+    "current_case_id": "longmemeval_m::efc3f7c2"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 185,
-        "rows_successful": 183,
+        "rows_recorded": 190,
+        "rows_successful": 188,
         "rows_failed": 2,
         "complete": false,
-        "doc_recall_any": 0.9289617486338798,
-        "doc_recall_all": 0.8415300546448088,
-        "ndcg_at_10": 0.8175890347760687,
-        "exact_match": 0.08743169398907104,
-        "token_f1": 0.09380765756051027,
-        "avg_total_sec": 779.4652546566244,
+        "doc_recall_any": 0.9202127659574468,
+        "doc_recall_all": 0.8351063829787234,
+        "ndcg_at_10": 0.8113750752828126,
+        "exact_match": 0.0851063829787234,
+        "token_f1": 0.09131277305092222,
+        "avg_total_sec": 779.5056032238706,
         "p50_total_sec": 780.12094497215,
         "p95_total_sec": 813.5242449492216,
-        "avg_storage_bytes": 408344817.44808745,
+        "avg_storage_bytes": 408296693.43085104,
         "p95_storage_bytes": 425308947.0,
         "categories": {
           "single-session-assistant": {
@@ -10873,20 +10873,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 58,
-            "rows_recorded": 58,
-            "rows_successful": 58,
+            "expected_total": 63,
+            "rows_recorded": 63,
+            "rows_successful": 63,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9137931034482759,
-            "doc_recall_all": 0.6379310344827587,
-            "ndcg_at_10": 0.7490747570838248,
-            "exact_match": 0.10344827586206896,
-            "token_f1": 0.047126436781609195,
-            "avg_total_sec": 780.2658444989697,
+            "doc_recall_any": 0.8888888888888888,
+            "doc_recall_all": 0.6349206349206349,
+            "ndcg_at_10": 0.735969153968413,
+            "exact_match": 0.09523809523809523,
+            "token_f1": 0.04338624338624339,
+            "avg_total_sec": 780.3227108708834,
             "p50_total_sec": 779.8458367967978,
             "p95_total_sec": 809.2124440418556,
-            "avg_storage_bytes": 408862805.8448276,
+            "avg_storage_bytes": 408678087.47619045,
             "p95_storage_bytes": 423908856.0,
             "categories": {},
             "sample_errors": [],
@@ -10973,6 +10973,39 @@
                 ],
                 "retrieved_doc_ids": [
                   "8d77be9a_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::8e91e7d9",
+                "category": "multi-session",
+                "query": "What is the total number of siblings I have?",
+                "gold": "4",
+                "prediction": "1",
+                "expected_doc_ids": [
+                  "answer_477ae455_2",
+                  "answer_477ae455_1"
+                ],
+                "retrieved_doc_ids": [
+                  "fa526fc0_2",
+                  "05b84f71_3",
+                  "cb8ca3f9_2",
+                  "ad175dc4_3",
+                  "f0e71553_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::efc3f7c2",
+                "category": "multi-session",
+                "query": "How much earlier do I wake up on Fridays compared to other weekdays?",
+                "gold": "30 minutes",
+                "prediction": "a device that simulates a sunrise by gradually increasing the light in your room, helping to wake you up more naturally",
+                "expected_doc_ids": [
+                  "answer_fc81d1a2_1",
+                  "answer_fc81d1a2_2"
+                ],
+                "retrieved_doc_ids": [
+                  "2b17e4d3",
+                  "sharegpt_mnEu7tF_5"
                 ]
               }
             ],
@@ -11478,19 +11511,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 185,
-        "rows_successful": 185,
+        "rows_recorded": 189,
+        "rows_successful": 189,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9459459459459459,
-        "doc_recall_all": 0.8972972972972973,
-        "ndcg_at_10": 0.8521880723730861,
-        "exact_match": 0.08108108108108109,
-        "token_f1": 0.0810834735891561,
-        "avg_total_sec": 1300.5736590499412,
-        "p50_total_sec": 1300.8509553726763,
+        "doc_recall_any": 0.9470899470899471,
+        "doc_recall_all": 0.8941798941798942,
+        "ndcg_at_10": 0.8514225476803892,
+        "exact_match": 0.07936507936507936,
+        "token_f1": 0.07936742123806285,
+        "avg_total_sec": 1300.6366456439669,
+        "p50_total_sec": 1301.0067802928388,
         "p95_total_sec": 1361.9777506412938,
-        "avg_storage_bytes": 143277447.96216217,
+        "avg_storage_bytes": 143279193.4021164,
         "p95_storage_bytes": 149497413.0,
         "categories": {
           "single-session-assistant": {
@@ -11973,20 +12006,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 59,
-            "rows_recorded": 59,
-            "rows_successful": 59,
+            "expected_total": 63,
+            "rows_recorded": 63,
+            "rows_successful": 63,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9491525423728814,
-            "doc_recall_all": 0.7966101694915254,
-            "ndcg_at_10": 0.8266532359317835,
-            "exact_match": 0.06779661016949153,
-            "token_f1": 0.02467821759945389,
-            "avg_total_sec": 1303.9232417035184,
+            "doc_recall_any": 0.9523809523809523,
+            "doc_recall_all": 0.7936507936507936,
+            "ndcg_at_10": 0.8259779213102829,
+            "exact_match": 0.06349206349206349,
+            "token_f1": 0.023111346640758406,
+            "avg_total_sec": 1303.8995295710831,
             "p50_total_sec": 1306.1073041865602,
             "p95_total_sec": 1358.2734918240458,
-            "avg_storage_bytes": 143253684.52542374,
+            "avg_storage_bytes": 143260429.63492063,
             "p95_storage_bytes": 148631789.0,
             "categories": {},
             "sample_errors": [],
@@ -12538,20 +12571,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3171,
-      "rows_successful": 3168,
+      "rows_recorded": 3176,
+      "rows_successful": 3173,
       "rows_failed": 3,
       "complete": false,
-      "doc_recall_any": 0.7970328282828283,
-      "doc_recall_all": 0.6789772727272727,
-      "ndcg_at_10": 0.620770442730728,
-      "exact_match": 0.0716540404040404,
-      "token_f1": 0.11509822358224037,
-      "avg_total_sec": 63.99783225272896,
-      "p50_total_sec": 6.394037716090679,
-      "p95_total_sec": 754.6594548346475,
-      "avg_storage_bytes": 44895127.08933081,
-      "p95_storage_bytes": 395708590.0,
+      "doc_recall_any": 0.796722344784116,
+      "doc_recall_all": 0.6788528206744406,
+      "ndcg_at_10": 0.6207124120265032,
+      "exact_match": 0.07154112826977624,
+      "token_f1": 0.11491685228759455,
+      "avg_total_sec": 65.12765344486945,
+      "p50_total_sec": 6.394168843049556,
+      "p95_total_sec": 758.2511980459094,
+      "avg_storage_bytes": 45464998.2322723,
+      "p95_storage_bytes": 396684792.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14835,21 +14868,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 324,
-          "rows_recorded": 324,
-          "rows_successful": 324,
+          "expected_total": 329,
+          "rows_recorded": 329,
+          "rows_successful": 329,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9722222222222222,
-          "doc_recall_all": 0.6851851851851852,
-          "ndcg_at_10": 0.8534867442230297,
-          "exact_match": 0.08950617283950617,
-          "token_f1": 0.08094121691030894,
-          "avg_total_sec": 179.15163418353697,
-          "p50_total_sec": 78.80194859113544,
-          "p95_total_sec": 789.9182403888553,
-          "avg_storage_bytes": 94425077.45679012,
-          "p95_storage_bytes": 415466896.0,
+          "doc_recall_any": 0.9665653495440729,
+          "doc_recall_all": 0.6838905775075987,
+          "ndcg_at_10": 0.8493903523325527,
+          "exact_match": 0.08814589665653495,
+          "token_f1": 0.07971110723082096,
+          "avg_total_sec": 188.29799780970026,
+          "p50_total_sec": 78.91643401794136,
+          "p95_total_sec": 792.851973879151,
+          "avg_storage_bytes": 99168394.73556231,
+          "p95_storage_bytes": 415554027.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -14994,6 +15027,39 @@
               ],
               "retrieved_doc_ids": [
                 "8d77be9a_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::8e91e7d9",
+              "category": "multi-session",
+              "query": "What is the total number of siblings I have?",
+              "gold": "4",
+              "prediction": "1",
+              "expected_doc_ids": [
+                "answer_477ae455_2",
+                "answer_477ae455_1"
+              ],
+              "retrieved_doc_ids": [
+                "fa526fc0_2",
+                "05b84f71_3",
+                "cb8ca3f9_2",
+                "ad175dc4_3",
+                "f0e71553_4"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::efc3f7c2",
+              "category": "multi-session",
+              "query": "How much earlier do I wake up on Fridays compared to other weekdays?",
+              "gold": "30 minutes",
+              "prediction": "a device that simulates a sunrise by gradually increasing the light in your room, helping to wake you up more naturally",
+              "expected_doc_ids": [
+                "answer_fc81d1a2_1",
+                "answer_fc81d1a2_2"
+              ],
+              "retrieved_doc_ids": [
+                "2b17e4d3",
+                "sharegpt_mnEu7tF_5"
               ]
             }
           ],
@@ -16355,20 +16421,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3171,
-      "rows_successful": 3171,
+      "rows_recorded": 3175,
+      "rows_successful": 3175,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8325449385052034,
-      "doc_recall_all": 0.7574897508672344,
-      "ndcg_at_10": 0.6763366788985754,
-      "exact_match": 0.07410911384421318,
-      "token_f1": 0.1174163852544859,
-      "avg_total_sec": 96.53831677238091,
-      "p50_total_sec": 0.07778201624751091,
-      "p95_total_sec": 1263.330275438726,
-      "avg_storage_bytes": 19495368.93440555,
-      "p95_storage_bytes": 139697625.0,
+      "doc_recall_any": 0.832755905511811,
+      "doc_recall_all": 0.75748031496063,
+      "ndcg_at_10": 0.6765126541448677,
+      "exact_match": 0.07401574803149606,
+      "token_f1": 0.11726845909983458,
+      "avg_total_sec": 98.05896112998126,
+      "p50_total_sec": 0.07789186201989651,
+      "p95_total_sec": 1264.2748713176697,
+      "avg_storage_bytes": 19651418.762519684,
+      "p95_storage_bytes": 139898797.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18537,21 +18603,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 325,
-          "rows_recorded": 325,
-          "rows_successful": 325,
+          "expected_total": 329,
+          "rows_recorded": 329,
+          "rows_successful": 329,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9846153846153847,
-          "doc_recall_all": 0.9384615384615385,
-          "ndcg_at_10": 0.9421903781179933,
-          "exact_match": 0.07076923076923076,
-          "token_f1": 0.07316261162346312,
-          "avg_total_sec": 290.9372189500312,
-          "p50_total_sec": 120.468442897778,
-          "p95_total_sec": 1320.976617298089,
-          "avg_storage_bytes": 32744761.504615385,
-          "p95_storage_bytes": 144678629.0,
+          "doc_recall_any": 0.9848024316109423,
+          "doc_recall_all": 0.9361702127659575,
+          "ndcg_at_10": 0.9406563556562931,
+          "exact_match": 0.06990881458966565,
+          "token_f1": 0.0722730965885274,
+          "avg_total_sec": 303.24861781529114,
+          "p50_total_sec": 120.70306284958497,
+          "p95_total_sec": 1326.8388151777908,
+          "avg_storage_bytes": 34089626.65349544,
+          "p95_storage_bytes": 144826661.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19980,11 +20046,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.035512110222375104,
-    "doc_recall_all_delta": 0.07851247813996165,
-    "ndcg_at_10_delta": 0.055566236167847394,
-    "token_f1_delta": 0.002318161672245536,
-    "avg_storage_ratio_nova_over_stock": 0.4342424267028875,
-    "avg_latency_ratio_nova_over_stock": 1.5084622927718676
+    "doc_recall_any_delta": 0.036033560727695035,
+    "doc_recall_all_delta": 0.07862749428618931,
+    "ndcg_at_10_delta": 0.05580024211836454,
+    "token_f1_delta": 0.0023516068122400313,
+    "avg_storage_ratio_nova_over_stock": 0.43223181626719104,
+    "avg_latency_ratio_nova_over_stock": 1.5056424720259292
   }
 }
