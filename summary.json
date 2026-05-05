@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T08:02:51Z",
+  "generated_at": "2026-05-05T08:25:18Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-05T07:49:17Z",
-    "current_system": "stock",
+    "updated_at": "2026-05-05T08:02:53Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 180,
     "current_case_total": 500,
@@ -11464,20 +11464,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 179,
-        "rows_successful": 179,
+        "rows_recorded": 180,
+        "rows_successful": 180,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9497206703910615,
-        "doc_recall_all": 0.8994413407821229,
-        "ndcg_at_10": 0.8578724616584622,
-        "exact_match": 0.08379888268156424,
-        "token_f1": 0.08100805929605519,
-        "avg_total_sec": 1300.3015892940246,
-        "p50_total_sec": 1300.389882181771,
+        "doc_recall_any": 0.9444444444444444,
+        "doc_recall_all": 0.8944444444444445,
+        "ndcg_at_10": 0.8531065035381374,
+        "exact_match": 0.08333333333333333,
+        "token_f1": 0.08055801452218822,
+        "avg_total_sec": 1300.5501709155274,
+        "p50_total_sec": 1300.8509553726763,
         "p95_total_sec": 1359.4183358708397,
-        "avg_storage_bytes": 143252358.1396648,
-        "p95_storage_bytes": 148847113.0,
+        "avg_storage_bytes": 143285682.75555557,
+        "p95_storage_bytes": 149250789.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -11959,21 +11959,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 53,
-            "rows_recorded": 53,
-            "rows_successful": 53,
+            "expected_total": 54,
+            "rows_recorded": 54,
+            "rows_successful": 54,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9622641509433962,
-            "doc_recall_all": 0.7924528301886793,
-            "ndcg_at_10": 0.8429607201475287,
-            "exact_match": 0.07547169811320754,
-            "token_f1": 0.01803801581825999,
-            "avg_total_sec": 1303.3835626396017,
+            "doc_recall_any": 0.9444444444444444,
+            "doc_recall_all": 0.7777777777777778,
+            "ndcg_at_10": 0.8273503364410929,
+            "exact_match": 0.07407407407407407,
+            "token_f1": 0.01770397848829221,
+            "avg_total_sec": 1304.155094464137,
             "p50_total_sec": 1303.2479107044637,
             "p95_total_sec": 1358.0144080799073,
-            "avg_storage_bytes": 143166257.0,
-            "p95_storage_bytes": 148162001.0,
+            "avg_storage_bytes": 143278933.5185185,
+            "p95_storage_bytes": 148626253.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -12011,6 +12011,20 @@
                   "sharegpt_KILkkOY_0",
                   "sharegpt_S9DqQB9_0",
                   "sharegpt_s25zmhi_7"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::55241a1f",
+                "category": "multi-session",
+                "query": "What is the total number of comments on my recent Facebook Live session and my most popular YouTube video?",
+                "gold": "33",
+                "prediction": "5",
+                "expected_doc_ids": [
+                  "answer_fa08bf49_2",
+                  "answer_fa08bf49_1"
+                ],
+                "retrieved_doc_ids": [
+                  "ef785bb4_1"
                 ]
               }
             ],
@@ -12319,6 +12333,20 @@
               "sharegpt_KILkkOY_0",
               "sharegpt_S9DqQB9_0",
               "sharegpt_s25zmhi_7"
+            ]
+          },
+          {
+            "case_id": "longmemeval_m::55241a1f",
+            "category": "multi-session",
+            "query": "What is the total number of comments on my recent Facebook Live session and my most popular YouTube video?",
+            "gold": "33",
+            "prediction": "5",
+            "expected_doc_ids": [
+              "answer_fa08bf49_2",
+              "answer_fa08bf49_1"
+            ],
+            "retrieved_doc_ids": [
+              "ef785bb4_1"
             ]
           }
         ],
@@ -16299,20 +16327,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3165,
-      "rows_successful": 3165,
+      "rows_recorded": 3166,
+      "rows_successful": 3166,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8325434439178515,
-      "doc_recall_all": 0.7573459715639811,
-      "ndcg_at_10": 0.6763247981153953,
-      "exact_match": 0.07424960505529225,
-      "token_f1": 0.1174809976751895,
-      "avg_total_sec": 94.24039811836056,
+      "doc_recall_any": 0.8322804801010739,
+      "doc_recall_all": 0.7571067593177511,
+      "ndcg_at_10": 0.6761111768904694,
+      "exact_match": 0.07422615287428933,
+      "token_f1": 0.1174438906007501,
+      "avg_total_sec": 94.63547262342883,
       "p50_total_sec": 0.07764558074995875,
-      "p95_total_sec": 1258.0956267863512,
-      "avg_storage_bytes": 19259291.982622433,
-      "p95_storage_bytes": 139035325.0,
+      "p95_total_sec": 1258.4811076740734,
+      "avg_storage_bytes": 19300350.572962727,
+      "p95_storage_bytes": 139077761.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18481,21 +18509,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 319,
-          "rows_recorded": 319,
-          "rows_successful": 319,
+          "expected_total": 320,
+          "rows_recorded": 320,
+          "rows_successful": 320,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.987460815047022,
-          "doc_recall_all": 0.9404388714733543,
-          "ndcg_at_10": 0.9470728844394722,
-          "exact_match": 0.07210031347962383,
-          "token_f1": 0.07297131278252512,
-          "avg_total_sec": 271.7945257622302,
-          "p50_total_sec": 120.27128049125895,
-          "p95_total_sec": 1315.0694600529969,
-          "avg_storage_bytes": 30651698.19122257,
-          "p95_storage_bytes": 144419357.0,
+          "doc_recall_any": 0.984375,
+          "doc_recall_all": 0.9375,
+          "ndcg_at_10": 0.9441132816755988,
+          "exact_match": 0.071875,
+          "token_f1": 0.07274327743007973,
+          "avg_total_sec": 275.14843749786235,
+          "p50_total_sec": 120.30455057509243,
+          "p95_total_sec": 1319.1947954241186,
+          "avg_storage_bytes": 31022320.35,
+          "p95_storage_bytes": 144427873.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18561,6 +18589,20 @@
                 "sharegpt_KILkkOY_0",
                 "sharegpt_S9DqQB9_0",
                 "sharegpt_s25zmhi_7"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::55241a1f",
+              "category": "multi-session",
+              "query": "What is the total number of comments on my recent Facebook Live session and my most popular YouTube video?",
+              "gold": "33",
+              "prediction": "5",
+              "expected_doc_ids": [
+                "answer_fa08bf49_2",
+                "answer_fa08bf49_1"
+              ],
+              "retrieved_doc_ids": [
+                "ef785bb4_1"
               ]
             }
           ],
@@ -19910,11 +19952,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.035515306074032305,
-    "doc_recall_all_delta": 0.07824385332180595,
-    "ndcg_at_10_delta": 0.05561235298154865,
-    "token_f1_delta": 0.002358907157156781,
-    "avg_storage_ratio_nova_over_stock": 0.434535801279487,
-    "avg_latency_ratio_nova_over_stock": 1.4990295623986858
+    "doc_recall_any_delta": 0.03525234225725471,
+    "doc_recall_all_delta": 0.07800464107557592,
+    "ndcg_at_10_delta": 0.0553987317566228,
+    "token_f1_delta": 0.0023218000827173735,
+    "avg_storage_ratio_nova_over_stock": 0.43546218151553223,
+    "avg_latency_ratio_nova_over_stock": 1.5053137926679971
   }
 }
