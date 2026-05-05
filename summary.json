@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T20:03:24Z",
+  "generated_at": "2026-05-05T22:34:26Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-05T19:41:33Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-05T22:20:37Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 200,
+    "current_case_index": 205,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::830ce83f"
+    "current_case_id": "longmemeval_m::89941a93"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,20 +10393,20 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 200,
-        "rows_successful": 197,
+        "rows_recorded": 205,
+        "rows_successful": 202,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9187817258883249,
-        "doc_recall_all": 0.8274111675126904,
-        "ndcg_at_10": 0.8070614361636071,
-        "exact_match": 0.08121827411167512,
-        "token_f1": 0.0901676133044078,
-        "avg_total_sec": 780.1674776022384,
-        "p50_total_sec": 780.2480977242813,
-        "p95_total_sec": 813.5880852965638,
-        "avg_storage_bytes": 408658595.5329949,
-        "p95_storage_bytes": 425601735.0,
+        "doc_recall_any": 0.9207920792079208,
+        "doc_recall_all": 0.8267326732673267,
+        "ndcg_at_10": 0.8095246084462587,
+        "exact_match": 0.0891089108910891,
+        "token_f1": 0.09783673178697196,
+        "avg_total_sec": 780.251548758482,
+        "p50_total_sec": 780.12094497215,
+        "p95_total_sec": 815.1109431004152,
+        "avg_storage_bytes": 408701214.0990099,
+        "p95_storage_bytes": 425803723.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -11170,21 +11170,21 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.9197207891481876,
-            "exact_match": 0.0,
-            "token_f1": 0.04761904761904762,
-            "avg_total_sec": 782.6120849684812,
+            "doc_recall_all": 0.8571428571428571,
+            "ndcg_at_10": 0.9103299371728601,
+            "exact_match": 0.2857142857142857,
+            "token_f1": 0.29931972789115646,
+            "avg_total_sec": 783.291990215624,
             "p50_total_sec": 779.9600400924683,
-            "p95_total_sec": 785.2641298444942,
-            "avg_storage_bytes": 411809544.0,
-            "p95_storage_bytes": 413949787.0,
+            "p95_total_sec": 828.8427637079731,
+            "avg_storage_bytes": 410788716.5714286,
+            "p95_storage_bytes": 431170918.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [],
@@ -11213,6 +11213,68 @@
                   "answer_0b1a0942_1",
                   "13b6b7ab_1",
                   "answer_0b1a0942_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::852ce960",
+                "category": "knowledge-update",
+                "query": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+                "gold": "$400,000",
+                "prediction": "$300,000",
+                "retrieved_doc_ids": [
+                  "answer_3a6f1e82_1",
+                  "1a73cecb_1",
+                  "answer_3a6f1e82_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::945e3d21",
+                "category": "knowledge-update",
+                "query": "How often do I attend yoga classes to help with my anxiety?",
+                "gold": "Three times a week.",
+                "prediction": "not a competition, and it's essential to prioritize your body's needs",
+                "retrieved_doc_ids": [
+                  "answer_6a4f8626_1",
+                  "6a7b7c3a_2",
+                  "40628271_2",
+                  "ultrachat_69348",
+                  "ad22ea27_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::d7c942c3",
+                "category": "knowledge-update",
+                "query": "Is my mom using the same grocery list method as me?",
+                "gold": "Yes.",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_eecb10d9_2",
+                  "answer_eecb10d9_1",
+                  "87317e05_1",
+                  "d6f2cbe7_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::71315a70",
+                "category": "knowledge-update",
+                "query": "How many hours have I spent on my abstract ocean sculpture?",
+                "gold": "10-12 hours",
+                "prediction": "10",
+                "retrieved_doc_ids": [
+                  "answer_c44b9df4_2",
+                  "answer_c44b9df4_1",
+                  "0d4f7583_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::89941a93",
+                "category": "knowledge-update",
+                "query": "How many bikes do I currently own?",
+                "gold": "4",
+                "prediction": "3",
+                "retrieved_doc_ids": [
+                  "answer_e1403127_1",
+                  "answer_e1403127_2"
                 ]
               }
             ]
@@ -11581,19 +11643,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 200,
-        "rows_successful": 200,
+        "rows_recorded": 204,
+        "rows_successful": 204,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.95,
-        "doc_recall_all": 0.885,
-        "ndcg_at_10": 0.8491929115037087,
-        "exact_match": 0.075,
-        "token_f1": 0.07940675852451486,
-        "avg_total_sec": 1301.943635828765,
+        "doc_recall_any": 0.9509803921568627,
+        "doc_recall_all": 0.8823529411764706,
+        "ndcg_at_10": 0.8502535759485645,
+        "exact_match": 0.08333333333333333,
+        "token_f1": 0.08520270443579889,
+        "avg_total_sec": 1301.6215178128743,
         "p50_total_sec": 1302.550439497456,
         "p95_total_sec": 1364.3915228489786,
-        "avg_storage_bytes": 143397138.32,
+        "avg_storage_bytes": 143369326.33333334,
         "p95_storage_bytes": 149497413.0,
         "categories": {
           "single-session-assistant": {
@@ -12307,20 +12369,20 @@
             ]
           },
           "knowledge-update": {
-            "expected_total": 3,
-            "rows_recorded": 3,
-            "rows_successful": 3,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 1.0,
-            "exact_match": 0.0,
-            "token_f1": 0.0,
-            "avg_total_sec": 1327.3761634699379,
-            "p50_total_sec": 1310.9052632041276,
+            "doc_recall_all": 0.8571428571428571,
+            "ndcg_at_10": 0.9447353132522084,
+            "exact_match": 0.2857142857142857,
+            "token_f1": 0.21428571428571427,
+            "avg_total_sec": 1303.4558512118779,
+            "p50_total_sec": 1302.7860412402079,
             "p95_total_sec": 1372.6806667521596,
-            "avg_storage_bytes": 145240777.0,
+            "avg_storage_bytes": 143376748.42857143,
             "p95_storage_bytes": 149240509.0,
             "categories": {},
             "sample_errors": [],
@@ -12366,6 +12428,61 @@
                   "e760dc71_2",
                   "19c24c11",
                   "955a18ae"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::852ce960",
+                "category": "knowledge-update",
+                "query": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+                "gold": "$400,000",
+                "prediction": "m really looking forward to finally owning a home, it",
+                "retrieved_doc_ids": [
+                  "answer_3a6f1e82_1",
+                  "answer_3a6f1e82_2",
+                  "fb0c9ea2",
+                  "4c8afa9c_2",
+                  "1a73cecb_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::945e3d21",
+                "category": "knowledge-update",
+                "query": "How often do I attend yoga classes to help with my anxiety?",
+                "gold": "Three times a week.",
+                "prediction": "you think you could recommend any other resources or apps that could help me continue my practice",
+                "retrieved_doc_ids": [
+                  "answer_6a4f8626_1",
+                  "b691722f_2",
+                  "40628271_2",
+                  "ultrachat_69348",
+                  "ultrachat_486927"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::d7c942c3",
+                "category": "knowledge-update",
+                "query": "Is my mom using the same grocery list method as me?",
+                "gold": "Yes.",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_eecb10d9_2",
+                  "answer_eecb10d9_1",
+                  "87317e05_1",
+                  "d6f2cbe7_2",
+                  "92841d03_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::71315a70",
+                "category": "knowledge-update",
+                "query": "How many hours have I spent on my abstract ocean sculpture?",
+                "gold": "10-12 hours",
+                "prediction": "10",
+                "retrieved_doc_ids": [
+                  "answer_c44b9df4_2",
+                  "answer_c44b9df4_1",
+                  "0d4f7583_1",
+                  "a63f1158"
                 ]
               }
             ]
@@ -12705,20 +12822,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3186,
-      "rows_successful": 3182,
+      "rows_recorded": 3191,
+      "rows_successful": 3187,
       "rows_failed": 4,
       "complete": false,
-      "doc_recall_any": 0.7969830295411691,
-      "doc_recall_all": 0.6788183532369579,
-      "ndcg_at_10": 0.6209846235484464,
-      "exact_match": 0.07133878064110623,
-      "token_f1": 0.11477919258200264,
-      "avg_total_sec": 67.18918418042867,
-      "p50_total_sec": 6.394573079887778,
-      "p95_total_sec": 763.2353288028389,
-      "avg_storage_bytes": 46513640.586423635,
-      "p95_storage_bytes": 398395153.0,
+      "doc_recall_any": 0.7973015374960778,
+      "doc_recall_all": 0.6790084719171635,
+      "ndcg_at_10": 0.6214326765337528,
+      "exact_match": 0.0718544085346721,
+      "token_f1": 0.11522666796232583,
+      "avg_total_sec": 68.31308560517617,
+      "p50_total_sec": 6.394858844112605,
+      "p95_total_sec": 763.9370951503515,
+      "avg_storage_bytes": 47084501.49796046,
+      "p95_storage_bytes": 399142329.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15359,21 +15476,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 158,
-          "rows_recorded": 158,
-          "rows_successful": 158,
+          "expected_total": 163,
+          "rows_recorded": 163,
+          "rows_successful": 163,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9177215189873418,
-          "ndcg_at_10": 0.9595398176502125,
-          "exact_match": 0.20253164556962025,
-          "token_f1": 0.2289806079618248,
-          "avg_total_sec": 56.688025944323954,
-          "p50_total_sec": 75.61429664492607,
-          "p95_total_sec": 82.89817301509902,
-          "avg_storage_bytes": 30384755.202531647,
-          "p95_storage_bytes": 45876553.0,
+          "doc_recall_all": 0.9141104294478528,
+          "ndcg_at_10": 0.9579150869364861,
+          "exact_match": 0.2085889570552147,
+          "token_f1": 0.2342266015826277,
+          "avg_total_sec": 78.98483350169073,
+          "p50_total_sec": 76.35988078918308,
+          "p95_total_sec": 84.4188945600763,
+          "avg_storage_bytes": 42041062.883435585,
+          "p95_storage_bytes": 46556852.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -16577,20 +16694,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3186,
-      "rows_successful": 3186,
+      "rows_recorded": 3190,
+      "rows_successful": 3190,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8333333333333334,
-      "doc_recall_all": 0.7573760200878845,
-      "ndcg_at_10": 0.676976584337446,
-      "exact_match": 0.07376020087884495,
-      "token_f1": 0.11714007116537473,
-      "avg_total_sec": 102.29303287091456,
-      "p50_total_sec": 0.07800329895690084,
-      "p95_total_sec": 1274.539331652224,
-      "avg_storage_bytes": 20085660.60326428,
-      "p95_storage_bytes": 140624473.0,
+      "doc_recall_any": 0.8335423197492163,
+      "doc_recall_all": 0.7573667711598746,
+      "ndcg_at_10": 0.6772603589002724,
+      "exact_match": 0.07429467084639499,
+      "token_f1": 0.11746340649933665,
+      "avg_total_sec": 103.77669755323107,
+      "p50_total_sec": 0.0780507349409163,
+      "p95_total_sec": 1274.809059037827,
+      "avg_storage_bytes": 20238504.573667713,
+      "p95_storage_bytes": 140693205.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -19006,21 +19123,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 159,
-          "rows_recorded": 159,
-          "rows_successful": 159,
+          "expected_total": 163,
+          "rows_recorded": 163,
+          "rows_successful": 163,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9748427672955975,
-          "doc_recall_all": 0.9748427672955975,
-          "ndcg_at_10": 0.9700731945083982,
-          "exact_match": 0.24528301886792453,
-          "token_f1": 0.2675702782004684,
-          "avg_total_sec": 89.04445630836787,
-          "p50_total_sec": 114.90304245008156,
-          "p95_total_sec": 129.7679172977805,
-          "avg_storage_bytes": 10679570.433962265,
-          "p95_storage_bytes": 15617429.0,
+          "doc_recall_any": 0.9754601226993865,
+          "doc_recall_all": 0.9693251533742331,
+          "ndcg_at_10": 0.968434264537428,
+          "exact_match": 0.25153374233128833,
+          "token_f1": 0.27020659039186795,
+          "avg_total_sec": 118.40571178591301,
+          "p50_total_sec": 116.98726692376658,
+          "p95_total_sec": 133.03825622517616,
+          "avg_storage_bytes": 13901635.625766871,
+          "p95_storage_bytes": 15851513.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -20202,11 +20319,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03635030379216431,
-    "doc_recall_all_delta": 0.07855766685092658,
-    "ndcg_at_10_delta": 0.055991960788999595,
-    "token_f1_delta": 0.0023608785833720836,
-    "avg_storage_ratio_nova_over_stock": 0.43182301686200125,
-    "avg_latency_ratio_nova_over_stock": 1.5224627909786586
+    "doc_recall_any_delta": 0.03624078225313854,
+    "doc_recall_all_delta": 0.0783582992427111,
+    "ndcg_at_10_delta": 0.05582768236651958,
+    "token_f1_delta": 0.002236738537010813,
+    "avg_storage_ratio_nova_over_stock": 0.4298336805061932,
+    "avg_latency_ratio_nova_over_stock": 1.5191335105695736
   }
 }
