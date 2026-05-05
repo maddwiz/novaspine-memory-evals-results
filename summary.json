@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T17:09:08Z",
+  "generated_at": "2026-05-05T19:41:31Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-05T16:47:03Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-05T19:28:26Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 195,
+    "current_case_index": 200,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::a96c20ee_abs"
+    "current_case_id": "longmemeval_m::830ce83f"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 195,
-        "rows_successful": 193,
-        "rows_failed": 2,
+        "rows_recorded": 200,
+        "rows_successful": 197,
+        "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.917098445595855,
-        "doc_recall_all": 0.8290155440414507,
-        "ndcg_at_10": 0.8070715468326409,
-        "exact_match": 0.08290155440414508,
-        "token_f1": 0.0905015613138517,
-        "avg_total_sec": 779.9658681304518,
-        "p50_total_sec": 780.12094497215,
+        "doc_recall_any": 0.9187817258883249,
+        "doc_recall_all": 0.8274111675126904,
+        "ndcg_at_10": 0.8070614361636071,
+        "exact_match": 0.08121827411167512,
+        "token_f1": 0.0901676133044078,
+        "avg_total_sec": 780.1674776022384,
+        "p50_total_sec": 780.2480977242813,
         "p95_total_sec": 813.5880852965638,
-        "avg_storage_bytes": 408505788.761658,
+        "avg_storage_bytes": 408658595.5329949,
         "p95_storage_bytes": 425601735.0,
         "categories": {
           "single-session-assistant": {
@@ -10873,20 +10873,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 68,
-            "rows_recorded": 68,
-            "rows_successful": 68,
+            "expected_total": 70,
+            "rows_recorded": 70,
+            "rows_successful": 70,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8823529411764706,
-            "doc_recall_all": 0.6323529411764706,
-            "ndcg_at_10": 0.7292992806697196,
-            "exact_match": 0.08823529411764706,
-            "token_f1": 0.0446078431372549,
-            "avg_total_sec": 781.5689695287523,
+            "doc_recall_any": 0.8857142857142857,
+            "doc_recall_all": 0.6285714285714286,
+            "ndcg_at_10": 0.728274341325364,
+            "exact_match": 0.08571428571428572,
+            "token_f1": 0.046204481792717085,
+            "avg_total_sec": 782.0149470925996,
             "p50_total_sec": 780.2480977242813,
             "p95_total_sec": 813.5880852965638,
-            "avg_storage_bytes": 409243505.5441176,
+            "avg_storage_bytes": 409558076.82857144,
             "p95_storage_bytes": 425803723.0,
             "categories": {},
             "sample_errors": [],
@@ -11168,6 +11168,54 @@
                 ]
               }
             ]
+          },
+          "knowledge-update": {
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 0.9197207891481876,
+            "exact_match": 0.0,
+            "token_f1": 0.04761904761904762,
+            "avg_total_sec": 782.6120849684812,
+            "p50_total_sec": 779.9600400924683,
+            "p95_total_sec": 785.2641298444942,
+            "avg_storage_bytes": 411809544.0,
+            "p95_storage_bytes": 413949787.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_m::6a1eabeb",
+                "category": "knowledge-update",
+                "query": "What was my personal best time in the charity 5K run?",
+                "gold": "25 minutes and 50 seconds (or 25:50)",
+                "prediction": "50, I'll provide you with tailored tips to help you achieve it",
+                "retrieved_doc_ids": [
+                  "answer_a25d4a91_2",
+                  "0254514e_1",
+                  "answer_a25d4a91_1",
+                  "2aac543b_1",
+                  "71d8fee7_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::830ce83f",
+                "category": "knowledge-update",
+                "query": "Where did Rachel move to after her recent relocation?",
+                "gold": "the suburbs",
+                "prediction": "s a great idea to ask Rachel about her neighborhood, as it",
+                "retrieved_doc_ids": [
+                  "answer_0b1a0942_1",
+                  "13b6b7ab_1",
+                  "answer_0b1a0942_2"
+                ]
+              }
+            ]
           }
         },
         "sample_errors": [
@@ -11179,6 +11227,11 @@
           {
             "case_id": "longmemeval_m::3fdac837",
             "query": "What is the total number of days I spent in Japan and Chicago?",
+            "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\n[memory] embeddings: batch rejected; splitting 7 texts into 3+4\n[memory] embeddings: batch rejected; splitting 4 texts into 2+2\n[memory] embeddings: batch rejected; splitting 2 texts into 1+1\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"in"
+          },
+          {
+            "case_id": "longmemeval_m::6aeb4375",
+            "query": "How many Korean restaurants have I tried in my city?",
             "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\n[memory] embeddings: batch rejected; splitting 7 texts into 3+4\n[memory] embeddings: batch rejected; splitting 4 texts into 2+2\n[memory] embeddings: batch rejected; splitting 2 texts into 1+1\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"in"
           }
         ],
@@ -11528,19 +11581,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 195,
-        "rows_successful": 195,
+        "rows_recorded": 199,
+        "rows_successful": 199,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9487179487179487,
-        "doc_recall_all": 0.8871794871794871,
-        "ndcg_at_10": 0.8473099236306475,
-        "exact_match": 0.07692307692307693,
-        "token_f1": 0.08054927836236178,
-        "avg_total_sec": 1301.1831964204137,
-        "p50_total_sec": 1301.1907885610126,
-        "p95_total_sec": 1361.9777506412938,
-        "avg_storage_bytes": 143331770.16923076,
+        "doc_recall_any": 0.949748743718593,
+        "doc_recall_all": 0.8844221105527639,
+        "ndcg_at_10": 0.8484350869384006,
+        "exact_match": 0.07537688442211055,
+        "token_f1": 0.07980578746182397,
+        "avg_total_sec": 1301.8986025253714,
+        "p50_total_sec": 1302.0291638048366,
+        "p95_total_sec": 1364.3915228489786,
+        "avg_storage_bytes": 143389894.84924623,
         "p95_storage_bytes": 149497413.0,
         "categories": {
           "single-session-assistant": {
@@ -12023,21 +12076,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 69,
-            "rows_recorded": 69,
-            "rows_successful": 69,
+            "expected_total": 71,
+            "rows_recorded": 71,
+            "rows_successful": 71,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9565217391304348,
-            "doc_recall_all": 0.782608695652174,
-            "ndcg_at_10": 0.8165678643323269,
-            "exact_match": 0.057971014492753624,
-            "token_f1": 0.03134321021789053,
-            "avg_total_sec": 1305.1604005543354,
-            "p50_total_sec": 1306.1073041865602,
-            "p95_total_sec": 1358.4531770544127,
-            "avg_storage_bytes": 143410647.7826087,
-            "p95_storage_bytes": 149250789.0,
+            "doc_recall_any": 0.9577464788732394,
+            "doc_recall_all": 0.7746478873239436,
+            "ndcg_at_10": 0.8162863356576903,
+            "exact_match": 0.056338028169014086,
+            "token_f1": 0.032914421539110846,
+            "avg_total_sec": 1306.083704388897,
+            "p50_total_sec": 1306.648056649603,
+            "p95_total_sec": 1358.2734918240458,
+            "avg_storage_bytes": 143511899.2535211,
+            "p95_storage_bytes": 148631789.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -12249,6 +12302,56 @@
                   "answer_80323f3f_2",
                   "answer_80323f3f_1",
                   "e5976c3a"
+                ]
+              }
+            ]
+          },
+          "knowledge-update": {
+            "expected_total": 2,
+            "rows_recorded": 2,
+            "rows_successful": 2,
+            "rows_failed": 0,
+            "complete": true,
+            "doc_recall_any": 1.0,
+            "doc_recall_all": 1.0,
+            "ndcg_at_10": 1.0,
+            "exact_match": 0.0,
+            "token_f1": 0.0,
+            "avg_total_sec": 1335.6116136028431,
+            "p50_total_sec": 1298.5425604535267,
+            "p95_total_sec": 1372.6806667521596,
+            "avg_storage_bytes": 145441871.0,
+            "p95_storage_bytes": 149240509.0,
+            "categories": {},
+            "sample_errors": [],
+            "sample_misses": [],
+            "sample_successes": [
+              {
+                "case_id": "longmemeval_m::6a1eabeb",
+                "category": "knowledge-update",
+                "query": "What was my personal best time in the charity 5K run?",
+                "gold": "25 minutes and 50 seconds (or 25:50)",
+                "prediction": "wondering if you could give me some tips on how to improve my endurance",
+                "retrieved_doc_ids": [
+                  "answer_a25d4a91_2",
+                  "answer_a25d4a91_1",
+                  "2aac543b_1",
+                  "b8bc1464_2",
+                  "0254514e_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6aeb4375",
+                "category": "knowledge-update",
+                "query": "How many Korean restaurants have I tried in my city?",
+                "gold": "four",
+                "prediction": "3",
+                "retrieved_doc_ids": [
+                  "answer_3f9693b7_2",
+                  "answer_3f9693b7_1",
+                  "9a6487ae_1",
+                  "7a0de364",
+                  "fb33b5a0"
                 ]
               }
             ]
@@ -12588,20 +12691,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3181,
-      "rows_successful": 3178,
-      "rows_failed": 3,
+      "rows_recorded": 3186,
+      "rows_successful": 3182,
+      "rows_failed": 4,
       "complete": false,
-      "doc_recall_any": 0.7967275015733165,
-      "doc_recall_all": 0.6787287602265576,
-      "ndcg_at_10": 0.6207510313862887,
-      "exact_match": 0.07142857142857142,
-      "token_f1": 0.1148304506949457,
-      "avg_total_sec": 66.27954799359983,
-      "p50_total_sec": 6.394477121066302,
-      "p95_total_sec": 761.0659582754597,
-      "avg_storage_bytes": 46048545.70704846,
-      "p95_storage_bytes": 397428188.0,
+      "doc_recall_any": 0.7969830295411691,
+      "doc_recall_all": 0.6788183532369579,
+      "ndcg_at_10": 0.6209846235484464,
+      "exact_match": 0.07133878064110623,
+      "token_f1": 0.11477919258200264,
+      "avg_total_sec": 67.18918418042867,
+      "p50_total_sec": 6.394573079887778,
+      "p95_total_sec": 763.2353288028389,
+      "avg_storage_bytes": 46513640.586423635,
+      "p95_storage_bytes": 398395153.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -14885,21 +14988,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 334,
-          "rows_recorded": 334,
-          "rows_successful": 334,
+          "expected_total": 336,
+          "rows_recorded": 336,
+          "rows_successful": 336,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9640718562874252,
-          "doc_recall_all": 0.6826347305389222,
-          "ndcg_at_10": 0.8463344919249723,
-          "exact_match": 0.08682634730538923,
-          "token_f1": 0.07941603077526975,
-          "avg_total_sec": 197.41437252239788,
-          "p50_total_sec": 79.05374011211097,
-          "p95_total_sec": 793.778280377388,
-          "avg_storage_bytes": 103916888.4251497,
-          "p95_storage_bytes": 415903872.0,
+          "doc_recall_any": 0.9642857142857143,
+          "doc_recall_all": 0.6815476190476191,
+          "ndcg_at_10": 0.8454243247326646,
+          "exact_match": 0.08630952380952381,
+          "token_f1": 0.07954147223540761,
+          "avg_total_sec": 200.98439521133247,
+          "p50_total_sec": 79.08286532200873,
+          "p95_total_sec": 794.3694125823677,
+          "avg_storage_bytes": 105799844.44940476,
+          "p95_storage_bytes": 416825956.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15242,21 +15345,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 156,
-          "rows_recorded": 156,
-          "rows_successful": 156,
+          "expected_total": 158,
+          "rows_recorded": 158,
+          "rows_successful": 158,
           "rows_failed": 0,
           "complete": true,
           "doc_recall_any": 1.0,
-          "doc_recall_all": 0.9166666666666666,
-          "ndcg_at_10": 0.960050318015623,
-          "exact_match": 0.20512820512820512,
-          "token_f1": 0.23130575617134758,
-          "avg_total_sec": 47.38130723888604,
+          "doc_recall_all": 0.9177215189873418,
+          "ndcg_at_10": 0.9595398176502125,
+          "exact_match": 0.20253164556962025,
+          "token_f1": 0.2289806079618248,
+          "avg_total_sec": 56.688025944323954,
           "p50_total_sec": 75.61429664492607,
-          "p95_total_sec": 82.79099151398987,
-          "avg_storage_bytes": 25494693.807692308,
-          "p95_storage_bytes": 45784725.0,
+          "p95_total_sec": 82.89817301509902,
+          "avg_storage_bytes": 30384755.202531647,
+          "p95_storage_bytes": 45876553.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [],
@@ -16073,6 +16176,11 @@
           "case_id": "longmemeval_m::3fdac837",
           "query": "What is the total number of days I spent in Japan and Chicago?",
           "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\n[memory] embeddings: batch rejected; splitting 7 texts into 3+4\n[memory] embeddings: batch rejected; splitting 4 texts into 2+2\n[memory] embeddings: batch rejected; splitting 2 texts into 1+1\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"in"
+        },
+        {
+          "case_id": "longmemeval_m::6aeb4375",
+          "query": "How many Korean restaurants have I tried in my city?",
+          "error": "[agents/auth-profiles] synced openai-codex credentials from external cli\n\n[memory] embeddings: batch rejected; splitting 7 texts into 3+4\n[memory] embeddings: batch rejected; splitting 4 texts into 2+2\n[memory] embeddings: batch rejected; splitting 2 texts into 1+1\nMemory index failed (main): openai embeddings failed: 400 {\"error\":{\"message\":\"the input length exceeds the context length\",\"type\":\"in"
         }
       ],
       "sample_misses": [
@@ -16455,20 +16563,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3181,
-      "rows_successful": 3181,
+      "rows_recorded": 3185,
+      "rows_successful": 3185,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8330713612071675,
-      "doc_recall_all": 0.7573090223200252,
-      "ndcg_at_10": 0.6765904591343408,
-      "exact_match": 0.07387613957874882,
-      "token_f1": 0.11726941977637266,
-      "avg_total_sec": 100.36076669693851,
-      "p50_total_sec": 0.07798451418057084,
-      "p95_total_sec": 1269.0998587505892,
-      "avg_storage_bytes": 19887828.41905061,
-      "p95_storage_bytes": 140402209.0,
+      "doc_recall_any": 0.8332810047095761,
+      "doc_recall_all": 0.7572998430141288,
+      "ndcg_at_10": 0.6768751641127483,
+      "exact_match": 0.07378335949764521,
+      "token_f1": 0.11717684983764015,
+      "avg_total_sec": 101.91356278289786,
+      "p50_total_sec": 0.07800329895690084,
+      "p95_total_sec": 1273.6578185493127,
+      "avg_storage_bytes": 20046491.708948195,
+      "p95_storage_bytes": 140508885.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -18637,21 +18745,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 335,
-          "rows_recorded": 335,
-          "rows_successful": 335,
+          "expected_total": 337,
+          "rows_recorded": 337,
+          "rows_successful": 337,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9850746268656716,
-          "doc_recall_all": 0.9313432835820895,
-          "ndcg_at_10": 0.9366642227083676,
-          "exact_match": 0.06865671641791045,
-          "token_f1": 0.07308810580385726,
-          "avg_total_sec": 321.43042548209456,
-          "p50_total_sec": 120.91725417878479,
-          "p95_total_sec": 1329.744473207742,
-          "avg_storage_bytes": 36075865.07164179,
-          "p95_storage_bytes": 145018489.0,
+          "doc_recall_any": 0.9851632047477745,
+          "doc_recall_all": 0.9287833827893175,
+          "ndcg_at_10": 0.9358921715135567,
+          "exact_match": 0.06824925816023739,
+          "token_f1": 0.07317138833393058,
+          "avg_total_sec": 327.4631095248197,
+          "p50_total_sec": 121.00337168388069,
+          "p95_total_sec": 1332.8775388235226,
+          "avg_storage_bytes": 36734198.661721066,
+          "p95_storage_bytes": 145580901.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18884,21 +18992,21 @@
           ]
         },
         "knowledge-update": {
-          "expected_total": 156,
-          "rows_recorded": 156,
-          "rows_successful": 156,
+          "expected_total": 158,
+          "rows_recorded": 158,
+          "rows_successful": 158,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9743589743589743,
-          "doc_recall_all": 0.9743589743589743,
-          "ndcg_at_10": 0.9694976790181752,
-          "exact_match": 0.25,
-          "token_f1": 0.27271586047355434,
-          "avg_total_sec": 65.23038501679922,
+          "doc_recall_any": 0.9746835443037974,
+          "doc_recall_all": 0.9746835443037974,
+          "ndcg_at_10": 0.969883784347059,
+          "exact_match": 0.2468354430379747,
+          "token_f1": 0.2692637609738891,
+          "avg_total_sec": 81.31116006219217,
           "p50_total_sec": 114.36965119885281,
-          "p95_total_sec": 128.5656378478743,
-          "avg_storage_bytes": 8091854.923076923,
-          "p95_storage_bytes": 15532025.0,
+          "p95_total_sec": 129.3641843390651,
+          "avg_storage_bytes": 9830462.721518988,
+          "p95_storage_bytes": 15572589.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -20080,11 +20188,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.036343859633851006,
-    "doc_recall_all_delta": 0.07858026209346758,
-    "ndcg_at_10_delta": 0.05583942774805206,
-    "token_f1_delta": 0.0024389690814269616,
-    "avg_storage_ratio_nova_over_stock": 0.4318883064314985,
-    "avg_latency_ratio_nova_over_stock": 1.5142041509792685
+    "doc_recall_any_delta": 0.03629797516840705,
+    "doc_recall_all_delta": 0.07848148977717084,
+    "ndcg_at_10_delta": 0.05589054056430187,
+    "token_f1_delta": 0.0023976572556375086,
+    "avg_storage_ratio_nova_over_stock": 0.4309809220738432,
+    "avg_latency_ratio_nova_over_stock": 1.516815005659556
   }
 }
