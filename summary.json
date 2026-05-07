@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T18:19:32Z",
+  "generated_at": "2026-05-07T20:50:53Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-07T17:57:52Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-07T20:37:54Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 280,
+    "current_case_index": 285,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::gpt4_fa19884c"
+    "current_case_id": "longmemeval_m::9a707b81"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 280,
-        "rows_successful": 277,
+        "rows_recorded": 285,
+        "rows_successful": 282,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9422382671480144,
-        "doc_recall_all": 0.7833935018050542,
-        "ndcg_at_10": 0.810553092511111,
-        "exact_match": 0.11191335740072202,
-        "token_f1": 0.12647521701689676,
-        "avg_total_sec": 780.4421110413364,
-        "p50_total_sec": 779.9600400924683,
+        "doc_recall_any": 0.9397163120567376,
+        "doc_recall_all": 0.7801418439716312,
+        "ndcg_at_10": 0.8077226072955018,
+        "exact_match": 0.11347517730496454,
+        "token_f1": 0.12955189756624258,
+        "avg_total_sec": 780.3766990709647,
+        "p50_total_sec": 779.8458367967978,
         "p95_total_sec": 815.1109431004152,
-        "avg_storage_bytes": 408635088.50180507,
+        "avg_storage_bytes": 408598391.1347518,
         "p95_storage_bytes": 425596147.0,
         "categories": {
           "single-session-assistant": {
@@ -11340,24 +11340,42 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 10,
+            "rows_recorded": 10,
+            "rows_successful": 10,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
+            "doc_recall_any": 0.9,
             "doc_recall_all": 0.6,
-            "ndcg_at_10": 0.7859121363004111,
-            "exact_match": 0.0,
-            "token_f1": 0.1,
-            "avg_total_sec": 774.3925382632763,
-            "p50_total_sec": 770.4601031001657,
+            "ndcg_at_10": 0.7184129313255835,
+            "exact_match": 0.1,
+            "token_f1": 0.2,
+            "avg_total_sec": 775.572707087826,
+            "p50_total_sec": 772.7555373935029,
             "p95_total_sec": 817.0767878368497,
-            "avg_storage_bytes": 406251842.6,
+            "avg_storage_bytes": 406408599.8,
             "p95_storage_bytes": 426560702.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::af082822",
+                "category": "temporal-reasoning",
+                "query": "How many weeks ago did I attend the friends and family sale at Nordstrom?",
+                "gold": "2",
+                "prediction": "1 weeks",
+                "expected_doc_ids": [
+                  "answer_b51b6115_1"
+                ],
+                "retrieved_doc_ids": [
+                  "407031a9_1",
+                  "0320f558_4",
+                  "f1df385d_1",
+                  "6e4930a9_2",
+                  "a76e7e3c_1"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::gpt4_59149c77",
@@ -11420,6 +11438,56 @@
                 "retrieved_doc_ids": [
                   "answer_ff201786_2",
                   "answer_ff201786_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::0bc8ad92",
+                "category": "temporal-reasoning",
+                "query": "How many months have passed since I last visited a museum with a friend?",
+                "gold": "5",
+                "prediction": "1 months",
+                "retrieved_doc_ids": [
+                  "answer_f4ea84fb_3",
+                  "5b6acaf5",
+                  "answer_f4ea84fb_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_4929293a",
+                "category": "temporal-reasoning",
+                "query": "Which event happened first, my cousin's wedding or Michael's engagement party?",
+                "gold": "Michael's engagement party",
+                "prediction": "Michael's engagement party",
+                "retrieved_doc_ids": [
+                  "answer_add9b012_2",
+                  "f829b530_1",
+                  "answer_add9b012_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_b5700ca9",
+                "category": "temporal-reasoning",
+                "query": "How many days ago did I attend the Maundy Thursday service at the Episcopal Church?",
+                "gold": "4 days.",
+                "prediction": "25 days",
+                "retrieved_doc_ids": [
+                  "b369d8e1",
+                  "answer_a17423e7_1",
+                  "6ae3fa2a_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::9a707b81",
+                "category": "temporal-reasoning",
+                "query": "How many days ago did I attend a baking class at a local culinary school when I made my friend's birthday cake?",
+                "gold": "21 days. 22 days (including the last day) is also acceptable.",
+                "prediction": "user: I've been obsessed with strawberries lately, especially after that amazing baking class I took at a local culinary school yesterday.",
+                "retrieved_doc_ids": [
+                  "answer_dba89487_2",
+                  "answer_dba89487_1",
+                  "sharegpt_IHSNXY4_27",
+                  "9c4a9c1b_1",
+                  "c1e681e7_2"
                 ]
               }
             ]
@@ -11788,19 +11856,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 280,
-        "rows_successful": 280,
+        "rows_recorded": 284,
+        "rows_successful": 284,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.95,
-        "doc_recall_all": 0.8857142857142857,
-        "ndcg_at_10": 0.8514306820142769,
-        "exact_match": 0.11428571428571428,
-        "token_f1": 0.12263754265789613,
-        "avg_total_sec": 1301.4330519363916,
+        "doc_recall_any": 0.9507042253521126,
+        "doc_recall_all": 0.8838028169014085,
+        "ndcg_at_10": 0.8497397710257196,
+        "exact_match": 0.11619718309859155,
+        "token_f1": 0.1261919434655314,
+        "avg_total_sec": 1301.391148821805,
         "p50_total_sec": 1302.550439497456,
         "p95_total_sec": 1359.4183358708397,
-        "avg_storage_bytes": 143366998.25714287,
+        "avg_storage_bytes": 143362526.35211268,
         "p95_storage_bytes": 149240509.0,
         "categories": {
           "single-session-assistant": {
@@ -12758,20 +12826,20 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 5,
-            "rows_recorded": 5,
-            "rows_successful": 5,
+            "expected_total": 9,
+            "rows_recorded": 9,
+            "rows_successful": 9,
             "rows_failed": 0,
             "complete": true,
             "doc_recall_any": 1.0,
-            "doc_recall_all": 0.6,
-            "ndcg_at_10": 0.8028037856348847,
-            "exact_match": 0.0,
-            "token_f1": 0.1,
-            "avg_total_sec": 1297.0118975264952,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.7710581039423634,
+            "exact_match": 0.1111111111111111,
+            "token_f1": 0.2222222222222222,
+            "avg_total_sec": 1297.6545789817142,
             "p50_total_sec": 1300.5265154326335,
             "p95_total_sec": 1348.8795971479267,
-            "avg_storage_bytes": 143339554.6,
+            "avg_storage_bytes": 143210638.33333334,
             "p95_storage_bytes": 148605953.0,
             "categories": {},
             "sample_errors": [],
@@ -12845,6 +12913,62 @@
                   "abecc1b6",
                   "1da2160a_1",
                   "ultrachat_406000"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::0bc8ad92",
+                "category": "temporal-reasoning",
+                "query": "How many months have passed since I last visited a museum with a friend?",
+                "gold": "5",
+                "prediction": "1 months",
+                "retrieved_doc_ids": [
+                  "answer_f4ea84fb_3",
+                  "5b6acaf5",
+                  "ultrachat_160361",
+                  "afa0c2e7_2",
+                  "080a4000_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::af082822",
+                "category": "temporal-reasoning",
+                "query": "How many weeks ago did I attend the friends and family sale at Nordstrom?",
+                "gold": "2",
+                "prediction": "1 weeks",
+                "retrieved_doc_ids": [
+                  "407031a9_1",
+                  "13becce2_1",
+                  "0320f558_4",
+                  "f1df385d_1",
+                  "6e4930a9_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_4929293a",
+                "category": "temporal-reasoning",
+                "query": "Which event happened first, my cousin's wedding or Michael's engagement party?",
+                "gold": "Michael's engagement party",
+                "prediction": "Michael's engagement party",
+                "retrieved_doc_ids": [
+                  "answer_add9b012_2",
+                  "answer_add9b012_1",
+                  "e29024cb",
+                  "ce291e98",
+                  "8242fa3f_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_b5700ca9",
+                "category": "temporal-reasoning",
+                "query": "How many days ago did I attend the Maundy Thursday service at the Episcopal Church?",
+                "gold": "4 days.",
+                "prediction": "25 days",
+                "retrieved_doc_ids": [
+                  "answer_a17423e7_1",
+                  "b369d8e1",
+                  "6ae3fa2a_1",
+                  "ultrachat_292416",
+                  "4152811a_1"
                 ]
               }
             ]
@@ -13212,20 +13336,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3266,
-      "rows_successful": 3262,
+      "rows_recorded": 3271,
+      "rows_successful": 3267,
       "rows_failed": 4,
       "complete": false,
-      "doc_recall_any": 0.8019619865113428,
-      "doc_recall_all": 0.6787247087676272,
-      "ndcg_at_10": 0.6258446277843359,
-      "exact_match": 0.07418761496014716,
-      "token_f1": 0.11725873883772057,
-      "avg_total_sec": 84.6981777231555,
-      "p50_total_sec": 6.397544240113348,
-      "p95_total_sec": 775.927611364983,
-      "avg_storage_bytes": 55393188.39393011,
-      "p95_storage_bytes": 404431063.0,
+      "doc_recall_any": 0.8019589837771656,
+      "doc_recall_all": 0.6786042240587695,
+      "ndcg_at_10": 0.6258829949385545,
+      "exact_match": 0.0743801652892562,
+      "token_f1": 0.11753841631118594,
+      "avg_total_sec": 85.75733704086169,
+      "p50_total_sec": 6.397930535022169,
+      "p95_total_sec": 776.5249878913164,
+      "avg_storage_bytes": 55930641.973063976,
+      "p95_storage_bytes": 404722082.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15207,21 +15331,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 271,
-          "rows_recorded": 271,
-          "rows_successful": 271,
+          "expected_total": 276,
+          "rows_recorded": 276,
+          "rows_successful": 276,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9630996309963099,
-          "doc_recall_all": 0.7712177121771218,
-          "ndcg_at_10": 0.8773945981883237,
-          "exact_match": 0.23616236162361623,
-          "token_f1": 0.2990981935790955,
-          "avg_total_sec": 61.276934899621715,
-          "p50_total_sec": 76.25829715374857,
-          "p95_total_sec": 83.99405104480684,
-          "avg_storage_bytes": 32746176.0701107,
-          "p95_storage_bytes": 45831607.0,
+          "doc_recall_any": 0.9601449275362319,
+          "doc_recall_all": 0.7681159420289855,
+          "ndcg_at_10": 0.8732916838434401,
+          "exact_match": 0.23550724637681159,
+          "token_f1": 0.299114530651938,
+          "avg_total_sec": 74.23845557014262,
+          "p50_total_sec": 77.10116308415309,
+          "p95_total_sec": 85.69214693503454,
+          "avg_storage_bytes": 39518262.68115942,
+          "p95_storage_bytes": 46202792.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15370,6 +15494,23 @@
                 "de1f4aec_1",
                 "96c743d0_2",
                 "41dc5d45_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::af082822",
+              "category": "temporal-reasoning",
+              "query": "How many weeks ago did I attend the friends and family sale at Nordstrom?",
+              "gold": "2",
+              "prediction": "1 weeks",
+              "expected_doc_ids": [
+                "answer_b51b6115_1"
+              ],
+              "retrieved_doc_ids": [
+                "407031a9_1",
+                "0320f558_4",
+                "f1df385d_1",
+                "6e4930a9_2",
+                "a76e7e3c_1"
               ]
             }
           ],
@@ -17084,20 +17225,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3266,
-      "rows_successful": 3266,
+      "rows_recorded": 3270,
+      "rows_successful": 3270,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8361910593998775,
-      "doc_recall_all": 0.7605633802816901,
-      "ndcg_at_10": 0.6813868359958234,
-      "exact_match": 0.0771586037966932,
-      "token_f1": 0.1199220535738493,
-      "avg_total_sec": 131.63445502240367,
-      "p50_total_sec": 0.07929852278903127,
-      "p95_total_sec": 1294.553376980126,
-      "avg_storage_bytes": 23103565.992039192,
-      "p95_storage_bytes": 142856621.0,
+      "doc_recall_any": 0.8363914373088684,
+      "doc_recall_all": 0.7605504587155963,
+      "ndcg_at_10": 0.6814479848225278,
+      "exact_match": 0.07737003058103975,
+      "token_f1": 0.12023407552666417,
+      "avg_total_sec": 133.06176202641387,
+      "p50_total_sec": 0.07932529412209988,
+      "p95_total_sec": 1295.3771452745423,
+      "avg_storage_bytes": 23250288.83853211,
+      "p95_storage_bytes": 142864597.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -19089,21 +19230,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 271,
-          "rows_recorded": 271,
-          "rows_successful": 271,
+          "expected_total": 275,
+          "rows_recorded": 275,
+          "rows_successful": 275,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.996309963099631,
-          "doc_recall_all": 0.933579335793358,
-          "ndcg_at_10": 0.9521577089376984,
-          "exact_match": 0.2730627306273063,
-          "token_f1": 0.33363548382108793,
-          "avg_total_sec": 88.80327513091596,
-          "p50_total_sec": 117.41511614993215,
-          "p95_total_sec": 131.8397269831039,
-          "avg_storage_bytes": 10685079.612546125,
-          "p95_storage_bytes": 15757089.0,
+          "doc_recall_any": 0.9963636363636363,
+          "doc_recall_all": 0.9309090909090909,
+          "ndcg_at_10": 0.9489463386524476,
+          "exact_match": 0.2727272727272727,
+          "token_f1": 0.334237149510963,
+          "avg_total_sec": 106.39825194065882,
+          "p50_total_sec": 117.88377186702564,
+          "p95_total_sec": 133.60355503903702,
+          "avg_storage_bytes": 12610380.170909092,
+          "p95_storage_bytes": 15876341.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -20765,11 +20906,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03422907288853472,
-    "doc_recall_all_delta": 0.08183867151406288,
-    "ndcg_at_10_delta": 0.055542208211487476,
-    "token_f1_delta": 0.0026633147361287274,
-    "avg_storage_ratio_nova_over_stock": 0.41708315881255253,
-    "avg_latency_ratio_nova_over_stock": 1.5541592341297368
+    "doc_recall_any_delta": 0.03443245353170288,
+    "doc_recall_all_delta": 0.08194623465682682,
+    "ndcg_at_10_delta": 0.05556498988397329,
+    "token_f1_delta": 0.0026956592154782216,
+    "avg_storage_ratio_nova_over_stock": 0.415698587005838,
+    "avg_latency_ratio_nova_over_stock": 1.5516079045576305
   }
 }
