@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T21:12:29Z",
+  "generated_at": "2026-05-07T23:43:17Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-07T20:50:54Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-07T23:30:48Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 285,
+    "current_case_index": 290,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::9a707b81"
+    "current_case_id": "longmemeval_m::gpt4_7f6b06db"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 285,
-        "rows_successful": 282,
+        "rows_recorded": 290,
+        "rows_successful": 287,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9397163120567376,
-        "doc_recall_all": 0.7801418439716312,
-        "ndcg_at_10": 0.8077226072955018,
-        "exact_match": 0.11347517730496454,
-        "token_f1": 0.12955189756624258,
-        "avg_total_sec": 780.3766990709647,
+        "doc_recall_any": 0.9372822299651568,
+        "doc_recall_all": 0.7804878048780488,
+        "ndcg_at_10": 0.8075880670987161,
+        "exact_match": 0.11846689895470383,
+        "token_f1": 0.13581212389590538,
+        "avg_total_sec": 780.2465477504278,
         "p50_total_sec": 779.8458367967978,
         "p95_total_sec": 815.1109431004152,
-        "avg_storage_bytes": 408598391.1347518,
+        "avg_storage_bytes": 408549661.1184669,
         "p95_storage_bytes": 425596147.0,
         "categories": {
           "single-session-assistant": {
@@ -11340,21 +11340,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 15,
+            "rows_recorded": 15,
+            "rows_successful": 15,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9,
-            "doc_recall_all": 0.6,
-            "ndcg_at_10": 0.7184129313255835,
-            "exact_match": 0.1,
-            "token_f1": 0.2,
-            "avg_total_sec": 775.572707087826,
-            "p50_total_sec": 772.7555373935029,
-            "p95_total_sec": 817.0767878368497,
-            "avg_storage_bytes": 406408599.8,
-            "p95_storage_bytes": 426560702.0,
+            "doc_recall_any": 0.8666666666666667,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.7456086208837224,
+            "exact_match": 0.2,
+            "token_f1": 0.29629629629629634,
+            "avg_total_sec": 774.6838091492652,
+            "p50_total_sec": 776.0555467037484,
+            "p95_total_sec": 799.2965610288084,
+            "avg_storage_bytes": 406206162.6,
+            "p95_storage_bytes": 417395579.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -11373,6 +11373,25 @@
                   "f1df385d_1",
                   "6e4930a9_2",
                   "a76e7e3c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_7f6b06db",
+                "category": "temporal-reasoning",
+                "query": "What is the order of the three trips I took in the past three months, from earliest to latest?",
+                "gold": "I went on a day hike to Muir Woods National Monument with my family, then I went on a road trip with friends to Big Sur and Monterey, and finally I started my solo camping trip to Yosemite National Park.",
+                "prediction": "a Tokyo city tour or a visit to the onsen",
+                "expected_doc_ids": [
+                  "answer_5d8c99d3_1",
+                  "answer_5d8c99d3_2",
+                  "answer_5d8c99d3_3"
+                ],
+                "retrieved_doc_ids": [
+                  "9bdbfc62_1",
+                  "84711202_2",
+                  "ce919391_3",
+                  "60fa773f",
+                  "ultrachat_265275"
                 ]
               }
             ],
@@ -11488,6 +11507,44 @@
                   "sharegpt_IHSNXY4_27",
                   "9c4a9c1b_1",
                   "c1e681e7_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_1d4ab0c9",
+                "category": "temporal-reasoning",
+                "query": "How many days passed between the day I started watering my herb garden and the day I harvested my first batch of fresh herbs?",
+                "gold": "24 days. 25 days (including the last day) is also acceptable.",
+                "prediction": "24 days",
+                "retrieved_doc_ids": [
+                  "answer_febde667_1",
+                  "answer_febde667_2",
+                  "a59a9a13",
+                  "a6696bdb",
+                  "eba1ed04"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_e072b769",
+                "category": "temporal-reasoning",
+                "query": "How many weeks ago did I start using the cashback app 'Ibotta'?",
+                "gold": "3 weeks ago",
+                "prediction": "50 weeks",
+                "retrieved_doc_ids": [
+                  "answer_c19bd2bf_1",
+                  "82284791_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::0db4c65d",
+                "category": "temporal-reasoning",
+                "query": "How many days had passed since I finished reading 'The Seven Husbands of Evelyn Hugo' when I attended the book reading event at the local library, where the author of 'The Silent Patient' is discussing her latest thriller novel?",
+                "gold": "18 days. 19 days (including the last day) is also acceptable.",
+                "prediction": "The Silent Patient",
+                "retrieved_doc_ids": [
+                  "answer_b9e32ff8_2",
+                  "answer_b9e32ff8_1",
+                  "e9ad5914_1",
+                  "d0acef06"
                 ]
               }
             ]
@@ -11856,19 +11913,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 285,
-        "rows_successful": 285,
+        "rows_recorded": 289,
+        "rows_successful": 289,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9508771929824561,
-        "doc_recall_all": 0.8842105263157894,
-        "ndcg_at_10": 0.8502669998993135,
-        "exact_match": 0.11929824561403508,
-        "token_f1": 0.1292579366463541,
-        "avg_total_sec": 1301.3684045175482,
-        "p50_total_sec": 1302.0291638048366,
+        "doc_recall_any": 0.9480968858131488,
+        "doc_recall_all": 0.8823529411764706,
+        "ndcg_at_10": 0.8476021616777711,
+        "exact_match": 0.1245674740484429,
+        "token_f1": 0.13577339773083363,
+        "avg_total_sec": 1301.2853715814501,
+        "p50_total_sec": 1301.0067802928388,
         "p95_total_sec": 1359.4183358708397,
-        "avg_storage_bytes": 143357740.0596491,
+        "avg_storage_bytes": 143354267.85121107,
         "p95_storage_bytes": 149240509.0,
         "categories": {
           "single-session-assistant": {
@@ -12826,24 +12883,39 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 10,
-            "rows_recorded": 10,
-            "rows_successful": 10,
+            "expected_total": 14,
+            "rows_recorded": 14,
+            "rows_successful": 14,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 0.7,
-            "ndcg_at_10": 0.793952293548127,
-            "exact_match": 0.2,
-            "token_f1": 0.3,
-            "avg_total_sec": 1297.380023294408,
-            "p50_total_sec": 1294.9090221086517,
-            "p95_total_sec": 1348.8795971479267,
-            "avg_storage_bytes": 143089417.8,
-            "p95_storage_bytes": 148605953.0,
+            "doc_recall_any": 0.9285714285714286,
+            "doc_recall_all": 0.7142857142857143,
+            "ndcg_at_10": 0.7550323349323377,
+            "exact_match": 0.2857142857142857,
+            "token_f1": 0.38571428571428573,
+            "avg_total_sec": 1296.8055237487092,
+            "p50_total_sec": 1297.2396119283512,
+            "p95_total_sec": 1330.4407576946542,
+            "avg_storage_bytes": 143094405.0,
+            "p95_storage_bytes": 145220489.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::0db4c65d",
+                "category": "temporal-reasoning",
+                "query": "How many days had passed since I finished reading 'The Seven Husbands of Evelyn Hugo' when I attended the book reading event at the local library, where the author of 'The Silent Patient' is discussing her latest thriller novel?",
+                "gold": "18 days. 19 days (including the last day) is also acceptable.",
+                "prediction": "(मेरे लिए खर्चा कितना है?) - How much do I need to pay?",
+                "expected_doc_ids": [
+                  "answer_b9e32ff8_1",
+                  "answer_b9e32ff8_2"
+                ],
+                "retrieved_doc_ids": [
+                  "07e363d9_4"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::gpt4_59149c77",
@@ -12983,6 +13055,33 @@
                   "6eb4114b_1",
                   "9c4a9c1b_1",
                   "11566271_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_1d4ab0c9",
+                "category": "temporal-reasoning",
+                "query": "How many days passed between the day I started watering my herb garden and the day I harvested my first batch of fresh herbs?",
+                "gold": "24 days. 25 days (including the last day) is also acceptable.",
+                "prediction": "24 days",
+                "retrieved_doc_ids": [
+                  "answer_febde667_1",
+                  "answer_febde667_2",
+                  "a59a9a13",
+                  "aa5e6fea_2",
+                  "9486c607_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_e072b769",
+                "category": "temporal-reasoning",
+                "query": "How many weeks ago did I start using the cashback app 'Ibotta'?",
+                "gold": "3 weeks ago",
+                "prediction": "2 weeks",
+                "retrieved_doc_ids": [
+                  "82284791_1",
+                  "answer_c19bd2bf_1",
+                  "sharegpt_iYoVtKC_0",
+                  "4428dde3"
                 ]
               }
             ]
@@ -13350,20 +13449,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3271,
-      "rows_successful": 3267,
+      "rows_recorded": 3276,
+      "rows_successful": 3272,
       "rows_failed": 4,
       "complete": false,
-      "doc_recall_any": 0.8019589837771656,
-      "doc_recall_all": 0.6786042240587695,
-      "ndcg_at_10": 0.6258829949385545,
-      "exact_match": 0.0743801652892562,
-      "token_f1": 0.11753841631118594,
-      "avg_total_sec": 85.75733704086169,
-      "p50_total_sec": 6.397930535022169,
-      "p95_total_sec": 776.5249878913164,
-      "avg_storage_bytes": 55930641.973063976,
-      "p95_storage_bytes": 404722082.0,
+      "doc_recall_any": 0.8019559902200489,
+      "doc_recall_all": 0.6787897310513448,
+      "ndcg_at_10": 0.6261490661565579,
+      "exact_match": 0.07487775061124695,
+      "token_f1": 0.11810588341475822,
+      "avg_total_sec": 86.8073808615085,
+      "p50_total_sec": 6.398034289013594,
+      "p95_total_sec": 776.5734174447134,
+      "avg_storage_bytes": 56465285.38111247,
+      "p95_storage_bytes": 404871503.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15345,21 +15444,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 276,
-          "rows_recorded": 276,
-          "rows_successful": 276,
+          "expected_total": 281,
+          "rows_recorded": 281,
+          "rows_successful": 281,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9601449275362319,
-          "doc_recall_all": 0.7681159420289855,
-          "ndcg_at_10": 0.8732916838434401,
-          "exact_match": 0.23550724637681159,
-          "token_f1": 0.299114530651938,
-          "avg_total_sec": 74.23845557014262,
-          "p50_total_sec": 77.10116308415309,
-          "p95_total_sec": 85.69214693503454,
-          "avg_storage_bytes": 39518262.68115942,
-          "p95_storage_bytes": 46202792.0,
+          "doc_recall_any": 0.9572953736654805,
+          "doc_recall_all": 0.7686832740213523,
+          "ndcg_at_10": 0.8719875613551227,
+          "exact_match": 0.23843416370106763,
+          "token_f1": 0.3024912985920972,
+          "avg_total_sec": 86.67026264669069,
+          "p50_total_sec": 77.1772694317624,
+          "p95_total_sec": 741.7654382949695,
+          "avg_storage_bytes": 46035754.238434166,
+          "p95_storage_bytes": 392999325.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -15525,6 +15624,25 @@
                 "f1df385d_1",
                 "6e4930a9_2",
                 "a76e7e3c_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::gpt4_7f6b06db",
+              "category": "temporal-reasoning",
+              "query": "What is the order of the three trips I took in the past three months, from earliest to latest?",
+              "gold": "I went on a day hike to Muir Woods National Monument with my family, then I went on a road trip with friends to Big Sur and Monterey, and finally I started my solo camping trip to Yosemite National Park.",
+              "prediction": "a Tokyo city tour or a visit to the onsen",
+              "expected_doc_ids": [
+                "answer_5d8c99d3_1",
+                "answer_5d8c99d3_2",
+                "answer_5d8c99d3_3"
+              ],
+              "retrieved_doc_ids": [
+                "9bdbfc62_1",
+                "84711202_2",
+                "ce919391_3",
+                "60fa773f",
+                "ultrachat_265275"
               ]
             }
           ],
@@ -17239,20 +17357,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3271,
-      "rows_successful": 3271,
+      "rows_recorded": 3275,
+      "rows_successful": 3275,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8364414552124733,
-      "doc_recall_all": 0.7606236624885356,
-      "ndcg_at_10": 0.6815453715590541,
-      "exact_match": 0.0776520941608071,
-      "token_f1": 0.12050303484322587,
-      "avg_total_sec": 133.41695837617914,
-      "p50_total_sec": 0.07941879332065582,
-      "p95_total_sec": 1294.9090221086517,
-      "avg_storage_bytes": 23286592.153775603,
-      "p95_storage_bytes": 142864489.0,
+      "doc_recall_any": 0.8363358778625954,
+      "doc_recall_all": 0.7606106870229008,
+      "ndcg_at_10": 0.6815162870605305,
+      "exact_match": 0.07816793893129771,
+      "token_f1": 0.12108867999150895,
+      "avg_total_sec": 134.83613677802134,
+      "p50_total_sec": 0.07948109088465571,
+      "p95_total_sec": 1295.6769556477666,
+      "avg_storage_bytes": 23432937.53496183,
+      "p95_storage_bytes": 142892549.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -19244,21 +19362,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 276,
-          "rows_recorded": 276,
-          "rows_successful": 276,
+          "expected_total": 280,
+          "rows_recorded": 280,
+          "rows_successful": 280,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9963768115942029,
-          "doc_recall_all": 0.9311594202898551,
-          "ndcg_at_10": 0.9491313156863155,
-          "exact_match": 0.2753623188405797,
-          "token_f1": 0.3366493337518653,
-          "avg_total_sec": 110.70445038329648,
-          "p50_total_sec": 117.89630880393088,
-          "p95_total_sec": 134.3137383670546,
-          "avg_storage_bytes": 13079177.463768115,
-          "p95_storage_bytes": 16032997.0,
+          "doc_recall_any": 0.9928571428571429,
+          "doc_recall_all": 0.9285714285714286,
+          "ndcg_at_10": 0.9449684745821234,
+          "exact_match": 0.2785714285714286,
+          "token_f1": 0.3404114861268387,
+          "avg_total_sec": 127.62823359045599,
+          "p50_total_sec": 118.16208445327356,
+          "p95_total_sec": 146.66741098091006,
+          "avg_storage_bytes": 14936715.971428571,
+          "p95_storage_bytes": 16595409.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19278,6 +19396,20 @@
                 "sharegpt_5YtukCb_0",
                 "ultrachat_133409",
                 "e552e1f9_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::0db4c65d",
+              "category": "temporal-reasoning",
+              "query": "How many days had passed since I finished reading 'The Seven Husbands of Evelyn Hugo' when I attended the book reading event at the local library, where the author of 'The Silent Patient' is discussing her latest thriller novel?",
+              "gold": "18 days. 19 days (including the last day) is also acceptable.",
+              "prediction": "(मेरे लिए खर्चा कितना है?) - How much do I need to pay?",
+              "expected_doc_ids": [
+                "answer_b9e32ff8_1",
+                "answer_b9e32ff8_2"
+              ],
+              "retrieved_doc_ids": [
+                "07e363d9_4"
               ]
             }
           ],
@@ -20920,11 +21052,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03448247143530769,
-    "doc_recall_all_delta": 0.08201943842976611,
-    "ndcg_at_10_delta": 0.055662376620499665,
-    "token_f1_delta": 0.002964618532039928,
-    "avg_storage_ratio_nova_over_stock": 0.4163476643981729,
-    "avg_latency_ratio_nova_over_stock": 1.5557497816496866
+    "doc_recall_any_delta": 0.034379887642546514,
+    "doc_recall_all_delta": 0.08182095597155603,
+    "ndcg_at_10_delta": 0.055367220903972614,
+    "token_f1_delta": 0.0029827965767507264,
+    "avg_storage_ratio_nova_over_stock": 0.41499723904344427,
+    "avg_latency_ratio_nova_over_stock": 1.5532796340571242
   }
 }
