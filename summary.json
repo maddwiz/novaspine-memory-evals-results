@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T04:51:02Z",
+  "generated_at": "2026-05-09T07:24:30Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-09T04:29:14Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-09T07:11:15Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 340,
+    "current_case_index": 345,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::gpt4_fa19884d"
+    "current_case_id": "longmemeval_m::6e984302"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 340,
-        "rows_successful": 337,
+        "rows_recorded": 345,
+        "rows_successful": 342,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9258160237388724,
-        "doc_recall_all": 0.7477744807121661,
-        "ndcg_at_10": 0.7839539721653144,
-        "exact_match": 0.12462908011869436,
-        "token_f1": 0.15240566234238478,
-        "avg_total_sec": 779.9694364240078,
+        "doc_recall_any": 0.9181286549707602,
+        "doc_recall_all": 0.7368421052631579,
+        "ndcg_at_10": 0.7744303910799736,
+        "exact_match": 0.12280701754385964,
+        "token_f1": 0.15085227321682138,
+        "avg_total_sec": 780.1271404915636,
         "p50_total_sec": 779.9600400924683,
-        "p95_total_sec": 814.0073625445366,
-        "avg_storage_bytes": 408444818.98219585,
+        "p95_total_sec": 814.9022530959919,
+        "avg_storage_bytes": 408500900.45614034,
         "p95_storage_bytes": 425449790.0,
         "categories": {
           "single-session-assistant": {
@@ -11340,21 +11340,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 65,
-            "rows_recorded": 65,
-            "rows_successful": 65,
+            "expected_total": 70,
+            "rows_recorded": 70,
+            "rows_successful": 70,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.8615384615384616,
-            "doc_recall_all": 0.5846153846153846,
-            "ndcg_at_10": 0.6707514257790042,
-            "exact_match": 0.16923076923076924,
-            "token_f1": 0.2588780476262042,
-            "avg_total_sec": 777.5261231962592,
+            "doc_recall_any": 0.8285714285714286,
+            "doc_recall_all": 0.5428571428571428,
+            "ndcg_at_10": 0.6323078257896472,
+            "exact_match": 0.15714285714285714,
+            "token_f1": 0.24368346180675005,
+            "avg_total_sec": 778.4711425854425,
             "p50_total_sec": 779.1758989570662,
-            "p95_total_sec": 812.357410993427,
-            "avg_storage_bytes": 407465287.61538464,
-            "p95_storage_bytes": 424879252.0,
+            "p95_total_sec": 814.0073625445366,
+            "avg_storage_bytes": 407809252.2,
+            "p95_storage_bytes": 425444921.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -11510,6 +11510,60 @@
                   "420a0b94_2",
                   "f9d0bc67",
                   "47d6283b_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::eac54add",
+                "category": "temporal-reasoning",
+                "query": "What was the significant buisiness milestone I mentioned four weeks ago?",
+                "gold": "I signed a contract with my first client.",
+                "prediction": "the shift towards digital marketing and e-commerce",
+                "expected_doc_ids": [
+                  "answer_0d4d0348_1",
+                  "answer_0d4d0348_2"
+                ],
+                "retrieved_doc_ids": [
+                  "de8b799a",
+                  "ce79a004",
+                  "ultrachat_147704",
+                  "0dde26d4_4",
+                  "1ba79ea8_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::4dfccbf8",
+                "category": "temporal-reasoning",
+                "query": "What did I do with Rachel on the Wednesday two months ago?",
+                "gold": "I started taking ukulele lessons with Rachel.",
+                "prediction": "a small, intimate ceremony at a local park about a month before Rachel's wedding, and I'm still on a wedding high",
+                "expected_doc_ids": [
+                  "answer_4bebc783_1",
+                  "answer_4bebc783_2"
+                ],
+                "retrieved_doc_ids": [
+                  "641da543",
+                  "sharegpt_G3RxeFJ_106",
+                  "3dc8ba5f_4",
+                  "62e6593e_1",
+                  "51221cac"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6e984302",
+                "category": "temporal-reasoning",
+                "query": "I mentioned an investment for a competition four weeks ago? What did I buy?",
+                "gold": "I got my own set of sculpting tools.",
+                "prediction": "I had a meeting with someone at the Tech Expo three weeks ago, and I want to keep the conversation going.",
+                "expected_doc_ids": [
+                  "answer_88841f27_1",
+                  "answer_88841f27_2"
+                ],
+                "retrieved_doc_ids": [
+                  "6eda1e9b_2",
+                  "2e53911b_1",
+                  "08958375",
+                  "2c1e886b_1",
+                  "d1317863"
                 ]
               }
             ],
@@ -12031,19 +12085,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 340,
-        "rows_successful": 340,
+        "rows_recorded": 344,
+        "rows_successful": 344,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9411764705882353,
-        "doc_recall_all": 0.8676470588235294,
-        "ndcg_at_10": 0.8358087153831862,
-        "exact_match": 0.12941176470588237,
-        "token_f1": 0.15731452896081707,
-        "avg_total_sec": 1299.9246726414792,
+        "doc_recall_any": 0.936046511627907,
+        "doc_recall_all": 0.8575581395348837,
+        "ndcg_at_10": 0.8284241496659815,
+        "exact_match": 0.12790697674418605,
+        "token_f1": 0.1561747655053991,
+        "avg_total_sec": 1300.0786006778214,
         "p50_total_sec": 1300.389882181771,
         "p95_total_sec": 1358.2734918240458,
-        "avg_storage_bytes": 143265845.70588234,
+        "avg_storage_bytes": 143280885.5348837,
         "p95_storage_bytes": 148987637.0,
         "categories": {
           "single-session-assistant": {
@@ -13001,21 +13055,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 65,
-            "rows_recorded": 65,
-            "rows_successful": 65,
+            "expected_total": 69,
+            "rows_recorded": 69,
+            "rows_successful": 69,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9076923076923077,
-            "doc_recall_all": 0.7692307692307693,
-            "ndcg_at_10": 0.7659752491455413,
-            "exact_match": 0.18461538461538463,
-            "token_f1": 0.30228350619179833,
-            "avg_total_sec": 1293.2029791314728,
+            "doc_recall_any": 0.8840579710144928,
+            "doc_recall_all": 0.7246376811594203,
+            "ndcg_at_10": 0.7332077601344141,
+            "exact_match": 0.17391304347826086,
+            "token_f1": 0.28819720854559966,
+            "avg_total_sec": 1294.3600518639619,
             "p50_total_sec": 1297.5797591451555,
-            "p95_total_sec": 1346.1482363948599,
-            "avg_storage_bytes": 142835781.55384615,
-            "p95_storage_bytes": 148494461.0,
+            "p95_total_sec": 1348.8795971479267,
+            "avg_storage_bytes": 142935693.98550725,
+            "p95_storage_bytes": 148605953.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -13120,6 +13174,42 @@
                   "f9d0bc67",
                   "420a0b94_2",
                   "4b29957c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::eac54add",
+                "category": "temporal-reasoning",
+                "query": "What was the significant buisiness milestone I mentioned four weeks ago?",
+                "gold": "I signed a contract with my first client.",
+                "prediction": "Visited the contemporary art museum in the neighboring city with friends, explored various exhibits, including an installation on climate change",
+                "expected_doc_ids": [
+                  "answer_0d4d0348_1",
+                  "answer_0d4d0348_2"
+                ],
+                "retrieved_doc_ids": [
+                  "ce79a004",
+                  "sharegpt_vbjK9dW_0",
+                  "acda6a4e_2",
+                  "ultrachat_209103",
+                  "7cc4ee02"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::4dfccbf8",
+                "category": "temporal-reasoning",
+                "query": "What did I do with Rachel on the Wednesday two months ago?",
+                "gold": "I started taking ukulele lessons with Rachel.",
+                "prediction": "a small, intimate ceremony at a local park about a month before Rachel's wedding, and I'm still on a wedding high",
+                "expected_doc_ids": [
+                  "answer_4bebc783_1",
+                  "answer_4bebc783_2"
+                ],
+                "retrieved_doc_ids": [
+                  "3dc8ba5f_4",
+                  "641da543",
+                  "2ec56e02",
+                  "51221cac",
+                  "62e6593e_1"
                 ]
               }
             ],
@@ -13656,20 +13746,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3326,
-      "rows_successful": 3322,
+      "rows_recorded": 3331,
+      "rows_successful": 3327,
       "rows_failed": 4,
       "complete": false,
-      "doc_recall_any": 0.8028296207104154,
-      "doc_recall_all": 0.677001806140879,
-      "ndcg_at_10": 0.6264823774312575,
-      "exact_match": 0.076158940397351,
-      "token_f1": 0.12005571318011672,
-      "avg_total_sec": 97.21634288060618,
-      "p50_total_sec": 6.400843332987279,
-      "p95_total_sec": 780.12094497215,
-      "avg_storage_bytes": 61753932.87868754,
-      "p95_storage_bytes": 410430060.0,
+      "doc_recall_any": 0.802224226029456,
+      "doc_recall_all": 0.6759843703035768,
+      "ndcg_at_10": 0.6257400549913668,
+      "exact_match": 0.07604448452058912,
+      "token_f1": 0.1199446493583159,
+      "avg_total_sec": 98.25863331006849,
+      "p50_total_sec": 6.401174097787589,
+      "p95_total_sec": 780.5085944710299,
+      "avg_storage_bytes": 62280724.07033364,
+      "p95_storage_bytes": 410668852.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15651,21 +15741,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 331,
-          "rows_recorded": 331,
-          "rows_successful": 331,
+          "expected_total": 336,
+          "rows_recorded": 336,
+          "rows_successful": 336,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9425981873111783,
-          "doc_recall_all": 0.7371601208459214,
-          "ndcg_at_10": 0.838197033544317,
-          "exact_match": 0.22658610271903323,
-          "token_f1": 0.2942075031892391,
-          "avg_total_sec": 191.15795974090014,
-          "p50_total_sec": 78.8022494208999,
-          "p95_total_sec": 788.1943948687986,
-          "avg_storage_bytes": 100689420.5347432,
-          "p95_storage_bytes": 414504911.0,
+          "doc_recall_any": 0.9345238095238095,
+          "doc_recall_all": 0.7261904761904762,
+          "ndcg_at_10": 0.8276962000976457,
+          "exact_match": 0.22321428571428573,
+          "token_f1": 0.29051622853097436,
+          "avg_total_sec": 200.08055549839906,
+          "p50_total_sec": 78.90565446810797,
+          "p95_total_sec": 789.6658294880763,
+          "avg_storage_bytes": 105326196.89285715,
+          "p95_storage_bytes": 415508405.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17564,20 +17654,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3326,
-      "rows_successful": 3326,
+      "rows_recorded": 3330,
+      "rows_successful": 3330,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8373421527360192,
-      "doc_recall_all": 0.7609741431148527,
-      "ndcg_at_10": 0.6828574199124008,
-      "exact_match": 0.079374624173181,
-      "token_f1": 0.12351589142352938,
-      "avg_total_sec": 152.58306201415624,
-      "p50_total_sec": 0.08075292687863111,
-      "p95_total_sec": 1300.9750489927828,
-      "avg_storage_bytes": 25262740.3962718,
-      "p95_storage_bytes": 143444221.0,
+      "doc_recall_any": 0.8369369369369369,
+      "doc_recall_all": 0.7600600600600601,
+      "ndcg_at_10": 0.6822782951601979,
+      "exact_match": 0.07927927927927927,
+      "token_f1": 0.12343874905760907,
+      "avg_total_sec": 153.97715140965505,
+      "p50_total_sec": 0.08091073203831911,
+      "p95_total_sec": 1301.1907885610126,
+      "avg_storage_bytes": 25406039.532132134,
+      "p95_storage_bytes": 143467249.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -19569,21 +19659,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 331,
-          "rows_recorded": 331,
-          "rows_successful": 331,
+          "expected_total": 335,
+          "rows_recorded": 335,
+          "rows_successful": 335,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9788519637462235,
-          "doc_recall_all": 0.9063444108761329,
-          "ndcg_at_10": 0.9178523002670755,
-          "exact_match": 0.2598187311178248,
-          "token_f1": 0.3310079879697333,
-          "avg_total_sec": 307.06592663562384,
-          "p50_total_sec": 120.62588222604245,
-          "p95_total_sec": 1311.822985173203,
-          "avg_storage_bytes": 34632279.7673716,
-          "p95_storage_bytes": 144778301.0,
+          "doc_recall_any": 0.9731343283582089,
+          "doc_recall_all": 0.8955223880597015,
+          "ndcg_at_10": 0.9092897183379595,
+          "exact_match": 0.25671641791044775,
+          "token_f1": 0.32776365225421256,
+          "avg_total_sec": 319.0790198551018,
+          "p50_total_sec": 120.7796696452424,
+          "p95_total_sec": 1312.054534131661,
+          "avg_storage_bytes": 35944840.85671642,
+          "p95_storage_bytes": 144954573.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19706,6 +19796,42 @@
                 "f9d0bc67",
                 "420a0b94_2",
                 "4b29957c_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::eac54add",
+              "category": "temporal-reasoning",
+              "query": "What was the significant buisiness milestone I mentioned four weeks ago?",
+              "gold": "I signed a contract with my first client.",
+              "prediction": "Visited the contemporary art museum in the neighboring city with friends, explored various exhibits, including an installation on climate change",
+              "expected_doc_ids": [
+                "answer_0d4d0348_1",
+                "answer_0d4d0348_2"
+              ],
+              "retrieved_doc_ids": [
+                "ce79a004",
+                "sharegpt_vbjK9dW_0",
+                "acda6a4e_2",
+                "ultrachat_209103",
+                "7cc4ee02"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::4dfccbf8",
+              "category": "temporal-reasoning",
+              "query": "What did I do with Rachel on the Wednesday two months ago?",
+              "gold": "I started taking ukulele lessons with Rachel.",
+              "prediction": "a small, intimate ceremony at a local park about a month before Rachel's wedding, and I'm still on a wedding high",
+              "expected_doc_ids": [
+                "answer_4bebc783_1",
+                "answer_4bebc783_2"
+              ],
+              "retrieved_doc_ids": [
+                "3dc8ba5f_4",
+                "641da543",
+                "2ec56e02",
+                "51221cac",
+                "62e6593e_1"
               ]
             }
           ],
@@ -21348,11 +21474,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03451253202560378,
-    "doc_recall_all_delta": 0.08397233697397366,
-    "ndcg_at_10_delta": 0.056375042481143334,
-    "token_f1_delta": 0.0034601782434126593,
-    "avg_storage_ratio_nova_over_stock": 0.40908714989698175,
-    "avg_latency_ratio_nova_over_stock": 1.5695206946999365
+    "doc_recall_any_delta": 0.03471271090748096,
+    "doc_recall_all_delta": 0.08407568975648327,
+    "ndcg_at_10_delta": 0.05653824016883113,
+    "token_f1_delta": 0.0034940996992931656,
+    "avg_storage_ratio_nova_over_stock": 0.4079278125193453,
+    "avg_latency_ratio_nova_over_stock": 1.5670597709593537
   }
 }
