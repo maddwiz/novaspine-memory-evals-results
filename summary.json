@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T01:59:34Z",
+  "generated_at": "2026-05-09T04:29:13Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-09T01:37:58Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-09T04:16:05Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 335,
+    "current_case_index": 340,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::gpt4_f420262d"
+    "current_case_id": "longmemeval_m::gpt4_fa19884d"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 335,
-        "rows_successful": 332,
+        "rows_recorded": 340,
+        "rows_successful": 337,
         "rows_failed": 3,
         "complete": false,
-        "doc_recall_any": 0.9337349397590361,
-        "doc_recall_all": 0.7560240963855421,
-        "ndcg_at_10": 0.7920340087558483,
-        "exact_match": 0.12650602409638553,
-        "token_f1": 0.15392002695820606,
-        "avg_total_sec": 780.0577767931727,
+        "doc_recall_any": 0.9258160237388724,
+        "doc_recall_all": 0.7477744807121661,
+        "ndcg_at_10": 0.7839539721653144,
+        "exact_match": 0.12462908011869436,
+        "token_f1": 0.15240566234238478,
+        "avg_total_sec": 779.9694364240078,
         "p50_total_sec": 779.9600400924683,
         "p95_total_sec": 814.0073625445366,
-        "avg_storage_bytes": 408476233.3674699,
+        "avg_storage_bytes": 408444818.98219585,
         "p95_storage_bytes": 425449790.0,
         "categories": {
           "single-session-assistant": {
@@ -11340,21 +11340,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 60,
-            "rows_recorded": 60,
-            "rows_successful": 60,
+            "expected_total": 65,
+            "rows_recorded": 65,
+            "rows_successful": 65,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9,
-            "doc_recall_all": 0.6166666666666667,
-            "ndcg_at_10": 0.7060274160477662,
-            "exact_match": 0.18333333333333332,
-            "token_f1": 0.2761302306074002,
-            "avg_total_sec": 777.8113304699926,
+            "doc_recall_any": 0.8615384615384616,
+            "doc_recall_all": 0.5846153846153846,
+            "ndcg_at_10": 0.6707514257790042,
+            "exact_match": 0.16923076923076924,
+            "token_f1": 0.2588780476262042,
+            "avg_total_sec": 777.5261231962592,
             "p50_total_sec": 779.1758989570662,
-            "p95_total_sec": 812.1042074179277,
-            "avg_storage_bytes": 407557486.26666665,
-            "p95_storage_bytes": 424480079.0,
+            "p95_total_sec": 812.357410993427,
+            "avg_storage_bytes": 407465287.61538464,
+            "p95_storage_bytes": 424879252.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -11458,6 +11458,58 @@
                   "6e0b1800_1",
                   "3b655772_1",
                   "3c51bd6e_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_59149c78",
+                "category": "temporal-reasoning",
+                "query": "I mentioned that I participated in an art-related event two weeks ago. Where was that event held at?",
+                "gold": "The Metropolitan Museum of Art.",
+                "prediction": "wondering if you could give me some information on upcoming art exhibitions in NYC",
+                "expected_doc_ids": [
+                  "answer_d00ba6d1_1",
+                  "answer_d00ba6d1_2"
+                ],
+                "retrieved_doc_ids": [
+                  "b8832e94",
+                  "46133663",
+                  "e2b5e2cc_1",
+                  "ultrachat_128860",
+                  "ec616e7e_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_4929293b",
+                "category": "temporal-reasoning",
+                "query": "What was the the life event of one of my relatives that I participated in a week ago?",
+                "gold": "my cousin's wedding",
+                "prediction": "just thinking about my maternal grandfather's 80th birthday celebration last month and how we had a big family reunion with around 50 relatives",
+                "expected_doc_ids": [
+                  "answer_add9b013_2",
+                  "answer_add9b013_1"
+                ],
+                "retrieved_doc_ids": [
+                  "e8f22b15",
+                  "b1c3ec24",
+                  "85fe6752",
+                  "903b3bbf"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_468eb064",
+                "category": "temporal-reasoning",
+                "query": "Who did I meet with during the lunch last Tuesday?",
+                "gold": "Emma",
+                "prediction": "Meet",
+                "expected_doc_ids": [
+                  "answer_9b09d95b_1"
+                ],
+                "retrieved_doc_ids": [
+                  "sharegpt_jxEz51P_0",
+                  "785bd3f5",
+                  "420a0b94_2",
+                  "f9d0bc67",
+                  "47d6283b_3"
                 ]
               }
             ],
@@ -11979,19 +12031,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 335,
-        "rows_successful": 335,
+        "rows_recorded": 339,
+        "rows_successful": 339,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9492537313432836,
-        "doc_recall_all": 0.8746268656716418,
-        "ndcg_at_10": 0.8435949895860536,
-        "exact_match": 0.13134328358208955,
-        "token_f1": 0.1589991570879271,
-        "avg_total_sec": 1300.182463703249,
-        "p50_total_sec": 1300.389882181771,
+        "doc_recall_any": 0.9410029498525073,
+        "doc_recall_all": 0.8672566371681416,
+        "ndcg_at_10": 0.8365909189124718,
+        "exact_match": 0.12979351032448377,
+        "token_f1": 0.1577785836185186,
+        "avg_total_sec": 1299.9033235779093,
+        "p50_total_sec": 1300.0968359736726,
         "p95_total_sec": 1358.2734918240458,
-        "avg_storage_bytes": 143284684.76119402,
+        "avg_storage_bytes": 143263939.56047198,
         "p95_storage_bytes": 148987637.0,
         "categories": {
           "single-session-assistant": {
@@ -12949,21 +13001,21 @@
             ]
           },
           "temporal-reasoning": {
-            "expected_total": 60,
-            "rows_recorded": 60,
-            "rows_successful": 60,
+            "expected_total": 64,
+            "rows_recorded": 64,
+            "rows_successful": 64,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.95,
-            "doc_recall_all": 0.8,
-            "ndcg_at_10": 0.8036291579250812,
-            "exact_match": 0.2,
-            "token_f1": 0.32377009467074447,
-            "avg_total_sec": 1294.0821714338535,
-            "p50_total_sec": 1297.5999451894313,
-            "p95_total_sec": 1346.1450618384406,
-            "avg_storage_bytes": 142905127.6,
-            "p95_storage_bytes": 147887317.0,
+            "doc_recall_any": 0.90625,
+            "doc_recall_all": 0.765625,
+            "ndcg_at_10": 0.7690273355547635,
+            "exact_match": 0.1875,
+            "token_f1": 0.3070066859760452,
+            "avg_total_sec": 1292.9848693492822,
+            "p50_total_sec": 1297.5797591451555,
+            "p95_total_sec": 1346.1482363948599,
+            "avg_storage_bytes": 142818965.1875,
+            "p95_storage_bytes": 148494461.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -13015,6 +13067,59 @@
                   "dc7b770a_2",
                   "7237c430_1",
                   "3c51bd6e_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_59149c78",
+                "category": "temporal-reasoning",
+                "query": "I mentioned that I participated in an art-related event two weeks ago. Where was that event held at?",
+                "gold": "The Metropolitan Museum of Art.",
+                "prediction": "held at the Downtown Las Vegas Events Center and also offers food, art, and activities",
+                "expected_doc_ids": [
+                  "answer_d00ba6d1_1",
+                  "answer_d00ba6d1_2"
+                ],
+                "retrieved_doc_ids": [
+                  "b8832e94",
+                  "46133663",
+                  "dc644299",
+                  "8255ff94",
+                  "ultrachat_291317"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_4929293b",
+                "category": "temporal-reasoning",
+                "query": "What was the the life event of one of my relatives that I participated in a week ago?",
+                "gold": "my cousin's wedding",
+                "prediction": "a blast",
+                "expected_doc_ids": [
+                  "answer_add9b013_2",
+                  "answer_add9b013_1"
+                ],
+                "retrieved_doc_ids": [
+                  "e8f22b15",
+                  "4ffa04a2_6",
+                  "b1c3ec24",
+                  "903b3bbf",
+                  "f10e6d2c_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::gpt4_468eb064",
+                "category": "temporal-reasoning",
+                "query": "Who did I meet with during the lunch last Tuesday?",
+                "gold": "Emma",
+                "prediction": "Gym session (evening)",
+                "expected_doc_ids": [
+                  "answer_9b09d95b_1"
+                ],
+                "retrieved_doc_ids": [
+                  "c37d1365_1",
+                  "dd25eeb5_1",
+                  "f9d0bc67",
+                  "420a0b94_2",
+                  "4b29957c_1"
                 ]
               }
             ],
@@ -13551,20 +13656,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3321,
-      "rows_successful": 3317,
+      "rows_recorded": 3326,
+      "rows_successful": 3322,
       "rows_failed": 4,
       "complete": false,
-      "doc_recall_any": 0.8034368405185408,
-      "doc_recall_all": 0.6777208320771781,
-      "ndcg_at_10": 0.6270537413668579,
-      "exact_match": 0.0762737413325294,
-      "token_f1": 0.12015852273894738,
-      "avg_total_sec": 96.19601232131939,
-      "p50_total_sec": 6.400732017122209,
-      "p95_total_sec": 779.8458367967978,
-      "avg_storage_bytes": 61234480.10370817,
-      "p95_storage_bytes": 410307955.0,
+      "doc_recall_any": 0.8028296207104154,
+      "doc_recall_all": 0.677001806140879,
+      "ndcg_at_10": 0.6264823774312575,
+      "exact_match": 0.076158940397351,
+      "token_f1": 0.12005571318011672,
+      "avg_total_sec": 97.21634288060618,
+      "p50_total_sec": 6.400843332987279,
+      "p95_total_sec": 780.12094497215,
+      "avg_storage_bytes": 61753932.87868754,
+      "p95_storage_bytes": 410430060.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -15546,21 +15651,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 326,
-          "rows_recorded": 326,
-          "rows_successful": 326,
+          "expected_total": 331,
+          "rows_recorded": 331,
+          "rows_successful": 331,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.950920245398773,
-          "doc_recall_all": 0.745398773006135,
-          "ndcg_at_10": 0.8472577312588945,
-          "exact_match": 0.23006134969325154,
-          "token_f1": 0.29792461440607027,
-          "avg_total_sec": 182.21707513705724,
-          "p50_total_sec": 78.52754825586453,
-          "p95_total_sec": 785.7495311591774,
-          "avg_storage_bytes": 96001238.27607362,
-          "p95_storage_bytes": 413414147.0,
+          "doc_recall_any": 0.9425981873111783,
+          "doc_recall_all": 0.7371601208459214,
+          "ndcg_at_10": 0.838197033544317,
+          "exact_match": 0.22658610271903323,
+          "token_f1": 0.2942075031892391,
+          "avg_total_sec": 191.15795974090014,
+          "p50_total_sec": 78.8022494208999,
+          "p95_total_sec": 788.1943948687986,
+          "avg_storage_bytes": 100689420.5347432,
+          "p95_storage_bytes": 414504911.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17459,20 +17564,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3321,
-      "rows_successful": 3321,
+      "rows_recorded": 3325,
+      "rows_successful": 3325,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8380006022282445,
-      "doc_recall_all": 0.7615176151761518,
-      "ndcg_at_10": 0.6834125675729268,
-      "exact_match": 0.07949412827461608,
-      "token_f1": 0.12363493907029102,
-      "avg_total_sec": 150.88166242143004,
-      "p50_total_sec": 0.08062644163146615,
-      "p95_total_sec": 1300.5265154326335,
-      "avg_storage_bytes": 25086978.745257452,
-      "p95_storage_bytes": 143374013.0,
+      "doc_recall_any": 0.8372932330827068,
+      "doc_recall_all": 0.7609022556390977,
+      "ndcg_at_10": 0.6828911689953954,
+      "exact_match": 0.07939849624060151,
+      "token_f1": 0.12355303906004773,
+      "avg_total_sec": 152.23582022673443,
+      "p50_total_sec": 0.08075292687863111,
+      "p95_total_sec": 1300.8509553726763,
+      "avg_storage_bytes": 25227056.39969925,
+      "p95_storage_bytes": 143414109.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -19464,21 +19569,21 @@
           ]
         },
         "temporal-reasoning": {
-          "expected_total": 326,
-          "rows_recorded": 326,
-          "rows_successful": 326,
+          "expected_total": 330,
+          "rows_recorded": 330,
+          "rows_successful": 330,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9877300613496932,
-          "doc_recall_all": 0.9141104294478528,
-          "ndcg_at_10": 0.9271118701516771,
-          "exact_match": 0.26380368098159507,
-          "token_f1": 0.3354031343428205,
-          "avg_total_sec": 292.1029397511563,
-          "p50_total_sec": 120.52624591114,
-          "p95_total_sec": 1311.0004772171378,
-          "avg_storage_bytes": 32985479.932515338,
-          "p95_storage_bytes": 144708057.0,
+          "doc_recall_any": 0.9787878787878788,
+          "doc_recall_all": 0.906060606060606,
+          "ndcg_at_10": 0.9189044535437779,
+          "exact_match": 0.2606060606060606,
+          "token_f1": 0.3320110424787325,
+          "avg_total_sec": 304.03533245818124,
+          "p50_total_sec": 120.5658630291,
+          "p95_total_sec": 1311.822985173203,
+          "avg_storage_bytes": 34301129.012121215,
+          "p95_storage_bytes": 144778301.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -19548,6 +19653,59 @@
                 "dc7b770a_2",
                 "7237c430_1",
                 "3c51bd6e_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::gpt4_59149c78",
+              "category": "temporal-reasoning",
+              "query": "I mentioned that I participated in an art-related event two weeks ago. Where was that event held at?",
+              "gold": "The Metropolitan Museum of Art.",
+              "prediction": "held at the Downtown Las Vegas Events Center and also offers food, art, and activities",
+              "expected_doc_ids": [
+                "answer_d00ba6d1_1",
+                "answer_d00ba6d1_2"
+              ],
+              "retrieved_doc_ids": [
+                "b8832e94",
+                "46133663",
+                "dc644299",
+                "8255ff94",
+                "ultrachat_291317"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::gpt4_4929293b",
+              "category": "temporal-reasoning",
+              "query": "What was the the life event of one of my relatives that I participated in a week ago?",
+              "gold": "my cousin's wedding",
+              "prediction": "a blast",
+              "expected_doc_ids": [
+                "answer_add9b013_2",
+                "answer_add9b013_1"
+              ],
+              "retrieved_doc_ids": [
+                "e8f22b15",
+                "4ffa04a2_6",
+                "b1c3ec24",
+                "903b3bbf",
+                "f10e6d2c_4"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::gpt4_468eb064",
+              "category": "temporal-reasoning",
+              "query": "Who did I meet with during the lunch last Tuesday?",
+              "gold": "Emma",
+              "prediction": "Gym session (evening)",
+              "expected_doc_ids": [
+                "answer_9b09d95b_1"
+              ],
+              "retrieved_doc_ids": [
+                "c37d1365_1",
+                "dd25eeb5_1",
+                "f9d0bc67",
+                "420a0b94_2",
+                "4b29957c_1"
               ]
             }
           ],
@@ -21190,11 +21348,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.034563761709703655,
-    "doc_recall_all_delta": 0.08379678309897365,
-    "ndcg_at_10_delta": 0.05635882620606891,
-    "token_f1_delta": 0.003476416331343643,
-    "avg_storage_ratio_nova_over_stock": 0.409687135463052,
-    "avg_latency_ratio_nova_over_stock": 1.5684814659202975
+    "doc_recall_any_delta": 0.03446361237229134,
+    "doc_recall_all_delta": 0.08390044949821873,
+    "ndcg_at_10_delta": 0.05640879156413792,
+    "token_f1_delta": 0.0034973258799310125,
+    "avg_storage_ratio_nova_over_stock": 0.40850930821291204,
+    "avg_latency_ratio_nova_over_stock": 1.5659488488854085
   }
 }
