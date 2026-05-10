@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T21:15:50Z",
+  "generated_at": "2026-05-10T23:44:42Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-10T20:53:41Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-10T23:32:25Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 410,
+    "current_case_index": 415,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::06878be2"
+    "current_case_id": "longmemeval_m::195a1a1b"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 410,
-        "rows_successful": 406,
+        "rows_recorded": 415,
+        "rows_successful": 411,
         "rows_failed": 4,
         "complete": false,
-        "doc_recall_any": 0.9211822660098522,
-        "doc_recall_all": 0.7093596059113301,
-        "ndcg_at_10": 0.7629069250593176,
-        "exact_match": 0.1354679802955665,
-        "token_f1": 0.17091865508012422,
-        "avg_total_sec": 780.2693574355015,
-        "p50_total_sec": 780.1173721030354,
+        "doc_recall_any": 0.9148418491484185,
+        "doc_recall_all": 0.7055961070559611,
+        "ndcg_at_10": 0.7571067837765361,
+        "exact_match": 0.13381995133819952,
+        "token_f1": 0.17037066569954085,
+        "avg_total_sec": 780.0305415734585,
+        "p50_total_sec": 779.9600400924683,
         "p95_total_sec": 814.9022530959919,
-        "avg_storage_bytes": 408554651.3029557,
+        "avg_storage_bytes": 408431929.90510947,
         "p95_storage_bytes": 425596147.0,
         "categories": {
           "single-session-assistant": {
@@ -11722,24 +11722,75 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 7,
+            "rows_recorded": 7,
+            "rows_successful": 7,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.7153382790366966,
+            "doc_recall_any": 0.5714285714285714,
+            "doc_recall_all": 0.5714285714285714,
+            "ndcg_at_10": 0.4087647308781123,
             "exact_match": 0.0,
-            "token_f1": 0.17460317460317462,
-            "avg_total_sec": 783.0357482098043,
-            "p50_total_sec": 759.8053026851267,
+            "token_f1": 0.13979656988388495,
+            "avg_total_sec": 767.0378520424877,
+            "p50_total_sec": 760.5694659342989,
             "p95_total_sec": 806.2661937344819,
-            "avg_storage_bytes": 410493389.5,
+            "avg_storage_bytes": 401903077.28571427,
             "p95_storage_bytes": 420049734.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::75832dbd",
+                "category": "single-session-preference",
+                "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+                "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+                "prediction": "Some possible topics you might find at a literary festival include:",
+                "expected_doc_ids": [
+                  "answer_d87a6ef8"
+                ],
+                "retrieved_doc_ids": [
+                  "1273a4d5_1",
+                  "0eb5508d",
+                  "2cea94dc",
+                  "6db9bd95",
+                  "b1181a6f"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::32260d93",
+                "category": "single-session-preference",
+                "query": "Can you recommend a show or movie for me to watch tonight?",
+                "gold": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+                "prediction": "Let me know if you have any specific preferences (e.g., horro",
+                "expected_doc_ids": [
+                  "answer_0250ae1c"
+                ],
+                "retrieved_doc_ids": [
+                  "cc85ac85_1",
+                  "d683507a_2",
+                  "a0d83aad_1",
+                  "f29704ac_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::195a1a1b",
+                "category": "single-session-preference",
+                "query": "Can you suggest some activities that I can do in the evening?",
+                "gold": "The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.",
+                "prediction": "30 am, I can suggest the following options",
+                "expected_doc_ids": [
+                  "answer_6dc4305e"
+                ],
+                "retrieved_doc_ids": [
+                  "8f3c545c_3",
+                  "c37123f0",
+                  "88f339bf",
+                  "32449a42",
+                  "fd69970b"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::8a2466db",
@@ -11766,6 +11817,32 @@
                   "10466528_3",
                   "answer_555dfb94",
                   "8b8e7cf8"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::0edc2aef",
+                "category": "single-session-preference",
+                "query": "Can you suggest a hotel for my upcoming trip to Miami?",
+                "gold": "The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.",
+                "prediction": "By following these tips, you'll be able to pack efficiently and make the most of your Miami trip!",
+                "retrieved_doc_ids": [
+                  "69c17c14_2",
+                  "477ccdbe",
+                  "38f11c9e_1",
+                  "answer_d586e9cd",
+                  "ultrachat_308938"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::35a27287",
+                "category": "single-session-preference",
+                "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+                "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+                "prediction": "assistant: I'm happy to help you discover cultural events and festivals in your area that celebrate language diversity and cultural exchange!",
+                "retrieved_doc_ids": [
+                  "answer_9b182436",
+                  "8f4eb210",
+                  "cbfbad95_2"
                 ]
               }
             ]
@@ -12139,20 +12216,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 410,
-        "rows_successful": 410,
+        "rows_recorded": 414,
+        "rows_successful": 414,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9390243902439024,
-        "doc_recall_all": 0.8439024390243902,
-        "ndcg_at_10": 0.8266897746398467,
-        "exact_match": 0.15609756097560976,
-        "token_f1": 0.19292049094507396,
-        "avg_total_sec": 1299.7931853040848,
-        "p50_total_sec": 1299.785848482512,
-        "p95_total_sec": 1358.2734918240458,
-        "avg_storage_bytes": 143272589.94634145,
-        "p95_storage_bytes": 148987637.0,
+        "doc_recall_any": 0.9347826086956522,
+        "doc_recall_all": 0.8405797101449275,
+        "ndcg_at_10": 0.8226418776712767,
+        "exact_match": 0.15458937198067632,
+        "token_f1": 0.1913681969699151,
+        "avg_total_sec": 1299.6179885719926,
+        "p50_total_sec": 1299.6098827137612,
+        "p95_total_sec": 1358.0144080799073,
+        "avg_storage_bytes": 143254609.45410627,
+        "p95_storage_bytes": 148958857.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -13491,24 +13568,59 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 2,
-            "rows_recorded": 2,
-            "rows_successful": 2,
+            "expected_total": 6,
+            "rows_recorded": 6,
+            "rows_successful": 6,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 1.0,
-            "doc_recall_all": 1.0,
-            "ndcg_at_10": 0.6781035935540111,
+            "doc_recall_any": 0.6666666666666666,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.4978561567799133,
             "exact_match": 0.0,
-            "token_f1": 0.26041666666666663,
-            "avg_total_sec": 1299.5821107877418,
-            "p50_total_sec": 1270.5260287895799,
+            "token_f1": 0.10831093189964158,
+            "avg_total_sec": 1287.6342526176013,
+            "p50_total_sec": 1282.4456853466108,
             "p95_total_sec": 1328.6381927859038,
-            "avg_storage_bytes": 143538807.0,
+            "avg_storage_bytes": 142120675.0,
             "p95_storage_bytes": 146398489.0,
             "categories": {},
             "sample_errors": [],
-            "sample_misses": [],
+            "sample_misses": [
+              {
+                "case_id": "longmemeval_m::75832dbd",
+                "category": "single-session-preference",
+                "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+                "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+                "prediction": "yes",
+                "expected_doc_ids": [
+                  "answer_d87a6ef8"
+                ],
+                "retrieved_doc_ids": [
+                  "22b34813_1",
+                  "0de92c3f_2",
+                  "0eb5508d",
+                  "b1181a6f",
+                  "a6426788_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::32260d93",
+                "category": "single-session-preference",
+                "query": "Can you recommend a show or movie for me to watch tonight?",
+                "gold": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+                "prediction": "yes",
+                "expected_doc_ids": [
+                  "answer_0250ae1c"
+                ],
+                "retrieved_doc_ids": [
+                  "d683507a_2",
+                  "f29704ac_2",
+                  "bb4ee4d1",
+                  "ultrachat_306380",
+                  "064d006d_1"
+                ]
+              }
+            ],
             "sample_successes": [
               {
                 "case_id": "longmemeval_m::8a2466db",
@@ -13536,6 +13648,33 @@
                   "e5f1884d_1",
                   "5d161e05_1",
                   "d3243518_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::0edc2aef",
+                "category": "single-session-preference",
+                "query": "Can you suggest a hotel for my upcoming trip to Miami?",
+                "gold": "The user would prefer suggestions of hotels in Miami that offer great views, possibly of the ocean or the city skyline, and have unique features such as a rooftop pool or a hot tub on the balcony. They may not prefer suggestions of basic or budget hotels without these features.",
+                "prediction": "By following these tips, you'll be able to pack efficiently and make the most of your Miami trip!",
+                "retrieved_doc_ids": [
+                  "38f11c9e_1",
+                  "answer_d586e9cd",
+                  "69c17c14_2",
+                  "ultrachat_308938"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::35a27287",
+                "category": "single-session-preference",
+                "query": "Can you recommend some interesting cultural events happening around me this weekend?",
+                "gold": "The user would prefer responses that suggest cultural events where they can practice their language skills, particularly Spanish and French. They would also appreciate if the event has a focus on language learning resources. They would not prefer events that do not provide opportunities for language practice or cultural exchange.",
+                "prediction": "yes",
+                "retrieved_doc_ids": [
+                  "answer_9b182436",
+                  "cbfbad95_2",
+                  "8f4eb210",
+                  "283e5c7e_1",
+                  "73393ea3"
                 ]
               }
             ]
@@ -13903,19 +14042,19 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3396,
-      "rows_successful": 3391,
+      "rows_recorded": 3401,
+      "rows_successful": 3396,
       "rows_failed": 5,
       "complete": false,
-      "doc_recall_any": 0.8047773518136243,
-      "doc_recall_all": 0.6738425243291064,
-      "ndcg_at_10": 0.6271666708289616,
-      "exact_match": 0.0784429371866706,
-      "token_f1": 0.12293050573208332,
-      "avg_total_sec": 111.1448982876133,
-      "p50_total_sec": 6.404995651915669,
+      "doc_recall_any": 0.8041813898704359,
+      "doc_recall_all": 0.6734393404004712,
+      "ndcg_at_10": 0.6266645634096238,
+      "exact_match": 0.07832744405182568,
+      "token_f1": 0.12293483939266059,
+      "avg_total_sec": 112.10116123709497,
+      "p50_total_sec": 6.40535792382434,
       "p95_total_sec": 783.1894948920235,
-      "avg_storage_bytes": 68821542.15718077,
+      "avg_storage_bytes": 69306885.81183745,
       "p95_storage_bytes": 411983669.0,
       "categories": {
         "category_2": {
@@ -16746,21 +16885,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 62,
-          "rows_recorded": 62,
-          "rows_successful": 62,
+          "expected_total": 67,
+          "rows_recorded": 67,
+          "rows_successful": 67,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9354838709677419,
-          "doc_recall_all": 0.9354838709677419,
-          "ndcg_at_10": 0.8852430988779455,
+          "doc_recall_any": 0.8955223880597015,
+          "doc_recall_all": 0.8955223880597015,
+          "ndcg_at_10": 0.8405335625150151,
           "exact_match": 0.0,
-          "token_f1": 0.1236450105775562,
-          "avg_total_sec": 70.86316147259616,
-          "p50_total_sec": 76.7671074247919,
-          "p95_total_sec": 83.02639796584845,
-          "avg_storage_bytes": 37708382.62903226,
-          "p95_storage_bytes": 45723291.0,
+          "token_f1": 0.1238113476983482,
+          "avg_total_sec": 122.33894745042937,
+          "p50_total_sec": 79.19108318304643,
+          "p95_total_sec": 760.5694659342989,
+          "avg_storage_bytes": 64630663.95522388,
+          "p95_storage_bytes": 400937045.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -16821,6 +16960,56 @@
               "retrieved_doc_ids": [
                 "2aa70c9c_1",
                 "99883f38_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::75832dbd",
+              "category": "single-session-preference",
+              "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+              "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+              "prediction": "Some possible topics you might find at a literary festival include:",
+              "expected_doc_ids": [
+                "answer_d87a6ef8"
+              ],
+              "retrieved_doc_ids": [
+                "1273a4d5_1",
+                "0eb5508d",
+                "2cea94dc",
+                "6db9bd95",
+                "b1181a6f"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::32260d93",
+              "category": "single-session-preference",
+              "query": "Can you recommend a show or movie for me to watch tonight?",
+              "gold": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+              "prediction": "Let me know if you have any specific preferences (e.g., horro",
+              "expected_doc_ids": [
+                "answer_0250ae1c"
+              ],
+              "retrieved_doc_ids": [
+                "cc85ac85_1",
+                "d683507a_2",
+                "a0d83aad_1",
+                "f29704ac_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::195a1a1b",
+              "category": "single-session-preference",
+              "query": "Can you suggest some activities that I can do in the evening?",
+              "gold": "The user would prefer suggestions that involve relaxing activities that can be done in the evening, preferably before 9:30 pm. They would not prefer suggestions that involve using their phone or watching TV, as these activities have been affecting their sleep quality.",
+              "prediction": "30 am, I can suggest the following options",
+              "expected_doc_ids": [
+                "answer_6dc4305e"
+              ],
+              "retrieved_doc_ids": [
+                "8f3c545c_3",
+                "c37123f0",
+                "88f339bf",
+                "32449a42",
+                "fd69970b"
               ]
             }
           ],
@@ -17816,19 +18005,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3396,
-      "rows_successful": 3396,
+      "rows_recorded": 3400,
+      "rows_successful": 3400,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8392226148409894,
-      "doc_recall_all": 0.7603062426383981,
-      "ndcg_at_10": 0.6849091940520314,
-      "exact_match": 0.08362779740871613,
-      "token_f1": 0.12851128277840437,
-      "avg_total_sec": 176.21674956880315,
-      "p50_total_sec": 0.08229349786415696,
+      "doc_recall_any": 0.8388235294117647,
+      "doc_recall_all": 0.76,
+      "ndcg_at_10": 0.684583103751256,
+      "exact_match": 0.08352941176470588,
+      "token_f1": 0.1283980436980958,
+      "avg_total_sec": 177.5172714205252,
+      "p50_total_sec": 0.08235793188214302,
       "p95_total_sec": 1306.2992919739336,
-      "avg_storage_bytes": 27695891.90106007,
+      "avg_storage_bytes": 27829675.09764706,
       "p95_storage_bytes": 143849617.0,
       "categories": {
         "category_2": {
@@ -20704,21 +20893,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 62,
-          "rows_recorded": 62,
-          "rows_successful": 62,
+          "expected_total": 66,
+          "rows_recorded": 66,
+          "rows_successful": 66,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.967741935483871,
-          "doc_recall_all": 0.967741935483871,
-          "ndcg_at_10": 0.8950331684220154,
+          "doc_recall_any": 0.9393939393939394,
+          "doc_recall_all": 0.9393939393939394,
+          "ndcg_at_10": 0.8654997908444911,
           "exact_match": 0.0,
-          "token_f1": 0.13127758369666062,
-          "avg_total_sec": 104.42326993224842,
-          "p50_total_sec": 119.02456480218098,
-          "p95_total_sec": 130.86568886972964,
-          "avg_storage_bytes": 12386258.096774194,
-          "p95_storage_bytes": 15548373.0,
+          "token_f1": 0.12527640071602233,
+          "avg_total_sec": 175.77097015044737,
+          "p50_total_sec": 120.04435518803075,
+          "p95_total_sec": 1282.4456853466108,
+          "avg_storage_bytes": 20205976.333333332,
+          "p95_storage_bytes": 141778869.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -20754,6 +20943,40 @@
                 "c927ffbb",
                 "32f28c7b_1",
                 "87cfeb28_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::75832dbd",
+              "category": "single-session-preference",
+              "query": "Can you recommend some recent publications or conferences that I might find interesting?",
+              "gold": "The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",
+              "prediction": "yes",
+              "expected_doc_ids": [
+                "answer_d87a6ef8"
+              ],
+              "retrieved_doc_ids": [
+                "22b34813_1",
+                "0de92c3f_2",
+                "0eb5508d",
+                "b1181a6f",
+                "a6426788_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::32260d93",
+              "category": "single-session-preference",
+              "query": "Can you recommend a show or movie for me to watch tonight?",
+              "gold": "The user would prefer recommendations for stand-up comedy specials on Netflix, especially those that are known for their storytelling. They may not prefer recommendations for other genres or platforms.",
+              "prediction": "yes",
+              "expected_doc_ids": [
+                "answer_0250ae1c"
+              ],
+              "retrieved_doc_ids": [
+                "d683507a_2",
+                "f29704ac_2",
+                "bb4ee4d1",
+                "ultrachat_306380",
+                "064d006d_1"
               ]
             }
           ],
@@ -21689,11 +21912,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03444526302736506,
-    "doc_recall_all_delta": 0.08646371830929167,
-    "ndcg_at_10_delta": 0.05774252322306983,
-    "token_f1_delta": 0.005580777046321053,
-    "avg_storage_ratio_nova_over_stock": 0.40243056218946277,
-    "avg_latency_ratio_nova_over_stock": 1.5854686295434028
+    "doc_recall_any_delta": 0.03464213954132889,
+    "doc_recall_all_delta": 0.08656065959952886,
+    "ndcg_at_10_delta": 0.05791854034163213,
+    "token_f1_delta": 0.005463204305435204,
+    "avg_storage_ratio_nova_over_stock": 0.4015427150081791,
+    "avg_latency_ratio_nova_over_stock": 1.583545339419585
   }
 }
