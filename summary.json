@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T00:05:13Z",
+  "generated_at": "2026-05-11T02:35:43Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-10T23:44:44Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-11T02:22:58Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 415,
+    "current_case_index": 420,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::195a1a1b"
+    "current_case_id": "longmemeval_m::6b7dfb22"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,20 +10393,20 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 415,
-        "rows_successful": 411,
+        "rows_recorded": 420,
+        "rows_successful": 416,
         "rows_failed": 4,
         "complete": false,
-        "doc_recall_any": 0.9148418491484185,
-        "doc_recall_all": 0.7055961070559611,
-        "ndcg_at_10": 0.7571067837765361,
-        "exact_match": 0.13381995133819952,
-        "token_f1": 0.17037066569954085,
-        "avg_total_sec": 780.0305415734585,
-        "p50_total_sec": 779.9600400924683,
-        "p95_total_sec": 814.9022530959919,
-        "avg_storage_bytes": 408431929.90510947,
-        "p95_storage_bytes": 425596147.0,
+        "doc_recall_any": 0.9134615384615384,
+        "doc_recall_all": 0.7067307692307693,
+        "ndcg_at_10": 0.7555332160714611,
+        "exact_match": 0.13221153846153846,
+        "token_f1": 0.16939643174807137,
+        "avg_total_sec": 779.9510219995617,
+        "p50_total_sec": 779.8458367967978,
+        "p95_total_sec": 814.0073625445366,
+        "avg_storage_bytes": 408387610.43028843,
+        "p95_storage_bytes": 425449790.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -11722,21 +11722,21 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5714285714285714,
-            "doc_recall_all": 0.5714285714285714,
-            "ndcg_at_10": 0.4087647308781123,
+            "doc_recall_any": 0.6666666666666666,
+            "doc_recall_all": 0.6666666666666666,
+            "ndcg_at_10": 0.49935690580985365,
             "exact_match": 0.0,
-            "token_f1": 0.13979656988388495,
-            "avg_total_sec": 767.0378520424877,
-            "p50_total_sec": 760.5694659342989,
-            "p95_total_sec": 806.2661937344819,
-            "avg_storage_bytes": 401903077.28571427,
-            "p95_storage_bytes": 420049734.0,
+            "token_f1": 0.11876233282280062,
+            "avg_total_sec": 769.6947941186372,
+            "p50_total_sec": 772.2847821060568,
+            "p95_total_sec": 787.5836775870994,
+            "avg_storage_bytes": 403087024.0833333,
+            "p95_storage_bytes": 415905092.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -11788,6 +11788,23 @@
                   "88f339bf",
                   "32449a42",
                   "fd69970b"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::06f04340",
+                "category": "single-session-preference",
+                "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+                "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+                "prediction": "a great choice for a dinner party, and pairing it with a flavorful pesto cream sauce and roasted vegetables (like asparagus, bell peppers, and zucchini) will make for a well-rounded, impressive dish",
+                "expected_doc_ids": [
+                  "answer_92d5f7cd"
+                ],
+                "retrieved_doc_ids": [
+                  "ede65c84_1",
+                  "ff67236f_2",
+                  "bf25a889",
+                  "1970789e",
+                  "48613514_4"
                 ]
               }
             ],
@@ -11843,6 +11860,53 @@
                   "answer_9b182436",
                   "8f4eb210",
                   "cbfbad95_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::afdc33df",
+                "category": "single-session-preference",
+                "query": "My kitchen's becoming a bit of a mess again. Any tips for keeping it clean?",
+                "gold": "The user would prefer responses that acknowledge and build upon their existing efforts to organize their kitchen, such as utilizing their new utensil holder to keep countertops clutter-free. They would also appreciate tips that address their concern for maintaining their granite surface, particularly around the sink area. Preferred responses would provide practical and actionable steps to maintain cleanliness, leveraging the user's current tools and setup. They might not prefer generic or vague suggestions that do not take into account their specific kitchen setup or concerns.",
+                "prediction": "you have any tips on how to optimize my daily cleaning routine to make the most of my time",
+                "retrieved_doc_ids": [
+                  "d6d87935_1",
+                  "answer_8549e5e0"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::caf03d32",
+                "category": "single-session-preference",
+                "query": "I've been struggling with my slow cooker recipes. Any advice on getting better results?",
+                "gold": "The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.",
+                "prediction": "you have any recommendations",
+                "retrieved_doc_ids": [
+                  "answer_2fc6aabb",
+                  "297a6f98_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::54026fce",
+                "category": "single-session-preference",
+                "query": "I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+                "gold": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+                "prediction": "we think we can stay connected and build our team",
+                "retrieved_doc_ids": [
+                  "answer_f7b22c66",
+                  "ee75cdb9_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6b7dfb22",
+                "category": "single-session-preference",
+                "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+                "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+                "prediction": "you have any specific topics or areas you'd like to tackle with your new material",
+                "retrieved_doc_ids": [
+                  "ac39df53",
+                  "4dd737a9_2",
+                  "answer_f6502d0f",
+                  "27073fcf_4",
+                  "cd6be104_1"
                 ]
               }
             ]
@@ -12216,19 +12280,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 415,
-        "rows_successful": 415,
+        "rows_recorded": 419,
+        "rows_successful": 419,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9349397590361446,
-        "doc_recall_all": 0.8409638554216867,
-        "ndcg_at_10": 0.8213561498366903,
-        "exact_match": 0.15421686746987953,
-        "token_f1": 0.19125969881676982,
-        "avg_total_sec": 1299.4477295160698,
+        "doc_recall_any": 0.9331742243436754,
+        "doc_recall_all": 0.8400954653937948,
+        "ndcg_at_10": 0.819794109631976,
+        "exact_match": 0.15274463007159905,
+        "token_f1": 0.19096921038827902,
+        "avg_total_sec": 1299.3590086984598,
         "p50_total_sec": 1299.6098827137612,
         "p95_total_sec": 1358.0144080799073,
-        "avg_storage_bytes": 143237424.82650602,
+        "avg_storage_bytes": 143231123.6157518,
         "p95_storage_bytes": 148958857.0,
         "categories": {
           "single-session-assistant": {
@@ -13568,20 +13632,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 7,
-            "rows_recorded": 7,
-            "rows_successful": 7,
+            "expected_total": 11,
+            "rows_recorded": 11,
+            "rows_successful": 11,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7142857142857143,
-            "doc_recall_all": 0.7142857142857143,
-            "ndcg_at_10": 0.4680288238567668,
+            "doc_recall_any": 0.7272727272727273,
+            "doc_recall_all": 0.7272727272727273,
+            "ndcg_at_10": 0.5370119564153477,
             "exact_match": 0.0,
-            "token_f1": 0.11374386497321194,
-            "avg_total_sec": 1279.2522851528067,
+            "token_f1": 0.13086647259471948,
+            "avg_total_sec": 1283.216626505029,
             "p50_total_sec": 1282.4456853466108,
             "p95_total_sec": 1328.6381927859038,
-            "avg_storage_bytes": 141263862.7142857,
+            "avg_storage_bytes": 141741502.8181818,
             "p95_storage_bytes": 146398489.0,
             "categories": {},
             "sample_errors": [],
@@ -13618,6 +13682,23 @@
                   "bb4ee4d1",
                   "ultrachat_306380",
                   "064d006d_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::06f04340",
+                "category": "single-session-preference",
+                "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+                "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+                "prediction": "a more intense, pungent flavor that might overpower the other ingredients in your Italian Herb Sourdough",
+                "expected_doc_ids": [
+                  "answer_92d5f7cd"
+                ],
+                "retrieved_doc_ids": [
+                  "ff67236f_2",
+                  "48613514_4",
+                  "ede65c84_1",
+                  "18ac69d3_2",
+                  "bf25a889"
                 ]
               }
             ],
@@ -13689,6 +13770,48 @@
                   "fd69970b",
                   "ultrachat_544442",
                   "928890e4_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::afdc33df",
+                "category": "single-session-preference",
+                "query": "My kitchen's becoming a bit of a mess again. Any tips for keeping it clean?",
+                "gold": "The user would prefer responses that acknowledge and build upon their existing efforts to organize their kitchen, such as utilizing their new utensil holder to keep countertops clutter-free. They would also appreciate tips that address their concern for maintaining their granite surface, particularly around the sink area. Preferred responses would provide practical and actionable steps to maintain cleanliness, leveraging the user's current tools and setup. They might not prefer generic or vague suggestions that do not take into account their specific kitchen setup or concerns.",
+                "prediction": "you have any tips on how to keep the new litter box clean and odor-free",
+                "retrieved_doc_ids": [
+                  "d6d87935_1",
+                  "answer_8549e5e0",
+                  "7ec2ae36_2",
+                  "04f989a9",
+                  "8425ea3e"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::caf03d32",
+                "category": "single-session-preference",
+                "query": "I've been struggling with my slow cooker recipes. Any advice on getting better results?",
+                "gold": "The user would prefer responses that provide tips and advice specifically tailored to their slow cooker experiences, utilizing their recent success with beef stew and interest in making yogurt in the slow cooker. They might not prefer general slow cooker recipes or advice unrelated to their specific experiences and interests.",
+                "prediction": "you have any recommendations for Korean cooking channels or recipes I should check out",
+                "retrieved_doc_ids": [
+                  "answer_2fc6aabb",
+                  "d3853740",
+                  "6d734945",
+                  "eb5d5a93_2",
+                  "63b06488_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::54026fce",
+                "category": "single-session-preference",
+                "query": "I've been thinking about ways to stay connected with my colleagues. Any suggestions?",
+                "gold": "The user would prefer responses that acknowledge their desire for social interaction and collaboration while working remotely, utilizing their previous experiences with company initiatives and team collaborations. They might prefer suggestions of virtual team-building activities, regular check-ins, or joining interest-based groups within the company. The user may not prefer generic suggestions that do not take into account their specific work situation or previous attempts at staying connected with colleagues.",
+                "prediction": "wondering if you could provide some advice on how to get started with that",
+                "retrieved_doc_ids": [
+                  "answer_f7b22c66",
+                  "70764af1_5",
+                  "1e058dfd_2",
+                  "7ba84ed3_1",
+                  "a910073f"
                 ]
               }
             ]
@@ -14056,20 +14179,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3401,
-      "rows_successful": 3396,
+      "rows_recorded": 3406,
+      "rows_successful": 3401,
       "rows_failed": 5,
       "complete": false,
-      "doc_recall_any": 0.8041813898704359,
-      "doc_recall_all": 0.6734393404004712,
-      "ndcg_at_10": 0.6266645634096238,
-      "exact_match": 0.07832744405182568,
-      "token_f1": 0.12293483939266059,
-      "avg_total_sec": 112.10116123709497,
-      "p50_total_sec": 6.40535792382434,
-      "p95_total_sec": 783.1894948920235,
-      "avg_storage_bytes": 69306885.81183745,
-      "p95_storage_bytes": 411983669.0,
+      "doc_recall_any": 0.804175242575713,
+      "doc_recall_all": 0.673625404292855,
+      "ndcg_at_10": 0.6266638597743762,
+      "exact_match": 0.0782122905027933,
+      "token_f1": 0.1228854121088391,
+      "avg_total_sec": 113.07339492099405,
+      "p50_total_sec": 6.4055650806985795,
+      "p95_total_sec": 783.2132275970653,
+      "avg_storage_bytes": 69800031.45104381,
+      "p95_storage_bytes": 412017516.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -16899,21 +17022,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 67,
-          "rows_recorded": 67,
-          "rows_successful": 67,
+          "expected_total": 72,
+          "rows_recorded": 72,
+          "rows_successful": 72,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.8955223880597015,
-          "doc_recall_all": 0.8955223880597015,
-          "ndcg_at_10": 0.8405335625150151,
+          "doc_recall_any": 0.8888888888888888,
+          "doc_recall_all": 0.8888888888888888,
+          "ndcg_at_10": 0.8256483116955204,
           "exact_match": 0.0,
-          "token_f1": 0.1238113476983482,
-          "avg_total_sec": 122.33894745042937,
-          "p50_total_sec": 79.19108318304643,
-          "p95_total_sec": 760.5694659342989,
-          "avg_storage_bytes": 64630663.95522388,
-          "p95_storage_bytes": 400937045.0,
+          "token_f1": 0.12141572639549641,
+          "avg_total_sec": 167.55252839312502,
+          "p50_total_sec": 79.71297306800261,
+          "p95_total_sec": 776.658373169601,
+          "avg_storage_bytes": 88249683.79166667,
+          "p95_storage_bytes": 403738498.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17024,6 +17147,23 @@
                 "88f339bf",
                 "32449a42",
                 "fd69970b"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::06f04340",
+              "category": "single-session-preference",
+              "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+              "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+              "prediction": "a great choice for a dinner party, and pairing it with a flavorful pesto cream sauce and roasted vegetables (like asparagus, bell peppers, and zucchini) will make for a well-rounded, impressive dish",
+              "expected_doc_ids": [
+                "answer_92d5f7cd"
+              ],
+              "retrieved_doc_ids": [
+                "ede65c84_1",
+                "ff67236f_2",
+                "bf25a889",
+                "1970789e",
+                "48613514_4"
               ]
             }
           ],
@@ -18019,20 +18159,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3401,
-      "rows_successful": 3401,
+      "rows_recorded": 3405,
+      "rows_successful": 3405,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8388709203175536,
-      "doc_recall_all": 0.7600705674801529,
-      "ndcg_at_10": 0.6844668090504522,
-      "exact_match": 0.08350485151426051,
-      "token_f1": 0.12840331962274049,
-      "avg_total_sec": 177.82642849460444,
-      "p50_total_sec": 0.08235793188214302,
-      "p95_total_sec": 1306.2992919739336,
-      "avg_storage_bytes": 27861516.707144957,
-      "p95_storage_bytes": 143849617.0,
+      "doc_recall_any": 0.8387665198237886,
+      "doc_recall_all": 0.7600587371512482,
+      "ndcg_at_10": 0.6844354030349954,
+      "exact_match": 0.08340675477239354,
+      "token_f1": 0.12844141385629068,
+      "avg_total_sec": 179.13312781369615,
+      "p50_total_sec": 0.08262065704911947,
+      "p95_total_sec": 1306.3701689383015,
+      "avg_storage_bytes": 27996278.35917768,
+      "p95_storage_bytes": 143863273.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -20907,21 +21047,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 67,
-          "rows_recorded": 67,
-          "rows_successful": 67,
+          "expected_total": 71,
+          "rows_recorded": 71,
+          "rows_successful": 71,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9402985074626866,
-          "doc_recall_all": 0.9402985074626866,
-          "ndcg_at_10": 0.8568962839112583,
+          "doc_recall_any": 0.9295774647887324,
+          "doc_recall_all": 0.9295774647887324,
+          "ndcg_at_10": 0.8456757855721939,
           "exact_match": 0.0,
-          "token_f1": 0.12559080463689715,
-          "avg_total_sec": 191.49021657154574,
-          "p50_total_sec": 120.41652655508369,
-          "p95_total_sec": 1282.4456853466108,
-          "avg_storage_bytes": 21936081.0,
-          "p95_storage_bytes": 141778869.0,
+          "token_f1": 0.1275761697803034,
+          "avg_total_sec": 253.3867803630878,
+          "p50_total_sec": 121.33382547507063,
+          "p95_total_sec": 1284.7071861047298,
+          "avg_storage_bytes": 28732773.507042255,
+          "p95_storage_bytes": 141834881.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -20991,6 +21131,23 @@
                 "bb4ee4d1",
                 "ultrachat_306380",
                 "064d006d_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::06f04340",
+              "category": "single-session-preference",
+              "query": "What should I serve for dinner this weekend with my homegrown ingredients?",
+              "gold": "The user would prefer dinner suggestions that incorporate their homegrown cherry tomatoes and herbs like basil and mint, highlighting recipes that showcase their garden produce. They might not prefer suggestions that do not utilize these specific ingredients or do not emphasize the use of homegrown elements.",
+              "prediction": "a more intense, pungent flavor that might overpower the other ingredients in your Italian Herb Sourdough",
+              "expected_doc_ids": [
+                "answer_92d5f7cd"
+              ],
+              "retrieved_doc_ids": [
+                "ff67236f_2",
+                "48613514_4",
+                "ede65c84_1",
+                "18ac69d3_2",
+                "bf25a889"
               ]
             }
           ],
@@ -21926,11 +22083,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.034689530447117756,
-    "doc_recall_all_delta": 0.08663122707968174,
-    "ndcg_at_10_delta": 0.057802245640828365,
-    "token_f1_delta": 0.005468480230079897,
-    "avg_storage_ratio_nova_over_stock": 0.4020021442427338,
-    "avg_latency_ratio_nova_over_stock": 1.5863031794871414
+    "doc_recall_any_delta": 0.034591277248075536,
+    "doc_recall_all_delta": 0.08643333285839316,
+    "ndcg_at_10_delta": 0.057771543260619174,
+    "token_f1_delta": 0.005556001747451578,
+    "avg_storage_ratio_nova_over_stock": 0.40109263244119947,
+    "avg_latency_ratio_nova_over_stock": 1.584219947927264
   }
 }
