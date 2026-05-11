@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T02:56:53Z",
+  "generated_at": "2026-05-11T05:26:48Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-11T02:35:45Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-11T05:13:45Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 420,
+    "current_case_index": 425,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::6b7dfb22"
+    "current_case_id": "longmemeval_m::57f827a0"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 420,
-        "rows_successful": 416,
+        "rows_recorded": 425,
+        "rows_successful": 421,
         "rows_failed": 4,
         "complete": false,
-        "doc_recall_any": 0.9134615384615384,
-        "doc_recall_all": 0.7067307692307693,
-        "ndcg_at_10": 0.7555332160714611,
-        "exact_match": 0.13221153846153846,
-        "token_f1": 0.16939643174807137,
-        "avg_total_sec": 779.9510219995617,
+        "doc_recall_any": 0.9073634204275535,
+        "doc_recall_all": 0.7030878859857482,
+        "ndcg_at_10": 0.7501230828639616,
+        "exact_match": 0.13064133016627077,
+        "token_f1": 0.16872830074601705,
+        "avg_total_sec": 779.8665868704497,
         "p50_total_sec": 779.8458367967978,
         "p95_total_sec": 814.0073625445366,
-        "avg_storage_bytes": 408387610.43028843,
+        "avg_storage_bytes": 408359850.27078384,
         "p95_storage_bytes": 425449790.0,
         "categories": {
           "single-session-assistant": {
@@ -11722,20 +11722,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 17,
+            "rows_recorded": 17,
+            "rows_successful": 17,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6666666666666666,
-            "doc_recall_all": 0.6666666666666666,
-            "ndcg_at_10": 0.49935690580985365,
+            "doc_recall_any": 0.5882352941176471,
+            "doc_recall_all": 0.5882352941176471,
+            "ndcg_at_10": 0.440722521748132,
             "exact_match": 0.0,
-            "token_f1": 0.11876233282280062,
-            "avg_total_sec": 769.6947941186372,
+            "token_f1": 0.11710864710288735,
+            "avg_total_sec": 770.6203205920756,
             "p50_total_sec": 772.2847821060568,
             "p95_total_sec": 787.5836775870994,
-            "avg_storage_bytes": 403087024.0833333,
+            "avg_storage_bytes": 403958547.88235295,
             "p95_storage_bytes": 415905092.0,
             "categories": {},
             "sample_errors": [],
@@ -11805,6 +11805,56 @@
                   "bf25a889",
                   "1970789e",
                   "48613514_4"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::09d032c9",
+                "category": "single-session-preference",
+                "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+                "gold": "The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.",
+                "prediction": "relatively new, the battery might still be under warranty",
+                "expected_doc_ids": [
+                  "answer_b10dce5e"
+                ],
+                "retrieved_doc_ids": [
+                  "b2ff54ec_1",
+                  "ce153299_1",
+                  "af97ab2c_2",
+                  "f334ad3a_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::38146c39",
+                "category": "single-session-preference",
+                "query": "I've been feeling like my chocolate chip cookies need something extra. Any advice?",
+                "gold": "The user would prefer responses that build upon their previous experimentation with turbinado sugar, suggesting ingredients or techniques that complement its richer flavor. They might not prefer generic cookie-making advice or suggestions that don't take into account their existing use of turbinado sugar.",
+                "prediction": "the one I achieved with my recent chocolate cake",
+                "expected_doc_ids": [
+                  "answer_772472c8"
+                ],
+                "retrieved_doc_ids": [
+                  "c14dbe17",
+                  "92bcdcc2_2",
+                  "ultrachat_204669",
+                  "385a60c8_1",
+                  "80dc42f7_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::57f827a0",
+                "category": "single-session-preference",
+                "query": "I was thinking about rearranging the furniture in my bedroom this weekend. Any tips?",
+                "gold": "The user would prefer responses that take into account their existing plans to replace the bedroom dresser and their interest in mid-century modern style, suggesting furniture layouts that accommodate the new dresser and incorporate elements of this design aesthetic. They might not prefer general furniture arrangement tips or suggestions that do not consider their specific design preferences.",
+                "prediction": "you have any suggestions on how I can find the perfect pillows that will tie everything together",
+                "expected_doc_ids": [
+                  "answer_1bde8d3b"
+                ],
+                "retrieved_doc_ids": [
+                  "fdcdece0",
+                  "7c97ba66_7",
+                  "55ca8b20_2",
+                  "330c05e7_2",
+                  "89464e43"
                 ]
               }
             ],
@@ -11907,6 +11957,31 @@
                   "answer_f6502d0f",
                   "27073fcf_4",
                   "cd6be104_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1a1907b4",
+                "category": "single-session-preference",
+                "query": "I've been thinking about making a cocktail for an upcoming get-together, but I'm not sure which one to choose. Any suggestions?",
+                "gold": "Considering their mixology class background, the user would prefer cocktail suggestions that build upon their existing skills and interests, such as creative variations of classic cocktails or innovative twists on familiar flavors. They might appreciate recommendations that incorporate their experience with refreshing summer drinks like Pimm's Cup. The user would not prefer overly simplistic or basic cocktail recipes, and may not be interested in suggestions that don't take into account their mixology class background.",
+                "prediction": "thinking of experimenting with some new cocktails this weekend",
+                "retrieved_doc_ids": [
+                  "answer_719502eb",
+                  "76703db4_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::d24813b1",
+                "category": "single-session-preference",
+                "query": "I'm thinking of inviting my colleagues over for a small gathering. Any tips on what to bake?",
+                "gold": "The user would prefer baking suggestions that take into account their previous success with the lemon poppyseed cake, such as variations of that recipe or other desserts that share similar qualities. They might prefer suggestions that balance impressiveness with manageability, considering their previous experience. The user may not prefer overly complex or unfamiliar recipes, or suggestions that do not build upon their existing baking experience.",
+                "prediction": "thinking of doing a seasonal theme, what are some other spring-inspired dishes I could serve",
+                "retrieved_doc_ids": [
+                  "d18b9a97_2",
+                  "980c17dd",
+                  "answer_7c0ade93",
+                  "e4e64e80_6",
+                  "4bfcc251_1"
                 ]
               }
             ]
@@ -12280,19 +12355,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 420,
-        "rows_successful": 420,
+        "rows_recorded": 424,
+        "rows_successful": 424,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9333333333333333,
-        "doc_recall_all": 0.8404761904761905,
-        "ndcg_at_10": 0.8193444325937367,
-        "exact_match": 0.1523809523809524,
-        "token_f1": 0.19051452179211645,
-        "avg_total_sec": 1299.2849702476547,
-        "p50_total_sec": 1299.6098827137612,
+        "doc_recall_any": 0.9292452830188679,
+        "doc_recall_all": 0.8372641509433962,
+        "ndcg_at_10": 0.8154613005729737,
+        "exact_match": 0.1509433962264151,
+        "token_f1": 0.18887444768715936,
+        "avg_total_sec": 1299.123362908588,
+        "p50_total_sec": 1299.5035858098418,
         "p95_total_sec": 1358.0144080799073,
-        "avg_storage_bytes": 143224269.7904762,
+        "avg_storage_bytes": 143214251.56603774,
         "p95_storage_bytes": 148958857.0,
         "categories": {
           "single-session-assistant": {
@@ -13632,20 +13707,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 12,
-            "rows_recorded": 12,
-            "rows_successful": 12,
+            "expected_total": 16,
+            "rows_recorded": 16,
+            "rows_successful": 16,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.75,
-            "doc_recall_all": 0.75,
-            "ndcg_at_10": 0.5448384395116902,
+            "doc_recall_any": 0.6875,
+            "doc_recall_all": 0.6875,
+            "ndcg_at_10": 0.5105619392319838,
             "exact_match": 0.0,
-            "token_f1": 0.1199609332118262,
-            "avg_total_sec": 1281.9704792429693,
+            "token_f1": 0.09413736657553631,
+            "avg_total_sec": 1282.0165075088735,
             "p50_total_sec": 1282.4456853466108,
             "p95_total_sec": 1309.1832690155134,
-            "avg_storage_bytes": 141625754.0,
+            "avg_storage_bytes": 141759900.0,
             "p95_storage_bytes": 144601093.0,
             "categories": {},
             "sample_errors": [],
@@ -13699,6 +13774,40 @@
                   "ede65c84_1",
                   "18ac69d3_2",
                   "bf25a889"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::09d032c9",
+                "category": "single-session-preference",
+                "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+                "gold": "The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.",
+                "prediction": "00 AM, but I end up hitting the snooze button multiple times",
+                "expected_doc_ids": [
+                  "answer_b10dce5e"
+                ],
+                "retrieved_doc_ids": [
+                  "b2ff54ec_1",
+                  "bd26a341",
+                  "d36d11b9_1",
+                  "7c7a2ed8_3",
+                  "55cc1ba3_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::38146c39",
+                "category": "single-session-preference",
+                "query": "I've been feeling like my chocolate chip cookies need something extra. Any advice?",
+                "gold": "The user would prefer responses that build upon their previous experimentation with turbinado sugar, suggesting ingredients or techniques that complement its richer flavor. They might not prefer generic cookie-making advice or suggestions that don't take into account their existing use of turbinado sugar.",
+                "prediction": "the one I achieved with my recent chocolate cake",
+                "expected_doc_ids": [
+                  "answer_772472c8"
+                ],
+                "retrieved_doc_ids": [
+                  "93ff2f73",
+                  "80dc42f7_1",
+                  "982e4634",
+                  "d9868305_2",
+                  "ultrachat_113447"
                 ]
               }
             ],
@@ -13826,6 +13935,34 @@
                   "cd6be104_1",
                   "5937bdb7_1",
                   "5aaf223c_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::1a1907b4",
+                "category": "single-session-preference",
+                "query": "I've been thinking about making a cocktail for an upcoming get-together, but I'm not sure which one to choose. Any suggestions?",
+                "gold": "Considering their mixology class background, the user would prefer cocktail suggestions that build upon their existing skills and interests, such as creative variations of classic cocktails or innovative twists on familiar flavors. They might appreciate recommendations that incorporate their experience with refreshing summer drinks like Pimm's Cup. The user would not prefer overly simplistic or basic cocktail recipes, and may not be interested in suggestions that don't take into account their mixology class background.",
+                "prediction": "about more than just you",
+                "retrieved_doc_ids": [
+                  "8d4e44c6",
+                  "answer_719502eb",
+                  "1f035408",
+                  "e97c7ca6",
+                  "36359cba_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::d24813b1",
+                "category": "single-session-preference",
+                "query": "I'm thinking of inviting my colleagues over for a small gathering. Any tips on what to bake?",
+                "gold": "The user would prefer baking suggestions that take into account their previous success with the lemon poppyseed cake, such as variations of that recipe or other desserts that share similar qualities. They might prefer suggestions that balance impressiveness with manageability, considering their previous experience. The user may not prefer overly complex or unfamiliar recipes, or suggestions that do not build upon their existing baking experience.",
+                "prediction": "you have any tips on how to declutter and organize a small space efficiently",
+                "retrieved_doc_ids": [
+                  "answer_7c0ade93",
+                  "4bfcc251_1",
+                  "fb3b6003",
+                  "fe1faff9_1",
+                  "d18b9a97_2"
                 ]
               }
             ]
@@ -14193,20 +14330,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3406,
-      "rows_successful": 3401,
+      "rows_recorded": 3411,
+      "rows_successful": 3406,
       "rows_failed": 5,
       "complete": false,
-      "doc_recall_any": 0.804175242575713,
-      "doc_recall_all": 0.673625404292855,
-      "ndcg_at_10": 0.6266638597743762,
-      "exact_match": 0.0782122905027933,
-      "token_f1": 0.1228854121088391,
-      "avg_total_sec": 113.07339492099405,
-      "p50_total_sec": 6.4055650806985795,
-      "p95_total_sec": 783.2132275970653,
-      "avg_storage_bytes": 69800031.45104381,
-      "p95_storage_bytes": 412017516.0,
+      "doc_recall_any": 0.8035819142689372,
+      "doc_recall_all": 0.6732237228420435,
+      "ndcg_at_10": 0.6261843179954943,
+      "exact_match": 0.07809747504403992,
+      "token_f1": 0.12287110557517242,
+      "avg_total_sec": 114.04193307308937,
+      "p50_total_sec": 6.405654186848551,
+      "p95_total_sec": 783.2581068156287,
+      "avg_storage_bytes": 70293645.91603054,
+      "p95_storage_bytes": 412054781.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17036,21 +17173,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 72,
-          "rows_recorded": 72,
-          "rows_successful": 72,
+          "expected_total": 77,
+          "rows_recorded": 77,
+          "rows_successful": 77,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.8888888888888888,
-          "doc_recall_all": 0.8888888888888888,
-          "ndcg_at_10": 0.8256483116955204,
+          "doc_recall_any": 0.8571428571428571,
+          "doc_recall_all": 0.8571428571428571,
+          "ndcg_at_10": 0.7915153044425646,
           "exact_match": 0.0,
-          "token_f1": 0.12141572639549641,
-          "avg_total_sec": 167.55252839312502,
-          "p50_total_sec": 79.71297306800261,
-          "p95_total_sec": 776.658373169601,
-          "avg_storage_bytes": 88249683.79166667,
-          "p95_storage_bytes": 403738498.0,
+          "token_f1": 0.12087832866689895,
+          "avg_total_sec": 206.85701253177453,
+          "p50_total_sec": 80.17538720369339,
+          "p95_total_sec": 782.584340092726,
+          "avg_storage_bytes": 108886081.27272727,
+          "p95_storage_bytes": 410618656.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17178,6 +17315,56 @@
                 "bf25a889",
                 "1970789e",
                 "48613514_4"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::09d032c9",
+              "category": "single-session-preference",
+              "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+              "gold": "The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.",
+              "prediction": "relatively new, the battery might still be under warranty",
+              "expected_doc_ids": [
+                "answer_b10dce5e"
+              ],
+              "retrieved_doc_ids": [
+                "b2ff54ec_1",
+                "ce153299_1",
+                "af97ab2c_2",
+                "f334ad3a_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::38146c39",
+              "category": "single-session-preference",
+              "query": "I've been feeling like my chocolate chip cookies need something extra. Any advice?",
+              "gold": "The user would prefer responses that build upon their previous experimentation with turbinado sugar, suggesting ingredients or techniques that complement its richer flavor. They might not prefer generic cookie-making advice or suggestions that don't take into account their existing use of turbinado sugar.",
+              "prediction": "the one I achieved with my recent chocolate cake",
+              "expected_doc_ids": [
+                "answer_772472c8"
+              ],
+              "retrieved_doc_ids": [
+                "c14dbe17",
+                "92bcdcc2_2",
+                "ultrachat_204669",
+                "385a60c8_1",
+                "80dc42f7_1"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::57f827a0",
+              "category": "single-session-preference",
+              "query": "I was thinking about rearranging the furniture in my bedroom this weekend. Any tips?",
+              "gold": "The user would prefer responses that take into account their existing plans to replace the bedroom dresser and their interest in mid-century modern style, suggesting furniture layouts that accommodate the new dresser and incorporate elements of this design aesthetic. They might not prefer general furniture arrangement tips or suggestions that do not consider their specific design preferences.",
+              "prediction": "you have any suggestions on how I can find the perfect pillows that will tie everything together",
+              "expected_doc_ids": [
+                "answer_1bde8d3b"
+              ],
+              "retrieved_doc_ids": [
+                "fdcdece0",
+                "7c97ba66_7",
+                "55ca8b20_2",
+                "330c05e7_2",
+                "89464e43"
               ]
             }
           ],
@@ -18173,20 +18360,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3406,
-      "rows_successful": 3406,
+      "rows_recorded": 3410,
+      "rows_successful": 3410,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8388138578978274,
-      "doc_recall_all": 0.760129183793306,
-      "ndcg_at_10": 0.6844196938014477,
-      "exact_match": 0.08338226658837346,
-      "token_f1": 0.12840370351751904,
-      "avg_total_sec": 179.45289579124946,
-      "p50_total_sec": 0.08262065704911947,
-      "p95_total_sec": 1306.3701689383015,
-      "avg_storage_bytes": 28029266.098062243,
-      "p95_storage_bytes": 143863273.0,
+      "doc_recall_any": 0.83841642228739,
+      "doc_recall_all": 0.7598240469208211,
+      "ndcg_at_10": 0.6840951339710564,
+      "exact_match": 0.08328445747800586,
+      "token_f1": 0.1282726336795708,
+      "avg_total_sec": 180.74638751736717,
+      "p50_total_sec": 0.08276776084676385,
+      "p95_total_sec": 1306.5029300590977,
+      "avg_storage_bytes": 28163146.53431085,
+      "p95_storage_bytes": 143870817.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -21061,21 +21248,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 72,
-          "rows_recorded": 72,
-          "rows_successful": 72,
+          "expected_total": 76,
+          "rows_recorded": 76,
+          "rows_successful": 76,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9305555555555556,
-          "doc_recall_all": 0.9305555555555556,
-          "ndcg_at_10": 0.8426932017944059,
+          "doc_recall_any": 0.9078947368421053,
+          "doc_recall_all": 0.9078947368421053,
+          "ndcg_at_10": 0.81980053003643,
           "exact_match": 0.0,
-          "token_f1": 0.12580427853335474,
-          "avg_total_sec": 267.4822814602715,
-          "p50_total_sec": 121.96599348122254,
-          "p95_total_sec": 1284.7071861047298,
-          "avg_storage_bytes": 30283047.722222224,
-          "p95_storage_bytes": 141834881.0,
+          "token_f1": 0.12006019369826589,
+          "avg_total_sec": 320.8860872942881,
+          "p50_total_sec": 122.73695803107694,
+          "p95_total_sec": 1297.9812856633216,
+          "avg_storage_bytes": 36171431.421052635,
+          "p95_storage_bytes": 143218221.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -21162,6 +21349,40 @@
                 "ede65c84_1",
                 "18ac69d3_2",
                 "bf25a889"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::09d032c9",
+              "category": "single-session-preference",
+              "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+              "gold": "The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.",
+              "prediction": "00 AM, but I end up hitting the snooze button multiple times",
+              "expected_doc_ids": [
+                "answer_b10dce5e"
+              ],
+              "retrieved_doc_ids": [
+                "b2ff54ec_1",
+                "bd26a341",
+                "d36d11b9_1",
+                "7c7a2ed8_3",
+                "55cc1ba3_2"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::38146c39",
+              "category": "single-session-preference",
+              "query": "I've been feeling like my chocolate chip cookies need something extra. Any advice?",
+              "gold": "The user would prefer responses that build upon their previous experimentation with turbinado sugar, suggesting ingredients or techniques that complement its richer flavor. They might not prefer generic cookie-making advice or suggestions that don't take into account their existing use of turbinado sugar.",
+              "prediction": "the one I achieved with my recent chocolate cake",
+              "expected_doc_ids": [
+                "answer_772472c8"
+              ],
+              "retrieved_doc_ids": [
+                "93ff2f73",
+                "80dc42f7_1",
+                "982e4634",
+                "d9868305_2",
+                "ultrachat_113447"
               ]
             }
           ],
@@ -22097,11 +22318,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03463861532211432,
-    "doc_recall_all_delta": 0.08650377950045096,
-    "ndcg_at_10_delta": 0.05775583402707152,
-    "token_f1_delta": 0.005518291408679932,
-    "avg_storage_ratio_nova_over_stock": 0.4015652359371979,
-    "avg_latency_ratio_nova_over_stock": 1.5870479162373756
+    "doc_recall_any_delta": 0.03483450801845278,
+    "doc_recall_all_delta": 0.0866003240787776,
+    "ndcg_at_10_delta": 0.057910815975562024,
+    "token_f1_delta": 0.005401528104398395,
+    "avg_storage_ratio_nova_over_stock": 0.4006499615620054,
+    "avg_latency_ratio_nova_over_stock": 1.5849116429965018
   }
 }
