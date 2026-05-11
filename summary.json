@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T05:48:34Z",
+  "generated_at": "2026-05-11T08:20:16Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-11T05:26:50Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-11T08:07:32Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 425,
+    "current_case_index": 430,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::57f827a0"
+    "current_case_id": "longmemeval_m::1da05512"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,19 +10393,19 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 425,
-        "rows_successful": 421,
+        "rows_recorded": 430,
+        "rows_successful": 426,
         "rows_failed": 4,
         "complete": false,
-        "doc_recall_any": 0.9073634204275535,
-        "doc_recall_all": 0.7030878859857482,
-        "ndcg_at_10": 0.7501230828639616,
-        "exact_match": 0.13064133016627077,
-        "token_f1": 0.16872830074601705,
-        "avg_total_sec": 779.8665868704497,
-        "p50_total_sec": 779.8458367967978,
+        "doc_recall_any": 0.9061032863849765,
+        "doc_recall_all": 0.704225352112676,
+        "ndcg_at_10": 0.7507084926895019,
+        "exact_match": 0.12910798122065728,
+        "token_f1": 0.16796237324195404,
+        "avg_total_sec": 779.8108950724056,
+        "p50_total_sec": 779.7865557074547,
         "p95_total_sec": 814.0073625445366,
-        "avg_storage_bytes": 408359850.27078384,
+        "avg_storage_bytes": 408327146.3309859,
         "p95_storage_bytes": 425449790.0,
         "categories": {
           "single-session-assistant": {
@@ -11722,20 +11722,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 17,
-            "rows_recorded": 17,
-            "rows_successful": 17,
+            "expected_total": 22,
+            "rows_recorded": 22,
+            "rows_successful": 22,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.5882352941176471,
-            "doc_recall_all": 0.5882352941176471,
-            "ndcg_at_10": 0.440722521748132,
+            "doc_recall_any": 0.6363636363636364,
+            "doc_recall_all": 0.6363636363636364,
+            "ndcg_at_10": 0.5223764940781019,
             "exact_match": 0.0,
-            "token_f1": 0.11710864710288735,
-            "avg_total_sec": 770.6203205920756,
+            "token_f1": 0.11400924489765131,
+            "avg_total_sec": 771.6433490204879,
             "p50_total_sec": 772.2847821060568,
-            "p95_total_sec": 787.5836775870994,
-            "avg_storage_bytes": 403958547.88235295,
+            "p95_total_sec": 788.8824936365709,
+            "avg_storage_bytes": 404325576.6818182,
             "p95_storage_bytes": 415905092.0,
             "categories": {},
             "sample_errors": [],
@@ -11855,6 +11855,23 @@
                   "55ca8b20_2",
                   "330c05e7_2",
                   "89464e43"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::d6233ab6",
+                "category": "single-session-preference",
+                "query": "I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?",
+                "gold": "The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.",
+                "prediction": "a special place, full of opportunities and possibilities",
+                "expected_doc_ids": [
+                  "answer_b0fac439"
+                ],
+                "retrieved_doc_ids": [
+                  "sharegpt_xOzzaof_0",
+                  "sharegpt_JRQtEcd_115",
+                  "4c5b5eaa_2",
+                  "sharegpt_u7uYb87_0",
+                  "e5913477_2"
                 ]
               }
             ],
@@ -11982,6 +11999,30 @@
                   "answer_7c0ade93",
                   "e4e64e80_6",
                   "4bfcc251_1"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::95228167",
+                "category": "single-session-preference",
+                "query": "I'm getting excited about my visit to the music store this weekend. Any tips on what to look for in a new guitar?",
+                "gold": "The user would prefer responses that highlight the differences between Fender Stratocaster and Gibson Les Paul electric guitars, such as the feel of the neck, weight, and sound profile. They might not prefer general tips on buying an electric guitar or suggestions that do not take into account their current guitar and desired upgrade.",
+                "prediction": "you have any tips on how to keep my guitar in good condition, since I've been playing it a lot lately",
+                "retrieved_doc_ids": [
+                  "answer_5e613445",
+                  "ac14a1d9_3",
+                  "dcf74e9b_3"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::505af2f5",
+                "category": "single-session-preference",
+                "query": "I was thinking of trying a new coffee creamer recipe. Any recommendations?",
+                "gold": "The user would prefer responses that suggest variations on their existing almond milk, vanilla extract, and honey creamer recipe or new ideas that align with their goals of reducing sugar intake and saving money. They might not prefer responses that recommend commercial creamer products or recipes that are high in sugar or expensive.",
+                "prediction": "you have any recommendations on how to reuse or repurpose old coffee grounds and coffee filters",
+                "retrieved_doc_ids": [
+                  "answer_f3164f2c",
+                  "4f2d6be4_2",
+                  "26e99766_3"
                 ]
               }
             ]
@@ -12355,19 +12396,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 425,
-        "rows_successful": 425,
+        "rows_recorded": 429,
+        "rows_successful": 429,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9294117647058824,
-        "doc_recall_all": 0.8376470588235294,
-        "ndcg_at_10": 0.8158955092775079,
-        "exact_match": 0.15058823529411763,
-        "token_f1": 0.1886407483721448,
-        "avg_total_sec": 1299.1362729181699,
+        "doc_recall_any": 0.9230769230769231,
+        "doc_recall_all": 0.8321678321678322,
+        "ndcg_at_10": 0.8106190942725894,
+        "exact_match": 0.14918414918414918,
+        "token_f1": 0.18801429705581502,
+        "avg_total_sec": 1299.2004961231116,
         "p50_total_sec": 1299.5035858098418,
         "p95_total_sec": 1358.0144080799073,
-        "avg_storage_bytes": 143215204.80235294,
+        "avg_storage_bytes": 143206901.95104894,
         "p95_storage_bytes": 148958857.0,
         "categories": {
           "single-session-assistant": {
@@ -13707,21 +13748,21 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 17,
-            "rows_recorded": 17,
-            "rows_successful": 17,
+            "expected_total": 21,
+            "rows_recorded": 21,
+            "rows_successful": 21,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7058823529411765,
-            "doc_recall_all": 0.7058823529411765,
-            "ndcg_at_10": 0.5393524133948082,
+            "doc_recall_any": 0.6190476190476191,
+            "doc_recall_all": 0.6190476190476191,
+            "ndcg_at_10": 0.4842376679862734,
             "exact_match": 0.0,
-            "token_f1": 0.09386765317732654,
-            "avg_total_sec": 1283.3455433601732,
-            "p50_total_sec": 1282.4456853466108,
-            "p95_total_sec": 1309.1832690155134,
-            "avg_storage_bytes": 141869281.0,
-            "p95_storage_bytes": 144601093.0,
+            "token_f1": 0.09912216584750684,
+            "avg_total_sec": 1287.665289700741,
+            "p50_total_sec": 1284.7071861047298,
+            "p95_total_sec": 1328.6381927859038,
+            "avg_storage_bytes": 141956032.04761904,
+            "p95_storage_bytes": 145311357.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -13808,6 +13849,57 @@
                   "982e4634",
                   "d9868305_2",
                   "ultrachat_113447"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::95228167",
+                "category": "single-session-preference",
+                "query": "I'm getting excited about my visit to the music store this weekend. Any tips on what to look for in a new guitar?",
+                "gold": "The user would prefer responses that highlight the differences between Fender Stratocaster and Gibson Les Paul electric guitars, such as the feel of the neck, weight, and sound profile. They might not prefer general tips on buying an electric guitar or suggestions that do not take into account their current guitar and desired upgrade.",
+                "prediction": "you have any recommendations for good humidifiers, or any tips for using them effectively",
+                "expected_doc_ids": [
+                  "answer_5e613445"
+                ],
+                "retrieved_doc_ids": [
+                  "34487ee2",
+                  "ac14a1d9_3",
+                  "dcf74e9b_3",
+                  "dc9bf721_1",
+                  "187f60da"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::75f70248",
+                "category": "single-session-preference",
+                "query": "I've been sneezing quite a bit lately. Do you think it might be my living room?",
+                "gold": "The user would prefer responses that consider the potential impact of their cat, Luna, and her shedding on their sneezing, as well as the recent deep clean of the living room and its possible effect on stirring up dust. They might not prefer responses that fail to take into account these specific details previously mentioned, such as generic suggestions or unrelated factors.",
+                "prediction": "you have any recommendations or suggestions on what might work best",
+                "expected_doc_ids": [
+                  "answer_8ee04a2e"
+                ],
+                "retrieved_doc_ids": [
+                  "c69a28f0",
+                  "c839bd58_3",
+                  "01e3c888",
+                  "0cf6cf0f_2",
+                  "7411255c"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::d6233ab6",
+                "category": "single-session-preference",
+                "query": "I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?",
+                "gold": "The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.",
+                "prediction": "you think it would be a good idea to ask the music director or organizers of the pageant for recommendations on singing teachers or schools in the area",
+                "expected_doc_ids": [
+                  "answer_b0fac439"
+                ],
+                "retrieved_doc_ids": [
+                  "67aa910e",
+                  "c2d1c279",
+                  "312267b7_2",
+                  "b4ed7223_2",
+                  "39911f94"
                 ]
               }
             ],
@@ -14344,20 +14436,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3411,
-      "rows_successful": 3406,
+      "rows_recorded": 3416,
+      "rows_successful": 3411,
       "rows_failed": 5,
       "complete": false,
-      "doc_recall_any": 0.8035819142689372,
-      "doc_recall_all": 0.6732237228420435,
-      "ndcg_at_10": 0.6261843179954943,
-      "exact_match": 0.07809747504403992,
-      "token_f1": 0.12287110557517242,
-      "avg_total_sec": 114.04193307308937,
-      "p50_total_sec": 6.405654186848551,
-      "p95_total_sec": 783.2581068156287,
-      "avg_storage_bytes": 70293645.91603054,
-      "p95_storage_bytes": 412054781.0,
+      "doc_recall_any": 0.803576663734975,
+      "doc_recall_all": 0.6734095573145705,
+      "ndcg_at_10": 0.626439104981722,
+      "exact_match": 0.07798299618880093,
+      "token_f1": 0.12284266841865625,
+      "avg_total_sec": 115.01097398866251,
+      "p50_total_sec": 6.405983560252935,
+      "p95_total_sec": 783.6694274488837,
+      "avg_storage_bytes": 70785114.44239226,
+      "p95_storage_bytes": 412112246.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -17187,21 +17279,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 77,
-          "rows_recorded": 77,
-          "rows_successful": 77,
+          "expected_total": 82,
+          "rows_recorded": 82,
+          "rows_successful": 82,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.8571428571428571,
-          "doc_recall_all": 0.8571428571428571,
-          "ndcg_at_10": 0.7915153044425646,
+          "doc_recall_any": 0.8536585365853658,
+          "doc_recall_all": 0.8536585365853658,
+          "ndcg_at_10": 0.792032663927774,
           "exact_match": 0.0,
-          "token_f1": 0.12087832866689895,
-          "avg_total_sec": 206.85701253177453,
-          "p50_total_sec": 80.17538720369339,
-          "p95_total_sec": 782.584340092726,
-          "avg_storage_bytes": 108886081.27272727,
-          "p95_storage_bytes": 410618656.0,
+          "token_f1": 0.11981692310183492,
+          "avg_total_sec": 241.5072950406352,
+          "p50_total_sec": 80.33588235313073,
+          "p95_total_sec": 784.5294665629044,
+          "avg_storage_bytes": 126976775.98780487,
+          "p95_storage_bytes": 411407295.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -17379,6 +17471,23 @@
                 "55ca8b20_2",
                 "330c05e7_2",
                 "89464e43"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::d6233ab6",
+              "category": "single-session-preference",
+              "query": "I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?",
+              "gold": "The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.",
+              "prediction": "a special place, full of opportunities and possibilities",
+              "expected_doc_ids": [
+                "answer_b0fac439"
+              ],
+              "retrieved_doc_ids": [
+                "sharegpt_xOzzaof_0",
+                "sharegpt_JRQtEcd_115",
+                "4c5b5eaa_2",
+                "sharegpt_u7uYb87_0",
+                "e5913477_2"
               ]
             }
           ],
@@ -18374,19 +18483,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3411,
-      "rows_successful": 3411,
+      "rows_recorded": 3415,
+      "rows_successful": 3415,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8384637936089123,
-      "doc_recall_all": 0.7598944591029023,
-      "ndcg_at_10": 0.6841877475348292,
-      "exact_match": 0.0832600410436822,
-      "token_f1": 0.12826128205398488,
-      "avg_total_sec": 181.07586970132013,
-      "p50_total_sec": 0.08278570417314768,
-      "p95_total_sec": 1306.5029300590977,
-      "avg_storage_bytes": 28196994.740252126,
+      "doc_recall_any": 0.8377745241581259,
+      "doc_recall_all": 0.7592972181551977,
+      "ndcg_at_10": 0.6836791820911574,
+      "exact_match": 0.08316251830161055,
+      "token_f1": 0.12825330848167657,
+      "avg_total_sec": 182.39352515308804,
+      "p50_total_sec": 0.08291918272152543,
+      "p95_total_sec": 1306.648056649603,
+      "avg_storage_bytes": 28330672.90043924,
       "p95_storage_bytes": 143870817.0,
       "categories": {
         "category_2": {
@@ -21262,21 +21371,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 77,
-          "rows_recorded": 77,
-          "rows_successful": 77,
+          "expected_total": 81,
+          "rows_recorded": 81,
+          "rows_successful": 81,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9090909090909091,
-          "doc_recall_all": 0.9090909090909091,
-          "ndcg_at_10": 0.8221407828930998,
+          "doc_recall_any": 0.8765432098765432,
+          "doc_recall_all": 0.8765432098765432,
+          "ndcg_at_10": 0.7938869170712183,
           "exact_match": 0.0,
-          "token_f1": 0.11966398649187243,
-          "avg_total_sec": 333.66172404346577,
-          "p50_total_sec": 122.73695803107694,
-          "p95_total_sec": 1304.61011698097,
-          "avg_storage_bytes": 37566859.28571428,
-          "p95_storage_bytes": 143619377.0,
+          "token_f1": 0.11975237455132431,
+          "avg_total_sec": 381.67962466591945,
+          "p50_total_sec": 123.06073020305485,
+          "p95_total_sec": 1308.4281212352216,
+          "avg_storage_bytes": 42740087.17283951,
+          "p95_storage_bytes": 143870817.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -21397,6 +21506,57 @@
                 "982e4634",
                 "d9868305_2",
                 "ultrachat_113447"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::95228167",
+              "category": "single-session-preference",
+              "query": "I'm getting excited about my visit to the music store this weekend. Any tips on what to look for in a new guitar?",
+              "gold": "The user would prefer responses that highlight the differences between Fender Stratocaster and Gibson Les Paul electric guitars, such as the feel of the neck, weight, and sound profile. They might not prefer general tips on buying an electric guitar or suggestions that do not take into account their current guitar and desired upgrade.",
+              "prediction": "you have any recommendations for good humidifiers, or any tips for using them effectively",
+              "expected_doc_ids": [
+                "answer_5e613445"
+              ],
+              "retrieved_doc_ids": [
+                "34487ee2",
+                "ac14a1d9_3",
+                "dcf74e9b_3",
+                "dc9bf721_1",
+                "187f60da"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::75f70248",
+              "category": "single-session-preference",
+              "query": "I've been sneezing quite a bit lately. Do you think it might be my living room?",
+              "gold": "The user would prefer responses that consider the potential impact of their cat, Luna, and her shedding on their sneezing, as well as the recent deep clean of the living room and its possible effect on stirring up dust. They might not prefer responses that fail to take into account these specific details previously mentioned, such as generic suggestions or unrelated factors.",
+              "prediction": "you have any recommendations or suggestions on what might work best",
+              "expected_doc_ids": [
+                "answer_8ee04a2e"
+              ],
+              "retrieved_doc_ids": [
+                "c69a28f0",
+                "c839bd58_3",
+                "01e3c888",
+                "0cf6cf0f_2",
+                "7411255c"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::d6233ab6",
+              "category": "single-session-preference",
+              "query": "I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school reunion?",
+              "gold": "The user would prefer responses that draw upon their personal experiences and memories, specifically their positive high school experiences such as being part of the debate team and taking advanced placement courses. They would prefer suggestions that highlight the potential benefits of attending the reunion, such as reconnecting with old friends and revisiting favorite subjects like history and economics. The user might not prefer generic or vague responses that do not take into account their individual experiences and interests.",
+              "prediction": "you think it would be a good idea to ask the music director or organizers of the pageant for recommendations on singing teachers or schools in the area",
+              "expected_doc_ids": [
+                "answer_b0fac439"
+              ],
+              "retrieved_doc_ids": [
+                "67aa910e",
+                "c2d1c279",
+                "312267b7_2",
+                "b4ed7223_2",
+                "39911f94"
               ]
             }
           ],
@@ -22332,11 +22492,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03488187933997511,
-    "doc_recall_all_delta": 0.08667073626085886,
-    "ndcg_at_10_delta": 0.058003429539334905,
-    "token_f1_delta": 0.005390176478812458,
-    "avg_storage_ratio_nova_over_stock": 0.40113148738841803,
-    "avg_latency_ratio_nova_over_stock": 1.58780077487172
+    "doc_recall_any_delta": 0.03419786042315087,
+    "doc_recall_all_delta": 0.08588766084062716,
+    "ndcg_at_10_delta": 0.05724007710943546,
+    "token_f1_delta": 0.005410640063020319,
+    "avg_storage_ratio_nova_over_stock": 0.40023489576323096,
+    "avg_latency_ratio_nova_over_stock": 1.5858793194036243
   }
 }
