@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T02:35:43Z",
+  "generated_at": "2026-05-11T02:56:53Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-11T02:22:58Z",
-    "current_system": "stock",
+    "updated_at": "2026-05-11T02:35:45Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 420,
     "current_case_total": 500,
@@ -12280,19 +12280,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 419,
-        "rows_successful": 419,
+        "rows_recorded": 420,
+        "rows_successful": 420,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9331742243436754,
-        "doc_recall_all": 0.8400954653937948,
-        "ndcg_at_10": 0.819794109631976,
-        "exact_match": 0.15274463007159905,
-        "token_f1": 0.19096921038827902,
-        "avg_total_sec": 1299.3590086984598,
+        "doc_recall_any": 0.9333333333333333,
+        "doc_recall_all": 0.8404761904761905,
+        "ndcg_at_10": 0.8193444325937367,
+        "exact_match": 0.1523809523809524,
+        "token_f1": 0.19051452179211645,
+        "avg_total_sec": 1299.2849702476547,
         "p50_total_sec": 1299.6098827137612,
         "p95_total_sec": 1358.0144080799073,
-        "avg_storage_bytes": 143231123.6157518,
+        "avg_storage_bytes": 143224269.7904762,
         "p95_storage_bytes": 148958857.0,
         "categories": {
           "single-session-assistant": {
@@ -13632,21 +13632,21 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 11,
-            "rows_recorded": 11,
-            "rows_successful": 11,
+            "expected_total": 12,
+            "rows_recorded": 12,
+            "rows_successful": 12,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.7272727272727273,
-            "doc_recall_all": 0.7272727272727273,
-            "ndcg_at_10": 0.5370119564153477,
+            "doc_recall_any": 0.75,
+            "doc_recall_all": 0.75,
+            "ndcg_at_10": 0.5448384395116902,
             "exact_match": 0.0,
-            "token_f1": 0.13086647259471948,
-            "avg_total_sec": 1283.216626505029,
+            "token_f1": 0.1199609332118262,
+            "avg_total_sec": 1281.9704792429693,
             "p50_total_sec": 1282.4456853466108,
-            "p95_total_sec": 1328.6381927859038,
-            "avg_storage_bytes": 141741502.8181818,
-            "p95_storage_bytes": 146398489.0,
+            "p95_total_sec": 1309.1832690155134,
+            "avg_storage_bytes": 141625754.0,
+            "p95_storage_bytes": 144601093.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -13812,6 +13812,20 @@
                   "1e058dfd_2",
                   "7ba84ed3_1",
                   "a910073f"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::6b7dfb22",
+                "category": "single-session-preference",
+                "query": "I've been feeling a bit stuck with my paintings lately. Do you have any ideas on how I can find new inspiration?",
+                "gold": "The user would prefer responses that build upon their existing sources of inspiration, such as revisiting Instagram art accounts or exploring new techniques from online tutorials. They might also appreciate suggestions that revisit previous themes they found enjoyable, like painting flowers. The user would not prefer generic or vague suggestions for finding inspiration, and would likely appreciate responses that utilize their recent 30-day painting challenge experience.",
+                "prediction": "actually really great",
+                "retrieved_doc_ids": [
+                  "5cfdb591_2",
+                  "answer_f6502d0f",
+                  "cd6be104_1",
+                  "5937bdb7_1",
+                  "5aaf223c_1"
                 ]
               }
             ]
@@ -18159,19 +18173,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3405,
-      "rows_successful": 3405,
+      "rows_recorded": 3406,
+      "rows_successful": 3406,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8387665198237886,
-      "doc_recall_all": 0.7600587371512482,
-      "ndcg_at_10": 0.6844354030349954,
-      "exact_match": 0.08340675477239354,
-      "token_f1": 0.12844141385629068,
-      "avg_total_sec": 179.13312781369615,
+      "doc_recall_any": 0.8388138578978274,
+      "doc_recall_all": 0.760129183793306,
+      "ndcg_at_10": 0.6844196938014477,
+      "exact_match": 0.08338226658837346,
+      "token_f1": 0.12840370351751904,
+      "avg_total_sec": 179.45289579124946,
       "p50_total_sec": 0.08262065704911947,
       "p95_total_sec": 1306.3701689383015,
-      "avg_storage_bytes": 27996278.35917768,
+      "avg_storage_bytes": 28029266.098062243,
       "p95_storage_bytes": 143863273.0,
       "categories": {
         "category_2": {
@@ -21047,20 +21061,20 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 71,
-          "rows_recorded": 71,
-          "rows_successful": 71,
+          "expected_total": 72,
+          "rows_recorded": 72,
+          "rows_successful": 72,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9295774647887324,
-          "doc_recall_all": 0.9295774647887324,
-          "ndcg_at_10": 0.8456757855721939,
+          "doc_recall_any": 0.9305555555555556,
+          "doc_recall_all": 0.9305555555555556,
+          "ndcg_at_10": 0.8426932017944059,
           "exact_match": 0.0,
-          "token_f1": 0.1275761697803034,
-          "avg_total_sec": 253.3867803630878,
-          "p50_total_sec": 121.33382547507063,
+          "token_f1": 0.12580427853335474,
+          "avg_total_sec": 267.4822814602715,
+          "p50_total_sec": 121.96599348122254,
           "p95_total_sec": 1284.7071861047298,
-          "avg_storage_bytes": 28732773.507042255,
+          "avg_storage_bytes": 30283047.722222224,
           "p95_storage_bytes": 141834881.0,
           "categories": {},
           "sample_errors": [],
@@ -22083,11 +22097,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.034591277248075536,
-    "doc_recall_all_delta": 0.08643333285839316,
-    "ndcg_at_10_delta": 0.057771543260619174,
-    "token_f1_delta": 0.005556001747451578,
-    "avg_storage_ratio_nova_over_stock": 0.40109263244119947,
-    "avg_latency_ratio_nova_over_stock": 1.584219947927264
+    "doc_recall_any_delta": 0.03463861532211432,
+    "doc_recall_all_delta": 0.08650377950045096,
+    "ndcg_at_10_delta": 0.05775583402707152,
+    "token_f1_delta": 0.005518291408679932,
+    "avg_storage_ratio_nova_over_stock": 0.4015652359371979,
+    "avg_latency_ratio_nova_over_stock": 1.5870479162373756
   }
 }
