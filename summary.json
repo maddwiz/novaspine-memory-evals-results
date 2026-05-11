@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T05:26:48Z",
+  "generated_at": "2026-05-11T05:48:34Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-11T05:13:45Z",
-    "current_system": "stock",
+    "updated_at": "2026-05-11T05:26:50Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 425,
     "current_case_total": 500,
@@ -12355,19 +12355,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 424,
-        "rows_successful": 424,
+        "rows_recorded": 425,
+        "rows_successful": 425,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9292452830188679,
-        "doc_recall_all": 0.8372641509433962,
-        "ndcg_at_10": 0.8154613005729737,
-        "exact_match": 0.1509433962264151,
-        "token_f1": 0.18887444768715936,
-        "avg_total_sec": 1299.123362908588,
+        "doc_recall_any": 0.9294117647058824,
+        "doc_recall_all": 0.8376470588235294,
+        "ndcg_at_10": 0.8158955092775079,
+        "exact_match": 0.15058823529411763,
+        "token_f1": 0.1886407483721448,
+        "avg_total_sec": 1299.1362729181699,
         "p50_total_sec": 1299.5035858098418,
         "p95_total_sec": 1358.0144080799073,
-        "avg_storage_bytes": 143214251.56603774,
+        "avg_storage_bytes": 143215204.80235294,
         "p95_storage_bytes": 148958857.0,
         "categories": {
           "single-session-assistant": {
@@ -13707,20 +13707,20 @@
             ]
           },
           "single-session-preference": {
-            "expected_total": 16,
-            "rows_recorded": 16,
-            "rows_successful": 16,
+            "expected_total": 17,
+            "rows_recorded": 17,
+            "rows_successful": 17,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.6875,
-            "doc_recall_all": 0.6875,
-            "ndcg_at_10": 0.5105619392319838,
+            "doc_recall_any": 0.7058823529411765,
+            "doc_recall_all": 0.7058823529411765,
+            "ndcg_at_10": 0.5393524133948082,
             "exact_match": 0.0,
-            "token_f1": 0.09413736657553631,
-            "avg_total_sec": 1282.0165075088735,
+            "token_f1": 0.09386765317732654,
+            "avg_total_sec": 1283.3455433601732,
             "p50_total_sec": 1282.4456853466108,
             "p95_total_sec": 1309.1832690155134,
-            "avg_storage_bytes": 141759900.0,
+            "avg_storage_bytes": 141869281.0,
             "p95_storage_bytes": 144601093.0,
             "categories": {},
             "sample_errors": [],
@@ -13963,6 +13963,20 @@
                   "fb3b6003",
                   "fe1faff9_1",
                   "d18b9a97_2"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::57f827a0",
+                "category": "single-session-preference",
+                "query": "I was thinking about rearranging the furniture in my bedroom this weekend. Any tips?",
+                "gold": "The user would prefer responses that take into account their existing plans to replace the bedroom dresser and their interest in mid-century modern style, suggesting furniture layouts that accommodate the new dresser and incorporate elements of this design aesthetic. They might not prefer general furniture arrangement tips or suggestions that do not consider their specific design preferences.",
+                "prediction": "you have any tips on how to declutter and organize my closet",
+                "retrieved_doc_ids": [
+                  "answer_1bde8d3b",
+                  "89464e43",
+                  "55ca8b20_2",
+                  "7c97ba66_7",
+                  "3db86aab_1"
                 ]
               }
             ]
@@ -18360,19 +18374,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3410,
-      "rows_successful": 3410,
+      "rows_recorded": 3411,
+      "rows_successful": 3411,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.83841642228739,
-      "doc_recall_all": 0.7598240469208211,
-      "ndcg_at_10": 0.6840951339710564,
-      "exact_match": 0.08328445747800586,
-      "token_f1": 0.1282726336795708,
-      "avg_total_sec": 180.74638751736717,
-      "p50_total_sec": 0.08276776084676385,
+      "doc_recall_any": 0.8384637936089123,
+      "doc_recall_all": 0.7598944591029023,
+      "ndcg_at_10": 0.6841877475348292,
+      "exact_match": 0.0832600410436822,
+      "token_f1": 0.12826128205398488,
+      "avg_total_sec": 181.07586970132013,
+      "p50_total_sec": 0.08278570417314768,
       "p95_total_sec": 1306.5029300590977,
-      "avg_storage_bytes": 28163146.53431085,
+      "avg_storage_bytes": 28196994.740252126,
       "p95_storage_bytes": 143870817.0,
       "categories": {
         "category_2": {
@@ -21248,21 +21262,21 @@
           ]
         },
         "single-session-preference": {
-          "expected_total": 76,
-          "rows_recorded": 76,
-          "rows_successful": 76,
+          "expected_total": 77,
+          "rows_recorded": 77,
+          "rows_successful": 77,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9078947368421053,
-          "doc_recall_all": 0.9078947368421053,
-          "ndcg_at_10": 0.81980053003643,
+          "doc_recall_any": 0.9090909090909091,
+          "doc_recall_all": 0.9090909090909091,
+          "ndcg_at_10": 0.8221407828930998,
           "exact_match": 0.0,
-          "token_f1": 0.12006019369826589,
-          "avg_total_sec": 320.8860872942881,
+          "token_f1": 0.11966398649187243,
+          "avg_total_sec": 333.66172404346577,
           "p50_total_sec": 122.73695803107694,
-          "p95_total_sec": 1297.9812856633216,
-          "avg_storage_bytes": 36171431.421052635,
-          "p95_storage_bytes": 143218221.0,
+          "p95_total_sec": 1304.61011698097,
+          "avg_storage_bytes": 37566859.28571428,
+          "p95_storage_bytes": 143619377.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -22318,11 +22332,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.03483450801845278,
-    "doc_recall_all_delta": 0.0866003240787776,
-    "ndcg_at_10_delta": 0.057910815975562024,
-    "token_f1_delta": 0.005401528104398395,
-    "avg_storage_ratio_nova_over_stock": 0.4006499615620054,
-    "avg_latency_ratio_nova_over_stock": 1.5849116429965018
+    "doc_recall_any_delta": 0.03488187933997511,
+    "doc_recall_all_delta": 0.08667073626085886,
+    "ndcg_at_10_delta": 0.058003429539334905,
+    "token_f1_delta": 0.005390176478812458,
+    "avg_storage_ratio_nova_over_stock": 0.40113148738841803,
+    "avg_latency_ratio_nova_over_stock": 1.58780077487172
   }
 }
