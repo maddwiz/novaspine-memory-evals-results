@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T16:43:39Z",
+  "generated_at": "2026-05-12T19:18:16Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,12 +117,12 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-12T16:21:31Z",
-    "current_system": "novaspine",
+    "updated_at": "2026-05-12T19:05:58Z",
+    "current_system": "stock",
     "current_benchmark": "longmemeval_m",
-    "current_case_index": 485,
+    "current_case_index": 490,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::edced276"
+    "current_case_id": "longmemeval_m::c2ac3c61"
   },
   "benchmarks": {
     "locomo": {
@@ -10393,20 +10393,20 @@
     "longmemeval_m": {
       "stock": {
         "expected_total": 500,
-        "rows_recorded": 485,
-        "rows_successful": 481,
+        "rows_recorded": 490,
+        "rows_successful": 486,
         "rows_failed": 4,
         "complete": false,
-        "doc_recall_any": 0.9106029106029107,
-        "doc_recall_all": 0.6715176715176715,
-        "ndcg_at_10": 0.742583615514702,
-        "exact_match": 0.12474012474012475,
-        "token_f1": 0.16335375273370256,
-        "avg_total_sec": 780.50195439945,
+        "doc_recall_any": 0.9094650205761317,
+        "doc_recall_all": 0.6666666666666666,
+        "ndcg_at_10": 0.7400257082383369,
+        "exact_match": 0.12345679012345678,
+        "token_f1": 0.1616731585697756,
+        "avg_total_sec": 780.5973890060483,
         "p50_total_sec": 780.12094497215,
-        "p95_total_sec": 814.9022530959919,
-        "avg_storage_bytes": 408493932.3056133,
-        "p95_storage_bytes": 425308947.0,
+        "p95_total_sec": 815.1109431004152,
+        "avg_storage_bytes": 408520860.0144033,
+        "p95_storage_bytes": 425444921.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -10873,21 +10873,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 117,
-            "rows_recorded": 117,
-            "rows_successful": 117,
+            "expected_total": 122,
+            "rows_recorded": 122,
+            "rows_successful": 122,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9145299145299145,
-            "doc_recall_all": 0.5128205128205128,
-            "ndcg_at_10": 0.7076794765638847,
-            "exact_match": 0.09401709401709402,
-            "token_f1": 0.08187411102946547,
-            "avg_total_sec": 784.4307593267379,
+            "doc_recall_any": 0.9098360655737705,
+            "doc_recall_all": 0.5,
+            "ndcg_at_10": 0.6989202778625784,
+            "exact_match": 0.09016393442622951,
+            "token_f1": 0.07851861467579885,
+            "avg_total_sec": 784.6499166560023,
             "p50_total_sec": 783.6694274488837,
-            "p95_total_sec": 815.2697522398084,
-            "avg_storage_bytes": 410081118.8119658,
-            "p95_storage_bytes": 424760241.0,
+            "p95_total_sec": 817.6474525425583,
+            "avg_storage_bytes": 410123339.58196723,
+            "p95_storage_bytes": 425199347.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -11056,6 +11056,24 @@
                 "retrieved_doc_ids": [
                   "5913793f",
                   "33dff20c_5"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::10d9b85a",
+                "category": "multi-session",
+                "query": "How many days did I spend attending workshops, lectures, and conferences in April?",
+                "gold": "3 days",
+                "prediction": "Events,",
+                "expected_doc_ids": [
+                  "answer_e0585cb5_2",
+                  "answer_e0585cb5_1"
+                ],
+                "retrieved_doc_ids": [
+                  "1bfd5a8b_1",
+                  "bd8708e2_1",
+                  "9316aae3_1",
+                  "1e5f8dd6",
+                  "f48aef83_1"
                 ]
               }
             ],
@@ -12446,20 +12464,20 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 485,
-        "rows_successful": 485,
+        "rows_recorded": 489,
+        "rows_successful": 489,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9257731958762887,
-        "doc_recall_all": 0.8164948453608247,
-        "ndcg_at_10": 0.8052459114223839,
-        "exact_match": 0.1422680412371134,
-        "token_f1": 0.18112464694144417,
-        "avg_total_sec": 1300.1717538911312,
-        "p50_total_sec": 1300.0968359736726,
-        "p95_total_sec": 1357.8334965938702,
-        "avg_storage_bytes": 143240263.55670103,
-        "p95_storage_bytes": 148963853.0,
+        "doc_recall_any": 0.9243353783231084,
+        "doc_recall_all": 0.8118609406952966,
+        "ndcg_at_10": 0.8039733100729011,
+        "exact_match": 0.1411042944785276,
+        "token_f1": 0.18066554962494974,
+        "avg_total_sec": 1300.4275217698926,
+        "p50_total_sec": 1300.389882181771,
+        "p95_total_sec": 1358.0144080799073,
+        "avg_storage_bytes": 143262524.3210634,
+        "p95_storage_bytes": 148975133.0,
         "categories": {
           "single-session-assistant": {
             "expected_total": 56,
@@ -12941,21 +12959,21 @@
             ]
           },
           "multi-session": {
-            "expected_total": 118,
-            "rows_recorded": 118,
-            "rows_successful": 118,
+            "expected_total": 122,
+            "rows_recorded": 122,
+            "rows_successful": 122,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9491525423728814,
-            "doc_recall_all": 0.7203389830508474,
-            "ndcg_at_10": 0.7905147656076831,
-            "exact_match": 0.07627118644067797,
-            "token_f1": 0.07206432708426726,
-            "avg_total_sec": 1307.3416680451483,
-            "p50_total_sec": 1307.9017623160034,
-            "p95_total_sec": 1358.2734918240458,
-            "avg_storage_bytes": 143644538.3220339,
-            "p95_storage_bytes": 148975133.0,
+            "doc_recall_any": 0.9426229508196722,
+            "doc_recall_all": 0.7049180327868853,
+            "ndcg_at_10": 0.7858969174385164,
+            "exact_match": 0.07377049180327869,
+            "token_f1": 0.07379992291756998,
+            "avg_total_sec": 1308.1317568656254,
+            "p50_total_sec": 1308.2770315716043,
+            "p95_total_sec": 1358.4531770544127,
+            "avg_storage_bytes": 143720508.93442622,
+            "p95_storage_bytes": 149250789.0,
             "categories": {},
             "sample_errors": [],
             "sample_misses": [
@@ -13055,6 +13073,24 @@
                 ],
                 "retrieved_doc_ids": [
                   "9863a565"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::10d9b85a",
+                "category": "multi-session",
+                "query": "How many days did I spend attending workshops, lectures, and conferences in April?",
+                "gold": "3 days",
+                "prediction": "6 days",
+                "expected_doc_ids": [
+                  "answer_e0585cb5_2",
+                  "answer_e0585cb5_1"
+                ],
+                "retrieved_doc_ids": [
+                  "1bfd5a8b_1",
+                  "3b22d17b",
+                  "9316aae3_1",
+                  "2fc9ce79_2",
+                  "f4f4b504_2"
                 ]
               }
             ],
@@ -14534,20 +14570,20 @@
   "overall": {
     "stock": {
       "expected_total": 3486,
-      "rows_recorded": 3471,
-      "rows_successful": 3466,
+      "rows_recorded": 3476,
+      "rows_successful": 3471,
       "rows_failed": 5,
       "complete": false,
-      "doc_recall_any": 0.8058280438545874,
-      "doc_recall_all": 0.6693594922100404,
-      "ndcg_at_10": 0.6272835222935654,
-      "exact_match": 0.07818811309867282,
-      "token_f1": 0.12291907848813476,
-      "avg_total_sec": 125.65621207173069,
-      "p50_total_sec": 6.409443601965904,
-      "p95_total_sec": 786.0490755066276,
-      "avg_storage_bytes": 76164524.65810733,
-      "p95_storage_bytes": 413331315.0,
+      "doc_recall_any": 0.8058196485162777,
+      "doc_recall_all": 0.668683376548545,
+      "ndcg_at_10": 0.6270914616568014,
+      "exact_match": 0.07807548256986459,
+      "token_f1": 0.12274201268795017,
+      "avg_total_sec": 126.61288448038678,
+      "p50_total_sec": 6.409922053106129,
+      "p95_total_sec": 786.4641866143793,
+      "avg_storage_bytes": 76647017.86027081,
+      "p95_storage_bytes": 413415211.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -16867,21 +16903,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 383,
-          "rows_recorded": 383,
-          "rows_successful": 383,
+          "expected_total": 388,
+          "rows_recorded": 388,
+          "rows_successful": 388,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9634464751958225,
-          "doc_recall_all": 0.639686684073107,
-          "ndcg_at_10": 0.8247568354448417,
-          "exact_match": 0.08877284595300261,
-          "token_f1": 0.08634697633434524,
-          "avg_total_sec": 273.0237841664597,
-          "p50_total_sec": 79.74523486103863,
-          "p95_total_sec": 806.9832412218675,
-          "avg_storage_bytes": 143235439.31592688,
-          "p95_storage_bytes": 420116618.0,
+          "doc_recall_any": 0.961340206185567,
+          "doc_recall_all": 0.634020618556701,
+          "ndcg_at_10": 0.8204939255583361,
+          "exact_match": 0.08762886597938144,
+          "token_f1": 0.08523425756715006,
+          "avg_total_sec": 279.68299053236603,
+          "p50_total_sec": 79.80815269611776,
+          "p95_total_sec": 808.2220787713304,
+          "avg_storage_bytes": 146687447.90206185,
+          "p95_storage_bytes": 421071259.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -18581,20 +18617,20 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3471,
-      "rows_successful": 3471,
+      "rows_recorded": 3475,
+      "rows_successful": 3475,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.839527513684817,
-      "doc_recall_all": 0.7582829155862864,
-      "ndcg_at_10": 0.6849763994348077,
-      "exact_match": 0.08326130798040911,
-      "token_f1": 0.12825478789817957,
-      "avg_total_sec": 200.54744344516837,
-      "p50_total_sec": 0.08454440999776125,
-      "p95_total_sec": 1310.2047498896718,
-      "avg_storage_bytes": 30188710.700950734,
-      "p95_storage_bytes": 144350949.0,
+      "doc_recall_any": 0.8394244604316546,
+      "doc_recall_all": 0.7576978417266187,
+      "ndcg_at_10": 0.6849357594313699,
+      "exact_match": 0.08316546762589928,
+      "token_f1": 0.12825104137973561,
+      "avg_total_sec": 201.84918955581531,
+      "p50_total_sec": 0.08463452197611332,
+      "p95_total_sec": 1310.709514727816,
+      "avg_storage_bytes": 30321974.50676259,
+      "p95_storage_bytes": 144419357.0,
       "categories": {
         "category_2": {
           "expected_total": 321,
@@ -20955,21 +20991,21 @@
           ]
         },
         "multi-session": {
-          "expected_total": 384,
-          "rows_recorded": 384,
-          "rows_successful": 384,
+          "expected_total": 388,
+          "rows_recorded": 388,
+          "rows_successful": 388,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9791666666666666,
-          "doc_recall_all": 0.8932291666666666,
-          "ndcg_at_10": 0.9133335268491646,
-          "exact_match": 0.07291666666666667,
-          "token_f1": 0.08027454306041998,
-          "avg_total_sec": 447.62875449890635,
-          "p50_total_sec": 122.7697883322835,
-          "p95_total_sec": 1338.067100904882,
-          "avg_storage_bytes": 49844103.1875,
-          "p95_storage_bytes": 146713737.0,
+          "doc_recall_any": 0.9768041237113402,
+          "doc_recall_all": 0.8865979381443299,
+          "ndcg_at_10": 0.9106153502470918,
+          "exact_match": 0.07216494845360824,
+          "token_f1": 0.0807356302453641,
+          "avg_total_sec": 456.7402042161311,
+          "p50_total_sec": 122.9198602559045,
+          "p95_total_sec": 1341.0108334701508,
+          "avg_storage_bytes": 50835005.64948454,
+          "p95_storage_bytes": 146829541.0,
           "categories": {},
           "sample_errors": [],
           "sample_misses": [
@@ -21097,6 +21133,24 @@
               ],
               "retrieved_doc_ids": [
                 "9863a565"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::10d9b85a",
+              "category": "multi-session",
+              "query": "How many days did I spend attending workshops, lectures, and conferences in April?",
+              "gold": "3 days",
+              "prediction": "6 days",
+              "expected_doc_ids": [
+                "answer_e0585cb5_2",
+                "answer_e0585cb5_1"
+              ],
+              "retrieved_doc_ids": [
+                "1bfd5a8b_1",
+                "3b22d17b",
+                "9316aae3_1",
+                "2fc9ce79_2",
+                "f4f4b504_2"
               ]
             }
           ],
@@ -22638,11 +22692,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.033699469830229645,
-    "doc_recall_all_delta": 0.08892342337624592,
-    "ndcg_at_10_delta": 0.05769287714124227,
-    "token_f1_delta": 0.005335709410044812,
-    "avg_storage_ratio_nova_over_stock": 0.39636183428523897,
-    "avg_latency_ratio_nova_over_stock": 1.5960010264409858
+    "doc_recall_any_delta": 0.0336048119153769,
+    "doc_recall_all_delta": 0.08901446517807365,
+    "ndcg_at_10_delta": 0.057844297774568454,
+    "token_f1_delta": 0.0055090286917854475,
+    "avg_storage_ratio_nova_over_stock": 0.39560540453172244,
+    "avg_latency_ratio_nova_over_stock": 1.5942231344321294
   }
 }
