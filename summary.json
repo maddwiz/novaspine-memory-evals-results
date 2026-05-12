@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T16:21:29Z",
+  "generated_at": "2026-05-12T16:43:39Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -117,8 +117,8 @@
     ],
     "top_k": 10,
     "complete": false,
-    "updated_at": "2026-05-12T16:08:21Z",
-    "current_system": "stock",
+    "updated_at": "2026-05-12T16:21:31Z",
+    "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 485,
     "current_case_total": 500,
@@ -12446,19 +12446,19 @@
       },
       "novaspine": {
         "expected_total": 500,
-        "rows_recorded": 484,
-        "rows_successful": 484,
+        "rows_recorded": 485,
+        "rows_successful": 485,
         "rows_failed": 0,
         "complete": false,
-        "doc_recall_any": 0.9276859504132231,
-        "doc_recall_all": 0.8181818181818182,
-        "ndcg_at_10": 0.806909642644331,
-        "exact_match": 0.14256198347107438,
-        "token_f1": 0.18149887141859591,
-        "avg_total_sec": 1300.1149190500253,
+        "doc_recall_any": 0.9257731958762887,
+        "doc_recall_all": 0.8164948453608247,
+        "ndcg_at_10": 0.8052459114223839,
+        "exact_match": 0.1422680412371134,
+        "token_f1": 0.18112464694144417,
+        "avg_total_sec": 1300.1717538911312,
         "p50_total_sec": 1300.0968359736726,
         "p95_total_sec": 1357.8334965938702,
-        "avg_storage_bytes": 143234559.9338843,
+        "avg_storage_bytes": 143240263.55670103,
         "p95_storage_bytes": 148963853.0,
         "categories": {
           "single-session-assistant": {
@@ -12941,20 +12941,20 @@
             ]
           },
           "multi-session": {
-            "expected_total": 117,
-            "rows_recorded": 117,
-            "rows_successful": 117,
+            "expected_total": 118,
+            "rows_recorded": 118,
+            "rows_successful": 118,
             "rows_failed": 0,
             "complete": true,
-            "doc_recall_any": 0.9572649572649573,
-            "doc_recall_all": 0.7264957264957265,
-            "ndcg_at_10": 0.7972713020658684,
-            "exact_match": 0.07692307692307693,
-            "token_f1": 0.07268026150379092,
-            "avg_total_sec": 1307.1678377123167,
+            "doc_recall_any": 0.9491525423728814,
+            "doc_recall_all": 0.7203389830508474,
+            "ndcg_at_10": 0.7905147656076831,
+            "exact_match": 0.07627118644067797,
+            "token_f1": 0.07206432708426726,
+            "avg_total_sec": 1307.3416680451483,
             "p50_total_sec": 1307.9017623160034,
             "p95_total_sec": 1358.2734918240458,
-            "avg_storage_bytes": 143624399.18803418,
+            "avg_storage_bytes": 143644538.3220339,
             "p95_storage_bytes": 148975133.0,
             "categories": {},
             "sample_errors": [],
@@ -13041,6 +13041,20 @@
                 ],
                 "retrieved_doc_ids": [
                   "1e29ab59"
+                ]
+              },
+              {
+                "case_id": "longmemeval_m::edced276",
+                "category": "multi-session",
+                "query": "How many days did I spend in total traveling in Hawaii and in New York City?",
+                "gold": "15 days",
+                "prediction": "pet stores near me",
+                "expected_doc_ids": [
+                  "answer_60e8941a_2",
+                  "answer_60e8941a_1"
+                ],
+                "retrieved_doc_ids": [
+                  "9863a565"
                 ]
               }
             ],
@@ -18567,19 +18581,19 @@
     },
     "novaspine": {
       "expected_total": 3486,
-      "rows_recorded": 3470,
-      "rows_successful": 3470,
+      "rows_recorded": 3471,
+      "rows_successful": 3471,
       "rows_failed": 0,
       "complete": false,
-      "doc_recall_any": 0.8397694524495677,
-      "doc_recall_all": 0.7585014409221902,
-      "ndcg_at_10": 0.6851737989735498,
-      "exact_match": 0.08328530259365995,
-      "token_f1": 0.128291748932156,
-      "avg_total_sec": 200.22262143550228,
-      "p50_total_sec": 0.084444893989712,
+      "doc_recall_any": 0.839527513684817,
+      "doc_recall_all": 0.7582829155862864,
+      "ndcg_at_10": 0.6849763994348077,
+      "exact_match": 0.08326130798040911,
+      "token_f1": 0.12825478789817957,
+      "avg_total_sec": 200.54744344516837,
+      "p50_total_sec": 0.08454440999776125,
       "p95_total_sec": 1310.2047498896718,
-      "avg_storage_bytes": 30155335.454178676,
+      "avg_storage_bytes": 30188710.700950734,
       "p95_storage_bytes": 144350949.0,
       "categories": {
         "category_2": {
@@ -20941,20 +20955,20 @@
           ]
         },
         "multi-session": {
-          "expected_total": 383,
-          "rows_recorded": 383,
-          "rows_successful": 383,
+          "expected_total": 384,
+          "rows_recorded": 384,
+          "rows_successful": 384,
           "rows_failed": 0,
           "complete": true,
-          "doc_recall_any": 0.9817232375979112,
-          "doc_recall_all": 0.8955613577023499,
-          "ndcg_at_10": 0.9157182096868909,
-          "exact_match": 0.0731070496083551,
-          "token_f1": 0.08048413716762734,
-          "avg_total_sec": 445.3309710459363,
-          "p50_total_sec": 122.6075827931054,
+          "doc_recall_any": 0.9791666666666666,
+          "doc_recall_all": 0.8932291666666666,
+          "ndcg_at_10": 0.9133335268491646,
+          "exact_match": 0.07291666666666667,
+          "token_f1": 0.08027454306041998,
+          "avg_total_sec": 447.62875449890635,
+          "p50_total_sec": 122.7697883322835,
           "p95_total_sec": 1338.067100904882,
-          "avg_storage_bytes": 49593041.27154047,
+          "avg_storage_bytes": 49844103.1875,
           "p95_storage_bytes": 146713737.0,
           "categories": {},
           "sample_errors": [],
@@ -21069,6 +21083,20 @@
               ],
               "retrieved_doc_ids": [
                 "1e29ab59"
+              ]
+            },
+            {
+              "case_id": "longmemeval_m::edced276",
+              "category": "multi-session",
+              "query": "How many days did I spend in total traveling in Hawaii and in New York City?",
+              "gold": "15 days",
+              "prediction": "pet stores near me",
+              "expected_doc_ids": [
+                "answer_60e8941a_2",
+                "answer_60e8941a_1"
+              ],
+              "retrieved_doc_ids": [
+                "9863a565"
               ]
             }
           ],
@@ -22610,11 +22638,11 @@
     }
   },
   "comparison": {
-    "doc_recall_any_delta": 0.033941408594980294,
-    "doc_recall_all_delta": 0.08914194871214975,
-    "ndcg_at_10_delta": 0.057890276679984365,
-    "token_f1_delta": 0.005372670444021246,
-    "avg_storage_ratio_nova_over_stock": 0.3959236349145756,
-    "avg_latency_ratio_nova_over_stock": 1.5934160208586061
+    "doc_recall_any_delta": 0.033699469830229645,
+    "doc_recall_all_delta": 0.08892342337624592,
+    "ndcg_at_10_delta": 0.05769287714124227,
+    "token_f1_delta": 0.005335709410044812,
+    "avg_storage_ratio_nova_over_stock": 0.39636183428523897,
+    "avg_latency_ratio_nova_over_stock": 1.5960010264409858
   }
 }
