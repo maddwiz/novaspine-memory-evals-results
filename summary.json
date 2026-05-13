@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T01:33:07Z",
+  "generated_at": "2026-05-13T01:33:08Z",
   "manifest": {
     "generated_at": "2026-04-29T12:44:11Z",
     "top_k": 10,
@@ -104,7 +104,7 @@
   },
   "status": {
     "started_at": "2026-04-29T12:44:16Z",
-    "phase": "running",
+    "phase": "complete",
     "benchmarks": [
       "locomo",
       "longmemeval_oracle",
@@ -116,13 +116,14 @@
       "novaspine"
     ],
     "top_k": 10,
-    "complete": false,
-    "updated_at": "2026-05-13T01:10:35Z",
+    "complete": true,
+    "updated_at": "2026-05-13T01:33:08Z",
     "current_system": "novaspine",
     "current_benchmark": "longmemeval_m",
     "current_case_index": 500,
     "current_case_total": 500,
-    "current_case_id": "longmemeval_m::gpt4_372c3eed_abs"
+    "current_case_id": "longmemeval_m::gpt4_372c3eed_abs",
+    "finished_at": "2026-05-13T01:33:08Z"
   },
   "benchmarks": {
     "locomo": {
